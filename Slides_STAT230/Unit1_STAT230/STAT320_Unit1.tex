@@ -1,0 +1,518 @@
+\documentclass[compress]{beamer}
+\mode<presentation>
+\setbeamercovered{transparent}
+\usetheme{Warsaw}
+%\useoutertheme{smoothtree}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{xmpmulti}
+\usepackage{multicol}
+\usepackage{colortbl}
+
+%\setbeamersize{text margin left=.25 in,text margin right=.25 in}
+\setbeamersize{text margin left=.15 in,text margin right=.15 in}
+\usepackage[authoryear]{natbib}
+
+
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{latexcolors}
+%\usepackage[dvipsnames]{xcolor}
+\definecolor{antiquebrass}{rgb}{0.8, 0.58, 0.46}
+\definecolor{babyblueeyes}{rgb}{0.63, 0.79, 0.95}
+\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
+\definecolor{bistre}{rgb}{0.24, 0.17, 0.12}
+\definecolor{brightlavender}{rgb}{0.75, 0.58, 0.89}
+\definecolor{bulgarianrose}{rgb}{0.28, 0.02, 0.03}
+\definecolor{slateblue}{rgb}{0.56, 0.74, 0.56}
+\definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
+\definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
+
+\setbeamercolor{structure}{fg=antiquefuchsia!80, bg= black!60}
+
+
+
+
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes.symbols}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{multirow}
+%%%%%%%%% shaddow image %%%%%
+% some parameters for customization
+\def\shadowshift{3pt,-3pt}
+\def\shadowradius{6pt}
+\colorlet{innercolor}{black!60}
+\colorlet{outercolor}{gray!05}
+% this draws a shadow under a rectangle node
+\newcommand\drawshadow[1]{
+\begin{pgfonlayer}{shadow}
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[top color=innercolor,bottom color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[left color=innercolor,right color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[bottom color=innercolor,top color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=outercolor] ($(#1.south west)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=innercolor] ($(#1.north west)+(-\shadowradius/12,\shadowradius/12)$) rectangle ($(#1.south east)+(\shadowradius/12,-\shadowradius/12)$);%Frame
+    \filldraw ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)-(\shadowradius/2,\shadowradius/2)$);
+\end{pgfonlayer}
+}
+% create a shadow layer, so that we don't need to worry about overdrawing other things
+\pgfdeclarelayer{shadow} 
+\pgfsetlayers{shadow,main}
+% Define image shadow command
+\newcommand\shadowimage[2][]{%
+\begin{tikzpicture}
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[#1]{#2}};
+\drawshadow{image}
+\end{tikzpicture}}
+\usepackage{calligra}
+
+\DeclareMathOperator*{\argmax}{Arg\,max}
+\DeclareMathOperator*{\argmin}{Arg\,min}
+\newcommand{\norm}[1]{\left\Vert #1 \right\Vert }
+\newcommand{\bbetaHat}{ \widehat{\bbeta}}
+\newcommand{\bbetaLSE}{ \widehat{\bbeta}_{_{\text{LSE}}}}
+\newcommand{\bbetaMLE}{ \widehat{\bbeta}_{_{\text{MLE}}}}
+\newcommand{\sqBullet}[1]{  {\tiny \tiny \tiny \qBoxCol{#1!60}{ }} }
+%***************
+%\newtheorem{thm}{Theorem}
+\input{../LatexSupportFiles/definition_include}
+\input{../LatexSupportFiles/BoxDef}
+\input{../LatexSupportFiles/MatrixDef}
+
+
+
+
+
+
+
+
+
+
+
+\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 1: A few Definitions and Notations from Set Theory}}
+
+\author[UAEU]
+{United Arab Emirates University}
+\institute[UAEU] % (optional, but mostly needed)
+{
+  \inst{Department of Statistics}%
+  %Indian Institute of Management,  Udaipur\\
+  \vspace{0.1in}
+
+  
+}
+
+\date{}
+
+
+\newcommand{\Xnew}{ \HLTEQ[orange]{X_{_{\text{i}}}} }
+\newcommand{\Ynew}{ \HLTEQ[orange]{Y_{_{\text{i}}}} }
+
+%\date{\today}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Inhalt}
+ % \begin{multicols}{1}
+	\frametitle{Outline}
+    \tableofcontents[currentsection]
+  %  \end{multicols}
+  \end{frame}
+}
+
+\begin{document}
+\maketitle
+
+%\begin{frame}{Outline}
+%%\begin{multicols}{}
+%  \tableofcontents
+%%\end{multicols}
+%\end{frame}
+
+%\section{Introduction to DSBA 2023}
+%
+%
+%\begin{frame}
+%\qBoxCol{blue!30}{
+%\begin{center} Course  Website \end{center}
+%\qbx[4.2in]{teal!40}{\sqBullet{teal} \color{blue} $ \href{https://sites.google.com/iimu.ac.in/dsba2023e/home}{https://sites.google.com/iimu.ac.in/dsba2023e/home}$
+%}\\
+%\qbx[3.0in]{green!40}{ \sqBullet{green} Regular Announcements.
+%}\\
+%\qbx[3.0in]{olive!40}{\sqBullet{olive}  Slides and other materials.
+%}
+%}
+%
+%\pause
+%\qBoxCol{blue!30}{
+%\sqBullet{blue}
+%You can contact the instructor at {\it subhadip.pal@iimu.ac.in} and schedule for office hours.  
+%}
+%\pause
+%\qBoxCol{olive!30}{
+%\sqBullet{olive}
+%Mr. Praveen Kumar has been assigned as Teaching Assistant (TA) for this course.  His email I'd is:  {\it praveen.kumar@iimu.ac. }
+%}
+%
+%
+%\end{frame}
+%
+
+
+%
+%\begin{frame}{Course Outline}
+%\hspace{-.1in}\qBoxCol{blue!35}{
+%% Please add the following required packages to your document preamble:
+%% \usepackage{booktabs}
+%\begin{table}[]
+%\begin{tabular}{@{}lll@{}}
+%\toprule
+%         & Topics                                                & Dataset or Case                                    \\ \midrule \midrule
+%\rowcolor{blue!20}     \multicolumn{1}{|l|}{1-2}   & \multicolumn{1}{l|}{Overview of Data Science}        & \multicolumn{1}{l|}{Household Data}                \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{3-5}   & \multicolumn{1}{l|}{Data Visualization}              & \multicolumn{1}{l|}{Global Super Store }       \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{6}     & \multicolumn{1}{l|}{Introduction to R/ JMP}          & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{7}     & \multicolumn{1}{l|}{Regression Analysis}             & \multicolumn{1}{l|}{Display \& Liquor Sales} \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{8}     & \multicolumn{1}{l|}{Multiple Regression}             & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{9}     & \multicolumn{1}{l|}{Dealing with Nominal Covariates} & \multicolumn{1}{l|}{Gender Divide}                 \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{10}    & \multicolumn{1}{l|}{Regression Diagonistics}         & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{11-12} & \multicolumn{1}{l|}{Project Presentations}            &\multicolumn{1}{l|}{}          \\\midrule \bottomrule
+%\end{tabular}
+%\end{table}
+%}
+%\end{frame}
+
+
+%\begin{frame}{Case Study }
+%\qBoxCol{teal!40}{\vspace{1in}\begin{center}\sqBullet{teal} \Large Case: Liquor sales and display space \end{center}
+%\vspace{1in}
+%}\\
+%\end{frame}
+
+
+
+
+
+
+
+\section{Definition of Sets}
+\TransitionFrame[antiquefuchsia]{\Large Definition of a Set }
+
+
+\begin{frame}
+	\frametitle{Definition of a Set }
+	
+\begin{defn}[ Set]
+A Set is a well defined collection of {\bf objects}.
+\end{defn}	
+	
+	\begin{itemize}
+\item[ ] \qbx[4.1in]{teal!30}{\sqBullet{teal}{\bf Elements: }  The objects inside a set are called the {\bf elements} of the Set}
+			\vspace{0.2cm}
+		\item[]  \qbx[4.1in]{blue!30}{ \sqBullet{blue} Usually we denote sets with upper-case letters, elements with lower-case letters.}
+			\vspace{0.2cm}
+	\end{itemize}
+	
+			
+ \qbx[4.5in]{antiquebrass!60}{ \sqBullet{antiquebrass} The following  notation is used to show  a set membership.
+ \vspace{-.15in}
+ \begin{enumerate}
+ \item[] \qBrd[4.1in]{olive!30}{ \sqBullet{olive}  $\HLTW{x\in A}$:means that x is a member of the set A. }
+\item[]  \vspace{-.15in} \qBrd[4.1in]{lime!40}{  \sqBullet{lime}  $\HLTW{x\notin A}$:means that x is NOT a member of the set A. }
+ \end{enumerate}
+ }
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example: Differnt Ways of Describing a Set}
+\begin{enumerate}
+\item Listing all the elements:  $A=\{1, 2, 3,4, 5, 6\}$
+\pause
+\item Give a verbal description: A is the set of all integers from 1 to 6, inclusive.
+\pause
+\item Give a mathematical inclusion rule: $$A=\{x \text{ is an  Integer} \mid 1\leq x\leq 6\}$$
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{The Nulll Sets and the Universal Set}
+	 
+ 
+	 \qbx[4.5in]{antiquebrass!40}{
+	 \begin{defn}[Null Set]
+ The {\bf Null Set} (or also called the {\bf Empty Set}) is a set with no elements in it. 
+\end{defn}	
+\qBrd[2.1in]{white!40}{ It is often denoted by $\emptyset$}}\\
+	 \vspace{.1in}
+	 \pause
+		
+ \qbx[4.5in]{teal!40}{
+  \begin{defn}[Universal Set]
+   The {\bf Universal Set} is the set of all elements currently under
+consideration.
+  \end{defn}
+\qBrd[2.1in]{white!40}{ It is often denoted by $\Omega$}\\
+\qBrd[4.0in]{lime!40}{ The universal set contains all of the elements relevant to a
+given discussion.}}\\
+	 \vspace{.1in}
+
+	
+\end{frame}
+
+
+
+
+
+
+
+\section{Relationship Between Sets}
+\TransitionFrame[antiquefuchsia]{\Large Relationship Between Sets }
+
+
+\begin{frame}
+	\frametitle{ }
+	
+	\begin{itemize}
+\item[ ] \qbx[4.2in]{teal!40}{\sqBullet{teal} {\bf Subset:} A set A is a subset of a set B all the elements of A are also the elements of B.\\\\
+\qBrd[3.2in]{white}{ If$\HLTY{ x\in A \implies x\in B}$ then $\HLTY{A\subseteq B}$.}
+\vspace{.1in}\\
+\qBrd[3.5in]{white}{{\bf Subsets:} If A is a subset of B then we write $\HLTY{A\subseteq B}$.}\\
+{\tiny  Note: The notation for subset is very similar to the notation for "less
+than or equal to" and means, in terms of the sets, "included
+in or equal to".}
+}
+			\vspace{0.5in}
+		\item[]  \qBrd[4.2in]{blue!30}{ \sqBullet{blue} We write $\HLTY{A\nsubseteq B}$ if $A$ is not included in B}
+			\vspace{0.2cm}
+
+		
+		\vspace{0.3cm}
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{}
+	\begin{enumerate}
+	\item[\sqBullet{blue}] We say {\bf "A is a proper subset of B"} if all the elements of A
+are also the elements of B, but in addition there exists at least one element $c$ such that $c\in  B$ but $c \notin A$.\vspace{.1in}\\
+	\item[\sqBullet{olive}] {\bf Proper Subset: } $\HLTY{A\subset B}$,  then we say {\bf A is a proper subset of B.}
+	
+	\end{enumerate}
+	\vspace{.6in}
+	\qBrd[4.5in]{olive!30}{
+	{\bf Comment:} The notation for subset is very similar to the notation 
+	for "less
+than", and means, in terms of the sets, "included in but not
+equal to".}
+	
+	\end{frame}
+
+
+\begin{frame}
+	\frametitle{Subset: Example }
+	
+	
+	\end{frame}
+	
+	
+	
+\section{A Few Set Operations }
+\TransitionFrame[antiquefuchsia]{\Large  Few Set Operations }
+
+\begin{frame}
+	\frametitle{Set Operation: Union}
+	\begin{center}
+\qbx[4.2in]{teal!30}{\qBrd[1in]{olive!30}{\bf A Union B:}  A Union B,  denoted by  $\HLTY{A \cup B}$ is the set of all elements that are either in $A$, or in $ B$, or inside both the sets.\\
+}\\
+\pause
+\vspace{-.2in}
+  \qbx[3in]{applegreen!50}{  
+ The logical operator is \HLTY{\text{OR} }.
+  }
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+	
+	
+	\begin{frame}
+	\frametitle{Set Operation: Intersection}
+	\begin{center}
+\qbx[4.2in]{applegreen!40}{\qBrd[1.2in]{teal!30}{\bf A Intersection B:}  A Intersection B,  denoted by  $\HLTY{A \cap B}$ is the set of all elements that are  both $A$ and $B$.\\
+}\\
+\pause
+\vspace{-.2in}
+  \qbx[3in]{asparagus!60}{  
+ The logical operator is \HLTY{\text{AND} }.
+  }
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+	
+
+	
+	
+	\begin{frame}
+	\frametitle{Set Operation: Complement}
+	\begin{center}
+\qbx[4.2in]{applegreen!40}{\qBrd[1.2in]{teal!30}{\bf A Complement :}  A Complement,  denoted by  $\HLTY{\Not{A}}$ is the set of all elements that are  not in  $A$. {\tiny Sometimes it is also denoted by $A^c$}\\
+}\\
+\pause
+\vspace{-.2in}
+  \qbx[3in]{asparagus!60}{  
+ The logical operator is \HLTY{\text{NOT} }.
+  }
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Set Operation: Set Difference}
+	\begin{center}
+\qbx[4.3in]{teal!30}{\qBrd[1in]{olive!30}{\bf A Minus B:}  A Minus B,  denoted by  $\HLTY{A - B}$ is the set of all elements that are only an element of $A$, but not an element of the set $ B$.
+}\\
+\pause
+\vspace{-.2in}
+  \qbx[3in]{applegreen!50}{  
+ $\HLTY{A-B}$ is same as: $ \HLTY{A \cap \Not{B} }$.
+  }
+  
+  {\tiny {\bf Comment:} $\HLTY{A-B}$ is not same as $\HLTY{B-A}$ }
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+
+
+\begin{frame}
+	\frametitle{Set Operation: Examples}
+	
+\end{frame}
+
+\section{Venn Diagrams}
+\TransitionFrame[antiquefuchsia]{\Large Venn Diagrams }
+\begin{frame}
+  \qbx[4.4in]{applegreen!50}{ \sqBullet{olive}  {\bf Venn Diagrams} are graphical representation of the sets that are typically used to depict the relation between various sets  }
+  \vspace{3in}
+\end{frame}
+
+
+%\TransitionFrame[antiquefuchsia]{\Large Venn Diagrams: Examples}
+\begin{frame}\frametitle{Venn Diagrams: Examples}
+  \begin{center}
+ \includegraphics[scale=.32]{figs/VennDiagram1.png}
+ \end{center} 
+\end{frame}
+
+
+
+%\TransitionFrame[antiquefuchsia]{\Large Venn Diagrams: Examples}
+\begin{frame}\frametitle{Venn Diagrams: Examples}
+  \begin{center}
+  \qBrd[4.1in]{olive!30}{ Let $\Omega= \{1,2,3,4,5,6,7,8\}$,\\
+   $A=\{1,2,6,7\}$,  $B=\{ 2,3,4,7 \}$,  and $C=\{4,5,6,7\}$ }
+ \includegraphics[scale=.26]{figs/VennDiagram2.png}
+ \end{center} 
+\end{frame}
+
+
+
+
+
+\section{Disjoint Sets and Partition }
+\TransitionFrame[antiquefuchsia]{\Large Disjoint Sets and Partition  }
+
+
+
+\begin{frame}
+	\frametitle{Disjoint Sets}
+	\begin{center}
+\qbx[4.3in]{teal!30}{\qBrd[1in]{olive!30}{\bf Disjoint Sets:}  Two sets  A, and  B are said to be  {\bf Disjoint Sets} or {\bf mutually exclusive sets} if $A$ and $B$ does not have any elements in common.\\
+}\\
+\pause
+\vspace{-.2in}
+  \qbx[3in]{applegreen!50}{  
+ A and B are Disjoint $\Leftrightarrow \HLTY{A\cap B}=\emptyset$.
+  }
+  
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+
+
+\begin{frame}
+	\frametitle{Exhaustive}
+	\begin{center}
+\qbx[4.3in]{babyblueeyes!50}{\qBrd[1in]{blue!30}{\bf Exhaustive:}  Two sets A and B are exhaustive for the set  C if $A\cup B =C$.\\
+}\\
+\vspace{-.2in}
+  \qbx[3in]{applegreen!50}{  
+ A and B are exhaustive for C $\Leftrightarrow \HLTY{A\cup B}=C$.
+  }
+  
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+	
+	
+	
+	
+	
+
+\begin{frame}
+	\frametitle{Partition}
+	\begin{center}
+\qbx[4.3in]{antiquebrass!60}{\qBrd[1in]{olive!30}{\bf Partition:}  A group of sets $\{A, B\}$ is called a {\bf partition for a set $\HLTY{C}$} if
+\begin{enumerate}
+\item  \qBrd[2.5in]{applegreen!30}{$A\cap B = \emptyset$ ( i.e. $A$,  and $B$ are Disjoint) }, and 
+\item  \qBrd[3.5in]{lime!30}{$A\cup B= \HLTY{C}$ (i.e.  A and B is exhaustive for C).}
+\end{enumerate}
+}\\
+
+  
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+
+
+\begin{frame}\frametitle{Examples}
+
+\end{frame}
+
+\begin{frame}\frametitle{Examples}
+
+\end{frame}
+
+
+ 
+\end{document}

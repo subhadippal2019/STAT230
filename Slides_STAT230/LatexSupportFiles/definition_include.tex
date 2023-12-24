@@ -1,0 +1,354 @@
+%\documentclass[noinfoline]{imsart}
+%\usepackage{amsmath,amstext,amssymb}
+%%\usepackage[top=1.5in, bottom=1.5in, left=1.2in, right=1.2in]{geometry}
+%% settings
+%%\pubyear{2005}
+%%\volume{0}
+%%\issue{0}
+%%\firstpage{1}
+%%\lastpage{8}
+%\arxiv{arXiv:0000.0000}
+
+%\startlocaldefs
+%\numberwithin{equation}{section}
+%\theoremstyle{plain}
+%\newtheorem{thm}{Theorem}
+%\endlocaldefs
+\usepackage{lipsum} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy} 
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{eufrak}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{epstopdf} 
+\usepackage{natbib}
+\usepackage{undertilde}
+%\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+%\usepackage{subfig}
+\usepackage[final]{pdfpages}
+
+\usepackage{algorithm}  %@subhajit
+\usepackage{algpseudocode} %@subhajit
+\usepackage{algorithmicx}     %@subhajit
+\usepackage{undertilde}
+
+
+\newcommand{\sphere}{{\mathbb{S}}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\LatentV}{V}
+\newcommand{\NC}{m}
+\newcommand{\Priorf}{f_{prior}}
+\newcommand{\FWOne}[2]{{{}_{1}\Psi _{1}\left[{\begin{matrix}(\frac{#1}{2},\frac{1}{2})\\(1,0)\end{matrix}};#2\right]} 
+}
+
+
+\newcommand{\HyPriorMu}{\thetabf}
+\newcommand{\HyPriorAlpha}{\alpha}
+\newcommand{\HyPriorBeta}{\beta}
+\newcommand{\HyPriorK}{\zeta}
+\newcommand{\Indicator}[1]{\mathbb{I}({#1 })}
+\newcommand{\xb}{\bm{x}}
+\newcommand{\bx}{\MakeVec{\bm{x}}}
+\newcommand{\bX}{\bm{X}}
+\newcommand{\by}{\MakeVec{\bm{y}}}
+\newcommand{\bZ}{\bm{Z}}
+\newcommand{\bF}{\bm{F}}
+\newcommand{\btheta}{\MakeVec{{\bm{\theta}}}}
+\newcommand{\Bpi}{\MakeVec{\boldsymbol{\pi}}}
+\newcommand{\thetabf}{\MakeVec{\boldsymbol{\theta}}}
+\newcommand{\Thetabf}{\boldsymbol{\Theta}}
+\newcommand{\taubf}{\MakeVec{\boldsymbol{\tau}}}
+\newcommand{\Tr}{Tr}
+
+
+\newcommand{\bM}{\bm{M}}
+\newcommand{\bD}{\MakeVec{\bm{D}}}
+\newcommand{\bV}{\MakeVec{\bm{V}}}
+\newcommand{\loglikmix}{\mathcal{L}_{\bM,\bD,\bV}}
+\newcommand{\hypdc}{{}_0F_1\left(\frac{n}{2},\frac{D_c^2}{4}\right)}
+
+
+\usepackage{xstring}
+\usepackage[normalem]{ulem}
+\definecolor{ultramarine}{RGB}{38,29,163}
+\newcommand\PalDel[1]{{\color{red} {\sout{#1}}}}
+\newcommand\Pal[1]{{\color{ultramarine}{#1}}}
+\newcommand\PalRp[2]{\PalDel{#1} \Pal{#2}}
+\newcommand\PalCmnt[1]{{\color{ultramarine} {[[[***PAL:  #1 ***]]]}}}
+
+\newcommand{\qedwhite}{\hfill \ensuremath{\Box}}
+\newcommand{\SpaceD}{\mathcal{S}_p}
+\newcommand{\SpaceM}{\widetilde{\mathcal{V}}_{n,p}}
+\newcommand{\SpaceV}{\mathcal{V}_{p,p}}
+\newcommand{\SpaceF}{\mathbb{R}^{n,p}}
+\newcommand{\StiefelS}{\mathcal{V}_{n,p}}
+\newcommand{\SpacePi}{\mathbb{S}_{\pi}}
+\newcommand{\ML}{{\cal{ML}}}
+\newcommand{\ProdSpace}{\boldsymbol{\Theta}}
+\newcommand{\ThetaAndPi}{\Xi}
+\newcommand{\ClassML}{\mathcal{C}_{\ML}}
+
+
+\newcommand{\balpha}{\MakeVec{\bm{\alpha}}}
+\newcommand{\bbeta}{\MakeVec{\bm{\beta}}}
+\newcommand{\bEta}{\bm{\eta}}
+\newcommand{\bd}{{\utilde{\bm{d}}}}
+\newcommand{\BoEta}{{\utilde{\boldsymbol{\eta}}}}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{result}{Result}
+\newtheorem{defn}{Definition}
+\newcommand{\pdv}[2][]{\frac{\partial#1}{\partial#2}}
+\newcommand{\pdvtwo}[2][]{\frac{\partial^2#1}{{\partial#2}^2}}
+
+
+%\newcommand{\mubf}{\boldsymbol{\mu}}
+\newcommand{\mubf}{\MakeVec{\mu}}
+\newcommand{\sumI}{ \sum_{i=1}^{n}}
+\newcommand{\Ybar}{{\overline{Y}}}
+
+\newcommand{\Expectation}[1]{\mathbb{E}{[#1]}}
+\newcommand{\priorXzero}{\Psi}
+\newcommand{\iMat}{\mathbf{I}_{p}}
+
+% 
+% \newtheorem{thm}{Theorem}[section]
+% \newtheorem{cor}[thm]{Corollary}
+% \newtheorem{lem}[thm]{Lemma}
+%\newtheorem{proposition}{Proposition}
+
+%\newtheorem{theorem}{Theorem}[chapter]%To link the theorem to each chapter uncomment the chapter option
+%\newtheorem{lemma}{Lemma}%[theorem]% To link each lemma to a theorem uncomment the theorem option
+%\newtheorem{corollary}{Corollary}%[theorem]% To link each corollary to a theorem uncomment the theorem option
+% to link a corollary to a chapter change the theorem option to chapter
+%\newtheorem{definition}{Definition}%[chapter] %the same is true for both definitions and assumptions
+\newtheorem{assumption}{Assumption}%[chapter] %
+%\newtheorem{proposition}{Proposition}[chapter]
+%\newtheorem{fact}{Fact} %%% added by @subho
+\newcommand{\StrongNBD}[2]{S_{#1}{#2}}
+\newcommand{\bpi} {\boldsymbol{\pi}}
+\newcommand{\bphi} {\boldsymbol{\phi}}
+\newcommand{\bb}[1]{\boldsymbol{#1}}
+% Definitions of handy macros can go here
+
+\newcommand{\normtwo}[1]{{\left\lVert#1\right\rVert}_2}
+
+\newcommand{\dataset}{{\cal D}}
+\newcommand{\fracpartial}[2]{\frac{\partial #1}{\partial  #2}}
+\newcommand{\Lesbegue}[1]{\mu_{\btheta_{#1},\bpi_{#1}}}
+\newcommand{\fthetapi}[1]{f_{\btheta_{#1},\bpi_{#1}}}
+% Heading arguments are {volume}{year}{pages}{submitted}{published}{author-full-names}
+\newcommand{\doublehat}[1]{%
+    \settoheight{\dhatheight}{\ensuremath{\widehat{#1}}}%
+    \addtolength{\dhatheight}{-0.35ex}%
+    \widehat{\vphantom{\rule{2pt}{\dhatheight}}%
+    \smash{\hspace{-0.5mm}\widehat{#1}}}}
+
+\newcommand{\hyp}{{}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)}
+\newcommand{\hypinline}{{}_0F_1\left({n}/{2},{D^2}/{4}\right)}
+
+\newcommand{\partialhyp}[1]{\frac{\partial}{\partial\,{d_{#1}}}\,\left[\hyp\right]}
+
+\newcommand{\fracProbZ}[1]{\frac{\langle Z_{ic} \rangle \, #1}{\sum_{i=1}^{N} \langle Z_{ic}\rangle  } }
+\newcommand{\EmVar}[1]{\widetilde{#1}^{(c)}}
+
+\newcommand{\IMDY}{{\it{CCPD}}}
+\newcommand{\JMDY}{{\it{JCPD}}}
+
+\newcommand{\DYlang}{\frac{\exp(\nu\,\bEta^T\bd)}{{\left[{}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)\right]}^{\nu}}}
+
+\newcommand{\logDYlang}{\nu\,\bEta^T\bd - \nu\,\log\left({}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)\right)}
+
+\newcommand{\lhyp}{\log\left({}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)\right)}
+
+%\jmlrheading{1}{2000}{1-48}{4/00}{10/00}{SS \& JH \& AB}
+
+% Short headings should be running head and authors last names
+
+%\ShortHeadings{BDP and cIBP}{SS \& JH \& AB}
+%\firstpageno{1}
+
+\newcommand{\diam}[1]{{{#1}^{\ast}}}
+
+%%% coloring option %%%
+\definecolor{auburn}{rgb}{0.53, 0.1, 0.5}
+\newcommand{\sss}{\color{auburn}}  %%% for Subhajit
+\newcommand{\sse}{\color{black}}
+\newcommand{\attn}{\color{red}}
+\newcommand{\rms}{\color{magenta}}  %%% for Riten
+\newcommand{\rme}{\color{black}}
+\newcommand{\MLDensity}{f_{\ML}}
+\setlength{\parindent}{0cm}
+\newcommand{\posterior}
+
+\newcommand{\variableX}{\bd}
+\newcommand{\funch}{\mathfrak{h}}
+\newcommand{\IndVzero}[1]{\mathbb{I}({X\in \mathcal{V}^{#1}_0})}
+\newcommand{\Rnp}{\mathbb{R}^{n \times p}}
+\newcommand{\Rpp}{\mathbb{R}^{p \times p}}
+\newcommand{\vecnorm}[1]{\lVert #1\rVert}
+
+\newcommand{\etapsiD}{\eta_{\priorXzero}}
+\newcommand{\BoEtapsiD}{\BoEta_{\priorXzero}}
+
+\newcommand{\DMp}{\mathcal{D}^{p \times p}}
+\newcommand{\Rplus}{\mathbb{R}_{+}}
+\newcommand{\prodMeasure}{\Upsilon}
+
+\newcommand{\m}{{\bf m_{\BoEta}}} 
+\newcommand{\SetWithMode}{\mathcal{S}}
+\newcommand{\SetWithModePrime}{\mathcal{S}}
+\newcommand{\TargetComp}{\mathcal{S}^{\star}}
+
+\newcommand{\ConstCondDen}{K_{\nu, \BoEta}} 
+
+\newcommand{\hyparam}[2]{
+    \IfEqCase{#1}{
+        {M}{\xi^{#2}_c}
+        {V}{\gamma^{#2}_c}%
+        
+    }
+  }
+\newcommand{\threepartdef}[6]
+{
+	\left\{
+		\begin{array}{lll}
+			#1 & \mbox{if } #2 \\
+			#3 & \mbox{if } #4 \\
+			#5 & \mbox{if } #6
+		\end{array}
+	\right.
+}
+
+\def\bv{\color{blue}}
+\def\ev{\color{black}}
+\newcommand{\bch}{\bv }
+\newcommand{\ech}{\ev\normalsize}
+%\newcommand{\MakeVec}[1]{{\utilde{\bf #1}}}
+\newcommand \Measure[2][]{%
+  \ifstrempty{#1}{
+  \IfEqCase{#2}{
+        {M}{\mu}%
+        {D}{\mu_1}%
+        {V}{\mu_2}
+        {X}{\mu}
+   }  
+  }{
+  \IfEqCase{#1}{
+  {1}{
+   \IfEqCase{#2}{
+        {M}{d\mu(M)}%
+        {D}{d\mu_1(\bd)}%
+        {V}{d\mu_2(V)}
+        {X}{d\mu(X)}
+        {Y}{d\mu(Y)}
+        {MDV} {d\mu(M)\; d\mu_1(\bd) \;d\mu_2(V) }
+        }
+   } 
+   {2}{
+   \IfEqCase{#2}{
+         {M}{d\mu(M^{\ast})}%
+        {D}{d\mu_1(\bd^{\ast})}%
+        {V}{d\mu_2(V^{\ast})}
+        {X}{d\mu(X^{\ast})}
+        }
+   }
+   {3}{
+   \IfEqCase{#2}{
+         {M}{\mu(dM^{\star})}%
+        {D}{\mu_2(d\bd^{\star})}%
+        {V}{\mu_1(dV^{\star})}
+        {X}{\mu(X^{\star})}
+        }
+   }   
+   
+   } 
+  }%
+}
+  \newcommand{\VONF}{\text{VonMisesFisher}}
+\newcommand{\MPGalpha}{\alpha}
+\newcommand{\MPGnu}{\nu}
+\newcommand{\MPG}{MPG }
+\newcommand{\ybin}{y^{(\text{bin})}}
+
+
+%\newcommand{\abs}[1]{\left \vert  #1  \right\vert  }
+\usepackage{caption}
+\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\IEHC}{\text{IEHC}}
+
+
+
+
+
+
+
+\newcommand \Th[1]{%
+  \IfEqCase{#1}{
+        {1}{ 1^{\text{st}}}%
+        {2}{2^{\text{nd}}}%
+        {3}{3^{\text{rd}}}%
+  }[{#1}^{\text{th}}]
+}
+  
+  
+   \newcommand{\augV}{\text{aux}}
+  
+  
+  
+  
+  \newcommand{\CDE}{\text{PL}}
+\newcommand{\CDEsigma}{\sigma}
+\newcommand{\CDEepsilon}{\SVepsilon}
+\newcommand{\CDEmu}{\mu}
+ % \newcommand{\SVepsilon}{\varepsilon}
+  \newcommand{\SVepsilon}{\delta}
+ \newcommand{\abs}[1]{\left\lvert{#1}\right \rvert }
+ 
+ 
+\newcommand{\CPDX }{\text{CPDX}}
+\newcommand{\CPDXPar}{\vartheta}
+\newcommand{\K}{\mathcal{K}}
+
+
+
+\newcommand{\lossFunctionOne}[1]{ \left\{ \abs{ ( \abs{#1}-\SVepsilon)}  + ( \abs{#1}-\SVepsilon)\right\} }
+
+\newcommand{\lossFunctionAlt}[1]{ \abs{  #1-\SVepsilon}  + \abs{ #1+\SVepsilon}-2\SVepsilon }
+
+\newcommand{\lossFunctionAltOne}[1]{   \lossFunctionAlt{ \frac{\left(#1\right)}{\sigma}}}
+
+\newcommand{\lossFunction}[1]{ \left\{ \abs{ \left( \frac{\abs{#1}}{\sigma}-\SVepsilon\right)}  + \left( \frac{\abs{#1}}{\sigma}-\SVepsilon\right)\right\} }
+\newcommand{  \Likelihood}{\mathcal{L}}
+%\newcommand{\Onebf}{\bf 1}
+\newcommand{\Onebf}{{\bf \utilde{1}_{n}}}
+
+
+
+
+
+\newcommand{\InvGamma}{\text{InvGamma}}
+\newcommand{\PriorSigmaAlpha}{a}
+\newcommand{\PriorSigmaBeta}{b}
+\newcommand{\PriorBetaMean}{\mubf_{_{\bbeta}}}
+\newcommand{\PriorBetaVar}{\Sigma_{_{\bbeta}}  }
+\newcommand{\mvnormPdf}[4]{\frac{1}{ \left({2\pi}\right)^{\frac{#4}{2}} \sqrt{\vert{#3}\vert}}{\exp\left[ - \frac{1}{2}(#1- #2)^T {#3}^{-1} (#1- #2)\right]}      }
+\newcommand{\InvGammaPdf}[3]{ \frac{(#1)^{-#2+1}}{\Gamma\left( #2\right) } \exp\left[ -\frac{{#3}}{{#1}} \right] }
+
+ \newcommand{\byTilde}{\tilde{\by}}
+ 
+ \newcommand{\TrfSigma}{\varsigma}
+ \newcommand{ \Normal}{\text{Normal}}
+ \newcommand{\GlobalPar}{\tau}
+\newcommand{\LocalPar}{\psi}
+\newcommand{\Not}[1]{{\overline{#1}}}

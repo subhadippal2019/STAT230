@@ -1,0 +1,493 @@
+%\newcommand{\proof}{ {\bf Proof:  } }
+%\usepackage{enumerate}
+%
+\NewDocumentCommand{\InnerProduct}{ O{\cdot,\cdot} }{ \left\langle #1  \right\rangle  }
+
+%\newcommand{\InnerProduct}[2]{  \left\langle #1, #2  \right\rangle }
+\newcommand{\Ind}[1]{\mathbb{I}\left(#1 \right)}
+\newcommand{\StandardLM}{\by=\bX \bbeta +{\epsilonbf}}
+\newcommand{\StandardLMmod}{\bY=\bX \bbeta +{\epsilonbf}}
+\usepackage{undertilde}
+\newcommand{\MakeVec}[1]{{\utilde{\bf #1}}}
+\newcommand{\Zplus}{{\Z_{+}}}
+\newcommand{\Proj}[1]{{#1}\left( {#1}^T{#1}\right)^{-}{#1}^T }
+\NewDocumentCommand{\YiDotDef}{O{B} m}{ \left(Y_{{#2}1},\ldots,Y_{{#2}{#1}} \right)}
+\NewDocumentCommand{\YiDot}{O{i}}{  \utilde{Y}_{{#1 \bullet}}  }
+
+\NewDocumentCommand{\OneWay}{ O{T} O{B} m}{
+ \IfEqCase{#3}{%
+  {model}{   Y_{ij}=\mu+ \tau_i+ \epsilon_{ij} \text{ for } i 		=1, 2,\ldots #1; j = 1,2,\ldots #2  
+  	 }
+  {Y}{
+  \left[ {\begin{array}{c;{2pt/2pt}c;{2pt/2pt}c;{2pt/2pt}c ;{2pt/2pt}c}
+   \overbrace{ Y_{11},\ldots ,Y_{1{#2}}}^{\text{Treatment 1}}  & \cdots &  \overbrace{ Y_{i1},\ldots Y_{i{#2}}}^{\text{Treatment 2}} & \cdots & \overbrace{Y_{{#1}1} \ldots Y_{{{#1}}{#2}}}^{\text{Treatment #1}} \end{array} } \right]^T 
+  	 }
+  	 {YInDot}{\left[ {\begin{array}{c;{2pt/2pt}c;{2pt/2pt}c;{2pt/2pt}c ;{2pt/2pt}c}
+  \utilde{Y}_{1 \bullet}^T  & \cdots &   \utilde{Y}_{i \bullet}^T& \cdots & \utilde{Y}_{{#1} \bullet}^T \end{array} } \right]^T_{{#1}{#2}\times 1}
+  	 }
+  	 {response}{
+  \left[ {\begin{array}{c;{2pt/2pt}c;{2pt/2pt}c;{2pt/2pt}c ;{2pt/2pt}c}
+   \overbrace{ Y_{11},\ldots ,Y_{1{#2}}}^{\text{Treatment 1}}  & \cdots &  \overbrace{ Y_{i1},\ldots Y_{i{#2}}}^{\text{Treatment 2}} & \cdots & \overbrace{Y_{{#1}1} \ldots Y_{{{#1}}{#2}}}^{\text{Treatment #1}} \end{array} } \right]^T  
+  	 }
+  	 {treatments}{ \tau_1,\ldots , \tau_{#1} }
+  	  {tau}{ \tau_1,\ldots , \tau_{#1} }
+  	 {beta}{\left(\mu, \HLT{$\tau_1,\ldots , \tau_{#1} $}\right)^T}
+  	 {error}{
+  \left[ {\begin{array}{c;{2pt/2pt}c;{2pt/2pt}c;{2pt/2pt}c ;{2pt/2pt}c}
+   \overbrace{ \epsilon_{11},\ldots ,\epsilon_{1{#2}}}^{\text{Treatment 1}}  & \cdots &  \overbrace{ \epsilon_{i1},\ldots \epsilon_{i{#2}}}^{\text{Treatment 2}} & \cdots & \overbrace{\epsilon_{{#1}1} \ldots \epsilon_{{{#1}}{#2}}}^{\text{Treatment #1}} \end{array} } \right]^T   
+  	 }
+  	 {design}{
+ \left[ {\begin{array}{c;{2pt/2pt}cccc}
+   \Onebf_{#2} &  \Onebf_{#2} & \ZeroF  & \ldots &  \ZeroF\\
+   \Onebf_{#2} &  \ZeroF   &\Onebf_{#2} & \ldots  & \ZeroF\\
+   \vdots   & \vdots    & \vdots  & \ddots & \vdots  \\
+    \Onebf_{#2} & \ZeroF & \cdots  & \ldots    & \Onebf_{#2}\\
+    \end{array}
+   } \right] _{{#1}{#2}\times ({#1}+1)}
+  }
+  {designKP}{ \left[  {\begin{array}{c;{2pt/2pt}c}
+   \underbrace{\Onebf_{#1}\otimes  \Onebf_{#2}} &  \underbrace{I_{#1} \otimes \Onebf_{#2} }
+   \end{array} }\right]
+   }
+    {X}{
+ \left[ {\begin{array}{c;{2pt/2pt}cccc}
+   \Onebf_{#2} &  \Onebf_{#2} & \ZeroF  & \ldots &  \ZeroF\\
+   \Onebf_{#2} &  \ZeroF   &\Onebf_{#2} & \ldots  & \ZeroF\\
+   \vdots   & \vdots    & \vdots  & \ddots & \vdots  \\
+    \Onebf_{#2} & \ZeroF & \cdots  & \ldots    & \Onebf_{#2}\\
+    \end{array}
+   } \right] _{{#1}{#2}\times ({#1}+1)}
+  }
+  {XKP}{ \left[  {\begin{array}{c;{2pt/2pt}c}
+   \underbrace{\Onebf_{#1}\otimes  \Onebf_{#2}} &  \underbrace{I_{{#1}} \otimes \Onebf_{#2} }
+   \end{array} }\right]
+   }
+   {XMu}{ \Onebf_{#1}\otimes  \Onebf_{#2} }
+   {XTau}{I_{{#1}} \otimes \Onebf_{#2}}
+   {ProjMat}{
+   \left[ {\begin{array}{c;{2pt/2pt}c;{2pt/2pt}c ;{2pt/2pt}c}
+    \HLT{$\ProjOne{#2}$}&  \ZeroF& \cdots &\ZeroF\\
+   \ZeroF&  \HLT{$\ProjOne{#2}$} & \cdots & \ZeroF\\
+   \vdots &\vdots  &  \vdots   & \vdots  \\
+    \ZeroF&  \ZeroF & \cdots & \HLT{$\ProjOne{#2}$}
+    \end{array}
+   } \right]_{{#1}{#2}\times {#1}{#2} }
+   }
+    {ProjMatKP}{
+    I_{#1}\otimes {\ProjOne{#2}}
+    }
+    {YColVec}{
+    \left[ {\begin{array}{c}
+  \utilde{Y}_{1 \bullet}\\
+  \hdashline[2pt/2pt]\\
+   \vdots\\
+  \hdashline[2pt/2pt]\\
+  \utilde{Y}_{i \bullet}\\
+  \hdashline[2pt/2pt]\\
+   \vdots\\
+  \hdashline[2pt/2pt]\\
+   \utilde{Y}_{{#1} \bullet}\\
+    \end{array}
+   } \right]_{{#1}{#2}\times 1}}
+   {YDotBar}{\left[
+   {\begin{array}{c}
+  \overline{Y}_{1 \bullet}\\
+  \hdashline[2pt/2pt]\\
+   \vdots\\
+  \hdashline[2pt/2pt]\\
+  \overline{Y}_{i \bullet}\\
+  \hdashline[2pt/2pt]\\
+   \vdots\\
+  \hdashline[2pt/2pt]\\
+   \overline{Y}_{{#1} \bullet}\\
+    \end{array}
+   }\right]_{{#1}\times 1} }
+    }  	 
+}
+
+
+
+
+
+
+
+%
+%
+%%\usepackage{accents}
+%\newcommand{\SpaceU}{\mathcal{U}}
+%\newcommand{\Span}[1]{\mathcal{L}(#1)}
+%%\hypersetup{colorlinks=true}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+% \newcommand{\SpaceW}{\mathcal{W}}
+%\newcommand{\SpaceV}{\mathcal{V}}
+%\newcommand{\real}[1]{{\mathbb R}^{#1}}
+%\newcommand{\Pdg}{P_{\alphabfs (\Deltabfs_{y})}}
+%\newcommand{\spn}{\mathrm{span}}
+%\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\var}{\mathrm{Var}}
+\newcommand{\cov}{\mathrm{Cov}}
+\newcommand{\covhat}{\widehat{\mathrm{Cov}}}
+\newcommand{\rank}{\mathrm{rank}}
+\newcommand{\stack}{\mathrm{stack}}
+\newcommand{\Normal}{\mathrm{Normal}}
+\newcommand{\tr}{\mathrm{\,tr}}
+\newcommand{\avar}{\mathrm{\,avar}}
+\newcommand{\vecc}{\mathrm{\,vec}}
+\newcommand{\true}{\mathrm{true}}
+
+% Bold Face symbols
+\newcommand{\vbf}{{\mathbf v}}
+\newcommand{\w}{{\utilde{\mathbf w}}}
+\newcommand{\X}{\mathbf X}
+\newcommand{\Xhat}{\widehat{\X}}
+\newcommand{\x}{{\utilde{\mathbf x}}}
+\newcommand{\Y}{{\mathbf Y}}
+\newcommand{\y}{\mathbf y}
+\newcommand{\Xbar}{\bar{\X}}
+\newcommand{\Ybar}{\bar{\Y}}
+\newcommand{\ellhat}{\hat{\ell}}
+\newcommand{\ellbf}{\mathbf{\ell}}
+\newcommand{\ellbfhat}{\hat{\ellbf}}
+\newcommand{\abf}{{\utilde{\mathbf a}}}
+\newcommand{\q}{{\mathbf q}}
+\newcommand{\f}{{\mathbf f}}
+\newcommand{\Obf}{\mathbf O}
+
+
+\newcommand{\Xcaln}{{\mathcal X}_{n}}
+\newcommand{\Xbarcal}{\bar{{\mathcal X}}}
+\newcommand{\Xbb}{\mathbb{X}}
+\newcommand{\Fbb}{\mathbb{F}}
+\newcommand{\Ybb}{\mathbb{Y}}
+
+\newcommand{\Xbbhat}{\widehat{\mathbb{X}}}
+\newcommand{\Ss}{\mathbf{S}}
+\newcommand{\Ty}{\T_{y}}
+\makeatletter
+\renewcommand*{\@seccntformat}[1]{%
+   \csname the#1\endcsname.\quad}
+\makeatother
+%\newcommand{\Z}{{\mathbf Z}}
+\newcommand{\z}{{\mathbf z}}
+\newcommand{\Zbar}{\bar{\Z}}
+\newcommand{\Zhat}{\hat{\Z}}
+\newcommand{\Zwidehat}{\widehat{\Z}}
+\newcommand{\Sigmabfhatz}{\greekbold{\hat{\Sigma}}_{\Z}}
+\newcommand{\Sigmabfhatzy}{\greekbold{\hat{\Sigma}}_{\Z|y}}
+\newcommand{\Sigmabfzy}{\Sigmabf_{\Z|y}}
+\newcommand{\sigmahat}{\hat{\sigma}}
+
+\newcommand{\fit}{\mathrm{fit}}
+\newcommand{\res}{\mathrm{res}}
+\newcommand{\rres}{{ 11},\mathrm{res}}
+
+\newcommand{\ffit}{{ 11},\mathrm{fit}}
+\newcommand{\G}{\mathbf{G}}
+\newcommand{\Ll}{\mathbf{L}}
+\newcommand{\Guno}{\mathbf{G_1}}
+\newcommand{\Hh}{\mathbf{H}}
+\newcommand{\Ww}{\mathbf{W}}
+\newcommand{\Mm}{\mathbf{M}}
+\newcommand{\bw}{{\utilde{\mathbf{w}}}}
+
+
+%\newcommand{\pfcpc}{PFC(PC)}
+\newcommand{\pfcpc}{$\mathrm{PFC}_{\mathrm{PC}}$}
+\newcommand{\pfcall}{$\mathrm{PFC}_{\mathrm{all}}$}
+
+\newcommand{\fbf}{{\mathbf f}}
+\newcommand{\fbfhat}{\hat{\fbf}}
+\newcommand{\fhat}{\hat{f}}
+\newcommand{\D}{\mathbf D}
+\newcommand{\cbf}{{\mathbf c}}
+\newcommand{\Dfbf}{\D_{\fbf}}
+\newcommand{\Dfbfhat}{\D_{\fbfhat}}
+\newcommand{\K}{\mathbf K}
+\newcommand{\Khat}{\widehat \K}
+
+\newcommand{\ghat}{\hat{g}}
+\newcommand{\Bhat}{\widehat{\B}}
+\newcommand{\Rhat}{\widehat{R}}
+\newcommand{\vhat}{\widehat{\bv}}
+
+\newcommand{\uhat}{\widehat{\bu}}
+\newcommand{\gbf}{{\mathbf g}}
+\newcommand{\gbfhat}{\hat{\gbf}}
+
+\newcommand{\Dgbf}{\D_{\gbf}}
+\newcommand{\Dgbfhat}{\D_{\gbfhat}}
+
+\newcommand{\obf}{\mathbf o}
+\newcommand{\Pbf}{{\mathbf P}}
+\newcommand{\Qbf}{{\mathbf Q}}
+\newcommand{\Qfbf}{\Qbf_{\fbf}}
+\newcommand{\Qfbfhat}{\Qbf_{\fbfhat}}
+\newcommand{\Qgbf}{\Qbf_{\gbf}}
+\newcommand{\Qgbfhat}{\Qbf_{\gbfhat}}
+\newcommand{\Pgbf}{\Pbf_{\gbf}}
+
+\newcommand{\T}{\mathbf T}
+\newcommand{\tT}{\widetilde{\T}}
+\newcommand{\tV}{\widetilde{\V}}
+\newcommand{\dT}{\dot{\T}}
+\newcommand{\dV}{\dot{\V}}
+\newcommand{\ddT}{\ddot{\T}}
+\newcommand{\V}{{\mathbf V}}
+\newcommand{\Vhat}{\widehat \V}
+%\newcommand{\bv}{{\utilde{\mathbf v}}}
+\newcommand{\bu}{{\utilde{\mathbf u}}}
+\newcommand{\Vhalf}{{\mathbf V}^{\half}}
+\newcommand{\tL}{{\widetilde L}}
+%\newcommand{\bd}{\deltabf}
+
+\newcommand{\ahat}{{\hat{a}}}
+\newcommand{\bhat}{{\hat{b}}}
+
+\newcommand{\U}{{\mathbf U}}
+\newcommand{\tD}{{\tilde{D}}}
+\newcommand{\W}{{\mathbf W}}
+\newcommand{\dbf}{{\mathbf d}}
+\newcommand{\Lbf}{{\mathbf L}}
+\newcommand{\F}{{\mathbf F}}
+\newcommand{\M}{{\mathbf M}}
+%\newcommand{\N}{{\mathbf N}}
+\newcommand{\s}{{\mathbf S}}
+\newcommand{\sy}{{\mathbf S}_{y}}
+\newcommand{\bbf}{{\utilde{\mathbf b}}}
+\newcommand{\A}{{\mathbf A}}
+\newcommand{\B}{{\mathbf B}}
+\newcommand{\Q}{{\mathbf Q}}
+\newcommand{\C}{{\mathbf C}}
+\newcommand{\Chat}{\widehat{\mathbf C}}
+\newcommand{\Dhat}{\widehat{\mathbf D}}
+\newcommand{\e}{\utilde{\mathbf e}}
+\newcommand{\Ebf}{{\mathbf E}}
+\newcommand{\g}{\mathbf g}
+\newcommand{\R}{{\mathbb{ R}}}
+\newcommand{\Ghat}{\widehat{\G}}
+\newcommand{\Hbf}{{\mathbf H}}
+\newcommand{\h}{\mathbf h}
+\newcommand{\tB}{\widetilde{\B}}
+\newcommand{\tC}{\widetilde{\C}}
+\newcommand{\mpc}{M_{\mathrm{\scriptscriptstyle{PC}}}}
+\newcommand{\mpfc}{M_{\mathrm{\scriptscriptstyle{PFC}}}}
+\newcommand{\lpc}{L_{\mathrm{\scriptscriptstyle{PC}}}}
+\newcommand{\lpfc}{L_{\mathrm{\scriptscriptstyle{PFC}}}}
+\newcommand{\tlpfc}{\widetilde{L}_{\mathrm{\scriptscriptstyle{PFC}}}}
+
+
+
+% Greek Bold Face symbols
+
+\newcommand{\greekbold}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\alphabf}{{\utilde{\greekbold{\alpha}}}}
+\newcommand{\alphabfhat}{\widehat{\alphabf}}
+\newcommand{\alphahat}{\widehat{\alpha}}
+\newcommand{\alphabfs}{\greekbold{\scriptstyle \alpha}}
+\newcommand{\etabf}{\utilde{\greekbold{\eta}}}
+\newcommand{\etabftd}{\widetilde{\etabf}}
+\newcommand{\etabfs}{\greekbold{\scriptstyle \eta}}
+\newcommand{\betabf}{\utilde{\greekbold{\beta}}}
+%\newcommand{\taubf}{\utilde{\greekbold{\tau}}}
+\newcommand{\lambdabf}{\utilde{\greekbold{\lambda}}}
+\newcommand{\etabfhat}{\hat{\greekbold{\eta}}}
+\newcommand{\rhobf}{\greekbold{\rho}}
+\newcommand{\betabfhat}{\widehat{\greekbold{\beta}}}
+\newcommand{\betabfs}{\greekbold{\scriptstyle \beta}}
+\newcommand{\taubfhat}{\hat{\greekbold{\tau}}}
+\newcommand{\taubfn}{\taubf_{n}}
+\newcommand{\taubfhatn}{\hat{\taubf}_{n}}
+\newcommand{\Lambdabf}{\greekbold{\Lambda}}
+\newcommand{\Lambdabfhat}{\widehat{\greekbold{\Lambda}}}
+\newcommand{\Lambdabfs}{\greekbold{\scriptstyle{\Lambda}}}
+\newcommand{\epsilonbf}{{\utilde{\greekbold{\epsilon}}}}
+\newcommand{\mubfbar}{\bar{\mubf}}
+\newcommand{\mubfhat}{\hat{\mubf}}
+\newcommand{\mubfs}{{\greekbold{\scriptstyle \mu}}}
+\newcommand{\J}{\mathbf J}
+\newcommand{\gammabf}{\greekbold{\gamma}}
+\newcommand{\gammabfhat}{\hat{\greekbold{\gamma}}}
+\newcommand{\gammabfy}{\greekbold{\gamma}_{y}}
+\newcommand{\Gammabf}{\greekbold{\Gamma}}
+\newcommand{\Gammabft}{\widetilde{\greekbold{\Gamma}}}
+\newcommand{\gammabfs}{\greekbold{{\scriptstyle \gamma}}}
+\newcommand{\Gammabfs}{{\greekbold{\scriptstyle \Gamma}}}
+\newcommand{\Gammabfhat}{\widehat{\greekbold{\Gamma}}}
+\newcommand{\deltabf}{\greekbold{\delta}}
+\newcommand{\Deltabf}{\greekbold{\Delta}}
+\newcommand{\Deltabfhat}{\widehat{\greekbold{\Delta}}}
+\newcommand{\Deltabfs}{{\greekbold{\scriptstyle \Delta}}}
+\newcommand{\deltabfs}{{\greekbold{\scriptstyle \delta}}}
+\newcommand{\Deltabfshat}{{\widehat{\greekbold{\scriptstyle \Delta}}}}
+\newcommand{\omegabf}{\greekbold{\omega}}
+\newcommand{\Omegabf}{\greekbold{\Omega}}
+\newcommand{\Omegabft}{\widetilde{\greekbold{\Omega}}}
+\newcommand{\Omegabfs}{{\greekbold{\scriptstyle \Omega}}}
+\newcommand{\Omegabfstd}{{\tilde{\greekbold{\scriptstyle \Omegabf}}}}
+\newcommand{\Omegabfsbar}{{\bar{\greekbold{\scriptstyle{\Omegabf}}}}}
+\newcommand{\Omegabftd}{\widetilde{\Omegabf}}
+\newcommand{\Omegabfbar}{\bar{\Omegabf}}
+\newcommand{\Omegabfhat}{\widehat{\greekbold{\Omega}}}
+\newcommand{\phibf}{\greekbold{\phi}}
+\newcommand{\phibfhat}{\hat{\greekbold{\phi}}}
+
+
+\newcommand{\Sigmabf}{\greekbold{\Sigma}}
+\newcommand{\Sigmabfhat}{\greekbold{\widehat{\Sigma}}}
+\newcommand{\Sigmabft}{\greekbold{\widetilde{\Sigma}}}
+\newcommand{\Sigmabfhats}{{\greekbold{\scriptstyle \widehat{\Sigma}}}}
+\newcommand{\Sigmabfs}{{\greekbold{\scriptstyle \Sigma}}}
+\newcommand{\mubf}{\utilde{\greekbold{\mu}}}
+
+\newcommand{\xibf}{\greekbold{\xi}}
+\newcommand{\xibfy}{\xibf_{y}}
+\newcommand{\xibfs}{{\greekbold{\scriptstyle \xi}}}
+\newcommand{\xibfhat}{{\hat{\xibf}}}
+\newcommand{\xibfhats}{\hat{\xibfs}}
+
+\newcommand{\xibfhaty}{{\hat{\xibf}_{y}}}
+\newcommand{\txibf}{\tilde{\greekbold{\xi}}}
+\newcommand{\txibfs}{\tilde{\greekbold{\scriptstyle \xi}}}
+\newcommand{\Phibf}{\greekbold{\Phi}}
+\newcommand{\Phibfhat}{\widehat{\Phibf}}
+\newcommand{\Phibfs}{\greekbold{\scriptstyle \Phi}}
+\newcommand{\Phibfshat}{\hat{\Phibfs}}
+%\newcommand{\thetabf}{\utilde{\greekbold{\theta}}}
+\newcommand{\varepsilonbf}{\greekbold{\varepsilon}}
+
+\newcommand{\zetabf}{\greekbold{\zeta}}
+\newcommand{\tzetabf}{\tilde{\greekbold{\zeta}}}
+\newcommand{\zetabfhat}{{\hat{\zetabf}}}
+\newcommand{\zetabfs}{{\greekbold{\scriptstyle \zeta}}}
+\newcommand{\zetabfhats}{\hat{\zetabfs}}
+\newcommand{\nubf}{\greekbold{\nu}}
+\newcommand{\nubfhat}{{\hat{\nubf}}}
+
+\newcommand{\lambdahat}{\hat{\lambda}}
+\newcommand{\ic}{(i)}
+
+\newcommand{\fa}[1]{2{#1}}
+\newcommand{\fb}[1]{1{#1}}
+\newcommand{\Si}[1]{\Gammabf_{#1}\Omegabf_{#1}\Gammabf_{#1}^{T}}
+\newcommand{\Sinv}[1]{\Gammabf_{#1}\Omegabf_{#1}^{-1}\Gammabf_{#1}^{T}}
+
+
+%subspace notation
+\newcommand{\syx}{\mathcal{S}_{Y|\X}}
+\newcommand{\syz}{\mathcal{S}_{Y|\Z}}
+\newcommand{\spc}{{\mathcal S}}
+\newcommand{\spchat}{\widehat{\mathcal S}}
+\newcommand{\dist}{{\mathcal D}}
+\newcommand{\Mhat}{\widehat{{\mathbf M}}}
+\newcommand{\Mhatsir}{\widehat{\mathbf M}_{\mathrm{\scriptscriptstyle{SIR}}}}
+\newcommand{\Msir}{\mathbf{M}_{\mathrm{\scriptscriptstyle{SIR}}}}
+\newcommand{\Msave}{\mathbf{M}_{\mathrm{\scriptscriptstyle{SAVE}}}}
+\newcommand{\Mhatsave}{\widehat{\mathbf M}_{\mathrm{\scriptscriptstyle{SAVE}}}}
+\newcommand{\ospc}{{\mathcal O}}
+\newcommand{\hspc}{{\mathcal H}}
+\newcommand{\gspc}{{\mathcal G}}
+\newcommand{\mspc}{{\mathcal M}}
+\newcommand{\ols}{\mathrm{ols}}
+\newcommand{\pfc}{\mathrm{pfc}}
+\newcommand{\mse}{\mathrm{MSE}}
+\newcommand{\bspc}{\mathcal B}
+\newcommand{\espc}{{\cal E}}
+\newcommand{\vspc}{{\mathcal V}}
+\newcommand{\iseb}{{\cal IE}_{\Sigmabfs}(\bspc)}
+\newcommand{\seb}{{\cal E}_{\Sigmabfs}(\bspc)}
+\newcommand{\sebhat}{\widehat{{\cal E}}_{\Sigmabfs}(\bspc)}
+\newcommand{\sebp}{{\cal E}_{\Sigmabfs}(\bspc_{1})}
+\newcommand{\indep}{\;\, \rule[0em]{.03em}{.67em} \hspace{-.25em}
+\rule[0em]{.65em}{.03em} \hspace{-.25em}
+\rule[0em]{.03em}{.67em}\;\,}
+\newcommand{\iespc}{{\cal IE}}
+\newcommand{\isebp}{{\cal IE}_{\Sigmabfs}^{\perp}(\bspc)}
+\newcommand{\isebjhat}[1]{\widehat{{\cal IE}}_{\Sigmabfs}(\bspc)}
+%\newcommand{\ZeroF}{{\bf 0}}
+\newcommand{\Onebf}{{\utilde{\bf 1}}}
+%\newcommand{\Onebf}{ {\underaccent{\sim}{\bf 1}}}
+%\newcommand{\Ll}{\underaccent{\sim}{ l}}
+%\newcommand{\ZeroF}{ {\underaccent{\sim}{\bf 0}}}
+\newcommand{\ZeroF}{{\utilde{\bf 0}}}
+\newcommand{\ProjOne}[1]{\frac{\Onebf_{#1} \Onebf_{#1}^T}{#1} }
+\newcommand{\ProjOneK}{\frac{\Onebf_K \Onebf_K^T}{K} }
+
+%\newtheorem{prop}{Proposition}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{Lemma}{Lemma}
+%\newtheorem{proof}{Proof}
+
+
+
+\newcommand{\bI}{ { \bf I }}
+%\newcommand{\bX}{ \utilde{ \bf X }}
+%\newcommand{\bx}{ {\utilde{ \bf x }}}
+%\newcommand{\bY}{ \utilde{ \bf Y }}
+%\newcommand{\bt}{ \utilde{ \bf t }}
+%\newcommand{\by}{ {\utilde{ \bf y} }}
+%\newcommand{\bZ}{ \utilde{ \bf Z }}
+%\newcommand{\bz}{ {\utilde{ \bf z }}}
+\newcommand{\bzero}{ {\utilde{ \bf 0 }}}
+\newcommand{\ba}{ \utilde{ \textit{\textbf{a}}}}
+\newcommand{\bb}{ \utilde{ \textit{\textbf{b}}}}
+\newcommand{\EE}{\text{E}}
+\newcommand{\Var}{\text{Var}}
+\newcommand{\bbeta}{\utilde{\boldsymbol \beta}}
+\newcommand{\bOmega}{\mbox{\boldmath{$\Omega$}}}
+\newcommand{\bpsi}{\mbox{\boldmath{$\psi$}}}
+\newcommand{\btheta}{\utilde{\boldsymbol \theta}}
+\newcommand{\sC}{ {\cal C} }
+\newcommand{\sM}{ {\cal M} }
+\newcommand{\sX}{ {\cal X} }
+\newcommand{\sY}{ {\cal Y} }
+\newcommand{\sZ}{ {\cal Z} }
+\newcommand{\ee}[1]{\mathrm{e}^{ #1 }}
+\newcommand{\pr}{\text{pr}}
+\newcommand{\RE}{\mathbb{R}}
+\newcommand{\bigqm}[1][1]{\text{\larger[#1]{\textbf{?}}}}
+
+\newcommand{\vsa}{\vspace{.05 in}}
+\newcommand{\vsb}{\vspace{2 em}}
+\newcommand{\vsc}{\vspace{1 em}}
+\usepackage{color,soul}
+
+
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.7}}
+%\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+ 
+ \newcommand{\RowVecSymbol}[2]{  \left(\begin{array}{c}\rvert\\{#1}_{#2,\bigcdot}\\\rvert\end{array}\right)  }
+ \newcommand{\ColumnVecSymbol}[2]{  \left(\begin{array}{c}\rvert\\{#1}_{\bigcdot,#2}\\\rvert\end{array}\right)  }
+ \newcommand{\ColumnVecSymbolNoBracket}[2]{  \begin{array}{c}\rvert\\{#1}_{\bigcdot,#2}\\\rvert\end{array} }
+  \newcommand{\ColumnVecAll}[3]{  \left(\begin{array}{c} {#1}_{1,#2}\\\vdots\\{#1}_{#3,#2}\end{array}\right)  }
+  \newcommand{\ColumnVecAllNoBracket}[3]{  \begin{array}{c} {#1}_{1,#2}\\\vdots\\{#1}_{#3,#2}\end{array}  }
+  \newcommand{\RowVecAll}[3]{  \left(\begin{array}{c} {#1}_{#2,1}\\\vdots\\{#1}_{#2,#3}\end{array}\right)  }
+  \newcommand{\Vector}[2]{  \left(\begin{array}{c}{#1_{}}\\{}\\{} \end{array}\right)  }
+% 
+% 
+%\newenvironment{definition}[2][Definition]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%
+
+%\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%
+%\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%\newcommand{\TextInBox}[2]{\fbox{\begin{minipage}{#1} #2 \end{minipage}}}
+  \newcommand{\MatrSpace}[2]{\R^{{#1}\times {#2}}}
+
+\newcommand{\IfAndOnlyIfArrow}{\stackrel{\text{  if and only if}}{\Longleftrightarrow}}
+
+\newcommand{\IffArrow}{\IfAndOnlyIfArrow}

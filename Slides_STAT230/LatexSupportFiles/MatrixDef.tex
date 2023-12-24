@@ -1,0 +1,210 @@
+
+
+\newcommand \rbind[1]{%
+    \saveexpandmode\expandarg
+    \StrSubstitute{\noexpand#1}{,}{&}[\fooo]%
+    %\StrSubstitute{\fooo}{,}{&}[\fooo]%
+    \StrSubstitute{\fooo}{;}{\noexpand\\}[\fooo]%
+    \StrSubstitute{\fooo}{:}{\noexpand\\}[\fooo]%
+    \restoreexpandmode
+   \left[ \begin{matrix}\fooo\end{matrix}\right]
+    }
+    
+    
+    
+   \newcommand \ColVec[1]{%
+    \saveexpandmode\expandarg
+    \StrSubstitute{\noexpand#1}{,}{\noexpand\\}[\fooo]%
+    %\StrSubstitute{\fooo}{,}{&}[\fooo]%
+    \StrSubstitute{\fooo}{;}{\noexpand\\}[\fooo]%
+    \StrSubstitute{\fooo}{:}{\noexpand\\}[\fooo]%
+    \restoreexpandmode
+   \left[ \begin{matrix}\fooo\end{matrix}\right]
+    }
+     \newcommand \RowVec[1]{%
+    \saveexpandmode\expandarg
+    \StrSubstitute{\noexpand#1}{,}{&}[\fooo]%
+    %\StrSubstitute{\fooo}{,}{&}[\fooo]%
+    \StrSubstitute{\fooo}{;}{&}[\fooo]%
+    \StrSubstitute{\fooo}{:}{&}[\fooo]%
+    \restoreexpandmode
+   \left[ \begin{matrix}\fooo\end{matrix}\right]
+    }
+    
+\newcommand \Row[1]{%
+    \saveexpandmode\expandarg
+    \StrSubstitute{\noexpand#1}{,}{&}[\fooo]%
+    %\StrSubstitute{\fooo}{,}{&}[\fooo]%
+    \StrSubstitute{\fooo}{;}{&}[\fooo]%
+    \StrSubstitute{\fooo}{:}{&}[\fooo]%
+    \restoreexpandmode
+\begin{matrix}\fooo\end{matrix}
+    }    
+    
+    
+    \newcommand \Col[1]{%
+    \saveexpandmode\expandarg
+    \StrSubstitute{\noexpand#1}{,}{\noexpand\\}[\fooo]%
+    %\StrSubstitute{\fooo}{,}{&}[\fooo]%
+    \StrSubstitute{\fooo}{;}{\noexpand\\}[\fooo]%
+    \StrSubstitute{\fooo}{:}{\noexpand\\}[\fooo]%
+    \restoreexpandmode
+    \begin{matrix}\fooo\end{matrix}
+    }
+
+
+
+\newcommand{\ShowRowMatrix}[3]{ \left[ {\begin{array}{ccc}
+  \line(1,0){22} &{#1} &  \line(1,0){22} \\
+     & \vdots& \\
+  \line(1,0){22}  &{#2}& \line(1,0){22} \\
+   &  \vdots & \\
+    \line(1,0){22} &{#3}& \line(1,0){22}  \\
+    \end{array}
+   } \right]}
+ 
+ 
+
+\newcommand{\ShowColMatrix}[3]{ \left[ {\begin{array}{ccccc}
+  \line(0,1){25} & &\line(0,1){25} &  &  \line(0,1){25} \\
+  {#1}  & \ldots & {#2} &\ldots   &{#3} \\
+ \line(0,1){25} &  & \line(0,1){25}  &  &  \line(0,1){25} \\
+    \end{array}
+   } \right]}
+   
+   
+   
+   
+\newcommand{\ShowRowVector}[1]{ \left[ {\begin{array}{ccc}
+  \line(1,0){25} &{#1} &  \line(1,0){25} 
+    \end{array}
+   } \right]}   
+   
+   
+\newcommand{\ShowColVector}[1]{ \left[ {\begin{array}{c}
+  \line(0,1){25} \\    {#1} \\   \line(0,1){25}     \end{array}  } \right]}
+  
+\newcommand{\ColVector}[3]{ \left[ {\begin{array}{c}
+  {#1}\\ \vdots \\    {#2}\\ \vdots\\{#3}  \end{array}  } \right]}
+  
+  
+  
+  
+  
+\newcommand{\EqSetThree}[3]{ \left\{ {\begin{array}{c}
+  {#1}\\ \vdots \\    {#2}\\ \vdots\\{#3}  \end{array}  } \right.}  
+  
+
+
+
+\newcommand{\MatrixTypeA}[3]{ \left[ {\begin{array}{ccc}
+ {#1}_{1,1} & \cdots & {#1}_{1,{#3}}   \\
+  {#1}_{2,1} & \cdots & {#1}_{2,{#3}}   \\
+    \vdots  & \ddots& \vdots  \\
+     {#1}_{{#2},1} & \cdots & {#1}_{{#2},{#3}}   \\
+    \end{array}
+   } \right]}
+ 
+\newcommand{\MatrixTypeAKronecker}[4]{ \left[ {\begin{array}{ccc}
+ {#1}_{11}{#4} & \cdots & {#1}_{1{#3}}{#4}   \\
+  {#1}_{21} {#4} & \cdots & {#1}_{2{#3}} {#4}   \\
+    \vdots  & \ddots& \vdots  \\
+     {#1}_{{#2}1} {#4} & \cdots & {#1}_{{#2}{#3}} {#4}   \\
+    \end{array}
+   } \right]}
+ 
+
+
+
+\newcommand{\ShowIMat}{ {\begin{array}{cccc}
+ 1&  &  &    \\
+  & 1 &  &  \\
+    &  & \ddots &    \\
+     & & & 1   \\
+    \end{array}
+   } }
+ 
+\newcommand{\ShowVecOne}{
+\begin{array}{c}
+ 1\\ 1 \\    1  
+\end{array}
+}
+
+ 
+\newcommand{\ShowUnitVecOne}{
+\begin{array}{c}
+ 1\\ 0 \\   0  
+\end{array}
+}
+
+
+\newcommand{\ShowUnitVecTwo}{
+\begin{array}{c}
+ 0\\ 1 \\   0  
+\end{array}
+}
+
+
+\newcommand{\ShowUnitVecThree}{
+\begin{array}{c}
+ 0\\ 0\\   1  
+\end{array}
+}
+
+\newcommand{\ShowZeroThree}{
+\begin{array}{c}
+ 0\\ 0\\   0 
+\end{array}
+}
+
+
+\newcommand{\TwoBlockMatrix}[2]{\left[  {\begin{array}{c;{2pt/2pt}c}
+   {#1} &  {#2}
+   \end{array} }\right]}
+   
+ \newcommand{\ThreeBlockColVec}[3]{
+   \left[ {\begin{array}{c}
+  #1\\
+  \hdashline[2pt/2pt]\\
+   \vdots\\
+  \hdashline[2pt/2pt]\\
+  #2\\
+  \hdashline[2pt/2pt]\\
+   \vdots\\
+  \hdashline[2pt/2pt]\\
+   #3\\
+    \end{array}
+   } \right]
+   }
+
+
+
+\NewDocumentCommand{\ColDyn}{>{\SplitList{;}}m}
+   {
+     \left[\begin{array}{c}
+       \ProcessList{#1}{ \inserColtitem }
+     \end{array}\right]
+   }
+   \newcommand \inserColtitem[1]{ #1 \\}
+
+
+\makeatletter
+\newcommand{\ColDynAlt}[2][r]{%
+  \gdef\@VORNE{1}
+  \left[\hskip-\arraycolsep%
+    \begin{array}{#1}\vekSp@lten{#2}\end{array}%
+  \hskip-\arraycolsep\right]}
+
+\def\vekSp@lten#1{\xvekSp@lten#1;vekL@stLine;}
+\def\vekL@stLine{vekL@stLine}
+\def\xvekSp@lten#1;{\def\temp{#1}%
+  \ifx\temp\vekL@stLine
+  \else
+    \ifnum\@VORNE=1\gdef\@VORNE{0}
+    \else\@arraycr\fi%
+    #1%
+    \expandafter\xvekSp@lten
+  \fi}
+\makeatother
+
+

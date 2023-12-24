@@ -1,0 +1,6 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Definition of Sets}{2}{0}{1}
+\beamer@sectionintoc {2}{Relationship Between Sets}{11}{0}{2}
+\beamer@sectionintoc {3}{A Few Set Operations }{16}{0}{3}
+\beamer@sectionintoc {4}{Venn Diagrams}{27}{0}{4}
+\beamer@sectionintoc {5}{Disjoint Sets and Partition }{32}{0}{5}

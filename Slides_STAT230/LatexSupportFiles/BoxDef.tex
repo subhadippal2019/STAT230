@@ -1,0 +1,342 @@
+\usepackage{xcolor}
+\usepackage{xparse}
+\definecolor{lightGray}{gray}{0.95}
+\definecolor{lightGrayOne}{gray}{0.9}
+\definecolor{lightBlueOne}{RGB}{204, 255, 255}
+\definecolor{lightBlueTwo}{RGB}{204, 238, 255}
+\definecolor{lightBlueThree}{RGB}{204, 204, 255}
+\definecolor{AltBlue}{RGB}{119,14,161}
+\definecolor{Orchid}{RGB}{186,85,211}
+
+\definecolor{BGBlue}{RGB}{220,221,252}
+\definecolor{BGBlueOne}{RGB}{204,229,255}
+
+\definecolor{DarkGreenOne}{RGB}{34,139,34}
+
+\definecolor{BGGreen}{RGB}{240,243,245}
+\definecolor{lightGreenOne}{RGB}{179, 255, 179}
+\definecolor{lightGreenTwo}{RGB}{198, 255, 179}
+\definecolor{lightGreenThree}{RGB}{243, 255, 230}
+\definecolor{AltGreen}{RGB}{193, 240, 240}
+
+\definecolor{BOGreen}{RGB}{180,0,0}
+\definecolor{BGGreenOne}{RGB}{220,250,220}
+
+\definecolor{lightBrownOne}{RGB}{255, 221, 204}
+\definecolor{lightBrownTwo}{RGB}{255, 229, 204}
+\definecolor{lightBrownThree}{RGB}{242, 217, 230}
+
+
+\definecolor{HLTGreen}{RGB}{230,244,215}
+\definecolor{ExcBrown}{RGB}{153,0,0}
+\definecolor{ExcBGBrown}{RGB}{255,204,204}
+\definecolor{BGYellowOne}{RGB}{255,235,208}
+\definecolor{BGPink}{RGB}{255,215,240}
+
+\newcommand{\MakeVec}[1]{{\utilde{\bf #1}}}
+
+\NewDocumentCommand{\MCOption}{O{1.75in} m}{
+\TextInBoxTwo[BGPink]{ #1 } {\TextInBoxTwo[white]{.1 in }{ \quad}\HLT{#2}}
+}
+
+ \NewDocumentCommand{\ThreeChoices}{O{Do not Know}O{Not confident}O{Confident}}{
+\MCOption{#1} \MCOption{#2} \MCOption{#3}
+}
+ 
+\NewDocumentCommand{\OneBlock}{ O{HLTGreen} m m }{\colorbox{#1}{\begin{minipage}{#2} $ #3$ \end{minipage}}}
+
+\NewDocumentCommand{\HLT}{ O{HLTGreen} m }{\colorbox{#1}{#2}}
+%\NewDocumentCommand{\HLTEQ}{ O{HLTGreen} m }{\colorbox{#1}{$#2$}}
+\NewDocumentCommand{\HLTEQ}{ O{white} m }{\colorbox{#1}{$#2$}}
+
+%\newcommand{\HLT}[1]{\colorbox{HLTGreen}{#1}}
+\newcommand{\DEHLT}[1]{\colorbox{lightGrayOne}{\color{white} #1}}
+
+\newcommand{\TextInBoxOne}[2]{  {\fcolorbox{white}{lightGrayOne}{\begin{minipage}{#1}  #2 \end{minipage}}}}
+
+
+\NewDocumentCommand{\TextInBoxTwo}{ O{lightGrayOne} m m } {{\fcolorbox{white}{#1}{\begin{minipage}{#2} { #3} \end{minipage}}}}
+
+
+\newcommand{\TextInBox}[2]{  {\fcolorbox{BGGreen}{BGGreen}{\begin{minipage}{#1}  #2 \end{minipage}}}}
+\newcommand{\TextInBoxCol}[2]{
+\fcolorbox{BGBlue}{BGBlue}{%
+\begin{minipage}{#1}
+ {\color{AltBlue} #2}
+\end{minipage}}%
+}
+
+\NewDocumentCommand{\TxtBnd}{ O{lightBrownOne} m m } {{\fcolorbox{white}{#1}{\begin{minipage}{#2} { #3} \end{minipage}}}}
+
+
+\newcommand{\BandInTopBox}[2]{
+\fcolorbox{AltBlue}{AltBlue}{%
+\begin{minipage}{#1}{ {\color{white}  #2 \hspace{.1in}} }
+\end{minipage}}%
+}
+
+
+\newcommand{\TextInBoxThm}[2]{
+\fcolorbox{AltBlue}{lightGray}{%
+\begin{minipage}{#1}
+ {\color{black} #2}
+\end{minipage}}%
+}
+
+\newcommand{\TextInBoxThmOne}[2]{
+\fcolorbox{BGBlue}{BGBlueOne}{%
+\begin{minipage}{#1}
+ {\color{AltBlue} #2}
+\end{minipage}}%
+}
+
+\newcommand{\TextInBoxLem}[2]{
+\fcolorbox{BGBlue}{lightGray}{%
+\begin{minipage}{#1}
+ {\color{black} #2}
+\end{minipage}}%
+}
+
+
+
+\newcommand{\TextInBoxLemOne}[2]{
+\vspace{.02 in}
+\noindent
+\fcolorbox{BGBlue}{BGBlue}{%
+\begin{minipage}{#1}
+ {\color{AltBlue} #2}
+\end{minipage}}%
+}
+
+
+
+\newcommand{\DefBox}[1]{
+%\vspace{.1 in}
+\noindent
+\TextInBoxLem{4.5 in }{
+\BandInTopBox{4.4 in }{}
+\TextInBoxLemOne{4.4 in }{
+#1
+}}}
+
+
+
+
+
+\newcommand{\DefBoxOne}[2]{
+%\vspace{.1 in}
+\noindent
+\TextInBoxLem{4.5 in }{
+\BandInTopBox{4.4 in }{#1}
+\TextInBoxLemOne{4.4 in }{
+#2
+}}}
+
+
+\newcommand{\ThmBox}[2]{
+\noindent
+\TextInBoxThm{4.4 in }{
+\TextInBoxThmOne{4.4 in }{
+#1}
+#2}
+}
+
+\newcommand{\LemBox}[2]{
+\noindent
+\TextInBoxLem{4.5 in }{
+\TextInBoxLemOne{4.4 in }{
+#1}
+#2}
+}
+
+\newcommand{\PropBox}[2]{
+\vspace{.1 in}
+\noindent
+\TextInBoxLem{4.5 in }{
+\TextInBoxLemOne{4.4 in }{
+#1}
+#2}
+}
+
+
+
+
+\newcommand{\TextInBoxExc}[2]{
+\noindent
+\fcolorbox{white}{BGGreenOne}{%
+\begin{minipage}{#1}
+ {\color{black} #2}
+\end{minipage}}%
+}
+
+
+\newcommand{\TextInBoxExample}[2]{
+\noindent
+\fcolorbox{white}{BGPink}{%
+\begin{minipage}{#1}
+ {\color{black} #2}
+\end{minipage}}%
+}
+
+
+\newcommand{\ExerciseBox}[1]{
+\noindent
+%\TextInBoxLem{6 in }{
+\TextInBoxExc{6 in }{
+#1}
+%#2}
+}
+
+
+\newcommand{\ExampleBox}[1]{
+\noindent
+%\TextInBoxLem{6 in }{
+\TextInBoxExample{6 in }{
+#1}
+%#2}
+}
+
+\NewDocumentCommand{\CommentBox}{ O{BGBlue}  m }{
+\TextInBoxLem{5.5in }{
+{\bf Comment:}\\
+\TextInBoxLemOne{5.4 in }{
+#2}}
+}
+
+
+
+\newcommand{\HLTY}[1]{\HLTEQ[yellow]{#1}}
+\newcommand{\HLTW}[1]{\HLTEQ[white]{#1}}
+
+
+
+\newcommand{\qBox}[1]{
+  \begin{tikzpicture}
+\node[draw=none,shade,
+      top color=lightGrayOne,
+      bottom color=lightGray,
+      rounded corners=2pt,
+      blur shadow={shadow blur steps=5}
+    ] at (0,0) {    \noindent 
+\fcolorbox{white}{BGBlue}{%
+\begin{minipage}{4.55 in}
+ {\color{black} {
+ #1}}
+\end{minipage}  }%
+ };
+ 
+    \end{tikzpicture}
+}
+ 
+ 
+
+
+ 
+
+\newcommand{\qBoxCol}[2]{
+  \begin{tikzpicture}
+\node[draw=none,shade,
+      top color=lightGrayOne,
+      bottom color=lightGray,
+      rounded corners=2pt,
+      blur shadow={shadow blur steps=5}
+    ] at (0,0) {    \noindent
+\fcolorbox{white}{#1}{%
+%\begin{minipage}{4.55 in}
+\begin{minipage}{4.55 in}
+ {
+ \color{black} {
+ #2}}
+\end{minipage}  }%
+ };
+ 
+    \end{tikzpicture}
+}
+  
+  
+  
+  
+  
+  
+
+\NewDocumentCommand{\qBrd}{O{4.55 in} m m}{
+  \begin{tikzpicture}
+\node[draw=none,shade,
+      top color=#2,
+      bottom color=#2,
+      rounded corners=2pt,
+      blur shadow={shadow blur steps=5}
+    ] at (0,0) {    \begin{minipage}{#1}
+ {
+ \color{black} {
+ #3}}
+\end{minipage} 
+
+ };
+ 
+    \end{tikzpicture}
+}
+    
+  
+  
+  
+  
+\NewDocumentCommand{\qbx}{O{4.55 in} m m}{
+  \begin{tikzpicture}
+\node[draw=none,shade,
+      top color=lightGrayOne,
+      bottom color=lightGray,
+      rounded corners=2pt,
+      blur shadow={shadow blur steps=5}
+    ] at (0,0) {    \noindent
+\fcolorbox{white}{#2}{%
+%\begin{minipage}{4.55 in}
+\begin{minipage}{#1}
+ {
+ \color{black} {
+ #3}}
+\end{minipage}  }%
+ };
+ 
+    \end{tikzpicture}
+}
+  
+ 
+ 
+ \newcommand{\CurlyBox}[1]{
+\begin{center}
+  \begin{tikzpicture}
+    \node[tape,draw=none,shade,
+      top color=blue!40,
+      bottom color=blue!5,
+      rounded corners=1pt,
+      blur shadow={shadow blur steps=5,shadow blur extra rounding=1.3pt}
+    ] at (2,0){\sffamily\bfseries\large #1};
+  \end{tikzpicture}
+\end{center} 
+ }
+
+
+\newcommand{\CmntBnd}{\BandInTopBox{4.5in}{Comment:}}
+\NewDocumentCommand{\TopBand}{O{Comment:} m}{ \BandInTopBox{4.5in}{#2}}
+
+\newcommand{\DBX}[1]{
+ 	\HLTEQ[AltBlue]{
+ 				\HLTEQ[BGBlue]{  #1  }
+ 	}
+ }
+
+
+
+\NewDocumentCommand{\TransitionFrame}{O{slateblue}m}{
+\begin{frame}{ }
+\qBoxCol{#1!40}{\vspace{.8in}  \begin{center}\qBrd[2in]{#1!70}{ \begin{center} \vspace{.1in}
+  #2 \\
+ \vspace{.1in}
+\end{center}}\end{center}
+\vspace{.7in}
+}
+
+\end{frame}
+
+}
