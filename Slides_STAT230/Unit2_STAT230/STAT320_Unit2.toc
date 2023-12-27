@@ -1,2 +1,2 @@
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Multiplication Principle }{2}{0}{1}
+\beamer@sectionintoc {1}{Multiplication Principle }{3}{0}{1}

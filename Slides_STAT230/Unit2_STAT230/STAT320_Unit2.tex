@@ -92,7 +92,7 @@
 \input{../LatexSupportFiles/BoxDef}
 \input{../LatexSupportFiles/MatrixDef}
 
-
+\newcommand{\Exmpl}[2]{\qBrd[0.75in]{#1}{Example #2:}}
 
 
 
@@ -212,15 +212,22 @@
 
 
 
+\begin{frame}\frametitle{Counting Principles: Objective}
+\qBrd[4.2in]{olive!40}{
+\sqBullet{olive} We will consider a few basic notation of the Combinatorial analysis.    }\\
+\vspace{.1in}
+\qBrd[4.2in]{teal!40}{
+\sqBullet{teal} An efficient way of counting is required in computing probabilities of events.  }\\
+\vspace{.1in}
+\qBrd[4.2in]{babyblue!40}{
+\sqBullet{babyblue} Combinatorial analysis and counting principals is itself a higly nontrivial topic.  Therefore, we will mostly keep our focus on the examples and procedures that would be reciprocal for our discussion on Probability.   }
 
+
+
+\end{frame}
 
 \section{Multiplication Principle }
 \TransitionFrame[bittersweet]{\Large Multiplication Principle  }
-\TransitionFrame[bittersweet]{\Large Permutations  }
-\TransitionFrame[bittersweet]{\Large Combinations  }
-
-\TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
-
 
 \begin{frame}
 	\frametitle{Overview of Counting Principals  }
@@ -230,9 +237,469 @@ Suppose that two experiments are to be performed. Then if experiment 1 can resul
 in any one of $m$ possible outcomes and if, for each outcome of experiment 1, there
 are $n$ possible outcomes of experiment 2, then together there are $m\times n$ possible outcomes of the two experiments.
 \end{defn}	
-	\vspace{2in}
+	\vspace{.5in}
+	
+	\qBrd[4.5in]{applegreen!40}{
+\sqBullet{olive} If a task involves two steps and the
+first step can be completed in $m$ ways and the second step in
+$n$ ways, then there are $m \times n$ ways to complete the task.}
+	
+	
 	
 \end{frame}
+
+
+\begin{frame}
+	\frametitle{Example }
+\qbx[4.5in]{babyblue!40}{
+\Exmpl{babyblue}{1} Enrollment in the course Principles of probability
+consists of: 28 statistics majors, and
+ 53 math major students.  If  2 students are selected at random.  In how many ways can we select one math and one statistics student?
+}
+\pause
+
+{\small Solution: $53 \times 28 = 1484$.}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{2} Say the only clean clothes you've got are 2 t-shirts and 4 jeans.  How many different combinations can you choose? 
+}
+\pause
+
+{\small Solution: $2 \times 4 = 8$.}
+\vspace{2in}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{defn}[Genralized Multiplication Principle of counting]
+If there are $k$ steps in an operation of which first can be done in $n_1$ ways,
+for each of these second can be done in $n_2$ ways, for each of
+the first two the third step can be done in $n_3$ ways, and so
+forth, then the whole operation can be done in
+$\HLTY{n_1 \times n_2 \times  n_3 \times \cdots  \times  n_k}$ ways.
+\end{defn}	
+	\vspace{.5in}
+	
+	\qBrd[4.5in]{applegreen!40}{
+\sqBullet{olive} If a task involves two steps and the
+first step can be completed in $m$ ways and the second step in
+$n$ ways, then there are $m \times n$ ways to complete the task.}
+	
+	
+	
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+	
+	
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{3} A college planning committee consists of 3 freshmen, 4 sophomores, 5 juniors, and 2 seniors.  A subcommittee of 4, consisting of 1 person from each class, is to be chosen.  How many
+different subcommittees are possible?
+}
+\pause
+
+{\tiny Solution: We may regard the choice of a subcommittee as the combined outcome of the four separate
+experiments of choosing a single representative from each of the classes. It then follows from the generalized version of the basic principle that there are $3\times 4\times 5\times 2 = 120$ possible subcommittees.}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{4} A car manufacturer provides cars with the following different variations:
+\begin{enumerate}
+\item Manual or automatic transmission
+\item  With or without air conditioning
+\item  Three different stereo systems
+\item Four possible exterior colors
+\end{enumerate}
+How many different types of car the manufacturer sells?
+}\\
+\vspace{1in}
+\pause
+{\tiny Solution: $2\times 2\times 3\times 4=48$ }
+
+
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+\qbx[4.5in]{cherryblossompink!40}{
+\Exmpl{cherryblossompink}{} How many different 7-place license plates are possible if the first 3 places are to be occupied by letters and the final 4 by numbers?
+}\\
+\vspace{1in}
+\pause
+{\tiny Solution: By the generalized version of the basic principle, the answer is $26\times 26\times 26 \times 10\times 10\times 10\times 10 = 175, 760,000.$}
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+
+
+
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal}{5} An airline has six flights (6 flight numbers) from New York to California and seven flights  (7 different flight numbers ) from California to
+Hawaii per day.  If the flights are to be made on separate days, how many different flight
+arrangements can the airline offer from New York to Hawaii?}\\
+%
+%\define{Factorial}{
+%For a positive integer $n$, $n!$ (read $n$ factorial) is the product of
+%all of the positive integers less than or equal to $n$. That is,
+%$n! = n x (n - 1) x (n - 2) \times  \ldots  \times  3 \times  2 \times  1.$
+%Furthermore, we define $0! = 1$.}
+\vspace{1in}
+\pause
+{\tiny Solution: $6\times 7=42$ }
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\begin{itemize}
+\item The Notion of \HLTY{\text{Order in Arrangements}}
+\item The Notion of \HLTY{\text{With Replacement}} or  \HLTY{\text{Without Replacement}}
+\end{itemize}
+
+\end{frame}
+
+
+\TransitionFrame[bittersweet]{\Large {\bf Ordered}  Arrangements {\bf with} Replacements   }
+
+
+\begin{frame}{Ordered Arrangements {\bf with} Replacements }
+\begin{center}
+\define{Ordered Arrangements with Replacement}{
+Let $n, r$ be positive  integers.  Number of different ways a sequence of $r$ symbols can be created from $n $ distinct symbols (when repetition of the symbols are allowed) is $\HLTEQ[yellow]{n^r}$. \\
+\vspace{.1in}}
+\vspace{-.2in}
+\qBrd[4.3in]{amethyst!30}{ \tiny You may also view the procedure as the following: Number of different ways $r-$tuples (a vector with $r$ coordinates) can be constructed where elements of each coordinates are chosen arbitrary from a set containing $n$ distinct objects.  }\\
+\vspace{1.2in}
+
+
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\qBrd[4.5in]{applegreen!30}{ \Exmpl{applegreen!50}{} From the numbers \{1, 2, \ldots ,44\}, a person
+may pick any six for her ticket.  How many different groups of six numbers can be chosen from the forty-four {\bf if the repeated selection of the numbers is allowed while the same numbers selected in a different order is considered different sequence?
+} }
+
+
+\vspace{1.8in}
+\pause
+{\tiny Solution:  \HLT[yellow]{$44^6$}}
+
+\end{frame}
+
+
+
+
+
+
+
+
+\TransitionFrame[bittersweet]{\Large Permutations:{\small {\bf Ordered} Arrangements {\bf Without} Replacements}    }
+
+\begin{frame}
+
+
+\define{Factorial}{
+For a positive integer $n$, $n!$ (read $n$ factorial) is the product of
+all of the positive integers less than or equal to $n$. That is,
+$\HLTY{\HLTW{n!} = n \times  (n - 1) \times (n - 2) \times  \ldots  \times  3 \times  2 \times  1.}$
+Furthermore, we define $\HLTEQ[purple!30]{\HLTW{0!} = 1}$.}
+
+\vspace{1in}
+\pause
+\qBrd[4.5in]{olive!30}{Example: $4!=4\times 3\times 2\times 1=24.$}
+\qBrd[4.5in]{babyblue!30}{Example: $6!=6\times 5 \times 4\times 3\times 2\times 1=720.$}\\
+\vspace{.05in}
+\qBrd[4.5in]{amethyst!30}{\sqBullet{amethyst}Note that $n!=n\times (n-1)!$, for $n$ integer and  $n\geq 1$.}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{center}
+\define{Permutations (Ordered, without replacement)}{ Let $r$ be a positive integer such that $r\leq n$.  An ordered arrangement of $r$ distinct objects is called a permutation.  The number of ways of ordering $n$ distinct objects taken $r$  at a time will be designated by the symbol $^nP_r$. \vspace{-.18in}   Note that  $$\HLTEQ[yellow]{  ^nP_r=  \HLTEQ[white]{n(n - 1)(n- 2)(n - r + 1) }= \frac{n!}{(n - r )!}     }.$$
+\vspace{.2in}
+}
+\vspace{-.3in}
+\qBrd[4.3in]{teal!30}{This is also the different ways $r$ different objects can be chosen from n different objects  when the order of the choice is  important.  However, there is no repetition in the choices of $r$ objects. }
+\end{center}
+\qbx[4.5in]{ceil!30}{\sqBullet{ceil}The number of possible permutations of n distinct objects is
+given by: $n! =n\times (n-1) \times \cdots \times 2\times 1$. }
+
+\vspace{1in}
+\end{frame}
+
+
+
+\begin{frame}
+\qbx[4.5in]{cambridgeblue!40}{\Exmpl{cambridgeblue}{}
+How many different words can you make with the letters
+\HLTW{\text{"CAN"}}?}\\
+\vspace{2.5in}
+\pause
+{\tiny
+ Solution:  $3! = 6$ }
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\qbx[4.5in]{bluebell!40}{\Exmpl{bluebell}{}
+How many different batting orders are possible for a
+baseball team consisting of 9 players?}\\
+\vspace{2.5in}
+\pause
+{\tiny
+ Solution: There are $9! = 362880$ possible batting orders. }
+\end{frame}
+
+
+
+\begin{frame}
+\qbx[4.5in]{carnationpink!40}{\Exmpl{carnationpink}{}
+A class in probability theory consists of 6 men and 4
+women. An examination is given, and the students are ranked
+according to their performance. Assume that no two students
+obtain the same score.
+\begin{enumerate}[(a)]
+\item How many different rankings are possible?
+\item  If the men are ranked just among themselves and the women
+just among themselves, how many different rankings are possible?
+\end{enumerate}}\\
+\vspace{.5in}
+\pause
+{\tiny
+ Solution:
+ \begin{enumerate}[(a)]
+ \item  Because each ranking corresponds to a particular
+ordered arrangement of the 10 people, the answer to this part is
+$10! = 3,628,800$.
+\item  Since there are 6! possible rankings of the men among
+themselves and 4! possible rankings of the women among
+themselves, it follows from the basic principle that there are
+$(6!)(4!) = (720)(24) = 17280$ possible rankings in this case.
+\end{enumerate}  
+}
+\end{frame}
+
+
+
+\begin{frame}
+\qbx[4.5in]{applegreen!40}{\Exmpl{applegreen}{}
+Ms. Jones has 10 books that she is going to put on
+her bookshelf. Of these, 4 are mathematics books, 3 are chemistry
+books, 2 are history books, and 1 is a language book. Ms. Jones
+wants to arrange her books so that all the books dealing with the
+same subject are together on the shelf. How many different
+arrangements are possible?}\\
+\vspace{1in}
+\pause
+{\tiny
+ Solution: There are $4! 3! 2! 1!$ arrangements such that the
+mathematics books are first in line, then the chemistry books, then
+the history books, and then the language book. Similarly, for each
+possible ordering of the subjects, there are $4! 3! 2! 1!$ possible
+arrangements. Hence, as there are $4!$ possible orderings of the
+subjects, the desired answer is $4! (4! 3! 2! 1!) = 6912$. }
+\end{frame}
+
+\TransitionFrame[bittersweet]{\Large Combinations: {\small Arrangements {\bf without replacement} when {\bf order is not important}}  }
+
+
+
+
+\begin{frame}{Combinations (Un-ordered, without replacement)}
+\begin{center}
+\define{Combinations}{ The number of combinations of $n$ objects taken $r$ at a time is the number of subsets, each of size $r$ , that can be formed from the $n$ objects. 
+This number will be denoted by $^nC_r$ or $$\HLTEQ[yellow]{\large {n \choose r }= \frac{n!}{r! (n-r)!}}$$
+}
+\vspace{-.2in}
+\qBrd[4.1in]{amethyst!40}{
+This is also the different ways $r$ different objects can be chosen from n different objects  when the order of the choice is not important. However, there is no repetition in the choices of $r$ objects. }
+\end{center}
+
+
+
+\end{frame}
+
+
+\begin{frame}
+\qbx[4.5in]{amethyst!40}{\Exmpl{amethyst}{}
+A motherboard has 8 slots, where we want to place 4
+{\bf identical} cards.  How many possibilities are there?}\\
+\vspace{2in}
+\pause
+ Ans:  \HLT[yellow]{${8 \choose 4 }= \frac{8!}{(8-4)! (4!)}$}  
+\end{frame}
+
+
+
+\begin{frame}
+\qbx[4.5in]{applegreen!40}{\Exmpl{applegreen}{}
+From a group of 5 women and 7 men, how many
+different committees consisting of 2 women and 3 men can be
+formed? What if 2 of the men are feuding and refuse to serve on
+the committee together? }\\
+\vspace{1in}
+\pause
+ {\tiny Solution: ${5 \choose 2}\times {7 \choose 3}= 350$\\
+ Now a total of ${2 \choose 2}\times {5 \choose 1}= 5 $ out of ${7 \choose 3}=35$ possible groups of 3
+men contain both of the feuding men, it follows that there are 35 -5 = 30 groups that do not contain
+both of the feuding men. Then, the possible number of committees becomes $30 \times 10 =300$
+ }  
+\end{frame}
+
+\begin{frame}
+\define{Multinomial Probability}{
+The number of ways of partitioning $n$ distinct objects into $k$ distinct groups
+containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object appears in exactly one group and $\sum_{i=1}^{k}n_i=n$, is  
+ $$\HLTEQ[yellow]{\large \displaystyle {n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
+}
+\begin{center}
+\qBrd[4.5in]{amber!40}{The above procedure is also utilized to determine the number of permutations of a set
+of n objects when certain of the objects are indistinguishable
+from each other.}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\qbx[4.5in]{teal!40}{\Exmpl{teal}{}
+How many different words can you make with the letters
+\HLTW{\text{"PEPPER"}}?}\\
+\vspace{2.5in}
+\pause
+{\tiny
+ Solution:  $\frac{6!}{(3!)(2!)(1!)}$ }
+\end{frame}
+
+
+\begin{frame}
+\qbx[4.5in]{amethyst!40}{\Exmpl{amethyst}{}
+A chess tournament has 10 competitors, of which 4
+are Russian, 3 are from the United States, 2 are from Great Britain,
+and 1 is from Brazil. If the tournament result lists just the
+nationalities of the players in the order in which they placed, how
+many outcomes are possible?}\\
+\vspace{1.5in}
+\pause
+{\tiny
+ Solution:  $\frac{10!}{(4!)(3!)(2!)(1!)}$ }
+\end{frame}
+
+
+\begin{frame}
+\qbx[4.5in]{teal!40}{\Exmpl{teal}{}
+How many different signals, each consisting of 9 flags hung in a line, can be made from a set of 4 white  flags, 3 red  flags, and 2 blue  flags if all  flags of the same color are identical?}\\
+\vspace{1.5in}
+\pause
+{\tiny
+ Solution:  $\frac{9!}{(4!)(3!)(2!)}$ }
+\end{frame}
+
+
+
+\begin{frame}
+\qbx[4.5in]{babyblue!40}{\Exmpl{babyblue}{}
+A police department in a small city consists of 10
+officers. If the department policy is to have 5 of the officers
+patrolling the streets, 2 of the officers working full time at the
+station, and 3 of the officers on reserve at the station, how many
+different divisions of the 10 officers into the 3 groups are possible? }\\
+\vspace{1.5in}
+\pause
+{\tiny
+ Solution:  $\frac{10!}{(5!)(2!)(3!)}= 2520$ }
+\end{frame}
+
+
+
+
+\begin{frame}
+\qbx[4.5in]{green!40}{\Exmpl{green}{}
+Ten children are to be divided into an A team and a
+B team of 5 each. The A team will play in one league and the B
+team in another. How many different divisions are possible? }\\
+\vspace{2in}
+\pause
+{\tiny
+ Solution:  $\frac{10!}{(5!)(5!)}= 252$ }
+\end{frame}
+
+
+
+
+\TransitionFrame[bittersweet]{ Arrangements {\bf With Replacement} when {\bf order is not important}  }
+
+\begin{frame}{Unordered Arrangements with Replacement}
+\begin{center}
+\define{Unordered Arrangements with Replacement}{
+Number of ways $n$ indistinguishable objects can be organized into r different groups is $$\frac{(n+r-1)!}{n! (r-1)!}={{n+r-1} \choose {n}}.$$
+}
+\vspace{-.2in}
+\qBrd[4.1in]{guppiegreen!30}{The processes can viewed as: How many different ways $n$ identical  balls can be placed in $r$ different urns.  Ordering of the groups are not important.  }\\
+%
+%\qBox{\Qn: How many different solutions  $(X_1, X_2, \ldots, X_r)$ are there satisfying the equation $X_1+X_2+\ldots + X_r=n$ where we assume $X_i $ to be non-negative integer for all $i=1, \ldots, r$.}
+\vspace{.1in}
+\qBrd[4in]{amethyst!40}{It is also referred to as the occupancy problem }
+\vspace{1.5in}
+\end{center}
+
+
+\end{frame}
+
+
+\begin{frame}
+\qBrd[4.5in]{iceberg!30}{ \Exmpl{iceberg!70}{} From the numbers \{1, 2, \ldots ,44\}, a person
+may pick any six for her ticket.  How many different groups of six numbers can be chosen from the forty-four {\bf if the repeated selection of the numbers are allowed while the order at which the numbers are selected is not important.}
+}\\
+\vspace{1.8in}
+{\tiny
+Solution: \HLT[yellow]{$\frac{(6+44-1)!}{(43!) (6!)}={{49} \choose {43}}$}}
+\end{frame}
+
+
+
+
+
+\TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
+
 
 
 

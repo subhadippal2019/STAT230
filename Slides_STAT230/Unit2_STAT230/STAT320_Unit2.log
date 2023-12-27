@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 DEC 2023 00:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 DEC 2023 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1405,26 +1405,20 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-(./STAT320_Unit2.toc)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 227.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 227.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 227.
+
 Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
 [2
 
-]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 218.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 218.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 218.
-
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 218--218
-[][] 
- []
-
-
+] (./STAT320_Unit2.toc)
 Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1432,7 +1426,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 219--219
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 230--230
 [][] 
  []
 
@@ -1444,11 +1438,6 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 220--220
-[][] 
- []
-
-
 Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1456,8 +1445,20 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 222--222
-[][] 
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 264.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 264.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 264.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 264.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <7> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 264.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 264.
+
+Overfull \vbox (23.69717pt too high) detected at line 264
  []
 
 
@@ -1468,7 +1469,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [6
 
 ]
-Overfull \vbox (19.51157pt too high) detected at line 235
+Overfull \vbox (23.69717pt too high) detected at line 264
  []
 
 
@@ -1479,7 +1480,99 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 242--242
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[8
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[9
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[10
+
+]
+Overfull \vbox (53.50584pt too high) detected at line 318
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[11
+
+]
+Overfull \vbox (53.50584pt too high) detected at line 318
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[12
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[13
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[14
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[15
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[16
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[17
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[18
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[19
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 394--394
 [][] 
  []
 
@@ -1488,7 +1581,320 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[8
+[20
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[21
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[22
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[23
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 430--430
+[][] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[24
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[25
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[26
+
+]
+Overfull \vbox (52.99194pt too high) detected at line 463
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[27
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[28
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[29
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[30
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[31
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[32
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[33
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[34
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[35
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 542--542
+[][] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[36
+
+]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 559.
+
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 559.
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[37
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[38
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[39
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[40
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[41
+
+]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 599.
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[42
+
+]
+Overfull \vbox (2.72093pt too high) detected at line 610
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[43
+
+]
+Overfull \vbox (2.72093pt too high) detected at line 610
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[44
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[45
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[46
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[47
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[48
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[49
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[50
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[51
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[52
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 668--668
+[][] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[53
+
+]
+Overfull \vbox (60.6063pt too high) detected at line 685
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[54
+
+]
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[55
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 701--701
+[][] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[56
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 709--709
+[][] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[57
 
 ]
 \tf@nav=\write6
@@ -1500,30 +1906,40 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 712.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 712.
  (./STAT320_Unit2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 712.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 712.
 Package rerunfilecheck Info: File `STAT320_Unit2.out' has not changed.
 (rerunfilecheck)             Checksum: E5D11493230AD47DC6CB6D0B7E3117E9;60.
  ) 
 Here is how much of TeX's memory you used:
- 28124 strings out of 480608
- 543926 string characters out of 5903631
- 948613 words of memory out of 5000000
- 43287 multiletter control sequences out of 15000+600000
- 572915 words of font info for 83 fonts, out of 8000000 for 9000
+ 28988 strings out of 480608
+ 563634 string characters out of 5903631
+ 955614 words of memory out of 5000000
+ 44041 multiletter control sequences out of 15000+600000
+ 601876 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,16n,79p,799b,1750s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,16n,79p,799b,1747s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit2.pdf (8 pages, 54220 bytes).
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on STAT320_Unit2.pdf (57 pages, 369391 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 18 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2232 PDF objects out of 2487 (max. 8388607)
+ 1849 compressed objects within 19 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 1755 words of extra memory for PDF output out of 10000 (max. 10000000)
 
