@@ -31,7 +31,7 @@
 \definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
 \definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
 
-\setbeamercolor{structure}{fg=bittersweet!70, bg= black!60}
+\setbeamercolor{structure}{fg=babyblue!100, bg= black!60}
 
 
 
@@ -102,7 +102,7 @@
 
 
 
-\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 2: A Few Counting Principles \& and Their Applications}}
+\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 3: Introduction to Probability}}
 
 \author[UAEU]
 {United Arab Emirates University}
@@ -214,25 +214,255 @@
 
 
 
-\section{Multiplication Principle }
-\TransitionFrame[bittersweet]{\Large Multiplication Principle  }
+\section{ Sample Space \& Events}
+
+\TransitionFrame[antiquefuchsia]{\Large Sample Space \& Events  }
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{ Sample Space \& Events}
+	\begin{center}
+	\begin{definition}[Random Experiment]
+A process of observation whose outcome is not known in
+advance with certainty.\\
+\vspace{.1in}
+\end{definition}
+\vspace{-.2in}
+\qBrd[4in]{teal!40}{
+\HLTW{Experiment:}Single throw of a 6-sided die.
+}
+\vspace{.5in}
+\pause
+
+\begin{definition}[Outcome]
+An outcome is defined as any possible result of a random
+experiment.\\
+\vspace{.2in}
+\end{definition}
+\vspace{-.2in}
+\qBrd[4in]{applegreen!40}{
+\HLTW{Experiment:}Single throw of a 6-sided die.  \\\HLTW{\text{An Outcome:}}The number 5 appear in the die-throw example.
+}
+	\vspace{2in}
+	\end{center}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+	\frametitle{ Sample Space}
+		\begin{center}
+	\begin{definition}[Sample Space]
+The set, S, of all possible outcomes of a particular experiment is called the sample space for the experiment. \\
+\vspace{.2in}
+\end{definition}
+\vspace{-.2in}
+\qBrd[4in]{applegreen!40}{
+\HLTW{Experiment:}Single throw of a 6-sided die. 
+}\\
+\vspace{.01in}
+\pause
+\qBrd[4in]{amethyst!40}{
+\HLTW{\text{Sample Space:}} $S= \{1, 2, 3, 4, 5, 6\}$
+}
+\vspace{3in}
+
+	\end{center}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{  Events}
+		\begin{center}
+	
+\begin{definition}[Events]
+An event is any collection of possible outcomes of a particular experiment, that is, any subset of $S$ (including  $\emptyset$ and $S$  itself  ). \\
+\vspace{.2in}
+\end{definition}
+\vspace{-.2in}
+\qBrd[4in]{applegreen!40}{
+\HLTW{Experiment:}Single throw of a 6-sided die. \\\HLTW{\text{Sample Space:}} $S= \{1, 2, 3, 4, 5, 6\}$
+}\\
+\vspace{.01in}
+\pause
+\qBrd[4in]{brightpink!40}{
+\HLTW{\text{Example of Events:}} $\HLTY{A=\{2,4,6\}},  \HLTY{B=\{3\}}$
+}\\
+{\tiny All Possible Events?}
+\vspace{3in}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Example }
+	\begin{center}
+\qbx[4.5in]{apricot!40}{
+\Exmpl{apricot}{}
+\HLTW{\text{Experiment:}} Determination of and recording of the sex of a newborn child.
+}
+\vspace{.1in}
+\pause
+\qBrd[4.5in]{amethyst!40}{
+\HLTW{\text{Sample Space:}} $S=\{B, G\} $
+where the outcome $G$ means that the child is a girl and $B$ that
+it is a boy.}
+
+\end{center}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+	\begin{center}
+\qbx[4.5in]{antiquefuchsia!40}{
+\Exmpl{antiquefuchsia}{}  Consider a context of horse race where 7 horses have participated the race. They are marked as $1, 2, \ldots, 7$. \\\HLTW{\text{Experiment:}  }Recording the order of the horse numbers of 7 horses according to their completion time. The  positions for the horses can be  1, 2, 3, 4, 5, 6, and 7.
+}
+\vspace{.1in}
+\pause
+\qBrd[4.5in]{babyblue!40}{
+\HLTW{\text{Sample Space:}} $S =$ All 7! permutations of (1, 2, 3, 4, 5,6,7)
+}
+\end{center}
+{\tiny 
+An outcome (2,3, 1, 6, 5, 4, 7) means, for instance, that the
+number 2 horse comes in first, then the number 3 horse, then
+the number 1 horse, and so on.
+
+}
+
+
+
+\vspace{2.5in}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+	\begin{center}
+	
+\qbx[4.5in]{atomictangerine!40}{ \Exmpl{atomictangerine}{}Consider the {\bf single flip } of a coin. 
+\\\HLTW{\text{Experiment:}  } Recording the  outcome after flipping a  coin
+}
+\vspace{.1in}
+\pause
+\qBrd[4.5in]{bananamania!80}{
+\HLTW{\text{Sample Space:}} $S =\{H, T\}$
+}
+
+
+
+\end{center}
+\vspace{2.5in}
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Example }
+	\begin{center}
+	
+\qbx[4.5in]{atomictangerine!60}{ \Exmpl{atomictangerine}{}Consider the  flipping of {\bf  two coins.} 
+\\\HLTW{\text{Experiment:}  } Recording the  outcome after flipping {\bf two coins}.
+}
+\vspace{.1in}
+\pause
+\qBrd[4.5in]{bananamania!90}{
+\HLTW{\text{Sample Space:}}\\ $S ={\tiny\{H, T\}\times \{H, T\}}=\HLTY{ \{(H,H), (H,T), (T, H), (T,T)\}}$
+}
+\pause
+\qBrd[4.5in]{applegreen!90}{
+As there is no ambiguity in this case,   for brevity of notation we often/will use the following notation:\\
+\HLTW{\text{Sample Space:}} $\HLTY{S = \{HH, HT, TH, TT\}}$
+}
+
+
+
+\end{center}
+\vspace{2.5in}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+	\begin{center}
+	
+\qbx[4.5in]{amethyst!40}{ \Exmpl{amethyst}{}Consider the  rolling of  a dice {\bf two times  } 
+\\\HLTW{\text{Experiment:}  } Recording the  outcome after rolling  a dice {\bf two times}.
+}
+\vspace{.1in}
+\pause
+\qBrd[4.5in]{ceil!40}{
+\HLTW{\text{Sample Space:}}The sample space consists of the 36 points\\
+ {\tiny S =\{1,2,3,4,5,6\}$\times $\{1,2,3,4,5,6\}}\\
+ $S=\HLTY{ \{(i, j):i,j=1,2,3,4,5,6 \}}$
+ {\tiny where the outcome $(i, j)$ is said to occur if $i$ appears on the first through and  j on the second.
+other die.}
+}
+
+
+
+\end{center}
+\vspace{2.5in}
+
+\end{frame}
+
+
+
+
+
+\TransitionFrame[antiquefuchsia]{\Large Reminder:  Disjoint Events and Partition }
+
+
+\begin{frame}\frametitle{ Disjoint Events \& Partition}
+
+
+\begin{definition}[Pairwise Disjoint Events]
+Two events $A$ and $B$ are disjoint (or mutually exclusive) if $A\cap B=\Phi$.  A collection of events  $\{A_i\}_{i=1}^{n}$ are pairwise disjoint (or mutually exclusive) if $A_i \cap A_j=\Phi$ for all $i \neq j$.
+\end{definition}
+\pause
+\define{Partition}{ $A_1,A_2, \ldots,  A_n$ are called partition of the sample space $S$ if $\{A_i\}_{i=1}^{n}$ is pairwise disjoint and $\HLTY{\displaystyle \cup_{i=1}^{n} A_i=S.}$}
+\pause
+\vspace{.1in}
+\qBrd[4.6in]{teal!40}{
+Comment: Any set $A$ and  it's complement,  $\Not{A}$,  creates  a partition of $S$.}
+\pause
+\qBrd[4.6in]{amethyst!40}{In the above definition we may replace $n$ by $\infty$ and the definition naturally extends. }
+
+\end{frame}
+
+
+
+
+
 \TransitionFrame[bittersweet]{\Large Permutations  }
 \TransitionFrame[bittersweet]{\Large Combinations  }
 
 \TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
 
 
-\begin{frame}
-	\frametitle{Overview of Counting Principals  }
-	
-\begin{defn}[Multiplication Principle of counting]
-Suppose that two experiments are to be performed. Then if experiment 1 can result
-in any one of $m$ possible outcomes and if, for each outcome of experiment 1, there
-are $n$ possible outcomes of experiment 2, then together there are $m\times n$ possible outcomes of the two experiments.
-\end{defn}	
-	\vspace{2in}
-	
-\end{frame}
+
 
 
 
