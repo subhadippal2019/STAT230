@@ -345,7 +345,8 @@ the number 1 horse, and so on.
 
 }
 
-
+\qBrd[4.5in]{darksalmon!70}{ \Qn Let $\HLTY{A}$ be 
+the event that horse 3 wins the race.   Write down the explicit description of A.   }
 
 \vspace{2.5in}
 
@@ -378,22 +379,24 @@ the number 1 horse, and so on.
 \begin{frame}
 	\frametitle{Example }
 	\begin{center}
-	
+	\vspace{-.1in}
 \qbx[4.5in]{atomictangerine!60}{ \Exmpl{atomictangerine}{}Consider the  flipping of {\bf  two coins.} 
 \\\HLTW{\text{Experiment:}  } Recording the  outcome after flipping {\bf two coins}.
 }
-\vspace{.1in}
+\vspace{.01in}
 \pause
 \qBrd[4.5in]{bananamania!90}{
 \HLTW{\text{Sample Space:}}\\ $S ={\tiny\{H, T\}\times \{H, T\}}=\HLTY{ \{(H,H), (H,T), (T, H), (T,T)\}}$
-}
+}\\
 \pause
+\vspace{.01in}
 \qBrd[4.5in]{applegreen!90}{
 As there is no ambiguity in this case,   for brevity of notation we often/will use the following notation:\\
 \HLTW{\text{Sample Space:}} $\HLTY{S = \{HH, HT, TH, TT\}}$
-}
-
-
+}\\
+\vspace{.1in}
+\qBrd[4.5in]{darksalmon!70}{ \Qn Let $\HLTY{B}$ be 
+the event that  the  Head appears on the first coin.Write down the explicit description of B. }
 
 \end{center}
 \vspace{2.5in}
@@ -420,7 +423,10 @@ As there is no ambiguity in this case,   for brevity of notation we often/will u
  {\tiny where the outcome $(i, j)$ is said to occur if $i$ appears on the first through and  j on the second.
 other die.}
 }
-
+\\
+\vspace{.1in}
+\qBrd[4.5in]{darksalmon!70}{ \Qn Let $\HLTY{E}$ be 
+the event that the sum of the dice equals 7.Write down the explicit description of E. }
 
 
 \end{center}
@@ -432,6 +438,36 @@ other die.}
 
 
 
+
+\begin{frame}
+	\frametitle{Example }
+	\begin{center}
+	
+\qbx[4.5in]{applegreen!40}{ \Exmpl{applegreen}{} Consider the experiment in which we  measure (in hours) the lifetime of a transistor.
+\\\HLTW{\text{Experiment:}  } (in hours) the lifetime of a transistor.
+}
+\vspace{.1in}
+\pause
+\qBrd[4.5in]{ceil!40}{
+\HLTW{\text{Sample Space:}} The sample space consists of
+all non-negative real numbers; that is,
+ $S=\HLTY{ \{x\in \R: x>0   \}}=\HLTY{\R_{+}}.$
+}
+\\
+\pause
+\vspace{.1in}
+\qBrd[4.5in]{darksalmon!70}{ \Qn Let $\HLTY{A}$ be 
+the event that  the transistor does not last longer than 5 hours.  Write down the event A in the notation of set theory.  }
+
+
+\end{center}
+\vspace{2.5in}
+
+\end{frame}
+
+
+
+
 \TransitionFrame[antiquefuchsia]{\Large Reminder:  Disjoint Events and Partition }
 
 
@@ -439,16 +475,17 @@ other die.}
 
 
 \begin{definition}[Pairwise Disjoint Events]
-Two events $A$ and $B$ are disjoint (or mutually exclusive) if $A\cap B=\Phi$.  A collection of events  $\{A_i\}_{i=1}^{n}$ are pairwise disjoint (or mutually exclusive) if $A_i \cap A_j=\Phi$ for all $i \neq j$.
+Two events $A$ and $B$ are disjoint (or mutually exclusive) if $A\cap B=\emptyset$.  A collection of events  $\{A_i\}_{i=1}^{n}$ are pairwise disjoint (or mutually exclusive) if $A_i \cap A_j=\emptyset$ for all $i \neq j$.
 \end{definition}
 \pause
-\define{Partition}{ $A_1,A_2, \ldots,  A_n$ are called partition of the sample space $S$ if $\{A_i\}_{i=1}^{n}$ is pairwise disjoint and $\HLTY{\displaystyle \cup_{i=1}^{n} A_i=S.}$}
+\define{Partition}{ $A_1,A_2, \ldots,  A_n$ are called partition of the sample space $S$ if $\{A_i\}_{i=1}^{n}$ is pairwise disjoint and $\HLTY{ \cup_{i=1}^{n} A_i=S.}$}
 \pause
 \vspace{.1in}
-\qBrd[4.6in]{teal!40}{
-Comment: Any set $A$ and  it's complement,  $\Not{A}$,  creates  a partition of $S$.}
+\qBrd[4.7in]{teal!40}{\HLTW{
+Comment:} Any set $A$ and  it's complement,  $\Not{A}$,  creates  a partition of $S$.}
 \pause
-\qBrd[4.6in]{amethyst!40}{In the above definition we may replace $n$ by $\infty$ and the definition naturally extends. }
+\qBrd[4.6in]{amethyst!40}{\HLTW{
+Comment:}In the above definition, we may replace $n$ by $\infty$ and the definition naturally extends. }
 
 \end{frame}
 
@@ -456,7 +493,14 @@ Comment: Any set $A$ and  it's complement,  $\Not{A}$,  creates  a partition of 
 
 
 
-\TransitionFrame[bittersweet]{\Large Permutations  }
+\TransitionFrame[bittersweet]{\Large Axioms of Probability  }
+
+
+
+
+
+
+
 \TransitionFrame[bittersweet]{\Large Combinations  }
 
 \TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
