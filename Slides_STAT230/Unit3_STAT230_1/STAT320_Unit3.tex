@@ -478,13 +478,13 @@ the event that  the transistor does not last longer than 5 hours.  Write down th
 Two events $A$ and $B$ are disjoint (or mutually exclusive) if $A\cap B=\emptyset$.  A collection of events  $\{A_i\}_{i=1}^{n}$ are pairwise disjoint (or mutually exclusive) if $A_i \cap A_j=\emptyset$ for all $i \neq j$.
 \end{definition}
 \pause
-\define{Partition}{ $A_1,A_2, \ldots,  A_n$ are called partition of the sample space $S$ if $\{A_i\}_{i=1}^{n}$ is pairwise disjoint and $\HLTY{ \cup_{i=1}^{n} A_i=S.}$}
+\define{Partition}{ $A_1,A_2, \ldots,  A_n$ are called partition of the sample space $S$ if $\{A_i\}_{i=1}^{n}$ is pairwise disjoint and $\HLTY{ \displaystyle \bigcup_{i=1}^{n} A_i=S.}$}
 \pause
-\vspace{.1in}
 \qBrd[4.7in]{teal!40}{\HLTW{
 Comment:} Any set $A$ and  it's complement,  $\Not{A}$,  creates  a partition of $S$.}
 \pause
-\qBrd[4.6in]{amethyst!40}{\HLTW{
+\vspace{-.15in}
+\qBrd[4.7in]{amethyst!40}{\HLTW{
 Comment:}In the above definition, we may replace $n$ by $\infty$ and the definition naturally extends. }
 
 \end{frame}
@@ -492,18 +492,188 @@ Comment:}In the above definition, we may replace $n$ by $\infty$ and the definit
 
 
 
-
-\TransitionFrame[bittersweet]{\Large Axioms of Probability  }
-
-
+\section{ The Notion of Probability}
+\TransitionFrame[bittersweet]{\Large The Notion of Probability  }
 
 
+\begin{frame}\frametitle{Basic Notion of Probability}
+\begin{itemize}
+\item {\bf Probability} refers to the chance that a particular event will
+occur.
+\vspace{.1in}
+\item The probability of an event is the proportion of times the
+event is expected to occur in repeated experiments.
+\vspace{.1in}
+\item If we denote by $n(E)$ the number of times in the first $n$
+repetitions of the experiment that the event $E$ occurs, the
+probability of the event $E$ is defined by $$P(E) =\lim_{n\mapsto1}
+\frac{n(E)}{n}.$$
+\end{itemize}
+\end{frame}
 
 
 
-\TransitionFrame[bittersweet]{\Large Combinations  }
+\begin{frame}\frametitle{Axiomatic Definition of Probability}
 
-\TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
+\define{Probability}{
+Consider an experiment whose sample space is $S$. For each
+event $E$ of the sample space $S$, we assume that a number
+$P(E)$ is defined and satisfies the following three axioms
+\begin{enumerate}
+\item $0\leq P(E)\leq 1$
+\item $ P(S)= 1$
+\item For any sequence of mutually exclusive events $E_1, E_2, E_3, \ldots ,  $ ((that is, events for which $E_i \cap E_j= \emptyset$ fpr all $i\neq j$)
+$$ P\left(\bigcup_{i=1}^{\infty}E_i \right) = \sum_{i=1}^{\infty}P\left(E_i \right)   $$
+\end{enumerate}
+We refer to $P(E)$ as the probability of the event $ E$.
+}
+\vspace{1.5in}
+
+\end{frame}
+
+
+\begin{frame}
+\qbx[4.6in]{teal!40}{
+\HLTW{Comment: } \\
+\vspace{.05in}
+\qBrd[4.4in]{applegreen!40}{{\bf Axiom 1} states that the probability of an event E is always  between 0 and 1. }\\
+\vspace{.05in}
+\qBrd[4.4in]{olive!40}{{\bf Axiom 2} Probability of the entire sample space is 1. }\\
+\vspace{.05in}
+\qBrd[4.4in]{lime!40}{{\bf Axiom 3} states that, for any sequence
+of mutually exclusive events, the probability of at least one of these
+events occurring is just the sum of their respective probabilities.
+}}
+\end{frame}
+
+\section{ A Few Properties of Probability}
+
+
+
+\begin{frame}{A Few Properties of Probability}
+Let $(S , P )$ be a sample space along with the Probability measure. Let $A, B$ are two events.  Then 
+\begin{itemize}
+\item $P(\emptyset)=0$ where $\emptyset$ denotes the Null set. 
+\item $P(A)\leq 1$. 
+\item $P(\Not{A})=1-P(A)$.
+\item If $A\subset B $ then $P(A)\leq P(B) $.
+\item  $P(A\cup B)= P(A)+P(B)-P(A\cap B)$. 
+\end{itemize}
+
+\vspace{2in}
+
+\end{frame}
+
+
+\begin{frame}
+\vspace{-.2in}
+\qBox{ \Qn: Represent the probability of the following events using $P(A), P(B)$ and $P(A\cap B)$. 
+\begin{itemize}
+\item $P(A- B)= P(A\cap \Not{B})=?$
+\item $P(B- A)=?$
+\item If $A, B$ are disjoint, i.e. $A\cap B=\emptyset$ then what is $P(A\cup B) = ?$
+\end{itemize}
+ }
+ \vspace{.5in}
+ 
+ \qBox{\Qn:
+Let $A, B$ are two events such that  $P(A) = \frac{1}{3}$ and $P(\Not{B}) = \frac{1}{4}$.  Can A and B be disjoint? Explain.}
+\end{frame}
+
+
+\section{Examples}
+\TransitionFrame[bittersweet]{\Large Examples  }
+
+\begin{frame}{ Examples}
+
+\qbx[4.5in]{bronze!40}{
+\Exmpl{bronze}{} A smoke detector system uses two devices, A and B. If smoke is present, the probability that
+it will be detected by device A is 0.95; by device B,0.90; and by both devices, 0.88.
+\begin{enumerate}
+\item If smoke is present, find the probability that the smoke will be detected by either device A or B or both devices.
+\item Find the probability that the smoke will be undetected.
+\end{enumerate}
+ }
+
+\vspace{1in}
+
+{\tiny
+Solution: A: \{device A detects smoke\}   B: \{device B detects smoke\}
+
+$P(A\cup B)= P(A)+P(B)=P(A\cap B)= 0.95+0.90-0.88=.97$
+
+$P(\text{Smoke is undetected })=1- P(\text{Smoke is detected by atleast one devices })  =  1-P(A\cap B)=1-0.97=0.03$
+
+}
+
+\end{frame}
+
+
+
+%__________________________________________
+\begin{frame}{Inclusion Exclusion Principle: Specific Case  $n=3$}
+\qBox{
+Let $A_1, A_2, A_3$ are three events.  Then 
+\begin{eqnarray*}
+ P\left(A_1\cup A_2 \cup A_3\right) 
+ & =&  \left\{ \HLTEQ{P(A_1)+P(A_2)+P(A_3)}\right\}  \nonumber\\
+ & &-  \left\{\HLTEQ[lightBlueOne]{ P(A_1\cap A_2) + P(A_1\cap A_3) + P(A_2\cap A_3) }  \right\}\\
+ & & + \left\{ \HLTEQ{P(A_1\cap A_2 \cap A_3)}     \right\}  
+\end{eqnarray*}  
+}
+
+
+\end{frame}
+%__________________________________________
+\begin{frame}{Inclusion Exclusion Principle}
+
+\begin{lemma}
+Let  $\{A_i\}_{i=1}^{n}$ be a sequence of events, for all $i=1, 2, 3, \ldots, n $. Then 
+$$  P\left(\bigcup_{i=1}^{n}A_i \right)= \sum_{\HLTY{k}=1}^{n } \sum_{\HLTEQ[white]{\HLTEQ[lightBlueTwo]{(i_1,i_2,\ldots,{\HLTY{i_k}})\in \mathbb{Q}_{n,k}}}} (-1)^{\HLTY{k+1}}P\left(\bigcap_{m=1}^{k} A_{i_m} \right) ,  $$
+where   $ \HLTEQ[white]{\HLTEQ[lightBlueTwo]{\mathbb{Q}_{n,k}:= \left\{(i_1, i_2\ldots, i_k)\in \mathbb{Z}_{+}^k: 1\leq i_1<i_2<\ldots<i_{k}\leq n \right\} }}.$ 
+\end{lemma}
+$\mathbb{Q}_{4, 2}=\left\{   \HLTEQ{(1, 2), (1, 3), (1, 4)},  \HLTEQ[lightBlueOne]{(2, 3), (2, 4)},  \HLTEQ[lightGreenTwo]{(3, 4)}   \right\},$
+$\mathbb{Q}_{4, 3}=\left\{   \HLTEQ{(1, 2, 3), (1, 3, 4)},  \HLTEQ[lightGreenTwo]{(2, 3, 4)}\right\},$\\
+$$\HLTEQ[lightBrownOne]{ \HLTEQ[white]{  \mathbb{Q}_{3, 1}=?,\mathbb{Q}_{3, 2}=?}}$$
+
+
+
+\end{frame}
+
+
+
+
+
+\TransitionFrame[bittersweet]{\Large Examples  }
+
+
+\begin{frame}\frametitle{Finite Sample Spaces with Equally Likely Outcomes}
+
+\qBrd[4.6in]{amethyst!40}{\sqBullet{amethyst} In many experiments, it is natural to assume that all outcomes in the sample space are equally likely to occur. }\\
+\vspace{.05in}
+\qBrd[4.6in]{olive!40}{\sqBullet{olive}  That is, consider an experiment whose sample space S is a finite set, say,  $S=\{1, 2, 3, \ldots, N\}.$ Then it is often natural to assume that  $P(\{1\})=P(\{2\})=\ldots =P(\{N\})$  which implies, from
+Axioms 2 and 3, that $P(\{i\})=\frac{1}{N}$ for all $i=1,\ldots N$. }\\
+\vspace{.05in}
+\qBrd[4.7in]{babyblue!40}{\sqBullet{babyblue}  In equally-likely setup, it follows from Axiom 3 that, for any event $E$,  $$P(E)=\frac{\text{Number of outcomes in E}}{\text{Number of outcomes in S}}.$$
+\vspace{-.2in}
+}
+\vspace{.05in}
+\qBrd[4.6in]{applegreen!40}{\sqBullet{applegreen}  In words, if we assume that all outcomes of an experiment are equally likely to occur, then the probability of any event $E$ equals the proportion of outcomes in the sample space that are contained in $E$.
+}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{} If two dice are rolled, what is the probability that the sum of the upturned faces will equal 7?
+}\\
+\pause
+\vspace{2in}
+{\tiny Solution: We shall solve this problem under the assumption that all of the 36 possible outcomes are equally likely.  Since there are 6 possible outcomes namely,  (1; 6); (2; 5); (3; 4), (4; 3); (5; 2), and (6; 1)that result in the sum of the dice being equal to 7, the desired probability is$ \frac{6}{36} =\frac{1}{6}.$}
+\vspace{2in}
+
+\end{frame}
 
 
 
@@ -512,7 +682,158 @@ Comment:}In the above definition, we may replace $n$ by $\infty$ and the definit
 
 
 
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{applegreen!40}{
+\Exmpl{applegreen}{} If 3 balls are randomly drawn from a bowl
+containing 6 white and 5 black balls, what is the probability
+that one of the balls is white and the other two black?
+}\\
+\pause
+\vspace{1.5in}
+{\tiny Solution: $n=11 \times 10\times 9 = 990$ and $n(E)=?$ if
+$E=\{\text{one of the balls is white and the other two black}\}$
+For the order WBB we have $6 \times 5 \times 4=120$
+possibilities, for BWB, we have $5 \times 6 \times 4=120$ possibilities and for BBW we have $ 5\times 4 \times 6=120$
+possibilities. Then $P(E)=\frac{n(E)}{n}=\frac{ 120+120+120}{990} = \frac{4}{11}$.}
+\vspace{2in}
 
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{darksalmon!40}{
+\Exmpl{darksalmon}{} A committee of 5 is to be selected from a group of 6 men and 9 women.  If the selection is made randomly, what is the probability that the committee consists of 3 men and 2 women?
+}\\
+\pause
+\vspace{1.5in}
+{\tiny Solution:  Because each of the ${15 \choose 5}$ possible committees is equally likely to be selected, the desired
+probability is $\frac{{6 \choose 3}\times {9 \choose 2}}{{15 \choose 5}}=0.24$}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{darkraspberry!40}{
+\Exmpl{darkraspberry}{} Suppose 5 people are to be randomly selected from a group of 20 individuals consisting of 10 married couples, and we want to determine $P(N)$, the probability that the 5 chosen are all unrelated. (That is, no two are married to each other.)
+}\\
+\pause
+\vspace{1.5in}
+{\tiny 
+Solution: 
+$P(N)=\frac{{10 \choose 5}\times 2^5}{{20 \choose 5}}\implies P(N)=\frac{20 \times 18\times 16\times 14\times 12}{20\times 19\times 18\times 17\times 16}$
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{darktangerine!40}{
+\Exmpl{darktangerine}{} If $n$ people are present in a room, what is the probability that no two of them celebrate their birthday on the same day of the year? How large need n be so that this probability is less than $\frac{1}{2}$?
+}\\
+\pause
+\vspace{1.5in}
+{\tiny 
+Solution: 
+$\frac{^365P_n}{(365)^n}=\frac{(365)\times (364) \times \cdots \times (365-n+1)}{(365)^n}$
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{cherryblossompink!40}{
+\Exmpl{cherryblossompink}{}A poker hand consists of 5 cards. If the cards have distinct consecutive values and are not all of the same suit, we say that the hand is a straight. For instance, a hand consisting of the five of spades, six of spades, seven of spades, eight of spades, and nine of hearts is a straight.  What is the probability that one is dealt a straight?
+}\\
+\pause
+\vspace{1.5in}
+{\tiny 
+Solution: 
+?
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{capri!40}{
+\Exmpl{capri}{}In the game of bridge, the entire deck of 52 cards is
+dealt out to 4 players. What is the probability that
+\begin{enumerate}[a).]
+\item one of the players receives all 13 spades?
+\item each player receives 1 ace?
+\end{enumerate}
+}\\
+\pause
+\vspace{1.5in}
+{\tiny 
+Solution: 
+?
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}{ Examples: On Sharing a Birthday  }
+
+\qBox{\Qn:
+There are 15 students registered in the course STAT320.  What is the probability that at least two of the students will share their Birthday? (Ignore the leap year and assume there is 365 days in a year) 
+}
+
+
+\pause
+\vspace{1.5in}
+{\tiny Solution: 
+$P(\{\text{At least two students have same birthday}\})=1-P(\text{None of the students have same birthday})=1-\frac{365\times 364\times \ldots \times 351}{365^{15}}\approx 1-0.7470987=0.25  $
+}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}{Application of Inclusion Exclusion Principle}
+
+\qBox{\Qn: Suppose we turn over cards simultaneously from two well shuffled decks of ordinary playing cards. We say we obtain an exact match on a particular turn if the same card appears from each deck; for example, the queen of spades against the
+queen of spades.  Let $C_i$ denotes the event that there is an exact match at the $i^{\text{th}}$ turn.   
+\begin{enumerate}
+\item Argue that   $P(C_i)=\frac{51!}{52!}.$ 
+\item  Argue that  for $i\neq j $,  $P(C_i \cap C_j)= \frac{50!}{52!}$. 
+\item  Argue that  for $i\neq j \neq k $,  $P(C_i \cap C_j \cap C_k)= \frac{49!}{52!}$. 
+\item Let $p_M$ equal the probability of at least one exact match. Show that 
+$p_M:= 1-\frac{1}{2!}+\frac{1}{3!}-\cdots -\frac{1}{52!}$.
+\end{enumerate}
+}
+%\qBox{\Qn:
+%Find the number of nonnative integer solutions of $X_1, X_2, X_3, $  such that $X_1+X_2+X_3=14$. \\
+%\HLT[yellow]{Ans: 120}
+%}
+%
+%\qBox{\Qn:
+% Consider an Experiment,  where a  dice is thrown 4 times.
+%Calculate the probability that the sum of all the through is 17?
+%}
+\end{frame}
 \TransitionFrame[antiquefuchsia]{\Large Questions?  }
  
  
