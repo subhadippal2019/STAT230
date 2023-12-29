@@ -11,6 +11,7 @@
 \usepackage{xmpmulti}
 \usepackage{multicol}
 \usepackage{colortbl}
+\usepackage{fixpauseincludegraphics}
 
 %\setbeamersize{text margin left=.25 in,text margin right=.25 in}
 \setbeamersize{text margin left=.15 in,text margin right=.15 in}
@@ -242,6 +243,14 @@ A Set is a well defined collection of {\bf objects}.
  }
 \end{frame}
 
+
+%\TransitionFrame[antiquefuchsia]{\Large Venn Diagrams }
+\begin{frame}\frametitle{Venn Diagrams}
+  \qbx[4.4in]{applegreen!50}{ \sqBullet{olive}  {\bf Venn Diagrams} are graphical representation of the sets that are often used to depict the relation between various sets  }\\
+  \vspace{1in}
+  \qBrd[4.4in]{teal!50}{ For the rest of the slides, we shall include `Venn Diagrams' for visualization of different set-theoritic concepts.}
+\end{frame}
+
 \begin{frame}\frametitle{Example}
 
 \end{frame}
@@ -256,6 +265,7 @@ A Set is a well defined collection of {\bf objects}.
 \pause
 \item Give a mathematical inclusion rule: $$A=\{x \text{ is an  Integer} \st 1\leq x\leq 6\}$$
 \end{enumerate}
+\vspace{1.5in}
 
 \end{frame}
 
@@ -279,7 +289,7 @@ A Set is a well defined collection of {\bf objects}.
    The {\bf Universal Set} is the set of all elements currently under
 consideration.
   \end{defn}
-\qBrd[2.1in]{white!40}{ It is often denoted by $\Omega$}\\
+\qBrd[4.5in]{white!40}{ In the context of probability theory,   it is often denoted by $\HLTY{\SampleS}$ (or $\Omega$)}\\
 \qBrd[4.0in]{lime!40}{ The universal set contains all of the elements relevant to a
 given discussion.}}\\
 	 \vspace{.1in}
@@ -299,23 +309,21 @@ given discussion.}}\\
 
 \begin{frame}
 	\frametitle{ }
-	
-	\begin{itemize}
-\item[ ] \qbx[4.2in]{teal!40}{\sqBullet{teal} {\bf Subset:} A set A is a subset of a set B all the elements of A are also the elements of B.\\\\
-\qBrd[3.2in]{white}{ If$\HLTY{ x\in A \implies x\in B}$ then $\HLTY{A\subseteq B}$.}
-\vspace{.1in}\\
-\qBrd[3.5in]{white}{{\bf Subsets:} If A is a subset of B then we write $\HLTY{A\subseteq B}$.}\\
-{\tiny  Note: The notation for subset is very similar to the notation for "less
-than or equal to" and means, in terms of the sets, "included
-in or equal to".}
-}
-			\vspace{0.5in}
-		\item[]  \qBrd[4.2in]{blue!30}{ \sqBullet{blue} We write $\HLTY{A\nsubseteq B}$ if $A$ is not included in B}
+	\vspace{-.02in}
+ \qbx[4.6in]{teal!50}{ \qBrd[.6in]{teal!10}{\bf Subset:} A set  \HLTY{A} is called a subset of a set \HLTY{B} if all the elements of A are also the elements of B.\\
+\qBrd[3.2in]{teal!10}{ If$\HLTY{ x\in A \implies x\in B}$ then $\HLTY{A\subseteq B}$.}
+\vspace{.05in}\\
+\qBrd[3.5in]{teal!10}{{\bf Subsets:} If A is a subset of B then we write $\HLTY{A\subseteq B}$.}\\
+{\tiny  Note: The notation for subset is very similar to the notation for "less than or equal to" and means, "included
+in or equal to" in terms of the sets.}
+}\\
+\pause
+			\vspace{1.4in}
+ \qBrd[4.2in]{blue!30}{ \sqBullet{blue}\small We write $\HLTY{A\nsubseteq B}$ if $A$ is not included in B}
 			\vspace{0.2cm}
 
 		
 		\vspace{0.3cm}
-	\end{itemize}
 \end{frame}
 
 
@@ -328,8 +336,8 @@ are also the elements of B, but in addition there exists at least one element $c
 	\item[\sqBullet{olive}] {\bf Proper Subset: } $\HLTY{A\subset B}$,  then we say {\bf A is a proper subset of B.}
 	
 	\end{enumerate}
-	\vspace{.6in}
-	\qBrd[4.5in]{olive!30}{
+	\vspace{1.6in}
+	\qBrd[4.5in]{olive!30}{\tiny 
 	{\bf Comment:} The notation for subset is very similar to the notation 
 	for "less
 than", and means, in terms of the sets, "included in but not
@@ -351,6 +359,7 @@ equal to".}
 
 \begin{frame}
 	\frametitle{Set Operation: Union}
+	\vspace{-.1in}
 	\begin{center}
 \qbx[4.2in]{teal!30}{\qBrd[1in]{olive!30}{\bf A Union B:}  A Union B,  denoted by  $\HLTY{A \cup B}$ is the set of all elements that are either in $A$, or in $ B$, or inside both the sets.\\
 }\\
@@ -359,13 +368,24 @@ equal to".}
   \qbx[3in]{applegreen!50}{  
  The logical operator is \HLTY{\text{OR} }.
   }
+  \includegraphics[scale=.3]{figs/VDblankTwoSets1.png} 
   	\end{center}
 	\vspace{4in}
 	\end{frame}
 	
+\begin{frame}
+ \includegraphics[scale=.36]{figs/BlankVD1.jpg} 
+  \includegraphics[scale=.38]{figs/BlankVD3.jpg} 
+\end{frame}	
+	
+	
+	
+	
+	
 	
 	\begin{frame}
 	\frametitle{Set Operation: Intersection}
+		\vspace{-.1in}
 	\begin{center}
 \qbx[4.2in]{applegreen!40}{\qBrd[1.2in]{teal!30}{\bf A Intersection B:}  A Intersection B,  denoted by  $\HLTY{A \cap B}$ is the set of all elements that are  both $A$ and $B$.\\
 }\\
@@ -374,15 +394,24 @@ equal to".}
   \qbx[3in]{asparagus!60}{  
  The logical operator is \HLTY{\text{AND} }.
   }
+   \includegraphics[scale=.3]{figs/VDblankTwoSets2.png} 
   	\end{center}
 	\vspace{4in}
 	\end{frame}
 	
 
+
+\begin{frame}
+ \includegraphics[scale=.36]{figs/BlankVD1.jpg} 
+ \includegraphics[scale=.38]{figs/BlankVD3.jpg} 
+\end{frame}	
+	
+	
 	
 	
 	\begin{frame}
 	\frametitle{Set Operation: Complement}
+		\vspace{-.1in}
 	\begin{center}
 \qbx[4.2in]{applegreen!40}{\qBrd[1.2in]{teal!30}{\bf A Complement :}  A Complement,  denoted by  $\HLTY{\Not{A}}$ is the set of all elements that are  not in  $A$. {\tiny Sometimes it is also denoted by $A^c$}\\
 }\\
@@ -391,6 +420,8 @@ equal to".}
   \qbx[3in]{asparagus!60}{  
  The logical operator is \HLTY{\text{NOT} }.
   }
+    \includegraphics[scale=.22]{figs/VDblankOneSets1.png} 
+     \includegraphics[scale=.22]{figs/VDblankOneSets2.png} 
   	\end{center}
 	\vspace{4in}
 	\end{frame}
@@ -399,6 +430,7 @@ equal to".}
 
 \begin{frame}
 	\frametitle{Set Operation: Set Difference}
+		\vspace{-.1in}
 	\begin{center}
 \qbx[4.3in]{teal!30}{\qBrd[1in]{olive!30}{\bf A Minus B:}  A Minus B,  denoted by  $\HLTY{A - B}$ is the set of all elements that are only an element of $A$, but not an element of the set $ B$.
 }\\
@@ -410,53 +442,10 @@ equal to".}
   
   {\tiny {\bf Comment:} $\HLTY{A-B}$ is not same as $\HLTY{B-A}$ }
   	\end{center}
+  	 \includegraphics[scale=.2]{figs/VDblankTwoSets1.png} 
+  	  \includegraphics[scale=.2]{figs/VDblankTwoSets1.png} 
 	\vspace{4in}
 	\end{frame}
-
-
-
-
-
-\begin{frame}
-	\frametitle{A Notation}
-	\qBrd[4.1in]{apricot!50}{{\bf Tuple}: Let $k$ be an integer.  A {\bf $\HLTY{k}-$ tuple} is the a the ordered sequence of values often written inside parenthesis while different elements are separated by comma. 
-	}\\
-	
-	{\tiny 
-	Example:
-\begin{itemize}
-\item  $(1.5, 2)$ is a {\bf 2-tuple}. 
-\item  $(1.5, 2, 6, 2)$ is a {\bf 4-tuple}. 
-\item $(H,T, H, H, H)$ is a {\bf 5-tuple}
-\end{itemize}	
-	.}
-	
-	\end{frame}
-	
-	
-	
-	
-	\begin{frame}\frametitle{Set Operation: Cartesian Product}
-	\begin{center}
-\qbx[4.3in]{teal!30}{\qBrd[2.1in]{olive!30}{\bf Cartesian Product of $A$ and $B$:}  Cartesian Product of $A$ and $B$,  denoted by  $\HLTY{A \times B}$ is the set of all ``two-tuple'' objects where the first element in the tuple is from the set A and the second element is taken from the set B. \\
-}\\
-\pause
-\vspace{-.2in}
-  \qbx[3in]{applegreen!50}{  
- $ A \times B=\{(x,y)\st x\in A, y\in B\}. $
-  }
-  	\end{center}
-  	 {\tiny {\bf Comment:} In general $\HLTY{A\times B}$ is not same as $\HLTY{B\times A}$. However, $A\times A$ is denoted by $A^2$.  Note that $A$ is a set and not a number.   }
-  	 
-  	 
-\qbx[4.5in]{teal!20}{\qBrd[2.3in]{olive!30}{Cartesian Product of Multiple Sets}
-Let $A_1$, $A_2$, ..., $A_n$ are  non empty sets.  Then their Cartesian product is defined as  following:\\
-$A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in A_i \text{ for } i =1, \ldots n \right\}.$
-}
-	\vspace{4in}
-	\end{frame}
-
-
 
 
 
@@ -499,8 +488,8 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 	
 \end{frame}
 
-\section{Venn Diagrams}
-\TransitionFrame[antiquefuchsia]{\Large Venn Diagrams }
+\section{A Few  Examples  Using Venn Diagrams}
+\TransitionFrame[antiquefuchsia]{\Large A Few  Examples  Using Venn Diagrams }
 \begin{frame}
   \qbx[4.4in]{applegreen!50}{ \sqBullet{olive}  {\bf Venn Diagrams} are graphical representation of the sets that are typically used to depict the relation between various sets  }
   \vspace{3in}
@@ -519,7 +508,7 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 %\TransitionFrame[antiquefuchsia]{\Large Venn Diagrams: Examples}
 \begin{frame}\frametitle{Venn Diagrams: Examples}
   \begin{center}
-  \qBrd[4.1in]{olive!30}{ Let $\Omega= \{1,2,3,4,5,6,7,8\}$,\\
+  \qBrd[4.1in]{olive!30}{ Let $\SampleS= \{1,2,3,4,5,6,7,8\}$,\\
    $A=\{1,2,6,7\}$,  $B=\{ 2,3,4,7 \}$,  and $C=\{4,5,6,7\}$ }
  \includegraphics[scale=.26]{figs/VennDiagram2.png}
  \end{center} 
@@ -529,13 +518,14 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 
 
 
-\section{Disjoint Sets and Partition }
-\TransitionFrame[antiquefuchsia]{\Large Disjoint Sets and Partition  }
+\section{Disjoint Sets \& Partition }
+\TransitionFrame[wisteria]{\Large Disjoint Sets \& Partition  }
 
 
 
 \begin{frame}
 	\frametitle{Disjoint Sets}
+	\vspace{-.1in}
 	\begin{center}
 \qbx[4.3in]{teal!30}{\qBrd[1in]{olive!30}{\bf Disjoint Sets:}  Two sets  A, and  B are said to be  {\bf Disjoint Sets} or {\bf mutually exclusive sets} if $A$ and $B$ does not have any elements in common.\\
 }\\
@@ -551,7 +541,13 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 
 
 \begin{frame}
+\includegraphics[scale=.35]{figs/BlankVD4.jpg} 
+  	  \includegraphics[scale=.4]{figs/BlankVD5.jpg} 
+\end{frame}
+
+\begin{frame}
 	\frametitle{Exhaustive}
+	\vspace{-.1in}
 	\begin{center}
 \qbx[4.3in]{babyblueeyes!50}{\qBrd[1in]{blue!30}{\bf Exhaustive:}  Two sets A and B are exhaustive for the set  C if $A\cup B =C$.\\
 }\\
@@ -561,11 +557,15 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
   }
   
   	\end{center}
+  	
 	\vspace{4in}
 	\end{frame}
 	
 	
-	
+	\begin{frame}
+\includegraphics[scale=.4]{figs/BlankVD6.jpg} 
+  	 % \includegraphics[scale=.4]{figs/BlankVD3.jpg} 
+\end{frame}
 	
 	
 
@@ -584,9 +584,12 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 	\vspace{4in}
 	\end{frame}
 
-
-\begin{frame}\frametitle{Examples}
-
+\begin{frame}
+\includegraphics[scale=.42]{figs/BlankVD6.jpg} 
+   \includegraphics[scale=.32]{figs/BlankVD4.jpg} 
+\end{frame}
+\begin{frame}\frametitle{Example}
+ \includegraphics[scale=.34]{figs/VDPartition.png} 
 \end{frame}
 
 \begin{frame}\frametitle{Examples}
@@ -613,21 +616,11 @@ Let $\Omega$ be the universal set and $\emptyset$ denotes the emptyset.
 
 
 
-\begin{frame}\frametitle{ A Few Standard Notation}
-\begin{itemize}
-\item  $\mathbb{Z}:$ Set of all Integers.  i.e. $\mathbb{Z}= \{0, -1, 1, -2, 2, -3, 3, \ldots \}$.
-\item  $\mathbb{Z}_{+}:$ Set of all non-negative Integers.  i.e. $\mathbb{Z}_{+}= \{ 1, 2, 3, \ldots \}$.
-\item $\R:$ Set of all real numbers.  
-\item $\R_+:$ Set of all positive real numbers.  
-\end{itemize}
 
-\begin{itemize}
-\item $\R^2= \R\times \R=\{(x_1,x_2): x_1\in \R, x_2\in \R\}$
-\item $\R^3= \R\times \R \times \R=\{(x_1,x_2, x_3): x_1\in \R, x_2\in \R, x_3\in \R\}$
-\item  $\mathbb{Z}_{+}^2=\mathbb{Z}_{+}\times \mathbb{Z}_{+}=\{(z_1,z_2): z_1\in\mathbb{Z}_{+}  , z_2\in \mathbb{Z}_{+}\}$
-\end{itemize}
-\end{frame}
 
+
+\section{Real Numbers \& Intervals}
+\TransitionFrame[antiquefuchsia]{\Large Real Numbers ($\R$) \& Intervals }
 
 \begin{frame}\frametitle{Real Numbers, Intervals}
 \qbx[4.5in]{amethyst!60}{
@@ -665,6 +658,91 @@ For the definitions below, assume $\HLTW{a\in \R$, $b\in \R}$, and $\HLTW{a<b}$.
 
 \end{frame}
 
+
+
+\section{The Notion of Cartesian Product}
+
+\TransitionFrame[antiquefuchsia]{\Large The Notion of Cartesian Product  }
+\vspace{-.1in}
+\begin{frame}
+	\frametitle{The Notion of `Tuple'}
+	\qBrd[4.6in]{apricot!40}{\qBrd[.4in]{apricot}{\bf Tuple:} Let $k$ be an integer.  A {\bf $\HLTY{k}$-tuple} is the a the ordered sequence of values often written inside parenthesis while different elements are separated by comma. 
+	}\\
+	
+	{\tiny 
+	Example:
+\begin{itemize}
+\item  $(1.5, 2)$ is a {\bf 2-tuple}. 
+\item  $(1.5, 2, 6, 2)$ is a {\bf 4-tuple}. 
+\item $(H,T, H, H, H)$ is a {\bf 5-tuple}
+\end{itemize}	
+}
+\vspace{2in}
+	
+	\end{frame}
+	
+	
+	
+	
+	\begin{frame}\frametitle{Set Operation: Cartesian Product}
+	\begin{center}
+\qbx[4.3in]{teal!30}{\qBrd[2.1in]{olive!30}{\bf Cartesian Product of $A$ and $B$:}  Cartesian Product of $A$ and $B$,  denoted by  $\HLTY{A \times B}$ is the set of all ``two-tuple'' objects where the first element in the tuple is from the set A and the second element is taken from the set B. \\
+}\\
+\pause
+\vspace{-.2in}
+  \qbx[3in]{applegreen!50}{  
+ $ A \times B=\{(x,y)\st x\in A, y\in B\}. $
+  }
+  	\end{center}
+  	 {\tiny {\bf Comment:} In general $\HLTY{A\times B}$ is not same as $\HLTY{B\times A}$. However, $A\times A$ is denoted by $A^2$.  Note that $A$ is a set and not a number.   }
+  	 
+  	 
+\qbx[4.5in]{teal!20}{\qBrd[2.3in]{olive!30}{Cartesian Product of Multiple Sets}
+Let $A_1$, $A_2$, ..., $A_n$ are  non empty sets.  Then their Cartesian product is defined as  following:\\
+$A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in A_i \text{ for } i =1, \ldots n \right\}.$
+}
+	\vspace{4in}
+	\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{ A Few Standard Notation}
+\vspace{-.08in}
+\qbx[4.5in]{blue!40}{
+\begin{itemize}
+\item[]\qBrd[4.1in]{babyblue!40}{$\HLTW{\mathbb{Z}:\;\;}$ Set of all Integers.  i.e. $\mathbb{Z}=\HLTW{ \{0, -1, 1, -2, 2, -3, 3, \ldots \}}$.}\\
+\vspace{-.2in}
+\item[]  \qBrd[4.1in]{babyblue!70}{ $\HLTW{\mathbb{Z}_{+}:}$ Set of all non-negative Integers.  i.e. $\mathbb{Z}_{+}= \HLTW{\{ 1, 2, 3, \ldots \}}$.}
+\end{itemize}	
+}\\
+\vspace{.1in}
+	\qbx[4.5in]{amethyst!70}{
+\begin{itemize}
+\item[] \qBrd[2.6in]{blush!40}{$\HLTW{\R:\;\;}$ Set of all real numbers.  }
+\item[] \qBrd[2.6in]{blush!60}{ $\HLTW{\R_+:}$ Set of all positive real numbers.  }
+\end{itemize}	
+}
+\vspace{-.1in}
+
+\pause
+\qBrd[4.6in]{teal!40}{
+\begin{itemize}
+\item $\HLTW{\R^2}= \R\times \R=\HLTW{\{ \HLTY{(x_1,x_2)}: x_1\in \R, x_2\in \R\}}$
+\item $\HLTW{\R^3}= \R\times \R \times \R=\HLTW{\{\HLTY{(x_1,x_2, x_3)}: x_1\in \R, x_2\in \R, x_3\in \R\}}$
+\item  $\HLTW{\mathbb{Z}_{+}^2}=\mathbb{Z}_{+}\times \mathbb{Z}_{+}=\HLTW{\{\HLTY{(z_1,z_2)}: z_1\in\mathbb{Z}_{+}  , z_2\in \mathbb{Z}_{+}\}}$
+\end{itemize}
+}
+\end{frame}
+
+
+
+
+
+
+\TransitionFrame[tangerine]{\Large Discussion on Cardinality of Sets  }
 \begin{frame}\frametitle{A Discussion on Cardinality of Various Sets}
 
 \end{frame}
