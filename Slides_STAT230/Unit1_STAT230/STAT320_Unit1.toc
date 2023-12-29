@@ -4,5 +4,5 @@
 \beamer@sectionintoc {3}{A Few Set Operations }{18}{0}{3}
 \beamer@sectionintoc {4}{A Few Examples Using Venn Diagrams}{32}{0}{4}
 \beamer@sectionintoc {5}{Disjoint Sets \& Partition }{37}{0}{5}
-\beamer@sectionintoc {6}{Real Numbers \& Intervals}{49}{0}{6}
-\beamer@sectionintoc {7}{The Notion of Cartesian Product}{54}{0}{7}
+\beamer@sectionintoc {6}{Real Numbers \& Intervals}{54}{0}{6}
+\beamer@sectionintoc {7}{The Notion of Cartesian Product}{59}{0}{7}
