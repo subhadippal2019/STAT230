@@ -543,6 +543,7 @@ We refer to $P(E)$ as the probability of the event $ E$.
 
 \begin{frame}
 \qbx[4.6in]{teal!40}{
+\vspace{.2in}
 \HLTW{Comment: } \\
 \vspace{.05in}
 \qBrd[4.4in]{applegreen!40}{{\bf Axiom 1} states that the probability of an event E is always  between 0 and 1. }\\
@@ -552,44 +553,117 @@ We refer to $P(E)$ as the probability of the event $ E$.
 \qBrd[4.4in]{lime!40}{{\bf Axiom 3} states that, for any sequence
 of mutually exclusive events, the probability of at least one of these
 events occurring is just the sum of their respective probabilities.
-}}
+}
+\vspace{.2in}
+}
 \end{frame}
 
 \section{ A Few Properties of Probability}
 
 
 
-\begin{frame}{A Few Properties of Probability}
-Let $(S , P )$ be a sample space along with the Probability measure. Let $A, B$ are two events.  Then 
-\begin{itemize}
-\item $P(\emptyset)=0$ where $\emptyset$ denotes the Null set. 
-\item $P(A)\leq 1$. 
-\item $P(\Not{A})=1-P(A)$.
-\item If $A\subset B $ then $P(A)\leq P(B) $.
-\item  $P(A\cup B)= P(A)+P(B)-P(A\cap B)$. 
-\end{itemize}
 
-\vspace{2in}
 
+\begin{frame}\frametitle{{A Few Properties of Probability}}
+\qbx[4.6in]{antiquefuchsia!60}{
+\vspace{.1in}
+Let $(\SampleS , P )$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ are two events.  Then \\
+\vspace{.1in}
+\qBrd[4.4in]{applegreen!40}{  {\sqBullet{olive}} $P(\emptyset)=0$ where $\emptyset$ denotes the Null set. }\\
+\vspace{.05in}
+\qBrd[4.4in]{apricot!40}{{\sqBullet{apricot}}  $P(A)\leq 1$. }\\
+\vspace{.05in}
+\qBrd[4.4in]{lime!40}{{\sqBullet{lime}}  If $A\subset B $ then $P(A)\leq P(B) $.}\\
+\vspace{.05in}
+\qBrd[4.4in]{brightlavender!40}{{\sqBullet{brightube}}  $P(\Not{A})=1-P(A)$, where  $\Not{A}$ denotes the complementary event to $A$}\\
+\vspace{.05in}
+\qBrd[4.4in]{cadmiumorange!40}{{\sqBullet{cadmiumorange}}  $P(A\cup B)= P(A)+P(B)-P(A\cap B)$.}
+}
 \end{frame}
+
+
+%
+%\begin{frame}{A Few Properties of Probability}
+%Let $(\SampleS , P )$ be a sample space along with the Probability measure. Let $A, B$ are two events.  Then 
+%\begin{itemize}
+%\item 
+%\item 
+%\item
+%\item If $A\subset B $ then $P(A)\leq P(B) $.
+%\item
+%\end{itemize}
+%
+%\vspace{2in}
+%
+%\end{frame}
+
+
+
+
+\begin{frame}\frametitle{  $P(\emptyset)= 0$, and   $P(\SampleS)= 1$}
+\begin{center}
+\includegraphics[scale=.4]{figs/SampleSpace.png} 
+\end{center}
+\vspace{1in}
+\end{frame}
+
+
+\begin{frame}\frametitle{  $P(A)\leq 1$}
+\begin{center}
+\includegraphics[scale=.4]{figs/PALess1.png} 
+\end{center}
+\vspace{1in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{ If $A\subset B $ then $P(A)\leq P(B) $}
+\begin{center}
+\includegraphics[scale=.4]{figs/PALessPB.png} 
+\end{center}
+\vspace{1in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{$P(\Not{A})=1-P(A)$}
+\begin{center}
+\includegraphics[scale=.26]{figs/A_complement.png} 
+\end{center}
+\vspace{1in}
+\end{frame}
+
+
+\begin{frame}\frametitle{$P(A\cup B)= P(A)+P(B)-P(A\cap B)$}
+\includegraphics[scale=.26]{figs/P_A_UNION_B.png} 
+\vspace{1in}
+\end{frame}
+
+
 
 
 \begin{frame}
-\vspace{-.2in}
-\qBox{ \Qn: Represent the probability of the following events using $P(A), P(B)$ and $P(A\cap B)$. 
-\begin{itemize}
+\vspace{-.1in}
+\qBox{ \Qn Represent the probability of the following events using $P(A), P(B)$ and $P(A\cap B)$. 
+\begin{enumerate}
 \item $P(A- B)= P(A\cap \Not{B})=?$
 \item $P(B- A)=?$
 \item If $A, B$ are disjoint, i.e. $A\cap B=\emptyset$ then what is $P(A\cup B) = ?$
-\end{itemize}
+\end{enumerate}
  }
- \vspace{.5in}
+ \vspace{2in}
  
- \qBox{\Qn:
-Let $A, B$ are two events such that  $P(A) = \frac{1}{3}$ and $P(\Not{B}) = \frac{1}{4}$.  Can A and B be disjoint? Explain.}
 \end{frame}
 
 
+
+\begin{frame}
+
+ 
+ \qBox{\Qn
+Let $A, B$ are two events such that  $$P(A) = \frac{1}{3} \text{ and } P(\Not{B}) = \frac{1}{4}.$$Can A and B be disjoint? Explain.}
+ \vspace{2in}
+\end{frame}
 
 
 \begin{frame}{ Examples}

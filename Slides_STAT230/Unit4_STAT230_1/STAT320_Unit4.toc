@@ -1,2 +1,4 @@
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Multiplication Principle }{2}{0}{1}
+\beamer@sectionintoc {1}{Conditional Probability}{2}{0}{1}
+\beamer@sectionintoc {2}{Bayes' Theorem}{4}{0}{2}
+\beamer@sectionintoc {3}{The Notion of Statistical Independence }{6}{0}{3}

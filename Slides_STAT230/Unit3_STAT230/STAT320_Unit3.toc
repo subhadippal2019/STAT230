@@ -2,4 +2,4 @@
 \beamer@sectionintoc {1}{ Sample Space \& Events}{2}{0}{1}
 \beamer@sectionintoc {2}{ The Notion of Probability}{30}{0}{2}
 \beamer@sectionintoc {3}{ A Few Properties of Probability}{35}{0}{3}
-\beamer@sectionintoc {4}{Examples}{42}{0}{4}
+\beamer@sectionintoc {4}{Examples}{48}{0}{4}
