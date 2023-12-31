@@ -238,7 +238,7 @@ the probability that the sum of the 2 dice equals 8?
 \define{Conditional Probability}	
 {
 Let $E$,  and  $F$ are two events such that $P(F)>0$, then the conditional probability of {\bf $E$ given $F$} is defined to be, 
-$$P(E\mid F):= \frac{P(E\cap F)}{P(F)}.$$
+$$\HLTW{\displaystyle P(E\mid F):= \frac{P(E\cap F)}{P(F)}.}$$
 }
 \end{frame}
 
@@ -326,10 +326,12 @@ blue, what is the conditional probability that the first ball chosen is blue?
 
 
 \begin{frame}
-\define{Conditional Probability}	
+\define{Multiplication Rule }	
 {
-$$P(E\cap F):=P(E\mid F)P(F).$$
+Let $E$ and $F$ are two events, then 
+$$\HLTEQ[babyblue!70]{ \HLTY{P(E\cap F)}:=\HLTW{P(E\mid F)}\times \HLTW{P(F)}.}$$
 }
+\vspace{2.5in}
 \end{frame}
 
 
@@ -353,14 +355,14 @@ base her decision on the  flip of a fair coin, what is the probability that she 
 \end{frame}
 
 
-
-
-\begin{frame}
-\define{ The Multiplication Rule:}	
-{
-$$P(E\cap F):=P(E\mid F)P(F).$$
-}
-\end{frame}
+%
+%
+%\begin{frame}
+%\define{ The Multiplication Rule:}	
+%{
+%$$P(E\cap F):=P(E\mid F)P(F).$$
+%}
+%\end{frame}
 
 
 \begin{frame}\frametitle{Example}
@@ -396,6 +398,32 @@ $$P(R_1\mid R_2) =P(R_2\mid R_1)\times P(R1)=\frac{7}{11}\frac{8
 {
 $P(E_1\cap E_2\cap \cdots E_k):=P(E_1) \times P(E_2\mid E_1)P(E_3\mid E_2\cap E_1 )\times \ldots \times P(E_k\mid E_1\cap E_2\cap \ldots\cap  E_{k-1}).$
 }
+
+\qBrd[4.7in]{babyblue!70}{
+\vspace{-.15in}
+\begin{eqnarray}
+& & \HLTY{P(E_1\cap E_2\cap \cdots \cap E_k)} \nonumber\\
+& :=& \HLTW{P(E_1 \mid E_2\cap \cdots \cap  E_k )} \times \HLTW{P(E_2\mid  E_3\cap  \cdots \cap E_k) } \times \ldots  \times\nonumber\\
+& &\hspace{2.1in} \times  \HLTW{P(E_{k-1}\mid E_{k})}\times  \HLTW{P(E_{k})} .\nonumber
+\end{eqnarray}
+\vspace{-.15in}
+}
+
+
+\qBrd[4.7in]{unitednationsblue!60}{
+\vspace{-.15in}
+\begin{eqnarray}
+& & \HLTY{P(E_1, E_2, \cdots , E_k)} \nonumber\\
+& :=& \HLTW{P(E_1 \mid E_2, \cdots ,  E_k )} \times \HLTW{P(E_2\mid  E_3,  \cdots , E_k) } \times \ldots  \times\nonumber\\
+& &\hspace{2.1in} \times  \HLTW{P(E_{k-1}\mid E_{k})}\times  \HLTW{P(E_{k})} .\nonumber
+\end{eqnarray}
+\vspace{-.15in}
+}
+
+
+
+
+
 \end{frame}
 
 
@@ -437,8 +465,8 @@ $P(E_1\cap E_2 \cap E_3 \cap E_4)=P(E_1) P( E_2\mid  E_1)P(E_3 \mid E_1 \cap E_2
 \begin{center}
 \includegraphics[scale=.35]{figs/Law_of_Total_Probability_Simple.png} 
 \vspace{.2in}\\
-\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
-\qBrd[3in]{green!40}{$P(E)= P(E\cap F) + P(E\cap \Not{F}) $  }
+\qBrd[2in]{babyblue!70}{$ \HLTEQ[gray!20]{E}= \HLTEQ[applegreen!70]{(E\cap F)} \cup \HLTW{(E\cap \Not{F})} $}\\
+\qBrd[2.6in]{unitednationsblue!40}{$ \HLTEQ[gray!20]{P(E)}= \HLTEQ[applegreen!70]{P(E\cap F) }+ \HLTW{P(E\cap \Not{F})} $  }
 \end{center}
 \vspace{.5in}
 \end{frame}
@@ -447,7 +475,7 @@ $P(E_1\cap E_2 \cap E_3 \cap E_4)=P(E_1) P( E_2\mid  E_1)P(E_3 \mid E_1 \cap E_2
 \qbx[4.5in]{teal!40}{
 Let E and F be two events, then 
 \begin{center}
-\qBrd[3in]{green!40}{$ P(E)= \HLTW{P(E\mid F)P(F) + P(E\mid  \Not{F}))(\Not{F})} $}
+\qBrd[3in]{babyblue!90}{$\HLTEQ[gray!20]{ P(E)} = \HLTY{\HLTEQ[applegreen!70]{P(E\mid F)P(F) } +  \HLTW{P(E\mid  \Not{F}))(\Not{F})}} $}
 \end{center}
 \vspace{.2in}
 }
