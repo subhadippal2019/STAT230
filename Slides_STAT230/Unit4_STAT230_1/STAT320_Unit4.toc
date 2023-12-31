@@ -1,4 +1,5 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Conditional Probability}{2}{0}{1}
-\beamer@sectionintoc {2}{Bayes' Theorem}{4}{0}{2}
-\beamer@sectionintoc {3}{The Notion of Statistical Independence }{6}{0}{3}
+\beamer@sectionintoc {2}{Law of Total Probability}{17}{0}{2}
+\beamer@sectionintoc {3}{Bayes' Theorem}{23}{0}{3}
+\beamer@sectionintoc {4}{The Notion of Statistical Independence }{37}{0}{4}

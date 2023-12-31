@@ -217,8 +217,412 @@
 
 
 
+\begin{frame}\frametitle{Example0}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{} Suppose that we toss 2 dice, and suppose that
+each of the 36 possible outcomes is equally likely to occur and
+hence has probability $\frac{1}{36}$ . Suppose further that we observe that the  first die is a 3. Then, given this information, what is
+the probability that the sum of the 2 dice equals 8?
+}\\
+%\pause
+\vspace{2in}
+{\tiny Solution:  }
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\define{Conditional Probability}	
+{
+$P(E\mid F):= \frac{P(E\cap F)}{P(F)}$
+}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{apricot!70}{
+\Exmpl{apricot}{} A student is taking a one-hour-time-limit makeup examination.  Suppose the probability that the student will
+finish the exam in less than $x$ hours is $ \frac{x}{2}$, for all $0\leq x\leq 1.$ Then, given that the student is still working after $0.75$ hour, what is the conditional probability that the full hour is used?
+}\\
+%\pause
+\vspace{1in}
+{\tiny Solution: Let $L_x$ denote the event that the student finishes
+the exam in less than $x$ hours, $0\leq  x\leq 1$, and let $F$ be the
+event that the student uses the full hour.  Because $F$ is the
+event that the student is not finished in less than 1 hour, 
+$P(F)=P(\Not{L_1})=1-P(L_1)=0.5$.\\
+Now, the event that the student is still working at time $0.75$ is the complement of the event $L_{0.75}$, so the desired probability is obtained from
+$$P(F\mid \Not{L_{0.75}})= \frac{F\cap \Not{L_{0.75}}}{  \Not{L_{0.75}}  }= \frac{P(F)}{1- P(F_{0.75})}= \frac{0.5}{0.625}=0.8$$
+
+
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{apricot!70}{
+\Exmpl{apricot}{} A coin is flipped twice.  Assuming that all four
+points in the sample space $\HLTW{\SampleS = \HLTY{ \{HH, HT, TH, TT\}}}$ are
+equally likely, what is the conditional probability that both flips land on heads, given that (a) the first  flip lands on heads? 
+(b) at least one flip lands on heads?
+}\\
+%\pause
+%\vspace{1in}
+{\tiny Solution: 
+
+}
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{olive!40}{
+\Exmpl{olive}{} A total of $n$ balls are sequentially and randomly
+chosen, without replacement, from an urn containing $r$ red
+and b blue balls $(n \leq r + b)$. Given that $k$ of the $n$ balls are
+blue, what is the conditional probability that the first ball chosen is blue?
+}\\
+%\pause
+%\vspace{1in}
+{\tiny {\bf Solution:}   Show that this probability is $ \frac{k}{n}$.
+
+}
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}
+\define{Conditional Probability}	
+{
+$$P(E\cap F):=P(E\mid F)P(F).$$
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal}{} Celine is undecided as to whether to take a
+French course or a chemistry course. She estimates that her
+probability of receiving an A grade would be $\frac{1}{2}$ in a French
+course and $\frac{2}{3}$ in a chemistry course. If Celine decides to
+base her decision on the  flip of a fair coin, what is the probability that she gets an A in chemistry?
+}\\
+%\pause
+%\vspace{1in}
+{\tiny {\bf Solution:}   .
+
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\define{ The Multiplication Rule:}	
+{
+$$P(E\cap F):=P(E\mid F)P(F).$$
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{amber!40}{
+\Exmpl{amber}{} Suppose that an urn contains 8 red balls and 4
+white balls. We draw 2 balls from the urn without
+replacement. If we assume that at each draw each ball in the
+urn is equally likely to be chosen, what is the probability that
+both balls drawn are red?
+}\\
+\pause
+\vspace{1in}
+{\tiny {\bf Solution:}  
+Let $R_1$ and $R_2$ denote, respectively, the events that
+the first and second balls drawn are red. Now, given that the
+first ball selected is red, there are 7 remaining red balls and 4
+white balls, so $P(R_2\mid R_1) =\frac{7}{11}$. . As $P(R_1) = \frac{8}{12}$ , the desired probability is
+$$P(R_1\mid R_2) =P(R_2\mid R_1)\times P(R1)=\frac{7}{11}\frac{8
+}{12}=\frac{14}{33}.$$
+
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\define{ The Generalized Multiplication Rule:}	
+{
+$P(E_1\cap E_2\cap \cdots E_k):=P(E_1) \times P(E_2\mid E_1)P(E_3\mid E_2\cap E_1 )\times \ldots \times P(E_k\mid E_1\cap E_2\cap \ldots\cap  E_{k-1}).$
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{brightpink!40}{
+\Exmpl{brightpink}{} An ordinary deck of 52 playing cards is randomly
+divided into 4 piles of 13 cards each. Compute the probability
+that each pile has exactly 1 ace.
+}\\
+\pause
+\vspace{.9in}
+{\tiny {\bf Solution:}  
+Define events $E_i$, $i =1, 2, 3, 4$, as follows:
+$E_1 = \{\text{the ace of spades is in any one of the piles}\},$\\
+$E_2 = \{\text{the ace of spades and the ace of hearts are in different piles}\},$\\
+$E_3 = \{\text{ the aces of spades, hearts, and diamonds are all in different piles}\},$\\
+$E_4 = \{\text{all 4 aces are in different piles}\},$\\
+
+The desired probability is $P(E_1\cap E_2 \cap E_3 \cap E_4)$, and by the multiplication rule,
+$P(E_1\cap E_2 \cap E_3 \cap E_4)=P(E_1) P( E_2\mid  E_1)P(E_3 \mid E_1 \cap E_2) P(   E_4 \mid E_1\cap E_2 \cap E_3 ) $\\
+Note that 
+$P(E_11) = 1$ ,  because $E_1$ is equal to the sample space.
+$P(E_2\mid E_1) = \frac{39}{51}$, $P(E3\mid E_1 \cap  E_2) =-\frac{26}{50}$,  $P(E_4 \mid E_1\cap E_2 \cap E_3) = \frac{13}{49}.$\\ Therefore, 
+$P(E_1\cap E_2 \cap E_3 \cap E_4)=P(E_1) P( E_2\mid  E_1)P(E_3 \mid E_1 \cap E_2) P(   E_4 \mid E_1\cap E_2 \cap E_3 =1 \times   \frac{39}{51}\times \frac{26}{50} \times  \frac{13}{49}  = 0.105$
+}
+\vspace{2in}
+
+\end{frame}
+
+
+
+
+
+\section{Law of Total Probability}
+\TransitionFrame[amethyst]{\Large Law of Total Probability}
+
+\begin{frame}\frametitle{Law of  Total Probability}
+Let E and F be two events. 
+\qbx[4.5in]{teal!40}{
+\begin{center}
+\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
+\qBrd[3in]{green!40}{$P(E)= P(E\cap F) + P(E\cap \Not{F}) $  \\$ P(E)= P(E\mid F)P(F) + P(E\mid  \Not{F}))(\Not{F}) $}
+\end{center}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Law of  Total Probability}
+Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
+\qbx[4.5in]{teal!40}{
+\begin{center}
+%\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
+\qBrd[3in]{green!40}{$$\displaystyle P(E)=\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  $$}
+\end{center}
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{applegreen!40}{
+\Exmpl{applegreen}{} An insurance company believes that people can be divided into two classes: those who are accident prone and those who are not. 
+The companys statistics show that an accident-prone person will have an accident at some time within a fixed 1-year period with probability $0.4$, whereas this probability is $0.2$ for a person who is not accident prone.  If we assume that $30\%$
+ of the population is accident prone, what is the probability
+that a new policyholder will have an accident within a year of
+purchasing a policy?
+}\\
+\pause
+\vspace{.6in}
+{\tiny {\bf Solution:}  
+ Let $A_1$ denote the event that the policyholder will have an accident within a year of purchasing
+the policy, and let $A$ denote the event that the policyholder is accident prone. Hence, the desired probability is given by
+$P(A_1) = P(A_1\mid A)P(A) + P(A1\mid \Not{A})P(\Not{A}) = (0.4)(0.3)+(0.2)(0.7	)=0.26$
+}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
 \section{Bayes' Theorem}
 \TransitionFrame[amethyst]{\Large Bayes' Theorem  }
+
+
+\begin{frame}
+
+\begin{theorem}
+Let $F_1, F_2, \ldots,  F_k$ be a set of mutually exclusive and
+exhaustive events (meaning that exactly one of these events
+must occur). Suppose now that $E$ has occurred and we are
+interested in determining which one of the $F_j$ also occurred.
+Then, we have the following theorem
+$$\DBX{ \displaystyle P(F_i \mid E)=\HLTW{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{k}P(E\mid F_j) P(F_j) }}}$$
+\end{theorem}
+
+
+
+\end{frame}
+
+
+\begin{frame}
+\begin{itemize}
+\item This theorem is well known as Bayes's theorem, after the
+English philosopher {\bf Thomas Bayes}.
+\vspace{.25in}
+
+
+\item We can use the following Applet to find the conditional
+probability using Bayes's theorem:
+\vspace{.25in}
+
+
+
+
+\item \url{http://www.thomsonedu.com/statistics/book_
+content/0495110817_wackerly/applets/seeingstats/
+Chpt2/bayesTree.html}
+\end{itemize}
+
+
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{}  An insurance company believes that people can be divided into two classes: those who are accident prone and those who are not. 
+The companys statistics show that an accident-prone person will have an accident at some time within a fixed 1-year period with probability $0.4$, whereas this probability is $0.2$ for a person who is not accident prone.  If we assume that $30\%$
+ of the population is accident prone. \\
+ Suppose that a new policyholder has an accident within a year of purchasing a policy. What is the probability that he or she is accident prone?
+}\\
+\pause
+\vspace{.6in}
+{\tiny {\bf Solution:}  
+ The desired probability is 
+ $$P(A\mid A_1)=  \frac{P(A\cap A_1)}{P(A_1)}= \frac{(0.4)(0.3)}{0.26}= \frac{6}{13} $$
+}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{atomictangerine!40}{
+\Exmpl{atomictangerine}{}     Suppose that we have 3 cards that are identical in form, except that both sides of the first card are colored red, both sides of the second card are colored black, and one side of the third card is colored red and the other side black. The 3 cards are mixed up in a hat, and 1 card is randomly selected and put down on the ground. If the upper side of the chosen card is colored red, what is the probability that the other side is colored black?
+}\\
+\pause
+\vspace{.6in}
+{\tiny {\bf Solution: Let RR, BB, and RB denote, respectively, the events that the chosen card is all red, all black, or the redblack card. Also, let R be the event that the upturned side of the chosen card is red. Then
+the desired probability is obtained
+$$    P(RB\mid R)=  \frac{P(R\mid RB)P(RB)}{P(R\mid RR)P(RR)+ P(R\mid RB)P(RB) + P(R\mid BB)P(BB)}= \frac{\frac{1}{2}\times \frac{1}{3} }{   (1)\times \frac{1}{3}  + \frac{1}{2}\times \frac{1}{3}  +  (0) \times  \frac{1}{3}      }=  \frac{1}{3}   .$$   
+}  
+
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{olive!40}{
+\Exmpl{olive}{}     A new couple, known to have two children, has just moved into town. Suppose that the mother is encountered walking with one of her children. If this child is a girl, what is the probability that both children are girls?
+}\\
+\pause
+
+{\tiny {\bf Solution:   
+
+}  
+\vspace{1.6in}
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal}{}     A bin contains 3 different types of disposable
+ashlights. The probability that a type 1 
+ashlight will give over 100 hours of use is .7, with the corresponding probabilities for type 2 and type 3  ashlights being .4 and .3, respectively. Suppose that 20 percent of the  ashlights in the bin are type 1, 30 percent are type 2, and 50 percent are type 3.
+}\\
+\pause
+
+{\tiny {\bf Solution:   
+
+}  
+\vspace{1.6in}
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal}{}     A bin contains 3 different types of disposable
+ashlights. The probability that a type 1 
+ashlight will give over 100 hours of use is .7, with the corresponding probabilities for type 2 and type 3  ashlights being .4 and .3, respectively. Suppose that 20 percent of the  ashlights in the bin are type 1, 30 percent are type 2, and 50 percent are type 3.
+\begin{enumerate}
+\item What is the probability that a randomly chosen 
+ashlight will give more than 100 hours of use?
+\item Given that a  ashlight lasted over 100 hours, what is the conditional probability that it was a type j  ashlight, j = 1, 2, 3?
+\end{enumerate}
+}\\
+\pause
+
+{\tiny {\bf Solution:   
+
+}  
+\vspace{1.6in}
+}
+\end{frame}
 
 
 
@@ -229,16 +633,94 @@
 
 
 
+\begin{frame}\frametitle{Statistical Independence }
+\define{Statistically Independent Event}{
+Two events $E$ and $F$ are said to be  statistically independent if
+$$\DBX{\displaystyle P(E\cap F ) = P(E)\times P(F)    }$$
+}
+
+
+
+\pause 
+
+\begin{center}
+\qBrd[4.1in]{amethyst!60}{Corollary: Two events E and F are independent if and only
+if $P(E\mid F) = P(E)$ and $P(F\mid E) = P(F).$
+}
+\end{center}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amber!40}{
+\Exmpl{amber}{}    A card is selected at random from an ordinary deck of 52 playing cards. If E is the event that the selected card is an ace and F is the event that it is a spade, then E and F are independent.
+}\\
+\pause
+
+{\tiny {\bf Solution:   
+This follows because $P(E\cap F) = \frac{1}{52}$ whereas
+$P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
+}  
+\vspace{1.6in}
+}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amber!40}{
+\Exmpl{amber}{}   Two coins are 
+ipped, and all 4 outcomes are assumed to be equally likely.  If E is the event that the first coin lands on heads and F the event that the second lands on tails, then E and F are independent, since
+$P(E \cap F)= P(\{HT\})= \frac{1}{4}$. Where as $P(E)= P(\{HH, HT\})=\frac{1}{2}$ and $P(F)= P(\{HT, TT\})=\frac{1}{2}$ 
+}\\
+%\pause
+
+%{\tiny {\bf Solution:   
+%This follows because $P(E\cap F) = \frac{1}{52}$ whereas
+%$P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
+%}  
+\vspace{1.6in}
+%}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{babyblue!40}{
+\Exmpl{babyblue}{}   Suppose that we toss 2 fair dice. Let $E_1$ denote the
+event that the sum of the dice is 6 and F denote the event that the
+first die equals 4.  Is $E_1$ statistically independent of $F$?\\
+\HLTW{\text{Answer:} }
+   $P(E_1 \cap F)= P(\{(4,2)\})= \frac{1}{36}$ where as $P(E_1)=\frac{5}{36}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_1$ and $F$ are not statistically independet because, 
+$P(E_1 \cap F)\neq P(E_1) \times P( F) $.
+}\\
+\vspace{.1in}
+\qbx[4.5in]{asparagus!40}{
+\Exmpl{asparagus}{}   Now, suppose that we let $E_2$ be the event that the sum of the dice equals $7$.   Is $E_2$ statistically independent of $F$?\\
+\HLTW{\text{Answer:} }
+$P(E_2\cap F)= P(\{(4,3)\})= \frac{1}{36}$ where as $P(E_2)=\frac{1}{6}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_2$ and $F$ are  statistically independet because, 
+$P(E_2 \cap F)= P(E_2) \times P( F) $.
+}\\
+%\pause
+
+%{\tiny {\bf Solution:   
+%This follows because $P(E\cap F) = \frac{1}{52}$ whereas
+%$P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
+%}  
+%\vspace{1.6in}
+%}
+\end{frame}
+
+
+
 \begin{frame}
-	\frametitle{Overview of Counting Principals  }
-	
-\begin{defn}[Multiplication Principle of counting]
-Suppose that two experiments are to be performed. Then if experiment 1 can result
-in any one of $m$ possible outcomes and if, for each outcome of experiment 1, there
-are $n$ possible outcomes of experiment 2, then together there are $m\times n$ possible outcomes of the two experiments.
-\end{defn}	
-	\vspace{2in}
-	
+\qBrd[4.5in]{bazaar!40}{Proposition: If $E$ and $F$ are independent, then so are $E$ and $\Not{F}$.}
+{\tiny Solution:}
+\vspace{2in}
 \end{frame}
 
 
@@ -246,7 +728,42 @@ are $n$ possible outcomes of experiment 2, then together there are $m\times n$ p
 
 
 
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amber!40}{
+\Exmpl{amber}{}    A card is selected at random from an ordinary deck of 52 playing cards. If E is the event that the selected card is an ace and F is the event that it is a spade, then E and F are independent.
+}\\
+\pause
+
+{\tiny {\bf Solution:   
+This follows because $P(E\cap F) = \frac{1}{52}$ whereas
+$P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
+}  
+\vspace{1.6in}
+}
+\end{frame}
+
+ 
+
+\begin{frame}\frametitle{Generalized Definitioon of Statistical Independence }
+\define{Statistically Independent Events}{
+Three events $E$, $F$, and $G$ are said to be  statistically independent if
+\begin{center}
+\qBrd[3.5in]{applegreen!40}{ $P(E\cap F \cap G ) = P(E)\times P(F)  \times P(G)  $}\\
+\qBrd[2.5in]{purple!30}{ $P(E\cap F ) = P(E)\times P(F)  $}\
+\qBrd[2.5in]{amethyst!30}{ $P(E\cap G ) = P(E)\times P(G)  $}\\
+\qBrd[2.5in]{bittersweet!40}{ $P(F\cap G ) = P(F)\times P(G)  $}\\
+
+\end{center}
+}
+\vspace{1.5in}
+
+\end{frame}
+
 \TransitionFrame[antiquefuchsia]{\Large Questions?  }
+ 
  
  
 \end{document}
