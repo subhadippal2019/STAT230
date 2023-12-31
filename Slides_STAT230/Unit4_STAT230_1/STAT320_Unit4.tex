@@ -237,10 +237,22 @@ the probability that the sum of the 2 dice equals 8?
 \begin{frame}
 \define{Conditional Probability}	
 {
-$P(E\mid F):= \frac{P(E\cap F)}{P(F)}$
+Let $E$,  and  $F$ are two events such that $P(F)>0$, then the conditional probability of {\bf $E$ given $F$} is defined to be, 
+$$P(E\mid F):= \frac{P(E\cap F)}{P(F)}.$$
 }
 \end{frame}
 
+
+
+\begin{frame}{Example}
+\qBox{\Qn: Suppose that a balanced die is tossed once.  Find the conditional probability that 1 appears, given that an odd number was obtained.
+ }\\
+
+\vspace{1.5in}
+A:= \{ Observe a 1.\}, 
+B:=\{Observe an odd number.\}\\
+ $P(A\mid B)=\frac{P(A\cap B)}{P(B)}=\frac{\frac{1}{6}}{\frac{3}{6}}=\frac{1}{3}.$
+\end{frame}
 
 
 
@@ -420,25 +432,46 @@ $P(E_1\cap E_2 \cap E_3 \cap E_4)=P(E_1) P( E_2\mid  E_1)P(E_3 \mid E_1 \cap E_2
 \section{Law of Total Probability}
 \TransitionFrame[amethyst]{\Large Law of Total Probability}
 
+
 \begin{frame}\frametitle{Law of  Total Probability}
-Let E and F be two events. 
-\qbx[4.5in]{teal!40}{
 \begin{center}
+\includegraphics[scale=.35]{figs/Law_of_Total_Probability_Simple.png} 
+\vspace{.2in}\\
 \qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
-\qBrd[3in]{green!40}{$P(E)= P(E\cap F) + P(E\cap \Not{F}) $  \\$ P(E)= P(E\mid F)P(F) + P(E\mid  \Not{F}))(\Not{F}) $}
+\qBrd[3in]{green!40}{$P(E)= P(E\cap F) + P(E\cap \Not{F}) $  }
 \end{center}
+\vspace{.5in}
+\end{frame}
+
+\begin{frame}\frametitle{Law of  Total Probability}
+\qbx[4.5in]{teal!40}{
+Let E and F be two events, then 
+\begin{center}
+\qBrd[3in]{green!40}{$ P(E)= \HLTW{P(E\mid F)P(F) + P(E\mid  \Not{F}))(\Not{F})} $}
+\end{center}
+\vspace{.2in}
 }
 \end{frame}
 
+\begin{frame}\frametitle{Law of  Total Probability (General)}
+\begin{center}
+\includegraphics[scale=.35]{figs/Law_of_Total_Probability.png} 
+\end{center}
+\vspace{.4in}
+\end{frame}
 
-\begin{frame}\frametitle{Law of  Total Probability}
-Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
-\qbx[4.5in]{teal!40}{
+\begin{frame}\frametitle{Law of  Total Probability (General)}
+\vspace{-.1in}
+
+\qbx[4.5in]{turquoisegreen!90}{
+\qBrd[2.5in]{yellow-green!50}{Law of  Total Probability (General):} Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
+\
 \begin{center}
 %\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
-\qBrd[3in]{green!40}{$$\displaystyle P(E)=\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  $$}
+\qBrd[3in]{green!40}{$\displaystyle P(E)=\HLTW{\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  }$}
 \end{center}
 }
+
 \end{frame}
 
 
@@ -480,12 +513,12 @@ $P(A_1) = P(A_1\mid A)P(A) + P(A1\mid \Not{A})P(\Not{A}) = (0.4)(0.3)+(0.2)(0.7	
 \begin{frame}
 
 \begin{theorem}
-Let $F_1, F_2, \ldots,  F_k$ be a set of mutually exclusive and
+Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and
 exhaustive events (meaning that exactly one of these events
 must occur). Suppose now that $E$ has occurred and we are
 interested in determining which one of the $F_j$ also occurred.
 Then, we have the following theorem
-$$\DBX{ \displaystyle P(F_i \mid E)=\HLTW{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{k}P(E\mid F_j) P(F_j) }}}$$
+$$\DBX{ \displaystyle P(F_i \mid E)=\HLTW{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{K}P(E\mid F_j) P(F_j) }}}$$
 \end{theorem}
 
 
@@ -539,8 +572,30 @@ The companys statistics show that an accident-prone person will have an accident
 
 
 
+%__________________________________________
+\begin{frame}{ Bayes' Theorem: Example   }
+\vspace{-.1in}
+\qBox{\Qn:
+A diagnostic test for a disease is such that it (correctly) detects the disease in 90\% of the
+individuals who actually have the disease. Also, if a person does not have the disease, the test
+will report that he or she does not have it with probability 0.9. Only 1\%  of the population has the
+disease in question. If a person is chosen at random from the population and the diagnostic test
+indicates that she has the disease, what is the conditional probability that she does, in fact, have
+the disease? Are you surprised by the answer? Would you call this diagnostic test reliable?}
 
+\pause 
+\vspace{.1in}
 
+{\tiny 
+$A=\{ \text{The individial has the disease} \},  \Not{A}=\{ \text{ does not have the disease} \}$, 
+$ B=\{ \text{The test shows a POSITIVE result}\}$
+$\Not{B}=\{ \text{The test shows a NEGATIVE result}\}$
+
+$\HLTEQ[yellow]{ P(B\mid A)=0.9, P(\Not{B}\mid A^c)=0.9 \text{ and  } P(A)=0.01}$
+ $$P(A\mid B)= \frac{P(B\mid A)P(A)}{  P(B\mid A)P(A)+ P(B\mid \Not{A})P(\Not{A}) }= \frac{(0.9)(0.01)}{(0.9)(0.01)+ (0.1)(0.99)}=91\%$$
+}
+
+\end{frame}
 
 
 \begin{frame}\frametitle{Example}
@@ -581,41 +636,41 @@ $$    P(RB\mid R)=  \frac{P(R\mid RB)P(RB)}{P(R\mid RR)P(RR)+ P(R\mid RB)P(RB) +
 
 
 
+%
+%\begin{frame}\frametitle{Example}
+%\vspace{-.1in}
+%\qbx[4.5in]{teal!40}{
+%\Exmpl{teal}{}     A bin contains 3 different types of disposable
+%ashlights. The probability that a type 1 
+%ashlight will give over 100 hours of use is .7, with the corresponding probabilities for type 2 and type 3  ashlights being .4 and .3, respectively. Suppose that 20 percent of the  ashlights in the bin are type 1, 30 percent are type 2, and 50 percent are type 3.
+%}\\
+%\pause
+%
+%{\tiny {\bf Solution:   
+%
+%}  
+%\vspace{1.6in}
+%}
+%\end{frame}
+%
+
+
+
+
 
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
 \qbx[4.5in]{teal!40}{
 \Exmpl{teal}{}     A bin contains 3 different types of disposable
 ashlights. The probability that a type 1 
-ashlight will give over 100 hours of use is .7, with the corresponding probabilities for type 2 and type 3  ashlights being .4 and .3, respectively. Suppose that 20 percent of the  ashlights in the bin are type 1, 30 percent are type 2, and 50 percent are type 3.
-}\\
-\pause
-
-{\tiny {\bf Solution:   
-
-}  
-\vspace{1.6in}
-}
-\end{frame}
-
-
-
-
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{teal!40}{
-\Exmpl{teal}{}     A bin contains 3 different types of disposable
-ashlights. The probability that a type 1 
-ashlight will give over 100 hours of use is .7, with the corresponding probabilities for type 2 and type 3  ashlights being .4 and .3, respectively. Suppose that 20 percent of the  ashlights in the bin are type 1, 30 percent are type 2, and 50 percent are type 3.
+ashlight will give over 100 hours of use is 0.7, with the corresponding probabilities for type 2 and type 3  ashlights being 0.4 and 0.3, respectively. Suppose that 20 percent of the  ashlights in the bin are type 1,  30 percent are type 2, and 50 percent are type 3.
 \begin{enumerate}
 \item What is the probability that a randomly chosen 
 ashlight will give more than 100 hours of use?
 \item Given that a  ashlight lasted over 100 hours, what is the conditional probability that it was a type j  ashlight, j = 1, 2, 3?
 \end{enumerate}
 }\\
-\pause
+%\pause
 
 {\tiny {\bf Solution:   
 
@@ -672,7 +727,7 @@ $P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
 \vspace{-.1in}
 \qbx[4.5in]{amber!40}{
 \Exmpl{amber}{}   Two coins are 
-ipped, and all 4 outcomes are assumed to be equally likely.  If E is the event that the first coin lands on heads and F the event that the second lands on tails, then E and F are independent, since
+flipped, and all 4 outcomes are assumed to be equally likely.  If E is the event that the first coin lands on heads and F the event that the second lands on tails, then E and F are independent, since
 $P(E \cap F)= P(\{HT\})= \frac{1}{4}$. Where as $P(E)= P(\{HH, HT\})=\frac{1}{2}$ and $P(F)= P(\{HT, TT\})=\frac{1}{2}$ 
 }\\
 %\pause
@@ -747,7 +802,7 @@ $P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
 
  
 
-\begin{frame}\frametitle{Generalized Definitioon of Statistical Independence }
+\begin{frame}\frametitle{Generalized Definition of Statistical Independence }
 \define{Statistically Independent Events}{
 Three events $E$, $F$, and $G$ are said to be  statistically independent if
 \begin{center}
