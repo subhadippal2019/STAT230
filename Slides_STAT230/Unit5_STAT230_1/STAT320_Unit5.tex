@@ -214,26 +214,753 @@
 
 
 
-\section{Multiplication Principle }
-\TransitionFrame[bittersweet]{\Large Multiplication Principle  }
-\TransitionFrame[bittersweet]{\Large Permutations  }
-\TransitionFrame[bittersweet]{\Large Combinations  }
+\section{Random Variables   }
+\TransitionFrame[bittersweet]{\Large Random Variables  }
 
-\TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
+\begin{frame}\frametitle{Random Variables}
+\begin{enumerate}
+\item Frequently, when an experiment is performed, we are interested
+mainly in some function of the outcome as opposed to the actual
+outcome itself.\\
+\vspace{.4in}
+\item For instance, in tossing dice, we are often interested in the sum of the two dice and are not really concerned about the separate values of each die.\\
+\vspace{.4in}
+
+\item These quantities of interest, or, more formally, these real-valued
+functions defined on the sample space, are known as random
+variables.
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}{Random Variables}
+
+Events of major interest to the scientist, engineer, or businessperson are those identified by numbers, called numerical events. The research physician is interested in the event that ten of ten treated patients survive an illness; the businessperson is interested in the event that sales next year will reach  \$3 million.  Let Y denote a variable to be measured in an experiment.  The realized value of Y will vary depending on the outcome of the experiment. Thus  it is called a random variable. \\
+
+\define{Random Variable }{
+A random variable is a function from a sample space $S$ into the real numbers.}
+\end{frame}
+
+
+\begin{frame}{Example: Random Variable }
+
+\begin{table}
+\centering
+\begin{tabular}{|l|l|} 
+\hline
+ Experiment &  Random Variable \\ 
+ \hline
+\hline
+ Toss two dice & X= sum of the numbers   \\ 
+ \hline
+Toss a coin 25 times  &  X number of heads in 25 tosses \\ 
+\hline
+ Apply different amounts of\\ fertilizer to corn plants &  X = yield/acre \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+\qBox{{\bf Notation:} Random variables will always be denoted with uppercase letters
+and the realized values of the variable (or its range) will be denoted by the corresponding
+lowercase letters. Thus, the random variable X can take the value x.}
+
+%\qBox{Probabilities of a random variable is }
+\end{frame}
+
+
+
+
+\begin{frame}{Support/Range of a Random Variable }
+
+\define{Support/Range of a random variable}{
+The set containing the all possible values of a random variable is called its {\it \bf support} or {\it  \bf range}.
+}
+\vspace{.2in}
+\qBox{{\bf Notation:} We will use the notation $\support[X]$ or simply $\support$ to denote the support of a random variable X.}
+
+\qBox{{\bf Example}: Consider  the experiment of tossing
+a fair coin 3 times from. Define the random variable X to be the
+number of heads obtained in the 3 tosses.  The Support of the random variable is $\HLTEQ[yellow]{\support[X]=\{0, 1, 2, 3\}}$}
+%
+%\qBox{{\bf Example:}
+%A car insurance company in interested in the number of car accidents that may happen in a specific week of the year. 
+%}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{}  Suppose that our experiment consists of tossing 3 fair coins. If we let $Y$ denote the number of heads that appear, then $Y$ is a random variable taking on one of the values $ 0, 1, 2,$ and $3$ with respective probabilities.
+\begin{itemize}
+\item[] $\pmf_{_Y}(0)= P(Y=0 )=$
+\item[] $\pmf_{_Y}(1)= P(Y=1 )=$
+\item[] $\pmf_{_Y}(2)= P(Y=2 )=$
+\item[] $\pmf_{_Y}(3)= P(Y=3 )=$
+\end{itemize}
+}\\
+\pause
+\vspace{.6in}
+{\tiny 
+}
+\end{frame}
+
+
+
+
+
+
+\section{Discrete Random Variables  }
+\TransitionFrame[bittersweet]{\Large Discrete Random Variables  }
+
+\begin{frame}
+\define{Discrete Random Variables}{A random variable that can take on at most a countable number of possible values is said to be discrete.}
+
+
+\qBrd[4.5in]{babyblue!70}{
+For a discrete random variable $X$, we define the probability
+mass function (pmf) $\pmf_{_X}(a)$ of $X$ by
+$$\pmf_{_X}(x)= P(X=x) \text{ for all } x\in \support{X}$$
+}
+
+The pmf of the random variable representing the sum when two dice are rolled can be represented in multiple ways.
+
+As a Table: 
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+$x$    & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
+$\pmf_{_X}(x)$ & $\frac{1}{36}$  &$ \frac{2}{36}$  & $\frac{3}{36}$  &$ \frac{4}{36} $  &    $\frac{5}{36} $ &$ \frac{6}{36}  $ &  $\frac{5}{36} $ & $ \frac{4}{36}$   &  $ \frac{3}{36}$  & $ \frac{2}{36}$ &$ \frac{1}{36}$  \\ \hline
+\end{tabular}
+\end{center}
+
+\end{frame}
+
 
 
 \begin{frame}
-	\frametitle{Overview of Counting Principals  }
-	
-\begin{defn}[Multiplication Principle of counting]
-Suppose that two experiments are to be performed. Then if experiment 1 can result
-in any one of $m$ possible outcomes and if, for each outcome of experiment 1, there
-are $n$ possible outcomes of experiment 2, then together there are $m\times n$ possible outcomes of the two experiments.
-\end{defn}	
-	\vspace{2in}
-	
+As a Plot/Graph: \\
+\includegraphics[scale=.35]{figs/TwoFairDice_pmf_Chart.png} 
+
 \end{frame}
 
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amber!50}{
+\Exmpl{amber}{}  A system consists of 2 components connected in parallel, then at least one must work correctly for the system to work correctly.  Each component operates correctly with probability 0.8 and independent of the other.  Let X be the number of components that work correctly. Find the probability distribution of X. 
+}\\
+\pause
+\vspace{.6in}
+{\tiny 
+{\bf Solution: } $X$ can take on only three possible values; $0, 1,$ or $2$. Let $E_i$ denote the event that component $i$ works correctly. Then $P(E_i) = 0.8$. Thus, we have
+\begin{itemize}
+\item $\pmf_{_X}(0)= P(\Not{E_1} \cap \Not{E_2})= P(\Not{E_1}) P( \Not{E_2})= (0.2)(0.2)= 0.04$.
+\item $\pmf_{_X}(1)= P(\Not{E_1} \cap {E_2})+ P({E_1} \cap \Not{E_2})=(0.2)(0.8)+ (0.8)(0.2)=0 .32$.
+\item  $\pmf_{_X}(2)= P({E_1} \cap {E_2})= P({E_1}) P( {E_2})= (0.8)(0.8)= 0.64$.
+\end{itemize}
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\hline
+x    & 0    & 1    & 2    \\ \hline
+$\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
+\end{tabular}
+\end{center}
+}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{ cumulative distribution function}
+\define{cumulative distribution function}{
+The cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
+$$\cdf_{_X}(a)= P(X\leq a)= \sum_{\{x\leq a\}}\pmf_{_X}(a)$$	
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!50}{
+\Exmpl{amethyst}{}  If X has a pmf given by 
+$\pmf_{_X}(1)= \frac{1}{4}, \pmf_{_X}(2)= \frac{1}{2}, \pmf_{_X}(3)= \frac{1}{8}$, and $\pmf_{_X}(4)= \frac{1}{8}$. Calculate the CDF function of $X$. 
+}\\
+\vspace{.3in}
+\pause
+\begin{minipage}{.48\textwidth} %
+{\tiny 
+{\bf Solution: } 
+\qBrd[2.1in]{babyblue!40}{
+\begin{eqnarray*}
+\cdf_{_X}\left(\HLTY{a}\right)= 
+\begin{cases}
+                        0 &  \text{if  $\HLTY{a}<1$} \vspace{.1in}\\
+                        \frac{1}{4} &  \text{if  $1\leq \HLTY{a} <2$}\vspace{.1in}\\
+                        \frac{3}{4} &  \text{if  $2\leq \HLTY{a} <3$}\vspace{.1in}\\
+                        \frac{7}{8} &  \text{if  $3\leq \HLTY{a} <4$}\vspace{.1in}\\
+                        \frac{7}{8} &  \text{if  $4\leq \HLTY{a} $}
+                    \end{cases}
+                    \end{eqnarray*}
+                    }
+}
+\end{minipage} %
+\begin{minipage}{.48\textwidth} %
+%\qBrd[2.3in]{babyblue!40}{
+\begin{center}
+{\tiny Graph of CDF of $X$}
+\includegraphics[scale=.2]{figs/BlankGraph.png} \\
+\end{center}
+%}
+\end{minipage}
+
+
+\vspace{.1in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!50}{
+Let the pmf of a random varibale $X$ is given as 
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\hline
+x    & 0    & 1    & 2    \\ \hline
+$\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
+\end{tabular}
+\end{center}
+Find the corresponding CDF. 
+}\\
+\pause
+\vspace{.1in}
+\begin{minipage}{.48\textwidth} %
+{\tiny 
+{\bf Solution: } 
+\qBrd[2.1in]{babyblue!40}{
+\begin{eqnarray*}
+\cdf_{_X}\left(\HLTY{a}\right)= 
+\begin{cases}
+                        0 &  \text{if  $\HLTY{a}<0$} \vspace{.1in}\\
+                       0.04&  \text{if  $0\leq \HLTY{a}<1$}\vspace{.1in}\\
+                       0.36 &  \text{if  $1\leq \HLTY{a} <2$}\vspace{.1in}\\
+                       1&  \text{if  $2\leq \HLTY{a} $}
+                    \end{cases}
+                    \end{eqnarray*}
+                    }
+}
+\end{minipage} %
+\begin{minipage}{.48\textwidth} %
+%\qBrd[2.3in]{babyblue!40}{
+\begin{center}
+{\tiny Graph of CDF of $X$}
+\includegraphics[scale=.2]{figs/BlankGraph.png} \\
+\end{center}
+%}
+\end{minipage}
+
+
+\vspace{.1in}
+\end{frame}
+
+
+
+\section{Expected Value and Variance  }
+\TransitionFrame[bittersweet]{\Large Expected Value and Variance  }
+
+\begin{frame}\frametitle{The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}
+\define{\tiny The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}{
+If $X$ is a random variable with pmf $\pmf_{_X}(x)$, then the expected value (the mean) of $X$ denoted by $E(X)$ or $\mu_{_X}$ is given by
+$$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(x)}.}$$
+}
+\end{frame}
+
+
+
+\begin{frame}
+\define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{
+Let $h(x)$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
+$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(x)}.}$$
+}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Variance and Standard Deviation}
+\define{Variance}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
+$$\DBX{ \displaystyle \text{Var}(X):= E(X^2)- \left(E(X) \right)^2}$$
+}
+
+$\text{Var}(X)$ is often denoted by $\sigma^2$, i.e.  $\sigma^2=\text{Var}(X)$ and the standard deviation is $\sigma= \sqrt{\sigma^2}= \sqrt{\text{Var}(X)}.$\\
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Properties of Expected Value and Variance}
+
+\begin{enumerate}
+\item $E(a+b X)= a+b E(X)$
+\item $\text{Var}(a+b X)= b^2 \text{Var}(X)$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!50}{
+The probability distribution of $X$, the number of daily network blackouts is given by
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\hline
+x    & 0    & 1    & 2    \\ \hline
+$\pmf_{_X}(x)$ & 0.7 & 0.2 & 0.1 \\ \hline\hline
+\end{tabular}
+\end{center}
+Find the Expected value and variance of the random variable {\bf X}.
+}\\
+\pause
+\vspace{.1in}
+\begin{minipage}{.48\textwidth} %
+{\tiny 
+{\bf Solution: } 
+\qBrd[2.25in]{babyblue!40}{
+\begin{eqnarray*}
+\mu_{_X}= E(X)& =&  \sum_{x\in \{0,1,2\}} x \pmf_{_X}(x)\\
+& = &  0 \times\pmf_{_X}(0)+ 1\times \pmf_{_X}(1)+  2\times \pmf_{_X}(2)\nonumber\\
+& = & 0 \times 0.7 + 1\times 0.2+ 2 \times 0.1\nonumber\\
+& = &  0.4  
+ \end{eqnarray*}
+                    }
+}
+\end{minipage} %
+\begin{minipage}{.48\textwidth} %
+\qBrd[2.22in]{babyblueeyes!50}{
+\tiny
+\begin{eqnarray*}
+ E(X^2)& =&  \sum_{x\in \{0,1,2\}} x^2 \pmf_{_X}(x)\\
+& = &  0^2 \times\pmf_{_X}(0)+ 1^2\times \pmf_{_X}(1)+  2^2\times \pmf_{_X}(2)\nonumber\\
+& = & 0 \times 0.7 + 1\times 0.2+ 4 \times 0.1\nonumber\\
+& = &  0.6 
+ \end{eqnarray*}
+                    }       
+\end{minipage}
+{\tiny Hence $\text{Var}(X):= E(X^2)- \left(E(X)\right)^2= 0.6-(0.4)^2= 0.6-0.16= 0.44$\\
+The Standard Deviation $\sigma= \sqrt{\sigma^2}=\sqrt{\text{Var}(X)}=\sqrt{0.44}= 0.6633  $}
+
+
+\vspace{.1in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!50}{
+The probability distribution of $X$, the number of daily network blackouts is given by
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\hline
+x    & 0    & 1    & 2    \\ \hline
+$\pmf_{_X}(x)$ & 0.7 & 0.2 & 0.1 \\ \hline\hline
+\end{tabular}
+\end{center}
+A small internet trading company estimates that each network
+blackout results in a \$500 loss. Compute expectation and variance of this company's daily loss due to blackouts.
+}\\
+\pause
+\vspace{.1in}
+{\tiny The daily loss due to blackouts is given by $ h(X) = 500X$.  We need to find $E(h(X))$ and Varinace of $Var(h(X))$.}
+\begin{minipage}{.48\textwidth} %
+{\tiny 
+{\bf Solution: } 
+\qBrd[2.25in]{babyblue!40}{
+\begin{eqnarray*}
+\mu_{_X}= E(X)& =&  \sum_{x\in \{0,1,2\}} x \pmf_{_X}(x)\\
+& = &  0 \times\pmf_{_X}(0)+ 1\times \pmf_{_X}(1)+  2\times \pmf_{_X}(2)\nonumber\\
+& = & 0 \times 0.7 + 1\times 0.2+ 2 \times 0.1\nonumber\\
+& = &  0.4  
+ \end{eqnarray*}
+                    }
+}
+\end{minipage} %
+\begin{minipage}{.48\textwidth} %
+\qBrd[2.22in]{babyblueeyes!50}{
+\tiny
+\begin{eqnarray*}
+ E(X^2)& =&  \sum_{x\in \{0,1,2\}} x^2 \pmf_{_X}(x)\\
+& = &  0^2 \times\pmf_{_X}(0)+ 1^2\times \pmf_{_X}(1)+  2^2\times \pmf_{_X}(2)\nonumber\\
+& = & 0 \times 0.7 + 1\times 0.2+ 4 \times 0.1\nonumber\\
+& = &  0.6 
+ \end{eqnarray*}
+                    }       
+\end{minipage}
+{\tiny Hence $\text{Var}(X):= E(X^2)- \left(E(X)\right)^2= 0.6-(0.4)^2= 0.6-0.16= 0.44$\\
+The Standard Deviation $\sigma= \sqrt{\sigma^2}=\sqrt{\text{Var}(X)}=\sqrt{0.44}= 0.6633  $}
+
+
+\vspace{.1in}
+\end{frame}
+
+\begin{frame}\frametitle{Exercises on Computing $E(X)$ and $Var(X)$}
+\begin{enumerate}
+\item Find $E(X)$ and $Var(X)$, where $X$ is the outcome when we roll a fair die.
+\item A school class of $120$ students is driven in $3$ buses to a symphonic performance. There are 36 students in one of the buses, 40 in another, and 44 in the third bus. When the buses arrive, one of the 120 students is randomly chosen. Let X denote the number of
+students on the bus of that randomly chosen student, and find $E(X)$ and $ \text{Var}(X)$.
+\item We say that $\Indicator{A}{x}$ is an indicator function for the event $A$ if 
+$$  \Indicator{A}{x}:=
+ \begin{cases}
+ 1 & \text{if } x\in A\\
+  1 & \text{if } x\notin A.
+\end{cases}  $$
+Obtain $E(  \Indicator{A}{X})$ and $ \text{Var}\left( \Indicator{A}{x} \right).$
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+\section{Binomial Distribution  }
+\TransitionFrame[bittersweet]{\Large Binomial Distribution  }
+
+
+\begin{frame}{Binomial Distribution}
+\begin{itemize}
+\item A {\bf Bernoulli experiment} is a random experiment, the outcome of which can be classified in one of two mutually exclusive and
+exhaustive ways, say,  ``1=success" or ``0=failure." Let $ Y$ be the
+number of success on a Bernoulli trial, then $Y$ is called the Bernoulli
+random variable. 
+
+\item If a sequence of $n$ independent Bernoulli trials is performed under the same condition, we call it a set of n Bernoulli trials a Binomial experiment.
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Binomial Distribution}
+\define{Binomial Experiment}{
+An experiment is called a Binomial experiment if it satisfies the following 4 conditions:
+\begin{itemize}
+\item The experiment consists of $n$ Bernoulli trials.
+\item Each trial results in a success (S) or a failure (F).
+\item The trials are independent.
+\item The probability of a success, $p$,  is fixed throughout $n$ trials.
+\end{itemize}
+}
+\end{frame}
+
+
+\begin{frame}{Binomial Distribution $\text{Binomial}(n,p)$}
+\begin{enumerate}
+\item Given a Binomial experiment consisting of n Bernoulli trials with
+success probability p, the Binomial random variable X associated
+with this experiment is defined as the number of successes among the
+n trials.
+\item The random variable X has the Binomial Distribution with
+parameters n and p; denoted by$ X\sim Binomial(n, p).$
+
+\item The behavior of Binomial Distribution with different $n$ and $p$.
+
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Binomial Distribution $\text{Binomial}(n,p)$}
+\define{Binomial Distribution}{
+The probability mass function of $\text{Binomial}(n, p)$ is given by
+$$\pmf(x):= {n \choose x} p^x (1-p)^{n-x}, \text{ for } x = 0, 1, \ldots,  n \text{ and } {0 < p <1 }.$$\\
+$E(X)= n\times p $ and $\text{Var}(X)= np(1-p)$.
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amber!50}{
+\Exmpl{amber}{} Five fair coins are  flipped.  If the outcomes are assumed independent.
+\begin{enumerate}
+\item Find the probability mass function of the number of heads obtained.
+\item Find the probability that at least 3 heads are obtained.
+\item Find the probability that at most 2 heads are obtained.
+\end{enumerate}
+}\\
+\pause
+\vspace{.1in}
+{\tiny 
+{\bf Solution: }
+Let $X$ = The number of heads in 5 tossed coins. $X\sim Binomial(n=5, p=0.5)$.
+\begin{enumerate}
+\item $P(X = 0) =0.5^5 = 0.0313$
+\item $P(X = 1) ={5 \choose 1}0.5^5 =0.1563$
+\item $P(X = 2) ={5 \choose 2}0.5^5 =0.3125$
+\item $P(X = 3) ={5 \choose 3}0.5^5 =0.3125$
+\item $P(X = 4) ={5 \choose 4}0.5^5 =0.1563$
+\item $P(X = 0) ={5 \choose 5}0.5^5 = 0.0313$
+\end{enumerate}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!50}{
+\Exmpl{amethyst}{} It is known that screws produced by a certain company will be defective with probability .01, independently of each other. The company sells the screws in packages of 10 and offers a money-back guarantee that at most 1 of the 10 screws is defective. What proportion of packages sold must the company replace? Use the
+Binomial Calculator or Statistical Tables.
+}\\
+\vspace{1.5in}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{olive!50}{
+\Exmpl{olive}{} The following gambling game, known as the wheel of fortune (or chuck-a-luck), is quite popular at many carnivals and gambling casinos: A player bets on one of the numbers 1 through 6. Three dice are then rolled, and if the number bet by the player appears i times, i = 1; 2; 3, then the player wins i units; if the number bet by the
+player does not appear on any of the dice, then the player loses 1 unit. Is this game fair to the player?
+}\\
+\vspace{1.5in}
+\end{frame}
+
+
+
+\section{Poisson Distribution  }
+\TransitionFrame[bittersweet]{\Large Poisson Distribution  }
+\begin{frame}\frametitle{Poisson Distribution}
+The Poisson distribution models the number of occurrences of an
+event when there is a known average rate per unit time or space $\lambda$.
+
+\define{Poisson Distribution}{
+The requirements for a Poisson distribution are that:
+\begin{enumerate}
+\item no two events can occur simultaneously,
+\item events occur independently in different intervals, and
+\item the expected number of events in each time interval remain constant.
+\end{enumerate}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Poisson Distribution: pmf, Expected Value }
+The Poisson distribution models the number of occurrences of an
+event when there is a known average rate per unit time or space $\lambda$.
+
+\define{Poisson Distribution: pmf, Expected Value}{
+The requirements for a Poisson distribution are that:
+\begin{enumerate}
+\item The probability mass function of $\text{Poisson}(\lambda)$ is given by $$ p(x) = \frac{e^{-\lambda}\lambda^x}{x!} \text{ for } x = 0, 1, 2, 3, \ldots $$
+\item If $X\sim Poisson(\lambda)$, then  $E(X)= \lambda,$ and $\text{Var}(X)= \lambda$.
+\end{enumerate}
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{A few Examples of Poisson Distribution }
+\vspace{-.1in}
+\qbx[4.5in]{olive!50}{
+\Exmpl{olive}{} The number of customers arriving at a service counter within one-hour period.
+}\\
+\vspace{.1in}
+\qbx[4.5in]{teal!50}{
+\Exmpl{olive}{} The number of typographical errors in a book counted per page.
+}\\
+\vspace{.1in}
+\qbx[4.5in]{amethyst!50}{
+\Exmpl{amethyst}{} The number of email messages received at the technical support center daily.
+}\\
+\vspace{.1in}
+\qbx[4.5in]{babyblue!50}{
+\Exmpl{babyblue}{} The number of traffic accidents that occur on a specific road  during a month.
+}\\
+\vspace{.2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{A Few Examples of Poisson Distribution }
+\vspace{-.1in}
+\qbx[4.5in]{olive!50}{
+\Exmpl{olive}{} Messages arrive at an electronic message center at random times, with an average of 9 messages per hour. 
+\begin{enumerate}
+\item What is the probability of receiving exactly five messages during the next hour?
+\item What is the probability that more than 10 messages will be received within the next two hours?
+\end{enumerate}
+}\\
+
+
+\vspace{.5in}
+{\tiny 
+\begin{enumerate}
+\item The number of messages received in an hour, $X$ is modeled by
+Poisson distribution with $\lambda =  9$, i.e.  $X\sim \text{Poisson}(9)$.
+$P(X=5)= \frac{9^5 \exp(-9)}{5!}$
+\item The number of messages received within a 2-hour period, $Y$ is
+another Poisson distribution with  $Y= (2)(9) =18$, i.e. $Y\sim  \text{Poisson}(18)$.
+$P(Y > 10) =1- P(Y\leq 10 )= ...= 0.9696$
+\end{enumerate}
+
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Group Work }
+\begin{enumerate}
+\item Develop a real life example in which you can easily apply:
+\begin{enumerate}
+\item  Group 1: Poisson distribution.
+\item  Group 2: Binomial distribution.
+\item Group 3: Poisson distribution
+\end{enumerate}
+\item  In each case, propose two problems which can be solved using the Statistical Calculator.
+\item Can you propose an idea in which you can mix both distributions?
+(extra)
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+\section{Geometric Distribution   }
+\TransitionFrame[bittersweet]{\Large Geometric Distribution}
+
+
+
+\begin{frame}\frametitle{Geometric Distribution}
+\vspace{-.1in}
+\begin{enumerate}
+\item Suppose that independent trials, each having a probability $p$,
+$0 < p <1$, of being a success, are performed until a success occurs.
+\item Example: The first head in tossing coin several times.
+\item Then, Geometric distribution models the number of trials performed until a success occurs.
+\end{enumerate}
+
+\define{Geometric Distribution}{
+The probability mass function of $Geometric(p)$ is given by
+$$p(x) = (1-p)^{x-1}p \text{ for } x = 1, 2, 3, \ldots, $$
+}
+
+\qBrd[4.7in]{olive!40}{
+\sqBullet{olive} If $X\sim \text{Geometric}(p)$ then $E(X)= \frac{1}{p}$, and $\text{Var}(X)= \frac{1-p}{p^2}$
+}
+
+
+\end{frame}
+
+\begin{frame}\frametitle{Geometric Distribution: Example}
+\vspace{-.1in}
+\qbx[4.5in]{olive!50}{
+\Exmpl{olive}{}  Suppose that the probability of engine malfunction during any one-hour period is p = 0.02. Find the probability that a given engine will survive two hours.
+}\\
+\pause
+
+\vspace{.1in}
+{\tiny Solution: \\
+Letting $Y$ denote the number of one-hour intervals until the first
+malfunction, we have 
+\begin{eqnarray}
+& & P(\text{Survival for Next Two Hours})\nonumber\\
+& =&  P(Y\geq 3)\nonumber\\
+& =& 1- P(Y\leq 2)\nonumber\\
+& = &1-   \sum_{y=1}^{2}p(y)\nonumber\\
+& = &1-   \left\{ p(1)+p(2)\right\}\nonumber\\
+& =& 1-0.02-0.98\times 0.02\nonumber\\
+& =& 0.9604\nonumber
+\end{eqnarray}
+}
+\qBrd[4.5in]{babyblue!70}{
+\HLTW{\text{Exercise}}
+ Find the mean and standard deviation of Y.
+}
+
+\end{frame}
+
+
+
+
+\section{Negative Binomial Distribution }
+\TransitionFrame[bittersweet]{\Large Negative Binomial Distribution  }
+
+
+\begin{frame}
+\begin{enumerate}
+\item Suppose that independent trials, each having probability  $p$,
+$0 < p < 1$, of being a success are performed until a total of r
+successes is accumulated.
+\item  Example: The third head in tossing coin several times.
+
+\item  Then, Negative Binomial distribution models the number of trials
+performed until a the rth success occurs.
+\end{enumerate}
+
+\define{Negative Binomial Distribution}{
+The probability mass function of Negative Binomial RV, denoted by $\text{Negative-Binomial}(r, p)$ is given by
+$$p(x) ={{x-1}\choose{r-1}}p^{r-1} (1-p)^{x-r} \text{ for } x = r+1, r+2,r+ 3, \ldots, $$
+}
+
+\qBrd[4.7in]{olive!40}{
+\sqBullet{olive} If $X\sim \text{Negative-Binomial}(r, p)$ then $E(X)= \frac{r}{p}$, and $\text{Var}(X)= \frac{r(1-p)}{p^2}$
+}
+
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Geometric Distribution: Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!50}{
+\Exmpl{amethyst}{}{
+A machine produces 1\% defective parts. Using the statistical calculator, calculate the probability that
+\begin{enumerate}
+\item 10 parts have to be selected until to get 2 defective parts.
+\item Between 20 to 25 parts have to be selected to get 2 defective parts.
+\end{enumerate}
+}  
+}\\
+\pause
+
+\vspace{.1in}
+{\tiny Solution: \\
+Letting $Y$ denote the number of 
+\begin{eqnarray}
+AA
+\end{eqnarray}
+}
+\qBrd[4.5in]{babyblue!70}{
+\HLTW{\text{Exercise}}
+ Find the mean and standard deviation of Y.
+}
+
+\end{frame}
 
 
 

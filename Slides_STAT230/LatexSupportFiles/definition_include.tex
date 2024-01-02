@@ -53,7 +53,7 @@
 \newcommand{\HyPriorAlpha}{\alpha}
 \newcommand{\HyPriorBeta}{\beta}
 \newcommand{\HyPriorK}{\zeta}
-\newcommand{\Indicator}[1]{\mathbb{I}({#1 })}
+\newcommand{\Indicator}[2]{\mathbb{I}_{_{#1}}({#2 })}
 \newcommand{\xb}{\bm{x}}
 \newcommand{\bx}{\MakeVec{\bm{x}}}
 \newcommand{\bX}{\bm{X}}
@@ -360,3 +360,6 @@
 \newcommand{\Qn}{\HLTW{Question:} }
 
 \newcommand{\SampleS}{\mathbb{S}}
+\newcommand{\pmf}{p}
+\newcommand{\cdf}{F}
+\NewDocumentCommand{\support}{O{ }}{{\mathcal{S}}_{_{#1}}}

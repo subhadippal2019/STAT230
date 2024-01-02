@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 DEC 2023 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  2 JAN 2024 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,6 +404,88 @@ l.285 \usepackage{
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
+! Undefined control sequence.
+l.365 \NewDocumentCommand
+                         {\support}{O{}}{{\mathcal{S}_{_{#1}}} }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.365 \NewDocumentCommand{\support
+                                  }{O{}}{{\mathcal{S}_{_{#1}}} }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.365 \NewDocumentCommand{\support}{O
+                                     {}}{{\mathcal{S}_{_{#1}}} }
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no O in font nullfont!
+
+! LaTeX Error: \mathcal allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.365 \NewDocumentCommand{\support}{O{}}{{\mathcal
+                                                  {S}_{_{#1}}} }
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.365 ...umentCommand{\support}{O{}}{{\mathcal{S}_
+                                                  {_{#1}}} }
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 365.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 365.
+! You can't use `macro parameter character #' in math mode.
+l.365 ...tCommand{\support}{O{}}{{\mathcal{S}_{_{#
+                                                  1}}} }
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Extra }, or forgotten $.
+l.365 ...mand{\support}{O{}}{{\mathcal{S}_{_{#1}}}
+                                                   }
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.365 ...nd{\support}{O{}}{{\mathcal{S}_{_{#1}}} }
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
 )
 ! Emergency stop.
 <*> definition_include.tex
@@ -412,11 +494,11 @@ between \documentclass and \begin{document}.
 
  
 Here is how much of TeX's memory you used:
- 187 strings out of 480608
- 1556 string characters out of 5903631
+ 199 strings out of 480608
+ 1623 string characters out of 5903631
  239610 words of memory out of 5000000
- 16180 multiletter control sequences out of 15000+600000
+ 16192 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 12i,0n,15p,198b,16s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,3n,15p,198b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
