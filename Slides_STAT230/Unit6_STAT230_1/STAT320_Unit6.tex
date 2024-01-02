@@ -31,7 +31,7 @@
 \definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
 \definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
 
-\setbeamercolor{structure}{fg=bittersweet!70, bg= black!60}
+\setbeamercolor{structure}{fg=airforceblue!80, bg= black!60}
 
 
 
@@ -208,32 +208,73 @@
 %}\\
 %\end{frame}
 
+\TransitionFrame[airforceblue]{\Large Reminder:  The Cumulative Distribution Functions}
 
 
-
-
-
-
-\section{Multiplication Principle }
-\TransitionFrame[bittersweet]{\Large Multiplication Principle  }
-\TransitionFrame[bittersweet]{\Large Permutations  }
-\TransitionFrame[bittersweet]{\Large Combinations  }
-
-\TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
-
-
-\begin{frame}
-	\frametitle{Overview of Counting Principals  }
-	
-\begin{defn}[Multiplication Principle of counting]
-Suppose that two experiments are to be performed. Then if experiment 1 can result
-in any one of $m$ possible outcomes and if, for each outcome of experiment 1, there
-are $n$ possible outcomes of experiment 2, then together there are $m\times n$ possible outcomes of the two experiments.
-\end{defn}	
-	\vspace{2in}
-	
+\begin{frame}{Distribution Functions}
+\define{Cumulative Distribution Function (cdf)}{The {\bf cumulative distribution function} or {\bf cdf} of a {\bf \it  any} variable X, denoted by $F_{_X}(x)$, is defined by
+$$\HLTEQ[yellow]{F_X(\HLTEQ[white]{x})=P(X\leq \HLTEQ[white]{x})} \text{for all } \HLTEQ[white]{x}\in \R.$$\vspace{-.2in}
+}
+\vspace{2in}
 \end{frame}
 
+
+
+\begin{frame}{CDF: Example}
+\qBox{
+Consider the experiment of tossing three fair coins, and let X = number of heads observed.  We have already seen that  \vspace{-.1in}
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+x & 0 & 1 & 2 & 3 \\ \hline
+ $\pmf_{_X}(x)$ & $\frac{1}{8}$  & $\frac{3}{8}$  & $\frac{3}{8}$   & $\frac{1}{8}$   \\ \hline
+\end{tabular}\\
+\vspace{.1in}
+\HLTW{\text{The cdf of X is:}}
+\qBrd[3.5in]{babyblue!80}{
+\vspace{-.07in}
+$$ F_{_X}(x)=\left\{
+	\begin{array}{ll}
+		0  & \mbox{if } -\infty<x < 0 \\
+		\HLTEQ{\frac{1}{8}} & \mbox{if } 0\leq x < 1\\
+		\frac{4}{8} & \mbox{if } 1\leq x < 2\\
+		\HLTEQ{\frac{7}{8}} & \mbox{if } 2\leq x < 3\\
+		1 & \mbox{if } 3\leq x < \infty
+	\end{array}
+\right. $$
+}
+\end{center}
+}
+
+\end{frame}
+
+
+
+
+\section{Continuous Random Variables}
+\TransitionFrame[airforceblue]{\Large Continuous Random Variables }
+
+
+
+
+
+
+
+
+
+\section{A Few Widely Used Continuous Probability Distributions}
+\TransitionFrame[airforceblue]{\Large A Few Widely Used Continuous Probability Distributions  }
+
+
+
+\section{Moment Generating Function}
+\TransitionFrame[airforceblue]{\Large Simulations  }
+
+
+\section{Moment Generating Function}
+\TransitionFrame[airforceblue]{\Large Moment Generating Function  }
+
+\TransitionFrame[airforceblue]{\Large Binomial and Multinomial Coefficient  }
 
 
 
