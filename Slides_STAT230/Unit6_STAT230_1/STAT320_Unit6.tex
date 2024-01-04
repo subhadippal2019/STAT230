@@ -102,7 +102,7 @@
 
 
 
-\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 2: A Few Counting Principles \& and Their Applications}}
+\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 5: A Few Counting Principles \& and Their Applications}}
 
 \author[UAEU]
 {United Arab Emirates University}
@@ -251,14 +251,1059 @@ $$ F_{_X}(x)=\left\{
 
 
 
+
+\begin{frame}{Example of CDF}
+\vspace{-.1in}
+\qBox{
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+x & 0 & 1 & 2 & 3 \\ \hline
+ $P_X(X=x)$ & $\frac{1}{8}=.125$  & $\frac{3}{8}= .375$  & $\frac{3}{8}=0.375$   & $\frac{1}{8}=.125$   \\ \hline
+\end{tabular}
+\vspace{-.1in}
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.13]{figs/CDF_three_coin_toss.png} 
+\end{center}
+\caption{ The polt of $F_X(x)$: CDF of the random variable X \vspace{-.15in}}
+\end{figure}
+\vspace{-.1in}
+}
+\qBox{
+Note that $F_X(\cdot)$ is defined for all values of $x\in \R$, not just for $x\in \support{X}:=\{0,1,2,3\}$.  For example, $2.5 \notin \support{X}$,  however \vspace{-.18in}
+$$ \HLTEQ[white]{F_X(2.5)= P_X(x\leq 2.5)= P_X(X=0)+P_X(X=1)+P_X(X=2)= \frac{7}{8}.}$$\vspace{-.25in}
+}
+
+
+\end{frame}
+
+
+
+
+\TransitionFrame[airforceblue]{\Large Characterization of {\bf \it any} CDF Function}
+
+
+\begin{frame}{Characterization of a CDF }
+
+\begin{theorem}
+The function $F(x)$ is a cdf { \bf   if and only if}  the following three conditions hold:
+\begin{enumerate}
+\item $\HLTW{\displaystyle \lim_{x\rightarrow -\infty } F(x)=0}$ and $\HLTW{\displaystyle \lim_{x\rightarrow \infty } F(x)=1}$. 
+\item F(x) is a nondecreasing function of x
+\item F(x) is right-continuous; that is, for every real  number $x_0$,  $\HLTY{\displaystyle \lim_{x\downarrow x_0} F(x)=  F(x_0)}$.
+\end{enumerate}
+\end{theorem}
+
+
+
+\end{frame}
+
+
+\begin{frame}
+
+\qBox{
+\HLTW{\text{Comment:}} Let $X$ be a random variable with the corresponding cdf $F_X(x)$ for $x\in \R$.  Let $x_0 \in \R$ is arbitrary. Then 
+$$P(X=x_0):=P(X\in \{x_0\})=\HLTY{\displaystyle \lim_{\HLTW{x\downarrow x_0}} F_X(X)}-  \HLTY{\displaystyle\lim_{\HLTW{x\uparrow x_0}}F_X(x)}.$$
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Example: CDF continuous}
+\begin{figure}
+\begin{center}
+\noindent\shadowimage[width=7cm]{figs/CDF_three_coin_toss.png}\par\bigskip 
+\end{center}
+\vspace{-.25in}
+\caption{ The polt of $F_X(x)$: CDF of the random variable X}
+\end{figure}
+
+\vspace{-.1in}
+\qBox{
+Let $F_X(x)$ denotes the cdf function included in the above image. Therefore, \\
+$\HLTEQ[yellow]{P(X=2)= \lim_{x\downarrow 2} F_X(X)-  \lim_{x\uparrow 2}F_X(x)= 0.5-0.125=0 .375.}$
+$\HLTEQ[lightGreenOne]{P(X=1.5)= \lim_{x\downarrow 1.5} F_X(X)-  \lim_{x\uparrow 1.5}F_X(x)=0.5-0.5=0.}$
+}
+
+
+\end{frame}
+
+
+\begin{frame}{Example: CDF continuous}
+\qBox{{\bf Example:} An example of a continuous cdf is the function
+$$ \displaystyle F_X(x):=\frac{1}{1+e^{-x}} \text{ for all } x\in \R.\vspace{-.2in}$$
+
+\begin{figure}
+\begin{center}
+\noindent\shadowimage[width=6.3cm]{figs/logistic_CDF.png}\par\bigskip 
+\end{center}
+\vspace{-.25in}
+\caption{ The polt of $F_X(x)$: CDF of the random variable X \vspace{-.1in}}
+\end{figure}
+}
+Verify: The above function satisfies the three conditions required to be a  CDF.  
+\end{frame}
+ 
+
+\begin{frame}{Example:}
+
+\qBox{\Qn: Prove that the following functions are valid cdfs. 
+\begin{enumerate}
+\item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
+\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
+\end{enumerate}
+
+
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\define{Discrete Random Variable}{
+A random variable X is discrete if it's support $\support[X]$ is finite or countable infinite. 
+}
+
+
+%\define{Alternative Definition: Discrete Random Variable}{
+%A random variable X is discrete if the corresponding cdf $F_X(x)$ is a step function of x.  i.e.  $F_X(x)$ increases only via jumps. 
+%}
+\qBox{{\bf \HLTW{\text{ Alternative Characterization of Discrete Distributions: } }}
+A random variable X is discrete if the corresponding cdf $F_X(x)$ is a step function of x.  i.e.  $F_X(x)$ increases only via jumps. 
+}
+
+
+\end{frame}
+
+
+
+
+
+
 \section{Continuous Random Variables}
 \TransitionFrame[airforceblue]{\Large Continuous Random Variables }
 
+\begin{frame}{Continuous and Discrete Random variable}
+\define{Continuous Random Variable}{
+A random variable X is continuous if the corresponding cdf $F_x(x)$ is a continuous function of x. 
+}
+
+\end{frame}
+
+
+\begin{frame}
+\qBoxCol{lightBrownOne}{{\bf Question: }
+Is it ture that a random variable must be continuous if its support is an interval ?
+}\\
+
+\qBoxCol{lightBrownOne}{{\bf Question: }
+Is it ture that a random variable must be continuous if its support is $\R$?
+}
+
+\qBoxCol{lightBrownOne}{{\bf Question: }
+Is it possible for a continuous random variable to have a finite support?
+}
+\end{frame}
+
+
+
+
+\begin{frame}{Example: CDF continuous}
+\qBox{{\bf Example:} An example of a continuous cdf is the function
+$$ \displaystyle F_X(x):=\frac{1}{1+e^{-x}} \text{ for all } x\in \R.\vspace{-.2in}$$
+
+\begin{figure}
+\begin{center}
+\noindent\shadowimage[width=6.3cm]{figs/logistic_CDF.png}\par\bigskip 
+\end{center}
+\vspace{-.25in}
+\caption{ The polt of $F_X(x)$: CDF of the random variable X \vspace{-.1in}}
+\end{figure}
+}
+Verify: The above function satisfies the three conditions required to be a  CDF.  
+\end{frame}
+ 
+
+
+
+\begin{frame}{Example: CDF continuous}
+\qBox{{\bf Example of CDF of a Continuous Random Variable:} 
+$$ F_X(x):= \left\{
+\begin{array}{ll}
+		0  & \mbox{if } x \leq  0 \\
+		1- e^{-x}  & \mbox{if } x > 0
+	\end{array}\right.
+$$
+}
+
+
+{\bf Verify:} The above function satisfies the three conditions required to be a  CDF.
+\end{frame}
 
 
 
 
 
+\begin{frame}{Example:}
+
+\qBox{\Qn: Prove that the following functions are valid cdfs. 
+\begin{enumerate}
+\item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
+\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
+\end{enumerate}
+
+
+}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Probability Density Function (pmf):  For  continuous  RV}
+
+\define{Probability Density Function}{
+The probability density function or pdf, $f_x(x)$, of a continuous random variable $X$ is the function that satisfies
+$$F_X(x)= \int_{-\infty}^{x} f_x(x) dx $$\vspace{-.2in}
+}
+
+\qBox{{\bf Comment:}
+Using the Fundamental Theorem of Calculus, if $f_X(x)$ is continuous, we have the further relationship  
+$\displaystyle f_X(x)= \frac{d}{dx}F_{X}(x).$
+ }
+\qBox{
+If X is a continuous random variable, then probabilities can be obtained by integrating its pdf over suitable region. Specifically, for $a, b\in \R$, $a<b$, 
+$$\HLTEQ[white]{P(a< X\leq b)= F_X(b)-F_X(a)= \int_a^b f_{X}(x) dx.}$$\vspace{-.2in}
+}
+
+\end{frame}
+
+
+
+\begin{frame}{Probability Density Function (pdf)}
+
+\define{Continuous Random Variable}{
+A random variable X is said to be continuous if there is a function $f(x)$, called the probability density function (pdf), such that
+\begin{enumerate}
+\item $f(x)\geq 0 $ for all $x$.
+\item $\displaystyle \int_{-\infty}^{\infty}f(x)dx= 1$
+\item $\HLTW{\displaystyle P(a\leq X\leq b)= \int_{a}^{b}f(x)dx}$ for all $a<b$.
+\end{enumerate}
+}
+
+\qBrd[4.7in]{amethyst!40}{
+\small
+If $X$ is a continuous random variable then, 
+\begin{itemize}
+\item $P(X=c)= 0$ for any $c\in \R$
+\item $P(a\leq X\leq  b) = P(a < X\leq b) = P(a\leq X < b) = P(a < X < b)$.
+\end{itemize}
+}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{}  Suppose that $X$ is a continuous random variable whose probability density function is given by
+$$ f(x):= \begin{cases} 
+ C(4x-2x^2) & \text{ if } 0 <x<2\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item What is the value of C?
+\item Find $P(X>1)$.
+\end{enumerate}
+}\\
+%\pause
+\vspace{1.7in}
+{\tiny {:}  
+ 
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny 
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{}  Suppose that $X$ is a continuous random variable whose probability density function is given by
+$$ f(x):= \begin{cases} 
+ C(4x-2x^2) & \text{ if } 0 <x<2\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item What is the value of C?
+\item Find $P(X>1)$.
+\end{enumerate}
+}\\
+
+\begin{minipage}{.48\textwidth} %
+{\tiny 
+ \qBrd[1.6in]{babyblue!40}{
+ According to the property of the pdf
+ \begin{eqnarray}
+& &  \int f(x)dx=1\nonumber\\
+ & \implies&    \int_{0}^{2} C(4x-2x^2)dx=1\nonumber\\
+ & \implies&     C(2x^2-\frac{2x^3}{3} )\Bigg\vert_{0}^2 =1\nonumber\\
+  & \implies&     C(8-\frac{16}{3} ) =1\nonumber\\
+   & \implies&     C =\frac{3}{8}\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage} %
+\begin{minipage}{.48\textwidth} %
+{\tiny 
+ \qBrd[1.8in]{babyblue!40}{
+ \begin{eqnarray}
+ P(X>1)& = &   \int_{1}^{2} f(x)dx\nonumber\\
+ & =&    \int_{1}^{2} C(4x-2x^2)dx\nonumber\\
+ & =&     C(2x^2-\frac{2x^3}{3} )\Bigg\vert_{1}^2 =1\nonumber\\
+  & =&     C\left\{ (8-\frac{16}{3} ) - (2-\frac{2}{3} )\right\} \nonumber\\
+   & =&    C\left\{ \frac{8}{3} - \frac{4}{3} \right\}\nonumber\\
+     & =&    \frac{3}{8}\times  \frac{4}{3}\nonumber\\
+      & =&   \frac{1}{2}.\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage}
+
+ 
+ 
+ 
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+
+\vspace{-.1in}
+\qbx[4.5in]{amber!40}{
+\Exmpl{amber}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item Make a Graph of the above pdf. 
+\item Find the probability that the technician will spend less than 30\% of his workweek serving customers.
+\item Find the probability that the technician will spend 20\% to 70\% of hisworkweek serving customers.
+\end{enumerate}
+}\\
+%\pause
+\vspace{1.7in}
+{\tiny {:}  
+ 
+}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{amber!40}{
+\Exmpl{amber}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item Make a Graph of the above pdf. 
+\item Find the probability that the technician will spend less than 30\% of his workweek serving customers.
+\item Find the probability that the technician will spend 20\% to 70\% of hisworkweek serving customers.
+\end{enumerate}
+}\\
+%\pause
+
+{\tiny 
+\begin{minipage}{.29\textwidth} %
+{\tiny 
+ \qBrd[1.27in]{babyblue!40}{
+ \includegraphics[scale=.15]{figs/pdf1.png}
+ }}
+\end{minipage} %
+\begin{minipage}{.33\textwidth} %
+{\tiny 
+ \qBrd[1.4in]{babyblue!40}{
+ \begin{eqnarray}
+ P(X<0.3)& = &   \int_{0}^{0.3} f(x)dx\nonumber\\
+ & =&    \int_{1}^{2} 3x^2dx\nonumber\\
+ & =&     (x^3)\Bigg\vert_{0}^{0.3}\nonumber\\
+     & =& (0.3)^3-(0)^3\nonumber\\
+      & =&  0.027\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage}
+\begin{minipage}{.31\textwidth} %
+{\tiny 
+ \qBrd[1.67in]{babyblueeyes!40}{
+ \begin{eqnarray}
+ P(0.2<X<0.7)& = &   \int_{0.2}^{0.7} f(x)dx\nonumber\\
+ & =&    \int_{0.2}^{0.7} 3x^2dx\nonumber\\
+ & =&    ( x^3)\Bigg\vert_{0.2}^{0.7}\nonumber\\
+     & =& (0.7)^3-(0.2)^3\nonumber\\
+      & =&0.337 \nonumber
+ \end{eqnarray}
+ }}
+\end{minipage}
+
+ 
+}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+
+\vspace{-.1in}
+\qbx[4.5in]{olive!40}{
+\Exmpl{olive}{}  The amount of time in hours that a computer functions before
+breaking down is a continuous random variable with probability
+density function given by
+$$ f(x):= \begin{cases} 
+ \lambda e^{-\frac{\lambda}{100}}& \text{ if } x\geq 0\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+What is the probability that
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item a computer will function between 50 and 150 hours before breaking down?
+\item it will function for fewer than 100 hours?
+\end{enumerate}
+}\\
+%\pause
+\vspace{1.7in}
+{\tiny {:}  
+ 
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+
+\vspace{-.1in}
+\qbx[4.5in]{applegreen!40}{
+\Exmpl{applegreen}{}  The lifetime in hours of a certain kind of radio tube is a random
+variable having a probability density function given by
+$$ f(x):= \begin{cases} 
+\frac{100}{x^2}& \text{ if } x\geq 100\\
+0 & \text{if 	$ x\leq 100$.} 
+\end{cases}$$
+What is the probability that exactly 2 of 5 such tubes in a radio set
+will have to be replaced within the  fist 150 hours of operation?
+{\tiny Assume that the events $E_i$, $i = 1,2,3,4,5, $that the ith such tube will have to be replaced within this time are independent.}
+}\\
+%\pause
+\vspace{1.7in}
+{\tiny {:}  
+ 
+}
+\end{frame}
+
+
+
+\begin{frame}{Cumulative Distribution Function (cdf)}
+\define{(The Cumulative Distribution Function)}{
+The cumulative distribution function (cdf) F(x) of a continuous random variable $X$ with pdf $f()$ is defined for every number $x$ by $$ F(x)=P(X\leq x)= \int_{-\infty}^{x}f(x) dx.$$
+}
+
+\qBrd[4.5in]{amethyst!40}{
+\qBrd[1.7in]{amethyst!70}{A Few Properties of F(x)}
+\begin{enumerate}
+\item $P(a< X\leq  b) = F(b) - F(a).$
+\item  $P(X>  b) = 1-F(b)$
+\item If X is a continuous random variable with cdf $F(x)$ then at every x at which $\frac{dF(x)}{dx}$ exists:
+$f(x)=\frac{dF(x)}{dx} $
+\end{enumerate}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+
+\vspace{-.1in}
+\qbx[4.5in]{apricot!50}{
+\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+{3x^2}& \text{ if }0\leq  x\leq 1\\
+0 & \text{therwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item Obtain, $F(x)$, the CDF of X.
+\item Use $F(x)$ to compute  $P(0.5<X\leq 0.8)$.
+\end{enumerate}
+}
+{\tiny {:}  
+ 
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{apricot!40}{
+\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item Obtain, $F(x)$, the CDF of X and Graph it.
+\item Use $F(x)$ to compute  $P(0.5<X\leq 0.8)$.
+\end{enumerate}
+}\\
+%\pause
+{\tiny 
+\begin{minipage}{.33\textwidth} %
+{\tiny 
+ \qBrd[1.6in]{babyblue!40}{
+ \begin{eqnarray}
+ F(x)= P(X\leq x)& =&    \int_{0}^{x} f(y)dy\nonumber\\
+ & =&    \int_{0}^{x} 3y^2dy\nonumber\\
+ & =&     (y^3)\Bigg\vert_{0}^{x}\nonumber\\
+     & =& x^3\nonumber
+ \end{eqnarray}
+ $$\HLTW{ F(x)= \begin{cases}
+ 0 & \text{ if } x<0\\
+ x^2 & \text{ if } 0 \geq x<1\\
+ 1 & \text{ if } x\geq 1.\\
+ \end{cases}  }$$
+ }}
+\end{minipage}
+\hspace{.1in}
+\begin{minipage}{.29\textwidth} %
+{\tiny 
+ \qBrd[1.4in]{babyblue!40}{
+ \includegraphics[scale=.12]{figs/CDF1.png}
+ }}
+\end{minipage} %
+\hspace{.1in}
+\begin{minipage}{.31\textwidth} %
+{\tiny 
+ \qBrd[1.45in]{babyblueeyes!40}{
+ \begin{eqnarray}
+& &  P(0.5<X<0.8)\nonumber\\
+ & = &  F(0.8)- F(0.5)\nonumber\\
+ &  =& ( 0.8)^3-(0.5)^3\nonumber\\
+ & =&  0.387\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage}
+
+ 
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+
+\vspace{-.1in}
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal}{} If X is continuous with distribution function FX and density function f(x),find the density function of $Y = 2X$.
+}
+{\tiny {:}  
+ 
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Percentiles, Quantiles, and Median}
+\define{Percentiles}{
+Let $p$ be a number between 0 and 1. The $(100)^{\text{th}}$ percentile of the distribution of a continuous random variable X, we shall denote by c, is that value for which
+$$ F(c)= p$$
+i.e. $c= F^{-1}(p)$.
+where $F^{-1}(\cdot)$ is the inverse cumulative distribution function.
+}
+
+\qBrd{babyblue!50}{
+Special percentiles:
+\begin{enumerate}
+\item The median of a continuous distribution, denoted by m, is the 50th percentile. So $m$ satisfies  $m = F^{-1}(0.5)$.
+\item The first and the third quartiles can be computed as $Q_1=  F^{-1}(0.25)$
+\item The third and the third quartiles can be computed as $Q_3=  F^{-1}(0.75)$
+\end{enumerate}
+}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{apricot!40}{
+\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item find the median, and 
+\item the interquartile range of the distribution.
+\end{enumerate}
+}\\
+%\pause
+
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{apricot!40}{
+\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item find the median, and 
+\item the interquartile range of the distribution.
+\end{enumerate}
+}\\
+%\pause
+{\tiny 
+\begin{minipage}{.33\textwidth} %
+{\tiny 
+ \qBrd[1.6in]{babyblue!40}{
+ We have already Shown
+ $$\HLTW{ F(x)= \begin{cases}
+ 0 & \text{ if } x<0\\
+ x^2 & \text{ if } 0 \geq x<1\\
+ 1 & \text{ if } x\geq 1.\\
+ \end{cases}  }$$
+ Note that if $F(x)= y\implies x^3=y \implies x= y^{\frac{1}{3}} \implies F^{-1}(y)= y^{\frac{1}{3}}.$
+ }}
+\end{minipage}
+\hspace{.1in}
+\begin{minipage}{.29\textwidth} %
+{\tiny 
+ \qBrd[1.4in]{babyblue!40}{
+ $m= F^{-1}(0.5)= (0.5)^{\frac{1}{3}}= 0.794$
+ }}
+\end{minipage} %
+\hspace{.1in}
+\begin{minipage}{.31\textwidth} %
+{\tiny 
+ \qBrd[1.45in]{babyblueeyes!40}{
+ \begin{eqnarray}
+&&  \text{IQR} \nonumber\\
+& =&  Q_3-Q_1 \nonumber\\
+ & =& F^{-1}(0.75) - F^{-1}(0.25)\nonumber\\
+ & =&  (0.75)^{\frac{1}{3}}- (0.25)^{\frac{1}{3}}\nonumber\\
+  & =  & 0.909 -0.630\nonumber\\
+   &  =&  0.279\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage}
+
+ 
+}
+\end{frame}
+
+
+
+
+\begin{frame}{Expected Value, or   {\bf mean } of a Continuous Random Variable}
+\define{Expected Value or {\bf mean } of a Continupues Random Variable}{
+If X is a continuous random variable with pdf $f(x)$, then the expected value (the mean) of X denoted by $E(X)$ or $ \mu_{_X}$ is given by
+$$\mu_{_X}:= E(X)= \int_{-\infty}^{\infty} xf(x)dx$$
+}
+\end{frame}
+
+
+\begin{frame}{Expected Value of a function of a Continuous Random Variable}
+\define{Expected Value of a function of a Continuous Random Variable}{
+Let h(x) be any$^{*}$ function.  If X is a continuous random variable with pdf $f(x)$, then the expected value $h(X)$ denoted by $E(h(X))$ is given by
+$$ E(h(X))= \int_{-\infty}^{\infty} h(x)f(x)dx$$
+}
+\end{frame}
+
+
+
+
+\begin{frame}{Variance of a  Random Variable}
+\define{Variance a Random Variable}{
+Variance of a random variable $X$ is defined to be 
+$$ \text{Var}(X)= E(X^2)- \left( E(X) \right)^2$$
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{A Few Properties of Expected Value and Variance of a Random Variable}
+\qBrd{teal!40}{
+Let $a$ and $b$ are constants, then 
+\begin{enumerate}
+\item $E(a+bX)= a+bE(X)$
+\item $\text{Var}(a+bX)=b^2\text{Var}(X)$
+\end{enumerate}
+}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{apricot!40}{
+\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item Find the expected value of percentage of time the technician spends serving customers.
+\item variance of percentage of time the technician spends serving customers.
+\end{enumerate}
+}\\
+
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{apricot!40}{
+\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}[a).]
+\item Find the expected value of percentage of time the technician spends serving customers.
+\item variance of percentage of time the technician spends serving customers.
+\end{enumerate}
+}\\
+%\pause
+{\tiny 
+\begin{minipage}{.33\textwidth} %
+{\tiny 
+ \qBrd[1.6in]{babyblue!40}{
+\begin{eqnarray*}
+E(X)
+& =& \int_{-\infty}^{\infty}x f(x) dx\\
+& =& \int_{0}^{1}x (3x^2) dx\\
+& =& \int_{0}^{1} (3x^3) dx\\
+& =& \frac{3x^4}{4} \Big\vert _{0}^{1}\\
+& =& \frac{3}{4}\\
+\end{eqnarray*}
+ }}
+\end{minipage}
+\hspace{.1in}
+\begin{minipage}{.29\textwidth} %
+{\tiny 
+ \qBrd[1.4in]{babyblue!40}{
+ \begin{eqnarray*}
+E(X^2)
+& =& \int_{-\infty}^{\infty}x^2 f(x) dx\\
+& =& \int_{0}^{1}x^2 (3x^2) dx\\
+& =& \int_{0}^{1} (3x^4) dx\\
+& =& \frac{3x^5}{5} \Big\vert _{0}^{1}\\
+& =& \frac{3}{5}\\
+\end{eqnarray*}
+ }}
+\end{minipage} %
+\hspace{.1in}
+\begin{minipage}{.31\textwidth} %
+{\tiny 
+ \qBrd[1.45in]{babyblueeyes!40}{
+ \begin{eqnarray*}
+&&  \text{Var}(X) \nonumber\\
+& =&  E(X^2)- \left(E(X)\right)^2 \nonumber\\
+   &  =&   \frac{3}{5}- \left( \frac{3}{4}\right)^2\\
+    &  =&   0.6- \left( 0.75\right)^2\\
+    & =& 0.0375
+ \end{eqnarray*}
+ }}
+\end{minipage}
+
+ 
+}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{}  Find $E(X)$ and Var$(X)$ when the density function of X is
+$$ f(x):= \begin{cases} 
+ 2x& \text{ if } 0 \leq x\leq 1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+}\\
+%\pause
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{}  Find $E(X)$ and Var$(X)$ when the density function of X is
+$$ f(x):= \begin{cases} 
+ 2x& \text{ if } 0 \leq x\leq 1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+}\\
+%\pause
+{\tiny 
+\begin{minipage}{.33\textwidth} %
+{\tiny 
+ \qBrd[1.6in]{babyblue!40}{
+\begin{eqnarray*}
+E(X)
+& =& \int_{-\infty}^{\infty}x f(x) dx\\
+& =& \int_{0}^{1}x (2x) dx\\
+& =& \int_{0}^{1} (2x^2) dx\\
+& =& \frac{2x^3}{3} \Big\vert _{0}^{1}\\
+& =& \frac{2}{3}\\
+\end{eqnarray*}
+ }}
+\end{minipage}
+\hspace{.1in}
+\begin{minipage}{.29\textwidth} %
+{\tiny 
+ \qBrd[1.4in]{babyblue!40}{
+ \begin{eqnarray*}
+E(X^2)
+& =& \int_{-\infty}^{\infty}x^2 f(x) dx\\
+& =& \int_{0}^{1}x^2 (2x) dx\\
+& =& \int_{0}^{1} (2x^3) dx\\
+& =& \frac{2x^4}{4} \Big\vert _{0}^{1}\\
+& =& \frac{2}{4}\\
+& =& \frac{1}{2}
+\end{eqnarray*}
+ }}
+\end{minipage} %
+\hspace{.1in}
+\begin{minipage}{.31\textwidth} %
+{\tiny 
+ \qBrd[1.45in]{babyblueeyes!40}{
+ \begin{eqnarray*}
+&&  \text{Var}(X) \nonumber\\
+& =&  E(X^2)- \left(E(X)\right)^2 \nonumber\\
+   &  =&   \frac{1}{2}- \left( \frac{2}{3}\right)^2\\
+    &  =&    \frac{1}{2}-  \frac{4}{9}\\
+    & =&  \frac{10}{9}
+ \end{eqnarray*}
+ }}
+\end{minipage}
+
+ 
+}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+
+\qbx[4.5in]{applegreen!40}{
+\Exmpl{applegreen}{}  Find $E(e^X)$ when the density function of X is
+$$ f(x):= \begin{cases} 
+ 1& \text{ if } 0 \leq x\leq 1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+}\\
+\vspace{2in}
+
+
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+
+\qbx[4.5in]{applegreen!40}{
+\Exmpl{applegreen}{}  Find $E(e^X)$ when the density function of X is
+$$ f(x):= \begin{cases} 
+ 1& \text{ if } 0 \leq x\leq 1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+}\\
+%\pause
+{\tiny 
+ \qBrd[4.4in]{olive!40}{
+ \begin{eqnarray*}
+E(e^X)
+& =& \int_{-\infty}^{\infty}e^x f(x) dx\\
+& =& \int_{0}^{1}e^x (1) dx\\
+& =&e^x \Big\vert _{0}^{1}\\
+& =&e^1-e^0\\
+& =& e-1
+\end{eqnarray*}
+ }}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!40}{
+\Exmpl{amethyst}{}  Let X denote the resistance of a randomly chosen resistor, and suppose that its pdf is given by
+$$ f(x):= \begin{cases} 
+ \frac{x}{18}& \text{ if } 8 \leq x\leq 10\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\begin{enumerate}
+\item Find and graph the cdf of X.
+\item  Find $P(8.6< X\leq 9:8)$.
+\item Find the median of the resistance of such resistors.
+\item Find the mean and variance of X.
+\end{enumerate}
+}\\
+%\pause
+\vspace{1.5in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Exercise}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{bittersweet!40}{
+\Exmpl{bittersweet}{}  The length of time to failure (in hundreds of hours) for a transistor is a random variable X with cumulative distribution function given by
+$$ F(x):= \begin{cases} 
+1- e^{-x^2}& \text{ for }x>0\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\begin{enumerate}
+\item Find a pdf of X $f(x)$. 
+\item  Find the probability that the transistor operates for at least 200 hours.
+\item Find the $30^{\text{th}} $ percentile of X.
+\end{enumerate}
+}\\
+%\pause
+\vspace{1.5in}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{bluebell!40}{
+\Exmpl{bluebell}{}  Weekly CPU time used by an accounting firm has probability density function (measured in hours) given by
+$$ f(x):= \begin{cases} 
+\frac{3}{64}x^2(4-X)& \text{ for }0\leq x\leq 4\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\begin{enumerate}
+\item Find the F(x) for weekly CPU time.
+\item  Find the probability that the of weekly CPU time will exceed two hours for a selected week.
+\item Find the expected value and variance of weekly CPU time.
+\item Find the probability that the of weekly CPU time will be within half an hour of the expected weekly CPU time.
+\item The CPU time costs the firm \$200 per hour. Find the expected value and variance of the weekly cost for CPU time.
+\end{enumerate}
+}\\
+%\pause
+\vspace{1.5in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+\tiny
+\vspace{-.1in}
+\qbx[4.5in]{asparagus!40}{
+\Exmpl{asparagus}{}  The length of time required by students to complete a one-hour exam is a random variable with a density function given by
+$$ f(x):= \begin{cases} 
+cy^2+y& \text{ for }0\leq x\leq 1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\begin{enumerate}
+\item Find c that makes this function a valid probability density function.
+\item Find the F(y) 
+\item Graph f(y) and F(y).
+\item  Find the probability that a randomly selected student will finish in less than half an hour.
+\item Find the time that 95\% of the students finish before it.
+\item Given that a particular student needs at least 15 minutes to complete the exam, find the probability that she will require at least 30 minutes to finish.
+\end{enumerate}
+}\\
+%\pause
+\vspace{1.5in}
+\end{frame}
 
 
 
@@ -266,15 +1311,683 @@ $$ F_{_X}(x)=\left\{
 \TransitionFrame[airforceblue]{\Large A Few Widely Used Continuous Probability Distributions  }
 
 
+\TransitionFrame[amber]{\Large Uniform Distribution }
 
-\section{Moment Generating Function}
-\TransitionFrame[airforceblue]{\Large Simulations  }
+
+
+\begin{frame}\frametitle{Uniform Distribution}
+\qBrd{olive!30}{The uniform random variable is used to model the behavior of a continuous random variable whose values are uniformly or evenly distributed over a given interval.}
+\define{Uniform Distribution}{
+A random variable X is said to be uniformly distributed over the
+interval $[a, b]$, denoted by $X\sim \text{Uniform}(a, b)$ , if its density function is
+ $$
+ f(x) =
+  \begin{cases}
+  \frac{1}{b-a}  & a\leq x\leq b\\
+  0 & \text{Otherwise}
+ \end{cases}
+$$
+}
+
+
+{\tiny 
+\begin{minipage}{.56\textwidth} %
+{\small 
+ \qBrd[2.5in]{olive!30}{If $X\sim  \text{Uniform}(a, b)$, then:
+$$  \HLTW{E(X)= \frac{a+b}{2}}, \text{ and }  \HLTW{ \text{Var}(X)= \frac{(b-a)^2}{12}}$$
+ }
+ }
+\end{minipage}
+\hspace{.1in}
+\begin{minipage}{.4\textwidth} %
+{\tiny 
+ \qBrd[1.4in]{babyblue!40}{
+ \includegraphics[scale=.12]{figs/Unif_density.png}
+ }}
+\end{minipage} %
+}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.6in]{apricot!40}{
+\Exmpl{apricot}{} The time (in min) for a lab assistant to prepare the equipment for a certain experiment is believed to have a uniform distribution with a = 25 and b = 35.
+\begin{enumerate}[a).]
+\item Write the pdf of X and sketch its graph.
+\item What is the probability that preparation time exceeds 33 min?
+\item What is the probability that preparation time is within 2 min of the mean time?
+\end{enumerate}
+}\\
+\vspace{2.1in}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.6in]{apricot!40}{
+\Exmpl{apricot}{} The time (in min) for a lab assistant to prepare the equipment for a certain experiment is believed to have a uniform distribution with a = 25 and b = 35.
+\begin{enumerate}[a).]
+\item Write the pdf of X and sketch its graph.
+\item What is the probability that preparation time exceeds 33 min?
+\item What is the probability that preparation time is within 2 min of the mean time?
+\end{enumerate}
+}\\
+%\pause
+{\tiny 
+\begin{minipage}{.33\textwidth} %
+{\tiny 
+ \qBrd[1.6in]{babyblue!40}{\begin{center}
+ $$\HLTW{ f(x):= \begin{cases} 
+ \frac{1}{10}& \text{ if } 25 \leq x\leq 35\\
+0 & \text{ otherwise.} 
+\end{cases} }$$
+ \includegraphics[scale=.1]{figs/Unif_densityExample.png}
+ \end{center}
+ }
+ }
+\end{minipage}
+\hspace{.1in}
+\begin{minipage}{.21\textwidth} %
+{\tiny 
+ \qBrd[1in]{babyblueeyes!40}{
+ \begin{eqnarray}
+& &  P(X>33)\nonumber\\
+ & = &  \int_{33}^{35} f(x) dx\nonumber\\
+& = &  (\frac{x}{10})\Big \vert_{33}^{35}\nonumber\\
+ & =&  \frac{35-32}{10}\nonumber\\
+  & =&0.2\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage} %
+\hspace{.1in}
+\begin{minipage}{.38\textwidth} %
+{\tiny 
+ \qBrd[1.85in]{babyblueeyes!40}{
+ Mean of the random variable is\\ $\HLTW{E(X)}= \frac{25+35}{2}= \HLTW{30}$.
+ \begin{eqnarray}
+& &  P\left(\HLTW{E(X)}-2<X<\HLTW{E(X)}+2\right)\nonumber\\
+ & = &   P(30-2<X<30+2)\nonumber\\
+& = &   P(28<X<32)\nonumber\\
+& = &  \int_{28}^{32} f(x) dx\nonumber\\
+& = &  (\frac{x}{10})\Big \vert_{28}^{32}\nonumber\\
+ & =&  \frac{32-28}{10}\nonumber\\
+  & =&0.4\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage}
+
+ 
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{amethyst!40}{
+\Exmpl{amethyst}{} Upon studying low bids for shipping contracts, a microcomputer company finds that intrastate contracts have low bids that are uniformly distributed between 20 and 25, in units of thousands of dollars.
+\begin{enumerate}[a).]
+\item Find the probability that the low bid on the next intrastate shippingcontract is below \$22,000.
+\item Find the probability that the low bid on the next intrastate shipping contract is in excess of \$24,000.
+\item Find the expected value and standard deviation of low bids on
+contracts of the type described above.
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{babyblue!40}{
+\Exmpl{babyblue}{} A grocery store receives delivery each morning at a time that varies uniformly between 5:00 and 7:00 AM.
+\begin{enumerate}[a).]
+\item Write and sketch the pdf of the delivery arrival.
+\item Find the probability that the delivery on a given morning will occur between 5:30 and 5:45 A.M.
+\item Find the probability that the time of delivery will be within one-half standard deviation of the expected time.
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+\TransitionFrame[amber]{\Large Exponential Distribution }
+
+
+\begin{frame}\frametitle{Exponential Distribution: Context}
+\begin{enumerate}
+\item The exponential distribution is often used to model time (waiting time, interarrival time, hardware lifetime, failure time, etc.).
+\item When the number of occurrences of an event follows Poisson
+distribution, the time between occurrences follows exponential
+distribution.
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Exponential Distribution}
+
+\define{Exponential Distribution}{
+The exponential probability distribution with parameter $\lambda>0$ (called the
+ rate parameter) is 
+ $$f(x)= 
+  \begin{cases}
+\lambda e^{-\lambda x} & \text{ if } x>0\\
+0 & \text{ otherwise}
+ \end{cases}$$
+}
+
+\qBrd{teal!40}{
+If $X\sim $ Exponential($\lambda$) then 
+$E(X) = \frac{1}{\lambda} \text{ and }, \text{Var}(X) = \frac{1}{\lambda^2}$
+}
+\qBrd{applegreen!40}{
+The cdf of the exponential distribution is 
+$$F(x)= 
+  \begin{cases}
+  0 & \text{ if } x<0\\
+ 1- e^{-\lambda x} & \text{ if } x>0
+ \end{cases}$$
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.6in]{apricot!40}{
+\Exmpl{apricot}{} Suppose that a study of a certain computer system reveals that the response time, in seconds, has an exponential distribution with a mean of 3 seconds. What is the probability that response time exceeds 5 seconds?
+}\\
+\vspace{1.8in}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\tiny
+\vspace{-.1in}
+\qbx[4.6in]{apricot!40}{
+\Exmpl{apricot}{} Suppose that a study of a certain computer system reveals that the response time, in seconds, has an exponential distribution with a mean of 3 seconds. What is the probability that response time exceeds 5 seconds?
+}\\
+%\pause
+{\tiny 
+\begin{minipage}{.62\textwidth} %
+{\tiny 
+ \qBrd[2.7in]{babyblue!40}{\begin{center}
+ \includegraphics[scale=.2]{figs/pdf_Exponential_density2.png}
+ \end{center}
+ }
+ }
+\end{minipage}
+\hspace{.1in}
+\begin{minipage}{.34\textwidth} %
+{\tiny 
+ \qBrd[1.4in]{babyblueeyes!40}{
+ \begin{eqnarray}
+& &  P(X>5)\nonumber\\
+ & = &1-P(X\leq 5) \nonumber\\
+ & = &1-F( 5) \nonumber\\
+  & = &1-\left(1- e^{-\lambda 5} \right) \nonumber\\
+   & = & e^{-5\lambda }  \nonumber\\
+   & = & e^{-5\times \frac{1}{3} }  \nonumber\\
+   & =& 0.1889 \nonumber
+ \end{eqnarray}
+ }}
+\end{minipage} %
+
+
+ 
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{babyblue!40}{
+\Exmpl{babyblue}{} The failure rate for a type of electric light bulb is 0.002 per hour. Under the exponential model,
+\begin{enumerate}[a).]
+\item Find the probability that a randomly selected light bulb will fail in less than 1000 hours.
+\item  Find the probability that a randomly selected light bulb will last 2000
+hours before failing.
+\item Find the mean and the variance of time until failure.
+\item  Find the median time until failure.
+\item Find the time where 95\% of these bulbs are expected to fail before it.
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{teal!40}{
+\Exmpl{teal}{} An engineer thinks that the best model for time between breakdowns of a generator is the exponential distribution with a mean of 15 days.
+\begin{enumerate}[a).]
+\item  If the generator has just broken down, what is the probability that it will break down in the next 21 days?
+\item What is the probability that the generator will operate for 30 days without a breakdown?
+\item If the generator has been operating for the last 20 days, what is the probability that it will operate for another 30 days without a
+breakdown?
+\item  Comment on the results of parts (b) and (c).
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+\TransitionFrame[amber]{\Large Gamma Distribution }
+\begin{frame}
+\define{Gamma Distribution}{
+The gamma random variable X describes waiting times between
+events.  It can be thought of as a waiting time between Poisson
+distributed events, the pdf of a Gamma($\alpha, \lambda$) for $\alpha>0, \lambda>0$ is given as:
+$$  f(x)=\frac{1}{\Gamma(\alpha)}{\lambda^\alpha }x^{\alpha-1}e^{-\lambda x} \text{ for }  0<x<\infty.$$
+The parameter $\alpha$ is known as the shape parameter,  while $\lambda$ is called  rate parameter.
+}
+\qBrd{applegreen!40}{
+Note that: The quantity $\frac{1}{\lambda}$ is referred to as the  rate parameter.
+}
+\qBrd{teal!40}{
+If $X\sim $ Gamma($\alpha, \lambda$) then 
+$E(X) = \frac{\alpha}{\lambda} \text{ and }, \text{Var}(X) = \frac{\alpha}{\lambda^2}$
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{babyblue!40}{
+\Exmpl{babyblue}{} Suppose the time spent by a randomly selected student who uses a terminal connected to a local time-sharing computer facility has a gamma distribution with mean 20 min and variance 80 min$^2$.
+\begin{enumerate}[a).]
+\item What are the values of $\alpha$ and $\lambda$?
+\item  What is the probability that a student uses the terminal for at most 24 min?
+\item What is the probability that a student spends between 20 and 40 min using the terminal?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{teal!40}{
+\Exmpl{teal}{} A pumping station operator observes that the demand for water at a certain hour of the day can be modeled as an exponential random variable with a mean of 100 cfs (cubic feet per second).
+\begin{enumerate}[a).]
+\item 1 Find the probability that the demand will exceed 200 cfs on a randomly
+selected day.
+\item What is the maximum water producing capacity that the station should keep on line for this hour so that the demand will have a probability of only 0.01 of exceeding this production capacity?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+
+\TransitionFrame[amber]{\Large Beta Distribution }
+
+\begin{frame}\frametitle{Beta Distribution}
+The beta random variable X represents the proportion or probability
+outcomes. For example, the beta distribution might be used to find
+how likely it is that the preferred candidate for mayor will receive 70\% of the vote.
+\define{Beta Distribution}{
+Probability Density Function of the Beta($\alpha, \beta$), $\alpha>0, \beta>0$  is given as  
+$$  f(x)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1}(1-x)^{\beta-1}\text{ for }  0\leq x\leq 1., $$
+where  $\Gamma(\alpha)$ is defined by $\Gamma(\alpha)= \int_{0}^{\infty} x^{\alpha-1}e^{-x} dx$.
+}
+
+\qBrd{teal!40}{
+If $X\sim $ Beta($\alpha, \beta$) then 
+$E(X) = \frac{\alpha}{\alpha+\beta} \text{ and }, \text{Var}(X) = \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)}$
+}
+\end{frame}
+
+
+
+\TransitionFrame[amber]{\Large Normal Distribution }
+
+
+\begin{frame}
+The normal distribution is one of the most commonly used probability distribution for applications:
+\begin{itemize}
+\item  When we repeat an experiment numerous times and average our results, the random variable representing the average or total tends to have a normal distribution as the number of experiments becomes large.
+\item   The previous fact, which is known as the central limit theorem, is fundamental to many of the statistical techniques we will discuss later.
+\item  Many physical characteristics (Heights, weights, etc.) tend to follow a normal distribution.
+\item  Errors in measurement or production processes can often be
+approximated by a normal distribution.
+\item Under certain conditions, many probability distributions can be
+approximated by a normal distribution.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+The Normal Distribution denoted by $\text{Normal}(\mu, \sigma^2)$ is characterized by two parameters, namely the mean $\mu\in \R$ and the standard deviation $\sigma>0$.
+\define{Normal Distribution}{ A continuous random variable X is said to be normally distributed with mean $\mu\in \R$ and variance $\sigma^2>0$,  if its probability density function is given as 
+$$   f(x)= \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}  \text{ for } -\infty <x<\infty. $$
+}
+\qBrd{applegreen!40}{
+If $X\sim $ Normal($\mu, \sigma^2$) then 
+$E(X) =\mu \text{ and }, \text{Var}(X) = \sigma^2$
+}
+
+
+\end{frame}
+
+
+\begin{frame}
+\qBrd{applegreen!40}{
+\qBrd[1.5in]{applegreen!70}{Standard Normal }
+ Normal($0, 1$),(i.e. Normal distribution with mean $\mu=0$ and variance $\sigma^2=1$,) is referred to as the  {\bf  Standard Normal} Distribution. 
+}\\
+\vspace{.1in}
+\qBrd{babyblue!40}{
+\qBrd[1.5in]{babyblue!70}{Z-Transformation }
+ If $X\sim \text{Normal}(\mu, \sigma^2)$ for some $\mu\in \R$ and $\sigma^2>0$ then , 
+ $$\DBX{\HLTW{Z \sim \text{Normal}(0,1) }\text{where } \HLTY{Z= \frac{X-\mu}{\sigma}}}$$
+}
+
+
+\end{frame}
+
+
+
+\begin{frame}{The role of the parameters $\mu$ and $\sigma^2$}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Finding Probabilities Using Normal CDF}
+The cdf of the normal distribution,  does not have a closed form analytical expression and the corresponding integral is nontrivial to evaluate. 
+
+The same is true for the cdf of the standard normal distribution (commonly denoted by $\Phi(z)$). However, $\Phi(z)$ is usually tabulated for values of z from -3.49 to 3.49 in increments of 0.01 and can be usedto calculate any normal probability by standardizing it first.
+
+\includegraphics[scale=.6]{figs/NormalCDFStandardization.png}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{olive!40}{
+\Exmpl{olive}{} The times of first failure of a unit of a brand of ink jet printers are approximately normally distributed with a mean of 1,500 hours and a standard deviation of 200 hours. Use the statistical calculator.
+\begin{enumerate}[a).]
+\item What fraction of these printers will fail before 1,000 hours?
+\item What is the probability that the first failure time of a selected printer will fail be between 1,300 and 1700 hours?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+$X\sim\text{Normal}(\mu= 1500, \sigma^2=200^2)$.\\
+{\tiny 
+\begin{minipage}{.45\textwidth} %
+{\small 
+ \qBrd[2.4in]{babyblueeyes!40}{
+ \begin{eqnarray}
+& &  P(X<1000)\nonumber\\
+ & = &P\left(\HLTY{ \frac{X-\mu}{\sigma}} <\frac{1000-\mu}{\sigma}\right) \nonumber\\
+  & = &P\left(\HLTY{Z} <\frac{1000-1500}{200}\right) \nonumber\\
+    & = &P\left(\HLTY{Z} <-2.5\right) \nonumber\\
+   & =& \Phi(-2.5) \nonumber\\
+   & =&0.0062\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage} % 
+\hspace{.1in}
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+ %\qBrd[2.1in]{babyblue!40}{\begin{center}
+ %\includegraphics[scale=.15]{figs/pdf_Exponential_density2.png}
+% \end{center}
+ %}
+ }
+\end{minipage}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+$X\sim\text{Normal}(\mu= 1500, \sigma^2=200^2)$.\\
+{\tiny 
+\begin{minipage}{.45\textwidth} %
+{\small 
+ \qBrd[3in]{babyblueeyes!40}{
+ \begin{eqnarray}
+& &  P(1300<X<1700)\nonumber\\
+ & = &P\left(\frac{1300-\mu}{\sigma}<\HLTY{ \frac{X-\mu}{\sigma}} <\frac{1700-\mu}{\sigma}\right) \nonumber\\
+  & = &P\left(\frac{1300-1500}{200}<\HLTY{Z} <\frac{1700-1500}{200}\right) \nonumber\\
+    & = &P\left(-1<\HLTY{Z} <-1\right) \nonumber\\
+   & =& \Phi(1)-\Phi(-1) \nonumber\\
+   & =&  0.8413 -0.1587  \nonumber\\
+   & =&  0.6826  \nonumber
+ \end{eqnarray}
+ }}
+\end{minipage} % 
+\hspace{.1in}
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+% \qBrd[2.1in]{babyblue!40}{\begin{center}
+% %\includegraphics[scale=.15]{figs/pdf_Exponential_density2.png}
+% \end{center}
+% }
+ }
+\end{minipage}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Backward Normal calculations and Percentiles}
+\qBrd{teal!40}{We could find the observed value (x) of a given proportion or percentile in Normal$(\mu,\sigma^2)$ by unstandardizing the z-value as follows:
+\vspace{-.1in}
+\begin{enumerate}
+\item Find the z-value corresponding to the lower tail probability using $\Phi^{-1}(\cdot)$
+\item Unstandardize $x=\mu+\sigma z$.
+\end{enumerate}
+}
+
+\vspace{.1in}
+\qBrd{applegreen!40}{
+\sqBullet{applegreen} In the standard normal distribution, z will denote the z-value for
+which of the area under the standard normal curve lies to the right of z,  i.e. $P(Z\geq z_{\alpha})=\alpha$
+\vspace{-.3in}
+\begin{center}
+\includegraphics[scale=.4]{figs/Normal_Cutoff.png}
+\end{center}
+}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{olive!40}{\small
+\Exmpl{olive}{} The times of first failure of a unit of a brand of ink jet printers are approximately normally distributed with a mean of 1,500 hours and a standard deviation of 200 hours. Use the statistical calculator.
+\begin{enumerate}[a).]
+\item what should be the guarantee time for these printers if the manufacturer wants only 5\% to fail within the guarantee period.
+\end{enumerate}
+}\\
+%\pause
+
+{\tiny 
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+$X\sim$ Normal$(\mu = 1500, \sigma^2=200^2).$ Now we want to find $a$ such that $P(X <a) = 0.05$, so\\
+ \qBrd[2in]{babyblueeyes!40}{
+ \vspace{-.1in}
+\begin{eqnarray*}
+& & P(X<a)=0.05\\
+& \implies&  P(\HLTY{\frac{X-\mu}{\sigma}}<\frac{a-\mu}{\sigma})=0.05\\
+&  \implies &   P\left(\HLTY{Z}<\frac{a-\mu}{\sigma}\right)=0.05\\
+&  \implies &   \Phi\left( \frac{a-\mu}{\sigma}\right)=0.05\\
+&  \implies &   \frac{a-\mu}{\sigma}=\Phi^{-1}\left(0.05\right)\\
+&  \implies &  a= \mu +\sigma\Phi^{-1}\left(0.05\right)\\
+&  \implies &  a= 1500 +200\times (- 1.64)\\
+& =& 1172.
+\end{eqnarray*}
+\vspace{-.1in}
+}
+}
+\end{minipage} % 
+\hspace{.1in}
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+% \qBrd[2.1in]{babyblue!40}{\begin{center}
+% %\includegraphics[scale=.15]{figs/pdf_Exponential_density2.png}
+% \end{center}
+% }
+ }
+\end{minipage}
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{teal!40}{
+\Exmpl{teal}{} An engineer working for a manufacturer of electronic components takes a large number of measurements of a particular dimension of components from the production line.  She finds that the distribution of dimensions is normal, with a mean of 2.340 cm and a standard deviation of 0.06 cm.
+\begin{enumerate}[a).]
+\item What percentage of measurements will be less than 2.45 cm?
+\item What percentage of dimensions will be between 2.25 cm and 2.45 cm?
+\item What value of the dimension will be exceeded by 98\% of the components?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{applegreen!40}{
+\Exmpl{applegreen}{} Wires manufactured for use in a computer system are specified to have resistances between 0.12 and 0.14 ohms. The actual measured resistances of the wires produced by company A have a normal probability distribution with mean 0.13 ohm and standard deviation 0.005 ohm.
+\begin{enumerate}[a).]
+\item What is the probability that a randomly selected wire from company A's production will meet the specifications?
+\item If four of these wires are used in each computer system and all are selected from company A, what is the probability that all four in a
+randomly selected system will meet the specifications?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{amethyst!40}{
+\Exmpl{amethyst}{} The SAT and ACT college entrance exams are taken by thousands of students each year. The mathematics portions of each of these exams produce scores that are approximately normally distributed. In recent years, SAT mathematics exam scores have averaged 480 with standard deviation 100. The average and standard deviation for ACT mathematics scores are 18 and 6, respectively.
+\begin{enumerate}[a).]
+\item An engineering school sets 550 as the minimum SAT math score for new students. What percentage of students will score below 550 in a typical year?
+\item  What score should the engineering school set as a comparable standard on the ACT math test?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{babyblue!40}{
+\Exmpl{babyblue}{} Of the Type A electrical resistors produced by a factory, 85\% have resistance greater than 41 ohms, and 3.7\% of them have resistance greater than 45 ohms. The resistances follow a normal distribution.
+\begin{enumerate}[a).]
+\item What percentage of these resistors have resistance greater than 44 ohms?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+%\section{Moment Generating Function}
+%\TransitionFrame[airforceblue]{\Large Simulations  }
 
 
 \section{Moment Generating Function}
 \TransitionFrame[airforceblue]{\Large Moment Generating Function  }
 
-\TransitionFrame[airforceblue]{\Large Binomial and Multinomial Coefficient  }
+%\TransitionFrame[airforceblue]{\Large  A }
 
 
 

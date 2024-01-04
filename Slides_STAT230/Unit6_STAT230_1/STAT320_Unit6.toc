@@ -1,5 +1,4 @@
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Continuous Random Variables}{5}{0}{1}
-\beamer@sectionintoc {2}{A Few Widely Used Continuous Probability Distributions}{7}{0}{2}
-\beamer@sectionintoc {3}{Moment Generating Function}{9}{0}{3}
-\beamer@sectionintoc {4}{Moment Generating Function}{11}{0}{4}
+\beamer@sectionintoc {1}{Continuous Random Variables}{13}{0}{1}
+\beamer@sectionintoc {2}{A Few Widely Used Continuous Probability Distributions}{49}{0}{2}
+\beamer@sectionintoc {3}{Moment Generating Function}{85}{0}{3}
