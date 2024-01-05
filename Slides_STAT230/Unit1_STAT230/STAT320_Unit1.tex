@@ -34,8 +34,26 @@
 
 \setbeamercolor{structure}{fg=antiquefuchsia!80, bg= black!60}
 
+%
+%\usepackage{draftwatermark}
+%\SetWatermarkText{Confidential}
+%\SetWatermarkScale{10}
+%\SetWatermarkColor{black}
+%%\usepackage{background}
+%%\backgroundsetup{
+%%    placement=center,
+%%    scale=10,
+%%    contents={DRAFT},
+%%    opacity=1
+%%}
+%%\setbeamertemplate{background}{\BgMaterial}
 
-
+%
+%\setbeamertemplate{background}{%
+%\begin{tikzpicture}[overlay,remember picture]
+%\node[anchor=north west,scale=3] at ([shift={(1in,-1in)}]current page.north west) {Draft};
+%\end{tikzpicture}%
+%}
 
 
 
@@ -103,7 +121,7 @@
 
 
 
-\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 1: A few Definitions and Notations from Set Theory}}
+\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 1: A Few Definitions and Notations From Set Theory}}
 
 \author[UAEU]
 {United Arab Emirates University}
@@ -223,7 +241,7 @@
 	\frametitle{Definition of a Set }
 	
 \begin{defn}[ Set]
-A Set is a well defined collection of {\bf objects}.
+A {\bf  Set} is a well defined collection of {\bf objects}.
 \end{defn}	
 	
 	\begin{itemize}
@@ -232,16 +250,23 @@ A Set is a well defined collection of {\bf objects}.
 		\item[]  \qbx[4.1in]{blue!30}{ \sqBullet{blue} Usually we denote sets with upper-case letters, elements with lower-case letters.}
 			\vspace{0.2cm}
 	\end{itemize}
-	
+\vspace{2in}
 			
- \qbx[4.5in]{antiquebrass!60}{ \sqBullet{antiquebrass} The following  notation is used to show  a set membership.
+
+\end{frame}
+
+
+\begin{frame}
+ \qbx[4.5in]{antiquebrass!60}{ \sqBullet{antiquebrass} The Following  Notation is Used to Show  a Set Membership.
  \vspace{-.15in}
  \begin{enumerate}
  \item[] \qBrd[4.1in]{olive!30}{ \sqBullet{olive}  $\HLTW{x\in A}$:means that x is a member of the set A. }
 \item[]  \vspace{-.15in} \qBrd[4.1in]{lime!40}{  \sqBullet{lime}  $\HLTW{x\notin A}$:means that x is NOT a member of the set A. }
  \end{enumerate}
  }
+ \vspace{2in}
 \end{frame}
+
 
 
 %\TransitionFrame[antiquefuchsia]{\Large Venn Diagrams }
@@ -273,7 +298,7 @@ A Set is a well defined collection of {\bf objects}.
 
 
 \begin{frame}
-	\frametitle{The Nulll Sets and the Universal Set}
+	\frametitle{The Nulll Set}
 	 
  
 	 \qbx[4.5in]{antiquebrass!40}{
@@ -282,23 +307,37 @@ A Set is a well defined collection of {\bf objects}.
 \end{defn}	
 \qBrd[2.1in]{white!40}{ It is often denoted by $\emptyset$}}\\
 	 \vspace{.1in}
-	 \pause
-		
- \qbx[4.5in]{teal!40}{
-  \begin{defn}[Universal Set]
-   The {\bf Universal Set} is the set of all elements currently under
-consideration.
-  \end{defn}
-\qBrd[4.5in]{white!40}{ In the context of probability theory,   it is often denoted by $\HLTY{\SampleS}$ (or $\Omega$)}\\
-\qBrd[4.0in]{lime!40}{ The universal set contains all of the elements relevant to a
-given discussion.}}\\
-	 \vspace{.1in}
 
+		
+ 
 	
 \end{frame}
 
 
 
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{The Universal Set}
+	 \vspace{-.1in}
+\begin{defn}[Universal Set]
+   The {\bf Universal Set} is the set of all elements currently under
+consideration.
+  \end{defn}	 
+	 \vspace{.05in}
+ \qbx[4.5in]{teal!40}{
+\qBrd[4.4in]{white!40}{ In the context of probability theory,   it is often denoted by $\HLTY{\SampleS}$ (or $\Omega$)}\\
+\qBrd[4.4in]{lime!40}{ The universal set contains all of the elements relevant to a
+given discussion.}}\\
+\begin{center}
+\includegraphics[scale=.27]{figs/SampleSpace.png} 
+\end{center}
+	
+\end{frame}
 
 
 
@@ -420,8 +459,8 @@ equal to".}
   \qbx[3in]{asparagus!60}{  
  The logical operator is \HLTY{\text{NOT} }.
   }
-    \includegraphics[scale=.22]{figs/VDblankOneSets1.png} 
-     \includegraphics[scale=.22]{figs/VDblankOneSets2.png} 
+    \includegraphics[scale=.32]{figs/PALess1.png} 
+     \includegraphics[scale=.23]{figs/VDblankOneSets2.png} 
   	\end{center}
 	\vspace{4in}
 	\end{frame}
@@ -490,7 +529,7 @@ equal to".}
 	
 \end{frame}
 
-\section{A Few  Examples  Using Venn Diagrams}
+%\section{A Few  Examples  Using Venn Diagrams}
 \TransitionFrame[antiquefuchsia]{\Large A Few  Examples  Using Venn Diagrams }
 \begin{frame}
   \qbx[4.4in]{applegreen!50}{ \sqBullet{olive}  {\bf Venn Diagrams} are graphical representation of the sets that are typically used to depict the relation between various sets  }
@@ -751,6 +790,14 @@ For the definitions below, assume $\HLTW{a\in \R$, $b\in \R}$, and $\HLTW{a<b}$.
   	\end{center}
   	 {\tiny {\bf Comment:} In general $\HLTY{A\times B}$ is not same as $\HLTY{B\times A}$. However, $A\times A$ is denoted by $A^2$.  Note that $A$ is a set and not a number.   }
   	 
+  	 \vspace{2in}
+	\end{frame}
+
+
+	
+	\begin{frame}\frametitle{Set Operation: Cartesian Product}
+  
+  	 
   	 
 \qbx[4.5in]{teal!20}{\qBrd[2.3in]{olive!30}{Cartesian Product of Multiple Sets}
 Let $A_1$, $A_2$, ..., $A_n$ are  non empty sets.  Then their Cartesian product is defined as  following:\\
@@ -758,6 +805,7 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 }
 	\vspace{4in}
 	\end{frame}
+
 
 
 
@@ -786,17 +834,32 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 \qBrd[4.6in]{teal!40}{
 \begin{itemize}
 \item $\HLTW{\R^2}= \R\times \R=\HLTW{\{ \HLTY{(x_1,x_2)}: x_1\in \R, x_2\in \R\}}$
-\item $\HLTW{\R^3}= \R\times \R \times \R=\HLTW{\{\HLTY{(x_1,x_2, x_3)}: x_1\in \R, x_2\in \R, x_3\in \R\}}$
+\item $\HLTW{\R^3}= \R\times \R \times \R=\HLTW{\{\HLTY{(x_1,x_2, x_3)}: x_1\in \R, x_2\in \R, x_3\in \R\}}$\\
 \item  $\HLTW{\mathbb{Z}_{+}^2}=\mathbb{Z}_{+}\times \mathbb{Z}_{+}=\HLTW{\{\HLTY{(z_1,z_2)}: z_1\in\mathbb{Z}_{+}  , z_2\in \mathbb{Z}_{+}\}}$
 \end{itemize}
 }
 \end{frame}
 
 
+ \begin{frame}\frametitle{The Notion of Infinity ($\infty$)}
+%\qbx[4.6in]{babyblueeyes!80}{\qBrd[0.8in]{babyblue!40}{
+% Infinity ($\infty$):} Infinity,  denoted as $\infty$,  is a numeric concept that represent a  large    
+%}
+%\vspace{.5in}
+\begin{itemize}
+\item $\infty + x= \infty $ for any $x\in \R$
+\item $-\infty + x= -\infty $ for any $x\in \R$
+\item $\infty + \infty= \infty $ 
+\item $-\infty - \infty= -\infty $ 
+\item \qBrd[2in]{red!40}{$\HLTW{\infty - \infty}= \text{Undefined} $ }
+\end{itemize}
+
+\qBrd[4.5in]{tangerine!40}{\sqBullet{orange}$\HLTW{\infty}$ is not a real number.  It is a concept to denote the suprimum in the real number system. We may think it to be larger than any given/prespecified number.  }
+ \end{frame}
 
 
 
-
+\section{A Discussion on Cardinality of Sets }
 \TransitionFrame[tangerine]{\Large Discussion on Cardinality of Sets  }
 \begin{frame}\frametitle{A Discussion on Cardinality of Various Sets}
 
@@ -816,12 +879,6 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
 
 
 
- \begin{frame}\frametitle{The Notion of Infinity ($\infty$)}
-%\qbx[4.6in]{babyblueeyes!80}{\qBrd[0.8in]{babyblue!40}{
-% Infinity ($\infty$):} Infinity,  denoted as $\infty$,  is a numeric concept that represent a  large    
-%}
-%\vspace{.5in}
- \end{frame}
 
 
 
@@ -845,7 +902,7 @@ $A_1\times A_2\times \ldots \times A_n= \left\{ (a_1, a_2, \ldots, a_n): a_i\in 
  
  
  
- 
+% \TransitionFrame[antiquefuchsia]{\Large Notation For Some Standard  Function}
 
 \TransitionFrame[antiquefuchsia]{\Large Questions?  }
  

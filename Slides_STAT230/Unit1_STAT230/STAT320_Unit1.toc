@@ -1,8 +1,8 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Definition of Sets}{2}{0}{1}
-\beamer@sectionintoc {2}{Relationship Between Sets}{12}{0}{2}
-\beamer@sectionintoc {3}{A Few Set Operations }{18}{0}{3}
-\beamer@sectionintoc {4}{A Few Examples Using Venn Diagrams}{32}{0}{4}
-\beamer@sectionintoc {5}{Disjoint Sets \& Partition }{37}{0}{5}
-\beamer@sectionintoc {6}{Real Numbers \& Intervals}{54}{0}{6}
-\beamer@sectionintoc {7}{The Notion of Cartesian Product}{59}{0}{7}
+\beamer@sectionintoc {2}{Relationship Between Sets}{13}{0}{2}
+\beamer@sectionintoc {3}{A Few Set Operations }{19}{0}{3}
+\beamer@sectionintoc {4}{Disjoint Sets \& Partition }{37}{0}{4}
+\beamer@sectionintoc {5}{Real Numbers \& Intervals}{54}{0}{5}
+\beamer@sectionintoc {6}{The Notion of Cartesian Product}{59}{0}{6}
+\beamer@sectionintoc {7}{A Discussion on Cardinality of Sets }{68}{0}{7}
