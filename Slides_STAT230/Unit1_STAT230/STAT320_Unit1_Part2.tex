@@ -1,0 +1,533 @@
+\documentclass[compress]{beamer}
+\mode<presentation>
+\setbeamercovered{transparent}
+\usetheme{Warsaw}
+%\useoutertheme{smoothtree}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{xmpmulti}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{fixpauseincludegraphics}
+
+%\setbeamersize{text margin left=.25 in,text margin right=.25 in}
+\setbeamersize{text margin left=.15 in,text margin right=.15 in}
+\usepackage[authoryear]{natbib}
+
+
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{latexcolors}
+%\usepackage[dvipsnames]{xcolor}
+\definecolor{antiquebrass}{rgb}{0.8, 0.58, 0.46}
+\definecolor{babyblueeyes}{rgb}{0.63, 0.79, 0.95}
+\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
+\definecolor{bistre}{rgb}{0.24, 0.17, 0.12}
+\definecolor{brightlavender}{rgb}{0.75, 0.58, 0.89}
+\definecolor{bulgarianrose}{rgb}{0.28, 0.02, 0.03}
+\definecolor{slateblue}{rgb}{0.56, 0.74, 0.56}
+\definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
+\definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
+
+\setbeamercolor{structure}{fg=brightlavender!80, bg= black!60}
+
+%
+%\usepackage{draftwatermark}
+%\SetWatermarkText{Confidential}
+%\SetWatermarkScale{10}
+%\SetWatermarkColor{black}
+%%\usepackage{background}
+%%\backgroundsetup{
+%%    placement=center,
+%%    scale=10,
+%%    contents={DRAFT},
+%%    opacity=1
+%%}
+%%\setbeamertemplate{background}{\BgMaterial}
+
+%
+%\setbeamertemplate{background}{%
+%\begin{tikzpicture}[overlay,remember picture]
+%\node[anchor=north west,scale=3] at ([shift={(1in,-1in)}]current page.north west) {Draft};
+%\end{tikzpicture}%
+%}
+
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes.symbols}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{multirow}
+%%%%%%%%% shaddow image %%%%%
+% some parameters for customization
+\def\shadowshift{3pt,-3pt}
+\def\shadowradius{6pt}
+\colorlet{innercolor}{black!60}
+\colorlet{outercolor}{gray!05}
+% this draws a shadow under a rectangle node
+\newcommand\drawshadow[1]{
+\begin{pgfonlayer}{shadow}
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[top color=innercolor,bottom color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[left color=innercolor,right color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[bottom color=innercolor,top color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=outercolor] ($(#1.south west)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=innercolor] ($(#1.north west)+(-\shadowradius/12,\shadowradius/12)$) rectangle ($(#1.south east)+(\shadowradius/12,-\shadowradius/12)$);%Frame
+    \filldraw ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)-(\shadowradius/2,\shadowradius/2)$);
+\end{pgfonlayer}
+}
+% create a shadow layer, so that we don't need to worry about overdrawing other things
+\pgfdeclarelayer{shadow} 
+\pgfsetlayers{shadow,main}
+% Define image shadow command
+\newcommand\shadowimage[2][]{%
+\begin{tikzpicture}
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[#1]{#2}};
+\drawshadow{image}
+\end{tikzpicture}}
+\usepackage{calligra}
+
+\DeclareMathOperator*{\argmax}{Arg\,max}
+\DeclareMathOperator*{\argmin}{Arg\,min}
+\newcommand{\norm}[1]{\left\Vert #1 \right\Vert }
+\newcommand{\bbetaHat}{ \widehat{\bbeta}}
+\newcommand{\bbetaLSE}{ \widehat{\bbeta}_{_{\text{LSE}}}}
+\newcommand{\bbetaMLE}{ \widehat{\bbeta}_{_{\text{MLE}}}}
+\newcommand{\sqBullet}[1]{  {\tiny \tiny \tiny \qBoxCol{#1!60}{ }} }
+%***************
+%\newtheorem{thm}{Theorem}
+\input{../LatexSupportFiles/definition_include}
+\input{../LatexSupportFiles/BoxDef}
+\input{../LatexSupportFiles/MatrixDef}
+
+
+
+
+
+
+
+
+
+
+
+\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 1 (Part-B):  Review of a Few Mathemetical Functions}}
+
+\author[UAEU]
+{United Arab Emirates University}
+\institute[UAEU] % (optional, but mostly needed)
+{
+  \inst{Department of Statistics}%
+  %Indian Institute of Management,  Udaipur\\
+  \vspace{0.1in}
+
+  
+}
+
+\date{}
+
+
+\newcommand{\Xnew}{ \HLTEQ[orange]{X_{_{\text{i}}}} }
+\newcommand{\Ynew}{ \HLTEQ[orange]{Y_{_{\text{i}}}} }
+
+%\date{\today}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Inhalt}
+ % \begin{multicols}{1}
+	\frametitle{Outline}
+    \tableofcontents[currentsection]
+  %  \end{multicols}
+  \end{frame}
+}
+
+\begin{document}
+\maketitle
+
+%\begin{frame}{Outline}
+%%\begin{multicols}{}
+%  \tableofcontents
+%%\end{multicols}
+%\end{frame}
+
+%\section{Introduction to DSBA 2023}
+%
+%
+%\begin{frame}
+%\qBoxCol{blue!30}{
+%\begin{center} Course  Website \end{center}
+%\qbx[4.2in]{teal!40}{\sqBullet{teal} \color{blue} $ \href{https://sites.google.com/iimu.ac.in/dsba2023e/home}{https://sites.google.com/iimu.ac.in/dsba2023e/home}$
+%}\\
+%\qbx[3.0in]{green!40}{ \sqBullet{green} Regular Announcements.
+%}\\
+%\qbx[3.0in]{olive!40}{\sqBullet{olive}  Slides and other materials.
+%}
+%}
+%
+%\pause
+%\qBoxCol{blue!30}{
+%\sqBullet{blue}
+%You can contact the instructor at {\it subhadip.pal@iimu.ac.in} and schedule for office hours.  
+%}
+%\pause
+%\qBoxCol{olive!30}{
+%\sqBullet{olive}
+%Mr. Praveen Kumar has been assigned as Teaching Assistant (TA) for this course.  His email I'd is:  {\it praveen.kumar@iimu.ac. }
+%}
+%
+%
+%\end{frame}
+%
+
+
+%
+%\begin{frame}{Course Outline}
+%\hspace{-.1in}\qBoxCol{blue!35}{
+%% Please add the following required packages to your document preamble:
+%% \usepackage{booktabs}
+%\begin{table}[]
+%\begin{tabular}{@{}lll@{}}
+%\toprule
+%         & Topics                                                & Dataset or Case                                    \\ \midrule \midrule
+%\rowcolor{blue!20}     \multicolumn{1}{|l|}{1-2}   & \multicolumn{1}{l|}{Overview of Data Science}        & \multicolumn{1}{l|}{Household Data}                \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{3-5}   & \multicolumn{1}{l|}{Data Visualization}              & \multicolumn{1}{l|}{Global Super Store }       \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{6}     & \multicolumn{1}{l|}{Introduction to R/ JMP}          & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{7}     & \multicolumn{1}{l|}{Regression Analysis}             & \multicolumn{1}{l|}{Display \& Liquor Sales} \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{8}     & \multicolumn{1}{l|}{Multiple Regression}             & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{9}     & \multicolumn{1}{l|}{Dealing with Nominal Covariates} & \multicolumn{1}{l|}{Gender Divide}                 \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{10}    & \multicolumn{1}{l|}{Regression Diagonistics}         & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{11-12} & \multicolumn{1}{l|}{Project Presentations}            &\multicolumn{1}{l|}{}          \\\midrule \bottomrule
+%\end{tabular}
+%\end{table}
+%}
+%\end{frame}
+
+
+%\begin{frame}{Case Study }
+%\qBoxCol{teal!40}{\vspace{1in}\begin{center}\sqBullet{teal} \Large Case: Liquor sales and display space \end{center}
+%\vspace{1in}
+%}\\
+%\end{frame}
+
+
+
+
+
+\section{A Few Mathemetical Function and Notation}
+
+\TransitionFrame[antiquefuchsia]{\Large A Few Mathemetical Function and Notation}
+
+
+\begin{frame}\frametitle{Absolute Value}
+Absolute value of a real number is the magnitude of the real number ignoring its sign.  Formally, we have the following definition. 
+\define{Absolute Value}{
+Let $\HLTY{x}\in \R$ be any real number, then the {\bf absolute value of} $\HLTY{x}$ (denotes as $\abs{x}$) is defined to be 
+$$\HLTW{ \abs{\HLTY{x}}= 
+\begin{cases}
+\HLTY{x} & \text{ if} \HLTY{x}\geq 0, \\
+-\HLTY{x} & \text{ if }  \HLTY{x}< 0, \\
+\end{cases}}$$
+}
+
+
+\begin{itemize}
+\item $\abs{5}= $ 
+\item $\abs{-7.6}=  $
+\item $\abs{0}=  $
+\item $\abs{1005.7}=  $
+\item $\abs{-200}=  $
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\define{Indicator Function}{
+Let $A$ be a set.  The  {\bf  indicator function for the set $A$}, denoted by $\Indicator{A}{x}$, is defined to be 
+$$  \Indicator{A}{x}:=
+ \begin{cases}
+ 1 & \text{if } x\in A\\
+  0 & \text{if } x\notin A.
+\end{cases}  $$
+}
+
+
+\begin{itemize}
+\item $\Indicator{[0,5]}{1.33}= $ 
+\item $\Indicator{[0,5]}{-9.12}=  $
+\item $\Indicator{\{HH,TT, HT\}}{HH}=  $
+\item $\Indicator{\{HH,TT, HT\}}{HHHH}=  $
+\item $\Indicator{\mathbb{Z}}{1.87}=  $
+\item $\Indicator{\R_{+}}{-4.87}=  $
+\item $\Indicator{\R_{+}}{14}=  $
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{A Few Mathemetical Function and Notation}
+
+\define{Factorial}{
+Let $n$ be a {\bf non-negative integer,} then the {\bf factorial of n}, denoted as $\HLTY{n!}$ is defined to be
+\begin{enumerate}
+\item $0!=\HLTY{1}$, 
+\item $1!=\HLTY{1}$, 
+\item $n!= \HLTY{n\times(n-1)\times \ldots \times 1}$ for $n\geq 2$
+\end{enumerate} 
+}
+
+\qBrd[4.6in]{olive!40}{
+\qBrd[.5in]{olive!70}{Result:}$\HLTW{n!= n\times \left\{(n-1)! \right\}}$ for $n\geq 2$.
+}
+
+\begin{itemize}
+\item $3!=$
+\item $5!=$
+\item $6!=$
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{n choose r, ${n \choose r}$}
+\define{}{
+Let $n, r$ be two {\bf non-negative integes,} such that $r\leq n$,  then the {\bf n choose r}, denoted by $\HLTY{{n\choose r}}$, is defined to be $${n \choose r}:= \frac{n!}{\left(r!\right) \times \left((n-r)!\right)}$$
+\vspace{-.1in}
+}
+
+\qBrd[4.6in]{teal!40}{
+\qBrd[.5in]{teal!70}{Result:} \tiny If $n, r$ be two {\bf non-negative integes,} such that $r\leq n$,  then $\HLTY{{n\choose r}}= \HLTY{{n\choose (n-r)}} $
+}
+
+\begin{itemize}
+\item $\HLTY{{ 0\choose 0}= 1}$,  $\HLTY{{ 1\choose 0}= 1}$, $\HLTY{{ 5\choose 3}=\frac{5!}{3!\times ((5-3)!)}=\frac{5!}{3!\times (2!)}= \frac{5\times 4 \times 3}{3\times 2\times 1}= 10. }$
+\item ${ 10\choose 2}=$
+\item ${ 100\choose 95}=$
+\end{itemize}
+
+
+\end{frame}
+
+
+
+
+\section{Exponential Series $e^x \text{ or }( \exp(x))$}
+%\TransitionFrame[antiquefuchsia]{\Large Definition of a Set }
+
+\begin{frame}\frametitle{The mathemetical constant $e$}
+\define{"e"}{
+The mathemetical constant $\HLTY{e}$ is an transcendental real number given by, 
+$$\HLTY{e}=\HLTW{\displaystyle \sum_{n=0}^{\infty}\frac{1}{n!}} = \HLTY{\displaystyle 1+\frac{1}{1!}+\frac{1}{2!}+ \frac{1}{3!}+\ldots,}  $$
+Approxiimately $e\approx  2.7183$
+}
+
+
+
+\end{frame}
+
+\begin{frame}\frametitle{Exponential Series $e^x \text{ or }( \exp(x))$}
+\define{Exponential Series}{
+For any real number $x\in \R$, the exponential series $\HLTY{e^x}$  (or sometimes denoted as $\HLTY{\exp(x)}$) is defined as, 
+$$\HLTY{\displaystyle e^{x}}=\HLTW{\displaystyle \sum_{n=0}^{\infty}\frac{x^n}{n!}} = \HLTY{\displaystyle 1+\frac{x}{1!}+\frac{x^2}{2!}+ \frac{x^3}{3!}+\cdots,}  $$
+}
+
+\qBrd[4.5in]{babyblue!50}{
+\sqBullet{babyblue} $\HLTY{\displaystyle e^{-x}}= \HLTW{\displaystyle \sum_{n=0}^{\infty}\frac{\left(-x\right)^n}{n!}}=  \HLTY{\displaystyle 1-\frac{x}{1!}+\frac{x^2}{2!}- \frac{x^3}{3!}+\ldots,} $
+}
+\vspace{.1in}
+\begin{itemize}
+\item $e^{x^2}=$
+\end{itemize}
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+\section{Geometric Series}
+\TransitionFrame[antiquefuchsia]{\Large Geometric Series }
+\begin{frame}\frametitle{Geometric Series}
+\qBrd[4.5in]{babyblue!50}{
+Let $x\in \R$ be such that $\abs{x}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0}^{\infty}x^{i}}= \HLTW{\displaystyle 1+x+x^2+x^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-x}}.$$ 
+}
+\begin{enumerate}
+\vspace{.1in}
+\item What is $\HLTY{1+0.7+(0.7)^2 + (0.7)^3+ \cdots =}$\\
+\vspace{.1in}
+\item What is $\HLTY{1-0.7+(0.7)^2 - (0.7)^3+ \cdots =}$
+\end{enumerate}
+\vspace{3in}
+\end{frame}
+
+
+
+
+
+
+
+\section{Binomial Series $(1+x)^n$, $(a+b)^n$}
+\TransitionFrame[antiquefuchsia]{\Large Binomial Series }
+\begin{frame}{Binomial Series }
+\qBrd[4.5in]{babyblue!40}{
+Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ \HLTW{\displaystyle (1+x)^n}=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  x^{i}}$$
+$$\HLTW{\displaystyle (1+x)^n} = \HLTY{\displaystyle 1+{n\choose 1}x+{n\choose 2}x^2+  \cdots+ {n\choose {n-1}}x^{n-1}+{n\choose n}x^n}  $$ 
+}
+\vspace{.1in}
+\pause
+\qBrd[4.5in]{babyblueeyes!50}{\tiny 
+Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ (a+b)^n=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  a^{i}b^{n-i}}$$
+$$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+  \cdots+ {n\choose {n-1}}a^{n-1}b+{n\choose n}a^n}  $$ 
+}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item $(1+y)^2=$
+\vspace{.5in}
+\item  $(1+z)^3=$
+\vspace{.5in}
+\item  $(p+q)^4=$
+\end{itemize}
+
+\end{frame}
+
+
+\section{A Few Common Derivatives}
+\begin{frame}
+\qBrd[4.6in]{ube!70}{
+\begin{itemize}
+\item[]  \qBrd[4in]{camel!50}{  $\frac{dx^{n}}{dx}= n x^{n-1}$ for any integer $n$.}
+\item[]   \qBrd[4in]{tearose(rose)!50}{ $\frac{de^{x}}{dx}=e^x$}
+\item[]   \qBrd[4in]{cadmiumorange!50}{ $\frac{de^{mx}}{dx}=me^{mx}$ for any constant $m\in \R$.}
+\item[]  \qBrd[4in]{carolinablue!50}{$\frac{d\log(x)}{dx}=\frac{1}{x}$.}
+\end{itemize}
+\vspace{0.05in}
+}
+
+
+\qBrd[4.6in]{babyblueeyes!80}{\tiny 
+Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;\HLTY{g(x)}}{dx}}$ for the following formula
+\begin{itemize}
+\item[]%$ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \frac{d\;\HLTY{f(x)}}{dx}  g(x) + f(x) \frac{d\;\HLTY{g(x)}}{dx}$ 
+\qBrd[4in]{candypink!50}{ \HLTW{\text{Product Rule:}} \tiny $ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}=  f'(x)g(x)+f(x)g'(x)$}
+\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \frac{d}{dx}\left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}=c_1 f'(x)+c_2g'(x)$ for any constant $c_1,c_2\in 
+\R$.}
+\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{f(g(x))\right\}=f'(g(x))g'(x)$. } 
+\end{itemize}
+\vspace{0.05in}
+}
+\end{frame}
+
+
+\begin{frame}
+\begin{itemize}
+\item $\frac{d}{dx}x^4$
+\item $\frac{d}{dx}x^4$
+\end{itemize}
+\end{frame}
+
+\section{A Few Common Integrals}
+\begin{frame}
+\qBrd[4.6in]{teal!50}{
+\begin{itemize}
+\item[]  \qBrd[4in]{camel!50}{  $\displaystyle \int  x^n dx =\frac{x^{n+1}}{n+1} $ for any integer $n$,  $n\neq -1$.}
+\item[]   \qBrd[4in]{tearose(rose)!50}{ $\displaystyle \int  \frac{1}{x} dx =\log(x)$}
+\item[]   \qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  e^{mx} dx =\frac{e^{mx}}{m} $ for any nonzero real number  $m \in \R$,  $m\neq 0$.}
+\item[]  \qBrd[4in]{carolinablue!50}{$\displaystyle \int  e^{-x} dx =-e^{-x} $.}
+\end{itemize}
+\vspace{.05in}
+}
+
+\qBrd[4.6in]{babyblueeyes!90}{\tiny 
+Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;\HLTY{g(x)}}{dx}}$ for the following formula
+\begin{itemize}
+\item[]%$ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \frac{d\;\HLTY{f(x)}}{dx}  g(x) + f(x) \frac{d\;\HLTY{g(x)}}{dx}$ 
+\qBrd[4in]{candypink!50}{ \HLTW{\text{Integral By Parts:}} \tiny $\displaystyle  \int f(x)g(x)dx= f(x)\HLTW{ \left( \int g(x)dx\right)}- \int \left\{ f'(x) \HLTW{ \left( \int g(x)dx\right)} \right\} dx   $}
+\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \displaystyle \int \left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}dx =c_1 \int  f(x) dx +c_2\int g(x)dx $ for any constant $c_1,c_2\in  \R$.}
+%\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{f(g(x))\right\}=f'(g(x))g'(x)$. } 
+\end{itemize}
+\vspace{0.05in}
+}
+\end{frame}
+
+
+
+%\section{A Few Notations and Functions}
+%Indicator Function
+
+\begin{frame}\frametitle{Discussion on Various Concepts}
+{\tiny Log (function)
+%Exp Function
+Equation of Line and Regions
+Circles and Regions
+}
+\vspace{3in}
+\end{frame}
+
+%
+%
+%\begin{frame}
+%	\frametitle{Definition of a Set }
+%	
+%\begin{defn}[ Set]
+%A {\bf  Set} is a well defined collection of {\bf objects}.
+%\end{defn}	
+%	
+%	\begin{itemize}
+%\item[ ] \qbx[4.1in]{teal!40}{\sqBullet{teal}{\bf Elements: }  The objects inside a set are called the {\bf elements} of the Set}
+%			\vspace{0.2cm}
+%		\item[]  \qbx[4.1in]{blue!30}{ \sqBullet{blue} Usually we denote sets with upper-case letters, elements with lower-case letters.}
+%			\vspace{0.2cm}
+%	\end{itemize}
+%\vspace{2in}
+%			
+%
+%\end{frame}
+
+
+%\begin{frame}
+% \qbx[4.5in]{antiquebrass!80}{ \sqBullet{antiquebrass} The Following  Notation is Used to Show  a Set Membership.
+% \vspace{-.15in}
+% \begin{enumerate}
+% \item[] \qBrd[4.1in]{olive!40}{ \sqBullet{olive}  $\HLTW{x\in A}$:means that x is a member of the set A. }
+%\item[]  \vspace{-.15in} \qBrd[4.1in]{lime!50}{  \sqBullet{green}  $\HLTW{x\notin A}$:means that x is NOT a member of the set A. }
+% \end{enumerate}
+% }
+% \vspace{2in}
+%\end{frame}
+
+
+
+
+
+\TransitionFrame[antiquefuchsia]{\Large Questions?  }
+ 
+ 
+\end{document}

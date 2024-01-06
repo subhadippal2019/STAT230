@@ -239,7 +239,7 @@ variables.
 Events of major interest to the scientist, engineer, or businessperson are those identified by numbers, called numerical events. The research physician is interested in the event that ten of ten treated patients survive an illness; the businessperson is interested in the event that sales next year will reach  \$3 million.  Let Y denote a variable to be measured in an experiment.  The realized value of Y will vary depending on the outcome of the experiment. Thus  it is called a random variable. \\
 
 \define{Random Variable }{
-A random variable is a function from a sample space $S$ into the real numbers.}
+A random variable is a function from a sample space $\SampleS$ into the real numbers.}
 \end{frame}
 
 
@@ -274,11 +274,11 @@ lowercase letters. Thus, the random variable X can take the value x.}
 
 \begin{frame}{Support/Range of a Random Variable }
 
-\define{Support/Range of a random variable}{
+\define{Support/Range of a Random Variable}{
 The set containing the all possible values of a random variable is called its {\it \bf support} or {\it  \bf range}.
 }
 \vspace{.2in}
-\qBox{{\bf Notation:} We will use the notation $\support[X]$ or simply $\support$ to denote the support of a random variable X.}
+\qBox{{\bf Notation:} We will use the notation $\support[X]$ ( or simply $\support$ if there is no ambiguity)  to denote the support of a random variable X.}
 
 \qBox{{\bf Example}: Consider  the experiment of tossing
 a fair coin 3 times from. Define the random variable X to be the
@@ -327,7 +327,7 @@ number of heads obtained in the 3 tosses.  The Support of the random variable is
 \qBrd[4.5in]{babyblue!70}{
 For a discrete random variable $X$, we define the probability
 mass function (pmf) $\pmf_{_X}(a)$ of $X$ by
-$$\pmf_{_X}(x)= P(X=x) \text{ for all } x\in \support{X}$$
+$$\pmf_{_X}(x)= P(X=x) \text{ for all } x\in \support[X]$$
 }
 
 The pmf of the random variable representing the sum when two dice are rolled can be represented in multiple ways.
@@ -482,7 +482,7 @@ Find the corresponding CDF.
 
 \begin{frame}\frametitle{The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}
 \define{\tiny The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}{
-If $X$ is a random variable with pmf $\pmf_{_X}(x)$, then the expected value (the mean) of $X$ denoted by $E(X)$ or $\mu_{_X}$ is given by
+If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ or $\mu_{_X}$ is given by
 $$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(x)}.}$$
 }
 \end{frame}
@@ -490,8 +490,7 @@ $$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{\HLTW{x}\in
 
 
 \begin{frame}
-\define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{
-Let $h(x)$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
+\define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{Let the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $x\in \support[X]$, the support of X.  Let $h(x)$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
 $$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(x)}.}$$
 }
 \end{frame}
@@ -501,13 +500,30 @@ $$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTW{x}\in \sup
 
 
 \begin{frame}\frametitle{Variance and Standard Deviation}
+
+\qBrd[4.6in]{applegreen!35}{  \qBrd[.65in]{applegreen!60}{Variance }The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
+$$\DBX{ \displaystyle \text{Var}(X):= E \left(X-\HLTY{ \mu_{_X}} \right)^2},$$
+\vspace{-.05in}
+where $\HLTY{ \mu_{_X}}= E(X)$, the mean of the random variable. 
+}
+
+
 \define{Variance}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$$\DBX{ \displaystyle \text{Var}(X):= E(X^2)- \left(E(X) \right)^2}$$
+$$\DBX{ \displaystyle \text{Var}(X):= E(X^2)- \left(E(X) \right)^2}$$\\
+\vspace{-.1in}
 }
 
 $\text{Var}(X)$ is often denoted by $\sigma^2$, i.e.  $\sigma^2=\text{Var}(X)$ and the standard deviation is $\sigma= \sqrt{\sigma^2}= \sqrt{\text{Var}(X)}.$\\
 
 \end{frame}
+
+
+
+
+
+
+
+
 
 
 \begin{frame}\frametitle{Properties of Expected Value and Variance}
@@ -517,6 +533,31 @@ $\text{Var}(X)$ is often denoted by $\sigma^2$, i.e.  $\sigma^2=\text{Var}(X)$ a
 \item $\text{Var}(a+b X)= b^2 \text{Var}(X)$
 \end{enumerate}
 \end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Moment Generating Function (mgf)}
+\define{Moment Generating Function}{ The Moment Generating Function (mgf) of $X$, denoted by $\text{M}_{_X}(t)$ is deifined as 
+$$\DBX{ \displaystyle \text{M}_{_X}(t):= E\left(e^{tX} \right)},$$
+whenever it exists. 
+}
+\begin{center}
+\qBrd[4.2in]{ube!40}{ If the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $x\in \support[X]$, the support of X, then  \\
+\begin{center}
+\qBrd[3in]{applegreen!40}{$$E\left(e^{tX} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(x)}.$$\\
+\vspace{-.1in}
+}
+\end{center}
+\vspace{.1in}
+}
+\end{center}
+
+\end{frame}
+
+
+
 
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
@@ -625,7 +666,7 @@ students on the bus of that randomly chosen student, and find $E(X)$ and $ \text
 $$  \Indicator{A}{x}:=
  \begin{cases}
  1 & \text{if } x\in A\\
-  1 & \text{if } x\notin A.
+  0 & \text{if } x\notin A.
 \end{cases}  $$
 Obtain $E(  \Indicator{A}{X})$ and $ \text{Var}\left( \Indicator{A}{x} \right).$
 \end{enumerate}
