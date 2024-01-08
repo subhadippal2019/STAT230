@@ -383,9 +383,9 @@ Let $x\in \R$ be such that $\abs{x}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0
 }
 \begin{enumerate}
 \vspace{.1in}
-\item What is $\HLTY{1+0.7+(0.7)^2 + (0.7)^3+ \cdots =}$\\
+\item What is the value of $\HLTY{1+0.7+(0.7)^2 + (0.7)^3+ \cdots =}$\\
 \vspace{.1in}
-\item What is $\HLTY{1-0.7+(0.7)^2 - (0.7)^3+ \cdots =}$
+\item What is the value of $\HLTY{1-0.7+(0.7)^2 - (0.7)^3+ \cdots =}$
 \end{enumerate}
 \vspace{3in}
 \end{frame}
@@ -437,13 +437,13 @@ $$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+
 
 
 \qBrd[4.6in]{babyblueeyes!80}{\tiny 
-Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;\HLTY{g(x)}}{dx}}$ for the following formula
+Assume $\HLTW{f'(x):= \frac{d\;{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;{g(x)}}{dx}}$ for the following formula
 \begin{itemize}
 \item[]%$ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \frac{d\;\HLTY{f(x)}}{dx}  g(x) + f(x) \frac{d\;\HLTY{g(x)}}{dx}$ 
-\qBrd[4in]{candypink!50}{ \HLTW{\text{Product Rule:}} \tiny $ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}=  f'(x)g(x)+f(x)g'(x)$}
-\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \frac{d}{dx}\left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}=c_1 f'(x)+c_2g'(x)$ for any constant $c_1,c_2\in 
+\qBrd[4in]{candypink!50}{ \HLTW{\text{Product Rule:}} \tiny $ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \HLTW{ f'(x)}\HLTY{g(x)}+\HLTY{f(x)}\HLTW{g'(x)}$}
+\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \frac{d}{dx}\left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}=c_1 \HLTY{f'(x)}+c_2\HLTY{g'(x)}$ for any constant $c_1,c_2\in 
 \R$.}
-\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{f(g(x))\right\}=f'(g(x))g'(x)$. } 
+\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{\HLTY{f\left(\HLTW{g(x)}\right)}\right\}=\HLTY{f'\left(\HLTW{g(x)}\right)\times \HLTW{g'(x)}}$. } 
 \end{itemize}
 \vspace{0.05in}
 }
@@ -451,22 +451,25 @@ Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \fra
 
 
 \begin{frame}
+\tiny 
 \begin{itemize}
-\item $\frac{d}{dx}x^4$
-\item $\frac{d}{dx}x^4$
+\item $\frac{d}{dx}x^2e^{x}=$
+\item $\frac{d}{dx}e^{30x^2}=$
+\item $\frac{d}{dx}xe^{x^2}=$
 \end{itemize}
+\vspace{3in}
 \end{frame}
 
 \section{A Few Common Integrals}
 \begin{frame}
 \qBrd[4.6in]{teal!50}{
-\begin{itemize}
-\item[]  \qBrd[4in]{camel!50}{  $\displaystyle \int  x^n dx =\frac{x^{n+1}}{n+1} $ for any integer $n$,  $n\neq -1$.}
-\item[]   \qBrd[4in]{tearose(rose)!50}{ $\displaystyle \int  \frac{1}{x} dx =\log(x)$}
-\item[]   \qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  e^{mx} dx =\frac{e^{mx}}{m} $ for any nonzero real number  $m \in \R$,  $m\neq 0$.}
-\item[]  \qBrd[4in]{carolinablue!50}{$\displaystyle \int  e^{-x} dx =-e^{-x} $.}
-\end{itemize}
-\vspace{.05in}
+\begin{center}
+\qBrd[4in]{camel!50}{  $\displaystyle \int  x^n dx =\frac{x^{n+1}}{n+1} $ for any integer $n$,  $n\neq -1$.}
+ \qBrd[1.9in]{tearose(rose)!50}{ $\displaystyle \int  \frac{1}{x} dx =\log(x)$}\qBrd[1.9in]{carolinablue!50}{$\displaystyle \int  e^{-x} dx =-e^{-x} $.}
+\qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  e^{mx} dx =\frac{e^{mx}}{m} $ for any nonzero real number  $m \in \R$,  $m\neq 0$.}
+\end{center}
+\vspace{-.2in}
+{\tiny* Note: We have not included the constant term that appears as a constants while writing a indefinite integral. For the majority, if not all,  of the integras in this course will be a definite integrals with a lower and upper limit.   }
 }
 
 \qBrd[4.6in]{babyblueeyes!90}{\tiny 
@@ -479,6 +482,7 @@ Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \fra
 \end{itemize}
 \vspace{0.05in}
 }
+
 \end{frame}
 
 
@@ -486,14 +490,97 @@ Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \fra
 %\section{A Few Notations and Functions}
 %Indicator Function
 
+\begin{frame}\frametitle{Some Non Trivial Integrals}
+\qBrd[4.6in]{teal!50}{
+\begin{center}
+ \qBrd[1.9in]{applegreen!40}{ $\displaystyle \int e^{-x^2} dx$}\qBrd[1.9in]{rose!30}{$\displaystyle \int  \frac{\sin(x)}{x}dx  $.}
+ \qBrd[4in]{camel!50}{  $\displaystyle \int  x^{\alpha-1}e^{-x} dx $ for $\alpha>0$.}
+\qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  x^{\alpha-1}(1-x)^{\beta-1} dx$ for $\alpha>0, \beta>0$.}
+\end{center}
+\vspace{-.2in}
+{\tiny* Note: We have not included the constant term that appears as a constants while writing a indefinite integral. For the majority, if not all,  of the integras in this course will be a definite integrals with a lower and upper limit.   }
+}
+\end{frame} 
+
+
+
+\section{ A Few Import Mathemetical Functions}
+\begin{frame}\frametitle{Gamma Function, $\Gamma(\alpha), \alpha>0$}
+
+ \qBrd[4in]{camel!50}{  $\HLTW{ \HLTY{\Gamma\left( \alpha\right)}:= \displaystyle \int\limits_{0}^{\infty}  x^{\alpha-1}e^{-x} dx }$ for $\alpha>0$.}
+ 
+ \begin{itemize}
+ \item $\Gamma(\alpha)>0$ for all $\alpha>0$.
+\item $\Gamma(\frac{1}{2})= \sqrt{\pi}$.
+ \item $\Gamma(1)= 1$
+ \end{itemize}
+ \vspace{.1in}
+\begin{itemize}
+\item $\displaystyle \Gamma(\alpha)= (\alpha-1) \Gamma(\alpha-1)$ for any $\alpha>1$
+\item $\Gamma(n)= (n-1)!$ when $n$ is a positive integer.
+\end{itemize}
+\vspace{1in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Beta Function, $\mathscr{B}(\alpha, \beta), \alpha>0, \beta>0$}
+\begin{center}
+\qBrd[4in]{cadmiumorange!50}{ $\HLTW{\HLTY{\mathscr{B}\left(\alpha, \beta\right)}:= \displaystyle \int\limits_{0}^{1}  x^{\alpha-1}(1-x)^{\beta-1} dx} $ for $\alpha>0, \beta>0$.}
+ \vspace{.1in}
+ 
+ \qBrd[3.8in]{tangerine!50}{
+ $ \mathscr{B}\left(\alpha, \beta\right)$ is often calculated using the following equation: 
+ $$\HLTW{\displaystyle \mathscr{B}\left(\alpha, \beta\right):= \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}}$$
+ where $\Gamma(\cdot)$ denotes the Gamma function. }
+\end{center}
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}\frametitle{The Standard Normal CDF ( PHI function)  $\Phi(x)$, $x\in \R$.}
+\begin{center}
+\qBrd[4in]{applegreen!40}{ $\HLTW{\HLTY{\Phi\left(x \right)}:= \displaystyle \int\limits_{-\infty}^{x}  \frac{1}{\sqrt{2\pi }}e^{-\frac{z^2}{2}} dz} $ for all $x\in \R$.}
+\begin{itemize}
+ \item $\Phi(0)=\frac{1}{2}$
+\item  $\Phi(-x)+\Phi(x)=1 \implies \Phi(-x)= 1- \Phi(x) $ for all $x\in \R$
+ \item  $0 \geq \Phi(x) \leq 1$ 
+  \item$\displaystyle \lim\limits_{x\rightarrow -\infty}\Phi(x)=0$, and  $\displaystyle \lim\limits_{x\rightarrow \infty}\Phi(x)=1$
+ \end{itemize}
+ \end{center}
+\vspace{2in}
+\end{frame}
+
+
+
+
+
 \begin{frame}\frametitle{Discussion on Various Concepts}
 {\tiny Log (function)
+Equation of Line,  Circles 
+}
+\vspace{3in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{A}
+{\tiny Log (function)
 %Exp Function
+Gamma, Beta, Phi function
 Equation of Line and Regions
 Circles and Regions
 }
 \vspace{3in}
 \end{frame}
+
 
 %
 %

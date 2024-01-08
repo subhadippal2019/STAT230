@@ -5,3 +5,4 @@
 \beamer@sectionintoc {4}{Binomial Series $(1+x)^n$, $(a+b)^n$}{14}{0}{4}
 \beamer@sectionintoc {5}{A Few Common Derivatives}{19}{0}{5}
 \beamer@sectionintoc {6}{A Few Common Integrals}{22}{0}{6}
+\beamer@sectionintoc {7}{ A Few Import Mathemetical Functions}{25}{0}{7}
