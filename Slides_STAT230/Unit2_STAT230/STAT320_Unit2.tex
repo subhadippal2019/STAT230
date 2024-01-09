@@ -462,32 +462,49 @@ may pick any six for her ticket.  How many different groups of six numbers can b
 \begin{frame}
 
 
-\define{Factorial}{
-For a positive integer $n$, $n!$ (read $n$ factorial) is the product of
-all of the positive integers less than or equal to $n$. That is,
-$\HLTY{\HLTW{n!} = n \times  (n - 1) \times (n - 2) \times  \ldots  \times  3 \times  2 \times  1.}$
-Furthermore, we define $\HLTEQ[purple!30]{\HLTW{0!} = 1}$.}
+%\define{Factorial}{
+%For a positive integer $n$, $n!$ (read $n$ factorial) is the product of
+%all of the positive integers less than or equal to $n$. That is,
+%$\HLTY{\HLTW{n!} = n \times  (n - 1) \times (n - 2) \times  \ldots  \times  3 \times  2 \times  1.}$
+%Furthermore, we define $\HLTEQ[purple!30]{\HLTW{0!} = 1}$.}
 
-\vspace{1in}
+\define{Factorial}{
+Let $n$ be a {\bf non-negative integer,} then the {\bf factorial of n}, denoted as $\HLTY{n!}$ is defined to be
+\begin{enumerate}
+\item $\HLTEQ[purple!30]{\HLTW{0!} = 1}$,
+\item $\HLTEQ[amethyst!40]{\HLTW{1!}=\HLTY{1}}$, 
+\item $\HLTEQ[applegreen!40]{\HLTW{n!}= \HLTY{n\times(n-1)\times \cdots \times 1}}$ for $n\geq 2$
+\end{enumerate} 
+}
+
+\vspace{.5in}
 \pause
 \qBrd[4.5in]{olive!30}{Example: $4!=4\times 3\times 2\times 1=24.$}
 \qBrd[4.5in]{babyblue!30}{Example: $6!=6\times 5 \times 4\times 3\times 2\times 1=720.$}\\
 \vspace{.05in}
-\qBrd[4.5in]{amethyst!30}{\sqBullet{amethyst}Note that $n!=n\times (n-1)!$, for $n$ integer and  $n\geq 1$.}
+\qBrd[4.5in]{amethyst!40}{\sqBullet{amethyst}Note that $\HLTW{n!}=n\times \{\HLTW{(n-1)!}\}$, for $n$ integer and  $n\geq 1$.}
+
+
+
+
+
+
+
+
 \end{frame}
 
 
 
 \begin{frame}
 \begin{center}
-\define{Permutations (Ordered, without replacement)}{ Let $r$ be a positive integer such that $r\leq n$.  An ordered arrangement of $r$ distinct objects is called a permutation.  The number of ways of ordering $n$ distinct objects taken $r$  at a time will be designated by the symbol $^nP_r$. \vspace{-.18in}   Note that  $$\HLTEQ[yellow]{  ^nP_r=  \HLTEQ[white]{n(n - 1)(n- 2)(n - r + 1) }= \frac{n!}{(n - r )!}     }.$$
+\define{Permutations (Ordered, without replacement)}{ Let $r$ be a positive integer such that $r\leq n$.  An ordered arrangement of $r$ distinct objects is called a permutation.  The number of ways of ordering $n$ distinct objects taken $r$  at a time will be designated by the symbol $^nP_r$. \vspace{-.18in}   Note that  $$\HLTEQ[applegreen!50]{ \HLTW{\displaystyle  ^nP_r}=  \HLTEQ[white]{ \displaystyle n(n - 1)(n- 2)(n - r + 1) }= \HLTW{ \displaystyle \frac{n!}{(n - r )!}  }   }.$$
 \vspace{.2in}
 }
 \vspace{-.3in}
-\qBrd[4.3in]{teal!30}{This is also the different ways $r$ different objects can be chosen from n different objects  when the order of the choice is  important.  However, there is no repetition in the choices of $r$ objects. }
+\qBrd[4.3in]{teal!40}{This is also the different ways $r$ different objects can be chosen from n different objects  when the order of the choice is  important.  However, there is no repetition in the choices of $r$ objects. }
 \end{center}
-\qbx[4.5in]{ceil!30}{\sqBullet{ceil}The number of possible permutations of n distinct objects is
-given by: $n! =n\times (n-1) \times \cdots \times 2\times 1$. }
+\qbx[4.5in]{ceil!40}{\sqBullet{ceil}The number of possible permutations of n distinct objects is
+given by: $\HLTW{\displaystyle ^nP_n= n! =n\times (n-1) \times \cdots \times 2\times 1}$. }
 
 \vspace{1in}
 \end{frame}
@@ -584,13 +601,13 @@ subjects, the desired answer is $4! (4! 3! 2! 1!) = 6912$. }
 \begin{frame}{Combinations (Un-ordered, without replacement)}
 \begin{center}
 \define{Combinations}{ The number of combinations of $n$ objects taken $r$ at a time is the number of subsets, each of size $r$ , that can be formed from the $n$ objects. 
-This number will be denoted by $^nC_r$ or $$\HLTEQ[yellow]{\large {n \choose r }= \frac{n!}{r! (n-r)!}}$$
+This number, denoted by ${n\choose r}$ ( {\tiny or $^nC_r$)}, is given as  $$\HLTEQ[babyblue!70]{\HLTW{ \displaystyle {n \choose r }}= \HLTW{ \displaystyle\frac{n!}{r! (n-r)!}}}$$
 }
 \vspace{-.2in}
 \qBrd[4.1in]{amethyst!40}{
 This is also the different ways $r$ different objects can be chosen from n different objects  when the order of the choice is not important. However, there is no repetition in the choices of $r$ objects. }
 \end{center}
-
+\vspace{.7in}
 
 
 \end{frame}
