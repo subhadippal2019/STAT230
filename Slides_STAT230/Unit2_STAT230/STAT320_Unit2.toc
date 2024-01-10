@@ -1,7 +1,7 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Multiplication Principle }{3}{0}{1}
-\beamer@sectionintoc {2}{{\bf Ordered} Arrangements {\bf with} Replacements }{17}{0}{2}
+\beamer@sectionintoc {2}{{\bf Ordered} Arrangements {\bf with} Replacements }{15}{0}{2}
 \beamer@sectionintoc {3}{Permutations:{\small {\bf Ordered} Arrangements {\bf Without} Replacements} }{25}{0}{3}
-\beamer@sectionintoc {4}{Combinations: {\small Arrangements {\bf without replacement} when {\bf order is not important}} }{38}{0}{4}
-\beamer@sectionintoc {5}{Arrangements {\bf With Replacement} When {\bf Order is Not Important} }{48}{0}{5}
-\beamer@sectionintoc {6}{Miscellaneous Problems On Counting}{52}{0}{6}
+\beamer@sectionintoc {4}{Combinations: {\small Arrangements {\bf without replacement} when {\bf order is not important}} }{40}{0}{4}
+\beamer@sectionintoc {5}{Arrangements {\bf With Replacement} When {\bf Order is Not Important} }{52}{0}{5}
+\beamer@sectionintoc {6}{Miscellaneous Problems On Counting}{57}{0}{6}

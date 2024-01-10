@@ -32,7 +32,7 @@
 \definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
 \definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
 
-\setbeamercolor{structure}{fg=bittersweet!70, bg= black!60}
+\setbeamercolor{structure}{fg=bittersweet!90, bg= black!60}
 
 
 
@@ -281,7 +281,7 @@ arrangements can the airline offer from New York to Hawaii?}\\
 %all of the positive integers less than or equal to $n$. That is,
 %$n! = n x (n - 1) x (n - 2) \times  \ldots  \times  3 \times  2 \times  1.$
 %Furthermore, we define $0! = 1$.}
-\vspace{1in}
+\vspace{1.5in}
 \pause
 {\tiny Solution: $6\times 7=42$ }
 \vspace{1in}
@@ -312,8 +312,9 @@ arrangements can the airline offer from New York to Hawaii?}\\
 \Exmpl{babyblue}{2} Notation for a person's {\bf blood type} consists of two symbols.   The first symbol is letter code that is either `A', `B', `AB', or `O'.  The second code indicates the Rhesus (Rh) factor.  It can either be  `+' (i.e.   Rh factor +)  or `-' (i,.e.  Rh factor- ).  In a medical facility,  a technician records a person's blood type once a blood test is done.  What is the total number of different {\bf blood types} that are possible?
 }
 \pause
+\vspace{1in}
 
-{\small Solution: $4 \times 2 =8$.}
+{\tiny Solution: $4 \times 2 =8$.}
 \vspace{2in}
 
 \end{frame}
@@ -347,12 +348,12 @@ $n$ ways, then there are $m \times n$ ways to complete the task.}
 	\frametitle{Example }
 	
 	
-\qbx[4.5in]{amethyst!40}{
-\Exmpl{amethyst}{3} A college planning committee consists of 3 freshmen, 4 sophomores, 5 juniors, and 2 seniors.  A subcommittee of 4, consisting of 1 person from each class, is to be chosen.  How many
+\qbx[4.5in]{babyblue!40}{
+\Exmpl{babyblue}{3} A college planning committee consists of 3 freshmen, 4 sophomores, 5 juniors, and 2 seniors.  A subcommittee of 4, consisting of 1 person from each class, is to be chosen.  How many
 different subcommittees are possible?
-}
+}\\
 \pause
-
+\vspace{1.2in}
 {\tiny Solution: We may regard the choice of a subcommittee as the combined outcome of the four separate
 experiments of choosing a single representative from each of the classes. It then follows from the generalized version of the basic principle that there are $3\times 4\times 5\times 2 = 120$ possible subcommittees.}
 \vspace{2in}
@@ -364,6 +365,7 @@ experiments of choosing a single representative from each of the classes. It the
 
 \begin{frame}
 	\frametitle{Example }
+	\vspace{-.2in}
 \qbx[4.5in]{amethyst!40}{
 \Exmpl{amethyst}{4} A car manufacturer provides cars with the following different variations:
 \begin{enumerate}
@@ -374,26 +376,12 @@ experiments of choosing a single representative from each of the classes. It the
 \end{enumerate}
 How many different types of car the manufacturer sells?
 }\\
-\vspace{1in}
+\includegraphics[scale=.23]{figs/cars.png} \\
+\vspace{.5in}
 \pause
 {\tiny Solution: $2\times 2\times 3\times 4=48$ }
 
 
-\end{frame}
-
-
-
-
-\begin{frame}
-	\frametitle{Example }
-\qbx[4.5in]{cherryblossompink!40}{
-\Exmpl{cherryblossompink}{} How many different 7-place license plates are possible if the first 3 places are to be occupied by letters and the final 4 by numbers?
-}\\
-\vspace{1in}
-\pause
-{\tiny Solution: By the generalized version of the basic principle, the answer is $26\times 26\times 26 \times 10\times 10\times 10\times 10 = 175, 760,000.$}
-
-\vspace{1in}
 \end{frame}
 
 
@@ -440,16 +428,27 @@ Let $\HLTW{n, r}$ be positive  integers.  Number of different ways a sequence of
 \begin{frame}
 \qBrd[4.5in]{babyblue!30}{ \Exmpl{babyblue!50}{} How many different numbers can be constructed using a 32 bits binary digits? 
 } 
+\includegraphics[scale=.4]{figs/bits.png} \\
 
-
-\vspace{2in}
+\vspace{1in}
 \pause
 {\tiny Solution:  \HLT[yellow]{$2^{32}$}}
 
 \end{frame}
 
 
+\begin{frame}
+	\frametitle{Example }
+\qbx[4.5in]{cherryblossompink!40}{
+\Exmpl{cherryblossompink}{} A typical lisence plate number in Abu-Dhabi consists of 5 digits.  How many different lisence plate numbers (excluding `00000') are possible ? 
+}\\
+\includegraphics[scale=.2]{figs/L_Plate.png} \\
+\vspace{1in}
+\pause
+{\tiny Solution: By the generalized version of the basic principle, the answer is $10^5-1=9999$}
 
+\vspace{1in}
+\end{frame}
 
 
 
@@ -458,8 +457,8 @@ Let $\HLTW{n, r}$ be positive  integers.  Number of different ways a sequence of
 may pick any six for her ticket.  How many different groups of six numbers can be chosen from the forty-four {\bf if the repeated selection of the numbers is allowed while the same numbers selected in a different order is considered different sequence?
 } }
 
-
-\vspace{1.8in}
+\includegraphics[scale=.25]{figs/lottery.png} \\
+\vspace{.8in}
 \pause
 {\tiny Solution:  \HLT[yellow]{$44^6$}}
 
@@ -536,6 +535,17 @@ How many different words can you make with the letters
 \end{frame}
 
 
+\begin{frame}
+\vspace{-.2in}
+\qBrd[4.5in]{iceberg!30}{ \Exmpl{iceberg!70}{} From the numbers \{1, 2, \ldots ,44\}, a person
+may pick any six for her ticket.  How many different groups of six numbers can be chosen from the forty-four {\bf if the repeated selection of the numbers are {\it NOT allowed}  while the order at which the numbers are selected is important.}
+}\\
+\includegraphics[scale=.25]{figs/lottery.png} \\
+\pause 
+\vspace{.8in}
+{\tiny
+Solution: \HLT[yellow]{$ ^{44}P_{6}= 44\time 43 \times 42\times 41\times 40 \times 39 $}}
+\end{frame}
 
 
 
@@ -628,14 +638,31 @@ This is also the different ways $r$ different objects can be chosen from n diffe
 
 
 \begin{frame}
-\qbx[4.5in]{amethyst!40}{\Exmpl{amethyst}{}
-A motherboard has 8 slots, where we want to place 4
-{\bf identical} cards.  How many possibilities are there?}\\
-\vspace{2in}
+\vspace{-.2in}
+\qbx[4.6in]{amethyst!40}{\Exmpl{amethyst}{}
+\small A motherboard has 8 slots, where we want to place 4
+{\bf identical} cards.  How many unique possible way one can insert the 4 cards?}\\
+\includegraphics[scale=.25]{figs/motherboard.png}
+\includegraphics[scale=.2]{figs/slotCard5.png}\\
 \pause
- Ans:  \HLT[yellow]{${8 \choose 4 }= \frac{8!}{(8-4)! (4!)}$}  
+\vspace{1in}
+ \HLT[yellow]{ \tiny Solution ${8 \choose 4 }= \frac{8!}{(8-4)! (4!)}$}  
 \end{frame}
 
+
+
+
+\begin{frame}
+\vspace{-.2in}
+\qBrd[4.5in]{iceberg!30}{ \Exmpl{iceberg!70}{} From the numbers \{1, 2, \ldots ,44\}, a person
+may pick any six for her ticket.  How many different groups of six numbers can be chosen from the forty-four {\bf if the repeated selection of the numbers are {\it NOT allowed}  and the order at which the numbers are selected is  NOT important.}
+}\\
+\includegraphics[scale=.25]{figs/lottery.png} \\
+\pause 
+\vspace{.8in}
+{\tiny
+Solution: \HLT[yellow]{${ {44}\choose 6}= \frac{44\time 43 \times 42\times 41\times 40 \times 39}{6\times 5\times 4\times 3\times 2\times 1} $}}
+\end{frame}
 
 
 \begin{frame}
@@ -705,7 +732,9 @@ Number of ways $n$ indistinguishable objects can be organized into r different g
 \qBrd[4.5in]{iceberg!30}{ \Exmpl{iceberg!70}{} From the numbers \{1, 2, \ldots ,44\}, a person
 may pick any six for her ticket.  How many different groups of six numbers can be chosen from the forty-four {\bf if the repeated selection of the numbers are allowed while the order at which the numbers are selected is not important.}
 }\\
-\vspace{1.8in}
+\includegraphics[scale=.25]{figs/lottery.png} \\
+\pause 
+\vspace{.8in}
 {\tiny
 Solution: \HLT[yellow]{$\frac{(6+44-1)!}{(43!) (6!)}={{49} \choose {43}}$}}
 \end{frame}
@@ -724,7 +753,8 @@ Consider 6 tosses of a coin.  For example two typical sequences of outcomes that
 \item  How many different ways there can be 2 heads?
 \end{enumerate} 
 }\\
-\vspace{1.5in}
+\includegraphics[scale=.2]{figs/coin.png} \\
+\vspace{.5in}
 \pause
 {\tiny
  Solution: a)  ${2^6}= 64$,  b) ${6 \choose 2}$  }
@@ -744,8 +774,8 @@ Consider 6 tosses of a coin.  For example two typical sequences of outcomes that
 \vspace{.05in}
 } 
 
-
-\vspace{1in}
+\includegraphics[scale=.15]{figs/dice.png} \\
+\vspace{.3in}
 \pause
 {\tiny Solution: 
 a)$ \HLTY{6^4}$, b) $\HLTY{{4\choose 2} 5^2}$, c) $\HLTY{5^4}$ d) $\HLTY{6^4-5^4}$
@@ -757,13 +787,15 @@ a)$ \HLTY{6^4}$, b) $\HLTY{{4\choose 2} 5^2}$, c) $\HLTY{5^4}$ d) $\HLTY{6^4-5^4
 
 
 \begin{frame}
-\qbx[4.5in]{amber(sae/ece)!40}{\Exmpl{amber(sae/ece)}{} {\tiny Passwords are a context where it is interesting to count and compare the total number of possible ways when the length is relatively small and as restrictions are introduced or relaxed.  As the length increases, and the number of restrictions and conditions change, the number of potential passwords increases rapidly. } \\
+\qbx[4.5in]{amber(sae/ece)!40}{\Exmpl{amber(sae/ece)}{} {\tiny Passwords are a context where it is interesting to count and compare the total number of possible ways when the length is relatively small and as restrictions are introduced or relaxed. } \\
 A typical ATM pin consists of 4 digits.  
 \begin{enumerate}
 \item How many different (unique) 4 digit passwords can be constructed if digits are restricted to be only numeric? 
 \item How many different (unique) 4 digit passwords can be constructed if the First digit must be an English alphabet while rest are numeric? 
 \item How many different (unique) 4 digit passwords can be constructed if the digits can either be any number or English alphabet? 
 \end{enumerate}  }\\
+\includegraphics[scale=.25]{figs/ATMPIN.png} \\
+\pause 
 \vspace{1.5in}
 %\pause
 %{\tiny
@@ -789,17 +821,41 @@ What is the number of  unique permutations for the letters in the word `BANANA'?
 
 
 \begin{frame}
+\vspace{-.5in}
 \qbx[4.5in]{amethyst!40}{\Exmpl{amethyst}{}
 A chess tournament has 10 competitors, of which 4
 are Russian, 3 are from the United States, 2 are from Great Britain,
 and 1 is from Brazil. If the tournament result lists just the
 nationalities of the players in the order in which they placed, how
 many outcomes are possible?}\\
-\vspace{2.1in}
+\vspace{1.1in}
 \pause
 {\tiny
  Solution:  $\frac{10!}{(4!)(3!)(2!)(1!)}$ }
 \end{frame}
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{Example }
+\qbx[4.5in]{cherryblossompink!40}{
+\Exmpl{cherryblossompink}{} How many different 7-place license plates are possible if the first 3 places are to be occupied by letters and the final 4 by numbers?
+}\\
+\includegraphics[scale=.1]{figs/NewYork_Plate.png} \\
+\pause 
+\vspace{.9in}
+\pause
+{\tiny Solution: By the generalized version of the basic principle, the answer is $26\times 26\times 26 \times 10\times 10\times 10\times 10 = 175, 760,000.$}
+
+\vspace{1in}
+\end{frame}
+
+
+
+
 
 
 \begin{frame}
@@ -817,10 +873,12 @@ How many different signals, each consisting of 9 flags hung in a line, can be ma
 Consider a group of 20 people. If everyone shakes
 hands with everyone else, how many handshakes
 take place?}\\
-\vspace{2.5in}
+\includegraphics[scale=.2]{figs/HandShake.png} 
+
+\vspace{1.5in}
 \pause
 {\tiny
- Solution:  $\frac{9!}{(4!)(3!)(2!)}$ }
+ Solution:  ${20 \choose 2}$ }
 \end{frame}
 
 
