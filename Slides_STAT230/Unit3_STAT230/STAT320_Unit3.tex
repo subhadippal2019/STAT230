@@ -279,27 +279,27 @@ The set, $\SampleS$,  of all possible outcomes of a particular experiment is cal
 
 
 
-\begin{frame}
-	\frametitle{  Events}
-		\begin{center}
-	
-\begin{definition}[Events]
-An event is any collection of possible outcomes of a particular experiment, that is, any subset of $\SampleS$ (including  $\emptyset$ and $\SampleS$  itself  ). \\
-\vspace{.2in}
-\end{definition}
-\vspace{-.2in}
-\qBrd[4in]{applegreen!40}{
-\HLTW{Experiment:}Single throw of a 6-sided die. \\\HLTW{\text{Sample Space:}} $\SampleS= \{1, 2, 3, 4, 5, 6\}$
-}\\
-\vspace{.01in}
-\pause
-\qBrd[4in]{brightpink!40}{
-\HLTW{\text{Example of Events:}} $\HLTY{A=\{2,4,6\}},  \HLTY{B=\{3\}}$
-}\\
-{\tiny All Possible Events?}
-\vspace{3in}
-	\end{center}
-\end{frame}
+%\begin{frame}
+%	\frametitle{  Events}
+%		\begin{center}
+%	
+%\begin{definition}[Events]
+%An event is any collection of possible outcomes of a particular experiment, that is, any subset of $\SampleS$ (including  $\emptyset$ and $\SampleS$  itself  ). \\
+%\vspace{.2in}
+%\end{definition}
+%\vspace{-.2in}
+%\qBrd[4in]{applegreen!40}{
+%\HLTW{Experiment:}Single throw of a 6-sided die. \\\HLTW{\text{Sample Space:}} $\SampleS= \{1, 2, 3, 4, 5, 6\}$
+%}\\
+%\vspace{.01in}
+%\pause
+%\qBrd[4in]{brightpink!40}{
+%\HLTW{\text{Example of Events:}} $\HLTY{A=\{2,4,6\}},  \HLTY{B=\{3\}}$
+%}\\
+%{\tiny All Possible Events?}
+%\vspace{3in}
+%	\end{center}
+%\end{frame}
 
 
 \begin{frame}
@@ -482,6 +482,7 @@ the event that  the transistor does not last longer than 5 hours.  Write down th
 
 
 \begin{frame}\frametitle{ Disjoint Events \& Partition}
+\vspace{-.1in}
 \begin{definition}[Pairwise Disjoint Events]
 Two events $A$ and $B$ are disjoint (or mutually exclusive) if $A\cap B=\emptyset$.  A collection of events  $\{A_i\}_{i=1}^{n}$ are pairwise disjoint (or mutually exclusive) if $A_i \cap A_j=\emptyset$ for all $i \neq j$.
 \end{definition}
@@ -490,10 +491,11 @@ Two events $A$ and $B$ are disjoint (or mutually exclusive) if $A\cap B=\emptyse
 \pause
 \qBrd[4.7in]{teal!40}{\HLTW{
 Comment:} Any set $A$ and  it's complement,  $\Not{A}$,  creates  a partition of $\SampleS$.}
+
 \pause
 \vspace{-.15in}
-\qBrd[4.7in]{amethyst!40}{\HLTW{
-Comment:}In the above definition, we may replace $n$ by $\infty$ and the definition naturally extends. }
+\qBrd[4.7in]{amethyst!50}{\HLTW{
+Comment:}In the above definition, we may replace $n$ by $\infty$ and the definition extends naturally. }
 
 \end{frame}
 
@@ -844,14 +846,14 @@ $P(N)=\frac{{10 \choose 5}\times 2^5}{{20 \choose 5}}\implies P(N)=\frac{20 \tim
 
 
 \begin{frame}\frametitle{Example}
-\qbx[4.5in]{darktangerine!40}{
+\qbx[4.6in]{darktangerine!40}{
 \Exmpl{darktangerine}{} If $n$ people are present in a room, what is the probability that no two of them celebrate their birthday on the same day of the year? How large need n be so that this probability is less than $\frac{1}{2}$?
 }\\
 \pause
 \vspace{1.5in}
 {\tiny 
 Solution: 
-$\frac{^365P_n}{(365)^n}=\frac{(365)\times (364) \times \cdots \times (365-n+1)}{(365)^n}$
+$\frac{^{365}P_n}{(365)^n}=\frac{(365)\times (364) \times \cdots \times (365-n+1)}{(365)^n}$
 }
 \vspace{2in}
 
