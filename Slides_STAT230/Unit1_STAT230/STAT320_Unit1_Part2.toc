@@ -1,8 +1,8 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{A Few Mathemetical Function and Notation}{2}{0}{1}
-\beamer@sectionintoc {2}{Exponential Series $e^x \text { or }( \qopname \relax o{exp}(x))$}{8}{0}{2}
-\beamer@sectionintoc {3}{Geometric Series}{11}{0}{3}
-\beamer@sectionintoc {4}{Binomial Series $(1+x)^n$, $(a+b)^n$}{14}{0}{4}
-\beamer@sectionintoc {5}{A Few Common Derivatives}{19}{0}{5}
-\beamer@sectionintoc {6}{A Few Common Integrals}{22}{0}{6}
-\beamer@sectionintoc {7}{ A Few Import Mathemetical Functions}{25}{0}{7}
+\beamer@sectionintoc {2}{A Few Common Derivatives}{8}{0}{2}
+\beamer@sectionintoc {3}{Exponential Series $e^x \text { or }( \qopname \relax o{exp}(x))$}{11}{0}{3}
+\beamer@sectionintoc {4}{Geometric Series}{17}{0}{4}
+\beamer@sectionintoc {5}{Binomial Series $(1+x)^n$, $(a+b)^n$}{22}{0}{5}
+\beamer@sectionintoc {6}{A Few Common Integrals}{30}{0}{6}
+\beamer@sectionintoc {7}{ A Few Import Mathemetical Functions}{33}{0}{7}
