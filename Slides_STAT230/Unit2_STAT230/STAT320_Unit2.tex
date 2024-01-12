@@ -370,7 +370,7 @@ experiments of choosing a single representative from each of the classes. It the
 \Exmpl{amethyst}{4} A car manufacturer provides cars with the following different variations:
 \begin{enumerate}
 \item Manual or automatic transmission
-\item  With or without air conditioning
+%\item  With or without air conditioning
 \item  Three different stereo systems
 \item Four possible exterior colors
 \end{enumerate}
@@ -379,7 +379,7 @@ How many different types of car the manufacturer sells?
 \includegraphics[scale=.23]{figs/cars.png} \\
 \vspace{.5in}
 \pause
-{\tiny Solution: $2\times 2\times 3\times 4=48$ }
+{\tiny Solution: $2\times 3\times 4=24$ }
 
 
 \end{frame}
@@ -743,6 +743,7 @@ Solution: \HLT[yellow]{$\frac{(6+44-1)!}{(43!) (6!)}={{49} \choose {43}}$}}
 
 \section{Miscellaneous Problems On Counting}
 
+\TransitionFrame[amethyst]{ Miscellaneous Problems On Counting }
 
 
 \begin{frame}
@@ -750,7 +751,7 @@ Solution: \HLT[yellow]{$\frac{(6+44-1)!}{(43!) (6!)}={{49} \choose {43}}$}}
 Consider 6 tosses of a coin.  For example two typical sequences of outcomes that are considered different is  `HTTTTT', and `THTTTT'.
 \begin{enumerate}[a).]
 \item What is the total number of different outcomes from the experiment?
-\item  How many different ways there can be 2 heads?
+\item  How many different ways there can be exactly 2 heads?
 \end{enumerate} 
 }\\
 \includegraphics[scale=.2]{figs/coin.png} \\
@@ -820,20 +821,64 @@ What is the number of  unique permutations for the letters in the word `BANANA'?
 \end{frame}
 
 
+
+
 \begin{frame}
-\vspace{-.5in}
-\qbx[4.5in]{amethyst!40}{\Exmpl{amethyst}{}
-A chess tournament has 10 competitors, of which 4
-are Russian, 3 are from the United States, 2 are from Great Britain,
-and 1 is from Brazil. If the tournament result lists just the
-nationalities of the players in the order in which they placed, how
-many outcomes are possible?}\\
-\vspace{1.1in}
+\qbx[4.5in]{olive!40}{\Exmpl{olive}{}
+Consider a Set $A=\{a_1, a_2, a_3 , a_4\}$ containnig $4$ elements.  
+\begin{enumerate}[a).]
+\item What is the total number of different subsets of the set $A$ that has exactly $2$ elements in it?
+\item What is the total number of different subsets of the set $A$?
+\item What is the total number of different non empty proper subsets of the set $A$?
+\end{enumerate} 
+}\\
+\vspace{1in}
 \pause
 {\tiny
- Solution:  $\frac{10!}{(4!)(3!)(2!)(1!)}$ }
+ Solution: a) ${4 \choose 2}$ b)  ${2^4}= 16$,  c) $2^4-2=14$ }
+ \vspace{.11in}
 \end{frame}
 
+
+
+
+
+\begin{frame}
+\qbx[4.5in]{teal!40}{\Exmpl{teal}{}
+One of the sections in the class STAT230 has 8 students.  Assume the birthday of a student can be any one of days out of 365 days in a year.  We say that the two students share a same birth day if they are born on the same day and same month {\tiny ( for example two students are born on $10^{\text{th}}$ January).}  Answer the follwoing questions. 
+\begin{enumerate}[a).]
+\item What is the total number of different possibilities for the birthday of the 8 students?
+\item How many different possibilities are there such that  exactly two students have the same birthday?
+\item How many different possibilities are there if exactly four of students have the same birthday?
+\item How many different possibilities are there so that all the birthdays are on different day of the year. 
+\end{enumerate} 
+}\\
+%\vspace{.1in}
+\pause
+{\tiny
+ Solution: a)$ 365^8$ b)  $365\times  {8 \choose 2} 364\times \cdots \times 359$ c)  $365\times {8 \choose 4} \times 364\times 363\times 362 \times 361$  c) $^{365}P_{8}$ }
+ \vspace{.11in}
+\end{frame}
+
+
+
+
+%
+%
+%\begin{frame}
+%\vspace{-.5in}
+%\qbx[4.5in]{amethyst!40}{\Exmpl{amethyst}{}
+%A chess tournament has 10 competitors, of which 4
+%are Russian, 3 are from the United States, 2 are from Great Britain,
+%and 1 is from Brazil. If the tournament result lists just the
+%nationalities of the players in the order in which they placed, how
+%many outcomes are possible?}\\
+%\vspace{1.1in}
+%\pause
+%{\tiny
+% Solution:  $\frac{10!}{(4!)(3!)(2!)(1!)}$ }
+%\end{frame}
+%
 
 
 
@@ -859,9 +904,10 @@ many outcomes are possible?}\\
 
 
 \begin{frame}
+\vspace{-.5in}
 \qbx[4.5in]{teal!40}{\Exmpl{teal}{}
 How many different signals, each consisting of 9 flags hung in a line, can be made from a set of 4 white  flags, 3 red  flags, and 2 blue  flags if all  flags of the same color are identical?}\\
-\vspace{2.5in}
+\vspace{1.5in}
 \pause
 {\tiny
  Solution:  $\frac{9!}{(4!)(3!)(2!)}$ }
