@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 JAN 2024 00:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 JAN 2024 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2561,6 +2561,16 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [72
 
 ]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 917--917
+[][]  
+ []
+
+<figs/9Flags.png, id=3147, 990.19937pt x 147.55125pt>
+File: figs/9Flags.png Graphic file (type png)
+<use figs/9Flags.png>
+Package pdftex.def Info: figs/9Flags.png  used on input line 917.
+(pdftex.def)             Requested size: 227.74106pt x 33.93607pt.
+
 Overfull \hbox (907.05872pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2572,7 +2582,16 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 
 [73
 
-]
+ <./figs/9Flags.png>]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 917--917
+[][]  
+ []
+
+File: figs/9Flags.png Graphic file (type png)
+<use figs/9Flags.png>
+Package pdftex.def Info: figs/9Flags.png  used on input line 917.
+(pdftex.def)             Requested size: 227.74106pt x 33.93607pt.
+
 Overfull \hbox (907.05872pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2585,11 +2604,15 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [74
 
 ]
-<figs/HandShake.png, id=3231, 433.62pt x 296.60812pt>
-File: figs/HandShake.png Graphic file (type png)
-<use figs/HandShake.png>
-Package pdftex.def Info: figs/HandShake.png  used on input line 928.
-(pdftex.def)             Requested size: 86.72246pt x 59.32057pt.
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 932--932
+[][]  
+ []
+
+<figs/9FlagNumber.png, id=3231, 1094.0875pt x 186.19562pt>
+File: figs/9FlagNumber.png Graphic file (type png)
+<use figs/9FlagNumber.png>
+Package pdftex.def Info: figs/9FlagNumber.png  used on input line 932.
+(pdftex.def)             Requested size: 251.63483pt x 42.82408pt.
 
 Overfull \hbox (907.05872pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
@@ -2602,11 +2625,15 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 
 [75
 
- <./figs/HandShake.png>]
-File: figs/HandShake.png Graphic file (type png)
-<use figs/HandShake.png>
-Package pdftex.def Info: figs/HandShake.png  used on input line 928.
-(pdftex.def)             Requested size: 86.72246pt x 59.32057pt.
+ <./figs/9FlagNumber.png>]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 932--932
+[][]  
+ []
+
+File: figs/9FlagNumber.png Graphic file (type png)
+<use figs/9FlagNumber.png>
+Package pdftex.def Info: figs/9FlagNumber.png  used on input line 932.
+(pdftex.def)             Requested size: 251.63483pt x 42.82408pt.
 
 Overfull \hbox (907.05872pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
@@ -2620,6 +2647,12 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [76
 
 ]
+<figs/HandShake.png, id=3315, 433.62pt x 296.60812pt>
+File: figs/HandShake.png Graphic file (type png)
+<use figs/HandShake.png>
+Package pdftex.def Info: figs/HandShake.png  used on input line 948.
+(pdftex.def)             Requested size: 86.72246pt x 59.32057pt.
+
 Overfull \hbox (907.05872pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2631,7 +2664,12 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 
 [77
 
-]
+ <./figs/HandShake.png>]
+File: figs/HandShake.png Graphic file (type png)
+<use figs/HandShake.png>
+Package pdftex.def Info: figs/HandShake.png  used on input line 948.
+(pdftex.def)             Requested size: 86.72246pt x 59.32057pt.
+
 Overfull \hbox (907.05872pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2716,11 +2754,6 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [84
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 996--996
-[][] 
- []
-
-
 Overfull \hbox (907.05872pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2733,7 +2766,19 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [85
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1004--1004
+Overfull \hbox (907.05872pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[86
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1016--1016
 [][] 
  []
 
@@ -2747,7 +2792,24 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[86
+[87
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1024--1024
+[][] 
+ []
+
+
+Overfull \hbox (907.05872pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[88
 
 ]
 \tf@nav=\write6
@@ -2759,20 +2821,20 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1007.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1007.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1027.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1027.
  (./STAT320_Unit2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1007.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1007.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1027.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1027.
 
 Package rerunfilecheck Info: File `STAT320_Unit2.out' has not changed.
 (rerunfilecheck)             Checksum: 076421E1204091CF9CCA89EDDE75BC86;496.
  ) 
 Here is how much of TeX's memory you used:
- 29441 strings out of 480608
- 573323 string characters out of 5903631
- 972645 words of memory out of 5000000
- 44410 multiletter control sequences out of 15000+600000
+ 29475 strings out of 480608
+ 574057 string characters out of 5903631
+ 972682 words of memory out of 5000000
+ 44438 multiletter control sequences out of 15000+600000
  593266 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,17n,79p,799b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2789,10 +2851,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
 20/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texm
 f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/
 fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit2.pdf (86 pages, 12006605 bytes).
+Output written on STAT320_Unit2.pdf (88 pages, 12305332 bytes).
 PDF statistics:
- 3797 PDF objects out of 4296 (max. 8388607)
- 3227 compressed objects within 33 object streams
- 179 named destinations out of 1000 (max. 500000)
- 2558 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3883 PDF objects out of 4296 (max. 8388607)
+ 3299 compressed objects within 33 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 2616 words of extra memory for PDF output out of 10000 (max. 10000000)
 
