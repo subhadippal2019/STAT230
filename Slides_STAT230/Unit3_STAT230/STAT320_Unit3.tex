@@ -718,17 +718,18 @@ events occurring is just the sum of their respective probabilities.
 \begin{frame}\frametitle{{Summary: A Few Properties of Probability}}
 \qbx[4.6in]{antiquefuchsia!60}{
 \vspace{.1in}
-Let $(\SampleS , P )$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then \\
+Let $\HLTY{(\SampleS , P)}$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then, \\
 \begin{enumerate}
-\qBrd[3.5in]{applegreen!40}{  \item[{\sqBullet{olive}}] $P(\emptyset)=0$ where $\emptyset$ denotes the Null set. }\\
+\qBrd[3.5in]{applegreen!40}{  \item[{\sqBullet{olive}}] $\HLTW{P(\emptyset)=0}$ where $\HLTW{\emptyset}$ denotes the Null set. }\\
 \vspace{.05in}
-\qBrd[2in]{apricot!40}{ \item[{\sqBullet{apricot}}]  $P(A)\leq 1$. }\\
+\qBrd[2in]{apricot!40}{ \item[{\sqBullet{apricot}}]  $\HLTW{P(A)\leq 1}$. }\\
 \vspace{.05in}
-\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{lime}}] If $A\subset B $ then $P(A)\leq P(B) $.}\\
+\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{lime}}] If $\HLTW{
+A\subseteq B}$ then $\HLTW{P(A)\leq P(B)} $.}\\
 \vspace{.05in}
-\qBrd[3.8in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $P(\Not{A})=1-P(A)$, where  $\Not{A}$ denotes the complementary event to $A$}\\
+\qBrd[3.8in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $\HLTW{P(\Not{A})=1-P(A)}$, where  $\HLTW{\Not{A}}$ denotes the complementary event to $A$}\\
 \vspace{.05in}
-\qBrd[4in]{cadmiumorange!40}{\item[{\sqBullet{cadmiumorange}}]  $P(A\cup B)= P(A)+P(B)-P(A\cap B)$.}
+\qBrd[4in]{cadmiumorange!40}{\item[{\sqBullet{cadmiumorange}}]  $ \HLTW{P(A\cup B)= P(A)+P(B)-P(A\cap B) }$.}
 \end{enumerate}
 }
 \end{frame}
@@ -758,6 +759,10 @@ Let $A, B$ be two events such that  $$P(A) = \frac{1}{3} \text{ and } P(\Not{B})
 \end{frame}
 
 
+
+
+
+
 \begin{frame}{ Examples}
 
 \qbx[4.5in]{bronze!40}{
@@ -770,7 +775,7 @@ it will be detected by device A is 0.95; by device B,0.90; and by both devices, 
  }
 
 \vspace{1in}
-
+\pause
 {\tiny
 Solution: A: \{device A detects smoke\}   B: \{device B detects smoke\}
 
@@ -781,6 +786,117 @@ $P(\text{Smoke is undetected })=1- P(\text{Smoke is detected by atleast one devi
 }
 
 \end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}{ Examples}
+
+\qbx[4.5in]{babyblue!40}{
+\Exmpl{babyblue}{} Suppose that A and B are mutually exclusive
+events for which P(A) = .3 and P(B) = .5. What is
+the probability that 
+\begin{enumerate}
+\item either A or B occurs?
+\item A occurs but B does not?
+\item both A and B occur?
+\end{enumerate}
+ }
+
+\vspace{1in}
+\pause
+{\tiny
+Solution: A: \{device A detects smoke\}   B: \{device B detects smoke\}
+
+$P(A\cup B)= P(A)+P(B)=P(A\cap B)= 0.95+0.90-0.88=.97$
+
+$P(\text{Smoke is undetected })=1- P(\text{Smoke is detected by atleast one devices })  =  1-P(A\cap B)=1-0.97=0.03$
+
+}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{ Examples}
+
+\qbx[4.5in]{olive!40}{
+\Exmpl{olive}{}  An evaluation of a small business by an accounting firm either reveals a problem with the accounts or it doesn't reveal a problem.  Also, the evaluation is either done
+accurately or incorrectly. The probability that the
+evaluation is done accurately is 0.85. Furthermore, the
+probability that the evaluation is done incorrectly and that
+it reveals a problem is 0.10. If the probability that the
+evaluation is done accurately and it does not reveal a
+problem is 0.25, what is the probability that the
+evaluation does not reveal a problem?
+ }
+
+\vspace{1in}
+%\pause
+{\tiny
+Solution: % A. 0.10 B. 0.20 C. 0.30 D. 0.40
+}
+\end{frame}
+
+
+
+\begin{frame}{ Examples}
+\vspace{-.2in}
+\qbx[4.55in]{airforceblue!40}{
+\Exmpl{airforceblue}{} A car repair can be performed either on time or late and either satisfactorily or unsatisfactorily. The probability
+of a repair being on time and satisfactory is 0.26. The
+probability of a repair being on time is 0.74. The
+probability of a repair being satisfactory is 0.41. What is
+the probability of a repair being late and unsatisfactory?
+ }
+
+\vspace{1in}
+%\pause
+{\tiny
+Solution: % A. 0.10 B. 0.20 C. 0.30 D. 0.40
+}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{ Examples}
+
+\qbx[4.5in]{antiquefuchsia!40}{
+\Exmpl{antiquefuchsia}{}  In a study of patients arriving at a hospital emergency room, the gender of the patients is considered, together
+with whether the patients are younger or older than
+30 years of age, and whether or not the patients are
+admitted to the hospital. It is found that 45\% of the
+patients are male, 30\% of the patients are younger than
+30 years of age, 15\% of the patients are females older
+than 30 years of age who are admitted to the hospital, and
+21\% of the patients are females younger than 30 years of
+age. What proportion of the patients are females older
+than 30 years of age who are not admitted to the hospital?
+ }
+
+\vspace{1in}
+%\pause
+{\tiny
+Solution: % A. 0.10 B. 0.20 C. 0.30 D. 0.40
+}
+\end{frame}
+
+
+
+
+
+
 
 \TransitionFrame[bittersweet]{\Large Inclusion Exclusion Principle  }
 
@@ -820,9 +936,9 @@ $$\HLTEQ[lightBrownOne]{ \HLTEQ[white]{  \mathbb{Q}_{3, 1}=?,\mathbb{Q}_{3, 2}=?
 
 
 
-\TransitionFrame[bittersweet]{\Large A Few Examples: \\
-{\tiny when $\SampleS$ is a finite set.  }
- }
+\TransitionFrame[antiquefuchsia]{\Large A Few Examples: \\
+ assuming $ \HLTW{ \SampleS \text{ to be a finite set. }}$ }
+
 
 
 \begin{frame}\frametitle{Finite Sample Spaces with Equally Likely Outcomes}
@@ -855,15 +971,15 @@ It is intuitive and also easy to derive using Axioms 2 and Axiom3 of Probability
 %\qBrd[4.6in]{olive!40}{\sqBullet{olive}  That is, consider an experiment whose sample space $\SampleS$ is a finite set, say,  $\SampleS=\{1, 2, 3, \ldots, N\}.$ Then it is often natural to assume that  $P(\{1\})=P(\{2\})=\ldots =P(\{N\})$  which implies, from
 %Axioms 2 and 3, that $P(\{i\})=\frac{1}{N}$ for all $i=1,\ldots N$. }\\
 %\vspace{.05in}
-\qBrd[4.5in]{amethyst!50}{\sqBullet{amethyst} If the sample space $\SampleS$ is finite and all the corresponding outcomes ( {\tiny elements in $\SampleS$})  are equally-likely,  then it follows from Axiom 3 that, for any event $E$,  
-\vspace{-.15in}
+\qBrd[4.5in]{ube!30}{\sqBullet{amethyst} If the sample space $\SampleS$ is finite and all the corresponding outcomes ( {\tiny elements in $\SampleS$})  are equally-likely,  then it follows from Axiom 3 that, for any event $E$,  
+\vspace{-.12in}
 \begin{center}
-\qBrd[2.5in]{babyblue!50}{$\HLTW{\displaystyle P(E)=\frac{\text{Number of elements in E}}{\text{Number of elements in }  \SampleS}}.$}
+\qBrd[2.5in]{amethyst!60}{\;$\HLTW{\displaystyle P(E)=\frac{\text{Number of elements in E}}{\text{Number of elements in }  \SampleS}}\;$}
 \end{center}
 \vspace{.05in}
 }
 
-\vspace{.1in}
+\vspace{.3in}
 \qBrd[4.5in]{applegreen!40}{\sqBullet{applegreen}  Assuming the finite sample space,  if all the outcomes are equally likely to occur, then the probability of any event $E$ equals the proportion of outcomes in the sample space that are contained in $E$.
 }
 \end{frame}
@@ -875,12 +991,12 @@ It is intuitive and also easy to derive using Axioms 2 and Axiom3 of Probability
 \begin{frame}
 \begin{itemize}
 \qBrd[4.2in]{amethyst!50}{
-\item[\sqBullet{amethyst}] To refer to the ``Equally Likely Setup'' we typically use the phrases such as the `Fair Coin' or `Fair Dice'
+\item[\sqBullet{amethyst}] To refer to the $\HLTW{\text{``Equally Likely Setup''}}$ we typically use the phrases such as the $\HLTW{\text{``Fair Coin"}}$ or  $\HLTW{\text{``Fair Dice"}}$
 }\\
 
 \vspace{.5in}
-\qBrd[4.2in]{olive!50}{
-\item[\sqBullet{olive}] For problems with Dice and Coin, if it is not Explicitly mentioned, we assume it to be a "Fair Coin" or "Fair Dice".  }
+\qBrd[4.2in]{olive!30}{
+\item[\sqBullet{olive}] For problems with Dice and Coins, unless otherwise specified,  we assume it to be a $\HLTW{\text{``Fair Coin''}}$ or $\HLTW{\text{``Fair Dice"}}$.  }
 \end{itemize}
 
 \end{frame}
@@ -897,9 +1013,11 @@ It is intuitive and also easy to derive using Axioms 2 and Axiom3 of Probability
 \qbx[4.5in]{amethyst!40}{
 \Exmpl{amethyst}{} If two dice are rolled, what is the probability that the sum of the upturned faces will equal 7?
 }\\
+\vspace{.1in}
 \pause
-\vspace{2in}
-{\tiny Solution: We shall solve this problem under the assumption that all of the 36 possible outcomes are equally likely.  Since there are 6 possible outcomes namely,  (1; 6); (2; 5); (3; 4), (4; 3); (5; 2), and (6; 1)that result in the sum of the dice being equal to 7, the desired probability is$ \frac{6}{36} =\frac{1}{6}.$}
+\;\;\includegraphics[scale=.23]{figs/SixesTable_7.png}\\
+%\vspace{1.5in}
+{\tiny{ \bf Solution:} We shall solve this problem under the assumption that all of the 36 possible outcomes are equally likely.  Since there are 6 possible outcomes namely,  (1; 6); (2; 5); (3; 4), (4; 3); (5; 2), and (6; 1)that result in the sum of the dice being equal to 7, the desired probability is  $\frac{6}{36} =\frac{1}{6}$.}
 \vspace{2in}
 
 \end{frame}
@@ -907,6 +1025,66 @@ It is intuitive and also easy to derive using Axioms 2 and Axiom3 of Probability
 
 
 
+
+\begin{frame}
+\vspace{-.1in}
+\qbx[4.5in]{brightube!40}{\Exmpl{brightube}{}
+Consider 6 tosses of a fair coin.  For example two typical sequences of outcomes that are considered different is  `HTTTTT', and `THTTTT'.
+\begin{enumerate}[a).]
+\item What is the probability that there are be exactly 2 heads ?
+\item What is the probability that there are no heads?
+\item What is the probability that there are at least one Tail?
+\end{enumerate} 
+}\\
+\includegraphics[scale=.2]{figs/coin.png} \\
+\vspace{.5in}
+\pause
+{\tiny
+ Solution:   }
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\vspace{-.15in}
+\qBrd[4.55in]{purple!30}{ \Exmpl{purple!50}{} A fair-dice is thrown 5 times and all the the 5 numbers  that appear are recorded.  
+\begin{enumerate}[a).]
+\qBrd[4in]{applegreen!40}{ \item What is the probability that there is  no six?}
+\qBrd[4in]{babyblue!40}{ \item What is the probability that there is at least one six?}
+\qBrd[4in]{amber!40}{ \item What is the probability that there will  be exactly two four and 2 three?}
+\end{enumerate}
+\vspace{.05in}
+} 
+
+\includegraphics[scale=.15]{figs/dice.png} \\
+\vspace{.3in}
+\pause
+{\tiny Solution: 
+a)
+}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\qbx[4.5in]{amber(sae/ece)!40}{\Exmpl{amber(sae/ece)}{} 
+A typical ATM pin consists of 4 digits.  Assuming that all the integers between $0$ to $9$ are equally likely, for each of the digit selection. Find the probability of the following events. 
+\begin{enumerate}
+\item What is the probability that all the four digits of a randomly selected ATM pin is different?
+\item *The bank has selected a group of 200 ATM users randomly.  What is the probability that atleast two of the users have exact same ATM pin
+\end{enumerate}  }\\
+\includegraphics[scale=.25]{figs/ATMPIN.png} \\
+%\pause 
+\vspace{1.5in}
+%\pause
+%{\tiny
+ %Solution:  $\frac{10!}{(4!)(3!)(2!)(1!)}$ }
+\end{frame}
 
 
 
@@ -931,6 +1109,21 @@ possibilities. Then $P(E)=\frac{n(E)}{n}=\frac{ 120+120+120}{990} = \frac{4}{11}
 
 
 
+\begin{frame}
+\qbx[4.5in]{teal!40}{\Exmpl{teal}{}
+One of the sections in the class STAT230 has 10 students.  Assume the birthday of a student can be any one of days out of 365 days in a year.  We say that the two students share a same birth day if they are born on the same day and same month {\tiny ( for example two students are born on $10^{\text{th}}$ January).}  Answer the following questions. 
+\begin{enumerate}[a).]
+\item What is the probability that there are exactly four students who have the same birthday?
+\item What is the probability that at least two of the students have the same birthday?
+\end{enumerate} 
+}\\
+\vspace{1in}
+\pause
+{\tiny
+ Solution: a)$ 365^8$ b)  $365\times  {8 \choose 2} 364\times \cdots \times 359$ c)  $365\times {8 \choose 4} \times 364\times 363\times 362 \times 361$  c) $^{365}P_{8}$ }
+ \vspace{.11in}
+\end{frame}
+
 
 
 
@@ -941,29 +1134,30 @@ possibilities. Then $P(E)=\frac{n(E)}{n}=\frac{ 120+120+120}{990} = \frac{4}{11}
 }\\
 \pause
 \vspace{1.5in}
-{\tiny Solution:  Because each of the ${15 \choose 5}$ possible committees is equally likely to be selected, the desired
+{\tiny {\bf Solution: } \\
+ Because each of the ${15 \choose 5}$ possible committees is equally likely to be selected, the desired
 probability is $\frac{{6 \choose 3}\times {9 \choose 2}}{{15 \choose 5}}=0.24$}
-\vspace{2in}
+\vspace{1in}
 
 \end{frame}
 
 
 
-
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{darkraspberry!40}{
-\Exmpl{darkraspberry}{} Suppose 5 people are to be randomly selected from a group of 20 individuals consisting of 10 married couples, and we want to determine $P(N)$, the probability that the 5 chosen are all unrelated. (That is, no two are married to each other.)
-}\\
-\pause
-\vspace{1.5in}
-{\tiny 
-Solution: 
-$P(N)=\frac{{10 \choose 5}\times 2^5}{{20 \choose 5}}\implies P(N)=\frac{20 \times 18\times 16\times 14\times 12}{20\times 19\times 18\times 17\times 16}$
-}
-\vspace{2in}
-
-\end{frame}
-
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{darkraspberry!40}{
+%\Exmpl{darkraspberry}{} Suppose 5 people are to be randomly selected from a group of 20 individuals consisting of 10 married couples, and we want to determine $P(N)$, the probability that the 5 chosen are all unrelated. (That is, no two are married to each other.)
+%}\\
+%\pause
+%\vspace{1.5in}
+%{\tiny 
+%Solution: 
+%$P(N)=\frac{{10 \choose 5}\times 2^5}{{20 \choose 5}}\implies P(N)=\frac{20 \times 18\times 16\times 14\times 12}{20\times 19\times 18\times 17\times 16}$
+%}
+%\vspace{2in}
+%
+%\end{frame}
+%
 
 
 
@@ -1022,21 +1216,21 @@ Solution:
 
 
 
-\begin{frame}{ Examples: On Sharing a Birthday  }
-
-\qBox{\Qn:
-There are 15 students registered in the course STAT320.  What is the probability that at least two of the students will share their Birthday? (Ignore the leap year and assume there is 365 days in a year) 
-}
-
-
-\pause
-\vspace{1.5in}
-{\tiny Solution: 
-$P(\{\text{At least two students have same birthday}\})=1-P(\text{None of the students have same birthday})=1-\frac{365\times 364\times \ldots \times 351}{365^{15}}\approx 1-0.7470987=0.25  $
-}
-
-
-\end{frame}
+%\begin{frame}{ Examples: On Sharing a Birthday  }
+%
+%\qBox{\Qn:
+%There are 15 students registered in the course STAT320.  What is the probability that at least two of the students will share their Birthday? (Ignore the leap year and assume there is 365 days in a year) 
+%}
+%
+%
+%\pause
+%\vspace{1.5in}
+%{\tiny Solution: 
+%$P(\{\text{At least two students have same birthday}\})=1-P(\text{None of the students have same birthday})=1-\frac{365\times 364\times \ldots \times 351}{365^{15}}\approx 1-0.7470987=0.25  $
+%}
+%
+%
+%\end{frame}
 
 
 
@@ -1062,6 +1256,7 @@ $p_M:= 1-\frac{1}{2!}+\frac{1}{3!}-\cdots -\frac{1}{52!}$.
 % Consider an Experiment,  where a  dice is thrown 4 times.
 %Calculate the probability that the sum of all the through is 17?
 %}
+\vspace{1in}
 \end{frame}
 \TransitionFrame[antiquefuchsia]{\Large Questions?  }
  
