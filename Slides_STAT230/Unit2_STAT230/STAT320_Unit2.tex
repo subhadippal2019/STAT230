@@ -407,10 +407,10 @@ How many different types of car the manufacturer sells?
 \end{frame}
 
 
-\TransitionFrame[bittersweet]{\Large {\bf Ordered}  Arrangements {\bf with} Replacements   }
+\TransitionFrame[bittersweet]{\Large {\bf Ordered}  Arrangements of {\bf distinct} objects {\bf with} Replacements   }
 
 
-\begin{frame}{Ordered Arrangements {\bf with} Replacements }
+\begin{frame}{Ordered Arrangements of Distinct Objects  {\bf with} Replacements }
 \begin{center}
 \define{Ordered Arrangements with Replacement}{
 Let $\HLTW{n, r}$ be positive  integers.  Number of different ways a sequence of $\HLTW{r}$ symbols can be created from $\HLTW{n}$ distinct symbols (when repetition of the symbols are allowed) is $\HLTEQ[yellow]{n^r}$. \\
@@ -467,12 +467,12 @@ may pick any six for her ticket.  How many different groups of six numbers can b
 
 
 
-\section{Permutations:{\small {\bf Ordered} Arrangements {\bf Without} Replacements}    }
+\section{Permutations:{\small {\bf Ordered} Arrangements  of {\bf distinct} objects  {\bf Without} Replacements}    }
 
 
-\TransitionFrame[bittersweet]{\Large Permutations:{\small {\bf Ordered} Arrangements {\bf Without} Replacements}    }
+\TransitionFrame[bittersweet]{\Large Permutations:{\small {\bf Ordered} Arrangements {\bf distinct} objects {\bf Without} Replacements}    }
 
-\begin{frame}
+\begin{frame}\frametitle{Reminder: Factorial}
 
 
 %\define{Factorial}{
@@ -490,7 +490,7 @@ Let $n$ be a {\bf non-negative integer,} then the {\bf factorial of n}, denoted 
 \end{enumerate} 
 }
 
-\vspace{.5in}
+\vspace{.1in}
 \pause
 \qBrd[4.5in]{olive!30}{Example: $4!=4\times 3\times 2\times 1=24.$}
 \qBrd[4.5in]{babyblue!30}{Example: $6!=6\times 5 \times 4\times 3\times 2\times 1=720.$}\\
@@ -524,15 +524,6 @@ given by: $\HLTW{\displaystyle ^nP_n= n! =n\times (n-1) \times \cdots \times 2\t
 
 
 
-\begin{frame}
-\qbx[4.5in]{cambridgeblue!40}{\Exmpl{cambridgeblue}{}
-How many different words can you make with the letters
-\HLTW{\text{"CAN"}}?}\\
-\vspace{2.5in}
-\pause
-{\tiny
- Solution:  $3! = 6$ }
-\end{frame}
 
 
 \begin{frame}
@@ -559,6 +550,18 @@ baseball team consisting of 9 players?}\\
 {\tiny
  Solution: There are $9! = 362880$ possible batting orders. }
 \end{frame}
+
+
+\begin{frame}
+\qbx[4.5in]{cambridgeblue!40}{\Exmpl{cambridgeblue}{}
+How many different words can you make with the letters
+\HLTW{\text{"CAN"}}?}\\
+\vspace{2.5in}
+\pause
+{\tiny
+ Solution:  $3! = 6$ }
+\end{frame}
+
 
 
 
@@ -591,33 +594,15 @@ $(6!)(4!) = (720)(24) = 17280$ possible rankings in this case.
 
 
 
-\begin{frame}
-\qbx[4.5in]{applegreen!40}{\Exmpl{applegreen}{}
-Ms. Jones has 10 books that she is going to put on
-her bookshelf. Of these, 4 are mathematics books, 3 are chemistry
-books, 2 are history books, and 1 is a language book. Ms. Jones
-wants to arrange her books so that all the books dealing with the
-same subject are together on the shelf. How many different
-arrangements are possible?}\\
-\vspace{1.5in}
-\pause
-{\tiny
- Solution: There are $4! 3! 2! 1!$ arrangements such that the
-mathematics books are first in line, then the chemistry books, then
-the history books, and then the language book. Similarly, for each
-possible ordering of the subjects, there are $4! 3! 2! 1!$ possible
-arrangements. Hence, as there are $4!$ possible orderings of the
-subjects, the desired answer is $4! (4! 3! 2! 1!) = 6912$. }
-\end{frame}
 
 
 
 
-\section{Combinations: {\small Arrangements {\bf without replacement} when {\bf order is not important}}   }
+\section{Combinations: {\small Arrangements of {\bf distinct} objects {\bf without replacement} when {\bf order is not important}}   }
 
 
 
-\TransitionFrame[bittersweet]{\Large Combinations: {\small Arrangements {\bf without replacement} when {\bf order is not important}}  }
+\TransitionFrame[bittersweet]{\Large Combinations: {\small Arrangements of {\bf distinct} objects {\bf without replacement} when {\bf order is not important}}  }
 
 
 
@@ -707,12 +692,17 @@ How many different words can you make with the letters
 
 
 
-\section{Arrangements {\bf With Replacement} When {\bf Order is Not Important} }
-\TransitionFrame[bittersweet]{ Arrangements {\bf With Replacement} When {\bf Order is Not Important}  }
+%\section{Arrangements {\bf With Replacement} When {\bf Order is Not Important} }
+%
+%\TransitionFrame[bittersweet]{ Arrangements {\bf With Replacement} When {\bf Order is Not Important}  }
 
-\begin{frame}{Unordered Arrangements with Replacement}
+
+\section{Arrangements of {\bf identical} Objects in Multiple Groups}
+\TransitionFrame[bittersweet]{ Arrangements of {\bf identical} objects in Multiple Groups }
+
+\begin{frame}{Unordered Arrangements of Identical Objects}
 \begin{center}
-\define{Unordered Arrangements with Replacement}{
+\define{Unordered Arrangements of Identical Objects}{
 Number of ways $n$ indistinguishable objects can be organized into r different groups is $$\HLTW{\displaystyle \frac{(n+r-1)!}{n! (r-1)!}={{n+r-1} \choose {n}}}.$$
 }
 \vspace{-.2in}
@@ -720,8 +710,10 @@ Number of ways $n$ indistinguishable objects can be organized into r different g
 %
 %\qBox{\Qn: How many different solutions  $(X_1, X_2, \ldots, X_r)$ are there satisfying the equation $X_1+X_2+\ldots + X_r=n$ where we assume $X_i $ to be non-negative integer for all $i=1, \ldots, r$.}
 \vspace{.1in}
-\qBrd[4in]{amethyst!40}{It is also referred to as the occupancy problem }
-\vspace{1.5in}
+\qBrd[4in]{amethyst!40}{\sqBullet{amethyst} It is also referred to as the occupancy problem }
+
+\vspace{.1in}
+\qBrd[4in]{amber!40}{ \sqBullet{amber}In the textbook it is referred to as: ``THE NUMBER OF INTEGER SOLUTIONS OF EQUATIONS''}
 \end{center}
 
 
@@ -841,6 +833,24 @@ Consider a Set $A=\{a_1, a_2, a_3 , a_4\}$ containnig $4$ elements.
 
 
 
+\begin{frame}
+\qbx[4.5in]{applegreen!40}{\Exmpl{applegreen}{}
+Ms. Jones has 10 books that she is going to put on
+her bookshelf. Of these, 4 are mathematics books, 3 are chemistry
+books, 2 are history books, and 1 is a language book. Ms. Jones
+wants to arrange her books so that all the books dealing with the
+same subject are together on the shelf. How many different
+arrangements are possible?}\\
+\vspace{1.5in}
+\pause
+{\tiny
+ Solution: There are $4! 3! 2! 1!$ arrangements such that the
+mathematics books are first in line, then the chemistry books, then
+the history books, and then the language book. Similarly, for each
+possible ordering of the subjects, there are $4! 3! 2! 1!$ possible
+arrangements. Hence, as there are $4!$ possible orderings of the
+subjects, the desired answer is $4! (4! 3! 2! 1!) = 6912$. }
+\end{frame}
 
 
 \begin{frame}
@@ -980,6 +990,27 @@ An investor has 20 thousand dollars to invest among 4 possible investments.  Eac
 
 
 
+\begin{frame}
+\begin{minipage}{.6\textwidth} %
+\qBrd[3.1in]{airforceblue!60}{\;
+\includegraphics[scale=.3]{figs/UAEU_FLAG_UAE.png}
+}
+\end{minipage}
+\;\;\;\;
+\begin{minipage}{.32\textwidth} %
+\qbx[1.45in]{amethyst!40}{\Exmpl{amethyst}{}
+\small How many different ways one can arrange  10 identical flags in  4 different locations?
+}
+\vspace{1.95in}
+\end{minipage} %
+
+
+
+{\tiny
+ Solution: a) ${23 \choose 3}= 1771$ , b)  ${24 \choose 4}= 10,626$ }
+\end{frame}
+
+
 
 
 
@@ -1007,7 +1038,7 @@ team in another. How many different divisions are possible? }\\
 \vspace{2in}
 \pause
 {\tiny
- Solution:  $\frac{10!}{(5!)(5!)}= 252$ }
+ Solution:  ${10 \choose 5}=\frac{10!}{(5!)(5!)}= 252$ }
 \end{frame}
 
 
