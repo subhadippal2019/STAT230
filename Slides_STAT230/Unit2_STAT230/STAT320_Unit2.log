@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 JAN 2024 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 JAN 2024 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2487,7 +2487,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [69
 
 ]
-<figs/NewYork_Plate.png, id=3045, 989.6975pt x 529.98pt>
+<figs/NewYork_Plate.png, id=3044, 989.6975pt x 529.98pt>
 File: figs/NewYork_Plate.png Graphic file (type png)
 <use figs/NewYork_Plate.png>
 Package pdftex.def Info: figs/NewYork_Plate.png  used on input line 927.
@@ -2696,48 +2696,43 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [80
 
 ]
-<figs/UAEU_FLAG_UAE.png, id=3492, 690.07813pt x 791.45688pt>
-File: figs/UAEU_FLAG_UAE.png Graphic file (type png)
-<use figs/UAEU_FLAG_UAE.png>
-Package pdftex.def Info: figs/UAEU_FLAG_UAE.png  used on input line 1016.
-(pdftex.def)             Requested size: 207.02502pt x 237.43889pt.
+<figs/UAEU_FLAG_GCC.png, id=3492, 585.18625pt x 717.17938pt>
+File: figs/UAEU_FLAG_GCC.png Graphic file (type png)
+<use figs/UAEU_FLAG_GCC.png>
+Package pdftex.def Info: figs/UAEU_FLAG_GCC.png  used on input line 1017.
+(pdftex.def)             Requested size: 193.11205pt x 236.66992pt.
 
-Overfull \hbox (25.82538pt too wide) in paragraph at lines 1016--1016
+Overfull \hbox (25.82538pt too wide) in paragraph at lines 1017--1017
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1017
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1017
 [][]  \T1/phv/m/n/10 How
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1017
 \T1/phv/m/n/10 many dif-fer-ent ways
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 1016--1016
-\T1/phv/m/n/10 one can ar-range 10
+Underfull \hbox (badness 1803) in paragraph at lines 1017--1017
+\T1/phv/m/n/10 each of the lo-ca-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
-\T1/phv/m/n/10 iden-ti-cal flags in 4
- []
-
-
-Overfull \hbox (12.32707pt too wide) in paragraph at lines 1016--1016
+Overfull \hbox (12.32707pt too wide) in paragraph at lines 1017--1017
 [][]
  []
 
 
-Overfull \vbox (26.54192pt too high) detected at line 1016
+Overfull \vbox (45.39606pt too high) detected at line 1017
  []
 
 
@@ -2752,7 +2747,57 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 
 [81
 
- <./figs/UAEU_FLAG_UAE.png>]
+ <./figs/UAEU_FLAG_GCC.png>]
+<figs/UAEU_FLAG_UAE.png, id=3540, 690.07813pt x 791.45688pt>
+File: figs/UAEU_FLAG_UAE.png Graphic file (type png)
+<use figs/UAEU_FLAG_UAE.png>
+Package pdftex.def Info: figs/UAEU_FLAG_UAE.png  used on input line 1042.
+(pdftex.def)             Requested size: 207.02502pt x 237.43889pt.
+
+Overfull \hbox (25.82538pt too wide) in paragraph at lines 1042--1042
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+[][]  \T1/phv/m/n/10 How
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+\T1/phv/m/n/10 many dif-fer-ent ways
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 1042--1042
+\T1/phv/m/n/10 one can ar-range 10
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+\T1/phv/m/n/10 iden-ti-cal flags in 4
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+\T1/phv/m/n/10 dif-fer-ent lo-ca-tions?
+ []
+
+
+Overfull \hbox (12.32707pt too wide) in paragraph at lines 1042--1042
+[][]
+ []
+
+
+Overfull \vbox (45.39606pt too high) detected at line 1042
+ []
+
+
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2764,7 +2809,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 
 [82
 
-]
+ <./figs/UAEU_FLAG_UAE.png>]
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2801,11 +2846,6 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [85
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1052--1052
-[][] 
- []
-
-
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2818,7 +2858,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [86
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1060--1060
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1078--1078
 [][] 
  []
 
@@ -2835,6 +2875,23 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [87
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1086--1086
+[][] 
+ []
+
+
+Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (86.29803pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[88
+
+]
 \tf@nav=\write6
 \openout6 = `STAT320_Unit2.nav'.
 
@@ -2844,20 +2901,20 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1063.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1063.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1089.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1089.
  (./STAT320_Unit2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1063.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1063.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1089.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1089.
 
 Package rerunfilecheck Info: File `STAT320_Unit2.out' has not changed.
 (rerunfilecheck)             Checksum: 376FA3EEAA533818647E5EC0B6BDD5C8;530.
  ) 
 Here is how much of TeX's memory you used:
- 29501 strings out of 480608
- 574755 string characters out of 5903631
- 974945 words of memory out of 5000000
- 44465 multiletter control sequences out of 15000+600000
+ 29525 strings out of 480608
+ 575312 string characters out of 5903631
+ 974980 words of memory out of 5000000
+ 44486 multiletter control sequences out of 15000+600000
  593266 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,17n,79p,799b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2874,10 +2931,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
 20/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texm
 f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/
 fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit2.pdf (87 pages, 12929789 bytes).
+Output written on STAT320_Unit2.pdf (88 pages, 13420252 bytes).
 PDF statistics:
- 3869 PDF objects out of 4296 (max. 8388607)
- 3279 compressed objects within 33 object streams
- 181 named destinations out of 1000 (max. 500000)
- 2651 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3916 PDF objects out of 4296 (max. 8388607)
+ 3316 compressed objects within 34 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 2692 words of extra memory for PDF output out of 10000 (max. 10000000)
 
