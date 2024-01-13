@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 JAN 2024 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 JAN 2024 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2217,11 +2217,6 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [52
 
 ]
-File: figs/lottery.png Graphic file (type png)
-<use figs/lottery.png>
-Package pdftex.def Info: figs/lottery.png  used on input line 732.
-(pdftex.def)             Requested size: 123.58641pt x 47.92894pt.
-
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2234,11 +2229,6 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [53
 
 ]
-File: figs/lottery.png Graphic file (type png)
-<use figs/lottery.png>
-Package pdftex.def Info: figs/lottery.png  used on input line 732.
-(pdftex.def)             Requested size: 123.58641pt x 47.92894pt.
-
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2263,7 +2253,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [55
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 738--738
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 756--756
 [][] 
  []
 
@@ -2280,10 +2270,10 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [56
 
 ]
-<figs/coin.png, id=2465, 545.53813pt x 327.2225pt>
+<figs/coin.png, id=2467, 545.53813pt x 327.2225pt>
 File: figs/coin.png Graphic file (type png)
 <use figs/coin.png>
-Package pdftex.def Info: figs/coin.png  used on input line 754.
+Package pdftex.def Info: figs/coin.png  used on input line 772.
 (pdftex.def)             Requested size: 109.10568pt x 65.44333pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2300,7 +2290,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  <./figs/coin.png>]
 File: figs/coin.png Graphic file (type png)
 <use figs/coin.png>
-Package pdftex.def Info: figs/coin.png  used on input line 754.
+Package pdftex.def Info: figs/coin.png  used on input line 772.
 (pdftex.def)             Requested size: 109.10568pt x 65.44333pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2315,13 +2305,13 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [58
 
 ]
-<figs/dice.png, id=2570, 642.4pt x 418.56375pt>
+<figs/dice.png, id=2572, 642.4pt x 418.56375pt>
 File: figs/dice.png Graphic file (type png)
 <use figs/dice.png>
-Package pdftex.def Info: figs/dice.png  used on input line 777.
+Package pdftex.def Info: figs/dice.png  used on input line 795.
 (pdftex.def)             Requested size: 96.35583pt x 62.78185pt.
 
-Overfull \vbox (3.40367pt too high) detected at line 777
+Overfull \vbox (3.40367pt too high) detected at line 795
  []
 
 
@@ -2339,10 +2329,10 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  <./figs/dice.png>]
 File: figs/dice.png Graphic file (type png)
 <use figs/dice.png>
-Package pdftex.def Info: figs/dice.png  used on input line 777.
+Package pdftex.def Info: figs/dice.png  used on input line 795.
 (pdftex.def)             Requested size: 96.35583pt x 62.78185pt.
 
-Overfull \vbox (3.40367pt too high) detected at line 777
+Overfull \vbox (3.40367pt too high) detected at line 795
  []
 
 
@@ -2358,13 +2348,13 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [60
 
 ]
-<figs/ATMPIN.png, id=2671, 318.18875pt x 247.42438pt>
+<figs/ATMPIN.png, id=2673, 318.18875pt x 247.42438pt>
 File: figs/ATMPIN.png Graphic file (type png)
 <use figs/ATMPIN.png>
-Package pdftex.def Info: figs/ATMPIN.png  used on input line 796.
+Package pdftex.def Info: figs/ATMPIN.png  used on input line 814.
 (pdftex.def)             Requested size: 79.54698pt x 61.85594pt.
 
-Overfull \vbox (106.47469pt too high) detected at line 796
+Overfull \vbox (106.47469pt too high) detected at line 814
  []
 
 
@@ -2382,10 +2372,10 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  <./figs/ATMPIN.png>]
 File: figs/ATMPIN.png Graphic file (type png)
 <use figs/ATMPIN.png>
-Package pdftex.def Info: figs/ATMPIN.png  used on input line 796.
+Package pdftex.def Info: figs/ATMPIN.png  used on input line 814.
 (pdftex.def)             Requested size: 79.54698pt x 61.85594pt.
 
-Overfull \vbox (106.47469pt too high) detected at line 796
+Overfull \vbox (106.47469pt too high) detected at line 814
  []
 
 
@@ -2401,7 +2391,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [62
 
 ]
-Overfull \vbox (68.05382pt too high) detected at line 813
+Overfull \vbox (68.05382pt too high) detected at line 831
  []
 
 
@@ -2441,7 +2431,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [65
 
 ]
-Overfull \vbox (9.0502pt too high) detected at line 853
+Overfull \vbox (9.0502pt too high) detected at line 871
  []
 
 
@@ -2457,7 +2447,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [66
 
 ]
-Overfull \vbox (9.0502pt too high) detected at line 853
+Overfull \vbox (9.0502pt too high) detected at line 871
  []
 
 
@@ -2497,13 +2487,13 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [69
 
 ]
-<figs/NewYork_Plate.png, id=3042, 989.6975pt x 529.98pt>
+<figs/NewYork_Plate.png, id=3045, 989.6975pt x 529.98pt>
 File: figs/NewYork_Plate.png Graphic file (type png)
 <use figs/NewYork_Plate.png>
-Package pdftex.def Info: figs/NewYork_Plate.png  used on input line 909.
+Package pdftex.def Info: figs/NewYork_Plate.png  used on input line 927.
 (pdftex.def)             Requested size: 98.97554pt x 53.0011pt.
 
-Overfull \vbox (43.77246pt too high) detected at line 909
+Overfull \vbox (43.77246pt too high) detected at line 927
  []
 
 
@@ -2521,10 +2511,10 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  <./figs/NewYork_Plate.png>]
 File: figs/NewYork_Plate.png Graphic file (type png)
 <use figs/NewYork_Plate.png>
-Package pdftex.def Info: figs/NewYork_Plate.png  used on input line 909.
+Package pdftex.def Info: figs/NewYork_Plate.png  used on input line 927.
 (pdftex.def)             Requested size: 98.97554pt x 53.0011pt.
 
-Overfull \vbox (43.77246pt too high) detected at line 909
+Overfull \vbox (43.77246pt too high) detected at line 927
  []
 
 
@@ -2542,10 +2532,10 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 ]
 File: figs/NewYork_Plate.png Graphic file (type png)
 <use figs/NewYork_Plate.png>
-Package pdftex.def Info: figs/NewYork_Plate.png  used on input line 909.
+Package pdftex.def Info: figs/NewYork_Plate.png  used on input line 927.
 (pdftex.def)             Requested size: 98.97554pt x 53.0011pt.
 
-Overfull \vbox (43.77246pt too high) detected at line 909
+Overfull \vbox (43.77246pt too high) detected at line 927
  []
 
 
@@ -2561,14 +2551,14 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [72
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 927--927
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 945--945
 [][]  
  []
 
-<figs/9Flags.png, id=3165, 990.19937pt x 147.55125pt>
+<figs/9Flags.png, id=3167, 990.19937pt x 147.55125pt>
 File: figs/9Flags.png Graphic file (type png)
 <use figs/9Flags.png>
-Package pdftex.def Info: figs/9Flags.png  used on input line 927.
+Package pdftex.def Info: figs/9Flags.png  used on input line 945.
 (pdftex.def)             Requested size: 227.74106pt x 33.93607pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2583,13 +2573,13 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [73
 
  <./figs/9Flags.png>]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 927--927
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 945--945
 [][]  
  []
 
 File: figs/9Flags.png Graphic file (type png)
 <use figs/9Flags.png>
-Package pdftex.def Info: figs/9Flags.png  used on input line 927.
+Package pdftex.def Info: figs/9Flags.png  used on input line 945.
 (pdftex.def)             Requested size: 227.74106pt x 33.93607pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2604,14 +2594,14 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [74
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 942--942
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 960--960
 [][]  
  []
 
-<figs/9FlagNumber.png, id=3249, 1094.0875pt x 186.19562pt>
+<figs/9FlagNumber.png, id=3251, 1094.0875pt x 186.19562pt>
 File: figs/9FlagNumber.png Graphic file (type png)
 <use figs/9FlagNumber.png>
-Package pdftex.def Info: figs/9FlagNumber.png  used on input line 942.
+Package pdftex.def Info: figs/9FlagNumber.png  used on input line 960.
 (pdftex.def)             Requested size: 251.63483pt x 42.82408pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2626,13 +2616,13 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [75
 
  <./figs/9FlagNumber.png>]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 942--942
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 960--960
 [][]  
  []
 
 File: figs/9FlagNumber.png Graphic file (type png)
 <use figs/9FlagNumber.png>
-Package pdftex.def Info: figs/9FlagNumber.png  used on input line 942.
+Package pdftex.def Info: figs/9FlagNumber.png  used on input line 960.
 (pdftex.def)             Requested size: 251.63483pt x 42.82408pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2647,10 +2637,10 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [76
 
 ]
-<figs/HandShake.png, id=3333, 433.62pt x 296.60812pt>
+<figs/HandShake.png, id=3335, 433.62pt x 296.60812pt>
 File: figs/HandShake.png Graphic file (type png)
 <use figs/HandShake.png>
-Package pdftex.def Info: figs/HandShake.png  used on input line 958.
+Package pdftex.def Info: figs/HandShake.png  used on input line 976.
 (pdftex.def)             Requested size: 86.72246pt x 59.32057pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2667,7 +2657,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
  <./figs/HandShake.png>]
 File: figs/HandShake.png Graphic file (type png)
 <use figs/HandShake.png>
-Package pdftex.def Info: figs/HandShake.png  used on input line 958.
+Package pdftex.def Info: figs/HandShake.png  used on input line 976.
 (pdftex.def)             Requested size: 86.72246pt x 59.32057pt.
 
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
@@ -2706,6 +2696,51 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [80
 
 ]
+<figs/UAEU_FLAG_UAE.png, id=3492, 690.07813pt x 791.45688pt>
+File: figs/UAEU_FLAG_UAE.png Graphic file (type png)
+<use figs/UAEU_FLAG_UAE.png>
+Package pdftex.def Info: figs/UAEU_FLAG_UAE.png  used on input line 1016.
+(pdftex.def)             Requested size: 207.02502pt x 237.43889pt.
+
+Overfull \hbox (25.82538pt too wide) in paragraph at lines 1016--1016
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+[][]  \T1/phv/m/n/10 How
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+\T1/phv/m/n/10 many dif-fer-ent ways
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 1016--1016
+\T1/phv/m/n/10 one can ar-range 10
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+\T1/phv/m/n/10 iden-ti-cal flags in 4
+ []
+
+
+Overfull \hbox (12.32707pt too wide) in paragraph at lines 1016--1016
+[][]
+ []
+
+
+Overfull \vbox (26.54192pt too high) detected at line 1016
+ []
+
+
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2717,7 +2752,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 
 [81
 
-]
+ <./figs/UAEU_FLAG_UAE.png>]
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2730,51 +2765,6 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [82
 
 ]
-<figs/UAEU_FLAG_UAE.png, id=3572, 690.07813pt x 791.45688pt>
-File: figs/UAEU_FLAG_UAE.png Graphic file (type png)
-<use figs/UAEU_FLAG_UAE.png>
-Package pdftex.def Info: figs/UAEU_FLAG_UAE.png  used on input line 1011.
-(pdftex.def)             Requested size: 207.02502pt x 237.43889pt.
-
-Overfull \hbox (25.82538pt too wide) in paragraph at lines 1011--1011
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
-[][]  \T1/phv/m/n/10 How
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
-\T1/phv/m/n/10 many dif-fer-ent ways
- []
-
-
-Underfull \hbox (badness 4846) in paragraph at lines 1011--1011
-\T1/phv/m/n/10 one can ar-range 10
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
-\T1/phv/m/n/10 iden-ti-cal flags in 4
- []
-
-
-Overfull \hbox (12.32707pt too wide) in paragraph at lines 1011--1011
-[][]
- []
-
-
-Overfull \vbox (26.54192pt too high) detected at line 1011
- []
-
-
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2786,7 +2776,7 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 
 [83
 
- <./figs/UAEU_FLAG_UAE.png>]
+]
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2811,6 +2801,11 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [85
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1052--1052
+[][] 
+ []
+
+
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2823,6 +2818,11 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [86
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1060--1060
+[][] 
+ []
+
+
 Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2835,40 +2835,6 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 [87
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1047--1047
-[][] 
- []
-
-
-Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (86.29803pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[88
-
-]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1055--1055
-[][] 
- []
-
-
-Overfull \hbox (1041.24246pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (86.29803pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[89
-
-]
 \tf@nav=\write6
 \openout6 = `STAT320_Unit2.nav'.
 
@@ -2878,20 +2844,20 @@ Overfull \hbox (86.29803pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1058.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1058.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1063.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1063.
  (./STAT320_Unit2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1058.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1058.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1063.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1063.
 
 Package rerunfilecheck Info: File `STAT320_Unit2.out' has not changed.
 (rerunfilecheck)             Checksum: 376FA3EEAA533818647E5EC0B6BDD5C8;530.
  ) 
 Here is how much of TeX's memory you used:
- 29523 strings out of 480608
- 575251 string characters out of 5903631
- 974968 words of memory out of 5000000
- 44483 multiletter control sequences out of 15000+600000
+ 29501 strings out of 480608
+ 574755 string characters out of 5903631
+ 974945 words of memory out of 5000000
+ 44465 multiletter control sequences out of 15000+600000
  593266 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,17n,79p,799b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2908,10 +2874,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
 20/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texm
 f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/
 fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit2.pdf (89 pages, 12939649 bytes).
+Output written on STAT320_Unit2.pdf (87 pages, 12929789 bytes).
 PDF statistics:
- 3950 PDF objects out of 4296 (max. 8388607)
- 3349 compressed objects within 34 object streams
- 185 named destinations out of 1000 (max. 500000)
- 2699 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3869 PDF objects out of 4296 (max. 8388607)
+ 3279 compressed objects within 33 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 2651 words of extra memory for PDF output out of 10000 (max. 10000000)
 
