@@ -425,7 +425,7 @@ Let $\HLTW{\lambda >0}$,  then   $$ \HLTY{\displaystyle \sum_{j=0}^{\infty} \fra
 
 \begin{frame}
 \qBrd[4.5in]{babyblue!50}{
-Let $\HLTW{\lambda >0}$,  then   $$ \HLTY{\displaystyle \sum_{j=1}^{\infty} \frac{ \lambda^j}{(j-1)!}}= \HLTW{\displaystyle1+   \frac{\lambda}{0!}+   \frac{\lambda^2}{1!} +  \frac{\lambda^3}{2!} +\cdots}   =?.$$ 
+Let $\HLTW{\lambda >0}$,  then   $$ \HLTY{\displaystyle \sum_{j=1}^{\infty} \frac{ \lambda^j}{(j-1)!}}= \HLTW{\displaystyle \frac{\lambda}{0!}+   \frac{\lambda^2}{1!} +  \frac{\lambda^3}{2!} +\cdots}   =?.$$ 
 }
 \vspace{2in}
 \end{frame}
@@ -434,12 +434,12 @@ Let $\HLTW{\lambda >0}$,  then   $$ \HLTY{\displaystyle \sum_{j=1}^{\infty} \fra
 
 \begin{frame}
 \qBrd[4.5in]{babyblue!50}{
-Let $\HLTW{\lambda >0}$,  then   $$ \HLTY{\displaystyle \sum_{m=4}^{\infty} \frac{  \lambda^m}{(m-4)!}}  =?.$$ 
+Let $\HLTW{\lambda >0}$,  then   $ \HLTY{\displaystyle \sum_{m=4}^{\infty} \frac{  \lambda^m}{(m-4)!}}  =?.$ 
 }
 \vspace{.1in}
 
 \qBrd[4.5in]{olive!50}{
-Let $\HLTW{\alpha\in \R}$,  then   $$ \HLTY{\displaystyle \sum_{m=1}^{\infty} \frac{  e^{\alpha m}}{(m+2)!}}  =?.$$ 
+Let $\HLTW{\alpha\in \R}$,  then   $ \HLTY{\displaystyle \sum_{m=1}^{\infty} \frac{  e^{\alpha m}}{(m+2)!}}  =?.$ 
 }
 \vspace{1.3in}
 \end{frame}
@@ -521,6 +521,10 @@ $$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+
 
 
 \begin{frame}{Binomial Series }
+\qBrd[4.7in]{olive!45}{
+$\HLTW{\displaystyle (1+\HLTEQ[blue!30]{x})^n} = \HLTW{\displaystyle 1+{n\choose 1}\HLTEQ[blue!30]{x}+{n\choose 2}\HLTEQ[blue!30]{x}^2+  \cdots+ {n\choose {n-1}}\HLTEQ[blue!30]{x}^{n-1}+{n\choose n}\HLTEQ[blue!30]{x}^n}  $
+}
+\vspace{-.1in}
 \qBrd[4.7in]{babyblue!45}{
 $\HLTW{\displaystyle  \HLTY{\displaystyle 1+{n\choose 1}+{n\choose 2}+  \cdots+ {n\choose {n-1}}+{n\choose n}= }  \hspace{1.57in} } $
 }
@@ -544,7 +548,7 @@ $\HLTW{\displaystyle  \HLTY{\displaystyle \sum_{i=1}^{n} i {n \choose i }x^i}= }
 
 \begin{frame}
 \qBrd[4.7in]{celadon!60}{
-$\HLTW{\displaystyle  \HLTY{\displaystyle \sum_{k=1}^{n} e^{kt}{n \choose k }x^k}= } $
+$\HLTW{\displaystyle  \HLTY{\displaystyle \sum_{k=0}^{n} e^{kt}{n \choose k }x^k}= } $
 }
 \vspace{2.5in}
 \end{frame}

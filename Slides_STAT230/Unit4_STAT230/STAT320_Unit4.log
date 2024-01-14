@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 JAN 2024 02:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  14 JAN 2024 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1758,14 +1758,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [20
 
 ]
-<figs/Law_of_Total_Probability_Simple.png, id=853, 619.81563pt x 372.39125pt>
-File: figs/Law_of_Total_Probability_Simple.png Graphic file (type png)
-<use figs/Law_of_Total_Probability_Simple.png>
-Package pdftex.def Info: figs/Law_of_Total_Probability_Simple.png  used on inpu
-t line 523.
-(pdftex.def)             Requested size: 216.93872pt x 130.33888pt.
-
-Overfull \vbox (21.6774pt too high) detected at line 523
+Overfull \vbox (156.46468pt too high) detected at line 532
  []
 
 
@@ -1780,7 +1773,21 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [21
 
- <./figs/Law_of_Total_Probability_Simple.png>]
+]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 553--553
+ [][] 
+ []
+
+<figs/VDPartition2.png, id=922, 848.16875pt x 496.35437pt>
+File: figs/VDPartition2.png Graphic file (type png)
+<use figs/VDPartition2.png>
+Package pdftex.def Info: figs/VDPartition2.png  used on input line 553.
+(pdftex.def)             Requested size: 186.5977pt x 109.19829pt.
+
+Overfull \vbox (285.53563pt too high) detected at line 553
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1792,13 +1799,11 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [22
 
-]
-<figs/Law_of_Total_Probability.png, id=937, 623.32875pt x 362.35374pt>
-File: figs/Law_of_Total_Probability.png Graphic file (type png)
-<use figs/Law_of_Total_Probability.png>
-Package pdftex.def Info: figs/Law_of_Total_Probability.png  used on input line 
-540.
-(pdftex.def)             Requested size: 218.16832pt x 126.8257pt.
+ <./figs/VDPartition2.png>]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 591--591
+ [][] 
+ []
+
 
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
@@ -1811,7 +1816,12 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [23
 
- <./figs/Law_of_Total_Probability.png>]
+]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 591--591
+ [][] 
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1824,6 +1834,17 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [24
 
 ]
+<figs/Law_of_Total_Probability_Simple.png, id=1070, 619.81563pt x 372.39125pt>
+File: figs/Law_of_Total_Probability_Simple.png Graphic file (type png)
+<use figs/Law_of_Total_Probability_Simple.png>
+Package pdftex.def Info: figs/Law_of_Total_Probability_Simple.png  used on inpu
+t line 606.
+(pdftex.def)             Requested size: 216.93872pt x 130.33888pt.
+
+Overfull \vbox (27.45912pt too high) detected at line 606
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1835,7 +1856,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [25
 
-]
+ <./figs/Law_of_Total_Probability_Simple.png>]
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1847,7 +1868,14 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [26
 
-] (./STAT320_Unit4.toc)
+]
+<figs/Law_of_Total_Probability.png, id=1154, 623.32875pt x 362.35374pt>
+File: figs/Law_of_Total_Probability.png Graphic file (type png)
+<use figs/Law_of_Total_Probability.png>
+Package pdftex.def Info: figs/Law_of_Total_Probability.png  used on input line 
+625.
+(pdftex.def)             Requested size: 218.16832pt x 126.8257pt.
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1859,12 +1887,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [27
 
-]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 589--589
-[][] 
- []
-
-
+ <./figs/Law_of_Total_Probability.png>]
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1889,11 +1912,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [29
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 62
-9.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1905,11 +1923,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [30
 
-]
-Overfull \vbox (6.77705pt too high) detected at line 650
- []
-
-
+] (./STAT320_Unit4.toc)
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1922,7 +1936,8 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [31
 
 ]
-Overfull \vbox (6.77705pt too high) detected at line 650
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 676--676
+[][] 
  []
 
 
@@ -1938,11 +1953,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [32
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 677--677
-[][] 
- []
-
-
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1955,11 +1965,11 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [33
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 677--677
-[][] 
- []
-
-
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 71
+3.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1972,6 +1982,10 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [34
 
 ]
+Overfull \vbox (6.77705pt too high) detected at line 734
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1984,6 +1998,10 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [35
 
 ]
+Overfull \vbox (6.77705pt too high) detected at line 734
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -1996,6 +2014,11 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [36
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 761--761
+[][] 
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2008,6 +2031,11 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [37
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 761--761
+[][] 
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2020,10 +2048,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [38
 
 ]
-Overfull \vbox (56.51434pt too high) detected at line 759
- []
-
-
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2035,7 +2059,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [39
 
-] (./STAT320_Unit4.toc)
+]
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2048,11 +2072,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [40
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 765--765
-[][] 
- []
-
-
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2077,6 +2096,10 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [42
 
 ]
+Overfull \vbox (56.51434pt too high) detected at line 843
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2088,7 +2111,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 
 [43
 
-]
+] (./STAT320_Unit4.toc)
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2101,6 +2124,11 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [44
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 849--849
+[][] 
+ []
+
+
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2173,10 +2201,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [50
 
 ]
-Overfull \vbox (14.8418pt too high) detected at line 897
- []
-
-
 Overfull \hbox (121.93117pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2189,7 +2213,59 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [51
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 899--899
+Overfull \hbox (121.93117pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (81.85194pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[52
+
+]
+Overfull \hbox (121.93117pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (81.85194pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[53
+
+]
+Overfull \hbox (121.93117pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (81.85194pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[54
+
+]
+Overfull \vbox (14.8418pt too high) detected at line 981
+ []
+
+
+Overfull \hbox (121.93117pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (81.85194pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[55
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 983--983
 [][] 
  []
 
@@ -2203,7 +2279,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[52
+[56
 
 ]
 \tf@nav=\write6
@@ -2215,22 +2291,22 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit4.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 903.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 903.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 987.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 987.
  (./STAT320_Unit4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 903.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 903.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 987.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 987.
 Package rerunfilecheck Info: File `STAT320_Unit4.out' has not changed.
 (rerunfilecheck)             Checksum: D44D39240D787C3F75AAD940FFA3EF56;240.
  ) 
 Here is how much of TeX's memory you used:
- 28923 strings out of 480608
- 561338 string characters out of 5903631
- 956620 words of memory out of 5000000
- 43968 multiletter control sequences out of 15000+600000
+ 29076 strings out of 480608
+ 564974 string characters out of 5903631
+ 959621 words of memory out of 5000000
+ 44112 multiletter control sequences out of 15000+600000
  599311 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,17n,79p,799b,1829s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,17n,79p,799b,2004s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -2241,15 +2317,15 @@ ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
 20/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit4.pdf (52 pages, 385024 bytes).
+xmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helve
+tic/uhvro8a.pfb>
+Output written on STAT320_Unit4.pdf (56 pages, 454975 bytes).
 PDF statistics:
- 2167 PDF objects out of 2487 (max. 8388607)
- 1844 compressed objects within 19 object streams
- 109 named destinations out of 1000 (max. 500000)
- 1411 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2381 PDF objects out of 2487 (max. 8388607)
+ 2006 compressed objects within 21 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 1680 words of extra memory for PDF output out of 10000 (max. 10000000)
 

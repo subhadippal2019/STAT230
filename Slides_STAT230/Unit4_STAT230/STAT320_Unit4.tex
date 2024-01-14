@@ -511,12 +511,95 @@ $P(E_1\cap E_2 \cap E_3 \cap E_4)=P(E_1) P( E_2\mid  E_1)P(E_3 \mid E_1 \cap E_2
 \section{Law of Total Probability}
 \TransitionFrame[amethyst]{\Large Law of Total Probability}
 
+{
+%\setbeamercolor{structure}{fg=antiquefuchsia!80, bg= black!60}
+\setbeamercolor{structure}{fg=gray!30, bg= black!60}
+
+
+\begin{frame}
+	\frametitle{Reminder from Unit1 Slides: Disjoint Sets}
+	\vspace{-.1in}
+	\begin{center}
+\qbx[4.3in]{teal!30}{\qBrd[1in]{olive!30}{\bf Disjoint Sets:}  Two sets  A, and  B are said to be  {\bf Disjoint Sets} or {\bf mutually exclusive sets} if $A$ and $B$ does not have any elements in common.\\
+}\\
+\vspace{-.2in}
+  \qbx[3in]{applegreen!50}{  
+ A and B are Disjoint $\Leftrightarrow \HLTY{A\cap B=\emptyset}$.
+  }
+  
+  	\end{center}
+	\vspace{4in}
+	\end{frame}
+	
+
+
+
+\begin{frame}
+	\frametitle{Reminder from Unit1 Slides: Partition}
+	\vspace{-.1in}
+	\begin{center}
+\qbx[4.6in]{antiquebrass!60}{\qBrd[.8in]{olive!30}{\bf Partition:}  A collection of sets $\HLTY{\{A_1, A_2, \cdots, A_k\}}$ is called a {\bf partition for a set $\HLTW{C}$} if
+\begin{enumerate}
+\item  \qBrd[3.5in]{applegreen!30}{$A_i \cap A_j = \emptyset$ for $1\leq i \neq j \leq k$ ({\tiny  i.e. ,$A_i$,  and $A_j$ are Disjoint if $i\neq j$}) }, and 
+\item  \qBrd[4in]{teal!30}{$\HLTY{A_1\cup A_2\cup \cdots \cup  A_k} =\HLTW{C}$.}
+\end{enumerate}
+}\\
+%\pause
+\vspace{.1in}
+  \includegraphics[scale=.22]{figs/VDPartition2.png} 
+  	\end{center}
+  	
+	\vspace{4in}
+	\end{frame}
+
+
+}
+
+
+
+
+
+\begin{frame}\frametitle{  Partition of Sample Space}
+\vspace{-.2in}
+	\begin{center}
+\qbx[4.6in]{amethyst!60}{\qBrd[1.9in]{olive!30}{\bf Partition of Sample Space:}  A collection of sets $\HLTY{\{A_1, A_2, \cdots, A_n\}}$ is called a {\bf partition } for a set $\HLTW{\SampleS}$ if
+\begin{enumerate}
+  \item\qBrd[3.7in]{applegreen!30}{  the collection of events  $\HLTY{\{A_i\}_{i=1}^{n}}$ are {\bf pairwise disjoint} }
+ , and 
+ \item \qBrd[2.5in]{teal!30}{ $\HLTY{A_1\cup A_2\cup \cdots \cup  A_n} =\HLTW{\SampleS}$.}
+\end{enumerate}
+}\\
+%\pause
+%\vspace{.1in}
+ % \includegraphics[scale=.2]{figs/VDPartition2.png} 
+  	\end{center}
+  	
+
+
+
+\vspace{.1in}
+
+\qBrd[4.5in]{bittersweet!50}{\HLTW{
+Comment:}In the above definition, we may replace $\HLTY{n}$ by $\HLTY{\infty}$ and the definition extends naturally. }
+\pause
+\vspace{.1in}
+
+\qBrd[4.5in]{teal!50}{\HLTW{
+Comment:} Any set $\HLTY{A}$ and  it's complement,  $\HLTY{\Not{A}}$,  creates  a partition of $\HLTW{\SampleS}$.}
+
+
+\end{frame}
+
+
+
+
 
 \begin{frame}\frametitle{Law of  Total Probability}
 \begin{center}
 \includegraphics[scale=.35]{figs/Law_of_Total_Probability_Simple.png} 
 \vspace{.2in}\\
 \qBrd[2in]{babyblue!70}{$ \HLTEQ[gray!20]{E}= \HLTEQ[applegreen!70]{(E\cap F)} \cup \HLTW{(E\cap \Not{F})} $}\\
+\vspace{.08in}
 \qBrd[2.6in]{unitednationsblue!40}{$ \HLTEQ[gray!20]{P(E)}= \HLTEQ[applegreen!70]{P(E\cap F) }+ \HLTW{P(E\cap \Not{F})} $  }
 \end{center}
 \vspace{.5in}
@@ -526,10 +609,12 @@ $P(E_1\cap E_2 \cap E_3 \cap E_4)=P(E_1) P( E_2\mid  E_1)P(E_3 \mid E_1 \cap E_2
 \qbx[4.5in]{teal!40}{
 Let E and F be two events, then 
 \begin{center}
-\qBrd[3in]{babyblue!90}{$\HLTEQ[gray!20]{ P(E)} = \HLTY{\HLTEQ[applegreen!70]{P(E\mid F)P(F) } +  \HLTW{P(E\mid  \Not{F}))(\Not{F})}} $}
+\qBrd[3in]{babyblue!90}{$ \HLTEQ[gray!20]{ P(E)} = \HLTY{\HLTEQ[applegreen!70]{P(E\mid F)P(F) } +  \HLTW{P(E\mid  \Not{F}))(\Not{F})}} $}
 \end{center}
 \vspace{.2in}
 }
+
+\vspace{1.5in}
 \end{frame}
 
 \begin{frame}\frametitle{Law of  Total Probability (General)}
@@ -544,12 +629,14 @@ Let E and F be two events, then
 
 \qbx[4.5in]{turquoisegreen!90}{
 \qBrd[2.4in]{yellow-green!50}{Law of  Total Probability (General):} Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
-\
+\vspace{-.15in}
 \begin{center}
 %\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
 \qBrd[3in]{green!40}{$\displaystyle P(E)=\HLTW{\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  }$}
 \end{center}
 }
+
+\vspace{1.5in}
 
 \end{frame}
 
@@ -592,11 +679,8 @@ $P(A_1) = P(A_1\mid A)P(A) + P(A1\mid \Not{A})P(\Not{A}) = (0.4)(0.3)+(0.2)(0.7	
 \begin{frame}
 
 \begin{theorem}
-Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and
-exhaustive events (meaning that exactly one of these events
-must occur). Suppose now that $E$ has occurred and we are
-interested in determining which one of the $F_j$ also occurred.
-Then, we have the following theorem
+Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and exhaustive events (meaning that exactly one of these events must occur).  Suppose now that $E$ has occurred and we are interested in determining which one of the $F_j$ also occurred. Then, we have the following theorem\\
+\ \vspace{-.2in}
 $$\DBX{ \displaystyle P(F_i \mid E)=\HLTW{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{K}P(E\mid F_j) P(F_j) }}}$$
 \end{theorem}
 
