@@ -1,0 +1,603 @@
+\documentclass[compress]{beamer}
+\mode<presentation>
+\setbeamercovered{transparent}
+\usetheme{Warsaw}
+%\useoutertheme{smoothtree}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{xmpmulti}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{fixpauseincludegraphics}
+
+
+
+%\setbeamersize{text margin left=.25 in,text margin right=.25 in}
+\setbeamersize{text margin left=.15 in,text margin right=.15 in}
+\usepackage[authoryear]{natbib}
+
+
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{latexcolors}
+%\usepackage[dvipsnames]{xcolor}
+\definecolor{antiquebrass}{rgb}{0.8, 0.58, 0.46}
+\definecolor{babyblueeyes}{rgb}{0.63, 0.79, 0.95}
+\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
+\definecolor{bistre}{rgb}{0.24, 0.17, 0.12}
+\definecolor{brightlavender}{rgb}{0.75, 0.58, 0.89}
+\definecolor{bulgarianrose}{rgb}{0.28, 0.02, 0.03}
+\definecolor{slateblue}{rgb}{0.56, 0.74, 0.56}
+\definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
+\definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
+
+\setbeamercolor{structure}{fg=bistre!80, bg= black!60}
+
+%
+%\usepackage{draftwatermark}
+%\SetWatermarkText{Confidential}
+%\SetWatermarkScale{10}
+%\SetWatermarkColor{black}
+%%\usepackage{background}
+%%\backgroundsetup{
+%%    placement=center,
+%%    scale=10,
+%%    contents={DRAFT},
+%%    opacity=1
+%%}
+%%\setbeamertemplate{background}{\BgMaterial}
+
+%
+%\setbeamertemplate{background}{%
+%\begin{tikzpicture}[overlay,remember picture]
+%\node[anchor=north west,scale=3] at ([shift={(1in,-1in)}]current page.north west) {Draft};
+%\end{tikzpicture}%
+%}
+
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes.symbols}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{multirow}
+%%%%%%%%% shaddow image %%%%%
+% some parameters for customization
+\def\shadowshift{3pt,-3pt}
+\def\shadowradius{6pt}
+\colorlet{innercolor}{black!60}
+\colorlet{outercolor}{gray!05}
+% this draws a shadow under a rectangle node
+\newcommand\drawshadow[1]{
+\begin{pgfonlayer}{shadow}
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[top color=innercolor,bottom color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[left color=innercolor,right color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[bottom color=innercolor,top color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=outercolor] ($(#1.south west)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=innercolor] ($(#1.north west)+(-\shadowradius/12,\shadowradius/12)$) rectangle ($(#1.south east)+(\shadowradius/12,-\shadowradius/12)$);%Frame
+    \filldraw ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)-(\shadowradius/2,\shadowradius/2)$);
+\end{pgfonlayer}
+}
+% create a shadow layer, so that we don't need to worry about overdrawing other things
+\pgfdeclarelayer{shadow} 
+\pgfsetlayers{shadow,main}
+% Define image shadow command
+\newcommand\shadowimage[2][]{%
+\begin{tikzpicture}
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[#1]{#2}};
+\drawshadow{image}
+\end{tikzpicture}}
+\usepackage{calligra}
+
+\DeclareMathOperator*{\argmax}{Arg\,max}
+\DeclareMathOperator*{\argmin}{Arg\,min}
+\newcommand{\norm}[1]{\left\Vert #1 \right\Vert }
+\newcommand{\bbetaHat}{ \widehat{\bbeta}}
+\newcommand{\bbetaLSE}{ \widehat{\bbeta}_{_{\text{LSE}}}}
+\newcommand{\bbetaMLE}{ \widehat{\bbeta}_{_{\text{MLE}}}}
+\newcommand{\sqBullet}[1]{  {\tiny \tiny \tiny \qBoxCol{#1!60}{ }} }
+%***************
+%\newtheorem{thm}{Theorem}
+\input{../LatexSupportFiles/definition_include}
+\input{../LatexSupportFiles/BoxDef}
+\input{../LatexSupportFiles/MatrixDef}
+
+
+
+
+
+
+
+
+
+
+
+\title{  STAT 320: Principles of Probability\\ {\color{black}  Unit 1: Practice}}
+
+\author[UAEU]
+{United Arab Emirates University}
+\institute[UAEU] % (optional, but mostly needed)
+{
+  \inst{Department of Statistics}%
+  %Indian Institute of Management,  Udaipur\\
+  \vspace{0.1in}
+
+  
+}
+
+\date{}
+
+
+\newcommand{\Xnew}{ \HLTEQ[orange]{X_{_{\text{i}}}} }
+\newcommand{\Ynew}{ \HLTEQ[orange]{Y_{_{\text{i}}}} }
+
+%\date{\today}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Inhalt}
+ % \begin{multicols}{1}
+	\frametitle{Outline}
+    \tableofcontents[currentsection]
+  %  \end{multicols}
+  \end{frame}
+}
+
+\begin{document}
+\maketitle
+
+%\begin{frame}{Outline}
+%%\begin{multicols}{}
+%  \tableofcontents
+%%\end{multicols}
+%\end{frame}
+
+%\section{Introduction to DSBA 2023}
+%
+%
+%\begin{frame}
+%\qBoxCol{blue!30}{
+%\begin{center} Course  Website \end{center}
+%\qbx[4.2in]{teal!40}{\sqBullet{teal} \color{blue} $ \href{https://sites.google.com/iimu.ac.in/dsba2023e/home}{https://sites.google.com/iimu.ac.in/dsba2023e/home}$
+%}\\
+%\qbx[3.0in]{green!40}{ \sqBullet{green} Regular Announcements.
+%}\\
+%\qbx[3.0in]{olive!40}{\sqBullet{olive}  Slides and other materials.
+%}
+%}
+%
+%\pause
+%\qBoxCol{blue!30}{
+%\sqBullet{blue}
+%You can contact the instructor at {\it subhadip.pal@iimu.ac.in} and schedule for office hours.  
+%}
+%\pause
+%\qBoxCol{olive!30}{
+%\sqBullet{olive}
+%Mr. Praveen Kumar has been assigned as Teaching Assistant (TA) for this course.  His email I'd is:  {\it praveen.kumar@iimu.ac. }
+%}
+%
+%
+%\end{frame}
+%
+
+
+%
+%\begin{frame}{Course Outline}
+%\hspace{-.1in}\qBoxCol{blue!35}{
+%% Please add the following required packages to your document preamble:
+%% \usepackage{booktabs}
+%\begin{table}[]
+%\begin{tabular}{@{}lll@{}}
+%\toprule
+%         & Topics                                                & Dataset or Case                                    \\ \midrule \midrule
+%\rowcolor{blue!20}     \multicolumn{1}{|l|}{1-2}   & \multicolumn{1}{l|}{Overview of Data Science}        & \multicolumn{1}{l|}{Household Data}                \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{3-5}   & \multicolumn{1}{l|}{Data Visualization}              & \multicolumn{1}{l|}{Global Super Store }       \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{6}     & \multicolumn{1}{l|}{Introduction to R/ JMP}          & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{7}     & \multicolumn{1}{l|}{Regression Analysis}             & \multicolumn{1}{l|}{Display \& Liquor Sales} \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{8}     & \multicolumn{1}{l|}{Multiple Regression}             & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{9}     & \multicolumn{1}{l|}{Dealing with Nominal Covariates} & \multicolumn{1}{l|}{Gender Divide}                 \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{10}    & \multicolumn{1}{l|}{Regression Diagonistics}         & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{11-12} & \multicolumn{1}{l|}{Project Presentations}            &\multicolumn{1}{l|}{}          \\\midrule \bottomrule
+%\end{tabular}
+%\end{table}
+%}
+%\end{frame}
+
+
+%\begin{frame}{Case Study }
+%\qBoxCol{teal!40}{\vspace{1in}\begin{center}\sqBullet{teal} \Large Case: Liquor sales and display space \end{center}
+%\vspace{1in}
+%}\\
+%\end{frame}
+
+
+
+
+
+\section{A Few Practice Problems}
+
+\TransitionFrame[antiquefuchsia]{\Large A Few Practice Problems}
+
+\begin{frame}
+\end{frame}
+
+
+\begin{frame}
+\end{frame}
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+What is the cartesian product between the sets $A=\{1,2,3\}$, and $B=\{H,T\}$, 
+}\\
+\pause
+
+\vspace{1.5in}
+\qBrd[4.5in]{babyblue!50}{
+What is the cardinality of $A$ and $B$? What is the cardinality of the corresponding cartesian product?
+}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+
+
+\qBrd[4.5in]{babyblue!50}{
+What is the cardinality of  $\{H,T\}^5$, and $\{1,2,3,4,5,6\}^3$
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{}
+  \begin{center}
+  \qBrd[4.1in]{olive!30}{ Let $\SampleS= \{1,2,3,4,5,6,7,8\}$,\\
+   $A=\{1,2,6,7\}$,  $B=\{ 2,3,4,7 \}$,  and $C=\{4,5,6,7\}$ }
+%\includegraphics[scale=1]{figs/VennDiagram2.png} 
+ \end{center} 
+ \vspace{3in}
+\end{frame}
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Consider three tosses of a coin.  What is the corresponding universal that provides the list of all possible results of the three tosses. 
+\begin{enumerate}
+\item Let $A$ be the set containig all the possibilities that corresponds to at least one Head.  Write down the explicit description of $A$.
+\item Let $B$ be the set containig all the possibilities that corresponds to at least one Tail.  Write down the explicit description of $B$.
+\item Let $D$ be the set containig all the possibilities that corresponds to none of them is Head.  
+\item What is the relation netween $A$ and $D$
+\end{enumerate}
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Consider two roll of a dice.  What is the universal set in this context?
+\begin{enumerate}
+\item Let $A: $ The set that at least one of the roll appears to be 6?
+\item Let $B:$ The set of outcomes when none of the roll is a 6?
+\item What is $A\cap B=?$
+\item What is $A\cup B=?$
+\item What is  $\Not{A}$?
+\item What sbout $\Not{B}=?$
+\item Is it true that $B=\Not{A}$
+\item Can we say that $A, B$ creates a partition of the universal set. 
+\end{enumerate} 
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Let $\HLTW{\lambda>0, a>0 }$ be two constants,  then   $ \HLTY{\displaystyle \sum_{x=0}^{\infty} \frac{ a^{3x} \lambda^x}{x!}}   =?.$
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Let $\HLTW{\lambda>0 }$ be two constants,  then   $ \HLTY{\displaystyle \sum_{x=0}^{\infty} \frac{x  \lambda^x}{x!}}   =?.$
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Let $\HLTW{\lambda>0}$ be two constants,  then   $ \HLTY{\displaystyle \sum_{x=0}^{\infty} \frac{x^2  \lambda^x}{x!}}   =?.$
+}
+\vspace{2.5in}
+\end{frame}
+
+%
+%
+%\section{Geometric Series}
+%\TransitionFrame[antiquefuchsia]{\Large Geometric Series }
+
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Let $\HLTW{q>0}$ be such that $\HLTW{\abs{q}<1}$,  then   $ \HLTY{\displaystyle \sum_{x=0}^{\infty} x \; q^{x}}=?$
+}
+\vspace{2in}
+\end{frame}
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Let $\HLTW{q>0}$ be such that $\HLTW{\abs{q}<1}$,  then   $ \HLTY{\displaystyle \sum_{x=0}^{\infty} x^2 \; q^{x}}=?$
+}
+\vspace{2in}
+\end{frame}
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!50}{
+Let $\HLTW{q>0}$ be such that $\HLTW{\abs{q}<1}$,  then   $ \HLTY{\displaystyle \sum_{x=0}^{\infty} x^2 \; q^{x}}=?$
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+
+\qBrd[4.5in]{bronze!50}{
+Let  $t\in \R0$ and,  $\HLTW{q\in \R}$ be such that $\HLTW{\abs{q}<1}$,  then   $ \HLTY{\displaystyle \sum_{x=0}^{\infty} e^{tx} \; q^{x}}=?.$
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+%
+%
+%\section{Binomial Series $(1+x)^n$, $(a+b)^n$}
+
+
+
+\begin{frame}{Binomial Series }
+\qBrd[4.7in]{babyblue!45}{
+Let $n$ be a positive integer, then \\
+$\HLTW{\displaystyle  \HLTY{\displaystyle 1+{n\choose 1}+{n\choose 2}+  \cdots+ {n\choose {n-1}}+{n\choose n}= }  \hspace{1.57in} } $
+}
+\vspace{2.5in}
+\end{frame}
+
+
+
+\begin{frame}{ }
+\qBrd[4.7in]{blue!25}{
+Let $a>0$, and $n$ be a positive integer, then \\
+$\HLTW{\displaystyle  \HLTY{\displaystyle \sum_{x=0}^{n} x {n \choose x }a^x}= } $
+}
+\vspace{2.5in}
+\end{frame}
+
+
+\begin{frame}{ }
+\qBrd[4.7in]{blue!25}{
+Let $t\in \R$,  $a>0$, and $n$ be a positive integer, then \\
+$\HLTW{\displaystyle  \HLTY{\displaystyle \sum_{x=0}^{n} e^{tx} {n \choose x }a^x}= } $
+}
+\vspace{2.5in}
+\end{frame}
+
+
+\begin{frame}\frametitle{}
+
+  \qBrd[4.7in]{olive!40}{  $\HLTW{  \displaystyle \Gamma(6)=}$ }
+  \vspace{2.5in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{}
+
+  \qBrd[4.7in]{olive!40}{  $\HLTW{  \displaystyle \frac{\Gamma\left( 8.7\right)}{\Gamma\left( 6.7\right)}}=$ }
+  \vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Gamma Function: Example}
+
+ 
+  \qBrd[4.7in]{ceil!40}{  $\HLTW{  \displaystyle \int\limits_{0}^{\infty}  x^{\frac{5}{2}}e^{-x} dx }=$ }
+
+  
+   \vspace{2.5in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{}
+ 
+  \qBrd[4.7in]{ceil!40}{  $\HLTW{  \displaystyle \int\limits_{0}^{\infty}  x^{\frac{5}{2}}e^{-x} dx }=$ }
+
+  
+   \vspace{2.5in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{}
+ 
+  \qBrd[4.7in]{ceil!40}{ Let $\lambda>0,$ then  $\HLTW{  \displaystyle \int\limits_{0}^{\infty}  x^{5}e^{-\lambda x} dx }=$ }
+
+  
+   \vspace{2.5in}
+\end{frame}
+
+
+
+
+\begin{frame}
+\qBrd[4.7in]{babyblue!40}{
+ $\HLTW{\displaystyle\mathscr{B}\left(3,2 \right) }= $}
+ \vspace{2.5in}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}\frametitle{}
+\qBrd[4.7in]{babyblue!50}{ $ \HLTW{\displaystyle \int\limits_{0}^{1}  x^{2}(1-x)^{3} dx=} $}
+
+
+\vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{}
+
+\qBrd[4.7in]{celadon!50}{ $ \HLTW{\displaystyle \int\limits_{0}^{1}  x^{\frac{5}{2}}(1-x)^{\frac{1}{2}} dx=} $}
+ 
+\vspace{2in}
+\end{frame}
+
+
+
+
+\TransitionFrame[bittersweet]{\Large $\HLTW{\Phi\left(x \right)\text{ Function}, } ${\tiny $x\in \R$ }\\The Standard Normal CDF }
+
+\begin{frame}\frametitle{The Standard Normal CDF ( PHI function)  $\Phi(x)$, $x\in \R$.}
+\begin{center}
+\qBrd[4.5in]{applegreen!40}{ $\HLTW{\HLTY{\Phi\left(x \right)}:= \displaystyle \int\limits_{-\infty}^{x}  \frac{1}{\sqrt{2\pi }}e^{-\frac{z^2}{2}} dz} $ for all $x\in \R$.}
+\vspace{.4in}
+\begin{itemize}
+\qBrd[1in]{carolinablue!50}{ \item $\HLTY{\Phi(0)}=\frac{1}{2}$}
+
+\qBrd[4.2in]{camel!50}{ \item  $\HLTW{\HLTY{\Phi(-x)}+\HLTY{\Phi(x)}=1} \implies \HLTW{ \HLTY{\Phi(-x)}= 1-\HLTY{ \Phi(x)} }$ for all $x\in \R$}
+
+\qBrd[3.2in]{celadon!50}{ \item  $\HLTW{0 \leq \HLTY{\Phi(x)} \leq 1}$ }
+
+\qBrd[3.2in]{candypink!50}{ \item $\HLTW{\displaystyle \lim\limits_{x\rightarrow -\infty} \HLTY{\Phi(x)}=0}$, and  $\HLTW{\displaystyle \lim\limits_{x\rightarrow \infty} \HLTY{\Phi(x)}=1}$}
+ \end{itemize}
+ \end{center}
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Discussion on Various Concepts}
+{\tiny Log (function)
+Equation of Line,  Circles 
+}
+\vspace{3in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{}
+{\tiny Log (function)
+%Exp Function
+Gamma, Beta, Phi function
+Equation of Line and Regions
+Circles and Regions
+}
+\vspace{3in}
+\end{frame}
+
+
+%
+%
+%\begin{frame}
+%	\frametitle{Definition of a Set }
+%	
+%\begin{defn}[ Set]
+%A {\bf  Set} is a well defined collection of {\bf objects}.
+%\end{defn}	
+%	
+%	\begin{itemize}
+%\item[ ] \qbx[4.1in]{teal!40}{\sqBullet{teal}{\bf Elements: }  The objects inside a set are called the {\bf elements} of the Set}
+%			\vspace{0.2cm}
+%		\item[]  \qbx[4.1in]{blue!30}{ \sqBullet{blue} Usually we denote sets with upper-case letters, elements with lower-case letters.}
+%			\vspace{0.2cm}
+%	\end{itemize}
+%\vspace{2in}
+%			
+%
+%\end{frame}
+
+
+%\begin{frame}
+% \qbx[4.5in]{antiquebrass!80}{ \sqBullet{antiquebrass} The Following  Notation is Used to Show  a Set Membership.
+% \vspace{-.15in}
+% \begin{enumerate}
+% \item[] \qBrd[4.1in]{olive!40}{ \sqBullet{olive}  $\HLTW{x\in A}$:means that x is a member of the set A. }
+%\item[]  \vspace{-.15in} \qBrd[4.1in]{lime!50}{  \sqBullet{green}  $\HLTW{x\notin A}$:means that x is NOT a member of the set A. }
+% \end{enumerate}
+% }
+% \vspace{2in}
+%\end{frame}
+
+
+
+
+
+\TransitionFrame[antiquefuchsia]{\Large Questions?  }
+ 
+ 
+\end{document}
