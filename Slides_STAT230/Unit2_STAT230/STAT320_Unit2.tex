@@ -319,7 +319,7 @@ arrangements can the airline offer from New York to Hawaii?}\\
 \vspace{1in}
 
 {\tiny Solution: $4 \times 2 =8$.}
-\vspace{2in}
+\vspace{2.5in}
 
 \end{frame}
 
@@ -327,22 +327,22 @@ arrangements can the airline offer from New York to Hawaii?}\\
 
 
 \begin{frame}
-\begin{defn}[Genralized Multiplication Principle of counting]
-If there are $k$ steps in an operation of which first can be done in $n_1$ ways,
-for each of these second can be done in $n_2$ ways, for each of
-the first two the third step can be done in $n_3$ ways, and so
+\begin{defn}[Generalized Multiplication Principle of Counting]
+If there are $k$ steps in an operation of which first can be done in $\HLTY{n_1}$ ways,
+for each of these second can be done in $\HLTY{n_2}$ ways, for each of
+the first two the third step can be done in $\HLTY{n_3}$ ways, and so
 forth, then the whole operation can be done in
-$\HLTY{n_1 \times n_2 \times  n_3 \times \cdots  \times  n_k}$ ways.
+$\HLTW{\HLTY{n_1} \times \HLTY{n_2} \times \HLTY{ n_3} \times \cdots  \times  \HLTY{n_k}}$ ways.
 \end{defn}	
 	\vspace{.5in}
 	
-	\qBrd[4.5in]{applegreen!40}{
-\sqBullet{olive} If a task involves two steps and the
-first step can be completed in $m$ ways and the second step in
-$n$ ways, then there are $m \times n$ ways to complete the task.}
+%	\qBrd[4.5in]{applegreen!40}{
+%\sqBullet{olive} If a task involves two steps and the
+%first step can be completed in $m$ ways and the second step in
+%$n$ ways, then there are $m \times n$ ways to complete the task.}
+%	
 	
-	
-	\vspace{1in}
+	\vspace{2in}
 \end{frame}
 
 
@@ -392,10 +392,7 @@ How many different types of car the manufacturer sells?
 
 
 
-
-
-
-\section{{\bf Ordered}  Arrangements {\bf with} Replacements }
+\section{Two Important Terminologies:  }
 
 
 
@@ -403,40 +400,47 @@ How many different types of car the manufacturer sells?
 
 \begin{frame}
 
-\begin{itemize}
-\qBrd[4.3in]{babyblue!30}{
-\item[\sqBullet{babyblue}] Terminology:  \HLTY{\text{Order in Arrangements}} is\\
-\begin{center}
- \HLTEQ[lime]{\text{Important}} or \HLTEQ[pink]{\text{ Not Important}}
- \end{center}
+\qBrd[4.68in]{blue!10}{
+Terminology:  \HLTY{\text{Order in Arrangements}} is\\
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}}}$
   }
 
-\vspace{.2in}
+\vspace{.5in}
 
-\qBrd[4.3in]{blue!30}{
-\item[\sqBullet{blue}] Terminology:  Arrangements\\
-\begin{center} \HLTW{\text{With Replacement}} or  \HLTY{\text{Without Replacement}}  \end{center} }
-\end{itemize}
+\qBrd[4.7in]{blue!10}{
+Terminology:  \\
+$\Col{{\Row{\MCQ[2.1in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.1in][babyblue!60]{
+WITHOUT Replacement
+}}}}$ }
+
+
 
 \end{frame}
 
 
 \begin{frame}\frametitle{Example}
 Rearranging the letters of a word: ``EARTH"\\
-Rearranging the letters of a word: ``TEN"     \\ 
-Rearranging the letters of a word: ``SILENT"  \\
-\vspace{1.5in}
+{\tiny Rearranging the letters of a word: ``TEN",  
+Rearranging the letters of a word: ``SILENT"  }
+\vspace{1.6in}
 
 
 $\Col{{\Row{\MCQ[2.1in]{
 Order is Important 
 } , \MCQ[2.1in]{
 Order is NOT Important
-}}},{\Row{\MCQ[2.1in]{ 
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
 WITH Replacement
-},\MCQ[2.1in]{
+},\MCQ[2.1in][babyblue!60]{
 WITHOUT Replacement
 }}}}$
+
 
 \end{frame}
 
@@ -451,11 +455,12 @@ $\Col{{\Row{\MCQ[2.1in]{
 Order is Important 
 } , \MCQ[2.1in]{
 Order is NOT Important
-}}},{\Row{\MCQ[2.1in]{ 
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
 WITH Replacement
-},\MCQ[2.1in]{
+},\MCQ[2.1in][babyblue!60]{
 WITHOUT Replacement
 }}}}$
+
 
 \end{frame}
 
@@ -470,9 +475,9 @@ $\Col{{\Row{\MCQ[2.1in]{
 Order is Important 
 } , \MCQ[2.1in]{
 Order is NOT Important
-}}},{\Row{\MCQ[2.1in]{ 
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
 WITH Replacement
-},\MCQ[2.1in]{
+},\MCQ[2.1in][babyblue!60]{
 WITHOUT Replacement
 }}}}$
 
@@ -488,9 +493,53 @@ $\Col{{\Row{\MCQ[2.1in]{
 Order is Important 
 } , \MCQ[2.1in]{
 Order is NOT Important
-}}},{\Row{\MCQ[2.1in]{ 
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
 WITH Replacement
-},\MCQ[2.1in]{
+},\MCQ[2.1in][babyblue!60]{
+WITHOUT Replacement
+}}}}$
+
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+How many different ways one can arrange ( permute) the following 5 distinct/ nonidentical balls in a linear manner?\\
+\includegraphics[scale=.35]{figs/5DifferentBalls.png}
+\vspace{1in}
+
+
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.1in][babyblue!60]{
+WITHOUT Replacement
+}}}}$
+
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+How many different ways one select 3 balls from a bunch of 5 {\bf distinct/ Non identical} balls?\\
+\includegraphics[scale=.35]{figs/5BallsInBox.png}
+\vspace{.1in}
+
+
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.1in][babyblue!60]{
 WITHOUT Replacement
 }}}}$
 
@@ -500,6 +549,84 @@ WITHOUT Replacement
 
 
 
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+How many different ways one can distribute the following 6 distinct balls so that each of the kids gets two balls each?\\
+\includegraphics[scale=.25]{figs/6Balls2each.png}
+%\vspace{.1in}
+
+\pause
+$\Col{{\Row{\MCQ[2in]{\tiny
+Order of the balls a person receives is Important
+} , \MCQ[2.5in]{
+\tiny 
+Order of the two balls a person receives is  NOT Important
+}}},{\Row{{\MCQ[2in]{\tiny 
+Order of the individuals is  Important
+} }, \MCQ[2.5in]{\tiny Order of the Individuals are NOT Important
+}}},{\Row{\MCQ[2in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.5in][babyblue!60]{
+WITHOUT Replacement
+}}}}$
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{}
+How many different ways one can distribute the following 6 distinct balls so that each of the kids gets two balls each?\\
+\includegraphics[scale=.35]{figs/6PurpleBass3kids.png}
+
+
+$\Col{{\Row{\MCQ[2in]{\tiny
+Order of the balls a person receives is Important
+} , \MCQ[2.5in]{
+\tiny 
+Order of the two balls a person receives is  NOT Important
+}}},{\Row{{\MCQ[2in]{\tiny 
+Order of the individuals is  Important
+} }, \MCQ[2.5in]{\tiny Order of the Individuals are NOT Important
+}}},{\Row{\MCQ[2in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.5in][babyblue!60]{
+WITHOUT Replacement
+}}}}$
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{}
+How many different ways one can distribute the following 6 distinct balls ({\tiny consider the scenario when a kid may obtain NONE,One or More balls})  ?\\
+\includegraphics[scale=.35]{figs/6PurpleBass3kids.png}
+
+
+
+$\Col{{\Row{\MCQ[2in]{\tiny
+Order of the balls a person receives is Important
+} , \MCQ[2.5in]{
+\tiny 
+Order of the two balls a person receives is  NOT Important
+}}},{\Row{{\MCQ[2in]{\tiny 
+Order of the individuals is  Important
+} }, \MCQ[2.5in]{\tiny Order of the Individuals are NOT Important
+}}},{\Row{\MCQ[2in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.5in][babyblue!60]{
+WITHOUT Replacement
+}}}}$
+
+\end{frame}
+
+
+
+
+\section{{\bf Ordered}  Arrangements {\bf with} Replacements }
 
 
 
@@ -713,7 +840,7 @@ $(6!)(4!) = (720)(24) = 17280$ possible rankings in this case.
 \begin{frame}{Combinations (Un-ordered, without replacement)}
 \begin{center}
 \vspace{-.1in}
-\define{Combinations}{ The number of combinations of $n$ objects taken $r$ at a time is the number of subsets, each of size $r$ , that can be formed from the $n$ objects. 
+\define{Combinations}{ The number of combinations of $\HLTY{n}$ objects taken $\HLTY{r}$ at a time is the number of subsets, each of size $r$ , that can be formed from the $n$ objects. 
 This number, denoted by ${n\choose r}$ ( {\tiny or $^nC_r$)}, is given as \vspace{-.1in} $$\HLTEQ[babyblue!70]{\HLTW{ \displaystyle {n \choose r }}= \HLTW{ \displaystyle\frac{n!}{r! (n-r)!}}}$$
 }
 \vspace{-.2in}
@@ -743,12 +870,12 @@ This is also the different ways $r$ different objects can be chosen from n diffe
 
 \begin{frame}
 \vspace{-.2in}
-\qBrd[4.5in]{iceberg!30}{ \Exmpl{iceberg!70}{} From the numbers \{1, 2, \ldots ,44\}, a person
+\qBrd[4.65in]{iceberg!30}{ \Exmpl{iceberg!70}{} From the numbers \{1, 2, \ldots ,44\}, a person
 may pick any six for her ticket.  How many different groups of six numbers can be chosen from the forty-four {\bf if the repeated selection of the numbers are {\it NOT allowed}  and the order at which the numbers are selected is  NOT important.}
 }\\
 \includegraphics[scale=.25]{figs/lottery.png} \\
 \pause 
-\vspace{.8in}
+\vspace{1in}
 {\tiny
 Solution: \HLT[yellow]{${ {44}\choose 6}= \frac{44\time 43 \times 42\times 41\times 40 \times 39}{6\times 5\times 4\times 3\times 2\times 1} $}}
 \end{frame}
@@ -772,14 +899,15 @@ both of the feuding men. Then, the possible number of committees becomes $30 \ti
 \begin{frame}
 \define{Multinomial Probability}{
 The number of ways of partitioning $n$ distinct objects into $k$ distinct groups
-containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object appears in exactly one group and $\sum_{i=1}^{k}n_i=n$, is  
- $$\HLTEQ[yellow]{\large \displaystyle {n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
+containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object appears in exactly one group and $\HLTW{\sum_{i=1}^{k}n_i=n}$, is  
+ $$\HLTEQ[yellow]{\large \displaystyle { n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
 }
 \begin{center}
 \qBrd[4.5in]{amber!40}{The above procedure is also utilized to determine the number of permutations of a set
 of n objects when certain of the objects are indistinguishable
 from each other.}
 \end{center}
+\vspace{.5in}
 \end{frame}
 
 
@@ -869,7 +997,7 @@ Consider 6 tosses of a coin.  For example two typical sequences of outcomes that
 \end{enumerate} 
 }\\
 \includegraphics[scale=.2]{figs/coin.png} \\
-\vspace{.5in}
+\vspace{.7in}
 \pause
 {\tiny
  Solution: a)  ${2^6}= 64$,  b) ${6 \choose 2}$  }
@@ -954,25 +1082,25 @@ Consider a Set $A=\{a_1, a_2, a_3 , a_4\}$ containnig $4$ elements.
 \end{frame}
 
 
-
-\begin{frame}
-\qbx[4.5in]{applegreen!40}{\Exmpl{applegreen}{}
-Ms. Jones has 10 books that she is going to put on
-her bookshelf. Of these, 4 are mathematics books, 3 are chemistry
-books, 2 are history books, and 1 is a language book. Ms. Jones
-wants to arrange her books so that all the books dealing with the
-same subject are together on the shelf. How many different
-arrangements are possible?}\\
-\vspace{1.5in}
-\pause
-{\tiny
- Solution: There are $4! 3! 2! 1!$ arrangements such that the
-mathematics books are first in line, then the chemistry books, then
-the history books, and then the language book. Similarly, for each
-possible ordering of the subjects, there are $4! 3! 2! 1!$ possible
-arrangements. Hence, as there are $4!$ possible orderings of the
-subjects, the desired answer is $4! (4! 3! 2! 1!) = 6912$. }
-\end{frame}
+%
+%\begin{frame}
+%\qbx[4.5in]{applegreen!40}{\Exmpl{applegreen}{}
+%Ms. Jones has 10 books that she is going to put on
+%her bookshelf. Of these, 4 are mathematics books, 3 are chemistry
+%books, 2 are history books, and 1 is a language book. Ms. Jones
+%wants to arrange her books so that all the books dealing with the
+%same subject are together on the shelf. How many different
+%arrangements are possible?}\\
+%\vspace{1.5in}
+%\pause
+%{\tiny
+% Solution: There are $4! 3! 2! 1!$ arrangements such that the
+%mathematics books are first in line, then the chemistry books, then
+%the history books, and then the language book. Similarly, for each
+%possible ordering of the subjects, there are $4! 3! 2! 1!$ possible
+%arrangements. Hence, as there are $4!$ possible orderings of the
+%subjects, the desired answer is $4! (4! 3! 2! 1!) = 6912$. }
+%\end{frame}
 
 
 \begin{frame}
@@ -989,7 +1117,7 @@ One of the sections in the class STAT230 has 8 students.  Assume the birthday of
 \pause
 {\tiny
  Solution: a)$ 365^8$ b)  $365\times  {8 \choose 2} 364\times \cdots \times 359$ c)  $365\times {8 \choose 4} \times 364\times 363\times 362 \times 361$  c) $^{365}P_{8}$ }
- \vspace{.11in}
+ \vspace{.4in}
 \end{frame}
 
 
@@ -1027,7 +1155,7 @@ One of the sections in the class STAT230 has 8 students.  Assume the birthday of
 \pause
 {\tiny Solution: By the generalized version of the basic principle, the answer is $26\times 26\times 26 \times 10\times 10\times 10\times 10 = 175, 760,000.$}
 
-\vspace{1in}
+\vspace{1.5in}
 \end{frame}
 
 
@@ -1091,7 +1219,7 @@ An investor has 20 thousand dollars to invest among 4 possible investments.  Eac
 \item  how many different investment strategies are possible  if not all the money need be invested?
 \end{enumerate}    
 }\\
-\vspace{1.5in}
+\vspace{1.7in}
 \pause
 {\tiny
  Solution: a) ${23 \choose 3}= 1771$ , b)  ${24 \choose 4}= 10,626$ }
@@ -1101,7 +1229,7 @@ An investor has 20 thousand dollars to invest among 4 possible investments.  Eac
 
 \begin{frame}
 \begin{minipage}{.6\textwidth} %
-\vspace{-.25in}
+\vspace{-.35in}
 \qBrd[3.1in]{airforceblue!60}{\;
 \includegraphics[scale=.33]{figs/UAEU_FLAG_GCC.png}
 }
@@ -1126,7 +1254,7 @@ An investor has 20 thousand dollars to invest among 4 possible investments.  Eac
 
 \begin{frame}
 \begin{minipage}{.6\textwidth} %
-\vspace{-.2in}
+\vspace{-.3in}
 \qBrd[3.1in]{airforceblue!60}{\;
 \includegraphics[scale=.3]{figs/UAEU_FLAG_UAE.png}
 }
@@ -1168,18 +1296,17 @@ different divisions of the 10 officers into the 3 groups are possible? }\\
 \begin{frame}
 \qbx[4.5in]{green!40}{\Exmpl{green}{}
 Ten children are to be divided into an A team and a
-B team of 5 each. The A team will play in one league and the B
-team in another. How many different divisions are possible? }\\
-\vspace{2.5in}
+B team of 5 each.  How many different ways we can construct team A and team B?}\\
+\vspace{2in}
 \pause
 {\tiny
  Solution:  ${10 \choose 5}=\frac{10!}{(5!)(5!)}= 252$ }
 \end{frame}
 
 
-
-
-\TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
+%
+%
+%\TransitionFrame[bittersweet]{\Large Binomial and Multinomial Coefficient  }
 
 
 
