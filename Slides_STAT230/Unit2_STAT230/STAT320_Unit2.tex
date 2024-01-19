@@ -13,6 +13,7 @@
 \usepackage{colortbl}
 
 
+
 %\setbeamersize{text margin left=.25 in,text margin right=.25 in}
 \setbeamersize{text margin left=.15 in,text margin right=.15 in}
 \usepackage[authoryear]{natbib}
@@ -275,7 +276,7 @@ $n$ ways, then there are $m \times n$ ways to complete the task.}
 
 
 \qbx[4.5in]{teal!40}{
-\Exmpl{teal}{1} An airline has six flights (6 flight numbers) from New York to California and seven flights  (7 different flight numbers ) from California to
+\Exmpl{teal}{1} An airline has six flights (4 flight numbers) from New York to California and seven flights  (5 different flight numbers ) from California to
 Hawaii per day.  If the flights are to be made on separate days, how many different flight
 arrangements can the airline offer from New York to Hawaii?}\\
 %
@@ -286,7 +287,7 @@ arrangements can the airline offer from New York to Hawaii?}\\
 %Furthermore, we define $0! = 1$.}
 \vspace{1.5in}
 \pause
-{\tiny Solution: $6\times 7=42$ }
+{\tiny Solution: $5\times 4=20$ }
 \vspace{1in}
 \end{frame}
 
@@ -403,11 +404,103 @@ How many different types of car the manufacturer sells?
 \begin{frame}
 
 \begin{itemize}
-\item The Notion of \HLTY{\text{Order in Arrangements}}
-\item The Notion of \HLTY{\text{With Replacement}} or  \HLTY{\text{Without Replacement}}
+\qBrd[4.3in]{babyblue!30}{
+\item[\sqBullet{babyblue}] Terminology:  \HLTY{\text{Order in Arrangements}} is\\
+\begin{center}
+ \HLTEQ[lime]{\text{Important}} or \HLTEQ[pink]{\text{ Not Important}}
+ \end{center}
+  }
+
+\vspace{.2in}
+
+\qBrd[4.3in]{blue!30}{
+\item[\sqBullet{blue}] Terminology:  Arrangements\\
+\begin{center} \HLTW{\text{With Replacement}} or  \HLTY{\text{Without Replacement}}  \end{center} }
 \end{itemize}
 
 \end{frame}
+
+
+\begin{frame}\frametitle{Example}
+Rearranging the letters of a word: ``EARTH"\\
+Rearranging the letters of a word: ``TEN"     \\ 
+Rearranging the letters of a word: ``SILENT"  \\
+\vspace{1.5in}
+
+
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in]{ 
+WITH Replacement
+},\MCQ[2.1in]{
+WITHOUT Replacement
+}}}}$
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+How many 4 letter different `words' ({\tiny sequences of 4 letters}) can be constructed using the letters of   ``EARTH" ( {\tiny you may use same letters on multiple occasions })\\
+\vspace{1.5in}
+
+
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in]{ 
+WITH Replacement
+},\MCQ[2.1in]{
+WITHOUT Replacement
+}}}}$
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+How many different 4 digit numbers can be constructed using the digits of the number ``12345"
+\vspace{1.5in}
+
+
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in]{ 
+WITH Replacement
+},\MCQ[2.1in]{
+WITHOUT Replacement
+}}}}$
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+How many different 4 digit numbers can be constructed?
+\vspace{1.5in}
+
+
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in]{ 
+WITH Replacement
+},\MCQ[2.1in]{
+WITHOUT Replacement
+}}}}$
+
+\end{frame}
+
+
+
+
+
+
 
 
 \TransitionFrame[bittersweet]{\Large {\bf Ordered}  Arrangements of {\bf distinct} objects {\bf with} Replacements   }
@@ -692,7 +785,7 @@ from each other.}
 
 \begin{frame}
 \qbx[4.5in]{teal!40}{\Exmpl{teal}{}
-How many different words can you make with the letters
+How many different `words' ({\tiny it many not be a meaningful word though}) can you make with the letters of the word
 \HLTW{\text{"PEPPER"}}?}\\
 \vspace{2.5in}
 \pause
@@ -1040,7 +1133,7 @@ An investor has 20 thousand dollars to invest among 4 possible investments.  Eac
 \end{minipage}
 \;\;\;\;
 \begin{minipage}{.32\textwidth} %
-\qbx[1.45in]{amethyst!40}{\Exmpl{amethyst}{}
+\qbx[1.45in]{lime!40}{\Exmpl{lime}{}
 \small How many different ways one can arrange  10 identical flags in  4 different locations? Assume that,  a location may have zero, one or  more than one flags.
 }
 \vspace{1.95in}
@@ -1063,7 +1156,7 @@ officers. If the department policy is to have 5 of the officers
 patrolling the streets, 2 of the officers working full time at the
 station, and 3 of the officers on reserve at the station, how many
 different divisions of the 10 officers into the 3 groups are possible? }\\
-\vspace{1.5in}
+\vspace{2in}
 \pause
 {\tiny
  Solution:  $\frac{10!}{(5!)(2!)(3!)}= 2520$ }
@@ -1077,7 +1170,7 @@ different divisions of the 10 officers into the 3 groups are possible? }\\
 Ten children are to be divided into an A team and a
 B team of 5 each. The A team will play in one league and the B
 team in another. How many different divisions are possible? }\\
-\vspace{2in}
+\vspace{2.5in}
 \pause
 {\tiny
  Solution:  ${10 \choose 5}=\frac{10!}{(5!)(5!)}= 252$ }
