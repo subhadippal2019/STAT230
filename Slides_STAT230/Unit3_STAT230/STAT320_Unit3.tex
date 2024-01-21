@@ -362,25 +362,25 @@ the event that horse 3 wins the race.   Write down the explicit description of A
 
 
 
-\begin{frame}
-	\frametitle{Example }
-	\begin{center}
-	
-\qbx[4.5in]{atomictangerine!40}{ \Exmpl{atomictangerine}{}Consider the {\bf single flip } of a coin. 
-\\\HLTW{\text{Experiment:}  } Recording the  outcome after flipping a  coin
-}
-\vspace{.1in}
-\pause
-\qBrd[4.5in]{bananamania!80}{
-\HLTW{\text{Sample Space:}} $\SampleS =\{H, T\}$
-}
-
-
-
-\end{center}
-\vspace{2.5in}
-
-\end{frame}
+%\begin{frame}
+%	\frametitle{Example }
+%	\begin{center}
+%	
+%\qbx[4.5in]{atomictangerine!40}{ \Exmpl{atomictangerine}{}Consider the {\bf single flip } of a coin. 
+%\\\HLTW{\text{Experiment:}  } Recording the  outcome after flipping a  coin
+%}
+%\vspace{.1in}
+%\pause
+%\qBrd[4.5in]{bananamania!80}{
+%\HLTW{\text{Sample Space:}} $\SampleS =\{H, T\}$
+%}
+%
+%
+%
+%\end{center}
+%\vspace{2.5in}
+%
+%\end{frame}
 
 
 \begin{frame}
@@ -1011,36 +1011,60 @@ It is intuitive and also easy to derive using Axioms 2 and Axiom3 of Probability
 
 \begin{frame}\frametitle{Example}
 \qbx[4.5in]{amethyst!40}{
-\Exmpl{amethyst}{} If two dice are rolled, what is the probability that the sum of the upturned faces will equal 7?
+\Exmpl{amethyst}{} Two fair-dice are rolled and the two numbers that appears are recorded.    Let $A$ be the event that the First roll results in a Six while $B$ represent the event that the second roll is a Six.  
+\begin{enumerate}
+\item What is $P(A)$, $P(B)$, and $P(A\cup B)$?
+\item What is the probability that the sum of the upturned faces will equal 8?
+\end{enumerate} 
 }\\
 \vspace{.1in}
 \pause
-\;\;\includegraphics[scale=.23]{figs/SixesTable_7.png}\\
-%\vspace{1.5in}
-{\tiny{ \bf Solution:} We shall solve this problem under the assumption that all of the 36 possible outcomes are equally likely.  Since there are 6 possible outcomes namely,  (1; 6); (2; 5); (3; 4), (4; 3); (5; 2), and (6; 1)that result in the sum of the dice being equal to 7, the desired probability is  $\frac{6}{36} =\frac{1}{6}$.}
-\vspace{2in}
+\;\;\includegraphics[scale=.26]{figs/SixesTable.png}\\
+\vspace{1in}
+
 
 \end{frame}
 
-
+\begin{frame}\frametitle{Example}
+\includegraphics[scale=.3]{figs/SixesTable.png}\\
+%\vspace{.5in}
+\pause
+\vspace{.2in}
+{\tiny{ \bf Solution:} 
+\qBrd[4.6in]{babyblue!30}{
+1) $A=\{(6,1), (6,2), (6,3), (6,4), (6,5), (6,6)\}$, $P(A)=\frac{6}{36}=\frac{1}{36}$\\
+$B=\{(1,6), (2,6), (3,6), (4,6), (5,6), (6,6)\}$, $P(B)=\frac{6}{36}=\frac{1}{36}$\\
+$A\cap B= \{(6,6)\}$, $P(A\cap B)= \frac{1}{36}$\\
+$P(A\cup B)= P(A)+P(B)-P(A\cap B)= \frac{1}{6}+  \frac{1}{6}- \frac{1}{36}= \frac{11}{36}$\\
+}\\
+\vspace{.1in}
+\qBrd[4.6in]{olive!30}{
+2) We shall solve this problem under the assumption that all of the 36 possible outcomes are equally likely.  Since there are 6 possible outcomes namely,  (2,6); (3, 5); (4,4), ( 5, 3),  and (6,2) that result in the sum of the dice being equal to 8, the desired probability is  $\frac{5}{36}$.}
+}
+\vspace{2in}
+\end{frame}
 
 
 
 \begin{frame}
 \vspace{-.1in}
 \qbx[4.5in]{brightube!40}{\Exmpl{brightube}{}
-Consider 6 tosses of a fair coin.  For example two typical sequences of outcomes that are considered different is  `HTTTTT', and `THTTTT'.
+Consider 6 tosses of a fair coin.  {\tiny For example, two typical sequences of outcomes that are considered different is  $\HLTW{`HTTTTT'}$, and $\HLTW{`THTTTT'}$.}
 \begin{enumerate}[a).]
-\item What is the probability that there are be exactly 2 heads ?
-\item What is the probability that there are no heads?
-\item What is the probability that there are at least one Tail?
+\item What is the probability that there are be exactly 2 Heads ?
+\item What is the probability that there are no Heads?
+\item What is the probability that there is at least one Tail?
 \end{enumerate} 
 }\\
 \includegraphics[scale=.2]{figs/coin.png} \\
 \vspace{.5in}
 \pause
 {\tiny
- Solution:   }
+ Solution:  
+ a) $\frac{{6 \choose 2}}{2^6}$, b)  $\frac{1}{2^6}$ c)  $1- \frac{1}{2^6}$
+ 
+ 
+  }
 \end{frame}
 
 
@@ -1049,20 +1073,20 @@ Consider 6 tosses of a fair coin.  For example two typical sequences of outcomes
 
 \begin{frame}
 \vspace{-.15in}
-\qBrd[4.55in]{purple!30}{ \Exmpl{purple!50}{} A fair-dice is thrown 5 times and all the the 5 numbers  that appear are recorded.  
+\qBrd[4.65in]{purple!30}{ \Exmpl{purple!50}{} A fair-dice is thrown 8 times and all the the 8 numbers  that appear are recorded.  
 \begin{enumerate}[a).]
-\qBrd[4in]{applegreen!40}{ \item What is the probability that there is  no six?}
-\qBrd[4in]{babyblue!40}{ \item What is the probability that there is at least one six?}
-\qBrd[4in]{amber!40}{ \item What is the probability that there will  be exactly two four and 2 three?}
+\qBrd[4in]{applegreen!40}{ \item What is the probability that there is  no $\HLTW{Six}$?}
+\qBrd[4in]{babyblue!40}{ \item What is the probability that there is at least one $\HLTW{Six}$?}
+\qBrd[4in]{amber!40}{ \item What is the probability that there will  be exactly 3 $\HLTW{Four}$'s and 2 $\HLTW{Three}$'s among the eight throws?}
 \end{enumerate}
 \vspace{.05in}
 } 
 
 \includegraphics[scale=.15]{figs/dice.png} \\
-\vspace{.3in}
+\vspace{.1in}
 \pause
 {\tiny Solution: 
-a)
+a) $\frac{5^8}{6^8}$, b) $1-\frac{5^8}{6^8}$, c) $ \frac{{ 8 \choose 3  }{ 5 \choose 2  } 4^3 }{6^8}  $
 }
 
 \end{frame}
@@ -1071,40 +1095,24 @@ a)
 
 
 
-\begin{frame}
-\qbx[4.5in]{amber(sae/ece)!40}{\Exmpl{amber(sae/ece)}{} 
-A typical ATM pin consists of 4 digits.  Assuming that all the integers between $0$ to $9$ are equally likely, for each of the digit selection. Find the probability of the following events. 
-\begin{enumerate}
-\item What is the probability that all the four digits of a randomly selected ATM pin is different?
-\item *The bank has selected a group of 200 ATM users randomly.  What is the probability that atleast two of the users have exact same ATM pin
-\end{enumerate}  }\\
-\includegraphics[scale=.25]{figs/ATMPIN.png} \\
-%\pause 
-\vspace{1.5in}
+
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{applegreen!40}{
+%\Exmpl{applegreen}{} If 3 balls are randomly drawn from a bowl
+%containing 6 white and 5 black balls, what is the probability
+%that one of the balls is white and the other two black?
+%}\\
 %\pause
-%{\tiny
- %Solution:  $\frac{10!}{(4!)(3!)(2!)(1!)}$ }
-\end{frame}
-
-
-
-
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{applegreen!40}{
-\Exmpl{applegreen}{} If 3 balls are randomly drawn from a bowl
-containing 6 white and 5 black balls, what is the probability
-that one of the balls is white and the other two black?
-}\\
-\pause
-\vspace{1.5in}
-{\tiny Solution: $n=11 \times 10\times 9 = 990$ and $n(E)=?$ if
-$E=\{\text{one of the balls is white and the other two black}\}$
-For the order WBB we have $6 \times 5 \times 4=120$
-possibilities, for BWB, we have $5 \times 6 \times 4=120$ possibilities and for BBW we have $ 5\times 4 \times 6=120$
-possibilities. Then $P(E)=\frac{n(E)}{n}=\frac{ 120+120+120}{990} = \frac{4}{11}$.}
-\vspace{2in}
-
-\end{frame}
+%\vspace{1.5in}
+%{\tiny Solution: $n=11 \times 10\times 9 = 990$ and $n(E)=?$ if
+%$E=\{\text{one of the balls is white and the other two black}\}$
+%For the order WBB we have $6 \times 5 \times 4=120$
+%possibilities, for BWB, we have $5 \times 6 \times 4=120$ possibilities and for BBW we have $ 5\times 4 \times 6=120$
+%possibilities. Then $P(E)=\frac{n(E)}{n}=\frac{ 120+120+120}{990} = \frac{4}{11}$.}
+%\vspace{2in}
+%
+%\end{frame}
 
 
 
@@ -1117,29 +1125,66 @@ One of the sections in the class STAT230 has 10 students.  Assume the birthday o
 \item What is the probability that at least two of the students have the same birthday?
 \end{enumerate} 
 }\\
-\vspace{1in}
+\vspace{.8in}
 \pause
 {\tiny
- Solution: a)$ 365^8$ b)  $365\times  {8 \choose 2} 364\times \cdots \times 359$ c)  $365\times {8 \choose 4} \times 364\times 363\times 362 \times 361$  c) $^{365}P_{8}$ }
+ Solution:\\
+  a)   $\frac{365\times  {10 \choose 4} \times ^{364}P_{6}}{365^{10}}= \frac{365\times  {10 \choose 4} \times 364\times 363 \times 362 \times 361 \times 360 \times  359}{365^{10}}$\\
+  b)  $1- \frac{^{365}P_{10}}{365^{10}}$ }
  \vspace{.11in}
 \end{frame}
 
 
 
 
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{darksalmon!40}{
+%\Exmpl{darksalmon}{} A committee of 5 is to be selected from a group of 6 men and 9 women.  If the selection is made randomly, what is the probability that the committee consists of 3 men and 2 women?
+%}\\
+%\pause
+%\vspace{1.5in}
+%{\tiny {\bf Solution: } \\
+% Because each of the ${15 \choose 5}$ possible committees is equally likely to be selected, the desired
+%probability is $\frac{{6 \choose 3}\times {9 \choose 2}}{{15 \choose 5}}=0.24$}
+%\vspace{1in}
+%
+%\end{frame}
+%
+%
+%
 
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{darksalmon!40}{
-\Exmpl{darksalmon}{} A committee of 5 is to be selected from a group of 6 men and 9 women.  If the selection is made randomly, what is the probability that the committee consists of 3 men and 2 women?
-}\\
+
+\begin{frame}
+\qbx[4.5in]{amber(sae/ece)!40}{\Exmpl{amber(sae/ece)}{} 
+A typical ATM pin consists of 4 digits.  Assume that all the integers between $0$ to $9$ are equally likely for selecting each of the digits. Find the probability of the following events. 
+\begin{enumerate}
+\item What is the probability that all the four digits of a randomly selected ATM pin is different?
+\item *The bank has selected a group of 120 ATM users randomly.  What is the probability that atleast two of the users have exact same ATM pin? {\tiny Assume that all the possible four digit numbers  are equally likely to be considered as a PIN of a randomly selected user. }
+\item *What would be corresponding probability if 300 ATM users are  randomly chosen instead?
+\end{enumerate}  }\\
+
+\begin{minipage}{.45\textwidth}
+\includegraphics[scale=.25]{figs/ATMPIN.png} 
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
 \pause
-\vspace{1.5in}
-{\tiny {\bf Solution: } \\
- Because each of the ${15 \choose 5}$ possible committees is equally likely to be selected, the desired
-probability is $\frac{{6 \choose 3}\times {9 \choose 2}}{{15 \choose 5}}=0.24$}
-\vspace{1in}
+{\tiny
+ Solution:  
+ a) $\frac{^{10}P_4}{10^4}$ \\
+ 
+ b)  $1- \frac{^{^{10000}}P_{_{120}}}{10000^{^{120}}}\approx 0.5117 $, \\
+ 
+ c)  $1- \frac{^{10000}P_{300}}{10000^{300}}\approx 0.9892 $ }
+\end{minipage}
+
+
+%\pause 
+\vspace{.5in}
 
 \end{frame}
+
+
 
 
 
@@ -1159,45 +1204,51 @@ probability is $\frac{{6 \choose 3}\times {9 \choose 2}}{{15 \choose 5}}=0.24$}
 %\end{frame}
 %
 
+%
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.6in]{darktangerine!40}{
+%\Exmpl{darktangerine}{} If $n$ people are present in a room, what is the probability that no two of them celebrate their birthday on the same day of the year? How large need n be so that this probability is less than $\frac{1}{2}$?
+%}\\
+%\pause
+%\vspace{1.5in}
+%{\tiny 
+%Solution: 
+%$\frac{^{365}P_n}{(365)^n}=\frac{(365)\times (364) \times \cdots \times (365-n+1)}{(365)^n}$
+%}
+%\vspace{2in}
+%
+%\end{frame}
 
 
-\begin{frame}\frametitle{Example}
-\qbx[4.6in]{darktangerine!40}{
-\Exmpl{darktangerine}{} If $n$ people are present in a room, what is the probability that no two of them celebrate their birthday on the same day of the year? How large need n be so that this probability is less than $\frac{1}{2}$?
-}\\
-\pause
-\vspace{1.5in}
-{\tiny 
-Solution: 
-$\frac{^{365}P_n}{(365)^n}=\frac{(365)\times (364) \times \cdots \times (365-n+1)}{(365)^n}$
-}
-\vspace{2in}
 
-\end{frame}
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{cherryblossompink!40}{
+%\Exmpl{cherryblossompink}{}A poker hand consists of 5 cards. If the cards have distinct consecutive values and are not all of the same suit, we say that the hand is a straight. For instance, a hand consisting of the five of spades, six of spades, seven of spades, eight of spades, and nine of hearts is a straight.  What is the probability that one is dealt a straight?
+%}\\
+%\pause
+%\vspace{1.5in}
+%{\tiny 
+%Solution: 
+%?
+%}
+%\vspace{2in}
+%
+%\end{frame}
 
 
-
-
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{cherryblossompink!40}{
-\Exmpl{cherryblossompink}{}A poker hand consists of 5 cards. If the cards have distinct consecutive values and are not all of the same suit, we say that the hand is a straight. For instance, a hand consisting of the five of spades, six of spades, seven of spades, eight of spades, and nine of hearts is a straight.  What is the probability that one is dealt a straight?
-}\\
-\pause
-\vspace{1.5in}
-{\tiny 
-Solution: 
-?
-}
-\vspace{2in}
-
+\begin{frame}
+\begin{center}
+\includegraphics[scale=.4]{figs/Cards.png}
+\end{center}
 \end{frame}
 
 
 
 \begin{frame}\frametitle{Example}
 \qbx[4.5in]{capri!40}{
-\Exmpl{capri}{}In the game of bridge, the entire deck of 52 cards is
-dealt out to 4 players. What is the probability that
+\Exmpl{capri}{} In the game of bridge, the entire deck of 52 cards is dealt out to 4 players. What is the probability that
 \begin{enumerate}[a).]
 \item one of the players receives all 13 spades?
 \item each player receives 1 ace?
@@ -1207,7 +1258,7 @@ dealt out to 4 players. What is the probability that
 \vspace{1.5in}
 {\tiny 
 Solution: 
-?
+a) $\frac{4}{{52\choose 13}}$, b) $\frac{4! {48 \choose {12, 12, 12, 12}} }{{52 \choose {13,13,13,13}}}$
 }
 \vspace{2in}
 
@@ -1235,16 +1286,15 @@ Solution:
 
 
 
-\begin{frame}{Application of Inclusion Exclusion Principle}
-
-\qBox{\Qn: Suppose we turn over cards simultaneously from two well shuffled decks of ordinary playing cards. We say we obtain an exact match on a particular turn if the same card appears from each deck; for example, the queen of spades against the
+\begin{frame}{De-arrangement: Application of Inclusion Exclusion Principle}
+\qBox{\Exmpl{blue!30}{} Suppose we turn over cards simultaneously from two well shuffled decks of ordinary playing cards. We say we obtain an exact match on a particular turn if the same card appears from each deck; for example, the queen of spades against the
 queen of spades.  Let $C_i$ denotes the event that there is an exact match at the $i^{\text{th}}$ turn.   
-\begin{enumerate}
-\item Argue that   $P(C_i)=\frac{51!}{52!}.$ 
-\item  Argue that  for $i\neq j $,  $P(C_i \cap C_j)= \frac{50!}{52!}$. 
-\item  Argue that  for $i\neq j \neq k $,  $P(C_i \cap C_j \cap C_k)= \frac{49!}{52!}$. 
-\item Let $p_M$ equal the probability of at least one exact match. Show that 
-$p_M:= 1-\frac{1}{2!}+\frac{1}{3!}-\cdots -\frac{1}{52!}$.
+\begin{enumerate}[a).]
+\item Argue that   $\HLTW{P(C_i)=\frac{51!}{52!}}.$ 
+\item  Argue that  for $\HLTW{i_i\neq i_2 $,  $P(C_{i_1} \cap C_{i_2})= \frac{50!}{52!}}$. 
+\item  Argue that  for $\HLTW{i_1\neq i_2 \neq i_3 $,  $P(C_{i_1} \cap C_{i_2} \cap C_{i_3})= \frac{49!}{52!}}$. 
+\item Show that the  probability of at least one exact match is 
+$\HLTW{ 1-\frac{1}{2!}+\frac{1}{3!}-\frac{1}{4!}+\cdots -\frac{1}{52!}}$.
 \end{enumerate}
 }
 %\qBox{\Qn:
@@ -1258,6 +1308,29 @@ $p_M:= 1-\frac{1}{2!}+\frac{1}{3!}-\cdots -\frac{1}{52!}$.
 %}
 \vspace{1in}
 \end{frame}
+
+
+
+
+
+
+\begin{frame}{Application of Inclusion Exclusion Principle}
+\qBrd[4.6in]{amethyst!50}{\Exmpl{amethyst!30}{} Suppose that there is a practice session for a UAE football (soccer) team.   In that session all the 11 players randomly picked up a jersey from a basket where exactly 11 jerseys were kept.  Note that, all the jerseys have the players name written on it, therefore in the basket there were exactly one jersey that would match with a specific player.  What is the probability that none of the players have picked up the jersey that would match their name?
+}
+%\qBox{\Qn:
+%Find the number of nonnative integer solutions of $X_1, X_2, X_3, $  such that $X_1+X_2+X_3=14$. \\
+%\HLT[yellow]{Ans: 120}
+%}
+%
+%\qBox{\Qn:
+% Consider an Experiment,  where a  dice is thrown 4 times.
+%Calculate the probability that the sum of all the through is 17?
+%}
+\vspace{1in}
+\end{frame}
+
+
+
 \TransitionFrame[antiquefuchsia]{\Large Questions?  }
  
  
