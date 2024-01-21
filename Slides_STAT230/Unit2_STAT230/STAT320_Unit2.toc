@@ -3,6 +3,6 @@
 \beamer@sectionintoc {2}{Two Important Terminologies: }{15}{0}{2}
 \beamer@sectionintoc {3}{{\bf Ordered} Arrangements {\bf with} Replacements }{27}{0}{3}
 \beamer@sectionintoc {4}{Permutations:{\small {\bf Ordered} Arrangements of {\bf distinct} objects {\bf Without} Replacements} }{36}{0}{4}
-\beamer@sectionintoc {5}{Combinations: {\small Arrangements of {\bf distinct} objects {\bf without replacement} when {\bf order is not important}} }{49}{0}{5}
-\beamer@sectionintoc {6}{Arrangements of {\bf identical} Objects in Multiple Groups}{61}{0}{6}
-\beamer@sectionintoc {7}{Miscellaneous Problems On Counting}{66}{0}{7}
+\beamer@sectionintoc {5}{Combinations: {\small Arrangements of {\bf distinct} objects {\bf without replacement} when {\bf order is not important}} }{50}{0}{5}
+\beamer@sectionintoc {6}{Arrangements of {\bf identical} Objects in Multiple Groups}{60}{0}{6}
+\beamer@sectionintoc {7}{Miscellaneous Problems On Counting}{65}{0}{7}

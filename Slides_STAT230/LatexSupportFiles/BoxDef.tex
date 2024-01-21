@@ -43,11 +43,16 @@
 \MCOption{#1} \MCOption{#2} \MCOption{#3}
 }
  
-\NewDocumentCommand{\MCQ}{O{1.75 in}O{amethyst!50}m}{
-\qBrd[#1]{#2}{\TextInBoxTwo[white]{.1 in}{ \quad\quad}\;\;\HLTW{\text{#3}	}}
+\NewDocumentCommand{\MCQchk}{O{1.75 in}O{amethyst!50}m}{
+\qBrd[#1]{#2}{\TextInBoxTwo[white]{.1 in}{$\checkmark$}\;\;\HLTW{\text{#3}	}}
 } 
  
  
+ 
+
+\NewDocumentCommand{\MCQ}{O{1.75 in}O{amethyst!50}m}{
+\qBrd[#1]{#2}{\TextInBoxTwo[white]{.1 in}{ \color{white}\checkmark}\;\;\HLTW{\text{#3}	}}
+}  
  
  
 \NewDocumentCommand{\OneBlock}{ O{HLTGreen} m m }{\colorbox{#1}{\begin{minipage}{#2} $ #3$ \end{minipage}}}
