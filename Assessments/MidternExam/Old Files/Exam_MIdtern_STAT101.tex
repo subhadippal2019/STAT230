@@ -1,0 +1,371 @@
+\documentclass[11pt]{article}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset{0cm}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[R]{{\color{gray!50}Page Number: \thepage}}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+}
+
+
+
+
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+ \begin{document}
+ \title{United Arab Emirates University \vspace{-.2in}}%replace X with the appropriate number
+\author{\Large   STAT 101\\\Large  Midterm Exam 
+} %if necessary, replace with your course title
+\date{ \vspace{-.15in}$ \text{23}^{\text{rd}} $ October, 2023}
+
+%\date{ \vspace{-.2in} \small   ${23}^{\text{rd}}$ October,  2023}
+ \maketitle\vspace{-.41in}
+  \noindent
+  %%%%%%%%%%%%%%%%%
+   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+ \TextInBoxTwo[lightBlueThree]{6.9 in }{\Large \bf Name:\HLT[white]{ \huge \color{white}A \hspace{5.12in}\vspace{2 in}}}\\
+  \TextInBoxTwo[lightBlueThree]{6.9 in }{\Large \bf Roll Number:\HLT[white]{ \huge \color{white}A \hspace{4.5in}\vspace{2 in}}}\\
+% \noindent
+% \TextInBox{6 in }{Name: \vspace{.1 in}}\\
+% \vspace{.1in}
+ 
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{
+\begin{itemize}
+\vspace{.1in}
+\item \TextInBoxTwo[white]{5.8in}{\large There  are a total of 110 points in this Question Paper. Answer as much as you can.   If your acquired score is greater than equal to 100  it will be counted as $100\%$.}\\\hspace{.2in}\\
+\item \TextInBoxTwo[white]{5.8in}{\large There are three parts in this Exam.  Part-I involves TRUE/FALSE or Multiple Answer type questions,   Part-II contains a few short answer type questions }\\\hspace{.2in}\\
+\item \TextInBoxTwo[white]{5.8in}{\large The Exam is scheduled for 75 minutes }\\\hspace{.2in}\\
+%\item   \TextInBoxTwo[white]{5.8in}{\large There are three $\star$ marked problems that are more involved than the rest.  In case you are stuck in one of those,  you may consider solving other problems first and then continue with the $\star$ marked problems.}\\\hspace{.2in}\\
+\item   \TextInBoxTwo[white]{5.8in}{\large You may take help from the  "Exam Assistance Note" containing a few required definitions and formula.   }\\\hspace{.2in}\\
+\end{itemize}
+}
+\vspace{-.01in}
+
+\TextInBoxTwo[lightBlueTwo]{6.5in}{ \centering For instructor's use only \vspace{.01in}\\
+ \;\hspace{.4in} 
+\TextInBoxTwo[white]{5.5in}{
+{\Large 
+\begin{center}
+\begin{tabular}{| c| c| c| }
+\hline
+ Problem Number  & Obtained Score & Total Score \\ 
+ \hline \hline
+ Problem 1 &  & 40 \\  
+ \hline
+ Problem 2 &  & 20 \\  
+ \hline
+  Problem 3 &  &  10\\  
+ \hline
+   Problem 4 &  & 20  \\  
+ \hline
+    Problem 5 &  &  20\\  
+ \hline
+%    Problem 6 &  &  \\  
+% \hline
+%    Problem 7 &  &  \\  
+%   \hline
+%    Problem 8 &  &  \\     
+ \hline
+  \hline
+    TOTAL &  &110  \\   
+    \hline
+  \hline
+   TOTAL(out of 100) & \vspace{.2in} &100  \\   
+ \hline \hline
+\end{tabular}
+\end{center}
+}}\vspace{.12in}
+}
+
+
+
+
+
+\newpage
+\vspace{1in}{\begin{center} \color{gray!30}You May Use This Page for Rough Work\end{center}} 
+%%%%%%%%%%%%%%%%%
+   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+\newpage
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+\setcounter{page}{1}%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf \HLT[white]{\large Part-I}\\ \vspace{-.15in}\begin{center}
+Pick the correct answer option for   the questions in this part of the exam.  \end{center}}
+\begin{enumerate}
+\item  
+\begin{enumerate}
+\item \QuizQuestion{  \TextInBoxOne{5.4in}{ The Life, Education and Income indices for a country in the year 2010 is given as: Life Index = $80\%$, Education Index=$75\%$, Income Index = $82\%$. What is the  the {\bf Human Development Index (HDI)}  for the country  in the year 2010.
+}}{
+Ans:\MCOption[1.1in]{$80.47\%$} \MCOption[1.1in]{$78.94\%$}\MCOption[1.1in]{$93.47\%$}\MCOption[1.1in]{$82.16\%$}
+}{Total Score: 10}\\
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+ {\bf Statement: }  A data set from a tourism company  comprises of many variables including the name, age, gender, and the country of residence of its customers. If we consider the variable: {\bf The country of residence of a customer}.  Choose the correct option from below that best describes the {\bf data-type of the variable}.
+}}{
+Ans:
+$\Col{{\Row{\MCOption[1.7in]{Numerical-Continuous},\MCOption[1.7in]{Numerical-Discrete}}},{\Row{\MCOption[1.7in]{Categorical-Nominal},\MCOption[1.7in]{Categorical-Ordinal}}}}$
+
+}{Total Score: 5}\\
+
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+ {\bf Statement: }  A large corporate  has a database to store its employee information including the variable { yearly income of an employee.} Which of the following option from the below correctly identifies the data-type of the variable: {\bf yearly income of an employee?}
+}}{
+Ans:$\Col{{\Row{\MCOption[1.7in]{Numerical-Continuous},\MCOption[1.7in]{Numerical-Discrete}}},{\Row{\MCOption[1.7in]{Categorical-Nominal},\MCOption[1.7in]{Categorical-Ordinal}}}}$
+}{Total Score: 5}\\
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+ It is given that the value of Life Expectancy (at birth) of a country is 68.5 years  in a specific year.  What is the value of the { \bf  Life Expectancy Dimension Index, $\text{I}_{\text{Life}}$} for the country? 
+ 
+}}{
+Ans:$\Row{\MCOption[1.1in]{$91.56\%$}, \MCOption[1.1in]{$81.53\%$},\MCOption[1.1in]{$88.17\%$},\MCOption[1.1in]{$76.74\%$}}$
+}{Total Score: 10}\\
+
+
+
+
+
+%\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+%The following table provides GDP (in Billion US\$) of Japan from 1990 to 2015 as published by The Organization for Economic Co-operation and Development (OECD):\\
+%\begin{center}
+%\begin{tabular}{|l|lll|}
+%\hline
+%               & \multicolumn{3}{l|}{Year}                                               \\ \hline
+%Country   Name & \multicolumn{1}{l|}{1990}     & \multicolumn{1}{l|}{2000}    & 2010     \\ \hline
+%Japan          & \multicolumn{1}{l|}{3132.818} & \multicolumn{1}{l|}{4887.52} & 5700.098 \\ \hline
+%\end{tabular}
+%\end{center}
+%Which one among the following options most accuratly shows the Average Annual Growth Rate  (AAGR\%) of Japan between the years from 1990 to 2010?
+%}}{
+%Ans:\MCOption[1.1in]{$103.112\%$} \MCOption[1.1in]{$3.038\%$}\MCOption[1.1in]{$1.35\%$}\MCOption[1.1in]{$82.16\%$}
+%}{Total Score: 10}\\
+
+
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+According to the World DataBank the {\bf Crude Birth Rate (CBR)} and the {\bf Crude Death Rate} for the entire world in the year 2021 is given as 16.9 (per 1000 population) and 8.7 (per 1000 population). Then what is the  world  population growth rate (in percentages) {\bf AGR}\% in the year 2021?
+}}{
+Ans:\MCOption[1.1in]{$82.00\%$}\MCOption[1.1in]{$8.20\%$} \MCOption[1.1in]{$0.82\%$}\MCOption[1.1in]{$0.082\%$}
+}{Total Score: 10}\\
+
+\newpage
+
+
+%
+%
+%\item \QuizQuestion{ \TextInBoxOne{5.4in}{
+% {\bf Statement: }   Let $X$ and $Y$ be two random variables such that $E(X^r)= E(Y^r)$ for $r=1, 2, 3, \ldots. $Then $X$ and $Y$ are identically distributed.
+%}}{
+%Ans:\MCOption{TURE} \MCOption{FALSE}
+%}{Total Score: 5}\\
+
+
+\vspace{.1in}
+\end{enumerate} 
+
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf\HLT[white]{ \large Part-II}\\
+  \begin{center}
+ Answer the following short type questions. Show your steps to get  full credit. 
+ \end{center}
+ %You do not need any further justification to your answers. 
+ }
+
+\item  
+\begin{enumerate}
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+The population of UAE was 6.988 million in 2008 and 9.441 million in 2022. 
+{\bf Calculate the percentage increase of the population in UAE between the years 2008, and 2022. }
+}}{\vspace{.1in}
+}{\hspace{-.2in}Total Score: 5}\\
+\vspace{2in}
+
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+ b) Calculate the {\bf Average Annual Growth Rate  (AAGR\%)} for the population growth of UAE during the period from  2008 to 2022. 
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 10}\\
+\vspace{2in}
+%
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+Assuming the AAGR\% remains the same, provide the {\bf Doubling Time (DT in years)} of the population in UAE.
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 5}\\
+
+\end{enumerate}
+\newpage
+
+
+
+\item[4.]  \TextInBoxTwo[lightBlueTwo]{6.25in}{ 
+ The following table shows data on  the global $\text{CO}_2$ emissions (in million metric tons of carbon) from the year 1980 to the year 2010 as provided by the Carbon Dioxide Information Analysis Center (CDIAC).\\
+ \TextInBoxOne{6in}{
+ \begin{center}
+\begin{tabular}{|l|c|}
+\hline
+ Year & Global $\text{CO}_2$ Emissions  \\
+  &  {\tiny(in million metric tons of carbon)} \\ \hline\hline
+1980                                  & 524.9    \\ \hline
+1985                                  & 804.8    \\ \hline
+1990                                  & 958.9    \\ \hline
+1995                                  & 1077.5   \\ \hline
+2000                                  & 1300.4   \\ \hline
+2005                                  & 1638.0     \\ \hline
+2010                                  & 2586.0    \\ \hline
+\end{tabular}
+\end{center}
+ }
+}
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{	Find the  AAverage Annual Growth Rate  {\bf (AAGR\%)} for  $\text{CO}_2$ emission during the period {\bf from  2000 to the year 2010. }
+}}{ \\
+}{\hspace{-.2in}Total Score: 10 }\\
+\vspace{2in}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{ {\bf Predict the global $\text{CO}_2$ emission in year {\bf 2032} using  2010 as the base year. }Assume that the AAGR\% for $\text{CO}_2$ emission remains fixed at the value  that you have calculated in part (a) of this problem. 
+}}{ \\
+}{\hspace{-.2in}Total Score: 10}\\
+\vspace{2in}\\
+
+\end{enumerate}
+
+
+
+
+\newpage
+
+
+\vspace{2in}
+\item[3] \ExamQuestion{  \TextInBoxOne{5.7in}{ 
+The following attributes of Chad in the year 2010 are provided in the table below: \\
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+                             & Life                      & Mean Years               & Expected Years            & \text{Percapita Gross National}                         \\
+                             & expectancy                & of Schooling             & of Schooling              & Product (PcGNI)                   \\ \hline
+\multicolumn{1}{|l|}{Chad} & \multicolumn{1}{l|}{57.1} & \multicolumn{1}{l|}{7.1} & \multicolumn{1}{l|}{ 9.7} & \multicolumn{1}{l|}{1,385} \\ \hline
+\end{tabular}\\
+\vspace{.1in}
+\end{center}
+Calculate  the {\bf Economic Index, $\text{I}_{\text{Economic}}$} of Chad in the year 2010? Show your steps. 
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 10}\\
+\vspace{3.5in}
+
+
+
+
+
+
+\item[5.] \TextInBoxTwo[lightBlueTwo]{6.25in}{ 
+ \TextInBoxOne{6.1in}{
+The {\bf world copper reserve} at the end of the year 2008 was known to be {\bf 490 million metric tons},  while in the year 2008,  the world copper {\bf consumption was 18.2 million metric tons}.  Answer the following questions based on the provided information.  
+}}
+
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{Compute the {\bf World Reserves Life Index (WRLI)} for Copper if its world consumption pattern remains the same as it was in the year 2008.
+}}{ \\ \vspace{1.5in}
+}{\hspace{-.2in}Total Score: 10}\\
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{If we assume that the global Copper consumption {\bf grows annually at the rate AAGR=$1.2\%$}, then how many years will it take to reach complete depletion of the 2008 world reserves?
+}}{ \\
+}{\hspace{-.2in}Total Score: 5 }\\
+\vspace{2.5in}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{On the contrary,  if the global Copper consumption {\bf decreases annually at the rate AAGR=$0.9\%$},  then how many years will it take to reach complete depletion of the 2008 world reserves?
+}}{ \\
+}{\hspace{-.2in}Total Score: 5 }\\
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+%
+%
+%\item  \TextInBoxOne{6in}{ 
+% An oil exploration firm is formed with enough capital to finance ten explorations. The probability
+%of a particular exploration being successful is 0.1. Assume the explorations are independent.
+%}
+%\begin{enumerate}
+%\item \ExamQuestion{ \TextInBoxOne{5.4in}{
+%Find the mean and variance of the number of successful explorations.
+%}}{ \\
+%}{\hspace{-.2in}Total Score: 5 }\\
+%\vspace{4in}
+%
+% \ExamQuestion{ \TextInBoxOne{5.4in}{ \item 
+%Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior
+%to doing its first exploration. If each successful exploration costs \$30,000 and each unsuccessful
+%exploration costs \$15,000, find the expected total cost to the firm for its ten explorations.
+%}}{ \\
+%}{\hspace{-.2in}Total Score: 5 }\\
+%\vspace{4in}
+%\end{enumerate}
+
+ \newpage
+%\ExamQuestion{    \item \TextInBoxOne{5.7in}{
+%In responding to a survey question on a sensitive topic (such as “ Have you ever tried
+%cigarette?”), many people prefer not to respond in the affirmative. Suppose that 80\% of
+%the population have not tried cigarette and all of those individuals will truthfully answer no
+%to your question. The remaining 20\% of the population have tried cigarette and 70\% of those
+%individuals will lie. Derive the probability distribution of Y , the number of people you would
+%need to question in order to obtain a single affirmative response. 
+%  }}{ \\ 
+%}{\hspace{-.2in}Total Score: 5}\\
+
+
+%
+%\item[6.]  \ExamQuestion{  \TextInBoxOne{5.75in}{ Consider the following table that provides the Unit Price and Production Quantities of Item-A, B and C  in the years 2006, and 2016. 
+%\begin{center}
+%\begin{tabular}{|l|ll|ll|}
+%\hline
+%     & \multicolumn{2}{l|}{Unit Price}  & \multicolumn{2}{l|}{Output quantities}                              \\ \hline
+%Item/Year & \multicolumn{1}{l|}{ 2006} & 2016 & \multicolumn{1}{l|}{2006} & 2016 \\ \hline
+%Item-A    & \multicolumn{1}{l|}{45}                           & 50   & \multicolumn{1}{l|}{400}                          & 700                          \\ \hline
+%Item-B    & \multicolumn{1}{l|}{30}                           & 38   & \multicolumn{1}{l|}{216}                          & 350                          \\ \hline
+%Item-C    & \multicolumn{1}{l|}{40}                           & 45   & \multicolumn{1}{l|}{300}                          & 800                          \\ \hline
+%\end{tabular}\\
+%\end{center}
+%{\bf Question: } Calculate the Laspeyres Price Index,  show all the steps. 
+%}}{ \\\vspace{.1in}
+%}{\hspace{-.2in}Total Score: 15}\\
+%\vspace{2in}
+
+
+\end{enumerate}
+
+
+
+\includepdf[pages=-]{ExamAssistanceNote_STAt101.pdf}
+
+
+
+
+
+
+\end{document}

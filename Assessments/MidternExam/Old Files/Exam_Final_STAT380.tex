@@ -1,0 +1,608 @@
+\documentclass[11pt]{article}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset{0cm}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[R]{{\color{gray!50}Page Number: \thepage { \small (out of 11 pages)}}}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+}
+
+\newcommand{\Ans}{Answer: }
+
+
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+ \begin{document}
+ \title{United Arab Emirates University \vspace{-.2in}}%replace X with the appropriate number
+\author{\Large   STAT 380\\\Large  Final Exam 
+} %if necessary, replace with your course title
+%\date{ \vspace{-.15in}$ \text{23}^{\text{rd}} $ October, 2023}
+\date{ }
+
+%\date{ \vspace{-.2in} \small   ${23}^{\text{rd}}$ October,  2023}
+ \maketitle\vspace{-.41in}
+  \noindent
+  %%%%%%%%%%%%%%%%%
+   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+ \TextInBoxTwo[lightBlueThree]{6.9 in }{\Large \bf Name:\HLT[white]{ \huge \color{white}A \hspace{5.12in}\vspace{2 in}}}\\
+  \TextInBoxTwo[lightBlueThree]{6.9 in }{\Large \bf ID:\hspace{.3in}\HLT[white]{ \huge \color{white}A \hspace{5.12in}\vspace{2 in}}}\\
+% \noindent
+% \TextInBox{6 in }{Name: \vspace{.1 in}}\\
+% \vspace{.1in}
+ 
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{
+\begin{itemize}
+\vspace{.1in}
+\item \TextInBoxTwo[white]{5.8in}{\large There  are a total of 105 points in this Question Paper. Answer as much as you can.   If your acquired score is greater than equal to 100  it will be counted as $100\%$.}\hspace{.051in}\\
+%\item \TextInBoxTwo[white]{5.8in}{\large There are three parts in this Exam.  Part-I involves TRUE/FALSE or Multiple Answer type questions,   Part-II contains a few short answer type questions }\\\hspace{.2in}\\
+\item \TextInBoxTwo[white]{5.8in}{\large The Exam is scheduled for 120 minutes }\hspace{.1in}\\
+\item   \TextInBoxTwo[white]{5.8in}{\large Students who are late by 15 minutes or more from the comencement of the exam  are not be allowed to enter the room. }\\\hspace{.1in}
+\item   \TextInBoxTwo[white]{5.8in}{\large A student leaving the exam hall for any reason is not allawed to return.}\\\hspace{.1in}
+\item   \TextInBoxTwo[white]{5.8in}{\large Students are not allowed to leave the room before 45 minutes from the commencement of the exam.}\\\hspace{.1in}\\
+\item   \TextInBoxTwo[white]{5.8in}{\large Students are required to carry university ID, calculator and pen/pencil to the desk.}\\\hspace{.1in}
+\item   \TextInBoxTwo[white]{5.8in}{\large Electronic gadgets such as a Laptop, mobile phone, smart watch, etc. are not allowed.  }\\\hspace{.1in}
+\item   \TextInBoxTwo[white]{5.8in}{\large This is a closed book, closed notes exam.   However,  you may take help from the  "Exam Assistance Note" provided along with the exam paper.   }\\\hspace{.1in}
+\end{itemize}
+}
+\vspace{-.01in}
+
+\TextInBoxTwo[lightBlueTwo]{6.5in}{ \centering For instructor's use only \vspace{.01in}\\
+ \;\hspace{.4in} 
+\TextInBoxTwo[white]{5.5in}{
+{\Large 
+\begin{center}
+\begin{tabular}{| c| c| c| }
+\hline
+ Problem Number  & Obtained Score & Total Score \\ 
+ \hline \hline
+ Problem 1 &  & 25 \\  
+ \hline
+ Problem 2 &  & 10 \\  
+ \hline
+  Problem 3 &  &  10\\  
+ \hline
+   Problem 4 &  & 10  \\  
+ \hline
+   Problem 5 &  &  25\\  
+ \hline
+    Problem 6 &  &10  \\  
+ \hline
+   Problem 7 &  & 10 \\  
+  \hline
+  Problem 8 &  & 5 \\     
+ \hline
+  \hline
+    TOTAL &  &105  \\   
+    \hline
+  \hline
+   TOTAL(out of 100) & \vspace{.2in} &100  \\   
+ \hline \hline
+\end{tabular}
+\end{center}
+}}\vspace{.12in}
+}
+
+
+
+
+
+\newpage
+\vspace{1in}{\begin{center} \color{gray!30}You May Use This Page for Rough Work\end{center}} 
+%%%%%%%%%%%%%%%%%
+   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+\newpage
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+\setcounter{page}{1}%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf \HLT[white]{\large Part-I}\\ \vspace{-.15in}\begin{center}
+Multiple Choice or Short Answer Type Problems\end{center}}
+\begin{enumerate}
+\item  
+\begin{enumerate}
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+ In order to model a multi-category response variable, a classification tree is utilized where the response variable can of 4 different categories.  During the modeling,  the proportion/probabilities of different response categories in a specific terminal node appears to be  $\hat{\pi}=\RowVec{0.15, 0.08, 0.65, 0.12}^T$.  What is the 
+{\bf mis-classification rate} for the obtained probability vector $ \hat{\pi}$.
+}}{
+\Ans\MCOption[1in]{0} \MCOption[1in]{0.08}\MCOption[1in]{0.65} \MCOption[1in]{0.35}
+}{Total Score: 5}\\
+
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+Under which of the following conditions is k-fold cross-validation the same as leave-one-out cross-validation? Consider that there are $n$ number of observation in the data.
+}}{
+\Ans \MCOption[4.2in]{The training set and test-set have the same number of examples} \\
+\MCOption[1.5in]{k=1}
+ \MCOption[1.5in]{ k=n } 
+ \MCOption[1.5in]{ None of the above} 
+}{Total Score: 5}\\
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+In the context of Standard Linear Regression to model a continuous response variable, how do we check if there is 'Influential' point in the dataset. )
+}}{
+\Ans
+\\ \MCOption[5in]{It is a Influential point if the corresponding Cook's Distance is more than 0.5. }
+\MCOption[5in]{It is a Influential point if the corresponding Cook's Distance is less than 0.5. }
+\MCOption[5in]{It is a Influential point if the corresponding Cook's Distance is less than 0.05. }
+}{Total Score: 5}\\
+
+
+
+%
+%\item \QuizQ{ \TextInBoxOne{5.4in}{
+%Imagine we have a sample of 150 points, 70 from ‘Class 0’ ( For example: healthy) and the others from ‘Class 1 ( For Example: Not Healthy). Let us assume that a classification technique (Medical Testing) can correctly identify 65 out of the 70 belongs to the ‘Class 0’ (positive for all Diseased) while it can correctly detect 77 of objects that belongs to the ’Class1’(Not Healthy). Calculate the {\bf Sensitivity}  for the corresponding Classification Technique. 
+%}}{
+%\MCOption[1in]{$96.25\%$}\MCOption[1in]{$91.31\%$}  \MCOption[1in]{$92.92\%$}\MCOption[1in]{$93.90\%$}
+%}\\
+
+\item \QuizQuestion{ \TextInBoxOne{5.4in}{
+Consider a principal component analysis, where the estimated first two principal components are $\text{PC}_1$ and $\text{PC}_2$.  Identify whether the following statement is TRUE or FALSE.\\
+ {\bf Statement: } The correlation between $\text{PC}_1$ and $\text{PC}_2$ is 0. 
+}}{
+\Ans \MCOption{TURE} \MCOption{FALSE}
+}{Total Score: 5}\\\\
+
+
+\item \QuizQuestion{ \TextInBoxOne{5.4in}{
+Which one of the following is the main reason for pruning a Decision Tree?
+}}{
+\Ans\\
+\MCOption[5in]{T o save computing time during testing} 
+\\\MCOption[4.8in]{To save space for storing the Decision Tree}
+\\\MCOption[4.8in]{To avoid over fitting the training set}
+\\\MCOption[4.8in]{To make the training set error smaller}
+}{Total Score: 5}\\
+
+%\item \QuizQuestion{ \TextInBoxOne{5.4in}{
+%If we consider a  Dataset that has 80 observations and 120 covariates ( independent variables) to model a continuous response variable.  Identify whether the following statement is  TRUE or FALSE.\\
+% {\bf Statement: } If we consider a principal component analysis of the data, no more than 80 eigenvalues of the corresponding variance covariance matrix can be  positive. 
+%}}{
+%\Ans \MCOption{TURE} \MCOption{FALSE}
+%}{Total Score: 5}\\\\
+
+\end{enumerate}
+%
+%\newpage
+%\vspace{1in}{\begin{center} \color{gray!30}You May Use This Page for Rough Work\end{center}} 
+%%%%%%%%%%%%%%%%%%
+%   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% 
+%\newpage
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%\setcounter{page}{2}%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%\newpage
+%
+%\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf\HLT[white]{ \large Part-I(B)}\\
+%  \begin{center}
+% Answer the following short type questions. Show your steps to get  full credit. 
+% \end{center}
+% %You do not need any further justification to your answers. 
+% }
+\item 
+\begin{enumerate}
+\item  \ExamQuestion{ \TextInBoxOne{5.7in}{ Consider modelling a multi-category response variable using a classification tree.  Assume that the response variable can be of 3 different  categories.  During the modeling, a specific terminal node,  the  proportion/ probabilities of different response categories are estimated to be $\hat{\pi}=\RowVec{0.35,  0.55, 0.10}^T$. Calculate the  
+{\bf Gini's Index} for the obtained probability vector.
+}}{
+\vspace{1.5in}
+}{Total Score: 5}
+
+
+%\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+%Using a statistical machine-learning procedure, it is estimated that the  probability of at least 10 years of ``survival" of a randomly chosen patient who went through a specific medical procedure is 0.75.  Based on the information, calculate the {\bf  odds} for at least 10 years of ``survival" of the patient ?
+%}}{
+%\Ans
+%\vspace{1in}
+%}{Total Score: 5}\\
+
+%
+%
+%\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+% In order to model a multi-category response variable, a classification tree is utilized.  Let the response variable can take only 4 categories.  During the modeling, a specific terminal node of the tree has the corresponding proportion/ probabilities to be $\hat{\pi}=(0.1, 0.8, 0.04, 0.06)^T$ to the different response categories for the points assigned to it.  Calculate the 
+%Gini's Index for the obtained probability vector.
+%}}{
+%\Ans
+%\vspace{1in}
+%}{Total Score: 5}\\
+
+\item \ExamQuestion{  \TextInBoxOne{5.4in}{ What is the value of  $\text{Logit}(0.65)$?
+}}{\\
+ \vspace{2.31in}
+}{Total Score: 5}\\
+\newpage
+
+%\item \ExamQuestion{ \TextInBoxOne{5.7in}{
+%Calculate is the value of the following function $\text{Logit}(0.8)?$
+%}}{
+%%\Ans
+%\vspace{1.31in}
+%}{Total Score: 5}\\
+
+\end{enumerate} 
+
+
+
+
+%\newpage
+
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf\HLT[white]{ \large Part-II}\\
+  \begin{center}
+ Answer the following short type questions. Show your steps to get  full credit. 
+ \end{center}
+ %You do not need any further justification to your answers. 
+ }
+
+%\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+%Based on statistical machine learning procedure, it is estimated that the probability of at least 10 years of “survival" of a randomly chosen patient who went through a specific medical procedure is 0.7.  Based on the information calculate the odds for at least 10 years of “survival" of the patient ?
+%}}{\vspace{.1in}
+%}{\hspace{-.2in}Total Score: 5}\\
+%\vspace{2in}
+
+%\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+%R output Logistic Regression Fitted model Question Interpretation of Regression Coefficient
+%Calculate the probability.
+%}}{\vspace{.1in}
+%}{\hspace{-.2in}Total Score: 5}\\
+%\vspace{2in}
+
+
+
+
+
+\item  \TextInBoxTwo[lightBlueTwo]{6.25in}{  \TextInBoxOne{6.1in}{ 
+Consider the output from a logistic regression model applied to the  Credit Risk dataset.  There are three variables in the dataset.   
+The variable named  {\bf  ``loanStatus"}  indicates whether there is default (loanStatus=1) of the loan or not (loanStatus=0 for not default).  The covariates are {\bf ``intRate"} and  {\bf ``age"} that represents the corresponding {\bf interest rate} of the loan and the {\bf age} of the corresponding individual.   
+We fit a following logistic regression model 
+$$Y_i \sim \text{Bernoulli}(\pi_i)$$
+$$\text{Logit}(\pi_i):= \beta_0 +\beta_1 \times \text{intRate}_i+ \beta_2 \times \text{age}_i.$$
+Here the response variable $Y_i=1$ if there is a loan default ( i.e. if $\text{loanStatus}_i=1$) corresponding to the $i^{\text{th}}$ data point.   Answer the parts of this questions based on the  following output from the R Statistical Software that is provided below: 
+}
+}
+
+
+\begin{verbatim}
+Call:
+glm(formula = loanStatus ~ intRate + age, data = dd)
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.025  0.0109583  -2.505  0.01227 *  
+intRate     0.015  0.0005969  24.717  < 2e-16 ***
+age         -0.019  0.006212 -3.042  0.00235 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+\end{verbatim}
+
+
+
+\begin{enumerate}
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+Interpret the estimated value of regression coefficient corresponding to the variable `intRate'.
+}}{\vspace{.1in}
+}{\hspace{-.2in}Total Score: 3}\\
+\vspace{2in}
+
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+Interpret the estimated value of regression coefficient corresponding to the variable `age'.
+}}{\vspace{.1in}
+}{\hspace{-.2in}Total Score: 3}\\
+\vspace{3in}
+
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+A new loan application has been filed,  where the corresponding values of the variables are {\bf age=50, intRate=15}.  If the applied loan is approved, then based on the provided model,  {\bf predict the probability of the default for the loan.}
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 4}\\
+\vspace{2in}
+
+\end{enumerate}
+
+
+
+
+
+\item  \TextInBoxTwo[lightBlueTwo]{6.25in}{  \TextInBoxOne{6.1in}{ Consider a dataset that includes data on 150 diamonds sold at an auction.  We applied a regression-tree  model to  build a  model to  predict the price of a diamond  based on the 'weight',  `clarity', and `color' of a diamond.  
+The variables that are present in the data are the following: \\
+{\bf "value":} The price at which the diamond is sold.  (in $10^5$ USD)\\
+{\bf "weight"}: Weight of the diamond.  (grams)\\
+{\bf  "clarity"}: Clarity measure of the diamond.(A score between 0 to 2)\\
+   {\bf "color" }: Color of the diamond. (A score between 1 to 10)\\
+The following is the diagram of the obtained tree that we denote here by $\text{T}^{*}$ when modeling the continuous variable 'value':\\
+\includegraphics[scale=.55]{TreeDiamond.png}\\
+The numbers provided at the terminal node,  denote the the corresponding predicted response ans the number of observations are allocated to the specific terminal node.  Answer the following questions based on the estimated tree given in this problem. 
+}
+}
+
+
+
+
+\begin{enumerate}
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{  Let $ \alpha(\text{T})$ denote the usual complexity measure obtained by the number of the terminal node of the tree or the number of decision regions that it corresponds.  {\bf What is the value of $\alpha(\text{T}^{*})$?}
+}}{\vspace{.1in}
+}{\hspace{-.2in}Total Score: 2}\\
+\vspace{.5in}
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{   Write down/describe the  different decision regions that the tree corresponds to.
+}}{\vspace{.1in}
+}{\hspace{-.2in}Total Score: 5}\\
+\vspace{4.8in}
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{  Based on the given output, what is the predicted response of a point that has the following values for the corresponding covariates\\
+\vspace{-.35in}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+weight    & clarity & color  \\ \hline
+12 & 1.0 & 4.0\\
+\hline
+\end{tabular}?
+\end{center}
+}}{\vspace{.1in}
+}{\hspace{-.2in}Total Score: 3}\\
+\vspace{2in}
+
+\end{enumerate}
+
+
+
+
+
+
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf\HLT[white]{ \large Part-III}\\
+  \begin{center}
+ Answer the following descriptive type questions.  Show your steps to get  full credit. 
+ \end{center}
+ %You do not need any further justification to your answers. 
+ }
+
+
+
+\item \TextInBoxTwo[lightBlueTwo]{6.25in}{ 
+ \TextInBoxOne{6.1in}{Let $\hat{\Sigma}$ be an estimated variance covariance matrix from a data set with 7 variables denoted as $X_1, \ldots , X_7$.  As the variance covariance matrix is non negative definite matrix, a spectral decomposition of the matrix is possible to be done.  Based on a computation procedure to applied to  $\hat{\Sigma}$, the following spectral decomposition is obtained:
+$$\hat{\Sigma}:=\Gamma \Lambda \Gamma^T, \text{ where }$$
+$$\Gamma=\RowVec{ \Col{-0.92,0,0.39,0,0,0,0}, \Col{0,0.98,0,0.05,0,0,-0.17}, \Col{0.39,0,0.92,0,0,0,0}, \Col{0,-0.04,0,-0.87,0,0,-0.49}, \Col{0,0,0,0,-0.73,0.68,0}, \Col{0,0,0,0,0.68,0.73,0}, \Col{0,-0.17,0,0.49,0,0,-0.85}
+  }$$
+$$\Lambda=\RowVec{ \Col{25,0,0,0,0,0, 0} , \Col{0,20,0,0,0,0,0} , \Col{0,0,2.4,0,0,0,0} , \Col{0,0,0,1.1,0,0,0} , \Col{0,0,0,0,1,0,0} , \Col{0,0,0,0,0,0.4,0} , \Col{0,0,0,0,0,0,0.1} }.$$
+Note that $\Gamma$ is an Orthogonal-Matrix i.e. $\Gamma^T\Gamma=\Gamma\Gamma^T=\text{I}_{_{7\times 7}}$, the identity matrix of dimension $7\times 7$ while,  $\Lambda$ is a diagonal matrix with non-negative diagonal elements.  Also, note that the columns of the matrix $\Gamma$ comprises of the eigen-vectors of the matrix $\hat{\Sigma}$ while the diagonal elements of the matrix $\Lambda$ refers to the corresponding eigen-values of $\hat{\Sigma}$. Answer the following questions based on the results provided above.
+}}
+
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{ What are the equations for the first {\bf  two principal components}, $\text{PC}_1$,  and $\text{PC}_2$ of the observed data? 
+}}{ \\ \vspace{3in}
+}{\hspace{-.2in}Total Score: 2+2}\\
+
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{What is the loading of $\text{PC}_{1}$ on the different variables?
+}}{ \\
+}{\hspace{-.2in}Total Score:  3}\\
+\vspace{1in}
+
+
+
+%
+%\item \ExamQuestion{ \TextInBoxOne{5.7in}{Derive the co-variance between  $\text{PC}_{1}$ and $\text{PC}_{2}$.
+%}}{ \\
+%}{\hspace{-.2in}Total Score: 10 }\\
+
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{ Draw a scree plot of the importance factors for the principal components.  Based on the scree-plot,  identify the optimum number of components (say $m$) that would be adequate to capture the variability present in the observed data.  
+}}{ \\
+}{\hspace{-.2in}Total Score: 4+1 }\\
+\includegraphics[scale=.4]{Grid_Scree.png}\\
+\vspace{.1in}
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{What is the  percentage of total variability that is captured by the first $m$ principal components of the data.  {(\small Here $m$ is the optimum number of components that you have decided in the previous part of the problem. )}
+}}{ \\
+}{\hspace{-.2in}Total Score: 5 }\\	
+\vspace{1in}
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{If a specific observed data point is:\\ 
+$\Row{X_ 1 = 3.0,X_ 2 = 4.0,X_ 3 = 2.0,X_ 4 = 0,X_5=0 , 6 = 0, X_7 = 0}$\\
+What is the score of the plot along the {\bf first } principal components?
+}}{ \\
+}{\hspace{-.2in}Total Score: 3 }\\	
+\vspace{1in}
+
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{Derive the variance of $\text{PC}_{1}$.
+}}{ \\
+}{\hspace{-.2in}Total Score: 5 }\\
+\vspace{4in}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\item \TextInBoxTwo[lightBlueTwo]{6.25in}{ 
+ \TextInBoxOne{6.1in}{
+Consider a clustering problem of bivariate data with the following distance matrix: \\
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+ & A   & B      & C   & D   \\ \hline
+A & 0   & 7 & 4 & 6 \\ \hline
+B & 7 & 0    & 4.5 & 3 \\ \hline
+C & 4 & 4.5  & 0   & 1.5 \\ \hline
+D & 6 & 3  & 1.5 & 0   \\ \hline
+\end{tabular}
+\end{center}
+}}
+
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{ Complete the tables in the next page and construct a Dendogram for hierarchical agglomerative clustering  using the {\bf complete-linkage} procedure.
+}}{\\ \Ans 
+}{\hspace{-.2in}Total Score: 4+3}\\
+{\Large
+Step1: 
+\begin{tabular}{|l||l|l|l|l|}
+\hline
+  \hspace{.9in} & A  \hspace{.7in} & B   \hspace{.7in}     & C \hspace{.7in}    & D  \hspace{.7in}   \\ \hline\hline
+A & 0   & 7 & 4 & 6\\ \hline
+B & 7 & 0    & 4.5 & 3 \\ \hline
+C & 4 & 4.5  & 0   & 1.5 \\ \hline
+D & 6 & 3  & 1.5 & 0   \\ \hline
+\end{tabular}\\
+\vspace{.1in}\\
+Step2: 
+\begin{tabular}{|l||l|l|l|}
+\hline
+\hspace{.9in} & \hspace{1in}   & \hspace{1in}      &  \hspace{1in}     \\ \hline\hline
+&   &   &    \\ \hline
+ &  &     &    \\ \hline
+&  &   &     \\ \hline
+& &   &  \\ \hline
+\end{tabular}
+
+\vspace{.1in}
+Step3: 
+\begin{tabular}{|l||l|l|}
+\hline
+\hspace{.9in} & \hspace{1in}   & \hspace{1in}           \\ \hline\hline
+&   &      \\ \hline
+ &  &       \\ \hline
+&  &     \\ \hline
+\end{tabular}
+
+}
+\begin{center}
+\includegraphics[scale=.4]{DendoPlot.png}\\
+\end{center}
+\vspace{.01in}
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{ Based on the Dendogram that you have obtained, identify the clustering assignments of the points if there is only two clusters in the data. 
+}}{ \\ \vspace{3in}
+}{\hspace{-.2in}Total Score: 3}\\
+\end{enumerate}
+
+
+
+
+
+
+
+\item \TextInBoxTwo[lightBlueTwo]{6.25in}{ 
+ \TextInBoxOne{6.1in}{
+Consider a clustering problem of bivariate data:
+$A=\ColVec{6,2},
+B=\ColVec{7,3},
+C=\ColVec{3,2},
+D=\ColVec{5,4},
+E=\ColVec{1,1} $
+%F=\ColVec{4,0},
+where the points are labeled as A, B, C, D, E, F. The Euclidean distance between the points are provided in the distance matrix below:
+\begin{center}
+\vspace{-.1in}
+\begin{tabular}{|l||l|l|l|l|l|l|}
+\hline
+  & A    & B    & C    & D    & E       \\ \hline\hline
+A & 0     & 1.41 & 3 & 2.24  & 5.10         \\ \hline
+B & 1.41 & 0    & 4.12    & 2.24 & 6.32  \\ \hline
+C & 3     & 4.12    & 0    & 2.83  & 2.24  \\ \hline
+D & 2.24 & 2.24 & 2.83  & 0    & 5    \\ \hline
+E & 5.10    & 6.32 & 2.24 & 5 & 0        \\ \hline
+\end{tabular}
+\vspace{-.2in}
+\end{center}
+\vspace{.2in}
+ During an iteration of the K-means algorithm with 2 clusters, the points $\{A,B,D\}$ are assigned to Cluster1 and the rest of the points namely $\{C,E\}$ to the Cluster2. 
+}}
+
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{  Identify the resulting cluster centers for both the groups at the beginning   of the next iteration.
+}}{ \\ \vspace{2.5in}
+}{\hspace{-.2in}Total Score: 5}\\
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{ Compute the Withing Group Sum of Squares for  clusters provided in part(a).  
+}}{ \\ \vspace{3in}
+}{\hspace{-.2in}Total Score: 5}\\
+\end{enumerate}
+
+
+
+
+
+
+
+
+\item \TextInBoxTwo[lightBlueTwo]{6.25in}{ 
+ \TextInBoxOne{6.1in}{Consider the following diagram of a Perceptron:\\
+\begin{center}
+\includegraphics[scale=.3]{Perceptron_img.jpg}
+\end{center}
+Let the weights are given to be $\w_0=5$, $\w_1=2$, $\w_2=-3$, $\w_3=1$.  
+}}
+
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{Write down the mathemetical formulation of the above Perceptron.  Keep the nonlinear function to be the generic $f$ in your expression.
+}}{ \\ \vspace{2in}
+}{\hspace{-.2in}Total Score: 3}\\
+
+%\item \ExamQuestion{ \TextInBoxOne{5.7in}{If we consider the nonlinear function $f$ to be the Sigmoid function, then what would be the output from the above Perceptron?Assume, the observed covariates/imputs are given as
+%$x_1=4, x_2=1, X_3=-1$.  
+%}}{ \\ \vspace{3in}
+%}{\hspace{-.2in}Total Score: 5}\\
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{ If we consider the nonlinear function $f$ to be the {\bf ``ReLU''} (Rectified Linear Unit) function, then what would be the output from the above Perceptron? Assume, the observed covariates/imputs are given as
+$x_1=0, x_2=1, x_3=0$.  Note that ReLU$(x)=$Max$(x,0)$.
+}}{ \\ \vspace{1in}
+}{\hspace{-.2in}Total Score: 2}\\
+%\item \ExamQuestion{ \TextInBoxOne{5.7in}{Write down the mathemetical formulation of the above Perceptron.  Keep the nonlinear function to be the generic $f$ in your expression.
+%}}{ \\ \vspace{3in}
+%}{\hspace{-.2in}Total Score: 5}\\
+\vspace{1.4in}
+\end{enumerate}
+
+
+%\includepdf[pages=-]{ExamAssistanceNote_STAt101.pdf}
+
+
+
+
+
+\end{enumerate}
+
+
+\hrule
+\hrule
+\TextInBoxTwo[gray!25]{6.65in}{
+\begin{center}
+\small !!! All the Best !!! 
+\end{center}
+}
+\hrule
+\hrule
+\end{document}

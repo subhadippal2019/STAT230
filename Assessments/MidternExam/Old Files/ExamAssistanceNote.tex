@@ -1,0 +1,228 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+ \begin{document}
+\title{Exam Assistance Note}%replace X with the appropriate number
+%\author{Advanced Linear Models (PHST 781)\\
+%Department of Biostatistics and Bioinformatics} %if necessary, replace with your course title
+%\date{ $ 12^{th} $ October, 2018}
+\date{}
+ \maketitle
+ 
+
+ \renewcommand{\support}{S}
+\vspace{-1in}
+\DefBoxOne{Indicator Function}{\color{black}
+$\IndicatorA{x}{ A} =\TwoColFunction{1}{x\in A}. $
+}\\
+ \DefBoxOne{{\bf Properties of Probability:}}{\color{black}
+ Let $(\mathcal{F},  \B  , P )$ be a sample space along with the corresponding Borel Sigma Algebra and a Probability measure. Let $A, B \in \mathcal{B}$.  Then 
+\begin{itemize}
+\item $P(\varnothing)=0$ where $\varnothing$ denotes the Null set. 
+\item $0\leq P(A)\leq 1$. 
+\item $P(A^c)=1-P(A)$.
+\item  $P(A\cup B)= P(A)+P(B)-P(A\cap B)$. 
+\end{itemize}
+}\\
+\PropBox{ \color{black} {\bf Bonferron's Inequality:}
+If $A, B$ are two events then $\HLTEQ[white]{P(A\cap B)\geq P(A)+P(B)-1.}$}{}\\
+\ThmBox{
+\color{black}{\bf [Bayes' Theorem ]}
+Let $A_1, A_2, \ldots , n$ be a partition of the sample space,
+and let $B$ be any event.  Then, for each $ i = 1,2, ... ,n$\vspace{-.1in}
+$$ \HLTEQ[white]{\displaystyle P(A_i\mid B)= \frac{P(B \mid A_i ) P(A_i)}{ \HLTEQ[lightGreenOne]{\sum_{j=1}^{n} P(B \mid A_j ) P(A_j)}}. }$$\vspace{-.1in}
+}{}\\
+
+
+
+\DefBoxOne{Cumulative Distribution Function (cdf)}{\color{black}
+The cumulative distribution function or cdf of a random variable X, denoted by $F_{_X}(x)$, is defined by
+$\HLTEQ[white]{F_{_X}(\HLTEQ[white]{x})=P(X\leq \HLTEQ[white]{x})} \text{for all } \HLTEQ[white]{x}\in \R.$
+}\\
+
+\ThmBox{
+\color{black}{\bf [Properties of pdf ]}
+A function $f_x(x)$ is a pdf  of a continuous random variable X if and
+only if 
+\begin{enumerate}
+\item  $f_x(x) \geq  0$ for all $x \in \R$.
+\item  $ \int_{-\infty}^{\infty} f_X(x)dx=1$
+\end{enumerate}
+}{}\\
+
+\newcommand{\abs}[1]{\left \vert #1 \right\vert }
+\ThmBox{
+\color{black}{\bf [Transformation of Single Variables ]}
+Let X have pdf $f_x(x)$ and let $Y=g(X)$, where $g(x)$ is a monotone function.  Suppose that $f_X(x)$ is continuous on X
+and that $g^{-1}(y) $ has a continuous derivative on y. Then the pdf of Y is given by\vspace{-.3in}
+$$ \;\;\;\;\;\;\;\;\;\HLTEQ[white]{    f_Y(y):=f_X(g^{-1}(y))  \HLTEQ[lightGreenOne]{\abs{ \frac{d}{dy} g^{-1}(y)  }}   } .$$\vspace{-.2in}
+}{}\\
+
+\ThmBox{
+\color{black}{\bf [Many to one transformations ]}
+Let $X$ have pdf $f_X(x)$, let $Y=g(X)$. Suppose there exists a partition, $A_0,A_1,\ldots, A_k$, of $S_X$ such that
+$P(X \in  A_0) = 0$ and $f_X(x)$ is continuous on each $A_i's$.  Suppose there exist
+junctions $g_1(X), \ldots ,g_k(X)$, defined on $A_1, \ldots , A_k$, respectively, satisfying
+\begin{enumerate}
+\item $g(X) = g_i(X)$, for $x \in A_i$,
+\item $g_i(x)$ is monotone on $A_i$,
+\item the set $S_Y = \{y: y=g_i(x) \text{for some }x\in A_i\}$ is the same for each $i = 1, \ldots, k$,
+and
+\item $g_i^{-1}(y)$ has a continuous derivative on $y$, for each $i$
+Then for  $1, \ldots,k.$
+\vspace{-.21in}$${ \HLTEQ[white]{    f_Y(y):=  \left\{ 
+\begin{array}{ll}
+\sum_{i=1}^k f_X(g_i^{-1}(y))  \HLTEQ[lightGreenOne]{\abs{ \frac{d}{dy} g_i^{-1}(y)  }}     & \text{ for } y \in S_Y\\
+0 & \text{otherwise.}
+\end{array} 
+ \right. } }$$
+ \vspace{-.27in}
+\end{enumerate}
+}
+
+\newpage 
+\DefBoxOne{Quantile function }{\color{black}
+Inverse of a cdf   $F$,  also known as the Quantile function of the distribution is defined as following 
+${
+Q_{F}(y):=F^{-1}(\HLTEQ[white]{y}):= \HLTEQ{\inf\{ x: F(X)\geq \HLTEQ[white]{y}  \} } \text{ for } 0< \HLTEQ[white]{y}< 1).}$ {\bf  Note that the median $m_{_{Y}}:= F^{-1}(\frac{1}{2}).$}
+}
+
+\begin{center}
+\begin{tabular}{ |c|| c| c| c| c|}
+\hline
+ Distribution  & pdf  & Mean  & Variance  & MGF: $M_{_{X}}(t)$ \\ 
+ \hline\hline
+ Uniform$(\theta_1, \theta_2)$ & $  \frac{\IndicatorA{\HLTEQ[white]{x}}{[\theta_1, \theta_2]}}{\theta_2-\theta_1}$ & $ \frac{\theta_1+\theta_2}{2}$ & $\frac{(\theta_2-\theta_1)^2}{12}$ & $ \frac{e^{^{t\theta_2 }}-e^{^{t\theta_1 }}}{t(\theta_2-\theta_1)}$ \\ 
+ \hline
+  Gamma$(\alpha, \text{rate=}\beta)$ & $  \frac{ \beta^\alpha}{\Gamma\left( \alpha\right)}x^{\alpha-1} e^{-\beta x} \; \IndicatorA{x}{\R_{+}}$ & $\frac{\alpha}{\beta}$ & $\frac{\alpha}{\beta^2}$ & $  \frac{1}{(1-\frac{t}{\beta})^{\alpha}}$ \\ 
+ \hline
+  Exponential$(\text{rate=}\lambda)$ & $  \lambda e^{-\lambda x}\; \IndicatorA{x}{\R_{+}} $ & $\frac{1}{\lambda}$ & $\frac{1}{\lambda^2}$ & $  \frac{1}{(1-\frac{t}{\lambda})}$ \\ 
+  \hline
+$\chi^2_{k \text{df}}$ &  \multicolumn{4}{|c|}{$\chi^2_{k \text{df}} = \text{Gamma}(\frac{k}{2}, \text{rate=}\frac{1}{2}).$}\\
+ \hline
+   Beta$(\alpha, \beta)$ & $ \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1} (1-x)^{\beta-1} \IndicatorA{x}{(0,1)}$ & $ \frac{\alpha}{\alpha+\beta}  $ & $ \frac{\alpha \beta}{(\alpha+\beta)^2 (\alpha+\beta+1)}  $ & $  _1F_1 (a:=\alpha, b:=\alpha+\beta, t ) $ \\ 
+ \hline
+  Normal$(\mu,  \text{Var=}\sigma^2)$ & $  \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}\IndicatorA{x}{\R}$ & $ \mu $ & $ \sigma^2 $ & $ e^{\mu t +\frac{1}{2}\sigma^2 t^2 } $ \\ 
+ \hline
+\end{tabular}
+
+
+\PropBox{ {\bf Result:}\color{black}
+If $Z\sim N(0, 1)$ and $V\sim \chi^2_{\nu \text{df }}$ and $X, V$ are {\bf statistically independent} then  the random variable 
+$Y:= \frac{Z}{\sqrt{V/\nu}} \sim t_{\nu \text{ df} }.$
+}\\
+
+\PropBox{ {\bf Result:}\color{black}
+If $V_1\sim \chi^2_{\nu_1 \text{ df}}$ and $V_2\sim \chi^2_{\nu_2 \text{df }}$ and $V_1, V_2$ are {\bf statistically independent} then  the random variable 
+$Y:= \frac{{V_1}/{\nu_{_1}}}{{V_2}/{\nu_{_2}}} \sim  F_{\nu_1, \nu_2 }.$
+}
+
+
+
+\begin{tabular}{ |c|| c| c| c| c|}
+\hline
+ Distribution  & pdf  & Mean: $E(X)$  & Variance :$\text{Var}(X)$  & MGF:  $M_{_X}(t)$ \\ 
+ \hline\hline
+ Binomial$(n,p)$ & $   {n \choose x}p^x(1-p)^{(n-x)}, $
+ $x\in\{0,1, 2, \ldots, n\}$& $np$ & $np(1-p)$ & $ (1-p+pe^t)^n$ \\ 
+ \hline
+  Geometric$(p)$ & $ (1-p)^{x-1}p , x \in \{1, 2, 3, \ldots\} .$ & $  \frac{1}{p} $ & $\frac{1-p}{p^2}$& $ \frac{pe^t}{1-(1-p)e^t}$ \\ 
+ \hline
+  Poisson$(\lambda)$ & $  \frac{e^{-\lambda} \lambda^x}{(x!)}  $ for $x\in \{0, 1, 2, \ldots\} $& $\lambda$ & $\lambda$ & $ e^{\lambda (e^t-1)} $ \\ 
+ \hline
+ \hline
+\end{tabular}
+
+
+
+
+
+
+
+\end{center}
+\DefBoxOne{\color{black} Conditional Distribution}{\color{black}
+Let $(X, Y)$ be a continuous bivariate random vector with joint
+pdf $f(x,y)$ and marginal pdfs $f_{_{X}}(x)$ and $f_{_{Y}}(y)$. For any $x$ such that $f_{_{X}}(x)>0$, the
+conditional pdf of $Y$ given that $ X =x$ is the function of y denoted by $f(Y\mid x)$ and  defined by
+$$  f_{_{Y\mid X}} (y\mid x):= \frac{  f_{_{X,Y}}(x,y)  }{    f_{_{X}}(x)      }  \text{ for  all } x\in S_{_{Y\mid X=x},} $$ 
+where $  S_{_{Y\mid X=x}}  $ denotes the set of all possible values of $y $ when the random variable  $X$ takes the value $x$.
+}
+
+
+\DefBoxOne{\color{black} Independent Random Variables}{\color{black}
+Let $(X, Y)$ be a bivariate random vector with joint pdf  (or pmf)
+$f_{_{X,Y}}(x, y)$  (or $p_{_{X,Y}}(x, y)$ ) and marginal pdfs ( or pmfs) $f_{X}(x)$ and $f_{_Y}(y)$ (or $p_{_X}(x)$ and $p_{_X}(x)$ respectively ). Then  $X $ and $Y$ are called statistically independent random variables if,    
+$$ f_{_{X,Y}}(x, y)= f_{_X}(x)  f_{_Y}(y),  $$
+for all $(x,y)\in \R^2$ \text{ and }$ \support_{_{X,Y}}= \support_{X} \times \support_{Y}$, where $\support_{X}:=\{x\in R: f_{_{X}}(x)>0\}, $ $\support_{X}:=\{y\in R: f_{_{Y}}(y)>0\}$.
+}
+
+\PropBox{\color{black}
+Let $(X, Y)$ be a bivariate random vector with joint pdf (or pmf) $f(x, y)$ on the support $\support_{_{X,Y}}$. 
+Then $X$ and $Y$ are independent random variables if and only if there exist functions $g(x)$ and $h(y)$ ,   such that  the joint pdf can be represented as 
+$${f_{_{X,Y}}(x,y):= g(x)h(y)  }$$
+for all $(x,y)\in \R^2$ and  $\support_{_{X,Y}}=  \support_X \times \support_Y$,  where   $\support_{X}:=\{x\in R: g(x)>0\}, $ $\support_{X}:=\{y\in R: h(y)>0\}$.
+}\\
+
+\ThmBox{ \color{black}
+{Theorem:}\\
+Let X and Y be independent random variables. 
+\begin{enumerate}
+\item For any $A \in  \R$ and $B \in  \R$ , $\HLTY{P(X \in  A, Y \in  B)= P(X \in  A)P(Y \in  B)}$; that is,
+the events ${X \in  A}$ and ${Y \in  B}$ are independent events.
+\item  Let $g(x)$ be a function only of x and $h(y)$ be a function only of y. Then
+$$  E\left(\HLTY{g(X)h(Y)}\right) = \left[E\left(\HLTY{g(X)}\right)\right]\left[E\left(\HLTY{h(Y)}\right)\right].  $$
+ \item Assuming that the corresponding mgf's exist, $\HLTY{M_{X+Y}(t)=M_X(t)M_{Y}(t)}$, 
+ where $M_X(t)$, $M_{Y}(t)$, and  $M_{X+Y}(t) $ denote the mgf of X, Y and $X+Y$ respectively.
+\end{enumerate}
+
+}\\
+
+
+\DefBoxOne{Transformation of the Bivariate Continuous RV}{ \color{black}
+If (X, Y) is a continuous random vector with joint pdf $f_{_{X,Y}}(x, y)$.  If the random vector $(U,V)$  be defined by the {\bf  one-to-one } transformation $(U,V):= \left( \HLTY{g_{_1}(X,Y)},  \HLTY{g_{_2}(X,Y)}\right)$  from $\support_{_{X,Y}}$ to $\support_{_{U,V}}$,  then a  version of the  joint pdf  for $  (U, V)$ can  be obtained as
+\vspace{-.1in}
+$$
+\HLTEQ[white]{{  f_{_{U,V}}(u,v):=  f_{_{X,Y}}\left( \HLTY{ h_{_1}(u, v)}  ,  \HLTY{h_{_2}(u, v)} \right)  \HLTEQ[lightGreenOne]{ \left\vert  J(u,v)   \right\vert },   }}
+$$
+\vspace{-.1in}
+\newcommand{\pdv}[2]{{\frac{\partial #1  }{ \partial #2 }} }
+where $\vert  J(u,v)   \vert ,$ denotes the  abosolute value of the diterminat of the matrix \vspace{-.1in}$${J(u,v)}:=   \left[ \Col{ \pdv{x}{u}, \pdv{y}{u} } \; \Col{{ \pdv{x}{v} } , \pdv{y}{v} }   \right] 
+=
+ \HLTEQ[lightGreenOne]{\left[ \Col{ \pdv{  \HLTY{h_{_1}(u,v)}}{u}, \pdv{\HLTY{h_{_2}(u,v)}}{u} } \; \Col{{ \pdv{\HLTY{h_{_1}(u,v)}}{v}}  , \pdv{ \HLTY{h_{_2}(u,v)}}{v}}    \right]. }\vspace{-.1in}
+$$
+}\\
+\DefBoxOne{Gamma Function}{ \color{black}
+Let $\alpha>0$ then function $\Gamma: \R_{+} \mapsto \R_{+}$ is defined as the following integral, 
+$ \Gamma(\alpha)= \int_{0}^{\infty}  x^{\alpha-1} e^{-x} dx. $
+ $\HLTEQ{\Gamma\left( \frac{1}{2}\right)=\sqrt{\pi}}$ and if $\alpha>0$ then $\HLTEQ{\Gamma(\alpha+1)= \alpha \Gamma(\alpha)}$.
+Specifically,  if $n$ is a positive integer then $\HLTEQ{\Gamma(n)= (n-1)!}.$
+}
+\\
+\ThmBox{ \color{black}
+{\bf Chebychev's Inequality:}
+Let X be a random variable with  $E(X)=\mu$ and   Var$(X)=\sigma^2$. If $0<\sigma^2<\infty$ then 
+$$\HLTEQ[white]{ \displaystyle P(\abs{X-\mu}<t\sigma)\geq 1-\frac{1}{t^2}}   \text{  for  any } t>0.$$
+}\\
+
+\DefBoxOne{Convex Function}{ \color{black}
+A function $g(x)$ is {\bf convex} if 
+$$\HLTEQ[white]{\displaystyle 
+g\left( \lambda x+ (1 -\lambda)y\right)   \HLTEQ[yellow]{ \leq }   \lambda g(x) + (1-\lambda)g(y), }
+$$
+for all $x$ and $y$, and  $0<\lambda <1$.   
+}\\
+
+\PropBox{\color{black}
+ If a function $g(x)$ is twice differentiable then it is {\bf  convex } if $g^{\prime \prime}(x):= \frac{d^2(g(x))}{dx^2}>0 $ for all $x$
+}
+
+
+\ThmBox{ \color{black}
+{\bf Jensen's Inequality}:
+ For any random variable X,  if g(x) is a convex junction, then
+$$\displaystyle \HLTEQ[white]{  E\left(g(X)\right)\geq g\left(E(X) \right).} \vspace{-.2in}$$
+}
+
+
+
+
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset{0cm}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[R]{ }
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+} 
+\input{../MacroDefs/HeaderAssignment}
+ \begin{document}
+
+
+ 
+\title{\vspace{-.55in} Exam Assistance Note}%replace X with the appropriate number
+%\author{Advanced Linear Models (PHST 781)\\
+%Department of Biostatistics and Bioinformatics} %if necessary, replace with your course title
+%\date{ $ 12^{th} $ October, 2018}
+\date{}
+ \maketitle
+ 
+\thispagestyle{empty}
+ \renewcommand{\support}{S}
+\vspace{-1in}
+\DefBoxOne{}{\color{black}
+A few Functions: Here $0<\pi<1$ and $x\in \R$.
+\begin{center}
+\begin{tabular}{ |c|| c|}
+\hline
+$\text{Odds}$ & $\displaystyle \text{Odds}(\pi) = {\frac{\pi}{1-\pi}}$ \\
+\hline
+$\text{Logit}$ & $\displaystyle \text{Logit}(\pi) = {\log\left(\frac{\pi}{1-\pi}\right)}$ \\
+\hline
+$\text{Expit}$ & $\displaystyle \text{Expit}(x) = \frac{\exp(x)}{1+\exp(x)}$ \\
+\hline
+$\text{ReLU}$ & $\displaystyle \text{ReLU}(x) = \max(x,0)$ \\
+\hline
+$\text{tanh}$ & $\displaystyle \text{tanh}(x) =\frac{\exp(x)-\exp(-x)}{\exp(x)+\exp(-x)}$ \\
+\hline
+$\text{Sigmoid}$ & $\displaystyle \text{Sigmoid}(x) =\frac{1}{1+\exp(-x)}$ \\
+\hline
+$\text{PReLU}$ & $\displaystyle \text{PReLU}(x) =\max(\alpha x, x)$ for $0<\alpha<1$ \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.15in}
+}\\
+
+\vspace{.05in}
+
+\DefBoxOne{}{\color{black}
+For a probability vector ${\boldsymbol \pi}= (\pi_1, \pi_2, \ldots , \pi_k)$
+\begin{center}
+\begin{tabular}{ |c|| c|}
+\hline
+$\text{Misclassification rate}$ & $\displaystyle \text{error}({\boldsymbol \pi}) = 1- \max_{i = 1,\ldots, k}\pi_i$ \\
+\hline
+$\text{Gini Index}$ & $\displaystyle \text{Gini}({\boldsymbol \pi}) = \sum_{i=1}^{k}\pi_i(1-\pi_i)$ \\
+\hline
+$\text{Entropy}$ & $\displaystyle \text{Entropy}({\boldsymbol \pi}) = -\sum_{i=1}^{k}\pi_i\log(\pi_i)$ \\
+\hline
+
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.15in}
+}\\
+
+
+
+\includepdf[pages={2-5}]{ProblemSet2_stat380 _Answers.pdf}
+\includepdf[pages={8-12}]{ProblemSet2_stat380 _Answers.pdf}
+\includepdf[pages={14-18}]{ProblemSet2_stat380 _Answers.pdf}
+\includepdf[pages={21}]{ProblemSet2_stat380 _Answers.pdf}
+%
+%\hrule
+%\hrule
+%\TextInBoxTwo[gray!25]{6.65in}{
+%\begin{center}
+%!!! All the Best !!! 
+%\end{center}
+%}
+%\hrule
+%\hrule
+
+
+\end{document}

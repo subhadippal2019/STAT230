@@ -1,0 +1,434 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+ \begin{document}
+ 
+\title{Problem Set }%replace X with the appropriate number
+\author{STAT 380\\
+UAEU} %if necessary, replace with your course title
+%\date{ $ 26^{th} $ August, 2019}
+%\date{$3^{\text{rd}}$ August,  2022}
+ \maketitle\vspace{-.4in}
+ \noindent
+% \TextInBox{6 in }{Name: \vspace{.22 in}}\\
+%\; \TextInBox{6.05 in }{ Enrolled As: \MCOption[1.2in]{PHD Student} \MCOption[1in]{RA}\MCOption[1 in]{TA}}\\
+\TextInBox{6 in }{ 
+This is a  Student's Activity Task containing a few multiple type questions and a number of  descriptive type problems.  The activity is not a graded component of the course.  Its  objective is to encourage students  learning while solving problems and also to prepare for the upcoming exam.  
+  }\\
+ \vspace{.4in}
+ 
+ 
+ 
+
+
+\DefBoxOne{}{
+\begin{center}\color{black}
+Part I:  Short answer type questions.
+\end{center}
+}
+
+
+ {\Large Must Review: Review All the Quiz Problems.}
+\begin{enumerate}
+ \item \QuizQ{ \TextInBoxOne{5.4in}{
+If we consider a  Dataset that has 150 observations and 190 covariates ( independent variables) to model a continuous response variable.  Identify whether the following statement is True or False.\\
+ {\bf Statement: } There will be no problem fitting a  simple linear regression that can be used to obtain a predicted value of the response when the covariate values are available. 
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ {\bf Statement}: If it is possible to fit a Standard Linear Regression and a Ridge regression with $L_2$ penalty on the regression coefficients, then the absolute vakue of the estimated regression coefficients obtained from the Ridge Regression is always  smaller than that of the Standard Linear Regression. 
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ {\bf Statement: }  In the case of a LASSO regression that obtains the regression coefficients by minimizing the following objective function:
+ $$
+ \Vert \by -\bX\bbeta\Vert^2 +\lambda \sum_{j=1}^{p} \vert{\beta_j}\vert, \text{where } \lambda>0.
+$$
+The parameter $\lambda>0$ is a tuning parameter that is often called a model selection parameter as well. \\
+{\bf Statement: } The optimal value of the tuning parameter is typically  obtained using the AIC (or BIC, or Mallow's $C_p$) criteria.
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Consider a dataset with 7 covariates (explanatory variables) to model a continuous response variable.  Six  among the seven covariates are numerical in nature while one of the covariate, `Highest Education level' is categorical variable that can take either of the following four values:\\
+$$\{\text{ High-School}, \text{Bachelor's degree}, \text{Master's Degree}, \text{PHD or Higher} \}$$
+Note that, it is customary to introduce appropriate (multiple) `dummy variables' as covariates to incorporate  categorical. Categorical Covariates.  How many total regression coefficients, including the intercept,  are there in the constructed model ?
+}}{
+Ans:\MCOption[1in]{7}\MCOption[1in]{11}  \MCOption[1in]{10}\MCOption[1in]{9}
+}\\
+
+%*055*11#1
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+When performing the Standard Linear Regression on a dataset to model a continuous response,  a statistical analyst  wants to verify whether the assumption of the Normality of the model errors are satisfied or not.  Which one from the following statistical hypothesis tests are the most appropriate for the purpose. 
+}}{
+\MCOption[1.5in]{Shapiro Wilk's Test} 
+\MCOption[1.5in]{$\chi^2$-Test}
+ \MCOption[1.5in]{ Durbin-Watson Test } 
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+One of the primary assumptions of the standard linear regression is the Normality of the corresponding errors.  Based on the the visual inspection of the Normal-QQ plot (Theoretical Quantile vs Estimated Quantile) of the model residuals, a practitioner suspects that the Normality assumption may not be satisfied for the dataset.  Therefore, he/she conducts the standard Shapiro-Wilks's Test for Normality of the corresponding residuals and obtained a p-value of $0.0017$.  What can be concluded from the above information:
+}}{
+Ans:\\
+\MCOption[5in]{The Model Residuals Can Be Normally Distributed} \\
+ \MCOption[6.8in]{There is a Strong Evidence to Reject the Fact that the Model Residuals are  Normally Distributed. }
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+When performing the Standard Linear Regression on a dataset to model a continuous response,  a statistical analyst  wants to verify whether the assumption of the independence of the model errors are satisfied or not.  Which one from the following statistical hypothesis tests are the most appropriate for the purpose. 
+}}{
+\MCOption[1.5in]{Shapiro Wilk's Test} 
+\MCOption[1.5in]{$\chi^2$-Test}
+ \MCOption[1.5in]{ Durbin-Watson Test } 
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+One of the primary assumptions of the standard linear regression is the Normality of the corresponding errors.  Based on the the visual inspection of the standard  residual plot, a practitioner suspects that the assumption on the  independence of the model errors may not be satisfied for the dataset.  Therefore,  he/she conducts the standard Durbin-Watson Test of the corresponding residuals and obtained a p-value of $0.37$.  What can be concluded from the above information:
+}}{
+Ans:\\
+\MCOption[5in]{The  model residuals may not be correlated.  } \\
+ \MCOption[5in]{There is a Strong Statistical Evidence that the residuals are correlated. }
+ \MCOption[5in]{There is a some Statistical Evidence that the residuals are correlated. }
+}\\
+
+ 
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+In the context of Standard Linear Regression to model a continuous response variable, how do we check if there is 'Influential' point in the dataset. 
+}}{Ans: \\
+ \MCOption[5in]{It is a Influential point if the corresponding Cook's Distance is more than 0.5. }
+\MCOption[5in]{It is a Influential point if the corresponding Cook's Distance is less than 0.5. }
+\MCOption[5in]{It is a Influential point if the corresponding Cook's Distance is less than 0.05. }
+}\\
+
+
+%\item \QuizQ{ \TextInBoxOne{5.4in}{
+%Question whether to apply logistic regression or Linear Regression
+%}}{
+%
+%}\\
+
+
+%\item \QuizQ{ \TextInBoxOne{5.4in}{
+%{\bf Statement: } AIC BASED model selection
+%}}{
+%Ans:\MCOption{TURE} \MCOption{FALSE}
+%}\\
+
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+If we consider a 3 degree regression splines with 7 knot points, then how many regression coefficient parameters are there in the model? (i.e.  what is the dimension of the model?)
+}}{
+Ans:\MCOption[1in]{20}\MCOption[1in]{11}  \MCOption[1in]{9}\MCOption[1in]{10}
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+If we consider a 3 degree regression splines (cubic splines) with 20 knot points, then how many regression coefficient parameters are there in the model? (i.e.  what is the dimension of the model?)
+}}{
+Ans:\MCOption[1in]{24}\MCOption[1in]{16}  \MCOption[1in]{30}\MCOption[1in]{76}
+}\\
+
+
+%
+%
+%\item \QuizQ{ \TextInBoxOne{5.4in}{
+%Two different set of knots
+%}}{
+%
+%}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{ Let $\pi\in (0,1)$ such that  $\text{Logit}(\pi)=1.12$.  What is the most appropriate value of $\pi$ from the list below. 
+}}{
+\MCOption[1in]{$0.543$}  \MCOption[1in]{$0.97$} \MCOption[1in]{$0.754$}\MCOption[1in]{$3.065$}
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{ Let $x$ be a real number such that  $\text{Expit}(x)=0.65$.  What is the most appropriate value of $x$ from the list below. 
+}}{
+\MCOption[1in]{$0.268$}  \MCOption[1in]{$-0.187$} \MCOption[1in]{$1.916$}\MCOption[1in]{$3.065$}
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{ Let $\pi\in (0,1)$ such that  $\text{Logit}(\pi)=2.5$.  What is the most appropriate value of $\text{Odds}(\pi)$ from the list below. 
+}}{
+\MCOption[1in]{$0.924$}  \MCOption[1in]{$12.18$} \MCOption[1in]{$0.397$}\MCOption[1in]{$9.11$}
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+What is the value of the following function $\text{Logit}(0.8)?$
+}}{
+\MCOption[1in]{$12.183$}  \MCOption[1in]{$0.924$} \MCOption[1in]{$0.397$}\MCOption[1in]{$1.12$}
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+What is the value of the following function $\text{Expit}(2.5)?$
+}}{
+\MCOption[1in]{$1.87$}  \MCOption[1in]{$0.602$} \MCOption[1in]{$0.097$}\MCOption[1in]{$1.99$}
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+In a game of rolling a fair dice twice. A player wins if both throws result in  sixes. What is the odds of winning the game?
+}}{
+Ans:  \MCOption[1in]{$\frac{1}{36}$}\MCOption[1in]{$\frac{1}{6}$}  \MCOption[1in]{$\frac{1}{35}$}\MCOption[1in]{$\frac{35}{36}$}
+}\\
+
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Imagine we have a sample of 150 points, 70 from ‘Class 0’ ( For example: healthy) and the others from ‘Class 1 ( For Example: Not Healthy). Let us assume that a classification technique (Medical Testing) can correctly identify 65 out of the 70 belongs to the ‘Class 0’ (positive for all Diseased) while it can correctly detect 77 of objects that belongs to the ’Class1’(Not Healthy). Calculate the {\bf Sensitivity}  for the corresponding Classification Technique. 
+}}{
+\MCOption[1in]{$96.25\%$}\MCOption[1in]{$91.31\%$}  \MCOption[1in]{$92.92\%$}\MCOption[1in]{$93.90\%$}
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Imagine we have a sample of 150 points, 70 from ‘Class 0’ ( For example: healthy) and the others from ‘Class 1 ( For Example: Not Healthy). Let us assume that a classification technique (Medical Testing) can correctly identify 65 out of the 70 belongs to the ‘Class 0’ (positive for all Diseased) while it can correctly detect 77 of objects that belongs to the ’Class1’(Not Healthy). Calculate the {\bf Specificity}  for the corresponding Classification Technique. 
+}}{
+\MCOption[1in]{$96.25\%$}\MCOption[1in]{$95.59\%$}  \MCOption[1in]{$92.85\%$}\MCOption[1in]{$93.90\%$}
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Imagine we have a sample of 150 points, 70 from ‘Class 0’ ( For example: healthy) and the others from ‘Class 1 ( For Example: Not Healthy). Let us assume that a classification technique (Medical Testing) can correctly identify 65 out of the 70 belongs to the ‘Class 0’ (positive for all Diseased) while it can correctly detect 77 of objects that belongs to the ’Class1’(Not Healthy). Calculate the {\bf Yuden Index } for the corresponding Classification table. 
+}}{
+\MCOption[1in]{$0.891$}\MCOption[1in]{$0.938$}  \MCOption[1in]{$0.929$}\MCOption[1in]{$1.86$}
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Imagine we have a sample of 150 points, 70 from ‘Class 0’ ( For example: healthy) and the others from ‘Class 1 ( For Example: Not Healthy). Let us assume that a classification technique (Medical Testing) can correctly identify 65 out of the 70 belongs to the ‘Class 0’ (positive for all Diseased) while it can correctly detect 77 of objects that belongs to the ’Class1’(Not Healthy). Calculate the Yuden Index for the corresponding Classification table. 
+}}{
+\MCOption[1in]{$0.891$}\MCOption[1in]{$0.938$}  \MCOption[1in]{$0.929$}\MCOption[1in]{$1.86$}
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Consider analyzing a data-set that has a binary categorical response while all the covariates are numerical and continuous in nature.  We know that a logistic regression and also a quadratic discriminant analysis is applied for  modeling the response variable.  To compare the performance of both the method a ROC curve is constructed and the corresponding Area Under the ROC Curve (AUC) is calculated based on their performance in a Testing set. The AUC for the logistic regression is 0.91 while the AUC for the QDA is 0.85.  Identify whether the following statement is TRUE or FALSE. 
+{\bf Statement: } The Logistic regression is performing bettern then that of the QDA for this data set that is evaluated based on the testing set. 
+}}{
+\MCOption[1in]{TRUE}\MCOption[1in]{FALSE} 
+}\\
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+\newpage
+ 
+ 
+ 
+ 
+
+\DefBoxOne{}{
+\begin{center}\color{black}
+Part II:  Descriptive Problems. 
+\end{center}
+}
+%\DefBoxOne{Notations}{
+%$$ \Onebf_k=\left[ \begin{array}{c}1\\1\\\vdots \\1\end{array}\right]_{k\times 1} \text{ , }  J_{k}=\left[ \begin{array}{cccc}1&1 & \cdots & 1\\1& 1& \cdots&  1\\\vdots & \vdots & \ddots  &\vdots \\1& 1 &\cdots & 1\end{array}\right]_{k\times k} \text{ and } I_{k}=\left[ \begin{array}{cccc}1&0 & \cdots & 0\\0& 1& \cdots&  0\\\vdots & \vdots & \ddots  &\vdots \\0& 0 &\cdots & 1\end{array}\right]_{k\times k} \text{ for } k\in \Z_{+}.   $$
+%
+%}
+\begin{enumerate}
+\item {\Large Must Review: Review All the Quiz Problems.}
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Let us consider a Data-set that has a continuous response, Y and a numerical continuous covariate $X$.  The observed data is provided as $\{(x_1, y_1), (x_2,y_2), \ldots , (x_n, y_n)\}$, where $n$ is the number of observations.  Assume that $n\geq 100$.  Based on a preliminary analysis,  it is evident that a nonlinear polynomial of the covariate would be a preferred choice for modeling the response.  However,  a major task is to identify the appropriate degree of the fitted polynomial. 
+\begin{enumerate}
+\item Write a polynomial regression model  of degree $K$ for the response variable $Y$ and the covariate $X$.
+\item Provide a algorithm based on Cross-validation to select the optimal value for $K$.
+\end{enumerate}
+}}{
+
+}\\
+
+Ans: The Dataset that has a continuous response, Y and a numerical continuous covariate $X$.  The observed data is given as $\{(x_1, y_1), (x_2,y_2), \ldots , (x_n, y_n)\}$, where $n$ is the number of observations.  We are assuming that $n\geq 100$.  
+
+\begin{enumerate}
+\item The polynomial regression model for degree $K$, $K\geq 2$ is provided below:
+\begin{eqnarray*}
+Y= \beta_0+\beta_1X+ \beta_2 X^2 + \ldots +\beta_KX^K+ \epsilon \nonumber
+\end{eqnarray*}
+where the response is $Y$ and the covariate is $X$.  Note that, according to the model assumption,  each data-point in the dataset satisfies the above equation. That is,   If $\mathcal{D}= \{(x_1, y_1), (x_2,y_2), \ldots , (x_n, y_n)\}$ denotes all the data point, then 
+\begin{eqnarray*}
+y_i= \beta_0+\beta_1x_i+ \beta_2 x_i^2 + \ldots +\beta_Kx_i^K+ \epsilon_i \text{ for } i =1 , 2, \ldots, n, 
+\end{eqnarray*}
+where $\epsilon_i$ is assumed to be Normally distributed with mean 0 and constant variance $\sigma^2$.  $\epsilon_1, \epsilon_2, \ldots, \epsilon_n$ are assumed to be  statistically independent to each other. 
+
+\vspace{.5in}
+\item A major problem in the polynomial regression is to select the degree of the polynomial equation based on minimizing the Cross Validated Errors.   The basic idea of evaluating/calculation  the model error for any Cross validation procedure is is the following: 
+
+\begin{itemize}
+\item 
+The Cross-validation (CV)  is build upon the idea on  partitioning the data randomly into folds, or non-overlapping sub-samples.
+\item Each time, one of the folds is used as the validation set and the remaining  folds serve as the training set.
+\item The overall performance is computed by appropriately, combining the model's prediction error on each of the  validation sets.
+\end{itemize}
+
+In the current context we apply the general principles of Cross Validation to compute the Cross-Validated Mean Square Error fro the polynomial model of each degree and choose the degree that corresponds to  the minimum Cross Validated error. To describe the algorithm, let us use the following notation:
+
+To perform a $M$ Fold cross-validation, let  $\mathcal{D}_1, \mathcal{D}_2, \ldots,  \mathcal{D}_M$ is the random partition of the entire data. i.e.  
+$\mathcal{D}_1\cup \mathcal{D}_2\cup \ldots\cup \mathcal{D}_M= \mathcal{D}$ and $\mathcal{D}_i\cap \mathcal{D}_j =\emptyset$ for $i\neq j$.
+
+
+The following is the details of Algorithm: 
+
+\begin{enumerate}
+\item[Step 1:] First partition the data in  $\mathcal{D}_1, \mathcal{D}_2, \ldots,  \mathcal{D}_M$. A typical procedure is to randomly permute the rows of the data and split it into $M$ equal parts. 
+\item[Step2: ]  Select a value for $k$, (lets say $k=3$ for example) 
+\item[Step3: ] Calculate the Cross Validated MSE in the following way.  For Each $m=1, \ldots , M$. 
+\begin{enumerate}
+\item Fit the $k$-degree polynomial model on all the data points {\bf except} for the $m^{th}$ validation set $\mathcal{D}_{m}$.  \\
+If $k=3$, fit the following model: 
+$Y= \beta_0+\beta_1X+\beta_2X^2+\beta_3X^3+\epsilon$
+\item Calculate the Predicted values for the response variable.  Let $\widehat{y}_i$ denotes the corresponding predicted values for the response $Y$ for all data-points that are in the $m^{th}$ validation set $\mathcal{D}_m$.
+
+\item Calculate the Cross-Validated Error for the $m^{th}$ validation set as following 
+$$\text{CV}_{m}(k):=\frac{1}{n_{_{m }}} \sum_{i\in \mathcal{D}_{m}} \left( y_i -\widehat{y}_i\right)^2,   $$
+where $n_{_m}$ denotes the number of data points in the $m^{th}$ validation set $\mathcal{D}_m$.
+\end{enumerate}
+Calculate $$  CV(k)=\frac{1}{M} \sum_{m=1}^M \text{CV}_{m}(k).$$
+
+\item[Step4:] Finally, when we calculate the   $CV(k)$ for all possible candidate value of the degree  $k$, lets say $k=1, 2, 3, \ldots K$ then choose the optimal degree $k^{\star}$ that provides the minimum $CV(k^{\star})$. 
+ $$k^{\star}:= \arg \min_{k\in 1, 2, \ldots K}  CV(k).$$
+
+
+\end{enumerate}
+
+
+
+
+
+\end{enumerate}
+
+\newpage 
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Let us consider a Dataset that has a continuous response, Y and a numerical continuous covariate $X$.  The observed data is provided as $\{(x_1, y_1), (x_2,y_2), \ldots , (x_n, y_n)\}$, where $n$ is the number of observations.  Assume that $n\geq 100$.  Based on a preliminary analysis,  it is evident that a regression spline of degree 4.  However,  a major task is to identify the appropriate knots points for the fitted model. 
+\begin{enumerate}
+\item Provide a algorithm based on Cross-validation to select the optimal knot-points.
+\end{enumerate}
+}}{
+
+}\\
+\newpage
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Let us consider a Dataset that has a continuous response, Y and the numerical continuous covariates $\bX=(X_1, X_2, \ldots, X_n)$.  The observed data is provided as $\{(\bx_1, y_1), (\bx_2,y_2), \ldots , (\bx_n, y_n)\}$, where $n$ is the number of observations.  Assume that $n\geq 100$.  
+\begin{enumerate}
+\item Write down the objective function of the LASSO regression model. 
+\item Write down the procedure to select the tuning parameter $\lambda>0$.
+\end{enumerate}
+}}{
+
+}\\
+
+Ans: The Dataset that has a continuous response, Y and a numerical continuous covariate $X$.  The observed data is given as $\{(x_1, y_1), (x_2,y_2), \ldots , (x_n, y_n)\}$, where $n$ is the number of observations.  We are assuming that $n\geq 100$.  
+
+\newcommand{\bRdg}{\hat{\beta}_{\text{ridge}, \lambda}}
+\begin{enumerate}
+\item The Objective function for the lasso regression is: 
+
+
+\newcommand{\bLso}{\hat{\beta}_{\text{lasso}, \lambda}}
+
+
+\DefBoxOne{LASSO Regression}{\color{black}
+Let $(y_i, \bx_i)\in \R\times \R^{p}$ for $i=1, \ldots n $ are observed data.  A LASSO Regression estimator $\bLso$ is via following minimization problem:
+$$\bLso=\text{Argmin}_{\bbeta}  \Vert{\bf y}-\bX\bbeta\Vert^2+\HLTEQ{\HLTY{\lambda}\sum_{j=1}^{p}\vert \beta_j \vert},$$
+$\lambda>0$.
+}\\
+\vspace{.5in}
+\item A major issue in the LASSO regression is to select the tuning parameter $\lambda>0$ by minimizing the corresponding Cross Validated Errors.   The basic idea of evaluating/calculation  the model error for any Cross validation procedure is is the following: 
+
+\begin{itemize}
+\item 
+The Cross-validation (CV)  is build upon the idea on  partitioning the data randomly into folds, or non-overlapping sub-samples.
+\item Each time, one of the folds is used as the validation set and the remaining  folds serve as the training set.
+\item The overall performance is computed by appropriately, combining the model's prediction error on each of the  validation sets.
+\end{itemize}
+\vspace{.3in}
+In the current context we apply the general principles of Cross Validation to compute the Crosss-Validated Mean Square Error for the LASSO regression in choosing the optimal value of the tuning parameter $\lambda>0$. To describe the algorithm, let us use the following notation:
+
+To perform a $M$ Fold crossvalidation, let  $\mathcal{D}_1, \mathcal{D}_2, \ldots,  \mathcal{D}_M$ is the random partition of the entire data. i.e.  
+$\mathcal{D}_1\cup \mathcal{D}_2\cup \ldots\cup \mathcal{D}_M= \mathcal{D}$ and $\mathcal{D}_i\cap \mathcal{D}_j =\emptyset$ for $i\neq j$.
+
+
+The following is the details of Algorithm: 
+
+\begin{enumerate}
+\item[Step 1:] First partition the data in  $\mathcal{D}_1, \mathcal{D}_2, \ldots,  \mathcal{D}_M$. A typical procedure is to randomly permute the rows of the data and split it into $M$ equal parts. 
+\item[Step2: ]  Select a value for $\lambda$, (lets say $k=30.5$ for example) 
+\item[Step3: ] Calculate the Cross Validated MSE in the following way.  For Each $m=1, \ldots , M$. 
+\begin{enumerate}
+\item Fit the LASSO regression with the specific choice for $\Lambda$ on all the data points {\bf except} for the $m^{th}$ validation set $\mathcal{D}_{m}$.  \\
+If $\lambda=30.5$, we consider minimizing the following objective function: 
+$$ \Vert{\bf y}-\bX\bbeta\Vert^2+\HLTEQ{\HLTY{30.5}\sum_{j=1}^{p}\vert \beta_j \vert}.$$
+
+\item Calculate the Predicted values for the respons. Let $\widehat{y}_i$ denotes the corresponding predicted values for the response $Y$ for all data-points that are in the $m^{th}$ validation set $\mathcal{D}_m$.
+
+\item Calculatee the Cross-Validated Error for the $m^{th}$ validation set as following 
+$$\text{CV}_{m}(\lambda):=\frac{1}{n_{_{m }}} \sum_{i\in \mathcal{D}_{m}} \left( y_i -\widehat{y}_i\right)^2,   $$
+where $n_{_m}$ denotes the number of data points in the $m^{th}$ validation set $\mathcal{D}_m$.
+\end{enumerate}
+Calculate $$  CV(\lambda)=\frac{1}{M} \sum_{m=1}^M \text{CV}_{m}(\lambda).$$
+
+\item[Step4:] Finally, when we calculate the   $CV(\lambda)$ for all possible candidate values of $\lambda$ ,  then choose the optimal  $\lambda^{\star}$ that provides the minimum $CV(\lambda^{\star})$. 
+ $$\lambda^{\star}:= \arg \min_{k\in 1, 2, \ldots K}  CV(\lambda).$$
+
+
+\end{enumerate}
+
+
+
+
+
+\end{enumerate}
+
+\newpage
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Let us consider a Dataset that has a continuous response, Y and a numerical continuous covariate $\bX=(X_1, X_2, \ldots, X_n)$.  The observed data is provided as $\{(\bx_1, y_1), (\bx_2,y_2), \ldots , (\bx_n, y_n)\}$, where $n$ is the number of observations.  Assume that $n\geq 100$.  
+\begin{enumerate}
+\item Write down the objective function of a Ridge regression model. 
+\item For a given value of $\lambda>0$, what is the estimated regression coefficients for the regression parameter $\bbeta$? 
+
+\item Write down the procedure to select the optimal value for the tuning parameter $\lambda>0$.
+\end{enumerate}
+}}{
+
+}\\
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,418 @@
+%\documentclass[noinfoline]{imsart}
+%\usepackage{amsmath,amstext,amssymb}
+%%\usepackage[top=1.5in, bottom=1.5in, left=1.2in, right=1.2in]{geometry}
+%% settings
+%%\pubyear{2005}
+%%\volume{0}
+%%\issue{0}
+%%\firstpage{1}
+%%\lastpage{8}
+%\arxiv{arXiv:0000.0000}
+\usepackage{subcaption}
+%\startlocaldefs
+%\numberwithin{equation}{section}
+%\theoremstyle{plain}
+%\newtheorem{thm}{Theorem}
+%\endlocaldefs
+\usepackage{lipsum} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy} 
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+%\usepackage{eufrak}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{epstopdf} 
+\usepackage{natbib}
+\usepackage{undertilde}
+
+\usepackage{tfrupee}
+
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes.symbols}
+%%%%%%%%% shaddow image %%%%%
+\usepackage{calligra}
+
+%\newcommand{\logLik}{\text{\calligra l}\,}
+%\usepackage{calligra,amsmath,amssymb}
+
+\usepackage{mathrsfs}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it} 
+% \newcommand{\logLik}{ \mathpzc{l}}
+ \newcommand{\logLik}{ \mathbb{\ell}_{_n}}
+  \newcommand{\Lik}{ \mathcal{L}_{_n}}
+  \newcommand{\score}{\mathpzc{S}_{_n}}
+  %\newcommand{\Finfo}{1}{ \mathpzc{I}_{#1}}
+  \NewDocumentCommand{\Finfo}{O{ }}{ \mathcal{I}_{_{#1}}}
+\newcommand{\Bias}[1]{  \text{Bias}\left(#1\right)   }
+\newcommand{\Var}[1]{  \text{Var}\left(#1\right)  }
+\newcommand{\Mse}[1]{  \text{Mse}\left(#1\right)}   
+
+\newcommand{\gCalli}{\text{\calligra g}\,}
+% some parameters for customization
+\def\shadowshift{3pt,-3pt}
+\def\shadowradius{6pt}
+
+\colorlet{innercolor}{black!60}
+\colorlet{outercolor}{gray!05}
+
+% this draws a shadow under a rectangle node
+\newcommand\drawshadow[1]{
+    \begin{pgfonlayer}{shadow}
+        \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+        \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+        \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+        \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+        \shade[top color=innercolor,bottom color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+        \shade[left color=innercolor,right color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+        \shade[bottom color=innercolor,top color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+        \shade[outercolor,right color=innercolor,left color=outercolor] ($(#1.south west)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+        \filldraw ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)-(\shadowradius/2,\shadowradius/2)$);
+    \end{pgfonlayer}
+}
+
+% create a shadow layer, so that we don't need to worry about overdrawing other things
+\pgfdeclarelayer{shadow} 
+\pgfsetlayers{shadow,main}
+
+\newsavebox\mybox
+\newlength\mylen
+
+\newcommand\shadowimage[2][]{%
+\setbox0=\hbox{\includegraphics[#1]{#2}}
+\setlength\mylen{\wd0}
+\ifnum\mylen<\ht0
+\setlength\mylen{\ht0}
+\fi
+\divide \mylen by 120
+\def\shadowshift{\mylen,-\mylen}
+\def\shadowradius{\the\dimexpr\mylen+\mylen+\mylen\relax}
+\begin{tikzpicture}
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[#1]{#2}};
+\drawshadow{image}
+\end{tikzpicture}}
+
+%\begin{document}
+%
+%\noindent\shadowimage[width=6cm]{image}\par\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+%\usepackage{subfig}
+\usepackage[final]{pdfpages}
+
+\usepackage{algorithm}  %@subhajit
+\usepackage{algpseudocode} %@subhajit
+\usepackage{algorithmicx}     %@subhajit
+\usepackage{undertilde}
+
+
+\newcommand{\sphere}{{\mathbb{S}}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\LatentV}{V}
+\newcommand{\NC}{m}
+\newcommand{\Priorf}{f_{prior}}
+\newcommand{\FWOne}[2]{{{}_{1}\Psi _{1}\left[{\begin{matrix}(\frac{#1}{2},\frac{1}{2})\\(1,0)\end{matrix}};#2\right]} 
+}
+
+
+\newcommand{\HyPriorMu}{\thetabf}
+\newcommand{\HyPriorAlpha}{\alpha}
+\newcommand{\HyPriorBeta}{\beta}
+\newcommand{\HyPriorK}{\zeta}
+\newcommand{\Indicator}[1]{\mathbb{I}({#1 })}
+\newcommand{\IndicatorA}[2]{\mathbb{I}_{#2}({#1 })}
+\newcommand{\xb}{\bm{x}}
+\newcommand{\bx}{\bm{x}}
+
+
+
+\newcommand{\bX}{\bm{X}}
+\newcommand{\by}{\bm{y}}
+\newcommand{\bZ}{\bm{Z}}
+\newcommand{\bF}{\bm{F}}
+\newcommand{\btheta}{\bm{\theta}}
+\newcommand{\Bpi}{\boldsymbol{\pi}}
+\newcommand{\thetabf}{\boldsymbol{\theta}}
+\newcommand{\Thetabf}{\boldsymbol{\Theta}}
+\newcommand{\taubf}{\boldsymbol{\tau}}
+\newcommand{\Tr}{Tr}
+\newcommand{\HaarMu}{\mu}
+\newcommand{\RestMu}{\mu_{\delta}}
+\newcommand{\ConstOne}{K}
+
+\newcommand{\bM}{\bm{M}}
+\newcommand{\bD}{\utilde{\bm{D}}}
+\newcommand{\bV}{\bm{V}}
+\newcommand{\loglikmix}{\mathcal{L}_{\bM,\bD,\bV}}
+\newcommand{\hypdc}{{}_0F_1\left(\frac{n}{2},\frac{D_c^2}{4}\right)}
+
+
+\usepackage{xstring}
+\usepackage[normalem]{ulem}
+\definecolor{ultramarine}{RGB}{38,29,163}
+\newcommand\PalDel[1]{{\color{red} {\sout{#1}}}}
+\newcommand\Pal[1]{{\color{ultramarine}{#1}}}
+\newcommand\PalRp[2]{\PalDel{#1} \Pal{#2}}
+\newcommand\PalCmnt[1]{{\color{ultramarine} {[[[***PAL:  #1 ***]]]}}}
+
+\newcommand{\qedwhite}{\hfill \ensuremath{\Box}}
+\newcommand{\SpaceD}{\mathcal{S}_p}
+\newcommand{\SpaceM}{\widetilde{\mathcal{V}}_{n,p}}
+\newcommand{\SpaceV}{\mathcal{V}_{p,p}}
+\newcommand{\SpaceF}{\mathbb{R}^{n,p}}
+\newcommand{\StiefelS}{\mathcal{V}_{n,p}}
+\newcommand{\SpacePi}{\mathbb{S}_{\pi}}
+\newcommand{\ML}{{\cal{ML}}}
+\newcommand{\ProdSpace}{\boldsymbol{\Theta}}
+\newcommand{\ThetaAndPi}{\Xi}
+\newcommand{\ClassML}{\mathcal{C}_{\ML}}
+\newcommand{\balpha}{\bm{\alpha}}
+\newcommand{\bbeta}{\bm{\beta}}
+\newcommand{\bEta}{\bm{\eta}}
+\newcommand{\bd}{{\utilde{\bm{d}}}}
+\newcommand{\BoEta}{{\utilde{\boldsymbol{\eta}}}}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{result}{Result}
+\newtheorem{defn}{Definition}
+
+\newcommand{\define}[2]{ \begin{definition}[#1]  #2  \end{definition}  }
+
+\newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\pdvtwo}[2]{\frac{\partial^2#1}{{\partial#2}^2}}
+
+
+\newcommand{\mubf}{\boldsymbol{\mu}}
+\newcommand{\sumI}{ \sum_{i=1}^{n}}
+\newcommand{\Ybar}{{\overline{Y}}}
+
+\newcommand{\Expectation}[1]{\mathbb{E}{[#1]}}
+\newcommand{\priorXzero}{\Psi}
+\newcommand{\iMat}{\mathbf{I}_{p}}
+
+% 
+% \newtheorem{thm}{Theorem}[section]
+% \newtheorem{cor}[thm]{Corollary}
+% \newtheorem{lem}[thm]{Lemma}
+%\newtheorem{proposition}{Proposition}
+
+%\newtheorem{theorem}{Theorem}[chapter]%To link the theorem to each chapter uncomment the chapter option
+%\newtheorem{lemma}{Lemma}%[theorem]% To link each lemma to a theorem uncomment the theorem option
+%\newtheorem{corollary}{Corollary}%[theorem]% To link each corollary to a theorem uncomment the theorem option
+% to link a corollary to a chapter change the theorem option to chapter
+%\newtheorem{definition}{Definition}%[chapter] %the same is true for both definitions and assumptions
+\newtheorem{assumption}{Assumption}%[chapter] %
+%\newtheorem{proposition}{Proposition}[chapter]
+%\newtheorem{fact}{Fact} %%% added by @subho
+\newcommand{\StrongNBD}[2]{S_{#1}{#2}}
+\newcommand{\bpi} {\boldsymbol{\pi}}
+\newcommand{\bphi} {\boldsymbol{\phi}}
+\newcommand{\bb}[1]{\boldsymbol{#1}}
+% Definitions of handy macros can go here
+
+\newcommand{\normtwo}[1]{{\left\lVert#1\right\rVert}_2}
+
+\newcommand{\dataset}{{\cal D}}
+\newcommand{\fracpartial}[2]{\frac{\partial #1}{\partial  #2}}
+\newcommand{\Lesbegue}[1]{\mu_{\btheta_{#1},\bpi_{#1}}}
+\newcommand{\fthetapi}[1]{f_{\btheta_{#1},\bpi_{#1}}}
+% Heading arguments are {volume}{year}{pages}{submitted}{published}{author-full-names}
+\newcommand{\doublehat}[1]{%
+    \settoheight{\dhatheight}{\ensuremath{\widehat{#1}}}%
+    \addtolength{\dhatheight}{-0.35ex}%
+    \widehat{\vphantom{\rule{2pt}{\dhatheight}}%
+    \smash{\hspace{-0.5mm}\widehat{#1}}}}
+
+\newcommand{\hyp}{{}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)}
+\newcommand{\hypinline}{{}_0F_1\left({n}/{2},{D^2}/{4}\right)}
+
+\newcommand{\partialhyp}[1]{\frac{\partial}{\partial\,{d_{#1}}}\,\left[\hyp\right]}
+
+\newcommand{\fracProbZ}[1]{\frac{\langle Z_{ic} \rangle \, #1}{\sum_{i=1}^{N} \langle Z_{ic}\rangle  } }
+\newcommand{\EmVar}[1]{\widetilde{#1}^{(c)}}
+
+\newcommand{\IMDY}{{\it{CCPD}}}
+\newcommand{\JMDY}{{\it{JCPD}}}
+
+\newcommand{\DYlang}{\frac{\exp(\nu\,\bEta^T\bd)}{{\left[{}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)\right]}^{\nu}}}
+
+\newcommand{\logDYlang}{\nu\,\bEta^T\bd - \nu\,\log\left({}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)\right)}
+
+\newcommand{\lhyp}{\log\left({}_0F_1\left(\frac{n}{2},\frac{D^2}{4}\right)\right)}
+
+%\jmlrheading{1}{2000}{1-48}{4/00}{10/00}{SS \& JH \& AB}
+
+% Short headings should be running head and authors last names
+
+%\ShortHeadings{BDP and cIBP}{SS \& JH \& AB}
+%\firstpageno{1}
+
+\newcommand{\diam}[1]{{{#1}^{\ast}}}
+
+%%% coloring option %%%
+\definecolor{auburn}{rgb}{0.53, 0.1, 0.5}
+\newcommand{\sss}{\color{auburn}}  %%% for Subhajit
+\newcommand{\sse}{\color{black}}
+\newcommand{\attn}{\color{red}}
+\newcommand{\rms}{\color{magenta}}  %%% for Riten
+\newcommand{\rme}{\color{black}}
+\newcommand{\MLDensity}{f_{\ML}}
+\setlength{\parindent}{0cm}
+\newcommand{\posterior}
+
+\newcommand{\variableX}{\bd}
+\newcommand{\funch}{\mathfrak{h}}
+\newcommand{\IndVzero}[1]{\mathbb{I}({X\in \mathcal{V}^{#1}_0})}
+\newcommand{\Rnp}{\mathbb{R}^{n \times p}}
+\newcommand{\Rpp}{\mathbb{R}^{p \times p}}
+\newcommand{\vecnorm}[1]{\lVert #1\rVert}
+
+\newcommand{\etapsiD}{\eta_{\priorXzero}}
+\newcommand{\BoEtapsiD}{\BoEta_{\priorXzero}}
+
+\newcommand{\DMp}{\mathcal{D}^{p \times p}}
+\newcommand{\Rplus}{\mathbb{R}_{+}}
+\newcommand{\prodMeasure}{\Upsilon}
+
+\newcommand{\m}{{\bf m_{\BoEta}}} 
+\newcommand{\SetWithMode}{\mathcal{S}}
+\newcommand{\SetWithModePrime}{\mathcal{S}}
+\newcommand{\TargetComp}{\mathcal{S}^{\star}}
+
+\newcommand{\ConstCondDen}{K_{\nu, \BoEta}} 
+
+\newcommand{\hyparam}[2]{
+    \IfEqCase{#1}{
+        {M}{\xi^{#2}_c}
+        {V}{\gamma^{#2}_c}%
+        
+    }
+  }
+\newcommand{\threepartdef}[6]
+{
+	\left\{
+		\begin{array}{lll}
+			#1 & \mbox{if } #2 \\
+			#3 & \mbox{if } #4 \\
+			#5 & \mbox{if } #6
+		\end{array}
+	\right.
+}
+
+\def\bv{\color{blue}}
+\def\ev{\color{black}}
+\newcommand{\bch}{\bv }
+\newcommand{\ech}{\ev\normalsize}
+%\newcommand{\MakeVec}[1]{{\utilde{\bf #1}}}
+\newcommand \Measure[2][]{%
+  \ifstrempty{#1}{
+  \IfEqCase{#2}{
+        {M}{\mu}%
+        {D}{\mu_1}%
+        {V}{\mu_2}
+        {X}{\mu}
+   }  
+  }{
+  \IfEqCase{#1}{
+  {1}{
+   \IfEqCase{#2}{
+        {M}{d\mu(M)}%
+        {D}{d\mu_1(\bd)}%
+        {V}{d\mu_2(V)}
+        {X}{d\mu(X)}
+        {Y}{d\mu(Y)}
+        {MDV} {d\mu(M)\; d\mu_1(\bd) \;d\mu_2(V) }
+        }
+   } 
+   {2}{
+   \IfEqCase{#2}{
+         {M}{d\mu(M^{\ast})}%
+        {D}{d\mu_1(\bd^{\ast})}%
+        {V}{d\mu_2(V^{\ast})}
+        {X}{d\mu(X^{\ast})}
+        }
+   }
+   {3}{
+   \IfEqCase{#2}{
+         {M}{\mu(dM^{\star})}%
+        {D}{\mu_2(d\bd^{\star})}%
+        {V}{\mu_1(dV^{\star})}
+        {X}{\mu(X^{\star})}
+        }
+   }   
+   
+   } 
+  }%
+}
+  \newcommand{\VONF}{\text{VonMisesFisher}}
+\newcommand{\MPGalpha}{\alpha}
+\newcommand{\MPGnu}{\nu}
+\newcommand{\MPG}{MPG }
+\newcommand{\ybin}{y^{(\text{bin})}}
+
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\newcommand{\nullSet}{\Phi}
+\newcommand{\SP}{S}
+\newcommand{\B}{ \mathcal{B}}
+\newcommand{\prob}[1]{P\left( #1 \right)}
+\newcommand{\Qn}{{\bf Question:}}
+\newcommand{\Cmt}{{\bf Comment:}}
+
+
+
+
+\newcommand{\support}{\mathcal{S}}
+\newcommand{\tht}{\text{th}}
+\newcommand{\abs}[1]{ \left\vert  #1 \right\vert }
+\newcommand{\var}{\text{Var}}
+
+\newcommand{\TwoColFunction}[2]{
+\left\{
+\begin{array}{ll}
+#1 & \text{ if } #2\\
+0 & \text{ otherwise. }
+\end{array}
+\right.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\vnsp}{\vspace{-.2in}}
+\newcommand{\Cmnt}{{\bf Comment}}
+\newcommand{\Eqn}[1]{ \vspace{-.15in} $$ {\HLTEQ{ \displaystyle  #1 }}\vspace{-.1in}$$   }
+
+
+\newcommand{\sampleX}[1]{X_1, X_2, \ldots , X_{#1}}
+\newcommand{\sampleY}[1]{Y_1, Y_2, \ldots , Y_{#1}}
+\newcommand{\sampleZ}[1]{Z_1, Z_2, \ldots , Z_{#1}}
+\newcommand{\sampleGen}[2]{{#2}_1, {#2}_2, \ldots , {#2}_{#1}}
+
+\newcommand{\Xbar}{\overline{X}}
+\newcommand{\Zbar}{\overline{Z}}
+\newcommand{\Ubar}{\overline{U}}
+\newcommand{\Vbar}{\overline{V}}
+\newcommand{\Wbar}{\overline{W}}
+
+
+\renewcommand{\bX}{\MakeVec{\bf X}}
+\newcommand{\bY}{\MakeVec{\bf Y}}
+\renewcommand{\bx}{\MakeVec{\bf x}}
+\renewcommand{\by}{\MakeVec{\bf y}}
+
+
+\newcommand{\pHat}{\widehat{p}}
+\newcommand{\qHat}{\widehat{q}}

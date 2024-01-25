@@ -1,0 +1,388 @@
+\documentclass[11pt]{article}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset{0cm}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[R]{{\color{gray!50}Page Number: \thepage { \small (out of 7 pages)}}}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+}
+
+
+
+
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+ \begin{document}
+ \title{United Arab Emirates University \vspace{-.2in}}%replace X with the appropriate number
+\author{\Large   STAT 380\\\Large  Midterm Exam 
+} %if necessary, replace with your course title
+%\date{ \vspace{-.15in}$ \text{23}^{\text{rd}} $ October, 2023}
+\date{ }
+
+%\date{ \vspace{-.2in} \small   ${23}^{\text{rd}}$ October,  2023}
+ \maketitle\vspace{-.41in}
+  \noindent
+  %%%%%%%%%%%%%%%%%
+   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+ \TextInBoxTwo[lightBlueThree]{6.9 in }{\Large \bf Name:\HLT[white]{ \huge \color{white}A \hspace{5.12in}\vspace{2 in}}}\\
+  \TextInBoxTwo[lightBlueThree]{6.9 in }{\Large \bf ID:\hspace{.3in}\HLT[white]{ \huge \color{white}A \hspace{5.12in}\vspace{2 in}}}\\
+% \noindent
+% \TextInBox{6 in }{Name: \vspace{.1 in}}\\
+% \vspace{.1in}
+ 
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{
+\begin{itemize}
+\vspace{.1in}
+\item \TextInBoxTwo[white]{5.8in}{\large There  are a total of 110 points in this Question Paper. Answer as much as you can.   If your acquired score is greater than equal to 100  it will be counted as $100\%$.}\\\hspace{.2in}\\
+\item \TextInBoxTwo[white]{5.8in}{\large There are three parts in this Exam.  Part-I involves TRUE/FALSE or multiple choice answer type questions,   Part-II contains a few short answer type questions, whereas  Part-III consists of one descriptive answer type question. }\\\hspace{.2in}\\
+\item \TextInBoxTwo[white]{5.8in}{\large The Exam is scheduled for 75 minutes }\\\hspace{.2in}\\
+%\item   \TextInBoxTwo[white]{5.8in}{\large There are three $\star$ marked problems that are more involved than the rest.  In case you are stuck in one of those,  you may consider solving other problems first and then continue with the $\star$ marked problems.}\\\hspace{.2in}\\
+%\item   \TextInBoxTwo[white]{5.8in}{\large You may take help from the  "Exam Assistance Note" containing a few required definitions and formula.   }\\\hspace{.2in}\\
+\end{itemize}
+}
+\vspace{-.01in}
+
+\TextInBoxTwo[lightBlueTwo]{6.5in}{ \centering For instructor's use only \vspace{.01in}\\
+ \;\hspace{.4in} 
+\TextInBoxTwo[white]{5.5in}{
+{\Large 
+\begin{center}
+\begin{tabular}{| c| c| c| }
+\hline
+ Problem Number  & Obtained Score & Total Score \\ 
+ \hline \hline
+ Problem 1 &  & 45 \\  
+ \hline
+ Problem 2 &  & 25 \\  
+ \hline
+  Problem 3 &  &  20\\  
+ \hline
+   Problem 4 &  & 20  \\  
+ \hline
+   % Problem 5 &  &  20\\  
+% \hline
+%    Problem 6 &  &  \\  
+% \hline
+%    Problem 7 &  &  \\  
+%   \hline
+%    Problem 8 &  &  \\     
+ \hline
+  \hline
+    TOTAL &  &110  \\   
+    \hline
+  \hline
+   TOTAL(out of 100) & \vspace{.2in} &100  \\   
+ \hline \hline
+\end{tabular}
+\end{center}
+}}\vspace{.12in}
+}
+
+
+
+
+
+\newpage
+\vspace{1in}{\begin{center} \color{gray!30}You May Use This Page for Rough Work\end{center}} 
+%%%%%%%%%%%%%%%%%
+   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+\newpage
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+\setcounter{page}{1}%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf \HLT[white]{\large Part-I}\\ \vspace{-.15in}\begin{center}
+Pick the correct answer option for   the questions in this part of the exam.  \end{center}}
+\begin{enumerate}
+\item  
+\begin{enumerate}
+\item \QuizQuestion{  \TextInBoxOne{5.4in}{ Consider a dataset with 3 covariates (explanatory variables) to model a continuous response variable.  2  of the 3 covariates are numerical in nature while one of the covariates, `Highest Education level' is a categorical variable that can take either of the following THREE values:
+$$\{\text{ High-School},  \hspace{.1in}\text{Bachelor's degree},\hspace{.1in} \text{Master's Degree or higher} \}$$
+Note that, it is customary to introduce appropriate (multiple) `dummy'-variables as covariates to incorporate  categorical covariates.  How many total regression coefficients, including the intercept,  are there in the constructed model ?
+}}{
+Ans:\MCOption[1in]{3}\MCOption[1in]{4}  \MCOption[1in]{5}\MCOption[1in]{6}
+}{Total Score: 5}\\
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+One of the primary assumptions of the standard linear regression is the Normality of the corresponding errors.  To check the Normality of the Model errors, a practitioner conducted the standard  Shapiro-Wilks's test for testing the Normality of the corresponding residuals and obtained a p-value of $0.0034$.   Identify whether the following statement is TRUE or FALSE.\\
+ {\bf Statement:} Based on the results from the Shapiro-Wilks's test on the model residuals, we have strong statistical evidence that the corresponding model errors are not Normally distributed. 
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}{Total Score: 5}\\
+
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+ In the case, when performing the Standard Linear Regression on a dataset to model a continuous response,  a statistical analyst wants to verify whether the assumption of the independence of the model errors is satisfied or not.  Which one from the following statistical hypothesis testing procedure is the most appropriate for the purpose?  
+}}{
+Ans:\MCOption[1.5in]{Shapiro Wilk's Test} 
+\MCOption[1.5in]{$\chi^2$-Test}
+ \MCOption[1.5in]{ Durbin-Watson Test } 
+}{Total Score: 5}\\
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+ If we consider a 3-degree regression splines with 5 knot points, then how many regression coefficient parameters are there in the model? (i.e. , what is the dimension of the model?)
+}}{
+Ans:$\Row{\MCOption[1.1in]{$24$}, \MCOption[1.1in]{$15$},\MCOption[1.1in]{$9$},\MCOption[1.1in]{$8$}}$
+}{Total Score: 5}\\
+
+
+
+
+\newpage
+\vspace{1in}{\begin{center} \color{gray!30}You May Use This Page for Rough Work\end{center}} 
+%%%%%%%%%%%%%%%%%
+   \thispagestyle{empty}%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+\newpage
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+\setcounter{page}{2}%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+Let $\pi\in (0,1)$ be such that  $\text{Logit}(\pi)=-1.1$.  Choose the most appropriate value of $\text{Odds}(\pi)$ from the list below. 
+}}{
+Ans:\MCOption[1.1in]{$0.333$}\MCOption[1.1in]{$3.004$} \MCOption[1.1in]{$0.249$}\MCOption[1.1in]{$0.082$}
+}{Total Score: 5}\\
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+Using a statistical machine-learning procedure, it is estimated that the  probability of at least 10 years of ``survival" of a randomly chosen patient who went through a specific medical procedure is 0.75.  Based on the information, calculate the odds for at least 10 years of ``survival" of the patient ?
+}}{
+Ans:\MCOption[1.1in]{$0.25$}\MCOption[1.1in]{$3.0$} \MCOption[1.1in]{$4.0$}\MCOption[1.1in]{$1.098$}
+}{Total Score: 5}\\
+
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+What is the value of the following function $\text{Logit}(0.75)?$
+}}{
+Ans:\MCOption[1.1in]{$0.679$}\MCOption[1.1in]{$ 1.099$} \MCOption[1.1in]{$2.117$}\MCOption[1.1in]{$0.472$}
+}{Total Score: 5}\\
+
+
+\item  \QuizQuestion{ \TextInBoxOne{5.4in}{
+Consider analyzing a dataset that has a binary categorical response while all the covariates are continuous (numerical) in nature.  We know both the models; logistic regression and  the Quadratic Discriminant Analysis (QDA) can be applied to the corresponding classification problem.   To compare their performance,  the corresponding ROC curves are constructed.  The resulting Area Under the ROC Curve (AUC) is calculated based on a Testing set. {\bf The AUC for the logistic regression is obtained to be 0.89 while the AUC for the QDA appears to be 0.95}.  Identify whether the following statement is TRUE or FALSE. \\
+{\bf Statement: } Based on the AUC criterion, the performance of Logistic Regression is  better than that of the QDA for this data set. 
+}}{
+Ans:\MCOption[1in]{TRUE}\MCOption[1in]{FALSE} 
+}{Total Score: 5}\\
+
+
+ \item \QuizQuestion{ \TextInBoxOne{5.4in}{
+If we consider a  Dataset that has 130 observations and 210 covariates ( independent variables) to model a continuous response variable.  Identify whether the following statement is True or False.\\
+ {\bf Statement: } It is {\bf  Not Possible} to fit a  Standard Linear Regression as the dataset can be considered to be high-dimensional data.  
+}}{
+Ans:\MCOption[1in]{TRUE}\MCOption[1in]{FALSE} 
+}{Total Score: 5}\\
+
+\newpage
+
+
+%
+%
+%\item \QuizQuestion{ \TextInBoxOne{5.4in}{
+% {\bf Statement: }   Let $X$ and $Y$ be two random variables such that $E(X^r)= E(Y^r)$ for $r=1, 2, 3, \ldots. $Then $X$ and $Y$ are identically distributed.
+%}}{
+%Ans:\MCOption{TURE} \MCOption{FALSE}
+%}{Total Score: 5}\\
+
+
+\vspace{.1in}
+\end{enumerate} 
+
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf\HLT[white]{ \large Part-II}\\
+  \begin{center}
+ Answer the following short type questions. Show your steps to get  full credit. 
+ \end{center}
+ %You do not need any further justification to your answers. 
+ }
+
+%\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+%Based on statistical machine learning procedure, it is estimated that the probability of at least 10 years of “survival" of a randomly chosen patient who went through a specific medical procedure is 0.7.  Based on the information calculate the odds for at least 10 years of “survival" of the patient ?
+%}}{\vspace{.1in}
+%}{\hspace{-.2in}Total Score: 5}\\
+%\vspace{2in}
+
+%\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+%R output Logistic Regression Fitted model Question Interpretation of Regression Coefficient
+%Calculate the probability.
+%}}{\vspace{.1in}
+%}{\hspace{-.2in}Total Score: 5}\\
+%\vspace{2in}
+
+
+\item  \TextInBoxTwo[lightBlueTwo]{6.25in}{  \TextInBoxOne{6.1in}{ 
+A newly developed spam-filtering algorithm is implemented in all the email user accounts of a corporate office.  Based on a {\bf  total of 1354 external emails} received in the first few days, the company summarized the following data to evaluate its performance.  \\
+Among the 1354 emails that are considered it appears that  in actuality (TRUTH),  there is a total of 271 spam emails while the rest of the external emails are not spam.  The Spam-filtering algorithm  predicts  and labels an external email  to be  either a Spam (`Positive' for spam ) email or a `Not-Spam' (`Negative' for Spam').  However, the  Algorithm is not always accurate.  \\
+Out of the {\bf  271 spam emails the algorithm can correctly detect only 233}. On the other hand, it correctly identifies a total of {\bf  1071 out of 1083 non-Spam emails}.  Based  on the provided information, answer the following questions. 
+}
+}
+
+
+
+
+
+
+
+\begin{enumerate}
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+ Construct a classification table for assessing the performance of the `spam-filtering algorithm'.
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 10}\\
+\vspace{3in}
+
+
+
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+Calculate the `Sensitivity' of the spam-filtering algorithm in detecting a spam email. 
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 5}\\
+\vspace{2in}
+
+
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+ Evaluate the `Specificity' of the spam-filtering algorithm in identifying a not-spam email. 
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 5}\\
+\vspace{2in}
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+What is the value of the corresponding  Yuden-Index?
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 5}\\
+\vspace{2in}
+\end{enumerate}
+
+
+
+
+
+\item  \TextInBoxTwo[lightBlueTwo]{6.25in}{  \TextInBoxOne{6.1in}{ 
+This problem pertains to the dataset on the O-Ring failure of the Space Shuttles. It was known that there is an association between the O-Ring seal failure and the low atmosphere temperature during the corresponding shuttle launch. The variable “oringFail" in the data set indicates whether the shuttle experienced an O-ring failure during its launch. The “temperature" column lists the outside temperature at the time of the shuttle launch.  A logistic regression model is considered with the following specification: 
+$$Y_i \sim \text{Bernoulli}(\pi_i)$$
+$$\text{Logit}(\pi_i):= \beta_0 +\beta_1 \times \text{`temperature'}.$$
+Here the response variable $Y_i=1$ if there is a `O-Ring' failure corresponding to the $i^{\text{th}}$ data point.   Answer the parts of this questions based on the  following output from the R Statistical Software that is provided below: 
+}
+}
+
+
+\begin{verbatim}
+Call:
+glm(formula = oringFail ~ temperature, family = "binomial", data = oring12)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.2034  -0.7444  -0.4970   0.3563   2.0059  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept) 10.18873    5.17679   1.968   0.0491 *
+temperature -0.16076    0.07457  -2.156   0.0311 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+(Dispersion parameter for binomial family taken to be 1)
+
+Null deviance: 34.795  on 29  degrees of freedom
+Residual deviance: 28.688  on 28  degrees of freedom AIC: 32.688
+\end{verbatim}
+
+
+
+\begin{enumerate}
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+Interpret the estimated value of regression coefficient corresponding to the variable `temperature' in the context of the specific problem.  
+}}{\vspace{.1in}
+}{\hspace{-.2in}Total Score: 10}\\
+\vspace{3in}
+
+
+\item  \ExamQuestion{  \TextInBoxOne{5.75in}{ 
+ Based on fitted model, derive the predicted probability of O-ring failure if the corresponding `temperature' is 40 degrees Fahrenheit? 
+}}{ \\\vspace{.1in}
+}{\hspace{-.2in}Total Score: 10}\\
+\vspace{2in}
+
+
+\end{enumerate}
+\newpage
+
+
+
+
+
+ \newpage
+
+
+
+
+\TextInBoxTwo[lightBlueThree]{6.5in}{ \centering  \bf\HLT[white]{ \large Part-III}\\
+  \begin{center}
+ Answer the following descriptive type questions.  Show your steps to get  full credit. 
+ \end{center}
+ %You do not need any further justification to your answers. 
+ }
+
+
+
+\item \TextInBoxTwo[lightBlueTwo]{6.25in}{ 
+ \TextInBoxOne{6.1in}{
+Let us consider a Dataset that has a continuous response Y,  and  numerical continuous covariates $\MakeVec{X}=(X_1, X_2, \ldots, X_p)^T$.  The observed data is provided as $\{(\bx_1, y_1), (\bx_2,y_2), \ldots , (\bx_n, y_n)\}$, where $n$ is the number of observations.  Assume that $n\geq 100$.  
+}}
+
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{
+Write down the objective function of a Ridge Regression model where denote the corresponding model selection parameter (tuning parameter) to be $\lambda$. 
+}}{ \\ \vspace{3in}
+}{\hspace{-.2in}Total Score: 5}\\
+
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{
+For a given value of $\lambda>0$, what is the formula for $\widehat{\bbeta}_{_\text{Ridge}}$, the corresponding estimated regression coefficients for the regression parameter $\bbeta$? 
+}}{ \\
+}{\hspace{-.2in}Total Score: 5 }\\
+\vspace{2.5in}
+
+
+
+\item \ExamQuestion{ \TextInBoxOne{5.7in}{
+Write down the details of the Cross-Validation procedure to select the optimal value for the model selection parameter $\lambda>0$.
+}}{ \\
+}{\hspace{-.2in}Total Score: 10 }\\
+\end{enumerate}
+
+\newpage
+
+
+
+
+
+%\includepdf[pages=-]{ExamAssistanceNote_STAt101.pdf}
+
+
+
+
+
+\end{enumerate}
+\end{document}

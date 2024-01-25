@@ -1,0 +1,655 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+ \begin{document}
+ 
+\title{Problem Set  2}%replace X with the appropriate number
+\author{Probability and Statistics 2022\\
+Indian Institute of Management,  Udaipur} %if necessary, replace with your course title
+%\date{ $ 26^{th} $ August, 2019}
+\date{$3^{\text{rd}}$ August,  2022}
+ \maketitle\vspace{-.4in}
+ \noindent
+% \TextInBox{6 in }{Name: \vspace{.22 in}}\\
+%\; \TextInBox{6.05 in }{ Enrolled As: \MCOption[1.2in]{PHD Student} \MCOption[1in]{RA}\MCOption[1 in]{TA}}\\
+\TextInBox{6 in }{ This is a  Student's Activity Task containing a few multiple type questions and a number of  descriptive type problems.  Please feel free to answer as much as you can.  The activity is not a graded component of the course.  Its  objective is to encourage students  learning while solving problems.   }\\
+ \vspace{.4in}
+ 
+ 
+ 
+
+
+\DefBoxOne{}{
+\begin{center}\color{black}
+Part I:  Short answer type questions.
+\end{center}
+}
+
+
+
+\begin{enumerate}
+ \item \QuizQ{ \TextInBoxOne{5.4in}{
+ {\bf Statement: }  The function  $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$ is a valid CDF function.
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+  Let $\IndicatorA{\cdot}{B} $ denotes the indicator function.  Is it true that  $\IndicatorA{1}{(0,4)}=0$ ?
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ {\bf Statement: }    If  $X, Y$ are independent and identically distributed jointly continuous random variables then $P(X>Y)=\frac{1}{2}$.
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+  Let $X$ follows Exponential distribution with mean 2.  What is $E(X^2)$?
+}}{
+
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ LIf $X_1, X_2$  be independent random variables such that  $X_1\sim $ Gamma($10, 2$) and  $X_1\sim $ Gamma($15, 2$)  then what is the distribution of the random variable $ Y:=X_1+X_2$.     
+}}{
+
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+
+What are the values of $\Gamma(5)$ and $\Gamma(5.5)$?
+    
+}}{
+
+}\\
+
+
+ 
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+
+Let $X_1$ and $X_2$ statistically independent random variables such that   $X_1\sim \chi^2_{5 df }$ and $X_2\sim \chi^2_{3 df}$. Then what is the distribution of $X_1+X_2$?
+    
+}}{
+
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+
+
+What is the value of the integral $\displaystyle \int_{0}^1 x^{10} (1-x)^{15} dx$?
+    
+}}{
+
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+
+
+The achievement scores for a college entrance examination are normally distributed
+with mean 75 and standard deviation 10. What fraction of the scores lies between 80
+and 90?
+
+ 
+}}{
+
+}\\
+
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+{\bf Statement: } If $Z\sim N(0, 1)$ and $V\sim \chi^2_{\nu \text{df }}$ and $Z, V$ are {\bf statistically independent} then  the random variable 
+$Y:= \frac{Z}{\sqrt{V/\nu}} \sim t_{\nu \text{ df} }.$
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+
+If $V_1\sim \chi^2_{5 \text{ df}}$ and $V_2\sim \chi^2_{20 \text{df }}$ and $V_1, V_2$ are {\bf statistically independent} then  what is the distribution of the  random variable 
+$Y:= \frac{4{V_1}}{{V_2}}$? 
+}}{
+
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+
+If $V_1\sim \chi_{_{5\text{ df}}}$ and $V_2\sim \chi^2_{10 \text{df }}$ and $V_1, V_2$ are {\bf statistically independent} then  the random variable 
+$Y:= \frac{2V_1}{V_2}.$ Let $X\sim \text{Normal}(\mu=10, \sigma^2=4)$.  X is independent to both $V_1, V_2$.  What is the distribution of $U=\frac{\sqrt{5}(X-10)}{\sqrt{ 2V_2}}?$
+}}{
+
+}\\
+
+
+
+
+
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Let $X,Y,Z$ are three independent and identically distributed random variables with mean 0, variance $\sigma^2$.  Define  $U=X+Y$, $V=X-Y$ and $W=Z+1$. Represent the 
+$$\text{Var}\left( 3U+4V+W+2\right)$$ in terms of $\sigma^2$.
+
+
+}}{
+
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ {\bf Statement:} 
+Let $X,Y$ be two random variables that are statistically independent to each other. Then covariance between $X$ and $Y$ is 0. 
+
+
+}}{
+Ans:\MCOption{TURE} \MCOption{FALSE}
+}\\
+
+
+
+%\item \QuizQ{ \TextInBoxOne{5.4in}{
+% Let the joint probability density function of the random vector $(X,Y)$ is given as 
+% $$   f(x,y):=  \frac{1}{\pi} \text{ when } x^2+y^2\leq 1$$
+% and $0 $ elsewhere.  Are the random variables statistically independent? 
+%
+%
+%}}{
+%
+%}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ Let the joint probability density function of the random vector $(X,Y)$ is given as 
+ $$   f(x,y):=  8xy \text{ when } 0\leq y\leq x \leq 1$$
+ and $0 $ elsewhere.  Are the random variables statistically independent? 
+}}{
+
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ Let $X$ be a random variable with the moment generating function $M_{X}(t):= e^{4t^2}$ for $t\in \R$. What is the distribution of the random variable X?
+}}{
+
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ Let $(X,Y)$ be a random vector with the  joint probability density function 
+ $$  f_{_{X,Y}}(x,y)=  \frac{1}{\sqrt{\pi}} e^{-x} e^{-y^2} $$
+ for $x>0$ and $y \in \R$.  Are the random variables statistically independent? 
+}}{
+}\\
+
+
+%
+%\item \QuizQ{ \TextInBoxOne{5.4in}{
+% Let $(X,Y)$ be a random vector with the  joint probability density function 
+% $$  f_{_{X,Y}}(x,y)=  \frac{1}{\sqrt{\pi}} e^{-x} e^{-y^2} $$
+% for $x>0$ and $y \in \R$.  Are the random variables statistically independent? 
+%}}{
+%}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ Let $X$ be a random variable such that $\text{E}(X)=5$ and $\text{ Var}(X)=5$.  What is the value of  $E(X^2)$ ?
+}}{
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ Let the moment generating function of a random variable is $M_{X}(t):= e^{4(e^t-1)}$.  What is $E(X)$?
+}}{
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ Let $X$ be a random variable with support $(0, \infty)$.  Assume that $E(X)$ and $E(\log(X))$ are finite.    Is the following statement true? 
+ $$  E(X\log(X))\leq E(X) \log( E(X) )  $$
+}}{
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ Let $X$ be a random variable with support $(0, \infty)$.  Assume that $E(e^X)$ is finite.  Is it true that 
+ $$   E(e^X)\geq  e^{E(X)}  ?  $$
+}}{
+}\\
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+\newpage
+ 
+ 
+ 
+ 
+
+\DefBoxOne{}{
+\begin{center}\color{black}
+Part II:  Descriptive Problems. 
+\end{center}
+}
+%\DefBoxOne{Notations}{
+%$$ \Onebf_k=\left[ \begin{array}{c}1\\1\\\vdots \\1\end{array}\right]_{k\times 1} \text{ , }  J_{k}=\left[ \begin{array}{cccc}1&1 & \cdots & 1\\1& 1& \cdots&  1\\\vdots & \vdots & \ddots  &\vdots \\1& 1 &\cdots & 1\end{array}\right]_{k\times k} \text{ and } I_{k}=\left[ \begin{array}{cccc}1&0 & \cdots & 0\\0& 1& \cdots&  0\\\vdots & \vdots & \ddots  &\vdots \\0& 0 &\cdots & 1\end{array}\right]_{k\times k} \text{ for } k\in \Z_{+}.   $$
+%
+%}
+\begin{enumerate}
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Let $X\sim $ Uniform(-1, 1).  Derive the probability density function of the random variable  $Y=X^2$. 
+}}{
+
+}\\
+
+ \item \QuizQ{ \TextInBoxOne{5.4in}{
+A multiple-choice examination has 15 questions, each with five possible answers, only one of
+which is correct. Suppose that one of the students who takes the examination answers each of
+the questions with an independent random guess. What is the probability that he answers at
+least ten questions correctly?
+}}{
+
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+  A food manufacturer uses an extruder (a machine that produces bite-size cookies and snack
+food) that yields revenue for the firm at a rate of \rupee 5000 per hour when in operation.  However, the
+extruder breaks down an average of two times every day it operates. If Y denotes the number
+of breakdowns per day, the daily revenue generated by the machine is $R = 40000-50Y^2$. Find
+the expected daily revenue for the extruder.
+}}{
+
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+A geological study indicates that an exploratory oil well drilled in a particular region
+should strike oil with probability .2.  Find the probability that the third oil strike comes
+on the fifth well drilled.
+}}{
+
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+A geological study indicates that an exploratory oil well drilled in a particular region
+should strike oil with probability .2.  Find the probability that the third oil strike comes
+on the fifth well drilled.
+}}{
+
+}\\
+
+
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+A company that manufactures and bottles apple juice uses a machine that automatically fills 16-ounce bottles. There is some variation, however, in the amounts of liquid dispensed into the bottles that are filled. The amount dispensed has been observed to be approximately normally distributed with mean 16 ounces and standard deviation 1 ounce. to determine the proportion of bottles that will have more than 17 ounces dispensed into them.
+}}{
+Ans: 
+}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+The median of the distribution of a continuous random variable Y is the value $m_{_{Y}}$ such that
+$P(Y \leq  m_{_{Y}}) = 0.5$.  What is the median of the  Exponential distribution with mean 10. 
+}}{Ans:\\
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+The magnitude of earthquakes recorded in a region of North America can be modeled as
+having an exponential distribution with mean 2.4,  as measured on the Richter scale. Find the
+probability that an earthquake striking this region will 
+\begin{enumerate}
+\item exceed 3.0 on the Richter scale.
+\item fall between 2.0 and 3.0 on the Richter scale.
+\end{enumerate}
+}}{Ans:\\
+}\\
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{The length of time Y necessary to complete a key operation in the construction of houses has an exponential distribution with mean 10 hours. The formula $\HLTEQ{U = 100 + 40Y + 3Y^2}$ relates  the cost U of completing this operation to the square of the time to completion. Find the mean and variance of U.
+
+}}{Ans:\\
+}\\
+
+ 
+ 
+
+ 
+ 
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ 
+A company that manufactures and bottles apple juice uses a machine that automatically fills
+16-ounce bottles. There is some variation, however, in the amounts of liquid dispensed into the
+bottles that are filled. The amount dispensed has been observed to be approximately normally
+distributed with mean 16 ounces and standard deviation 1 ounce. to determine the proportion of bottles that will have more than
+17 ounces dispensed into them.
+
+}}{Ans:\\
+}\\
+ 
+ 
+ 
+ 
+
+ 
+ \item \QuizQ{ \TextInBoxOne{5.4in}{
+The velocities of gas particles, V,  can be modeled by the Maxwell distribution, whose probability
+density function is given by 
+$$f_V(v):=4\pi \left(  \frac{m}{2\pi KT	}\right)^{\frac{3}{2}} v^2 e^{-v^2 \frac{m}{2KT}}\IndicatorA{v}{\R_{+}}$$
+where m is the mass of the particle, K is Boltzmann’s constant, and T is the absolute temperature.
+\begin{enumerate}
+\item Find the mean velocity of these particles.
+\item The kinetic energy of a particle is given by $ \frac{1}{2}mV^2$. Find the mean kinetic energy for a
+particle.
+\end{enumerate}
+}}{Ans:\\
+}\\
+ 
+ 
+  
+ \item \QuizQ{ \TextInBoxOne{5.4in}{
+ 
+  
+A supplier of kerosene has a 150-gallon tank that is filled at the beginning of each week. His
+weekly demand shows a relative frequency behavior that increases steadily up to 100 gallons
+and then levels off between 100 and 150 gallons. If Y denotes weekly demand in hundreds of
+gallons, the relative frequency of demand can be modeled by
+$$f(y):=\left\{
+\begin{array}{ll}
+y  & \text{ if } 0 \leq y \leq 1\\
+1  & \text{ if }1 \leq y \leq 1.5\\
+0 & \text{ otherwise. }
+\end{array}
+\right.
+$$
+\begin{enumerate}
+\item Find $F(y)$, the CDF of the random variable $Y$.
+\item Find the probability that the station will pump between 80 and 120 gallons in a
+particular week.
+\item Given that the station pumped more than 100 gallons in a particular week, find the
+probability that the station pumped more than 120 gallons during the week.
+\end{enumerate}  
+  
+  
+  
+
+
+}}{Ans:\\
+}\\
+ 
+ 
+  
+  
+   \item \QuizQ{ \TextInBoxOne{5.4in}{
+  
+  we considered the random variables $Y_1$ (the proportional amount of gasoline stocked at the beginning of a week) and $Y_2$ (the proportional amount of
+gasoline sold during the week). The joint density function of $Y_1$ and $Y_2$ is given by
+$$   f_{_{ Y_1, Y_2 }}  (  y_1, y_2  ):=   \TwoColFunction{3y_1}{ 0\leq y_2\leq y_1\leq 1. }   $$
+ 
+ \begin{enumerate}
+\item  Find the probability density function for $\HLTY{U = Y_1 - Y_2}$, the proportional amount of gasoline remaining at the end of the week. 
+ \item  Use the density function of U to find $\HLTY{E(U)}$.
+ \end{enumerate}
+
+
+}}{Ans:\\
+}\\
+ 
+
+
+%
+%   \item \QuizQ{ \TextInBoxOne{5.4in}{
+%Let X and
+%Y be independent $Normal(0, 1)$ random variables. Consider the transformation $U = \frac{X}{Y}$ and $V =Y$.  Derive the   pdf of $(U,V)$. What is the pdf of $ U$? 
+%
+%}}{Ans:\\
+%}\\
+% 
+
+
+   \item \QuizQ{ \TextInBoxOne{5.4in}{
+Consider the joint probability mass function 
+$$p_{_{X,Y}} =\frac{1}{2^{x-1} 3^y}  $$  for $x=1, 2, \ldots $ and $y=1, 2, 3, \ldots.$  
+ 
+
+ \begin{enumerate}
+ \item What is the support of the distribution $\support_{_{X,Y}}$.
+ \item Find the marginal distribution of $X$.
+ \end{enumerate}
+}}{Ans:\\
+}\\
+ 
+ 
+ 
+
+
+   \item \QuizQ{ \TextInBoxOne{5.4in}{
+   Let $X$ and $Y$ have joint density function 
+$$f_{X,Y} (x,y)= \TwoColFunction{e^{-x-y}}{ x>0 , y>0} $$
+   \begin{enumerate}
+   \item What is P(1 < X < 2.5)? and  P(1 < Y < 2.5)?
+   \item  What is P(X>2Y)?
+   \end{enumerate}
+   
+   
+}}{Ans:\\
+}\\
+  
+ 
+ 
+  \item \QuizQ{ \TextInBoxOne{5.4in}{
+   Suppose  $X$ and $Y$ have joint density function 
+$$f_{X,Y} (x,y)= \TwoColFunction{6x^2y}{ 0\leq x\leq y, x+y\leq 2 } $$
+   \begin{enumerate}
+   \item  Show that the marginal distribution of $X$ is Beta($\alpha=3, \beta=2$). 
+   \item Derive the conditional density of Y given X=x, for some $x\in (0,1)$.
+   \item Find $ E(Y\mid X=0.6)$. 
+   \end{enumerate}
+   
+   
+}}{Ans:\\
+}\\
+  
+ 
+ 
+
+   \item \QuizQ{ \TextInBoxOne{5.4in}{
+   
+Is it true that: If $\text{Cor}(X,Y)=0$ then the random variables $X$ and $Y$ are independent.   If not true then provide appropriate counter example.
+   
+   
+   
+}}{Ans:\\
+}\\
+ 
+
+
+
+% 
+%\item \QuizQ{ \TextInBoxOne{5.4in}{
+%   
+%Consider the joint pdf  of the random vectors $(X,Y)$ 
+%$$f(x,y):= \frac{1}{\pi} \text{ for }  (x,y)\in \R^2 \text{ such that }  x^2+y^2\leq 1$$
+%Show that the random variables  $X,Y$ are not  statistically independent?
+%   
+%   
+%   
+%}}{Ans:\\
+%}\\
+ 
+ 
+ 
+ 
+ 
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+   
+Consider the joint pdf  of the random vectors $(X,Y)$ 
+$$f(x,y):=2  \text{ for }  0\leq y\leq x \leq 1$$
+Prove that the random variables  $X,Y$ are not  statistically independent?
+   
+   
+   
+}}{Ans:\\
+}\\
+ 
+ 
+ 
+
+
+ 
+%   \item \QuizQ{ \TextInBoxOne{5.4in}{
+%   
+%   Prove that $E(\frac{X_1}{\sum_{i=1}^n  X_i} )=\frac{1}{n}$
+%   
+%   
+%   
+%}}{Ans:\\
+%}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+Let $X$  be a continuous random variable with the probability density function $$\displaystyle f_{X}(x):= \frac{x }{50}\IndicatorA{x}{[0,10]}. $$ 
+\begin{enumerate}
+\item Evaluate the Cumulative Distribution Function of the Random variable.
+\item   Find the mean  of the distribution. 
+\item Find the median of the distribution.  (Note that CDF in this case will be strictly increasing, hence inverse function of the cdf exists. )
+\end{enumerate}
+}}{
+}\\
+
+
+
+
+  \item \QuizQ{ \TextInBoxOne{5.4in}{
+  Let $(X,Y)$ be random vector such that  the marginal  density of  $Y$ is $$\displaystyle f_{_Y}(y):=2e^{-2y} $$  for $y>0$, and zero elsewhere.   Additionally,  the density for the conditional distribution of $X $ given $Y=y$ is $$\displaystyle f_{_{X\mid Y }}(x \mid y ):=\sqrt{y}e^{-\pi x^2y } $$ for $x\in \R$.  
+\begin{enumerate}
+\item What is the joint  density of the random vector  $(X,Y)$?
+\item What is the marginal  density of the random variable $X$?
+\end{enumerate}  
+  
+   
+}}{Ans:\\
+}\\
+
+
+
+
+
+% 
+%    \item \QuizQ{ \TextInBoxOne{5.4in}{
+%
+%If $X_1, \ldots, X_n$ be {\bf idependent and identically distributed} random variables with probability density function 
+%$f_{_X}(x):=  e^{-x} $ for $x>0$ and zero elsewhere. Then what is the probability density function of the random vector $\MakeVec{\bX}:=(X_1, X_2, \ldots , X_n)^T.$ 
+% 
+% }}{Ans:\\
+%}\\
+ 
+ 
+
+
+
+  \item \QuizQ{ \TextInBoxOne{5.4in}{
+  Let $(X,Y)$ be random vector with the corresponding  joint density  
+  $$   f_{_{X,Y}}(x,y):= e^{-x-y} \text{ for } x>0, y>0. $$
+  Consider a one-to-one bivariate  transformation $$U=X+Y, V=Y. $$
+ 
+ 
+\begin{enumerate}
+\item  Derive the joint density of the random vector $(U,V)$?
+\item  What is the marginal density of $U$? 
+\end{enumerate}  
+  
+   
+}}{Ans:\\
+}\\
+
+
+
+
+%
+%
+%  \item \QuizQ{ \TextInBoxOne{5.4in}{
+% 
+%
+%  
+%   
+%}}{Ans:\\
+%}\\
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ 
+Let the total number of items a specific  Amazon seller sells  in a week follows a  Poisson distribution with mean $\lambda=100$.  From experience,  the seller knows that proportion of items that are returned is $5\%$.  
+\begin{enumerate}
+\item What is the Expected number of items that are returned during a week?
+\item  Let us assume that the seller makes a 25\% profit on each items that are sold but not returned.   However, if a product is returned then the seller needs to issue a refund of entire amount to the specific customer. Additionally the seller needs to pay for the cost of return shipping of amount $D$ per items returned.   If the price at which the seller sells each item is $S$, then what is expected net profit for the seller over a period of a week?
+\end{enumerate}
+
+
+
+}}{Ans:\\
+}\\
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ If  $X, Y$ are independent and identically distributed  continuous random variables then  prove that $P(X>Y)=\frac{1}{2}$.
+}}{
+}\\
+
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{
+ 
+Let $X$ be a continuous random variable with the corresponding pdf $ \HLTEQ[white]{f_X(x):= e^{-x}} $ for $x>0$, and $0$ otherwise. Therefore,  the support of the random variable $\support_X:=\R_{+}$.   Consider the transformation $\HLTEQ{Y=[X]}$ where the notation \HLT{$\HLTEQ{[x]}$ refers to the largest integer less than or equal to x. } For example,  $\HLTEQ[white]{[2]=2}$ and $\HLTEQ[white]{[2.9]=2}$.
+\begin{enumerate}
+\item What is the support of the random variable $Y$?
+\item Derive a formula for the pdf/pmf for $Y$.
+\end{enumerate}
+
+
+
+}}{Ans:\\
+}\\
+
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

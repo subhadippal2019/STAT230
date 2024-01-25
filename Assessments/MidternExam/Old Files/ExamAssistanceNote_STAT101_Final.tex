@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset{0cm}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[R]{ }
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+} 
+\input{../MacroDefs/HeaderAssignment}
+ \begin{document}
+
+
+ 
+\title{\vspace{-.55in} Exam Assistance Note}%replace X with the appropriate number
+%\author{Advanced Linear Models (PHST 781)\\
+%Department of Biostatistics and Bioinformatics} %if necessary, replace with your course title
+%\date{ $ 12^{th} $ October, 2018}
+\date{}
+ \maketitle
+ 
+\thispagestyle{empty}
+ \renewcommand{\support}{S}
+\vspace{-1in}
+\DefBoxOne{}{\color{black}
+$$\HLTEQ[white]{X_0= \text{Value in the Base Year} }\text{, \hspace{.1in}} \HLTEQ[white]{X_n= \text{Value in the Recent Year}}$$
+\vspace{-.1in}
+$$\HLTEQ[white]{\hat{X}_{n+k}= \text{Predicted Value in the Year } n+k}$$
+\vspace{-.1in}
+$$\HLTEQ[white]{\text{CBR= Crude Brith Rate  {\tiny (out of 1000 population)}}}, \HLTEQ[white]{\text{CDR= Crude Death Rate {\tiny (out of 1000 population)}}}$$
+\begin{center}
+\begin{tabular}{ |c|| c|}
+\hline
+$\text{Percentage of Change} $ & $\displaystyle {\frac{X_n-X_0}{X_0}\times 100\%}$ \\
+\hline
+\vspace{.01in} &\\
+Average Annual Growth Rate & $\displaystyle\text{AAGR\%}= {\left(\frac{X_n}{X_0}\right)^{\left(\frac{1}{n}\right)}\times 100-100\%}$ \vspace{.005in}\\
+\hline
+Prediction in the year $n+k$ based on AAGR\% and $X_n$& $\displaystyle \widehat{X}_{n+\HLTY{k}}= X_n\times \left( \frac{100+AAGR}{100}\right)^{\HLTY{k}} $ \\\hline
+Average Growth Rate Percentage (AGR\%)& \\
+ based on CBR and CDR & $\displaystyle \text{AGR}\%= \frac{\text{CBR}-\text{CDR}}{10}\%$\\
+ \hline
+ Doubling Time (DT)&  $\displaystyle \text{DT}\approx  \frac{70}{AAGR\%}$\\\hline
+\end{tabular}
+\end{center}
+\vspace{-.15in}
+}\\
+
+\vspace{.05in}
+
+
+
+
+\DefBoxOne{ \begin{center} {\bf Related to Human Development Index (HDI)} \end{center} \vspace{-.25in}   }{\color{black}\vspace{-.3in}
+\begin{center}
+$$\text{PcGNI}=\text{Percapita   Gross National Product}$$
+\TextInBoxTwo[white!25]{5.5in}{$$ \text{General Dimension Index}:=\frac{\text{Actual Value}-\text{Min}}{\text{Max}-\text{Min}}$$\vspace{-.05in}}
+\vspace{.05in}\\
+\TextInBoxTwo[white!25]{5.5in}{
+$$ \text{Income Index}: \text{I}_{\text{Income}}=\frac{\log(\text{PcGNI})-\log{\left(\text{Minimun PcGNI}\right)}}{\log\left(\text{Maximum PcGni}\right)-\log\left(\text{Minimun PcGNI}\right)}$$\vspace{-.05in}}
+\vspace{.05in}\\
+\TextInBoxTwo[white!25]{5.5in}{
+$$ \text{Education Index}: \text{I}_{\text{Education}}=\frac{\sqrt{I_1 \times I_2}}{0.951 }, \text{ where }$$
+$$I_1=\text{Dimension Index for the Variable \HLTY{\text{ `Mean Years of Adult Education '}}}$$
+$$I_2=\text{Dimension Index for the Variable \HLTY{\text{ `Expected Years of Schooling '}}}$$\vspace{-.1in}}\vspace{.05in}\\
+\TextInBoxTwo[white!25]{5.5in}{
+$$ \text{Human Development  Index}: \text{HDI}=\left( \text{I}_{\text{Life}}\times  \text{I}_{\text{Education}} \times \text{I}_{\text{Income}}  \right)^{(\frac{1}{3})}$$\vspace{-.05in}}\\\vspace{-.2in}
+\end{center}
+\begin{center}
+\begin{tabular}{ |c|| c|c|}
+\hline
+Name of Attribute & Minimum Value & Maximum Value\\\hline
+Life Expetancy      & 20                       & 83.2\\\hline
+Mean Years of Adult Education       & 0                       & 13.2\\\hline
+Expected Years of Schooling     & 0                       & 20.6\\\hline
+Combined Education Index   & 0                       & 0.951\\\hline
+Percapita GNI (PcGNI)  & 163                    & 108211\\\hline
+\end{tabular}
+\end{center}
+}\\
+
+
+
+
+
+\DefBoxOne{ \begin{center} \bf Related to Regression\end{center}\vspace{-.25in}}{\color{black}
+Let $(X_1, Y_1), (X_2, Y_2), \ldots , (X_n, Y_n)$ are sijmple random sample of size n of the variabes $X,Y$. $X$ is the covariate and $Y$ is the response variable. \\
+\TextInBoxTwo[white!25]{5.5in}{
+\begin{center}
+\begin{tabular}{ |c|| c|c|}
+\hline
+Attribute & Notation & Formula\\
+\hline
+Sample Mean  of X &$ \overline{X}$ &  $\frac{1}{n}\sum_{i=1}^n X_i$ \\
+\hline
+Sample Mean  of Y &$ \overline{Y}$ &  $\frac{1}{n}\sum_{i=1}^n Y_i$ \\
+\hline
+Sample Standard Deviation  of X &$ S_{_X}$ &   $\frac{1}{n-1}\sum_{i=1}^n (X_i-\overline{X} )^2$ \\
+\hline
+Sample Standard Deviation  of Y &$ S_{_Y}$ &   $\frac{1}{n-1}\sum_{i=1}^n (Y_i-\overline{Y} )^2$ \\
+\hline
+Covariance between X and Y &$ S_{_{XY}}$ &   $\frac{1}{n-1}\sum_{i=1}^n (X_i-\overline{X} )(Y_i-\overline{Y} )$ \\
+\hline
+Correlation between X and Y &$ r_{_{XY}}$ &   $\frac{ S_{_{XY}}}{ S_{_X} S_{_Y}}$ \\
+\hline
+\end{tabular}
+\end{center}
+}\\
+
+\vspace{.2in}
+Let us consider a linear regression line $\HLTEQ[white]{\hat{Y}=a+bX}$, where $Y $ is the response variable, $X$ is the independent variable or Covariate.  $\HLTEQ[white]{a}$ is called the {\bf  `intercept'} and $\HLTEQ[white]{b}$ is called the {\bf `slope'} of the fitted line.  The formula for the estimated value of a and b is given as below: 
+$$\HLTEQ[white]{ \hat{b}= r_{_{X,Y}}\frac{S_{_Y}}{S_{_X}}}\hspace{.2in}\text{ and }\HLTEQ[white]{\hat{a}= \overline{Y}-  \hat{b}\overline{X}}$$\\
+Note that $S_{_Y}$ and $S_{_X}$ are always a positive number. Where as,  the correlation coefficient between $X$ and $Y$, $r_{_{XY}}$  is a number between -1 to 1.
+}\\
+
+
+\DefBoxOne{ \begin{center} \bf Gini's Formula\end{center}\vspace{-.25in}}{\color{black}
+There are several ways to compute Gini coefficient however it is often calculated with Brown Formula given by:
+ $$G = 100\% - \left(\frac{\sum [f_i \times (y_i+y_{i+1})]}{10,000} \times 100\right)\% $$
+ where $f_i$ = percentage decile shares of world population. $y_i=$  cumulative percentage shares of world product for percentile groupings. An Example of Gini's Table from Slide
+ \begin{center}
+\includegraphics[scale=.2]{GiniTable.png}
+\end{center}
+
+}
+
+
+
+\DefBoxOne{ \begin{center} \bf Confidence Interval \end{center}\vspace{-.25in}}{\color{black}
+\TextInBoxTwo[white!25]{6.5in}{
+Let $X_1, X_2, \ldots , X_n$ be observed random {\bf sample of size $n$}.  Let $\overline{X}$ denotes the sample Mean while $S_{_{X}}$ refers to the sample Standard deviation. Then, assuming the population has a fine variance and the sample size $n$ to be a large number,  a formula for confidence interval for the population mean is given as:
+$$\left[ \overline{X}- z_{_{_\text{Cutoff}}}\times \frac{S_{_X}}{\sqrt{n}},  \hspace{.5in}  \overline{X}+ z_{_{_\text{Cutoff}}}\times \frac{S_{_X}}{\sqrt{n}} \right]$$
+$z_{_{_\text{Cutoff}}}$ is determined based on the confidence-level of the interval.  The values of $z_{_{_\text{Cutoff}}} $ can be obtained from the following table: 
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+  Confidence Level& 90\% & 95\% & 99\% \\ \hline \hline
+$z_{_{_\text{Cutoff}}}$ &  1.645  & 1.96     &2.576    \\ \hline\hline
+\end{tabular}
+\end{center}
+}
+}\\
+
+\DefBoxOne{ \begin{center} \bf An Example of Remaining Life Expectancy Table \end{center}\vspace{-.25in}}{\color{black}
+\TextInBoxTwo[white!25]{6.5in}{
+\begin{center}
+\includegraphics[scale=.2]{LifeExpectancyTable1.png}
+\end{center}
+}}
+\vspace{4in}
+\hrule
+\hrule
+\TextInBoxTwo[gray!25]{6.65in}{
+\begin{center}
+!!! All the Best !!! 
+\end{center}
+}
+\hrule
+\hrule
+
+
+\end{document}

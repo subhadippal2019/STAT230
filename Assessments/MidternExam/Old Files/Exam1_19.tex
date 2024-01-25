@@ -1,0 +1,188 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+ \begin{document}
+ \title{Class Activity Problems }%replace X with the appropriate number
+\author{Probability and Statistics 2022\\
+Indian Institute of Management,  Udaipur} %if necessary, replace with your course title
+%\date{ $ 26^{th} $ August, 2019}
+\date{$21^{\text{st}}$ July,  2022}
+ \maketitle\vspace{-.4in}
+ \TextInBox{6 in }{Name: \vspace{.1 in}}\\
+  \TextInBox{6 in }{Name: \vspace{.1 in}}\\
+ \vspace{.4in}
+ 
+ 
+\TextInBoxOne{6in}{
+\begin{itemize}
+\item \TextInBoxTwo[white]{5.4in}{\large There are are a total of 114 points in this Question Paper. Answer as much as you can.  If your acquired score is greater than equal to 100, it will be counted as $100\%$.}\\\hspace{.5in}\\
+\item \TextInBoxTwo[white]{5.4in}{\large The Exam is scheduled for 3 hours.  "Time Left" reminders will be posted in 1.5 hrs, 2:30 hrs, 2:45 hrs from the beginning of the Exam time.  }\\\hspace{.5in}\\
+\item   \TextInBoxTwo[white]{5.4in}{\large There are three $\star$ marked problems that are more involved than the rest. In case you are stuck in one of those, it might be a good idea to consider solving other problems first and then continue with the * marked problems.}\\\hspace{.5in}\\
+\item   \TextInBoxTwo[white]{5.4in}{\large You may take help from the  "Exam Assistance Note" containing a few required definitions, lemma and theorem  statements.   }\\\hspace{.5in}\\
+
+\end{itemize}
+
+
+}
+\newpage
+
+\begin{enumerate}
+\item  
+\begin{enumerate}
+\item \QuizQuestion{ \TextInBoxOne{5.4in}{Let $Y$ be Response variable, $X_1, X_2$ denote the Explanatory variables, $\epsilon$ be unknown random errors and $\beta_1, \ldots, \beta_3$ are unknown parameters of interest. Determine whether the following relationship equation is a linear model.
+Relationship Equation: $Y=\beta_0+\beta_1 \sin({X_1})+\beta_2 X_2+\beta_3X_1X_2+\epsilon.$
+}}{Ans:\\
+\MCOption{Not Linear Model} \MCOption{Linear Model}}{Total Score: 5}\\
+\vspace{.1in}\\\item \QuizQuestion{ \TextInBoxOne{5.4in}{
+Identify if the following matrix is a Orthogonal Projection matrix.
+$$ M=\frac{1}{9}\RowVec{\Col{3,2,4},\Col{2,1,2},\Col{4,2,1}} $$
+}}{Ans:\\
+\MCOption{Orthogonal Projection} \MCOption[2.1 in]{Not Orthogonal Projection}}{Total Score: 5}\\
+\vspace{.1in}\\
+
+\item \ExamQuestion{ \TextInBoxOne{5.4in}{
+ Consider the matrices $A=\RowVec{\Col{2,0,0},\Col{0,1,0}, \Col{0,0,0}} $. Does the matrix $A$ have a Generalized Inverse ? If yes, Construct a generalized inverse of $A$.
+}}{Ans:
+% The matrix $A$ have a generalized inverse. \\
+\vspace{1in}\\
+%The generalized inverse of $A$ is  $A^{-}=\RowVec{\Col{\frac{1}{2},0,0},\Col{0,1,0},\Col{0,0,0}} $.
+
+
+
+}{\hspace{-.19in} Total Score: 1+4}\\
+\vspace{.1in}\\\vspace{3in}\\
+
+%\item  \ExamQuestion{ \TextInBoxOne{5.4in}{
+%\newcommand{\MatPartBlock}{ {\Row{\Col{1,1},\Col{1,1}}}}
+%\newcommand{\MatPartBlockZero}{ {\Row{\Col{0,0},\Col{0,0}}}}
+%Consider the matrix $$D=\frac{1}{2}\RowVec{\Col{\MatPartBlock,\MatPartBlockZero,\MatPartBlockZero,\MatPartBlockZero},\Col{\MatPartBlockZero,\MatPartBlock,\MatPartBlockZero,\MatPartBlockZero},\Col{\MatPartBlockZero,\MatPartBlockZero,\MatPartBlock,\MatPartBlockZero},\Col{\MatPartBlockZero,\MatPartBlockZero,\MatPartBlockZero,\MatPartBlock}}.$$
+%\begin{enumerate}
+%\item Represent $D$ as a Kronecker product of two lower-dimensional matrices.
+%\item Prove that $D$ is a {\bf Orthogonal Projection} matrix. 
+%\end{enumerate}
+%
+%}}{Ans:\\}{\hspace{-.2in} Total Score: 3+7}\\
+%\vspace{.1in}\\
+%\newpage
+\item \ExamQuestion{ \TextInBoxOne{5.4in}{Consider the model $\StandardLM$ , where $\bbeta =\ColVec{\beta_1,\beta_2,\beta_3}$, $\bX=\RowVec{\Col{0, 1, 0, -1},\Col{
+1, 0, 1, 0},\Col{0, 1, 0, -1}}$ and $\epsilonbf$ is a mean zero error vector with variance co-variance matrix $\sigma^2I_{4\times 4}$.  $\HLTEQ[white]{\text{Prove that the parameter $\beta_1$ is not estimable} }$
+}}{Ans:\\
+}{Total Score: 7}\\
+\vspace{4.1in}\\
+\end{enumerate} 
+\newpage
+\item  \TextInBoxOne{6in}{ 
+
+A spring balance is used to weigh three objects with unknown weights $\beta_1$, $\beta_2$ , $\beta_3$, $\beta_4$. The objective is to estimate the $\bbeta=\RowVec{\beta_1, \beta_2, \beta_3, \beta_4}^T$. Assume that each the measurements in the spring balance are subject to (independent) Normally distributed random errors with mean $0$ and unknown variance $\sigma^2>0$. 
+Consider the data, when each object are weighted twice to get observations $$\bY=\RowVec{ {y_{1,1}}, {y_{1,2}},{ y_{1,3}}, {y_{2,1}},\ldots ,{y_{4,2}}, {y_{4,3}}}^T ,$$
+where $y_{i,j}$ denotes the $j^{th}$ replicated measurement corresponding to the experiment when  $i^{th} $ object is placed on the spring balance. Note that $\bY\in \R^{12}$. 
+
+%Note that the model can be represented as   $$\bY=\bX \bbeta+\epsilonbf,$$ where the design matrix $\bX=I_4\otimes \Onebf_3$
+
+%
+%Represent the in terms of the matrix notation  $$\bY=\bX \bbeta+\epsilonbf,$$ where the two columns of the design matrix $\bX$ are $\bx_1$ and $\bx_2$,  $\bbeta=\RowVec{\beta_1, \beta_2}^T$. Furthermore, assume that $\epsilonbf_{2n\times 1}\sim N(\bzero, \sigma^2 I_{2n\times 2n}).$  $\bY$ denotes the random vector corresponding to the {\bf response variable}. Let a statistician is interested in inference for the parametric function $\theta=\beta_1-\beta_2$  
+}
+
+\begin{enumerate}
+\item \ExamQuestion{ \TextInBoxOne{5.4in}{
+Represent the estimation problem in terms of the matrix notation $\bY=\bX \bbeta+\epsilonbf$ by identifying the response vector  $\bY$ , design matrix $\bX$, regression coefficients $\bbeta$ and the vectors of the random errors $\epsilonbf$. 
+}}{Ans:\\
+}{\hspace{-.2in}Total Score: 2+ 5+2+1}\\
+\vspace{3in}\\
+\item \ExamQuestion{ \TextInBoxOne{5.4in}{
+Prove that all the linear parametric functions of the parameters $\bbeta$ are estimable for the associated design matrix.
+}}{Ans:\\
+}{\hspace{-.2in}Total Score: 5 }\\
+\vspace{4in}
+\item \ExamQuestion{ \TextInBoxOne{5.4in}{
+ Find the {\bf Orthogonal Projection Matrix} for $\mathcal{C}(\bX)$, the column space of $\bX$. (Justify your steps with the reference to the results/theorem/lemma you are using.)
+}}{Ans:\\
+}{Total Score:  8}\\\vspace{5in}
+
+\ExamQuestion{ \TextInBoxOne{5.4in}{\item 
+ Consider a linear parametric function $\theta= \beta_1+\beta_2+\beta_3$. 
+ Identify a vector $\lambdabf$ such that $ \theta=\lambdabf^T\bbeta$.
+}}{Ans:\\ 
+\vspace{2in}
+}{Total Score:  2}\\
+ \ExamQuestion{ \TextInBoxOne{5.4in}{\item
+ Find the Best Linear Unbiased Estimator for $\theta$ (Show your steps and justify your steps with the reference to the results/theorem/lemma you are using.)
+}}{Ans:\\\vspace{5in} 
+}{Total Score:  7}\\
+ \ExamQuestion{ \TextInBoxOne{5.4in}{\item
+A practitioner is interested in estimating all the parameters $\beta_1, \beta_2, \beta_3 , \beta_4$ simultaneously. write down the definition of $(1-\alpha)100\%$  simultaneous confidence intervals for the parameters. 
+}}{Ans:\\ \vspace{2.5in}
+}{Total Score:  5}\\
+\\
+ \ExamQuestion{\item $\star$ \TextInBoxOne{5.4in}{
+Which type of simultaneous Confidence interval would you prefer for the parameters $\{\beta_1, \beta_2, \beta_3 , \beta_4\}$ and why?
+}}{Ans:\\ \vspace{2 in }
+}{Total Score:  5}\\
+ \ExamQuestion{ \TextInBoxOne{5.4in}{\item
+Construct a set of $95\%$ simultaneous confidence intervals for the parameters $\{\beta_i \}_{i=1}^{4}$. 
+}}{Ans:\\ \vspace{8.5in} 
+}{Total Score:  8}\\
+\end{enumerate}
+\item  \TextInBoxOne{6in}{ 
+Consider the standard linear model $\StandardLMmod$ where $\epsilonbf$ is Normally distributed $(\epsilonbf\sim N(\bzero,\sigma^2V))$, where $V$ is a known positive definite matrix. Assume the design matrix $\bX$ has full column rank. Also, assume that $\sigma$ is a known positive constant. \\
+}
+\begin{enumerate}
+ \ExamQuestion{\item \TextInBoxOne{5.4in}{ Show that the log likelihood function can be represented as
+$$  l_{\bY}(\bbeta)=K(V, \sigma^2)-\frac{(\bY-\bX\bbeta)^T V^{-1}(\bY-\bX\bbeta)}{2\sigma^2} $$ where $K(V, \sigma^2)$ is a constant that does not involve $\bbeta$.
+}}{Ans:\\ \vspace{3 in} 
+}{\hspace{-.3in}Total Score: 5}\\
+ \ExamQuestion{\item \TextInBoxOne{5.4in}{
+Use part(a) to derive $\hat{\bbeta}_{MLE}$,  the Maximum Likelihood Estimator for the parameter $\bbeta$.
+}}{Ans:\\ \vspace{4 in} 
+}{\hspace{-.3in}Total Score:7}\\
+
+
+\end{enumerate}
+
+
+
+\newpage 
+
+\item   \TextInBoxOne{6in}{  Consider a linear model given by
+$$ {\bf Y}= \bX{ \bbeta}+ {\boldsymbol{\epsilonbf}}$$ 
+where ${\bf Y}\in \mathbb{R}^n$,${ \bbeta}\in \mathbb{R}^p$ and  ${ \epsilonbf}$ is  a Normally distributed random vector with mean $\bzero$ and variance $\sigma^2 I_{n\times n}$ and $\bX$ is an $n\times p$ matrix with rank $r<p<n$ (i.e. The design matrix $\bX$ does not have full column rank). The parameter $\sigma^2$ is an unknown positive number. Assume that $ { \epsilonbf} \sim N\left({\bzero}, \sigma^2 I_{n\times n}\right)$.  Let $\mathcal{C}\left( \bX\right) $ denotes the column space of $\bX$, {\small the vector space containing all possible linear combination of the column vectors of the matrix $\bX$.} It can be shown that $P=\bX(\bX^T\bX)^{-}\bX^T$ is the {\bf Orthogonal Projection } matrix for the $\mathcal{C}\left( \bX \right) $, where $(\bX^T\bX)^{-}$ is any Generalized inverse of $(\bX^T\bX)$ . }
+\begin{enumerate}
+%\item \ExamQuestion{ \TextInBoxOne{5.4in}{  Show from the definition of the  {\bf Orthogonal Projection }, that $P=\bX(\bX^T\bX)^{-1}\bX$ is the {\bf Orthogonal Projection } matrix for the $\mathcal{C}\left( \bX \right) $.
+%}}{Ans:\\}{\hspace{-.2in}Total Score: 2+1}\\ 
+\item \ExamQuestion{ \TextInBoxOne{5.4in}{ 
+
+Show that  $E({\bf Y}^T( I_{n\times n}- P) {\bf Y})=(n-r)\sigma^2$.
+}}{Ans:\\
+}{Total Score: 5}\\  \vspace{3.5in}\newpage
+\vspace{-1.5in}
+\item \ExamQuestion{ \TextInBoxOne{5.4in}{ 
+  Prove that the statistics ${\bf Y}^T {\bf P} {\bf Y}$ and ${\bf Y}^T( {\bf I}_{ n\times n}- {\bf P}) {\bf Y}$ are independent ( Mention if you are using any result).  
+}}{Ans:\\}{\hspace{0in}Total Score:5}\\
+\vspace{3.5in}\newpage
+\item  \ExamQuestion{ \TextInBoxOne{5.4in}{ 
+ Derive the distribution of $\frac{({\bf Y}^T P {\bf Y})/r}{({\bf Y}^T( I_{n\times n}- P) {\bf Y})/(n-r) }$? (Show your steps  )
+}}{Ans:\\}{\hspace{0in}Total Score: 10}\\\vspace{3in}
+ 
+\hspace{.1in}\newpage
+\item  ${{ \star}}$ \ExamQuestion{ \TextInBoxOne{5.4in}{ Let $\widehat{\bbeta}_{LSE}$ be the {\bf Least Square Estimator} for the parameter $\bbeta$. Show that $\HLTEQ[white]{(\bY-\bX\bbeta)^T P (\bY-\bX\bbeta)= (\widehat{\bbeta}_{LSE}-\bbeta)^T \bX^T\bX (\widehat{\bbeta}_{LSE}-\bbeta)}.$
+}}{Ans:\\}{\hspace{0in}Total Score: 5}\\\vspace{3.5in}\newpage
+
+\item $\star$ \ExamQuestion{ \TextInBoxOne{5.4in}{ Derive the distribution of $\HLTEQ[white]{\frac{\Vert X (\widehat{\bbeta}_{LSE}-\bbeta)\Vert^2}{\sigma^2}}$. ( You may use the relation in part(d) to get your answer. )
+}}{Ans:\\}{\hspace{0in}Total Score: 5}\\
+\end{enumerate}
+
+
+ 
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\end{document}
