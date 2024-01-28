@@ -1,5 +1,5 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{ Sample Space \& Events}{2}{0}{1}
-\beamer@sectionintoc {2}{ The Notion of Probability}{27}{0}{2}
-\beamer@sectionintoc {3}{ A Few Properties of Probability}{32}{0}{3}
-\beamer@sectionintoc {4}{Examples}{52}{0}{4}
+\beamer@sectionintoc {2}{ The Notion of Probability}{23}{0}{2}
+\beamer@sectionintoc {3}{ A Few Properties of Probability}{28}{0}{3}
+\beamer@sectionintoc {4}{Examples}{47}{0}{4}

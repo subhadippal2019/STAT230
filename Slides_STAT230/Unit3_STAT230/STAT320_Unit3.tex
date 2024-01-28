@@ -494,13 +494,13 @@ the event that  the transistor does not last longer than 5 hours.  Write down th
 
 
 
-
-\begin{frame}\frametitle{ Disjoint Events \& Partition}
-\begin{center}
-\vspace{-.7in}
-\includegraphics[scale=.4]{figs/VDPartition_0.png} 
-\end{center}
-\end{frame}
+%
+%\begin{frame}\frametitle{ Disjoint Events \& Partition}
+%\begin{center}
+%\vspace{-.7in}
+%\includegraphics[scale=.4]{figs/VDPartition_0.png} 
+%\end{center}
+%\end{frame}
 
 
 {
@@ -524,49 +524,48 @@ the event that  the transistor does not last longer than 5 hours.  Write down th
 	\end{frame}
 	
 
+%
+%
+%\begin{frame}
+%	\frametitle{Reminder from Unit1 Slides: Partition}
+%	\begin{center}
+%\qbx[4.6in]{antiquebrass!60}{\qBrd[1in]{olive!30}{\bf Partition:}  A collection of sets $\HLTY{\{A_1, A_2, \cdots, A_k\}}$ is called a {\bf partition for a set $\HLTW{C}$} if
+%\begin{enumerate}
+%\item  \qBrd[3.5in]{applegreen!30}{$A_i \cap A_j = \emptyset$ for $1\leq i \neq j \leq k$ ({\tiny  i.e. ,$A_i$,  and $A_j$ are Disjoint if $i\neq j$}) }, and 
+%\item  \qBrd[4in]{teal!30}{$\HLTY{A_1\cup A_2\cup \cdots \cup  A_k} =\HLTW{C}$.}
+%\end{enumerate}
+%}\\
+%%\pause
+%\vspace{.1in}
+%  \includegraphics[scale=.2]{figs/VDPartition2.png} 
+%  	\end{center}
+%  	
+%	\vspace{4in}
+%	\end{frame}
+%
+%
+%}
+
+%
+%\begin{frame}\frametitle{ Pairwise Disjoint Events }
+%\vspace{-.1in}
+%\begin{definition}[Pairwise Disjoint Events]
+%A collection of events  $\{A_i\}_{i=1}^{k}$ are pairwise disjoint (or mutually exclusive) if $A_i \cap A_j=\emptyset$ for all $1\leq i \neq j\leq k$.
+%\end{definition}
+%\vspace{2in}
+%\end{frame}
 
 
-\begin{frame}
-	\frametitle{Reminder from Unit1 Slides: Partition}
-	\begin{center}
-\qbx[4.6in]{antiquebrass!60}{\qBrd[1in]{olive!30}{\bf Partition:}  A collection of sets $\HLTY{\{A_1, A_2, \cdots, A_k\}}$ is called a {\bf partition for a set $\HLTW{C}$} if
-\begin{enumerate}
-\item  \qBrd[3.5in]{applegreen!30}{$A_i \cap A_j = \emptyset$ for $1\leq i \neq j \leq k$ ({\tiny  i.e. ,$A_i$,  and $A_j$ are Disjoint if $i\neq j$}) }, and 
-\item  \qBrd[4in]{teal!30}{$\HLTY{A_1\cup A_2\cup \cdots \cup  A_k} =\HLTW{C}$.}
-\end{enumerate}
-}\\
-%\pause
-\vspace{.1in}
-  \includegraphics[scale=.2]{figs/VDPartition2.png} 
-  	\end{center}
-  	
-	\vspace{4in}
-	\end{frame}
 
 
-}
 
 
-\begin{frame}\frametitle{ Pairwise Disjoint Events }
-\vspace{-.1in}
-\begin{definition}[Pairwise Disjoint Events]
-A collection of events  $\{A_i\}_{i=1}^{k}$ are pairwise disjoint (or mutually exclusive) if $A_i \cap A_j=\emptyset$ for all $1\leq i \neq j\leq k$.
-\end{definition}
-\vspace{2in}
-\end{frame}
 
-%\define{Partition of Sample Space}{ $A_1,A_2, \ldots,  A_n$ are called partition of the sample space $\SampleS$ if $\{A_i\}_{i=1}^{n}$ is pairwise disjoint and $\HLTY{ \displaystyle \bigcup_{i=1}^{n} A_i=\SampleS.}$}
-%\pause
-
-\begin{frame}\frametitle{  Partition of Sample Space}
+\begin{frame}\frametitle{ Pairwise Disjoint Events  }
 \vspace{-.2in}
 	\begin{center}
-\qbx[4.6in]{amethyst!60}{\qBrd[1.9in]{olive!30}{\bf Partition of Sample Space:}  A collection of sets $\HLTY{\{A_1, A_2, \cdots, A_n\}}$ is called a {\bf partition } for a set $\HLTW{\SampleS}$ if
-\begin{enumerate}
-  \item\qBrd[3.7in]{applegreen!30}{  the collection of events  $\HLTY{\{A_i\}_{i=1}^{n}}$ are {\bf pairwise disjoint} }
- , and 
- \item \qBrd[2.5in]{teal!30}{ $\HLTY{A_1\cup A_2\cup \cdots \cup  A_n} =\HLTW{\SampleS}$.}
-\end{enumerate}
+\qbx[4.6in]{amethyst!60}{\qBrd[1.9in]{olive!30}{\bf Pairwise Disjoint Events :}  A collection of sets $\HLTY{\{A_1, A_2, \cdots, A_k\}}$ are called  {\bf pairwise disjoint} events if \\
+\qBrd[2.7in]{applegreen!30}{  $\HLTW{\HLTY{A_i \cap  A_j}= \emptyset} $ for all $i \neq j$.}
 }\\
 %\pause
 %\vspace{.1in}
@@ -580,15 +579,52 @@ A collection of events  $\{A_i\}_{i=1}^{k}$ are pairwise disjoint (or mutually e
 
 \qBrd[4.5in]{bittersweet!50}{\HLTW{
 Comment:}In the above definition, we may replace $\HLTY{n}$ by $\HLTY{\infty}$ and the definition extends naturally. }
-\pause
-\vspace{.1in}
-
-\qBrd[4.5in]{teal!50}{\HLTW{
-Comment:} Any set $\HLTY{A}$ and  it's complement,  $\HLTY{\Not{A}}$,  creates  a partition of $\HLTW{\SampleS}$.}
+%\pause
+%\vspace{.1in}
+%
+%\qBrd[4.5in]{teal!50}{\HLTW{
+%Comment:} Any set $\HLTY{A}$ and  it's complement,  $\HLTY{\Not{A}}$,  creates  a partition of $\HLTW{\SampleS}$.}
 
 
 \end{frame}
 
+
+}
+
+%\define{Partition of Sample Space}{ $A_1,A_2, \ldots,  A_n$ are called partition of the sample space $\SampleS$ if $\{A_i\}_{i=1}^{n}$ is pairwise disjoint and $\HLTY{ \displaystyle \bigcup_{i=1}^{n} A_i=\SampleS.}$}
+%\pause
+%
+%\begin{frame}\frametitle{  Partition of Sample Space}
+%\vspace{-.2in}
+%	\begin{center}
+%\qbx[4.6in]{amethyst!60}{\qBrd[1.9in]{olive!30}{\bf Partition of Sample Space:}  A collection of sets $\HLTY{\{A_1, A_2, \cdots, A_n\}}$ is called a {\bf partition } for a set $\HLTW{\SampleS}$ if
+%\begin{enumerate}
+%  \item\qBrd[3.7in]{applegreen!30}{  the collection of events  $\HLTY{\{A_i\}_{i=1}^{n}}$ are {\bf pairwise disjoint} }
+% , and 
+% \item \qBrd[2.5in]{teal!30}{ $\HLTY{A_1\cup A_2\cup \cdots \cup  A_n} =\HLTW{\SampleS}$.}
+%\end{enumerate}
+%}\\
+%%\pause
+%%\vspace{.1in}
+% % \includegraphics[scale=.2]{figs/VDPartition2.png} 
+%  	\end{center}
+%  	
+%
+%
+%
+%\vspace{.1in}
+%
+%\qBrd[4.5in]{bittersweet!50}{\HLTW{
+%Comment:}In the above definition, we may replace $\HLTY{n}$ by $\HLTY{\infty}$ and the definition extends naturally. }
+%\pause
+%\vspace{.1in}
+%
+%\qBrd[4.5in]{teal!50}{\HLTW{
+%Comment:} Any set $\HLTY{A}$ and  it's complement,  $\HLTY{\Not{A}}$,  creates  a partition of $\HLTW{\SampleS}$.}
+%
+%
+%\end{frame}
+%
 
 
 
@@ -783,7 +819,7 @@ it will be detected by device \HLTY{A} is \HLTW{0.95}; by device \HLTY{B},\HLTW{
 \end{enumerate}
  }
 
-\vspace{1.5in}
+\vspace{.5in}
 \pause
 {\tiny
 Solution: A: \{device A detects smoke\}   B: \{device B detects smoke\}
@@ -793,15 +829,15 @@ $P(A\cup B)= P(A)+P(B)=P(A\cap B)= 0.95+0.90-0.88=.97$
 $P(\text{Smoke is undetected })=1- P(\text{Smoke is detected by atleast one devices })  =  1-P(A\cap B)=1-0.97=0.03$
 
 }
-\pause
-{\tiny
-Solution: A: \{device A detects smoke\}   B: \{device B detects smoke\}
 
-$P(A\cup B)= P(A)+P(B)=P(A\cap B)= 0.95+0.90-0.88=.97$
-
-$P(\text{Smoke is undetected })=1- P(\text{Smoke is detected by atleast one devices })  =  1-P(A\cap B)=1-0.97=0.03$
-
-}
+%{\tiny
+%Solution: A: \{device A detects smoke\}   B: \{device B detects smoke\}
+%
+%$P(A\cup B)= P(A)+P(B)=P(A\cap B)= 0.95+0.90-0.88=.97$
+%
+%$P(\text{Smoke is undetected })=1- P(\text{Smoke is detected by atleast one devices })  =  1-P(A\cap B)=1-0.97=0.03$
+%
+%}
 
 \end{frame}
 
@@ -1297,9 +1333,43 @@ Suppose that there is 6 identical balls and they are to be distributed among thr
 
 
 
-\begin{frame}\frametitle{Example}
+\begin{frame}
 \qbx[4.5in]{capri!40}{
-\Exmpl{capri}{} In the game of bridge, the entire deck of 52 cards is dealt out to 4 players. What is the probability that
+\small 
+\Exmpl{capri}{} In the game of bridge, the entire deck of 52 cards is dealt out to 4 players.  A card is selected randomly from the deck.
+\begin{enumerate}[a).]
+\item What is the probability that  the cards is an `Ace'?
+\item What is the probability that  the cards is either a  `King' or a 'Queen'? 
+\end{enumerate}
+}\\
+\begin{center}
+\includegraphics[scale=.27]{figs/Cards_Sample.png}
+\end{center}
+\vspace{1in}
+\end{frame}
+
+
+
+
+\begin{frame}
+\qbx[4.5in]{slateblue!40}{
+\small 
+\Exmpl{slateblue}{} Two cards are selected randomly from the deck of 52 cards.
+\begin{enumerate}[a).]
+\item What is the probability that both the cards are  `Ace's?
+\item What is the probability that at least one of them is an Ace?
+\end{enumerate}
+}\\
+\begin{center}
+\includegraphics[scale=.25]{figs/Cards_two_sample.png}
+\end{center}
+\vspace{1.5in}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+\qbx[4.5in]{bluebell!40}{
+\Exmpl{bluebell}{} In the game of bridge, the entire deck of 52 cards is dealt out to 4 players. What is the probability that
 \begin{enumerate}[a).]
 \item one of the players receives all 13 spades?
 \item each player receives 1 ace?
@@ -1307,17 +1377,41 @@ Suppose that there is 6 identical balls and they are to be distributed among thr
 }\\
 \pause
 \vspace{1in}
-{\tiny 
-Solution: 
+{\tiny  Solution: 
 
 a) $ \frac{   {4 \choose 1}\times  { 13 \choose 13} \times { 39 \choose {13,13,13}}    }{  {52 \choose {13,13,13,13}} }  =  \frac{   {4 \choose 1}\times  1 \times  \frac{39!}{ {13! \times 13! \times 13!}}   } {  \frac{52!}{{13!\times 13!\times 13! \times 13!}} } =   \frac{   {4 \choose 1}\times 39! \times 13! } { 52!} $ whcih is also same as $\frac{4}{{52\choose 13}} $.
-
+\vspace{.1in}
 b) $\frac{4! {48 \choose {12, 12, 12, 12}} }{{52 \choose {13,13,13,13}}}$
 }
-\vspace{2in}
+\vspace{2.5in}
 
 \end{frame}
 
+
+
+%
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{airforceblue!40}{
+%\Exmpl{airforceblue}{} A pack of 52 playing cards always plays a key role in probability concept. Whenever we go through the stuff probability in statistics, we will definitely have examples with a well shuffled pack of 52 playing cards. 
+%\begin{enumerate}[a).]
+%\item What is the probability that one player get one ?
+%\item each player receives 1 ace?
+%\end{enumerate}
+%}\\
+%\pause
+%\vspace{1in}
+%{\tiny 
+%Solution: 
+%
+%a) $ \frac{   {4 \choose 1}\times  { 13 \choose 13} \times { 39 \choose {13,13,13}}    }{  {52 \choose {13,13,13,13}} }  =  \frac{   {4 \choose 1}\times  1 \times  \frac{39!}{ {13! \times 13! \times 13!}}   } {  \frac{52!}{{13!\times 13!\times 13! \times 13!}} } =   \frac{   {4 \choose 1}\times 39! \times 13! } { 52!} $ whcih is also same as $\frac{4}{{52\choose 13}} $.
+%
+%b) $\frac{4! {48 \choose {12, 12, 12, 12}} }{{52 \choose {13,13,13,13}}}$
+%}
+%\vspace{2.5in}
+%
+%\end{frame}
+%
 
 
 
