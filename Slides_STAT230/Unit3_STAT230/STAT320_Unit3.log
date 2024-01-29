@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  29 JAN 2024 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  29 JAN 2024 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2936,10 +2936,10 @@ Package rerunfilecheck Info: File `STAT320_Unit3.out' has not changed.
 (rerunfilecheck)             Checksum: 919DF55C46C0ACD532C498E1A525098C;231.
  ) 
 Here is how much of TeX's memory you used:
- 29727 strings out of 480608
- 580257 string characters out of 5903631
+ 29723 strings out of 480608
+ 580169 string characters out of 5903631
  981172 words of memory out of 5000000
- 44688 multiletter control sequences out of 15000+600000
+ 44684 multiletter control sequences out of 15000+600000
  607195 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,79p,799b,2536s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2963,7 +2963,7 @@ st/fonts/type1/public/rsfs/rsfs5.pfb></usr/local/texlive/2020/texmf-dist/fonts/
 type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helv
 etic/uhvro8a.pfb>
-Output written on STAT320_Unit3.pdf (86 pages, 6742980 bytes).
+Output written on STAT320_Unit3.pdf (86 pages, 6742987 bytes).
 PDF statistics:
  3729 PDF objects out of 4296 (max. 8388607)
  3092 compressed objects within 31 object streams
