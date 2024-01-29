@@ -257,26 +257,43 @@ B:=\{Observe an odd number.\}\\
 
 
 
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{apricot!70}{
-\Exmpl{apricot}{} A student is taking a one-hour-time-limit makeup examination.  Suppose the probability that the student will
-finish the exam in less than $x$ hours is $ \frac{x}{2}$, for all $0\leq x\leq 1.$ Then, given that the student is still working after $0.75$ hour, what is the conditional probability that the full hour is used?
-}\\
-%\pause
-\vspace{1in}
-{\tiny Solution: Let $L_x$ denote the event that the student finishes
-the exam in less than $x$ hours, $0\leq  x\leq 1$, and let $F$ be the
-event that the student uses the full hour.  Because $F$ is the
-event that the student is not finished in less than 1 hour, 
-$P(F)=P(\Not{L_1})=1-P(L_1)=0.5$.\\
-Now, the event that the student is still working at time $0.75$ is the complement of the event $L_{0.75}$, so the desired probability is obtained from
-$$P(F\mid \Not{L_{0.75}})= \frac{F\cap \Not{L_{0.75}}}{  \Not{L_{0.75}}  }= \frac{P(F)}{1- P(F_{0.75})}= \frac{0.5}{0.625}=0.8$$
 
 
-}
-\vspace{2in}
+\begin{frame}{Example}
+\qbx[4.6 in]{teal!30}{\Qn: If two events, A and B, are such that $P( A)=0.5$, $P(B)=0.3$, and $P( A\cap B)= 0.1$, find the following
+\begin{enumerate}
+\item $P(A\mid B)$
+\item $P(B\mid A)$
+\item $P(A\mid A\cup B)$
+\end{enumerate}
+ }\\
+
+\vspace{1.5in}
 
 \end{frame}
+
+
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{apricot!70}{
+%\Exmpl{apricot}{} A student is taking a one-hour-time-limit makeup examination.  Suppose the probability that the student will
+%finish the exam in less than $x$ hours is $ \frac{x}{2}$, for all $0\leq x\leq 1.$ Then, given that the student is still working after $0.75$ hour, what is the conditional probability that the full hour is used?
+%}\\
+%%\pause
+%\vspace{1in}
+%{\tiny Solution: Let $L_x$ denote the event that the student finishes
+%the exam in less than $x$ hours, $0\leq  x\leq 1$, and let $F$ be the
+%event that the student uses the full hour.  Because $F$ is the
+%event that the student is not finished in less than 1 hour, 
+%$P(F)=P(\Not{L_1})=1-P(L_1)=0.5$.\\
+%Now, the event that the student is still working at time $0.75$ is the complement of the event $L_{0.75}$, so the desired probability is obtained from
+%$$P(F\mid \Not{L_{0.75}})= \frac{F\cap \Not{L_{0.75}}}{  \Not{L_{0.75}}  }= \frac{P(F)}{1- P(F_{0.75})}= \frac{0.5}{0.625}=0.8$$
+%
+%
+%}
+%\vspace{2in}
+%
+%\end{frame}
 
 
 
@@ -301,25 +318,25 @@ equally likely, what is the conditional probability that both flips land on head
 
 
 
-
-
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{olive!40}{
-\Exmpl{olive}{} A total of $n$ balls are sequentially and randomly
-chosen, without replacement, from an urn containing $r$ red
-and b blue balls $(n \leq r + b)$. Given that $k$ of the $n$ balls are
-blue, what is the conditional probability that the first ball chosen is blue?
-}\\
-%\pause
-%\vspace{1in}
-{\tiny {\bf Solution:}   Show that this probability is $ \frac{k}{n}$.
-
-}
-\vspace{2in}
-\end{frame}
-
-
-
+%
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{olive!40}{
+%\Exmpl{olive}{} A total of $n$ balls are sequentially and randomly
+%chosen, without replacement, from an urn containing $r$ red
+%and b blue balls $(n \leq r + b)$. Given that $k$ of the $n$ balls are
+%blue, what is the conditional probability that the first ball chosen is blue?
+%}\\
+%%\pause
+%%\vspace{1in}
+%{\tiny {\bf Solution:}   Show that this probability is $ \frac{k}{n}$.
+%
+%}
+%\vspace{2in}
+%\end{frame}
+%
+%
+%
 
 
 
@@ -336,23 +353,23 @@ $$\HLTEQ[babyblue!70]{ \HLTY{P(E\cap F)}:=\HLTW{P(E\mid F)}\times \HLTW{P(F)}.}$
 
 
 
-
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{teal!40}{
-\Exmpl{teal}{} Celine is undecided as to whether to take a
-French course or a chemistry course. She estimates that her
-probability of receiving an A grade would be $\frac{1}{2}$ in a French
-course and $\frac{2}{3}$ in a chemistry course. If Celine decides to
-base her decision on the  flip of a fair coin, what is the probability that she gets an A in chemistry?
-}\\
-%\pause
-%\vspace{1in}
-{\tiny {\bf Solution:}   .
-
-}
-\vspace{2in}
-
-\end{frame}
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{teal!40}{
+%\Exmpl{teal}{} Celine is undecided as to whether to take a
+%French course or a chemistry course. She estimates that her
+%probability of receiving an A grade would be $\frac{1}{2}$ in a French
+%course and $\frac{2}{3}$ in a chemistry course. If Celine decides to
+%base her decision on the  flip of a fair coin, what is the probability that she gets an A in chemistry?
+%}\\
+%%\pause
+%%\vspace{1in}
+%{\tiny {\bf Solution:}   .
+%
+%}
+%\vspace{2in}
+%
+%\end{frame}
 
 
 %

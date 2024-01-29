@@ -1,6 +1,6 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Conditional Probability}{2}{0}{1}
-\beamer@sectionintoc {2}{ Partition of an Event }{19}{0}{2}
-\beamer@sectionintoc {3}{Law of Total Probability}{29}{0}{3}
-\beamer@sectionintoc {4}{Bayes' Theorem}{37}{0}{4}
-\beamer@sectionintoc {5}{The Notion of Statistical Independence }{50}{0}{5}
+\beamer@sectionintoc {2}{ Partition of an Event }{17}{0}{2}
+\beamer@sectionintoc {3}{Law of Total Probability}{27}{0}{3}
+\beamer@sectionintoc {4}{Bayes' Theorem}{35}{0}{4}
+\beamer@sectionintoc {5}{The Notion of Statistical Independence }{48}{0}{5}
