@@ -384,9 +384,9 @@ $\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
 \begin{frame}\frametitle{ cumulative distribution function}
 \define{cumulative distribution function}{
 Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
-$$\HLTY{ \displaystyle P(X=x)= \pmf_{_X}(x) \text{ for } x\in \support[X].}$$
+$$\HLTY{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support[X]}.}$$
 The cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
-$$\DBX{ \displaystyle \cdf_{_X}(a)= P(X\leq a)= \sum_{\{x\leq a: x\in \support[X]\}}\pmf_{_X}(a)}$$	
+$$\DBX{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[teal!40]{ \{\HLTW{x}\leq \HLTY{a}: \HLTW{x}\in \support[X]\}}}\pmf_{_X}(\HLTW{x})}$$	
 }
 \end{frame}
 
@@ -485,15 +485,15 @@ Find the corresponding CDF.
 \begin{frame}\frametitle{The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}
 \define{\tiny The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}{
 If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ or $\mu_{_X}$ is given by
-$$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
+$$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
 }
 \end{frame}
 
 
 
 \begin{frame}
-\define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{Let the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $x\in \support[X]$, the support of X.  Let $h(x)$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
-$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
+\define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{Let the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $\HLTEQ[teal!40]{x\in \support[X]}$, the support of X.  Let $\HLTW{{h}(x)}$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
+$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X] }\right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
 }
 \end{frame}
 
@@ -542,14 +542,15 @@ $\text{Var}(X)$ is often denoted by $\sigma^2$, i.e.  $\sigma^2=\text{Var}(X)$ a
 
 
 \begin{frame}\frametitle{Moment Generating Function (mgf)}
+\vspace{-.05in}
 \define{Moment Generating Function}{ The Moment Generating Function (mgf) of $X$, denoted by $\text{M}_{_X}(t)$ is deifined as 
-$$\DBX{ \displaystyle \text{M}_{_X}(t):= E\left(e^{tX} \right)},$$
+$$\DBX{ \displaystyle \text{M}_{_X}(t):= E\left(\HLTW{e^{tX}} \right)},$$
 whenever it exists. 
 }
 \begin{center}
-\qBrd[4.2in]{ube!40}{ If the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $x\in \support[X]$, the support of X, then  \\
+\qBrd[4.2in]{ube!40}{ If the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]}$, the support of X, then  \\
 \begin{center}
-\qBrd[3in]{applegreen!40}{$$E\left(e^{tX} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.$$\\
+\qBrd[3.4in]{applegreen!40}{$$M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \sum_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}. \vspace{-.2in}$$\\
 \vspace{-.1in}
 }
 \end{center}
@@ -587,6 +588,7 @@ Find the Expected value and variance of the random variable {\bf X}.
 & = & 0 \times 0.7 + 1\times 0.2+ 2 \times 0.1\nonumber\\
 & = &  0.4  
  \end{eqnarray*}
+  \vspace{-.1in}
                     }
 }
 \end{minipage} %
@@ -599,6 +601,7 @@ Find the Expected value and variance of the random variable {\bf X}.
 & = & 0 \times 0.7 + 1\times 0.2+ 4 \times 0.1\nonumber\\
 & = &  0.6 
  \end{eqnarray*}
+ \vspace{-.2in}
                     }       
 \end{minipage}
 {\tiny Hence $\text{Var}(X):= E(X^2)- \left(E(X)\right)^2= 0.6-(0.4)^2= 0.6-0.16= 0.44$\\
@@ -639,6 +642,7 @@ blackout results in a \$500 loss. Compute expectation and variance of this compa
 & = & 0 \times 0.7 + 1\times 0.2+ 2 \times 0.1\nonumber\\
 & = &  0.4  
  \end{eqnarray*}
+  \vspace{-.2in}
                     }
 }
 \end{minipage} %
@@ -651,6 +655,7 @@ blackout results in a \$500 loss. Compute expectation and variance of this compa
 & = & 0 \times 0.7 + 1\times 0.2+ 4 \times 0.1\nonumber\\
 & = &  0.6 
  \end{eqnarray*}
+  \vspace{-.2in}
                     }       
 \end{minipage}
 {\tiny Hence $\text{Var}(X):= E(X^2)- \left(E(X)\right)^2= 0.6-(0.4)^2= 0.6-0.16= 0.44$\\
@@ -686,12 +691,16 @@ Obtain $E(  \Indicator{A}{X})$ and $ \text{Var}\left( \Indicator{A}{x} \right).$
 
 \begin{frame}{Binomial Distribution}
 \begin{itemize}
+\qBrd[4.2in]{olive!30}{
 \item A {\bf Bernoulli experiment} is a random experiment, the outcome of which can be classified in one of two mutually exclusive and
 exhaustive ways, say,  ``1=success" or ``0=failure." Let $ Y$ be the
 number of success on a Bernoulli trial, then $Y$ is called the Bernoulli
 random variable. 
-
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{teal!30}{
 \item If a sequence of $n$ independent Bernoulli trials is performed under the same condition, we call it a set of n Bernoulli trials a Binomial experiment.
+}
 \end{itemize}
 \end{frame}
 
@@ -731,10 +740,59 @@ parameters n and p; denoted by$ X\sim Binomial(n, p).$
 
 \begin{frame}{Binomial Distribution $\text{Binomial}(n,p)$}
 \define{Binomial Distribution}{
-The probability mass function of $\text{Binomial}(n, p)$ is given by
-$$\pmf(x):= {n \choose x} p^x (1-p)^{n-x}, \text{ for } x = 0, 1, \ldots,  n \text{ and } {0 < p <1 }.$$\\
-$E(X)= n\times p $ and $\text{Var}(X)= np(1-p)$.
+Let $p\in (0,1)$, then the probability mass function of $\text{Binomial}(n, p)$ is given by
+$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} p^x (1-p)^{n-x}}}, \text{ for } x \in \support[X],  \text{where } \HLTEQ[teal!30]{ \support[X]=\{ 0, 1, \ldots,  n\}}$$\\
 }
+\vspace{.1in}
+
+\qbx[4.6in]{babyblue!40}{
+$\Row{\qBrd[2in]{amethyst!50}{\text{Mean}\\
+\HLTW{E(X)= n p} },  \qBrd[2in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= n p (1-p)}} } $
+}
+
+\end{frame}
+
+
+
+\begin{frame}{Expected Value of Binomial Distribution}
+\begin{eqnarray}
+E(X)& := &  \sum_{y\in \support[X]} y\; \pmf_{_X}(y) \nonumber\\
+& = &  \sum_{y=0}^{n} y {n\choose y}p^y(1-p)^{n-y}  \nonumber\\
+& =& (1-p)^{n}  \sum_{y=0}^{n}  y {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
+& =& (1-p)^{n}  \frac{np}{(1-p)^n} \nonumber\\
+& =& np
+\end{eqnarray}
+
+\end{frame}
+
+
+\begin{frame}{Expected Value of Binomial Distribution}
+\begin{eqnarray}
+E(X^2)& := &  \sum_{y\in \support[X]} y^2\; \pmf_{_X}(y) \nonumber\\
+& = &  \sum_{y=0}^{n} y^2 {n\choose y}p^y(1-p)^{n-y}  \nonumber\\
+& =& (1-p)^{n}  \sum_{y=0}^{n}  y^2 {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
+& =& (1-p)^{n}  \frac{mp+ n(n-1)p^2}{(1-p)^n} \nonumber\\
+& =& np+ n(n-1)p^2
+\end{eqnarray}
+
+$Var(X)= E(x^2)- (E(X))^2= np+n(n-1)p^2- n^2p^2= np-np^2= np(1-p). $
+
+\end{frame}
+
+
+
+\begin{frame}{Expected Value of Binomial Distribution}
+\begin{eqnarray}
+M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
+%& = &  \sum_{y=0}^{n} e^{ty} {n\choose y}p^y(1-p)^{n-y}  \nonumber\\
+& =& (1-p)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
+& =& (1-p)^{n}  \sum_{y=0}^{n}  {n\choose y}\left( \frac{pe^{t}}{1-p}\right)^y   \nonumber\\
+& =& (1-p)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
+& =& (1-p)^{n} \left( 1+  \frac{pe^t}{1-p} \right)^n = \left( 1-p+pe^t\right)^n  \nonumber\\
+\end{eqnarray}
+
+
+
 \end{frame}
 
 
@@ -820,6 +878,20 @@ The requirements for a Poisson distribution are that:
 \end{frame}
 
 
+
+
+
+\begin{frame}{Expected Value of Binomial Distribution}
+\begin{eqnarray}
+M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
+& = &  \sum_{y=0}^{\infty} e^{ty} \frac{e^{-\lambda} \lambda^y}{y!} \nonumber\\
+& = &  e^{-\lambda}\sum_{y=0}^{\infty}  \frac{ \left( \lambda e^t\right)^y}{y!} \nonumber\\
+& = &  e^{\lambda e^t-\lambda}
+\end{eqnarray}
+
+
+
+\end{frame}
 
 
 \begin{frame}\frametitle{A few Examples of Poisson Distribution }
@@ -919,6 +991,29 @@ $$p(x) = (1-p)^{x-1}p \text{ for } x = 1, 2, 3, \ldots, $$
 
 
 \end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}{Expected Value of Binomial Distribution}
+\begin{eqnarray}
+M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
+& = &  \sum_{y=1}^{\infty } e^{ty}  (1-p)^{y-1}p \nonumber\\
+& = & p   \sum_{z=0}^{\infty } e^{tz+t}  (1-p)^{z} \nonumber\\
+& = & pe^t   \sum_{z=0}^{\infty } \left((1-p)e^{t}\right)^z\nonumber\\
+& = & \frac{pe^t}{1-(1-p)e^{t}} 
+\end{eqnarray}
+
+
+
+\end{frame}
+
+
 
 \begin{frame}\frametitle{Geometric Distribution: Example}
 \vspace{-.1in}
