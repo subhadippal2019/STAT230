@@ -326,7 +326,7 @@ number of heads obtained in the 3 tosses.  The Support of the random variable is
 
 \qBrd[4.5in]{babyblue!70}{
 For a discrete random variable $X$, we define the probability
-mass function (pmf) $\pmf_{_X}(a)$ of $X$ by
+mass function (pmf) $\pmf_{_X}(x)$ of $X$ by
 $$\pmf_{_X}(x)= P(X=x) \text{ for all } x\in \support[X]$$
 }
 
@@ -383,8 +383,10 @@ $\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
 
 \begin{frame}\frametitle{ cumulative distribution function}
 \define{cumulative distribution function}{
+Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
+$$\HLTY{ \displaystyle P(X=x)= \pmf_{_X}(x) \text{ for } x\in \support[X].}$$
 The cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
-$$\cdf_{_X}(a)= P(X\leq a)= \sum_{\{x\leq a\}}\pmf_{_X}(a)$$	
+$$\DBX{ \displaystyle \cdf_{_X}(a)= P(X\leq a)= \sum_{\{x\leq a: x\in \support[X]\}}\pmf_{_X}(a)}$$	
 }
 \end{frame}
 
@@ -392,7 +394,7 @@ $$\cdf_{_X}(a)= P(X\leq a)= \sum_{\{x\leq a\}}\pmf_{_X}(a)$$
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
 \qbx[4.5in]{amethyst!50}{
-\Exmpl{amethyst}{}  If X has a pmf given by 
+\Exmpl{amethyst}{} \small  If X be a discrete random variable on the support $\support[X]=\{1, 2, 3, 4\}$ with the corresponding  pmf specified as  
 $\pmf_{_X}(1)= \frac{1}{4}, \pmf_{_X}(2)= \frac{1}{2}, \pmf_{_X}(3)= \frac{1}{8}$, and $\pmf_{_X}(4)= \frac{1}{8}$. Calculate the CDF function of $X$. 
 }\\
 \vspace{.3in}
@@ -434,7 +436,7 @@ $\pmf_{_X}(1)= \frac{1}{4}, \pmf_{_X}(2)= \frac{1}{2}, \pmf_{_X}(3)= \frac{1}{8}
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
 \qbx[4.5in]{amethyst!50}{
-Let the pmf of a random varibale $X$ is given as 
+Let the pmf of a discrete random varibale $X$ is given as 
 \begin{center}
 \begin{tabular}{|l|l|l|l|}
 \hline\hline
@@ -483,7 +485,7 @@ Find the corresponding CDF.
 \begin{frame}\frametitle{The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}
 \define{\tiny The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}{
 If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ or $\mu_{_X}$ is given by
-$$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(x)}.}$$
+$$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
 }
 \end{frame}
 
@@ -491,7 +493,7 @@ $$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{\HLTW{x}\in
 
 \begin{frame}
 \define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{Let the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $x\in \support[X]$, the support of X.  Let $h(x)$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
-$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(x)}.}$$
+$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
 }
 \end{frame}
 
@@ -506,10 +508,10 @@ $$\DBX{ \displaystyle \text{Var}(X):= E \left(X-\HLTY{ \mu_{_X}} \right)^2},$$
 \vspace{-.05in}
 where $\HLTY{ \mu_{_X}}= E(X)$, the mean of the random variable. 
 }
-
+\vspace{-.1in}
 
 \define{Variance}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$$\DBX{ \displaystyle \text{Var}(X):= E(X^2)- \left(E(X) \right)^2}$$\\
+$$\DBX{ \displaystyle \text{Var}(X):= E(X^2)- \left(\HLTW{E(X)} \right)^2}$$\\
 \vspace{-.1in}
 }
 
@@ -532,6 +534,7 @@ $\text{Var}(X)$ is often denoted by $\sigma^2$, i.e.  $\sigma^2=\text{Var}(X)$ a
 \item $E(a+b X)= a+b E(X)$
 \item $\text{Var}(a+b X)= b^2 \text{Var}(X)$
 \end{enumerate}
+\vspace{2in}
 \end{frame}
 
 
@@ -546,7 +549,7 @@ whenever it exists.
 \begin{center}
 \qBrd[4.2in]{ube!40}{ If the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $x\in \support[X]$, the support of X, then  \\
 \begin{center}
-\qBrd[3in]{applegreen!40}{$$E\left(e^{tX} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(x)}.$$\\
+\qBrd[3in]{applegreen!40}{$$E\left(e^{tX} \right)= \sum_{\left\{\HLTW{x}\in \support[X] \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.$$\\
 \vspace{-.1in}
 }
 \end{center}
