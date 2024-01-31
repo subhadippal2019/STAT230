@@ -1095,16 +1095,6 @@ Let $A, B$ be two events such that  $$P(A) = \frac{1}{3} \text{ and } P(\Not{B})
 \end{frame}
 
 
-
-
-\begin{frame}{Inclusion Exclusion Principle: Specific Case  $n=4$}
-\begin{center}
-\includegraphics[scale=.3]{figs/InclusionExclusion4.png}
-\end{center}
-
-	\vspace{1in}
-\end{frame}
-
 \begin{frame}{Inclusion Exclusion Principle: Specific Case  $n=3$}
 \qBox{
 Let $A_1, A_2, A_3$ are three events.  Then 
@@ -1118,6 +1108,16 @@ Let $A_1, A_2, A_3$ are three events.  Then
 
 
 \end{frame}
+
+\begin{frame}{Inclusion Exclusion Principle: Specific Case  $n=4$}
+\begin{center}
+\includegraphics[scale=.3]{figs/InclusionExclusion4.png}
+\end{center}
+
+	\vspace{1in}
+\end{frame}
+
+
 
 
 \begin{frame}
@@ -1286,7 +1286,7 @@ Consider 6 tosses of a fair coin.  {\tiny For example, two typical sequences of 
 \pause
 {\tiny
  Solution:  
- a) $\frac{{6 \choose 2}}{2^6}$, b)  $\frac{1}{2^6}$ c)  $1- \frac{1}{2^6}$
+ a) $\frac{{6 \choose 2}}{2^6}$, b)$\frac{{6 \choose 4}}{2^6}$ c)  $\frac{1}{2^6}$ d)  $1- \frac{1}{2^6}$
  
  
   }
@@ -1354,8 +1354,8 @@ One of the sections in the class STAT230 has 10 students.  Assume the birthday o
 \pause
 {\tiny
  Solution:\\
-  a)   $\frac{365\times  {10 \choose 4} \times ^{364}P_{6}}{365^{10}}= \frac{365\times  {10 \choose 4} \times 364\times 363 \times 362 \times 361 \times 360 \times  359}{365^{10}}$\\
-  b)  $1- \frac{^{365}P_{10}}{365^{10}}$ }
+  a)   $\frac{365\times  {10 \choose 4} \times ^{364}P_{6}}{365^{10}}= \frac{365\times  {10 \choose 4} \times 364\times 363 \times 362 \times 361 \times 360 \times  359}{365^{10}}\approx 0.00000408$\\
+  b)  $1- \frac{^{365}P_{10}}{365^{10}}\approx 0.12$ }
  \vspace{.11in}
 \end{frame}
 
@@ -1426,7 +1426,8 @@ Suppose that there is 6 identical balls and they are to be distributed among thr
 \pause
 {\tiny Solution: 
 \begin{itemize}
-\item $\frac{ {{4+2-1}\choose {2-1} } }{ {{6+3-1}\choose {3-1}}  }$\item $1- \frac{ {{6+2-1}\choose {2-1} } }{ {{6+2-1}\choose {2-1}}  }$
+\item $\frac{ {{4+2-1}\choose {2-1} } }{ {{6+3-1}\choose {3-1}}  }= \frac{5}{28}$
+\item $1- \frac{ {{6+2-1}\choose {2-1} } }{ {{6+2-1}\choose {3-1}}  }= \frac{3}{4}$
 \end{itemize} 
 }
 \vspace{.5in}
@@ -1515,10 +1516,10 @@ Suppose that there is 6 identical balls and they are to be distributed among thr
 \begin{frame}
 \qbx[4.5in]{capri!40}{
 \small 
-\Exmpl{capri}{} In the game of bridge, the entire deck of 52 cards is dealt out to 4 players.  A card is selected randomly from the deck.
+\Exmpl{capri}{}   A card is selected randomly from the deck of 52 cards.
 \begin{enumerate}[a).]
-\item What is the probability that  the cards is an `Ace'?
-\item What is the probability that  the cards is either a  `King' or a 'Queen'? 
+\item What is the probability that  the card is an `Ace'?
+\item What is the probability that  the card is either a  `King' or a 'Queen'? 
 \end{enumerate}
 }\\
 \begin{center}
@@ -1533,7 +1534,7 @@ Suppose that there is 6 identical balls and they are to be distributed among thr
 \begin{frame}
 \qbx[4.5in]{slateblue!40}{
 \small 
-\Exmpl{slateblue}{} Two cards are selected randomly from the deck of 52 cards.
+\Exmpl{slateblue}{} Two cards are selected randomly with replacement from the deck of 52 cards.
 \begin{enumerate}[a).]
 \item What is the probability that both the cards are  `Ace's?
 \item What is the probability that at least one of them is an Ace?
@@ -1613,7 +1614,7 @@ b) $\frac{4! {48 \choose {12, 12, 12, 12}} }{{52 \choose {13,13,13,13}}}$
 
 
 
-\begin{frame}{\small De-arrangement:}
+\begin{frame}{\small De-arrangement: 	}
 
 \end{frame}
 
@@ -1629,7 +1630,7 @@ queen of spades.  Let $\HLTW{A_i}$ denotes the event that there is a match at th
 \item Argue that   $\HLTW{P(A_i)=\frac{51!}{52!}}.$ 
 \item  Argue that  for $\HLTW{i_1\neq i_2 $,  $P(A_{i_1} \cap A_{i_2})= \frac{50!}{52!}}$. 
 \item  Argue that  for $\HLTW{i_1\neq i_2 \neq i_3 $,  $P(A_{i_1} \cap A_{i_2} \cap A_{i_3})= \frac{49!}{52!}}$. 
-\item Show that the  probability of at least one exact match is 
+\item Show that the  probability of at least one  match is 
 $\HLTW{ 1-\frac{1}{2!}+\frac{1}{3!}-\frac{1}{4!}+\cdots -\frac{1}{52!}}$.
 \end{enumerate}
 }

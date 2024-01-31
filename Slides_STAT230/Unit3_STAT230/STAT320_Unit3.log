@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  29 JAN 2024 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  31 JAN 2024 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2298,14 +2298,8 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [52
 
  <./figs/InclusionExclusion3.png>]
-<figs/InclusionExclusion4.png, id=2273, 817.0525pt x 519.9425pt>
-File: figs/InclusionExclusion4.png Graphic file (type png)
-<use figs/InclusionExclusion4.png>
-Package pdftex.def Info: figs/InclusionExclusion4.png  used on input line 1106.
-
-(pdftex.def)             Requested size: 245.11765pt x 155.98395pt.
-
-Overfull \vbox (14.94687pt too high) detected at line 1106
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1110--1110
+[][] 
  []
 
 
@@ -2320,9 +2314,15 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 
 [53
 
- <./figs/InclusionExclusion4.png>]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1120--1120
-[][] 
+]
+<figs/InclusionExclusion4.png, id=2307, 817.0525pt x 519.9425pt>
+File: figs/InclusionExclusion4.png Graphic file (type png)
+<use figs/InclusionExclusion4.png>
+Package pdftex.def Info: figs/InclusionExclusion4.png  used on input line 1118.
+
+(pdftex.def)             Requested size: 245.11765pt x 155.98395pt.
+
+Overfull \vbox (14.94687pt too high) detected at line 1118
  []
 
 
@@ -2337,7 +2337,7 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 
 [54
 
-]
+ <./figs/InclusionExclusion4.png>]
 Overfull \hbox (93.17369pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2709,10 +2709,10 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 <figs/6PurpleBass3kids.png, id=3187, 848.67062pt x 334.24875pt>
 File: figs/6PurpleBass3kids.png Graphic file (type png)
 <use figs/6PurpleBass3kids.png>
-Package pdftex.def Info: figs/6PurpleBass3kids.png  used on input line 1433.
+Package pdftex.def Info: figs/6PurpleBass3kids.png  used on input line 1434.
 (pdftex.def)             Requested size: 271.58014pt x 106.96178pt.
 
-Overfull \vbox (20.98096pt too high) detected at line 1433
+Overfull \vbox (20.98096pt too high) detected at line 1434
  []
 
 
@@ -2730,10 +2730,10 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
  <./figs/6PurpleBass3kids.png>]
 File: figs/6PurpleBass3kids.png Graphic file (type png)
 <use figs/6PurpleBass3kids.png>
-Package pdftex.def Info: figs/6PurpleBass3kids.png  used on input line 1433.
+Package pdftex.def Info: figs/6PurpleBass3kids.png  used on input line 1434.
 (pdftex.def)             Requested size: 271.58014pt x 106.96178pt.
 
-Overfull \vbox (20.98096pt too high) detected at line 1433
+Overfull \vbox (20.98096pt too high) detected at line 1434
  []
 
 
@@ -2752,7 +2752,7 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 <figs/Cards.png, id=3250, 791.95876pt x 527.9725pt>
 File: figs/Cards.png Graphic file (type png)
 <use figs/Cards.png>
-Package pdftex.def Info: figs/Cards.png  used on input line 1511.
+Package pdftex.def Info: figs/Cards.png  used on input line 1512.
 (pdftex.def)             Requested size: 316.7779pt x 211.18526pt.
 
 Overfull \hbox (91.50575pt too wide) has occurred while \output is active
@@ -2770,10 +2770,10 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 <figs/Cards_Sample.png, id=3292, 1162.3425pt x 359.84438pt>
 File: figs/Cards_Sample.png Graphic file (type png)
 <use figs/Cards_Sample.png>
-Package pdftex.def Info: figs/Cards_Sample.png  used on input line 1528.
+Package pdftex.def Info: figs/Cards_Sample.png  used on input line 1529.
 (pdftex.def)             Requested size: 313.83667pt x 97.15927pt.
 
-Overfull \vbox (15.05298pt too high) detected at line 1528
+Overfull \vbox (3.05298pt too high) detected at line 1529
  []
 
 
@@ -2792,10 +2792,10 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 <figs/Cards_two_sample.png, id=3335, 1239.63126pt x 548.0475pt>
 File: figs/Cards_two_sample.png Graphic file (type png)
 <use figs/Cards_two_sample.png>
-Package pdftex.def Info: figs/Cards_two_sample.png  used on input line 1546.
+Package pdftex.def Info: figs/Cards_two_sample.png  used on input line 1547.
 (pdftex.def)             Requested size: 309.90706pt x 137.01154pt.
 
-Overfull \vbox (90.9202pt too high) detected at line 1546
+Overfull \vbox (90.9202pt too high) detected at line 1547
  []
 
 
@@ -2811,7 +2811,7 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [79
 
  <./figs/Cards_two_sample.png>]
-Overfull \vbox (148.7273pt too high) detected at line 1567
+Overfull \vbox (148.7273pt too high) detected at line 1568
  []
 
 
@@ -2827,7 +2827,7 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [80
 
 ]
-Overfull \vbox (148.7273pt too high) detected at line 1567
+Overfull \vbox (148.7273pt too high) detected at line 1568
  []
 
 
@@ -2855,12 +2855,12 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [82
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1646--1646
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1647--1647
 [][] 
  []
 
 
-Overfull \vbox (63.95547pt too high) detected at line 1646
+Overfull \vbox (63.95547pt too high) detected at line 1647
  []
 
 
@@ -2900,7 +2900,7 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [85
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1672--1672
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1673--1673
 [][] 
  []
 
@@ -2926,11 +2926,11 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit3.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1675.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1675.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1676.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1676.
  (./STAT320_Unit3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1675.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1675.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1676.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1676.
 
 Package rerunfilecheck Info: File `STAT320_Unit3.out' has not changed.
 (rerunfilecheck)             Checksum: 919DF55C46C0ACD532C498E1A525098C;231.
@@ -2963,7 +2963,7 @@ st/fonts/type1/public/rsfs/rsfs5.pfb></usr/local/texlive/2020/texmf-dist/fonts/
 type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helv
 etic/uhvro8a.pfb>
-Output written on STAT320_Unit3.pdf (86 pages, 6742987 bytes).
+Output written on STAT320_Unit3.pdf (86 pages, 6743275 bytes).
 PDF statistics:
  3729 PDF objects out of 4296 (max. 8388607)
  3092 compressed objects within 31 object streams
