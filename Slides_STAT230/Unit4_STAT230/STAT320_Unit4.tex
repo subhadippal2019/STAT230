@@ -218,16 +218,16 @@
 
 
 \begin{frame}\frametitle{Example0}
-\qbx[4.5in]{amethyst!40}{
-\Exmpl{amethyst}{} Suppose that we toss 2 dice, and suppose that
-each of the 36 possible outcomes is equally likely to occur and
-hence has probability $\frac{1}{36}$ . Suppose further that we observe that the  first die is a 3. Then, given this information, what is
-the probability that the sum of the 2 dice equals 8?
+\vspace{-.1in}
+\qbx[4.55in]{applegreen!40}{\small
+\Exmpl{applegreen}{} Suppose that we toss 2 dice, and suppose that
+each of the 36 possible outcomes is equally likely to occur,
+hence has probability $\frac{1}{36}.$ Suppose further that we observe that the  $\HLTY{\text{first die is a 3}}.$ 
+Then, what is the probability that  $\HLTEQ[amethyst!40]{\text{the sum of the 2 dice equals 8}}$ {\bf given } the additional information that $\HLTY{\text{first die is a 3}}.$?
 }\\
+\vspace{.4in}
 %\pause
-\vspace{2in}
-{\tiny Solution:  }
-\vspace{2in}
+\includegraphics[scale=.32]{figs/SixesTable.png}
 
 \end{frame}
 
@@ -237,21 +237,26 @@ the probability that the sum of the 2 dice equals 8?
 \begin{frame}
 \define{Conditional Probability}	
 {
-Let $E$,  and  $F$ are two events such that $P(F)>0$, then the conditional probability of {\bf $E$ given $F$} is defined to be, 
-$$\HLTW{\displaystyle P(E\mid F):= \frac{P(E\cap F)}{P(F)}.}$$
+Let $E$,  and  $F$ are two events such that $P\left(\HLTY{F} \right)>0$, then the conditional probability of {\bf $\HLTEQ[amethyst!30]{E}$ given $\HLTY{F}$} is defined to be, 
+\begin{center}
+\qBrd[2.55in]{teal!30}{ $$ \vspace{-.01in}
+\HLTW{\displaystyle P\left(\HLTEQ[amethyst!30]{E}\mid \HLTY{ F} \right):= \frac{P\left(\HLTEQ[amethyst!30]{E}\cap \HLTY{F}\right)}{P( \HLTY{F})}.} \vspace{-.01in}$$ }
+\end{center}
 }
 \end{frame}
 
 
 
 \begin{frame}{Example}
-\qBox{\Qn: Suppose that a balanced die is tossed once.  Find the conditional probability that 1 appears, given that an odd number was obtained.
+\vspace{-.3in}
+\qbx[4.6in]{teal!30}{\Qn Suppose that a fair die is rolled once.  Find the conditional probability that $\HLTEQ[amethyst!30]{\text{\it  the number 1 appears}}$,  {\bf given } that \HLTY{\text{\it an odd number was obtained.}}
  }\\
 
 \vspace{1.5in}
+{\tiny 
 A:= \{ Observe a 1.\}, 
 B:=\{Observe an odd number.\}\\
- $P(A\mid B)=\frac{P(A\cap B)}{P(B)}=\frac{\frac{1}{6}}{\frac{3}{6}}=\frac{1}{3}.$
+ $P(A\mid B)=\frac{P(A\cap B)}{P(B)}=\frac{\frac{1}{6}}{\frac{3}{6}}=\frac{1}{3}.$}
 \end{frame}
 
 
@@ -260,7 +265,8 @@ B:=\{Observe an odd number.\}\\
 
 
 \begin{frame}{Example}
-\qbx[4.6 in]{teal!30}{\Qn: If two events, A and B, are such that $P( A)=0.5$, $P(B)=0.3$, and $P( A\cap B)= 0.1$, find the following
+\vspace{-.1in}
+\qbx[4.6 in]{teal!30}{\Qn \small  If two events, A and B, are such that $P( A)=0.5$, $P(B)=0.3$, and $P( A\cap B)= 0.1$, find the following
 \begin{enumerate}
 \item $P(A\mid B)$
 \item $P(B\mid A)$
@@ -268,7 +274,7 @@ B:=\{Observe an odd number.\}\\
 \end{enumerate}
  }\\
 
-\vspace{1.5in}
+\vspace{2.5in}
 
 \end{frame}
 
@@ -343,7 +349,7 @@ equally likely, what is the conditional probability that both flips land on head
 
 
 \begin{frame}
-\define{Multiplication Rule }	
+\define{Multiplication Rule of Probability }	
 {
 Let $E$ and $F$ are two events, then 
 $$\HLTEQ[babyblue!70]{ \HLTY{P(E\cap F)}:=\HLTW{P(E\mid F)}\times \HLTW{P(F)}.}$$
@@ -976,7 +982,7 @@ $P(E_2 \cap F)= P(E_2) \times P( F) $.
 
 
 \begin{frame}
-\qBrd[4.5in]{bazaar!40}{Proposition: If $E$ and $F$ are independent, then so are $E$ and $\Not{F}$.}
+\qBrd[4.5in]{teal!40}{ \HLTW{Proposition:} If $E$ and $F$ are statistically independent, then so are $E$ and $\Not{F}$.}
 {\tiny Solution:}
 \vspace{2in}
 \end{frame}
