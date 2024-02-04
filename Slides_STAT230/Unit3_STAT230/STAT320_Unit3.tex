@@ -1534,7 +1534,7 @@ Suppose that there is 6 identical balls and they are to be distributed among thr
 \begin{frame}
 \qbx[4.5in]{slateblue!40}{
 \small 
-\Exmpl{slateblue}{} Two cards are selected randomly with replacement from the deck of 52 cards.
+\Exmpl{slateblue}{} Two cards are selected randomly {\bf  with replacement} from the deck of 52 cards.
 \begin{enumerate}[a).]
 \item What is the probability that both the cards are  `Ace's?
 \item What is the probability that at least one of them is an Ace?
@@ -1663,10 +1663,23 @@ WITHOUT Replacement
 
 
 
+\begin{frame}{ De-arrangement: 	}
+\vspace{-.14in}
+%\qbx[4.5in]{teal!30}{
+%}
+\end{frame}
+
+
 
 \begin{frame}{\small De-arrangement: Application of Inclusion Exclusion Principle}
-\qBox{ Consider all the permutations of the numbers $\HLTW{\{1, 2, \ldots , N\}}$.  Assume all its permutations are equally-likely.  What is the probability of selecting a permuation so that none of its digits match with that of a provided sequence.  For Example if the provided sequence is  {$(1,2,\ldots, N-1, N)$ },  then the $i^{\text{th}}$ digit of the selected sequence can not be $i$, for $i=1, \ldots N$.
+\qBrd[4.7in]{amethyst!60}{
+\begin{center}\qBrd[1.2in]{babyblueeyes!40}{De-Arrangement}\\
+\qBrd[4.5in]{amethyst!30}{
+ Consider all the permutations of the numbers $\HLTW{\{1, 2, \ldots , N\}}$.  Assume all its permutations are equally-likely.  What is the probability of selecting a permuation so that none of its digits match with that of a provided sequence.  For Example if the provided sequence is  {$\HLTW{(1,2,\ldots, N-1, N)}$ },  then the $i^{\text{th}}$ digit of the selected sequence can not be $i$, for $i=1, \ldots N$.}\\
+ \vspace{.1in}
+ \end{center}
 }
+\vspace{1in}
 %\qBox{\Qn:
 %Find the number of nonnative integer solutions of $X_1, X_2, X_3, $  such that $X_1+X_2+X_3=14$. \\
 %\HLT[yellow]{Ans: 120}
@@ -1680,26 +1693,32 @@ WITHOUT Replacement
 \end{frame}
 
 \begin{frame}
-\qBox{\begin{enumerate}[a).]
-\item Define $A_i$ be the sequence that $i^{\text{th}}$ position/degit of the selected sequence matches with the $i^{\text{th}}$ digit of the  provided sequence.   Show that  $\HLTW{P(A_i)=\frac{(N-1)!}{N!}}.$ 
-\item  Shat that  for $\HLTW{1\leq i_1\neq i_2  \leq N $,  $P(A_{i_1} \cap A_{i_2})= \frac{(N-2)!}{N!}}$. 
+
+\begin{enumerate}[a).]
+\qBrd[4.3in]{amethyst!50}{
+\item Define $A_i$ be the sequence that $i^{\text{th}}$ position/degit of the selected sequence matches with the $i^{\text{th}}$ digit of the  provided sequence.   Show that  $\HLTW{P(A_i)=\frac{(N-1)!}{N!}}.$ }
+\vspace{.04in}
+\qBrd[4.3in]{babyblue!50}{
+\item  Show that  for $\HLTW{1\leq i_1\neq i_2  \leq N} $,   $\HLTW{P(A_{i_1} \cap A_{i_2})= \frac{(N-2)!}{N!}}$. 
+}
 %\item  Show that  for $\HLTW{1\leq i_1\neq i_2 \neq i_3 \leq N  $,  $P(A_{i_1} \cap A_{i_2} \cap A_{i_3})= \frac{(N-3)!}{N!}}$. 
+\qBrd[4.3in]{amethyst!50}{
+\item  In general,  for  $\HLTW{1\leq i_1\neq i_2 \neq i_3 \neq i_k \leq N }$, \\ $\HLTW{P(A_{i_1} \cap A_{i_2} \cap \cdots \cap  A_{i_k})= \frac{(N-k)!}{N!}}$, for $k=1, \ldots , N$}
+\pause
 
-\item  In general,  argue that  for $\HLTW{1\leq i_1\neq i_2 \neq i_3 \neq i_k \leq N $,  $P(A_{i_1} \cap A_{i_2} \cap A_{i_3})= \frac{(N-k)!}{N!}}$, for $k=1, \ldots , N$
-
+\vspace{-.05in}
+\qBrd[4.3in]{babyblue!50}{
 \item Use Inclussion-Exclusion principle to prove that the  probability of {\bf at least one  match}  is 
-$\HLTW{ 1-\frac{1}{2!}+\frac{1}{3!}-\frac{1}{4!}+\cdots + (-1)^{N-1}\frac{1}{N!}}$.
-\item Use the complementation law to prove that the  probability that {\bf none of the digits match}  is
+$\HLTW{ 1-\frac{1}{2!}+\frac{1}{3!}-\frac{1}{4!}+\cdots + (-1)^{N-1}\frac{1}{N!}}$.}
+\qBrd[4.3in]{amethyst!50}{
+\item Use the complementation law to prove that the  probability that {\bf none of the digits match}  is\\
 $\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots + (-1)^{N}\frac{1}{N!}}$.
-\end{enumerate}
 }
+\end{enumerate}
+
 \end{frame}
 
-\begin{frame}{ De-arrangement: 	}
-\vspace{-.14in}
-\qbx[4.5in]{teal!30}{
-}
-\end{frame}
+
 
 
 
@@ -1746,6 +1765,7 @@ $\HLTW{ 1- \frac{1}{1!}+\frac{1}{2!}-\frac{1}{3!}+\cdots +\frac{1}{52!}}$.
 \begin{frame}{Application of Inclusion Exclusion Principle}
 \qBrd[4.6in]{amethyst!50}{\Exmpl{amethyst!30}{} Suppose that there is a practice session for a UAE football (soccer) team.   In that session all the 11 players randomly picked up a jersey from a basket where exactly 11 jerseys were kept.  Note that, all the jerseys have the players name written on it, therefore in the basket there were exactly one jersey that would match with a specific player.  What is the probability that none of the players have picked up the jersey that would match their name?
 }
+\vspace{1in}
 %\qBox{\Qn:
 %Find the number of nonnative integer solutions of $X_1, X_2, X_3, $  such that $X_1+X_2+X_3=14$. \\
 %\HLT[yellow]{Ans: 120}
