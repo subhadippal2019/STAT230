@@ -1614,12 +1614,85 @@ b) $\frac{4! {48 \choose {12, 12, 12, 12}} }{{52 \choose {13,13,13,13}}}$
 
 
 
-\begin{frame}{\small De-arrangement: 	}
 
+\TransitionFrame[antiquefuchsia]{\Large Probability of De-arrangement }
+
+
+
+\begin{frame}{ }
+\vspace{-.2in}
+\qbx[4.5in]{gray!40}{
+\Exmpl{gray!80}{} \small
+Consider a 3 digit number$\HLTW{\HLTY{9}\HLTEQ[amethyst!40]{7}\HLTEQ[lime!40]{0}}$.  What is the probability that a randomly generated  3 digit number using the digits $\{9,7,0\}$ ({\tiny you may use a digit more than once or you may not use one}) has the following property: First digit does not match with $\HLTW{\HLTY{9}}$, Second digit does not match with $\HLTW{\HLTEQ[amethyst!40]{7}}$,  and the third digit does not match with $\HLTW{\HLTEQ[lime!40]{0}}$. 
+}\\
+
+\vspace{1.25in}
+{\small
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.1in][babyblue!60]{
+WITHOUT Replacement
+}}}}$
+}
+\end{frame}
+
+
+\begin{frame}{ De-arrangement: 	}
+\vspace{-.12in}
+\qbx[4.5in]{teal!30}{
+\Exmpl{teal}{} \small
+Consider a 3 digit number$\HLTW{\HLTY{9}\HLTEQ[amethyst!40]{7}\HLTEQ[lime!40]{0}}$.  What is the probability that a randomly generated  3 digit number using the digits $\{9,7,0\}$ ({\tiny you must use all the digits and a digit once only}) has the following property: First digit does not match with $\HLTW{\HLTY{9}}$, Second digit does not match with $\HLTW{\HLTEQ[amethyst!40]{7}}$,  and the third digit does not match with $\HLTW{\HLTEQ[lime!40]{0}}$. 
+}\\
+\vspace{1.05in}
+{\small
+$\Col{{\Row{\MCQ[2.1in]{
+Order is Important 
+} , \MCQ[2.1in]{
+Order is NOT Important
+}}},{\Row{\MCQ[2.1in][babyblue!60]{ 
+WITH Replacement
+},\MCQ[2.1in][babyblue!60]{
+WITHOUT Replacement
+}}}}$
+}
 \end{frame}
 
 
 
+
+\begin{frame}{\small De-arrangement: Application of Inclusion Exclusion Principle}
+\qBox{ Consider all the permutations of the numbers $\HLTW{\{1, 2, \ldots , N\}}$.  Assume all its permutations are equally-likely.  What is the probability of selecting a permuation so that none of its digits match with a provided sequence {$(1,2,\ldots, N-1, N)$ }
+\begin{enumerate}[a).]
+\item Define $A_i$ be the sequence that $i^{\text{th}}$ position matches with the provided sequence.   Prove that  $\HLTW{P(A_i)=\frac{(N-1)!}{N!}}.$ 
+\item  Argue that  for $\HLTW{i_1\neq i_2 $,  $P(A_{i_1} \cap A_{i_2})= \frac{(N-2)!}{N!}}$. 
+\item  Argue that  for $\HLTW{i_1\neq i_2 \neq i_3 $,  $P(A_{i_1} \cap A_{i_2} \cap A_{i_3})= \frac{(N-3)!}{N!}}$. 
+\item Show that the  probability of at least one  match is 
+$\HLTW{ 1-\frac{1}{2!}+\frac{1}{3!}-\frac{1}{4!}+\cdots -\frac{1}{52!}}$.
+\end{enumerate}
+}
+%\qBox{\Qn:
+%Find the number of nonnative integer solutions of $X_1, X_2, X_3, $  such that $X_1+X_2+X_3=14$. \\
+%\HLT[yellow]{Ans: 120}
+%}
+%
+%\qBox{\Qn:
+% Consider an Experiment,  where a  dice is thrown 4 times.
+%Calculate the probability that the sum of all the through is 17?
+%}
+\vspace{1in}
+\end{frame}
+
+
+
+\begin{frame}{ De-arrangement: 	}
+\vspace{-.14in}
+\qbx[4.5in]{teal!30}{
+}
+\end{frame}
 
 
 
@@ -1631,7 +1704,7 @@ queen of spades.  Let $\HLTW{A_i}$ denotes the event that there is a match at th
 \item  Argue that  for $\HLTW{i_1\neq i_2 $,  $P(A_{i_1} \cap A_{i_2})= \frac{50!}{52!}}$. 
 \item  Argue that  for $\HLTW{i_1\neq i_2 \neq i_3 $,  $P(A_{i_1} \cap A_{i_2} \cap A_{i_3})= \frac{49!}{52!}}$. 
 \item Show that the  probability of at least one  match is 
-$\HLTW{ 1-\frac{1}{2!}+\frac{1}{3!}-\frac{1}{4!}+\cdots -\frac{1}{52!}}$.
+$\HLTW{ 1-\frac{1}{2!}+\frac{1}{3!}-\frac{1}{4!}+\cdots +(-1)^{N+1}\frac{1}{N!}}$.
 \end{enumerate}
 }
 %\qBox{\Qn:
