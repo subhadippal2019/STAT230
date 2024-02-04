@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 FEB 2024 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 FEB 2024 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2928,12 +2928,8 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [84
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1687--1687
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1680--1680
 [][] 
- []
-
-
-Overfull \vbox (58.7963pt too high) detected at line 1687
  []
 
 
@@ -2949,6 +2945,15 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [85
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1696--1696
+[][] 
+ []
+
+
+Overfull \vbox (0.14063pt too high) detected at line 1696
+ []
+
+
 Overfull \hbox (91.50575pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2961,15 +2966,6 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [86
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1720--1720
-[][] 
- []
-
-
-Overfull \vbox (63.95547pt too high) detected at line 1720
- []
-
-
 Overfull \hbox (91.50575pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2982,6 +2978,15 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [87
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1737--1737
+[][] 
+ []
+
+
+Overfull \vbox (83.58069pt too high) detected at line 1737
+ []
+
+
 Overfull \hbox (91.50575pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -2994,6 +2999,15 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [88
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1737--1737
+[][] 
+ []
+
+
+Overfull \vbox (83.58069pt too high) detected at line 1737
+ []
+
+
 Overfull \hbox (91.50575pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] 
  []
@@ -3006,7 +3020,31 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 [89
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1746--1746
+Overfull \hbox (91.50575pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (17.15489pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[90
+
+]
+Overfull \hbox (91.50575pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (17.15489pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[91
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1763--1763
 [][] 
  []
 
@@ -3020,7 +3058,7 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[90
+[92
 
 ]
 \tf@nav=\write6
@@ -3032,20 +3070,20 @@ Overfull \hbox (17.15489pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit3.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1749.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1749.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1766.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1766.
  (./STAT320_Unit3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1749.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1749.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1766.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1766.
 
 Package rerunfilecheck Info: File `STAT320_Unit3.out' has not changed.
 (rerunfilecheck)             Checksum: 919DF55C46C0ACD532C498E1A525098C;231.
  ) 
 Here is how much of TeX's memory you used:
- 29828 strings out of 480608
- 582675 string characters out of 5903631
- 992724 words of memory out of 5000000
- 44781 multiletter control sequences out of 15000+600000
+ 29858 strings out of 480608
+ 583365 string characters out of 5903631
+ 992760 words of memory out of 5000000
+ 44807 multiletter control sequences out of 15000+600000
  607195 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,26n,79p,799b,2536s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3070,10 +3108,10 @@ f-dist/fonts/type1/public/rsfs/rsfs5.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit3.pdf (90 pages, 6779324 bytes).
+Output written on STAT320_Unit3.pdf (92 pages, 6791038 bytes).
 PDF statistics:
- 3925 PDF objects out of 4296 (max. 8388607)
- 3247 compressed objects within 33 object streams
- 185 named destinations out of 1000 (max. 500000)
- 3081 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4008 PDF objects out of 4296 (max. 8388607)
+ 3317 compressed objects within 34 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 3141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
