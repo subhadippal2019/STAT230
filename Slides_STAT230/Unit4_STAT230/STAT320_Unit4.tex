@@ -1067,6 +1067,56 @@ ashlight will give more than 100 hours of use?
 
 
 
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{antiquefuchsia!40}{
+\Exmpl{antiquefuchsia}{}     We know the following about a colormetric method used to test lake water for nitrates. If
+water specimens contain nitrates, a solution dropped into the water will cause the specimen to
+turn red 95\% of the time. When used on water specimens without nitrates, the solution causes
+the water to turn red 10\% of the time (because chemicals other than nitrates are sometimes
+present and they also react to the agent). Past experience in a lab indicates that nitrates are
+contained in 30\%of the water specimens that are sent to the lab for testing. If a water specimen is randomly selected
+\begin{enumerate}
+\item from among those sent to the lab, what is the probability that it will turn red when tested?
+\item It it turns red when tested, what is the probability that it actually contains nitrates?
+\end{enumerate}
+}\\
+%\pause
+
+{\tiny {\bf Solution:   
+
+}  
+\vspace{1.6in}
+}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{olive!40}{
+\Exmpl{olive}{}     When a organisation's website is accessed, there is a probability of 0.07 that the web address
+was typed in directly. In such a case, there is a probability of 0.08 that an online purchase
+will be made. On the other hand, when the website is accessed indirectly, which occurs with
+probability 0.93, then there is only a 0.01 chance that an online purchase will be made. 
+\begin{enumerate}
+\item The probability that the website is accessed directly and that a purchase is made ? %0.0056
+\item What is the probability that the website is accessed indirectly and that a purchase is made? %0.0093
+\item  What proportion of online purchases are from individuals who access the website directly?%0.376
+\end{enumerate}
+}\\
+%\pause
+
+{\tiny {\bf Solution:   
+
+}  
+\vspace{1.6in}
+}
+\end{frame}
+
+
+
 \section{The Notion of Statistical Independence }
 \TransitionFrame[amethyst]{\Large The Notion of Statistical Independence }
 
@@ -1134,17 +1184,14 @@ $P(E \cap F)= P(\{HT\})= \frac{1}{4}$. Where as $P(E)= P(\{HH, HT\})=\frac{1}{2}
 \Exmpl{babyblue}{}   Suppose that we toss 2 fair dice. Let $E_1$ denote the
 event that the sum of the dice is 6 and F denote the event that the
 first die equals 4.  Is $E_1$ statistically independent of $F$?\\
-\HLTW{\text{Answer:} }
-   $P(E_1 \cap F)= P(\{(4,2)\})= \frac{1}{36}$ where as $P(E_1)=\frac{5}{36}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_1$ and $F$ are not statistically independet because, 
-$P(E_1 \cap F)\neq P(E_1) \times P( F) $.
 }\\
-\vspace{.1in}
-\qbx[4.5in]{asparagus!40}{
-\Exmpl{asparagus}{}   Now, suppose that we let $E_2$ be the event that the sum of the dice equals $7$.   Is $E_2$ statistically independent of $F$?\\
-\HLTW{\text{Answer:} }
-$P(E_2\cap F)= P(\{(4,3)\})= \frac{1}{36}$ where as $P(E_2)=\frac{1}{6}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_2$ and $F$ are  statistically independet because, 
-$P(E_2 \cap F)= P(E_2) \times P( F) $.
-}\\
+%\vspace{.1in}
+%\qbx[4.5in]{asparagus!40}{
+%\Exmpl{asparagus}{}   Now, suppose that we let $E_2$ be the event that the sum of the dice equals $7$.   Is $E_2$ statistically independent of $F$?\\
+%\HLTW{\text{Answer:} }
+%$P(E_2\cap F)= P(\{(4,3)\})= \frac{1}{36}$ where as $P(E_2)=\frac{1}{6}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_2$ and $F$ are  statistically independet because, 
+%$P(E_2 \cap F)= P(E_2) \times P( F) $.
+%}\\
 %\pause
 
 %{\tiny {\bf Solution:   
@@ -1153,18 +1200,106 @@ $P(E_2 \cap F)= P(E_2) \times P( F) $.
 %}  
 %\vspace{1.6in}
 %}
+\vspace{1.5in}
+{\tiny \HLTW{\text{Answer:} }
+   $P(E_1 \cap F)= P(\{(4,2)\})= \frac{1}{36}$ where as $P(E_1)=\frac{5}{36}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_1$ and $F$ are not statistically independet because, 
+$P(E_1 \cap F)\neq P(E_1) \times P( F) $.}
 \end{frame}
 
 
 
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+%\qbx[4.5in]{babyblue!40}{
+%\Exmpl{babyblue}{}   Suppose that we toss 2 fair dice. Let $E_1$ denote the
+%event that the sum of the dice is 6 and F denote the event that the
+%first die equals 4.  Is $E_1$ statistically independent of $F$?\\
+%\HLTW{\text{Answer:} }
+%   $P(E_1 \cap F)= P(\{(4,2)\})= \frac{1}{36}$ where as $P(E_1)=\frac{5}{36}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_1$ and $F$ are not statistically independet because, 
+%$P(E_1 \cap F)\neq P(E_1) \times P( F) $.
+%}\\
+%\vspace{.1in}
+\qbx[4.5in]{asparagus!40}{
+\Exmpl{asparagus}{}   Now, suppose that we let $E_2$ be the event that the sum of the dice equals $7$.   Is $E_2$ statistically independent of $F$?
+}\\
+\vspace{1.7in}
+%\pause
+
+%{\tiny {\bf Solution:   
+%This follows because $P(E\cap F) = \frac{1}{52}$ whereas
+%$P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
+%}  
+%\vspace{1.6in}
+%}
+{\tiny \HLTW{\text{Answer:} }
+$P(E_2\cap F)= P(\{(4,3)\})= \frac{1}{36}$ where as $P(E_2)=\frac{1}{6}$ and $P(F)= \frac{1}{6}$.  Therefore,  $E_2$ and $F$ are  statistically independet because, 
+$P(E_2 \cap F)= P(E_2) \times P( F) $.}
+\end{frame}
+
+
+
+
+
+
 \begin{frame}
-\qBrd[4.5in]{teal!40}{ \HLTW{Proposition:} If $E$ and $F$ are statistically independent, then so are $E$ and $\Not{F}$.}
+\qBrd[4.5in]{teal!40}{ \HLTW{Proposition:} If two events $A$, and $B$ are statistically independent, then 
+\begin{enumerate}[a).]
+\item  $A$ and $\Not{B}$ are also statistically independent, 
+\item  $\Not{A}$ and ${B}$ are also statistically independent. 
+\item  $\Not{A}$ and $\Not{B}$ are also statistically independent. 
+\end{enumerate}
+}
 {\tiny Solution:}
 \vspace{2in}
 \end{frame}
 
 
 
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal}{}   If A and B are independent events with P( A) = 0.5 and P( B) = 0.2, find the following:
+\begin{enumerate}
+\item $P(A\cap B)$
+\item $P(A\cup B)$
+\item $P(\Not{A}\cap \Not{B})$
+\item $P(\Not{A}\cup \Not{B})$
+\end{enumerate}
+}\\
+\pause
+
+{\tiny {\bf Solution:   
+
+}  
+\vspace{1.6in}
+}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal}{}  Three radar sets, operating independently, are set to detect any aircraft flying through a certain area. Each set has a probability of $.02$ of failing to detect a plane in its area. If an aircraft enters the area, what is the probability that it
+\begin{enumerate}
+\item goes undetected?
+\item is detected by at least one  radar set?
+\item is detected by all three radar sets?
+\end{enumerate}
+}\\
+\pause
+
+{\tiny {\bf Solution:   
+
+}  
+\vspace{1.6in}
+}
+\end{frame}
 
 
 
@@ -1189,30 +1324,59 @@ $P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
 
 \begin{frame}\frametitle{Relation between:  Statistical  Independence \& Disjointness   }
 \vspace{-.1in}
-\qbx[4.5in]{amber!40}{
-\Exmpl{amber}{}    
+\qbx[4.5in]{amethyst!40}{
+{\HLTW{Result}:   If $A$ and $B$ are two  events such that $P(A)>0$ and $P(B>0)$ then, 
+\begin{enumerate}[a).]
+\item If the events A and B are Statistically Independent then they can not be disjoint./mutually exclushive. 
+\item If the events A and B are disjoint then they can not be statistically independent. 
+\end{enumerate}
+   }  
 }\\
 
-
-
+\vspace{1.5in}
 \end{frame} 
  
  
 
 \begin{frame}\frametitle{Generalized Definition of Statistical Independence }
 \define{Statistically Independent Events}{
-Three events $E$, $F$, and $G$ are said to be  statistically independent if
+Three events $A_1$, $A_2$, and $A_3$ are said to be  statistically independent if
 \begin{center}
-\qBrd[3.5in]{applegreen!40}{ $P(E\cap F \cap G ) = P(E)\times P(F)  \times P(G)  $}\\
-\qBrd[2.5in]{purple!30}{ $P(E\cap F ) = P(E)\times P(F)  $}\
-\qBrd[2.5in]{amethyst!30}{ $P(E\cap G ) = P(E)\times P(G)  $}\\
-\qBrd[2.5in]{bittersweet!40}{ $P(F\cap G ) = P(F)\times P(G)  $}\\
+\qBrd[3.5in]{applegreen!40}{ $P(A_1\cap A_1 \cap A_3 ) = P(A_1)\times P(A_2)  \times P(A_3)  $}\\
+\qBrd[2.5in]{purple!30}{ $P(A_1\cap A_2 ) = P(A_1)\times P(A_2)  $}\
+\qBrd[2.5in]{amethyst!30}{ $P(A_1\cap A_3 ) = P(A_1)\times P(A_3)  $}\\
+\qBrd[2.5in]{bittersweet!40}{ $P(A_2\cap A_3 ) = P(A_2)\times P(A_3)  $}\\
 
 \end{center}
 }
 \vspace{1.5in}
 
 \end{frame}
+
+
+
+\begin{frame}\frametitle{Example}
+\vspace{-.1in}
+\qbx[4.5in]{almond!40}{
+\Exmpl{almond}{}   A biased  coin is tossed 3 tiimes. Assume that the tosses are independent to each other (Means events concerning only toss 1 is statistically independent to events concerning toss 2).  Assume that the probability for Head for the toss is $\pi$ ($\pi$ is any number between 0 to 1, for example $\pi=0.75$).  Therefore all the outcomes in the sample space may not be equally likelly.  Find the probability of the following events
+\begin{enumerate}
+\item  $\{HHH\}$
+\item  $\{HHT\}$,  $\{THH\}$, $\{HTH\}$
+\item  Exactly one of the toss results in a Head. 
+\item  Exactly two of the tosses result in Head. 
+\end{enumerate}
+}\\
+%\pause
+
+%{\tiny {\bf Solution:   
+%This follows because $P(E\cap F) = \frac{1}{52}$ whereas
+%$P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
+%}  
+\vspace{1.6in}
+%}
+\end{frame}
+
+
 
 \TransitionFrame[antiquefuchsia]{\Large Questions?  }
  

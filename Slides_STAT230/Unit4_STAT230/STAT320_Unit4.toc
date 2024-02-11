@@ -3,4 +3,4 @@
 \beamer@sectionintoc {2}{ Partition of an Event }{15}{0}{2}
 \beamer@sectionintoc {3}{Law of Total Probability}{25}{0}{3}
 \beamer@sectionintoc {4}{Bayes' Theorem}{33}{0}{4}
-\beamer@sectionintoc {5}{The Notion of Statistical Independence }{54}{0}{5}
+\beamer@sectionintoc {5}{The Notion of Statistical Independence }{56}{0}{5}
