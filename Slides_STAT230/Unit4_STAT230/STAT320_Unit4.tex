@@ -671,7 +671,7 @@ Let E and F be two events, then
 
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
-\qbx[4.5in]{applegreen!40}{
+\qbx[4.5in]{applegreen!30}{\small 
 \Exmpl{applegreen}{} An insurance company believes that people can be divided into two classes: those who are accident prone and those who are not. 
 The companys statistics show that an accident-prone person will have an accident at some time within a fixed 1-year period with probability $0.4$, whereas this probability is $0.2$ for a person who is not accident prone.  If we assume that $30\%$
  of the population is accident prone, what is the probability
@@ -743,7 +743,7 @@ Chpt2/bayesTree.html}
 
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
-\qbx[4.5in]{amethyst!40}{
+\qbx[4.5in]{amethyst!40}{\small
 \Exmpl{amethyst}{}  An insurance company believes that people can be divided into two classes: those who are accident prone and those who are not. 
 The companys statistics show that an accident-prone person will have an accident at some time within a fixed 1-year period with probability $0.4$, whereas this probability is $0.2$ for a person who is not accident prone.  If we assume that $30\%$
  of the population is accident prone. \\
@@ -930,12 +930,12 @@ $P(E_2 \cap F)= P(E_2) \times P( F) $.}
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
 \qbx[4.5in]{teal!40}{
-\Exmpl{teal}{}   If A and B are independent events with P( A) = 0.5 and P( B) = 0.2, find the following:
+\Exmpl{teal}{}   If A and B are independent events with \HLTW{P( A) = 0.5} and \HLTW{P( B) = 0.2}, find the following:
 \begin{enumerate}
-\item $P(A\cap B)$
-\item $P(A\cup B)$
-\item $P(\Not{A}\cap \Not{B})$
-\item $P(\Not{A}\cup \Not{B})$
+\qBrd[.75in]{applegreen!30}{\item $P(A\cap B)$}\hspace{.1in}
+\qBrd[.75in]{amber!30}{\item $P(A\cup B)$}\hspace{.1in}
+\qBrd[.75in]{applegreen!30}{\item $P(\Not{A}\cap \Not{B})$}\hspace{.1in}
+\qBrd[.75in]{amber!30}{\item $P(\Not{A}\cup \Not{B})$}\hspace{.1in}
 \end{enumerate}
 }\\
 \pause
@@ -943,7 +943,7 @@ $P(E_2 \cap F)= P(E_2) \times P( F) $.}
 {\tiny {\bf Solution:   
 
 }  
-\vspace{1.6in}
+\vspace{2.6in}
 }
 \end{frame}
 
@@ -957,7 +957,7 @@ $P(E_2 \cap F)= P(E_2) \times P( F) $.}
 %__________________________________________
 \begin{frame}{   }
 \vspace{-.1in}
-\qBox{\Qn:
+\qBox{\Qn: \small
 A diagnostic test for a disease is such that it (correctly) detects the disease in 90\% of the
 individuals who actually have the disease. Also, if a person does not have the disease, the test
 will report that he or she does not have it with probability 0.9. Only 1\%  of the population has the
@@ -980,47 +980,47 @@ $\HLTEQ[yellow]{ P(B\mid A)=0.9, P(\Not{B}\mid A^c)=0.9 \text{ and  } P(A)=0.01}
 \end{frame}
 
 
-\begin{frame}\frametitle{Example}
+%\begin{frame}\frametitle{Example}
+%\vspace{-.1in}
+%\qbx[4.5in]{atomictangerine!40}{
+%\Exmpl{atomictangerine}{}     Suppose that we have 3 cards that are identical in form, except that both sides of the first card are colored red, both sides of the second card are colored black, and one side of the third card is colored red and the other side black. The 3 cards are mixed up in a hat, and 1 card is randomly selected and put down on the ground. If the upper side of the chosen card is colored red, what is the probability that the other side is colored black?
+%}\\
+%\pause
+%\vspace{.6in}
+%{\tiny {\bf Solution: Let RR, BB, and RB denote, respectively, the events that the chosen card is all red, all black, or the redblack card. Also, let R be the event that the upturned side of the chosen card is red. Then
+%the desired probability is obtained
+%$$    P(RB\mid R)=  \frac{P(R\mid RB)P(RB)}{P(R\mid RR)P(RR)+ P(R\mid RB)P(RB) + P(R\mid BB)P(BB)}= \frac{\frac{1}{2}\times \frac{1}{3} }{   (1)\times \frac{1}{3}  + \frac{1}{2}\times \frac{1}{3}  +  (0) \times  \frac{1}{3}      }=  \frac{1}{3}   .$$   
+%}  
+%
+%}
+%\end{frame}
+%
+
+
+
+%
+%
+%\begin{frame}\frametitle{Example}
+%\vspace{-.1in}
+%\qbx[4.5in]{olive!40}{
+%\Exmpl{olive}{}     A new couple, known to have two children, has just moved into town. Suppose that the mother is encountered walking with one of her children. If this child is a girl, what is the probability that both children are girls?
+%}\\
+%\pause
+%
+%{\tiny {\bf Solution:   
+%
+%}  
+%\vspace{1.6in}
+%}
+%\end{frame}
+%
+%
+
+
+
+\begin{frame}\frametitle{}
 \vspace{-.1in}
-\qbx[4.5in]{atomictangerine!40}{
-\Exmpl{atomictangerine}{}     Suppose that we have 3 cards that are identical in form, except that both sides of the first card are colored red, both sides of the second card are colored black, and one side of the third card is colored red and the other side black. The 3 cards are mixed up in a hat, and 1 card is randomly selected and put down on the ground. If the upper side of the chosen card is colored red, what is the probability that the other side is colored black?
-}\\
-\pause
-\vspace{.6in}
-{\tiny {\bf Solution: Let RR, BB, and RB denote, respectively, the events that the chosen card is all red, all black, or the redblack card. Also, let R be the event that the upturned side of the chosen card is red. Then
-the desired probability is obtained
-$$    P(RB\mid R)=  \frac{P(R\mid RB)P(RB)}{P(R\mid RR)P(RR)+ P(R\mid RB)P(RB) + P(R\mid BB)P(BB)}= \frac{\frac{1}{2}\times \frac{1}{3} }{   (1)\times \frac{1}{3}  + \frac{1}{2}\times \frac{1}{3}  +  (0) \times  \frac{1}{3}      }=  \frac{1}{3}   .$$   
-}  
-
-}
-\end{frame}
-
-
-
-
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{olive!40}{
-\Exmpl{olive}{}     A new couple, known to have two children, has just moved into town. Suppose that the mother is encountered walking with one of her children. If this child is a girl, what is the probability that both children are girls?
-}\\
-\pause
-
-{\tiny {\bf Solution:   
-
-}  
-\vspace{1.6in}
-}
-\end{frame}
-
-
-
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{teal!40}{
+\qbx[4.5in]{teal!25}{\small
 \Exmpl{teal!40}{}    
 The length, width, and height of a manufactured part are classified as being either within or outside specified tolerance limits. In a quality inspection $86\%$ of the parts are found to be within the specified tolerance limits for width, but only $80\%$ of the parts are within the specified tolerance limits for all three dimensions. However,  $2\%$ of the parts are within the specified tolerance limits for width and length but not for height, and $3\%$ of the parts are within the specified tolerance limits for width and height but not for length. Moreover, $92\%$ of the parts are within the specified tolerance limits for either width or height, or both of these dimensions.
 \begin{enumerate}
@@ -1042,16 +1042,16 @@ The length, width, and height of a manufactured part are classified as being eit
 
 
 
-\begin{frame}\frametitle{Example}
+\begin{frame}\frametitle{}
 \vspace{-.1in}
-\qbx[4.5in]{babyblue!40}{
-\Exmpl{babyblue!40}{}    
+\qbx[4.5in]{babyblue!50}{
+\Exmpl{babyblue!30}{}    \small
 A car repair is either on time or late and either
 satisfactory or unsatisfactory. If a repair is made on time,
-then there is a probability of 0.85 that it is satisfactory. There is a probability of 0.77 that a repair will be made on time. What is the probability that a repair is made on time and is satisfactory?
+then there is a probability of 0.85 that it is satisfactory. There is a probability of 0.77 that a repair will be made on time.  
 \begin{enumerate}
-\item
-\item 
+\item What is the probability that that the car repair is satisfactory given that it is late?
+\item What is the probability that that the car repair is satisfactory given that it is on time?
 \end{enumerate}
 }\\
 %\pause
@@ -1069,9 +1069,9 @@ then there is a probability of 0.85 that it is satisfactory. There is a probabil
 
 
 
-\begin{frame}\frametitle{Example}
+\begin{frame}
 \vspace{-.1in}
-\qbx[4.5in]{olive!40}{
+\qbx[4.5in]{olive!30}{
 \Exmpl{olive!40}{}    
 An island has three species of bird. Species 1 accounts for
 $45\%$ of the birds, of which $10\%$ have been tagged. Species
@@ -1119,10 +1119,10 @@ of species 3?
 
 
 
-\begin{frame}\frametitle{Example}
+\begin{frame}\frametitle{}
 \vspace{-.1in}
-\qbx[4.5in]{airforceblue!40}{
-\Exmpl{airforceblue!40}{}    
+\qbx[4.5in]{airforceblue!30}{
+\Exmpl{airforceblue!40}{}    \small
 After production, an electrical circuit is given a quality
 score of A, B, C, or D. Over a certain period of time,
 $77\%$ of the circuits were given a quality score A,
@@ -1133,6 +1133,12 @@ quality score A eventually failed, and the failure rate was
 $10\%$ for circuits given a quality score B, $14\%$ for circuits
 given a quality score C, and $25\%$ for circuits given a
 quality score D.
+\begin{enumerate}
+\item If a circuit did not fail, what is the probability that it
+had received a quality score A?
+\item If a circuit failed, what is the probability that it had
+received a quality score either C or D?
+\end{enumerate}
 }\\
 %\pause
 
@@ -1147,50 +1153,50 @@ quality score D.
 
 
 
+%
+%\begin{frame}\frametitle{Example}
+%\vspace{-.1in}
+%\qbx[4.5in]{airforceblue!40}{
+%\Exmpl{airforceblue!40}{}    
+%After production, an electrical circuit is given a quality
+%score of A, B, C, or D. Over a certain period of time,
+%$77\%$ of the circuits were given a quality score A,
+%$11\%$ were given a quality score B, $7\%$ were given a
+%quality score C, and $5\%$ were given a quality score D.
+%Furthermore, it was found that $2\%$ of the circuits given a
+%quality score A eventually failed, and the failure rate was
+%$10\%$ for circuits given a quality score B, $14\%$ for circuits
+%given a quality score C, and $25\%$ for circuits given a
+%quality score D.
+%}\\
+%%\pause
+%
+%{\tiny {\bf Solution:   
+%
+%}  
+%\vspace{1.6in}
+%}
+%\end{frame}
 
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{airforceblue!40}{
-\Exmpl{airforceblue!40}{}    
-After production, an electrical circuit is given a quality
-score of A, B, C, or D. Over a certain period of time,
-$77\%$ of the circuits were given a quality score A,
-$11\%$ were given a quality score B, $7\%$ were given a
-quality score C, and $5\%$ were given a quality score D.
-Furthermore, it was found that $2\%$ of the circuits given a
-quality score A eventually failed, and the failure rate was
-$10\%$ for circuits given a quality score B, $14\%$ for circuits
-given a quality score C, and $25\%$ for circuits given a
-quality score D.
-}\\
+
+%
+%
+%\begin{frame}\frametitle{}
+%\vspace{-.1in}
+%\qbx[4.5in]{amethyst!50}{
+%\Exmpl{amethyst!45}{}    
+%The length, width, and height of a manufactured part are classified as being either within or outside specified tolerance limits. In a quality inspection $86\%$ of the parts are found to be within the specified tolerance limits for width, but only $80\%$ of the parts are within the specified tolerance limits for all three dimensions. However,  $2\%$ of the parts are within the specified tolerance limits for width and length but not for height, and $3\%$ of the parts are within the specified tolerance limits for width and
+%}\\
 %\pause
-
-{\tiny {\bf Solution:   
-
-}  
-\vspace{1.6in}
-}
-\end{frame}
-
-
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{amethyst!50}{
-\Exmpl{amethyst!45}{}    
-The length, width, and height of a manufactured part are classified as being either within or outside specified tolerance limits. In a quality inspection $86\%$ of the parts are found to be within the specified tolerance limits for width, but only $80\%$ of the parts are within the specified tolerance limits for all three dimensions. However,  $2\%$ of the parts are within the specified tolerance limits for width and length but not for height, and $3\%$ of the parts are within the specified tolerance limits for width and
-}\\
-\pause
-
-{\tiny {\bf Solution:   
-
-}  
-\vspace{1.6in}
-}
-\end{frame}
-
-
+%
+%{\tiny {\bf Solution:   
+%
+%}  
+%\vspace{1.6in}
+%}
+%\end{frame}
+%
+%
 
 
 
@@ -1266,7 +1272,7 @@ contained in 30\%of the water specimens that are sent to the lab for testing. If
 
 
 
-\begin{frame}\frametitle{Example}
+\begin{frame}\frametitle{}
 \vspace{-.1in}
 \qbx[4.5in]{olive!40}{
 \Exmpl{olive}{}     When a organisation's website is accessed, there is a probability of 0.07 that the web address
@@ -1290,7 +1296,7 @@ probability 0.93, then there is only a 0.01 chance that an online purchase will 
 
 
 
-\begin{frame}\frametitle{Example}
+\begin{frame}\frametitle{}
 \vspace{-.1in}
 \qbx[4.5in]{teal!40}{
 \Exmpl{teal}{}  Three radar sets, operating independently, are set to detect any aircraft flying through a certain area. Each set has a probability of $.02$ of failing to detect a plane in its area. If an aircraft enters the area, what is the probability that it
@@ -1316,7 +1322,7 @@ probability 0.93, then there is only a 0.01 chance that an online purchase will 
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
 \qbx[4.5in]{amber!40}{
-\Exmpl{amber}{}    A card is selected at random from an ordinary deck of 52 playing cards. If E is the event that the selected card is an ace and F is the event that it is a spade, then E and F are independent.
+\Exmpl{amber}{}    A card is selected at random from an ordinary deck of 52 playing cards. If E is the event that the selected card is an ace and F is the event that it is a spade, then E and F are statistically independent.
 }\\
 \pause
 
@@ -1346,30 +1352,30 @@ $P(E) = \frac{4}{52}$ and $P(F) = \frac{13}{52}.$
  
  
 
-
-\begin{frame}\frametitle{Example}
-\qbx[4.5in]{amber!40}{
-\Exmpl{amber}{} Suppose that an urn contains 8 red balls and 4
-white balls. We draw 2 balls from the urn without
-replacement. If we assume that at each draw each ball in the
-urn is equally likely to be chosen, what is the probability that
-both balls drawn are red?
-}\\
-\pause
-\vspace{1in}
-{\tiny {\bf Solution:}  
-Let $R_1$ and $R_2$ denote, respectively, the events that
-the first and second balls drawn are red. Now, given that the
-first ball selected is red, there are 7 remaining red balls and 4
-white balls, so $P(R_2\mid R_1) =\frac{7}{11}$. . As $P(R_1) = \frac{8}{12}$ , the desired probability is
-$$P(R_1\mid R_2) =P(R_2\mid R_1)\times P(R1)=\frac{7}{11}\frac{8
-}{12}=\frac{14}{33}.$$
-
-}
-\vspace{2in}
-
-\end{frame}
-
+%
+%\begin{frame}\frametitle{Example}
+%\qbx[4.5in]{amber!40}{
+%\Exmpl{amber}{} Suppose that an urn contains 8 red balls and 4
+%white balls. We draw 2 balls from the urn without
+%replacement. If we assume that at each draw each ball in the
+%urn is equally likely to be chosen, what is the probability that
+%both balls drawn are red?
+%}\\
+%\pause
+%\vspace{1in}
+%{\tiny {\bf Solution:}  
+%Let $R_1$ and $R_2$ denote, respectively, the events that
+%the first and second balls drawn are red. Now, given that the
+%first ball selected is red, there are 7 remaining red balls and 4
+%white balls, so $P(R_2\mid R_1) =\frac{7}{11}$. . As $P(R_1) = \frac{8}{12}$ , the desired probability is
+%$$P(R_1\mid R_2) =P(R_2\mid R_1)\times P(R1)=\frac{7}{11}\frac{8
+%}{12}=\frac{14}{33}.$$
+%
+%}
+%\vspace{2in}
+%
+%\end{frame}
+%
 
 
 
