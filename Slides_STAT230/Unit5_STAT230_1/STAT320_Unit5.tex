@@ -318,36 +318,95 @@ number of heads obtained in the 3 tosses.  The Support of the random variable is
 
 
 \section{Discrete Random Variables  }
-\TransitionFrame[bittersweet]{\Large Discrete Random Variables  }
+\TransitionFrame[bittersweet]{\Large Discrete Random Variables \& its Probability Mass Function \HLTW{\text{(pmf)}}  }
 
 \begin{frame}
-\define{Discrete Random Variables}{A random variable that can take on at most a countable number of possible values is said to be discrete.}
+\define{Discrete Random Variables}{A random variable that can take on at most a countable number of possible values is said to be discrete.  {\it That is, if $ \support$,  the support of a random variable is finite or countable infinite then the corresponding random variable is discrete. }}
+\vspace{.05in}
 
-
-\qBrd[4.5in]{babyblue!70}{
+\qBrd[4.6in]{babyblue!70}{
+\qBrd[2.35in]{babyblue!40}{Probability Mass Function (pmf)}
 For a discrete random variable $X$, we define the probability
 mass function (pmf) $\pmf_{_X}(x)$ of $X$ by 
-$$\HLTW{\HLTY{\pmf_{_X}(x)}= P(X=x) }\text{ for all } x\in \support[X]$$
+$$\HLTW{\HLTY{\pmf_{_X}(x)}= P(X=x) }\text{ for all } \HLTW{ x\in \support[X]}$$
 }
 
-The pmf of the random variable representing the sum when two dice are rolled can be represented in multiple ways.
-
-As a Table: 
-\begin{center}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}
-\hline
-$x$    & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
-$\pmf_{_X}(x)$ & $\frac{1}{36}$  &$ \frac{2}{36}$  & $\frac{3}{36}$  &$ \frac{4}{36} $  &    $\frac{5}{36} $ &$ \frac{6}{36}  $ &  $\frac{5}{36} $ & $ \frac{4}{36}$   &  $ \frac{3}{36}$  & $ \frac{2}{36}$ &$ \frac{1}{36}$  \\ \hline
-\end{tabular}
-\end{center}
+\vspace{1.5in}
 
 \end{frame}
 
 
 
+
+
 \begin{frame}
-As a Plot/Graph: \\
-\includegraphics[scale=.35]{figs/TwoFairDice_pmf_Chart.png} 
+\qBrd[4.5in]{applegreen!30}{
+Let $X$ be a discrete random variable with probability mass function $\HLTY{\pmf(x)}$ defined on the support $\support$. 
+Let $\HLTW{\HLTEQ[amethyst!40]{A}\subset \support}$ be an event, then 
+\begin{center}
+\qBrd[3.5in]{applegreen!50}{$$ \HLTW{   P\left(\HLTEQ[amethyst!40]{A}\right)}:=  P(X\in A)=  \HLTW{  \displaystyle \sum_{\left\{x\in \HLTEQ[amethyst!40]{A}\right\}} \HLTY{\pmf(x)}}.$$} 
+\vspace{.1in}
+\end{center}
+}
+
+\end{frame}
+
+
+\begin{frame}{}
+\vspace{-.1in}
+{\small The pmf of the random variable representing the sum when two dice are rolled can be represented in multiple ways.}
+\qBrd[4.7in]{babyblue!40}{
+\begin{center}
+{\small As a Tabular Format: }
+\qBrd[4.3in]{babyblue!70}{
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+$x$    & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
+$\pmf_{_X}(x)$ & $\frac{1}{36}$  &$ \frac{2}{36}$  & $\frac{3}{36}$  &$ \frac{4}{36} $  &    $\frac{5}{36} $ &$ \frac{6}{36}  $ &  $\frac{5}{36} $ & $ \frac{4}{36}$   &  $ \frac{3}{36}$  & $ \frac{2}{36}$ &$ \frac{1}{36}$  \\ \hline
+\end{tabular}
+}
+\end{center}
+}\\
+\vspace{.1in}
+\begin{minipage}{.49\textwidth} %
+\qBrd[2.3in]{blue!30}{
+\begin{center}
+{\small As a Plot/Graph:} \\
+\includegraphics[scale=.25]{figs/TwoFairDice_pmf_Chart.png}
+\vspace{.1in}
+\end{center}}
+\end{minipage} %
+\hspace{0.05in}
+\begin{minipage}{.47\textwidth} %
+\qBrd[2.3in]{antiquefuchsia!40}{
+\begin{center}
+{\small As a Function} \\
+\qBrd[2.1in]{amethyst!70}{
+$$\pmf_{_X}(x)= \begin{cases}
+\frac{x-1}{36} & \text{ if }  2\leq x\leq 7, \\
+\frac{13-x}{36} & \text{ if }  8\leq x\leq 12 \\
+ \end{cases}$$
+ }
+ \vspace{1in}
+  \end{center}
+  }
+\end{minipage}
+ 
+
+\end{frame}
+
+
+\begin{frame}
+\qBrd[4.6in]{amber!40}{
+\begin{center}
+\qBrd[2.6in]{amber!70}{\Large Characterization of a pmf }\\
+\end{center}
+Let $\HLTW{\pmf(x)}$ is {\bf probability mass function } of a discrete random variable on the support $\support$,  {\bf if and only if} it satisfies the following conditions:
+\begin{enumerate}
+\qBrd[3in]{babyblue!40}{\item {\it Positivity: }$ \HLTW{ \displaystyle  \pmf(x)> 0}$ for all $\HLTW{ x\in \support}$}
+\qBrd[3.2in]{applegreen!40}{\item {\it Total Probability:} $\HLTW{   \displaystyle  \sum_{\{x\in \support\}} \pmf(x)=1}$. }
+\end{enumerate}
+}
 
 \end{frame}
 
@@ -357,7 +416,7 @@ As a Plot/Graph: \\
 
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
-\qbx[4.5in]{amber!50}{
+\qbx[4.5in]{olive!40}{
 \Exmpl{amber}{}  A system consists of 2 components connected in parallel, then at least one must work correctly for the system to work correctly.  Each component operates correctly with probability 0.8 and independent of the other.  Let X be the number of components that work correctly. Find the probability distribution of X. 
 }\\
 \pause
@@ -380,13 +439,20 @@ $\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
 \end{frame}
 
 
-
+\TransitionFrame[antiquefuchsia]{\Large Cumulative Distribution Function \HLTW{\text{(CDF)}} of a discrete Random Variable }
 \begin{frame}\frametitle{ cumulative distribution function}
 \define{cumulative distribution function}{
 Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
-$$\HLTY{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support[X]}.}$$
-The cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
+$$\HLTEQ[teal!50]{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support[X]}.}$$
+Then for any $a\in \R$, the cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
 $$\DBX{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[teal!40]{ \{\HLTW{x}\leq \HLTY{a}: \HLTW{x}\in \support[X]\}}}\pmf_{_X}(\HLTW{x})}$$	
+}
+\end{frame}
+
+
+\begin{frame}
+\qBrd[4.5in]{amethyst!40}{\sqBullet{amethyst}
+A {\bf pmf} of a discrete random variable is only positive/ revelant on the support of the random variable $\support$, However the {\bf CDF} is defined for any real number.  
 }
 \end{frame}
 
@@ -480,12 +546,13 @@ Find the corresponding CDF.
 
 
 \section{Expected Value and Variance  }
-\TransitionFrame[bittersweet]{\Large Expected Value and Variance  }
+\TransitionFrame[antiquefuchsia]{\Large \HLTW{\text{Expected Value}} \& \HLTW{\text{Variance}}  of a Discrete Random Variable }
 
 \begin{frame}\frametitle{The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}
 \define{\tiny The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}{
-If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ or $\mu_{_X}$ is given by
-$$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
+If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ ( or $\mu_{_X}$)  is given by
+$$\DBX{ \displaystyle E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
+assuming the  above summation/series exists /well-defined. 
 }
 \end{frame}
 
@@ -493,7 +560,8 @@ $$\DBX{ \displaystyle \mu_{_X}= E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[tea
 
 \begin{frame}
 \define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{Let the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $\HLTEQ[teal!40]{x\in \support[X]}$, the support of X.  Let $\HLTW{{h}(x)}$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
-$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X] }\right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})}.}$$
+$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X] }\right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
+assuming the  above summation/series exists /well-defined. 
 }
 \end{frame}
 
@@ -501,34 +569,42 @@ $$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTEQ[teal!40]{
 
 
 
-\begin{frame}\frametitle{Variance and Standard Deviation}
+\begin{frame}\frametitle{Variance }
 
 \qBrd[4.6in]{applegreen!35}{  \qBrd[.65in]{applegreen!60}{Variance }The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$$\DBX{ \displaystyle \text{Var}(X):= E \left(X-\HLTY{ \mu_{_X}} \right)^2},$$
+$$\DBX{ \displaystyle \text{Var}(X):= \HLTW{E \left(X-\HLTY{ \mu_{_X}} \right)^2}},$$
 \vspace{-.05in}
 where $\HLTY{ \mu_{_X}}= E(X)$, the mean of the random variable. 
 }
 \vspace{-.1in}
 
 \define{Variance}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$$\DBX{ \displaystyle \text{Var}(X):= E(X^2)- \left(\HLTW{E(X)} \right)^2}$$\\
+$$\DBX{ \displaystyle \text{Var}(X):=\HLTW{ E(X^2)- \left(\HLTY{E(X)} \right)^2}}$$\\
 \vspace{-.1in}
 }
 
-$\text{Var}(X)$ is often denoted by $\sigma^2$, i.e.  $\sigma^2=\text{Var}(X)$ and the standard deviation is $\sigma= \sqrt{\sigma^2}= \sqrt{\text{Var}(X)}.$\\
+
 
 \end{frame}
 
 
 
+\begin{frame}\frametitle{Standard Deviation}
 
+\define{Variance}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
+$$\DBX{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(X)}}}$$\\
+\vspace{-.1in}
+}
 
-
-
+$\text{Var}(X)$ is often denoted by $\sigma^2$.
+\vspace{1.5in}
+\end{frame}
 
 
 
 \begin{frame}\frametitle{Properties of Expected Value and Variance}
+ 
+
 
 \begin{enumerate}
 \item $E(a+b X)= a+b E(X)$
@@ -538,7 +614,7 @@ $\text{Var}(X)$ is often denoted by $\sigma^2$, i.e.  $\sigma^2=\text{Var}(X)$ a
 \end{frame}
 
 
-
+\TransitionFrame[antiquefuchsia]{\Large  Moment Generating Function \HLTW{\text{(mgf)}} }  
 
 
 \begin{frame}\frametitle{Moment Generating Function (mgf)}
@@ -548,7 +624,7 @@ $$\DBX{ \displaystyle \text{M}_{_X}(t):= E\left(\HLTW{e^{tX}} \right)},$$
 whenever it exists. 
 }
 \begin{center}
-\qBrd[4.2in]{ube!40}{ If the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]}$, the support of X, then  \\
+\qBrd[4.2in]{antiquefuchsia!40}{ If the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]}$, the support of X, then  assuming it exists\\
 \begin{center}
 \qBrd[3.4in]{applegreen!40}{$$M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \sum_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}. \vspace{-.2in}$$\\
 \vspace{-.1in}
@@ -561,6 +637,24 @@ whenever it exists.
 \end{frame}
 
 
+
+\begin{frame}{Properties of a Moment Generating Function}
+\qBrd[4.5in]{amethyst!40}{\sqBullet{amethyst}
+If it exists, the moment generating function is unique for a random variable.  It means, no two random variable/distribution can have same moment geneting function.  Therefore, a distribution can be identified by the form of its moment generating function. 
+}
+
+\qBrd[4.5in]{olive!40}{\sqBullet{olive}
+If it exists, the mgf  can be used to obtain the moments of a random variable in the following way: \\
+\begin{center}
+\qBrd[3.5in]{applegreen!40}{
+$$ \frac{d}{dt}\left\{  M_X(t)\right\}\mid_{t=0}= E(X)  $$
+}\\
+\qBrd[3.5in]{amber!40}{
+$$ \frac{d^{k}}{dt^k}\left\{  M_X(t)\right\}\mid{t=0}= E(X^k) \text{ for }k=1 , 2, \ldots  $$
+}
+\end{center}
+}
+\end{frame}
 
 
 \begin{frame}\frametitle{Example}
@@ -665,19 +759,38 @@ The Standard Deviation $\sigma= \sqrt{\sigma^2}=\sqrt{\text{Var}(X)}=\sqrt{0.44}
 \vspace{.1in}
 \end{frame}
 
-\begin{frame}\frametitle{Exercises on Computing $E(X)$ and $Var(X)$}
-\begin{enumerate}
-\item Find $E(X)$ and $Var(X)$, where $X$ is the outcome when we roll a fair die.
-\item A school class of $120$ students is driven in $3$ buses to a symphonic performance. There are 36 students in one of the buses, 40 in another, and 44 in the third bus. When the buses arrive, one of the 120 students is randomly chosen. Let X denote the number of
-students on the bus of that randomly chosen student, and find $E(X)$ and $ \text{Var}(X)$.
-\item We say that $\Indicator{A}{x}$ is an indicator function for the event $A$ if 
+\begin{frame}
+\qbx[4.5in]{apricot!50}{
+Let the pmf of a discrete is given as 
+$$ \pmf_{_X}(x):= \frac{1}{2^x} \text{ for } x= 1, 2, 3, \ldots  $$
+}
+\vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Exercises on Computing $E(X)$,  $Var(X)$, $MGF$}
+\qBrd[4.6in]{airforceblue!40}{
+Find $E(X)$ and $Var(X)$, where $X$ is the outcome when we roll a fair die.
+}
+\vspace{3in}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Exercises on Computing $E(X)$,  $Var(X)$, $MGF$}
+\qBrd[4.6in]{olive!30}{
+ We say that $\Indicator{A}{x}$ is an indicator function for the event $A$ if 
 $$  \Indicator{A}{x}:=
  \begin{cases}
  1 & \text{if } x\in A\\
   0 & \text{if } x\notin A.
 \end{cases}  $$
 Obtain $E(  \Indicator{A}{X})$ and $ \text{Var}\left( \Indicator{A}{x} \right).$
-\end{enumerate}
+}
+\vspace{1.5in}
+
 
 \end{frame}
 
