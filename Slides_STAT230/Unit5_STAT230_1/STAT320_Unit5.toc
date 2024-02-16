@@ -1,8 +1,0 @@
-\babel@toc {english}{}
-\beamer@sectionintoc {1}{Random Variables }{2}{0}{1}
-\beamer@sectionintoc {2}{Discrete Random Variables }{10}{0}{2}
-\beamer@sectionintoc {3}{Expected Value and Variance }{25}{0}{3}
-\beamer@sectionintoc {4}{Binomial Distribution }{42}{0}{4}
-\beamer@sectionintoc {5}{Poisson Distribution }{55}{0}{5}
-\beamer@sectionintoc {6}{Geometric Distribution }{63}{0}{6}
-\beamer@sectionintoc {7}{Negative Binomial Distribution }{69}{0}{7}

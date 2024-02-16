@@ -102,7 +102,8 @@
 
 
 
-\title{  STAT 320: Principles of Probability\\ {\color{black}   Unit 5: Discrete Random Variables}}
+\title{  STAT 320: Principles of Probability\\ {\color{black}    \HLTW{\text{Unit 5} (\HLTY{\text{PART:B}})}\\ 
+\qBrd[3in]{rose!30}{A Few Discrete Random Variables}}}
 
 \author[UAEU]
 {United Arab Emirates University}
@@ -212,590 +213,6 @@
 
 
 
-
-
-\section{Random Variables   }
-\TransitionFrame[bittersweet]{\Large Random Variables  }
-
-\begin{frame}\frametitle{Random Variables}
-\begin{enumerate}
-\item Frequently, when an experiment is performed, we are interested
-mainly in some function of the outcome as opposed to the actual
-outcome itself.\\
-\vspace{.4in}
-\item For instance, in tossing dice, we are often interested in the sum of the two dice and are not really concerned about the separate values of each die.\\
-\vspace{.4in}
-
-\item These quantities of interest, or, more formally, these real-valued
-functions defined on the sample space, are known as random
-variables.
-\end{enumerate}
-
-
-\end{frame}
-
-\begin{frame}{Random Variables}
-
-Events of major interest to the scientist, engineer, or businessperson are those identified by numbers, called numerical events. The research physician is interested in the event that ten of ten treated patients survive an illness; the businessperson is interested in the event that sales next year will reach  \$3 million.  Let Y denote a variable to be measured in an experiment.  The realized value of Y will vary depending on the outcome of the experiment. Thus  it is called a random variable. \\
-
-\define{Random Variable }{
-A random variable is a function from a sample space $\SampleS$ into the real numbers.}
-\end{frame}
-
-
-\begin{frame}{Example: Random Variable }
-
-\begin{table}
-\centering
-\begin{tabular}{|l|l|} 
-\hline
- Experiment &  Random Variable \\ 
- \hline
-\hline
- Toss two dice & X= sum of the numbers   \\ 
- \hline
-Toss a coin 25 times  &  X number of heads in 25 tosses \\ 
-\hline
- Apply different amounts of\\ fertilizer to corn plants &  X = yield/acre \\ 
-\hline
-\end{tabular}
-\end{table}
-
-
-\qBox{{\bf Notation:} Random variables will always be denoted with uppercase letters
-and the realized values of the variable (or its range) will be denoted by the corresponding
-lowercase letters. Thus, the random variable X can take the value x.}
-
-%\qBox{Probabilities of a random variable is }
-\end{frame}
-
-
-
-
-\begin{frame}{Support/Range of a Random Variable }
-
-\define{Support/Range of a Random Variable}{
-The set containing the all possible values of a random variable is called its {\it \bf support} or {\it  \bf range}.
-}
-\vspace{.2in}
-\qBox{{\bf Notation:} We will use the notation $\support[X]$ ( or simply $\support$ if there is no ambiguity)  to denote the support of a random variable X.}
-
-\qBox{{\bf Example}: Consider  the experiment of tossing
-a fair coin 3 times from. Define the random variable X to be the
-number of heads obtained in the 3 tosses.  The Support of the random variable is $\HLTEQ[yellow]{\support[X]=\{0, 1, 2, 3\}}$}
-%
-%\qBox{{\bf Example:}
-%A car insurance company in interested in the number of car accidents that may happen in a specific week of the year. 
-%}
-\end{frame}
-
-
-
-
-
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{amethyst!40}{
-\Exmpl{amethyst}{}  Suppose that our experiment consists of tossing 3 fair coins. If we let $Y$ denote the number of heads that appear, then $Y$ is a random variable taking on one of the values $ 0, 1, 2,$ and $3$ with respective probabilities.
-\begin{itemize}
-\item[] $\pmf_{_Y}(0)= P(Y=0 )=$
-\item[] $\pmf_{_Y}(1)= P(Y=1 )=$
-\item[] $\pmf_{_Y}(2)= P(Y=2 )=$
-\item[] $\pmf_{_Y}(3)= P(Y=3 )=$
-\end{itemize}
-}\\
-\pause
-\vspace{1.6in}
-{\tiny 
-}
-\end{frame}
-
-
-
-
-
-
-\section{Discrete Random Variables  }
-\TransitionFrame[bittersweet]{\Large Discrete Random Variables \& its Probability Mass Function \HLTW{\text{(pmf)}}  }
-
-\begin{frame}
-\define{Discrete Random Variables}{A random variable that can take on at most a countable number of possible values is said to be discrete.  {\it That is, if $ \support$,  the support of a random variable is finite or countable infinite then the corresponding random variable is discrete. }}
-\vspace{.05in}
-
-\qBrd[4.6in]{babyblue!70}{
-\qBrd[2.35in]{babyblue!40}{Probability Mass Function (pmf)}
-For a discrete random variable $X$, we define the probability
-mass function (pmf) $\pmf_{_X}(x)$ of $X$ by 
-$$\HLTW{\HLTY{\pmf_{_X}(x)}= P(X=x) }\text{ for all } \HLTW{ x\in \support[X]}$$
-}
-
-\vspace{1.5in}
-
-\end{frame}
-
-
-
-
-
-\begin{frame}
-\qBrd[4.5in]{applegreen!30}{
-Let $X$ be a discrete random variable with probability mass function $\HLTY{\pmf(x)}$ defined on the support $\support$. 
-Let $\HLTW{\HLTEQ[amethyst!40]{A}\subset \support}$ be an event, then 
-\begin{center}
-\qBrd[3.5in]{applegreen!50}{$$ \HLTW{   P\left(\HLTEQ[amethyst!40]{A}\right)}:=  P(X\in A)=  \HLTW{  \displaystyle \sum_{\left\{x\in \HLTEQ[amethyst!40]{A}\right\}} \HLTY{\pmf(x)}}.$$} 
-\vspace{.1in}
-\end{center}
-}
-
-\end{frame}
-
-
-\begin{frame}{}
-\vspace{-.1in}
-{\small The pmf of the random variable representing the sum when two dice are rolled can be represented in multiple ways.}
-\qBrd[4.7in]{babyblue!40}{
-\begin{center}
-{\small As a Tabular Format: }
-\qBrd[4.3in]{babyblue!70}{
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}
-\hline
-$x$    & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
-$\pmf_{_X}(x)$ & $\frac{1}{36}$  &$ \frac{2}{36}$  & $\frac{3}{36}$  &$ \frac{4}{36} $  &    $\frac{5}{36} $ &$ \frac{6}{36}  $ &  $\frac{5}{36} $ & $ \frac{4}{36}$   &  $ \frac{3}{36}$  & $ \frac{2}{36}$ &$ \frac{1}{36}$  \\ \hline
-\end{tabular}
-}
-\end{center}
-}\\
-\vspace{.1in}
-\begin{minipage}{.49\textwidth} %
-\qBrd[2.3in]{blue!30}{
-\begin{center}
-{\small As a Plot/Graph:} \\
-\includegraphics[scale=.25]{figs/TwoFairDice_pmf_Chart.png}
-\vspace{.1in}
-\end{center}}
-\end{minipage} %
-\hspace{0.05in}
-\begin{minipage}{.47\textwidth} %
-\qBrd[2.3in]{antiquefuchsia!40}{
-\begin{center}
-{\small As a Function} \\
-\qBrd[2.1in]{amethyst!70}{
-$$\pmf_{_X}(x)= \begin{cases}
-\frac{x-1}{36} & \text{ if }  2\leq x\leq 7, \\
-\frac{13-x}{36} & \text{ if }  8\leq x\leq 12 \\
- \end{cases}$$
- }
- \vspace{1in}
-  \end{center}
-  }
-\end{minipage}
- 
-
-\end{frame}
-
-
-\begin{frame}
-\qBrd[4.6in]{amber!40}{
-\begin{center}
-\qBrd[2.6in]{amber!70}{\Large Characterization of a pmf }\\
-\end{center}
-Let $\HLTW{\pmf(x)}$ is {\bf probability mass function } of a discrete random variable on the support $\support$,  {\bf if and only if} it satisfies the following conditions:
-\begin{enumerate}
-\qBrd[3in]{babyblue!40}{\item {\it Positivity: }$ \HLTW{ \displaystyle  \pmf(x)> 0}$ for all $\HLTW{ x\in \support}$}
-\qBrd[3.2in]{applegreen!40}{\item {\it Total Probability:} $\HLTW{   \displaystyle  \sum_{\{x\in \support\}} \pmf(x)=1}$. }
-\end{enumerate}
-}
-
-\end{frame}
-
-
-
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{olive!40}{
-\Exmpl{amber}{}  A system consists of 2 components connected in parallel, then at least one must work correctly for the system to work correctly.  Each component operates correctly with probability 0.8 and independent of the other.  Let X be the number of components that work correctly. Find the probability distribution of X. 
-}\\
-\pause
-\vspace{.6in}
-{\tiny 
-{\bf Solution: } $X$ can take on only three possible values; $0, 1,$ or $2$. Let $E_i$ denote the event that component $i$ works correctly. Then $P(E_i) = 0.8$. Thus, we have
-\begin{itemize}
-\item $\pmf_{_X}(0)= P(\Not{E_1} \cap \Not{E_2})= P(\Not{E_1}) P( \Not{E_2})= (0.2)(0.2)= 0.04$.
-\item $\pmf_{_X}(1)= P(\Not{E_1} \cap {E_2})+ P({E_1} \cap \Not{E_2})=(0.2)(0.8)+ (0.8)(0.2)=0 .32$.
-\item  $\pmf_{_X}(2)= P({E_1} \cap {E_2})= P({E_1}) P( {E_2})= (0.8)(0.8)= 0.64$.
-\end{itemize}
-\begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline\hline
-x    & 0    & 1    & 2    \\ \hline
-$\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
-\end{tabular}
-\end{center}
-}
-\end{frame}
-
-
-\TransitionFrame[antiquefuchsia]{\Large Cumulative Distribution Function \HLTW{\text{(CDF)}} of a discrete Random Variable }
-\begin{frame}\frametitle{ cumulative distribution function}
-\define{cumulative distribution function}{
-Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
-$$\HLTEQ[teal!50]{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support[X]}.}$$
-Then for any $a\in \R$, the cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
-$$\DBX{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[teal!40]{ \{\HLTW{x}\leq \HLTY{a}: \HLTW{x}\in \support[X]\}}}\pmf_{_X}(\HLTW{x})}$$	
-}
-\end{frame}
-
-
-\begin{frame}
-\qBrd[4.5in]{amethyst!40}{\sqBullet{amethyst}
-A {\bf pmf} of a discrete random variable is only positive/ revelant on the support of the random variable $\support$, However the {\bf CDF} is defined for any real number.  
-}
-\end{frame}
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{amethyst!50}{
-\Exmpl{amethyst}{} \small  If X be a discrete random variable on the support $\support[X]=\{1, 2, 3, 4\}$ with the corresponding  pmf specified as  
-$\pmf_{_X}(1)= \frac{1}{4}, \pmf_{_X}(2)= \frac{1}{2}, \pmf_{_X}(3)= \frac{1}{8}$, and $\pmf_{_X}(4)= \frac{1}{8}$. Calculate the CDF function of $X$. 
-}\\
-\vspace{.3in}
-\pause
-\begin{minipage}{.48\textwidth} %
-{\tiny 
-{\bf Solution: } 
-\qBrd[2.1in]{babyblue!40}{
-\begin{eqnarray*}
-\cdf_{_X}\left(\HLTY{a}\right)= 
-\begin{cases}
-                        0 &  \text{if  $\HLTY{a}<1$} \vspace{.1in}\\
-                        \frac{1}{4} &  \text{if  $1\leq \HLTY{a} <2$}\vspace{.1in}\\
-                        \frac{3}{4} &  \text{if  $2\leq \HLTY{a} <3$}\vspace{.1in}\\
-                        \frac{7}{8} &  \text{if  $3\leq \HLTY{a} <4$}\vspace{.1in}\\
-                        \frac{7}{8} &  \text{if  $4\leq \HLTY{a} $}
-                    \end{cases}
-                    \end{eqnarray*}
-                    }
-}
-\end{minipage} %
-\begin{minipage}{.48\textwidth} %
-%\qBrd[2.3in]{babyblue!40}{
-\begin{center}
-{\tiny Graph of CDF of $X$}
-\includegraphics[scale=.2]{figs/BlankGraph.png} \\
-\end{center}
-%}
-\end{minipage}
-
-
-\vspace{.1in}
-\end{frame}
-
-
-
-
-
-\begin{frame}\frametitle{}
-\vspace{-.1in}
-\qbx[4.5in]{amethyst!40}{
-Let the pmf of a discrete random varibale $X$ is given as 
-\begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline\hline
-x    & 0    & 1    & 2    \\ \hline
-$\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
-\end{tabular}
-\end{center}
-Find the corresponding CDF. 
-}\\
-\pause
-\vspace{.1in}
-\begin{minipage}{.48\textwidth} %
-{\tiny 
-{\bf Solution: } 
-\qBrd[2.1in]{babyblue!40}{
-\begin{eqnarray*}
-\cdf_{_X}\left(\HLTY{a}\right)= 
-\begin{cases}
-                        0 &  \text{if  $\HLTY{a}<0$} \vspace{.1in}\\
-                       0.04&  \text{if  $0\leq \HLTY{a}<1$}\vspace{.1in}\\
-                       0.36 &  \text{if  $1\leq \HLTY{a} <2$}\vspace{.1in}\\
-                       1&  \text{if  $2\leq \HLTY{a} $}
-                    \end{cases}
-                    \end{eqnarray*}
-                    }
-}
-\end{minipage} %
-\begin{minipage}{.48\textwidth} %
-%\qBrd[2.3in]{babyblue!40}{
-\begin{center}
-{\tiny Graph of CDF of $X$}
-\includegraphics[scale=.2]{figs/BlankGraph.png} \\
-\end{center}
-%}
-\end{minipage}
-
-
-\vspace{.1in}
-\end{frame}
-
-
-
-\section{Expected Value and Variance  }
-\TransitionFrame[antiquefuchsia]{\Large \HLTW{\text{Expected Value}} \& \HLTW{\text{Variance}}  of a Discrete Random Variable }
-
-\begin{frame}\frametitle{The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}
-\define{\tiny The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}{
-If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ ( or $\mu_{_X}$)  is given by
-$$\DBX{ \displaystyle E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
-assuming the  above summation/series exists /well-defined. 
-}
-\end{frame}
-
-
-
-\begin{frame}
-\define{\tiny The  Expected Value of a Function of a Discrete Random Variable}{Let the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $\HLTEQ[teal!40]{x\in \support[X]}$, the support of X.  Let $\HLTW{{h}(x)}$ be any$^{*}$ function,  then the expected value of $ h(X)$ is defined as 
-$$\DBX{ \displaystyle  E\left(\HLTW{h(X)} \right)= \sum_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X] }\right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
-assuming the  above summation/series exists /well-defined. 
-}
-\end{frame}
-
-
-
-
-
-\begin{frame}\frametitle{Variance }
-
-\qBrd[4.6in]{applegreen!35}{  \qBrd[.65in]{applegreen!60}{Variance }The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$$\DBX{ \displaystyle \text{Var}(X):= \HLTW{E \left(X-\HLTY{ \mu_{_X}} \right)^2}},$$
-\vspace{-.05in}
-where $\HLTY{ \mu_{_X}}= E(X)$, the mean of the random variable. 
-}
-\vspace{-.1in}
-
-\define{Variance}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$$\DBX{ \displaystyle \text{Var}(X):=\HLTW{ E(X^2)- \left(\HLTY{E(X)} \right)^2}}$$\\
-\vspace{-.1in}
-}
-
-
-
-\end{frame}
-
-
-
-\begin{frame}\frametitle{Standard Deviation}
-
-\define{Variance}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$$\DBX{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(X)}}}$$\\
-\vspace{-.1in}
-}
-
-$\text{Var}(X)$ is often denoted by $\sigma^2$.
-\vspace{1.5in}
-\end{frame}
-
-
-
-\begin{frame}\frametitle{Properties of Expected Value and Variance}
- 
-
-
-\begin{enumerate}
-\item $E(a+b X)= a+b E(X)$
-\item $\text{Var}(a+b X)= b^2 \text{Var}(X)$
-\end{enumerate}
-\vspace{2in}
-\end{frame}
-
-
-\TransitionFrame[antiquefuchsia]{\Large  Moment Generating Function \HLTW{\text{(mgf)}} }  
-
-
-\begin{frame}\frametitle{Moment Generating Function (mgf)}
-\vspace{-.05in}
-\define{Moment Generating Function}{ The Moment Generating Function (mgf) of $X$, denoted by $\text{M}_{_X}(t)$ is deifined as 
-$$\DBX{ \displaystyle \text{M}_{_X}(t):= E\left(\HLTW{e^{tX}} \right)},$$
-whenever it exists. 
-}
-\begin{center}
-\qBrd[4.2in]{antiquefuchsia!40}{ If the random variable $X$ has the probability mass funciton $\HLTY{\pmf_{_X}(x)}$ for all $ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]}$, the support of X, then  assuming it exists\\
-\begin{center}
-\qBrd[3.4in]{applegreen!40}{$$M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \sum_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}. \vspace{-.2in}$$\\
-\vspace{-.1in}
-}
-\end{center}
-\vspace{.1in}
-}
-\end{center}
-
-\end{frame}
-
-
-
-\begin{frame}{Properties of a Moment Generating Function}
-\qBrd[4.5in]{amethyst!40}{\sqBullet{amethyst}
-If it exists, the moment generating function is unique for a random variable.  It means, no two random variable/distribution can have same moment geneting function.  Therefore, a distribution can be identified by the form of its moment generating function. 
-}
-
-\qBrd[4.5in]{teal!20}{\sqBullet{teal}\small
-If it exists, the mgf  can be used to obtain the moments of a random variable in the following way: \\
-\vspace{-.1in}
-\begin{center}
-\qBrd[4.2in]{applegreen!50}{
-Assuming it exists
-\qBrd[2in]{amber!20}{$\HLTW{ \frac{d}{dt}\left\{  M_X(t)\right\}}\Biggr|_{t=0}= \HLTW{E(X)}  $}
-}\\
-\vspace{.1in}
-\qBrd[4.2in]{amber!50}{
-Assuming it exists\qBrd[2.95in]{applegreen!20}{$ \HLTW{\frac{d^{k}}{dt^k}\left\{  M_X(t)\right\}}\Biggr|_{t=0}= \HLTW{E(X^k) } \text{ for }k=1 , 2, \ldots  $}
-}
-\end{center}
-}
-\end{frame}
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{amethyst!50}{
-The probability distribution of $X$, the number of daily network blackouts is given by
-\begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline\hline
-x    & 0    & 1    & 2    \\ \hline
-$\pmf_{_X}(x)$ & 0.7 & 0.2 & 0.1 \\ \hline\hline
-\end{tabular}
-\end{center}
-Find the Expected value and variance of the random variable {\bf X}.
-}\\
-\pause
-\vspace{.1in}
-\begin{minipage}{.48\textwidth} %
-{\tiny 
-{\bf Solution: } 
-\qBrd[2.25in]{babyblue!40}{
-\begin{eqnarray*}
-\mu_{_X}= E(X)& =&  \sum_{x\in \{0,1,2\}} x \pmf_{_X}(x)\\
-& = &  0 \times\pmf_{_X}(0)+ 1\times \pmf_{_X}(1)+  2\times \pmf_{_X}(2)\nonumber\\
-& = & 0 \times 0.7 + 1\times 0.2+ 2 \times 0.1\nonumber\\
-& = &  0.4  
- \end{eqnarray*}
-  \vspace{-.1in}
-                    }
-}
-\end{minipage} %
-\begin{minipage}{.48\textwidth} %
-\qBrd[2.22in]{babyblueeyes!50}{
-\tiny
-\begin{eqnarray*}
- E(X^2)& =&  \sum_{x\in \{0,1,2\}} x^2 \pmf_{_X}(x)\\
-& = &  0^2 \times\pmf_{_X}(0)+ 1^2\times \pmf_{_X}(1)+  2^2\times \pmf_{_X}(2)\nonumber\\
-& = & 0 \times 0.7 + 1\times 0.2+ 4 \times 0.1\nonumber\\
-& = &  0.6 
- \end{eqnarray*}
- \vspace{-.2in}
-                    }       
-\end{minipage}
-{\tiny Hence $\text{Var}(X):= E(X^2)- \left(E(X)\right)^2= 0.6-(0.4)^2= 0.6-0.16= 0.44$\\
-The Standard Deviation $\sigma= \sqrt{\sigma^2}=\sqrt{\text{Var}(X)}=\sqrt{0.44}= 0.6633  $}
-
-
-\vspace{.1in}
-\end{frame}
-
-
-
-
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{amethyst!50}{
-The probability distribution of $X$, the number of daily network blackouts is given by
-\begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline\hline
-x    & 0    & 1    & 2    \\ \hline
-$\pmf_{_X}(x)$ & 0.7 & 0.2 & 0.1 \\ \hline\hline
-\end{tabular}
-\end{center}
-A small internet trading company estimates that each network
-blackout results in a \$500 loss. Compute expectation and variance of this company's daily loss due to blackouts.
-}\\
-\pause
-\vspace{.1in}
-{\tiny The daily loss due to blackouts is given by $ h(X) = 500X$.  We need to find $E(h(X))$ and Varinace of $Var(h(X))$.}
-\begin{minipage}{.48\textwidth} %
-{\tiny 
-{\bf Solution: } 
-\qBrd[2.25in]{babyblue!40}{
-\begin{eqnarray*}
-\mu_{_X}= E(X)& =&  \sum_{x\in \{0,1,2\}} x \pmf_{_X}(x)\\
-& = &  0 \times\pmf_{_X}(0)+ 1\times \pmf_{_X}(1)+  2\times \pmf_{_X}(2)\nonumber\\
-& = & 0 \times 0.7 + 1\times 0.2+ 2 \times 0.1\nonumber\\
-& = &  0.4  
- \end{eqnarray*}
-  \vspace{-.2in}
-                    }
-}
-\end{minipage} %
-\begin{minipage}{.48\textwidth} %
-\qBrd[2.22in]{babyblueeyes!50}{
-\tiny
-\begin{eqnarray*}
- E(X^2)& =&  \sum_{x\in \{0,1,2\}} x^2 \pmf_{_X}(x)\\
-& = &  0^2 \times\pmf_{_X}(0)+ 1^2\times \pmf_{_X}(1)+  2^2\times \pmf_{_X}(2)\nonumber\\
-& = & 0 \times 0.7 + 1\times 0.2+ 4 \times 0.1\nonumber\\
-& = &  0.6 
- \end{eqnarray*}
-  \vspace{-.2in}
-                    }       
-\end{minipage}
-{\tiny Hence $\text{Var}(X):= E(X^2)- \left(E(X)\right)^2= 0.6-(0.4)^2= 0.6-0.16= 0.44$\\
-The Standard Deviation $\sigma= \sqrt{\sigma^2}=\sqrt{\text{Var}(X)}=\sqrt{0.44}= 0.6633  $}
-
-
-\vspace{.1in}
-\end{frame}
-
-\begin{frame}
-\qbx[4.5in]{apricot!50}{
-Let the pmf of a discrete is given as 
-$$ \pmf_{_X}(x):= \frac{1}{2^x} \text{ for } x= 1, 2, 3, \ldots  $$
-}
-\vspace{2in}
-\end{frame}
-
-
-
-
-\begin{frame}\frametitle{Exercises on Computing $E(X)$,  $Var(X)$, $MGF$}
-\qBrd[4.6in]{airforceblue!40}{
-Find $E(X)$ and $Var(X)$, where $X$ is the outcome when we roll a fair die.
-}
-\vspace{3in}
-
-\end{frame}
-
-
-\begin{frame}\frametitle{Exercises on Computing $E(X)$,  $Var(X)$, $MGF$}
-\qBrd[4.6in]{olive!30}{
- We say that $\Indicator{A}{x}$ is an indicator function for the event $A$ if 
-$$  \Indicator{A}{x}:=
- \begin{cases}
- 1 & \text{if } x\in A\\
-  0 & \text{if } x\notin A.
-\end{cases}  $$
-Obtain $E(  \Indicator{A}{X})$ and $ \text{Var}\left( \Indicator{A}{x} \right).$
-}
-\vspace{1.5in}
-
-
-\end{frame}
 
 
 
@@ -1215,6 +632,61 @@ AA
  Find the mean and standard deviation of Y.
 }
 
+\end{frame}
+
+
+
+
+\section{Miscellaneous Problems}
+
+\TransitionFrame[amber]{\Large Miscellaneous Problems  }
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{olive!30}{
+\Exmpl{olive}{}{
+Approximately 10\% of the glass bottles coming off a production line have serious flaws in the glass. If two bottles are randomly selected, find the mean and variance of the number of bottles
+that have serious flaws.
+}  
+}\\
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{teal!30}{
+\Exmpl{teal}{}{
+Suppose that a lot of  electrical fuses contains 5\% defectives. If a sample of 5 fuses is tested, find the probability of observing at least one defective.
+}  
+}\\
+
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{amber!30}{
+\Exmpl{amber}{}{
+An oil exploration firm is formed with enough capital to finance ten explorations. The probability of a particular exploration being successful is 0.10  . Assume the explorations are independent.
+\begin{enumerate}
+\item Find the mean and variance of the number of successful explorations.
+\item Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior
+to doing its first exploration. If each successful exploration costs \$30,000 and each unsuccessful
+exploration costs \$15,000, find the expected total cost to the firm for its ten explorations.
+\end{enumerate}
+}  
+}\\
+
+\vspace{2in}
 \end{frame}
 
 
