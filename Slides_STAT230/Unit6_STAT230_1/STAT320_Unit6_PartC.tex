@@ -1,0 +1,524 @@
+\documentclass[compress]{beamer}
+\mode<presentation>
+\setbeamercovered{transparent}
+\usetheme{Warsaw}
+%\useoutertheme{smoothtree}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{xmpmulti}
+\usepackage{multicol}
+\usepackage{colortbl}
+
+%\setbeamersize{text margin left=.25 in,text margin right=.25 in}
+\setbeamersize{text margin left=.15 in,text margin right=.15 in}
+\usepackage[authoryear]{natbib}
+
+
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{latexcolors}
+%\usepackage[dvipsnames]{xcolor}
+\definecolor{antiquebrass}{rgb}{0.8, 0.58, 0.46}
+\definecolor{babyblueeyes}{rgb}{0.63, 0.79, 0.95}
+\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
+\definecolor{bistre}{rgb}{0.24, 0.17, 0.12}
+\definecolor{brightlavender}{rgb}{0.75, 0.58, 0.89}
+\definecolor{bulgarianrose}{rgb}{0.28, 0.02, 0.03}
+\definecolor{slateblue}{rgb}{0.56, 0.74, 0.56}
+\definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
+\definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
+
+\setbeamercolor{structure}{fg=airforceblue!80, bg= black!60}
+
+
+
+
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes.symbols}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{multirow}
+%%%%%%%%% shaddow image %%%%%
+% some parameters for customization
+\def\shadowshift{3pt,-3pt}
+\def\shadowradius{6pt}
+\colorlet{innercolor}{black!60}
+\colorlet{outercolor}{gray!05}
+% this draws a shadow under a rectangle node
+\newcommand\drawshadow[1]{
+\begin{pgfonlayer}{shadow}
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+    \shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+    \shade[top color=innercolor,bottom color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[left color=innercolor,right color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[bottom color=innercolor,top color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=outercolor] ($(#1.south west)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+    \shade[outercolor,right color=innercolor,left color=innercolor] ($(#1.north west)+(-\shadowradius/12,\shadowradius/12)$) rectangle ($(#1.south east)+(\shadowradius/12,-\shadowradius/12)$);%Frame
+    \filldraw ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)-(\shadowradius/2,\shadowradius/2)$);
+\end{pgfonlayer}
+}
+% create a shadow layer, so that we don't need to worry about overdrawing other things
+\pgfdeclarelayer{shadow} 
+\pgfsetlayers{shadow,main}
+% Define image shadow command
+\newcommand\shadowimage[2][]{%
+\begin{tikzpicture}
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[#1]{#2}};
+\drawshadow{image}
+\end{tikzpicture}}
+\usepackage{calligra}
+
+\DeclareMathOperator*{\argmax}{Arg\,max}
+\DeclareMathOperator*{\argmin}{Arg\,min}
+\newcommand{\norm}[1]{\left\Vert #1 \right\Vert }
+\newcommand{\bbetaHat}{ \widehat{\bbeta}}
+\newcommand{\bbetaLSE}{ \widehat{\bbeta}_{_{\text{LSE}}}}
+\newcommand{\bbetaMLE}{ \widehat{\bbeta}_{_{\text{MLE}}}}
+\newcommand{\sqBullet}[1]{  {\tiny \tiny \tiny \qBoxCol{#1!60}{ }} }
+%***************
+%\newtheorem{thm}{Theorem}
+\input{../LatexSupportFiles/definition_include}
+\input{../LatexSupportFiles/BoxDef}
+\input{../LatexSupportFiles/MatrixDef}
+
+
+
+
+
+
+
+
+
+
+
+\title{  STAT 320: Principles of Probability\\ {\color{black} \HLTW{ \text{Unit 6} \HLTY{\text{Part:C}}}\\ The Normal Distribution}}
+
+\author[UAEU]
+{United Arab Emirates University}
+\institute[UAEU] % (optional, but mostly needed)
+{
+  \inst{Department of Statistics}%
+  %Indian Institute of Management,  Udaipur\\
+  \vspace{0.1in}
+
+  
+}
+
+\date{}
+
+
+\newcommand{\Xnew}{ \HLTEQ[orange]{X_{_{\text{i}}}} }
+\newcommand{\Ynew}{ \HLTEQ[orange]{Y_{_{\text{i}}}} }
+
+%\date{\today}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Inhalt}
+ % \begin{multicols}{1}
+	\frametitle{Outline}
+    \tableofcontents[currentsection]
+  %  \end{multicols}
+  \end{frame}
+}
+
+\begin{document}
+\maketitle
+
+%\begin{frame}{Outline}
+%%\begin{multicols}{}
+%  \tableofcontents
+%%\end{multicols}
+%\end{frame}
+
+%\section{Introduction to DSBA 2023}
+%
+%
+%\begin{frame}
+%\qBoxCol{blue!30}{
+%\begin{center} Course  Website \end{center}
+%\qbx[4.2in]{teal!40}{\sqBullet{teal} \color{blue} $ \href{https://sites.google.com/iimu.ac.in/dsba2023e/home}{https://sites.google.com/iimu.ac.in/dsba2023e/home}$
+%}\\
+%\qbx[3.0in]{green!40}{ \sqBullet{green} Regular Announcements.
+%}\\
+%\qbx[3.0in]{olive!40}{\sqBullet{olive}  Slides and other materials.
+%}
+%}
+%
+%\pause
+%\qBoxCol{blue!30}{
+%\sqBullet{blue}
+%You can contact the instructor at {\it subhadip.pal@iimu.ac.in} and schedule for office hours.  
+%}
+%\pause
+%\qBoxCol{olive!30}{
+%\sqBullet{olive}
+%Mr. Praveen Kumar has been assigned as Teaching Assistant (TA) for this course.  His email I'd is:  {\it praveen.kumar@iimu.ac. }
+%}
+%
+%
+%\end{frame}
+%
+
+
+%
+%\begin{frame}{Course Outline}
+%\hspace{-.1in}\qBoxCol{blue!35}{
+%% Please add the following required packages to your document preamble:
+%% \usepackage{booktabs}
+%\begin{table}[]
+%\begin{tabular}{@{}lll@{}}
+%\toprule
+%         & Topics                                                & Dataset or Case                                    \\ \midrule \midrule
+%\rowcolor{blue!20}     \multicolumn{1}{|l|}{1-2}   & \multicolumn{1}{l|}{Overview of Data Science}        & \multicolumn{1}{l|}{Household Data}                \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{3-5}   & \multicolumn{1}{l|}{Data Visualization}              & \multicolumn{1}{l|}{Global Super Store }       \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{6}     & \multicolumn{1}{l|}{Introduction to R/ JMP}          & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{7}     & \multicolumn{1}{l|}{Regression Analysis}             & \multicolumn{1}{l|}{Display \& Liquor Sales} \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{8}     & \multicolumn{1}{l|}{Multiple Regression}             & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{9}     & \multicolumn{1}{l|}{Dealing with Nominal Covariates} & \multicolumn{1}{l|}{Gender Divide}                 \\ \midrule
+%\rowcolor{blue!20} 
+%\multicolumn{1}{|l|}{10}    & \multicolumn{1}{l|}{Regression Diagonistics}         & \multicolumn{1}{l|}{}                              \\ \midrule
+%\rowcolor{purple!20} 
+%\multicolumn{1}{|l|}{11-12} & \multicolumn{1}{l|}{Project Presentations}            &\multicolumn{1}{l|}{}          \\\midrule \bottomrule
+%\end{tabular}
+%\end{table}
+%}
+%\end{frame}
+
+
+%\begin{frame}{Case Study }
+%\qBoxCol{teal!40}{\vspace{1in}\begin{center}\sqBullet{teal} \Large Case: Liquor sales and display space \end{center}
+%\vspace{1in}
+%}\\
+%\end{frame}
+
+
+
+
+%\section{A Few Widely Used Continuous Probability Distributions}
+%\TransitionFrame[airforceblue]{\Large A Few Widely Used Continuous Probability Distributions  }
+
+
+%\section{Normal Distribution}
+\TransitionFrame[amber]{\Large Normal Distribution }
+
+
+\begin{frame}
+The normal distribution is one of the most commonly used probability distribution for applications:
+\begin{itemize}
+\item  When we repeat an experiment numerous times and average our results, the random variable representing the average or total tends to have a normal distribution as the number of experiments becomes large.
+\item   The previous fact, which is known as the central limit theorem, is fundamental to many of the statistical techniques we will discuss later.
+\item  Many physical characteristics (Heights, weights, etc.) tend to follow a normal distribution.
+\item  Errors in measurement or production processes can often be
+approximated by a normal distribution.
+\item Under certain conditions, many probability distributions can be
+approximated by a normal distribution.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+The Normal Distribution denoted by $\text{Normal}(\mu, \sigma^2)$ is characterized by two parameters, namely the mean $\mu\in \R$ and the standard deviation $\sigma>0$.
+\define{Normal Distribution}{ A continuous random variable X is said to be normally distributed with mean $\mu\in \R$ and variance $\sigma^2>0$,  if its probability density function is given as 
+$$   f(x)= \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}  \text{ for } -\infty <x<\infty. $$
+}
+\qBrd{applegreen!40}{
+If $X\sim $ Normal($\mu, \sigma^2$) then 
+$E(X) =\mu \text{ and }, \text{Var}(X) = \sigma^2$
+}
+
+
+\end{frame}
+
+
+\begin{frame}
+\qBrd{applegreen!40}{
+\qBrd[1.5in]{applegreen!70}{Standard Normal }
+ Normal($0, 1$),(i.e. Normal distribution with mean $\mu=0$ and variance $\sigma^2=1$,) is referred to as the  {\bf  Standard Normal} Distribution. 
+}\\
+\vspace{.1in}
+\qBrd{babyblue!40}{
+\qBrd[1.5in]{babyblue!70}{Z-Transformation }
+ If $X\sim \text{Normal}(\mu, \sigma^2)$ for some $\mu\in \R$ and $\sigma^2>0$ then , 
+ $$\DBX{\HLTW{Z \sim \text{Normal}(0,1) }\text{where } \HLTY{Z= \frac{X-\mu}{\sigma}}}$$
+}
+
+
+\end{frame}
+
+
+
+\begin{frame}{The role of the parameters $\mu$ and $\sigma^2$}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Finding Probabilities Using Normal CDF}
+The cdf of the normal distribution,  does not have a closed form analytical expression and the corresponding integral is nontrivial to evaluate. 
+
+The same is true for the cdf of the standard normal distribution (commonly denoted by $\Phi(z)$). However, $\Phi(z)$ is usually tabulated for values of z from -3.49 to 3.49 in increments of 0.01 and can be usedto calculate any normal probability by standardizing it first.
+
+\includegraphics[scale=.6]{figs/NormalCDFStandardization.png}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{olive!40}{
+\Exmpl{olive}{} The times of first failure of a unit of a brand of ink jet printers are approximately normally distributed with a mean of 1,500 hours and a standard deviation of 200 hours. Use the statistical calculator.
+\begin{enumerate}[a).]
+\item What fraction of these printers will fail before 1,000 hours?
+\item What is the probability that the first failure time of a selected printer will fail be between 1,300 and 1700 hours?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+$X\sim\text{Normal}(\mu= 1500, \sigma^2=200^2)$.\\
+{\tiny 
+\begin{minipage}{.45\textwidth} %
+{\small 
+ \qBrd[2.4in]{babyblueeyes!40}{
+ \begin{eqnarray}
+& &  P(X<1000)\nonumber\\
+ & = &P\left(\HLTY{ \frac{X-\mu}{\sigma}} <\frac{1000-\mu}{\sigma}\right) \nonumber\\
+  & = &P\left(\HLTY{Z} <\frac{1000-1500}{200}\right) \nonumber\\
+    & = &P\left(\HLTY{Z} <-2.5\right) \nonumber\\
+   & =& \Phi(-2.5) \nonumber\\
+   & =&0.0062\nonumber
+ \end{eqnarray}
+ }}
+\end{minipage} % 
+\hspace{.1in}
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+ %\qBrd[2.1in]{babyblue!40}{\begin{center}
+ %\includegraphics[scale=.15]{figs/pdf_Exponential_density2.png}
+% \end{center}
+ %}
+ }
+\end{minipage}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Example}
+$X\sim\text{Normal}(\mu= 1500, \sigma^2=200^2)$.\\
+{\tiny 
+\begin{minipage}{.45\textwidth} %
+{\small 
+ \qBrd[3in]{babyblueeyes!40}{
+ \begin{eqnarray}
+& &  P(1300<X<1700)\nonumber\\
+ & = &P\left(\frac{1300-\mu}{\sigma}<\HLTY{ \frac{X-\mu}{\sigma}} <\frac{1700-\mu}{\sigma}\right) \nonumber\\
+  & = &P\left(\frac{1300-1500}{200}<\HLTY{Z} <\frac{1700-1500}{200}\right) \nonumber\\
+    & = &P\left(-1<\HLTY{Z} <-1\right) \nonumber\\
+   & =& \Phi(1)-\Phi(-1) \nonumber\\
+   & =&  0.8413 -0.1587  \nonumber\\
+   & =&  0.6826  \nonumber
+ \end{eqnarray}
+ }}
+\end{minipage} % 
+\hspace{.1in}
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+% \qBrd[2.1in]{babyblue!40}{\begin{center}
+% %\includegraphics[scale=.15]{figs/pdf_Exponential_density2.png}
+% \end{center}
+% }
+ }
+\end{minipage}
+}
+\end{frame}
+
+
+\begin{frame}\frametitle{Backward Normal calculations and Percentiles}
+\qBrd{teal!40}{We could find the observed value (x) of a given proportion or percentile in Normal$(\mu,\sigma^2)$ by unstandardizing the z-value as follows:
+\vspace{-.1in}
+\begin{enumerate}
+\item Find the z-value corresponding to the lower tail probability using $\Phi^{-1}(\cdot)$
+\item Unstandardize $x=\mu+\sigma z$.
+\end{enumerate}
+}
+
+\vspace{.1in}
+\qBrd{applegreen!40}{
+\sqBullet{applegreen} In the standard normal distribution, z will denote the z-value for
+which of the area under the standard normal curve lies to the right of z,  i.e. $P(Z\geq z_{\alpha})=\alpha$
+\vspace{-.3in}
+\begin{center}
+\includegraphics[scale=.4]{figs/Normal_Cutoff.png}
+\end{center}
+}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Example}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{olive!40}{\small
+\Exmpl{olive}{} The times of first failure of a unit of a brand of ink jet printers are approximately normally distributed with a mean of 1,500 hours and a standard deviation of 200 hours. Use the statistical calculator.
+\begin{enumerate}[a).]
+\item what should be the guarantee time for these printers if the manufacturer wants only 5\% to fail within the guarantee period.
+\end{enumerate}
+}\\
+%\pause
+
+{\tiny 
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+$X\sim$ Normal$(\mu = 1500, \sigma^2=200^2).$ Now we want to find $a$ such that $P(X <a) = 0.05$, so\\
+ \qBrd[2in]{babyblueeyes!40}{
+ \vspace{-.1in}
+\begin{eqnarray*}
+& & P(X<a)=0.05\\
+& \implies&  P(\HLTY{\frac{X-\mu}{\sigma}}<\frac{a-\mu}{\sigma})=0.05\\
+&  \implies &   P\left(\HLTY{Z}<\frac{a-\mu}{\sigma}\right)=0.05\\
+&  \implies &   \Phi\left( \frac{a-\mu}{\sigma}\right)=0.05\\
+&  \implies &   \frac{a-\mu}{\sigma}=\Phi^{-1}\left(0.05\right)\\
+&  \implies &  a= \mu +\sigma\Phi^{-1}\left(0.05\right)\\
+&  \implies &  a= 1500 +200\times (- 1.64)\\
+& =& 1172.
+\end{eqnarray*}
+\vspace{-.1in}
+}
+}
+\end{minipage} % 
+\hspace{.1in}
+\begin{minipage}{.45\textwidth} %
+{\tiny 
+% \qBrd[2.1in]{babyblue!40}{\begin{center}
+% %\includegraphics[scale=.15]{figs/pdf_Exponential_density2.png}
+% \end{center}
+% }
+ }
+\end{minipage}
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{teal!40}{
+\Exmpl{teal}{} An engineer working for a manufacturer of electronic components takes a large number of measurements of a particular dimension of components from the production line.  She finds that the distribution of dimensions is normal, with a mean of 2.340 cm and a standard deviation of 0.06 cm.
+\begin{enumerate}[a).]
+\item What percentage of measurements will be less than 2.45 cm?
+\item What percentage of dimensions will be between 2.25 cm and 2.45 cm?
+\item What value of the dimension will be exceeded by 98\% of the components?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{applegreen!40}{
+\Exmpl{applegreen}{} Wires manufactured for use in a computer system are specified to have resistances between 0.12 and 0.14 ohms. The actual measured resistances of the wires produced by company A have a normal probability distribution with mean 0.13 ohm and standard deviation 0.005 ohm.
+\begin{enumerate}[a).]
+\item What is the probability that a randomly selected wire from company A's production will meet the specifications?
+\item If four of these wires are used in each computer system and all are selected from company A, what is the probability that all four in a
+randomly selected system will meet the specifications?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{amethyst!40}{
+\Exmpl{amethyst}{} The SAT and ACT college entrance exams are taken by thousands of students each year. The mathematics portions of each of these exams produce scores that are approximately normally distributed. In recent years, SAT mathematics exam scores have averaged 480 with standard deviation 100. The average and standard deviation for ACT mathematics scores are 18 and 6, respectively.
+\begin{enumerate}[a).]
+\item An engineering school sets 550 as the minimum SAT math score for new students. What percentage of students will score below 550 in a typical year?
+\item  What score should the engineering school set as a comparable standard on the ACT math test?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{Exercise}
+%\tiny
+\vspace{-.1in}
+\qbx[4.6in]{babyblue!40}{
+\Exmpl{babyblue}{} Of the Type A electrical resistors produced by a factory, 85\% have resistance greater than 41 ohms, and 3.7\% of them have resistance greater than 45 ohms. The resistances follow a normal distribution.
+\begin{enumerate}[a).]
+\item What percentage of these resistors have resistance greater than 44 ohms?
+\end{enumerate}
+}\\
+%\pause
+\vspace{2in}
+\end{frame}
+
+
+
+
+%\section{Moment Generating Function}
+%\TransitionFrame[airforceblue]{\Large Simulations  }
+
+
+\section{Moment Generating Function}
+\TransitionFrame[airforceblue]{\Large Moment Generating Function  }
+
+%\TransitionFrame[airforceblue]{\Large  A }
+
+
+
+
+
+\TransitionFrame[antiquefuchsia]{\Large Questions?  }
+ 
+ 
+\end{document}
