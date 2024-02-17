@@ -222,23 +222,65 @@
 \TransitionFrame[bittersweet]{\Large Binomial Distribution  }
 
 
-\begin{frame}{Binomial Distribution}
+\begin{frame}
 \begin{itemize}
-\qBrd[4.2in]{olive!30}{
-\item A {\bf Bernoulli experiment} is a random experiment, the outcome of which can be classified in one of two mutually exclusive and
-exhaustive ways, say,  ``1=success" or ``0=failure." Let $ Y$ be the
-number of success on a Bernoulli trial, then $Y$ is called the Bernoulli
-random variable. 
+\qBrd[4.2in]{amber(sae/ece)!40}{
+\item[\sqBullet{amber(sae/ece)}] A quality controlling team in TV manufacturer evaluates a products before they are send to market. They are interested in idensifying the number of  defective products and the resources that should be optimally allocated to mitigate the defectives items. 
 }
 \vspace{.1in}\\
-\qBrd[4.2in]{teal!30}{
-\item If a sequence of $n$ independent Bernoulli trials is performed under the same condition, we call it a set of n Bernoulli trials a Binomial experiment.
+\qBrd[4.2in]{atomictangerine!60}{
+\item[\sqBullet{atomictangerine}]A broker in a stock exchange speculates how many shares out of 10 newly introduced shares will go up next day. 
 }
-\end{itemize}
+\vspace{.1in}\\
+\qBrd[4.2in]{bazaar!60}{
+\item[\sqBullet{bazaar}] A airline company is interested in identifying the number of last minute cancellations that may take place.
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{blush!60}{
+\item[\sqBullet{blush}]  A car insurance company have sold 2000 insurance policies on a specific new cars.  They need to estimate the funts that should be made available/reserved to compensate the losses that may occur to the insured cars during the next one year. 
+}
+\end{itemize}	
 \end{frame}
 
 
+\begin{frame}{A Bernoulli Trial/ Experiment}
+\begin{itemize}
+\qBrd[4.2in]{atomictangerine!60}{
+\item[\sqBullet{atomictangerine}] The random experiment has only two outcomes.  Namely \HLTEQ[green!30]{\text{SUCCESS}}, and  \HLTEQ[white]{\text{FAILURE}}
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{bazaar!60}{
+\item[\sqBullet{bazaar}] Events corresponding to the successive trials/experiemnts are statistically independent.
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{blush!60}{
+\item[\sqBullet{blush}]  All such trials/experiements  have the {\bf same chance/probability of success}.
+}
+\end{itemize}	
+\vspace{.1in}
+\qBrd[4.6in]{olive!30}{ If a sequence of $n$ independent Bernoulli trials is performed under the same condition,  then the random variable that records the  {\bf total number of successes}    is called the Binomial Random variable. 
+}
+\end{frame}
 
+%
+%
+%\begin{frame}{Binomial Distribution}
+%\begin{itemize}
+%\qBrd[4.2in]{olive!30}{
+%\item A {\bf Bernoulli experiment} is a random experiment, the outcome of which can be classified in one of two mutually exclusive and
+%exhaustive ways, say,  ``1=success" or ``0=failure." Let $ Y$ be the
+%number of success on a Bernoulli trial, then $Y$ is called the Bernoulli
+%random variable. 
+%}
+%\vspace{.1in}\\
+%\qBrd[4.2in]{teal!30}{
+%\item If a sequence of $n$ independent Bernoulli trials is performed under the same condition, we call it a set of n Bernoulli trials a Binomial experiment.
+%}
+%\end{itemize}
+%\end{frame}
+%
+
+\newcommand{\binP}{\pi}
 
 \begin{frame}{Binomial Distribution}
 \define{Binomial Experiment}{
@@ -247,22 +289,22 @@ An experiment is called a Binomial experiment if it satisfies the following 4 co
 \item The experiment consists of $n$ Bernoulli trials.
 \item Each trial results in a success (S) or a failure (F).
 \item The trials are independent.
-\item The probability of a success, $p$,  is fixed throughout $n$ trials.
+\item The probability of a success, $\binP$,  is fixed throughout $n$ trials.
 \end{itemize}
 }
 \end{frame}
 
 
-\begin{frame}{Binomial Distribution $\text{Binomial}(n,p)$}
+\begin{frame}{Binomial Distribution $\text{Binomial}(n,\binP)$}
 \begin{enumerate}
 \item Given a Binomial experiment consisting of n Bernoulli trials with
-success probability p, the Binomial random variable X associated
+success probability $\binP$, the Binomial random variable X associated
 with this experiment is defined as the number of successes among the
 n trials.
 \item The random variable X has the Binomial Distribution with
-parameters n and p; denoted by$ X\sim Binomial(n, p).$
+parameters n and $\binP$; denoted by$ X\sim Binomial(n, \binP).$
 
-\item The behavior of Binomial Distribution with different $n$ and $p$.
+\item The behavior of Binomial Distribution with different $n$ and $\binP$.
 
 \end{enumerate}
 
@@ -271,16 +313,16 @@ parameters n and p; denoted by$ X\sim Binomial(n, p).$
 
 
 
-\begin{frame}{Binomial Distribution $\text{Binomial}(n,p)$}
+\begin{frame}{Binomial Distribution $\text{Binomial}(n,\binP)$}
 \define{Binomial Distribution}{
-Let $p\in (0,1)$, then the probability mass function of $\text{Binomial}(n, p)$ is given by
-$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} p^x (1-p)^{n-x}}}, \text{ for } x \in \support[X],  \text{where } \HLTEQ[teal!30]{ \support[X]=\{ 0, 1, \ldots,  n\}}$$\\
+Let $\binP\in (0,1)$, then the probability mass function of $\text{Binomial}(n, \binP)$ is given by
+$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{n-x}}}, \text{ for } x \in \support[X],  \text{where } \HLTEQ[teal!30]{ \support[X]=\{ 0, 1, \ldots,  n\}}$$\\
 }
 \vspace{.1in}
 
 \qbx[4.6in]{babyblue!40}{
 $\Row{\qBrd[2in]{amethyst!50}{\text{Mean}\\
-\HLTW{E(X)= n p} },  \qBrd[2in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= n p (1-p)}} } $
+\HLTW{E(X)= n \binP} },  \qBrd[2in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= n \binP (1-\binP)}} } $
 }
 
 \end{frame}
@@ -290,9 +332,9 @@ $\Row{\qBrd[2in]{amethyst!50}{\text{Mean}\\
 \begin{frame}{Expected Value of Binomial Distribution}
 \begin{eqnarray}
 E(X)& := &  \sum_{y\in \support[X]} y\; \pmf_{_X}(y) \nonumber\\
-& = &  \sum_{y=0}^{n} y {n\choose y}p^y(1-p)^{n-y}  \nonumber\\
-& =& (1-p)^{n}  \sum_{y=0}^{n}  y {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
-& =& (1-p)^{n}  \frac{np}{(1-p)^n} \nonumber\\
+& = &  \sum_{y=0}^{n} y {n\choose y}\binP^y(1-\binP)^{n-y}  \nonumber\\
+& =& (1-\binP)^{n}  \sum_{y=0}^{n}  y {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
+& =& (1-\binP)^{n}  \frac{np}{(1-\binP)^n} \nonumber\\
 & =& np
 \end{eqnarray}
 
@@ -302,13 +344,13 @@ E(X)& := &  \sum_{y\in \support[X]} y\; \pmf_{_X}(y) \nonumber\\
 \begin{frame}{Expected Value of Binomial Distribution}
 \begin{eqnarray}
 E(X^2)& := &  \sum_{y\in \support[X]} y^2\; \pmf_{_X}(y) \nonumber\\
-& = &  \sum_{y=0}^{n} y^2 {n\choose y}p^y(1-p)^{n-y}  \nonumber\\
-& =& (1-p)^{n}  \sum_{y=0}^{n}  y^2 {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
-& =& (1-p)^{n}  \frac{mp+ n(n-1)p^2}{(1-p)^n} \nonumber\\
-& =& np+ n(n-1)p^2
+& = &  \sum_{y=0}^{n} y^2 {n\choose y}\binP^y(1-\binP)^{n-y}  \nonumber\\
+& =& (1-\binP)^{n}  \sum_{y=0}^{n}  y^2 {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
+& =& (1-\binP)^{n}  \frac{mp+ n(n-1)\binP^2}{(1-\binP)^n} \nonumber\\
+& =& np+ n(n-1)\binP^2
 \end{eqnarray}
 
-$Var(X)= E(x^2)- (E(X))^2= np+n(n-1)p^2- n^2p^2= np-np^2= np(1-p). $
+$Var(X)= E(x^2)- (E(X))^2= np+n(n-1)\binP^2- n^2p^2= np-np^2= np(1-\binP). $
 
 \end{frame}
 
@@ -317,11 +359,11 @@ $Var(X)= E(x^2)- (E(X))^2= np+n(n-1)p^2- n^2p^2= np-np^2= np(1-p). $
 \begin{frame}{Expected Value of Binomial Distribution}
 \begin{eqnarray}
 M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
-%& = &  \sum_{y=0}^{n} e^{ty} {n\choose y}p^y(1-p)^{n-y}  \nonumber\\
-& =& (1-p)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
-& =& (1-p)^{n}  \sum_{y=0}^{n}  {n\choose y}\left( \frac{pe^{t}}{1-p}\right)^y   \nonumber\\
-& =& (1-p)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{p}{1-p}\right)^y   \nonumber\\
-& =& (1-p)^{n} \left( 1+  \frac{pe^t}{1-p} \right)^n = \left( 1-p+pe^t\right)^n  \nonumber\\
+%& = &  \sum_{y=0}^{n} e^{ty} {n\choose y}\binP^y(1-\binP)^{n-y}  \nonumber\\
+& =& (1-\binP)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
+& =& (1-\binP)^{n}  \sum_{y=0}^{n}  {n\choose y}\left( \frac{pe^{t}}{1-\binP}\right)^y   \nonumber\\
+& =& (1-\binP)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
+& =& (1-\binP)^{n} \left( 1+  \frac{pe^t}{1-\binP} \right)^n = \left( 1-\binP+pe^t\right)^n  \nonumber\\
 \end{eqnarray}
 
 
@@ -345,7 +387,7 @@ M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 \vspace{.1in}
 {\tiny 
 {\bf Solution: }
-Let $X$ = The number of heads in 5 tossed coins. $X\sim Binomial(n=5, p=0.5)$.
+Let $X$ = The number of heads in 5 tossed coins. $X\sim Binomial(n=5, \binP=0.5)$.
 \begin{enumerate}
 \item $P(X = 0) =0.5^5 = 0.0313$
 \item $P(X = 1) ={5 \choose 1}0.5^5 =0.1563$
@@ -380,8 +422,10 @@ player does not appear on any of the dice, then the player loses 1 unit. Is this
 
 
 
+\setbeamercolor{structure}{fg=airforceblue!70, bg= black!60}
+
 \section{Poisson Distribution  }
-\TransitionFrame[bittersweet]{\Large Poisson Distribution  }
+\TransitionFrame[airforceblue]{\Large Poisson Distribution  }
 \begin{frame}\frametitle{Poisson Distribution}
 The Poisson distribution models the number of occurrences of an
 event when there is a known average rate per unit time or space $\lambda$.
@@ -427,7 +471,7 @@ M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 \end{frame}
 
 
-\begin{frame}\frametitle{A few Examples of Poisson Distribution }
+\begin{frame}\frametitle{ }
 \vspace{-.1in}
 \qbx[4.5in]{olive!50}{
 \Exmpl{olive}{} The number of customers arriving at a service counter within one-hour period.
@@ -498,28 +542,28 @@ $P(Y > 10) =1- P(Y\leq 10 )= ...= 0.9696$
 
 
 
-
+\setbeamercolor{structure}{fg=cambridgeblue!90, bg= black!60}
 \section{Geometric Distribution   }
-\TransitionFrame[bittersweet]{\Large Geometric Distribution}
+\TransitionFrame[cambridgeblue]{\Large Geometric Distribution}
 
 
 
 \begin{frame}\frametitle{Geometric Distribution}
 \vspace{-.1in}
 \begin{enumerate}
-\item Suppose that independent trials, each having a probability $p$,
-$0 < p <1$, of being a success, are performed until a success occurs.
+\item Suppose that independent trials, each having a probability $\binP$,
+$0 < \binP <1$, of being a success, are performed until a success occurs.
 \item Example: The first head in tossing coin several times.
 \item Then, Geometric distribution models the number of trials performed until a success occurs.
 \end{enumerate}
 
 \define{Geometric Distribution}{
-The probability mass function of $Geometric(p)$ is given by
-$$p(x) = (1-p)^{x-1}p \text{ for } x = 1, 2, 3, \ldots, $$
+The probability mass function of $Geometric(\binP)$ is given by
+$$p(x) = (1-\binP)^{x-1}\binP \text{ for } x = 1, 2, 3, \ldots, $$
 }
 
 \qBrd[4.7in]{olive!40}{
-\sqBullet{olive} If $X\sim \text{Geometric}(p)$ then $E(X)= \frac{1}{p}$, and $\text{Var}(X)= \frac{1-p}{p^2}$
+\sqBullet{olive} If $X\sim \text{Geometric}(\binP)$ then $E(X)= \frac{1}{\binP}$, and $\text{Var}(X)= \frac{1-\binP}{\binP^2}$
 }
 
 
@@ -536,10 +580,10 @@ $$p(x) = (1-p)^{x-1}p \text{ for } x = 1, 2, 3, \ldots, $$
 \begin{frame}{Expected Value of Binomial Distribution}
 \begin{eqnarray}
 M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
-& = &  \sum_{y=1}^{\infty } e^{ty}  (1-p)^{y-1}p \nonumber\\
-& = & p   \sum_{z=0}^{\infty } e^{tz+t}  (1-p)^{z} \nonumber\\
-& = & pe^t   \sum_{z=0}^{\infty } \left((1-p)e^{t}\right)^z\nonumber\\
-& = & \frac{pe^t}{1-(1-p)e^{t}} 
+& = &  \sum_{y=1}^{\infty } e^{ty}  (1-\binP)^{y-1}\binP \nonumber\\
+& = & \binP   \sum_{z=0}^{\infty } e^{tz+t}  (1-\binP)^{z} \nonumber\\
+& = & pe^t   \sum_{z=0}^{\infty } \left((1-\binP)e^{t}\right)^z\nonumber\\
+& = & \frac{pe^t}{1-(1-\binP)e^{t}} 
 \end{eqnarray}
 
 
@@ -551,7 +595,7 @@ M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 \begin{frame}\frametitle{Geometric Distribution: Example}
 \vspace{-.1in}
 \qbx[4.5in]{olive!50}{
-\Exmpl{olive}{}  Suppose that the probability of engine malfunction during any one-hour period is p = 0.02. Find the probability that a given engine will survive two hours.
+\Exmpl{olive}{}  Suppose that the probability of engine malfunction during any one-hour period is $\binP = 0.02$. Find the probability that a given engine will survive two hours.
 }\\
 \pause
 
@@ -578,15 +622,15 @@ malfunction, we have
 
 
 
-
+\setbeamercolor{structure}{fg=cadmiumorange!80, bg= black!60}
 \section{Negative Binomial Distribution }
-\TransitionFrame[bittersweet]{\Large Negative Binomial Distribution  }
+\TransitionFrame[cadmiumorange]{\Large Negative Binomial Distribution  }
 
 
 \begin{frame}
 \begin{enumerate}
-\item Suppose that independent trials, each having probability  $p$,
-$0 < p < 1$, of being a success are performed until a total of r
+\item Suppose that independent trials, each having probability  $\binP$,
+$0 < \binP < 1$, of being a success are performed until a total of r
 successes is accumulated.
 \item  Example: The third head in tossing coin several times.
 
@@ -595,12 +639,12 @@ performed until a the rth success occurs.
 \end{enumerate}
 
 \define{Negative Binomial Distribution}{
-The probability mass function of Negative Binomial RV, denoted by $\text{Negative-Binomial}(r, p)$ is given by
-$$p(x) ={{x-1}\choose{r-1}}p^{r-1} (1-p)^{x-r} \text{ for } x = r+1, r+2,r+ 3, \ldots, $$
+The probability mass function of Negative Binomial RV, denoted by $\text{Negative-Binomial}(r, \binP)$ is given by
+$$p(x) ={{x-1}\choose{r-1}}\binP^{r-1} (1-\binP)^{x-r} \text{ for } x = r+1, r+2,r+ 3, \ldots, $$
 }
 
 \qBrd[4.7in]{olive!40}{
-\sqBullet{olive} If $X\sim \text{Negative-Binomial}(r, p)$ then $E(X)= \frac{r}{p}$, and $\text{Var}(X)= \frac{r(1-p)}{p^2}$
+\sqBullet{olive} If $X\sim \text{Negative-Binomial}(r, \binP)$ then $E(X)= \frac{r}{\binP}$, and $\text{Var}(X)= \frac{r(1-\binP)}{\binP^2}$
 }
 
 
@@ -636,10 +680,10 @@ AA
 
 
 
-
+\setbeamercolor{structure}{fg=antiquefuchsia!80, bg= black!60}
 \section{Miscellaneous Problems}
 
-\TransitionFrame[amber]{\Large Miscellaneous Problems  }
+\TransitionFrame[antiquefuchsia]{\Large Miscellaneous Problems  }
 
 
 
@@ -653,6 +697,27 @@ that have serious flaws.
 }\\
 
 \end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{airforceblue!30}{
+\Exmpl{airforceblue}{}{
+Cars arrive at a toll both according to a Poisson process with mean 80 cars per hour. If the
+attendant makes a one-minute phone call, what is the probability that at least 1 car arrives
+during the call?
+}  
+}\\
+
+\end{frame}
+
+
 
 
 
@@ -688,6 +753,64 @@ exploration costs \$15,000, find the expected total cost to the firm for its ten
 
 \vspace{2in}
 \end{frame}
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{blue!25}{
+\Exmpl{blue!50}{}{
+A food manufacturer uses an extruder (a machine that produces bite-size cookies and snack food) that yields revenue for the firm at a rate of \$200 per hour when in operation.  However, the
+extruder breaks down an average of two times every day it operates. If Y denotes the number of breakdowns per day, the daily revenue generated by the machine is $R=1600-50Y^2$. Find the expected daily revenue for the extruder.
+}  
+}\\
+
+\vspace{2in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{babyblue!30}{
+\Exmpl{babyblue!80}{}{ A particular sale involves four items randomly selected from a large lot that is known to contain 10\% defectives.  Let Y denote the number of defectives among the 20 sold. The purchaser of the items will return the defectives for repair, and the repair cost is given by $\HLTW{\text{Cost} = 3Y^2 + Y + 2}$.  Find the expected repair cost.
+}  
+}\\
+
+\vspace{2in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{babyblue!30}{
+\Exmpl{babyblue!80}{}{ In a certain population,  it is known that 80\% of the individuals have the Rhesus (Rh) factor present in their blood.   
+\begin{enumerate}
+\item If 5 volunteers are randomly selected from the population, what is the probability that at least one does not have the Rh factor?
+\item If five volunteers are randomly selected, what is the probability that at most four have the Rh factor?
+\end{enumerate}
+}  
+}\\
+
+\vspace{2in}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{amethyst!30}{
+\Exmpl{amethyst!80}{}{ \small Consider rolling a fair dice multiple times untill the first 6 appears.  
+\begin{enumerate}
+\item Find the expected number of throws required to get the first 6.
+\item What is the probability that more then 8 throws are required to obtain the first 6? 
+\end{enumerate}
+}  
+}\\
+
+\vspace{2in}
+\end{frame}
+
 
 
 
