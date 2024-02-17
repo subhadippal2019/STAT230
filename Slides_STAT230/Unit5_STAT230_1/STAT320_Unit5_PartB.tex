@@ -371,6 +371,14 @@ M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 \end{frame}
 
 
+\begin{frame}
+\vspace{-.1in}
+\begin{center}
+\includegraphics[scale=.45]{figs/BinomialExpectedValue.png}
+\end{center}
+\vspace{1in}
+\end{frame}
+
 
 
 \begin{frame}\frametitle{Example}
@@ -424,8 +432,35 @@ player does not appear on any of the dice, then the player loses 1 unit. Is this
 
 \setbeamercolor{structure}{fg=airforceblue!70, bg= black!60}
 
+
+
 \section{Poisson Distribution  }
+
+
 \TransitionFrame[airforceblue]{\Large Poisson Distribution  }
+
+\begin{frame}
+\begin{itemize}
+\qBrd[4.2in]{amber(sae/ece)!40}{
+\item[\sqBullet{amber(sae/ece)}] Number of calls received by a customer desk in an hour.
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{atomictangerine!60}{
+\item[\sqBullet{atomictangerine}]Number of imperfections in every square-meter of a glass panel used for making LCD TV.
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{bazaar!60}{
+\item[\sqBullet{bazaar}] Number of robot malfunctions per day in an assembly line.
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{blush!60}{
+\item[\sqBullet{blush}]  Number of car accidents occurs during a year. 
+}
+\end{itemize}	
+
+\end{frame}
+
+
 \begin{frame}\frametitle{Poisson Distribution}
 The Poisson distribution models the number of occurrences of an
 event when there is a known average rate per unit time or space $\lambda$.
@@ -455,6 +490,10 @@ The requirements for a Poisson distribution are that:
 \end{frame}
 
 
+\begin{frame}
+\vspace{1in}
+\includegraphics[scale=.3]{figs/PoissonExample1.png}
+\end{frame}
 
 
 
@@ -492,7 +531,17 @@ M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 \end{frame}
 
 
+\begin{frame}\frametitle{Poisson Process: Most Simple Version
+}
 
+\begin{enumerate}
+\item The Number of Events Between the interval (can be time-interval or space-interval )  $(s, t]$ follows $$ \text{Poisson}(\lambda\times (t-s))$$
+where $\lambda>0$ denotes of rate of events per unit length of the interval. 
+\item Events pertaiing to the two distinct intervals are Statistically Independent
+\item Rate of occurance of the events remain same for each of the subintervals with same length. 
+\end{enumerate}
+
+\end{frame}
 
 
 \begin{frame}\frametitle{A Few Examples of Poisson Distribution }
@@ -523,21 +572,21 @@ $P(Y > 10) =1- P(Y\leq 10 )= ...= 0.9696$
 
 
 
-
-\begin{frame}\frametitle{Group Work }
-\begin{enumerate}
-\item Develop a real life example in which you can easily apply:
-\begin{enumerate}
-\item  Group 1: Poisson distribution.
-\item  Group 2: Binomial distribution.
-\item Group 3: Poisson distribution
-\end{enumerate}
-\item  In each case, propose two problems which can be solved using the Statistical Calculator.
-\item Can you propose an idea in which you can mix both distributions?
-(extra)
-\end{enumerate}
-
-\end{frame}
+%
+%\begin{frame}\frametitle{Group Work }
+%\begin{enumerate}
+%\item Develop a real life example in which you can easily apply:
+%\begin{enumerate}
+%\item  Group 1: Poisson distribution.
+%\item  Group 2: Binomial distribution.
+%\item Group 3: Poisson distribution
+%\end{enumerate}
+%\item  In each case, propose two problems which can be solved using the Statistical Calculator.
+%\item Can you propose an idea in which you can mix both distributions?
+%(extra)
+%\end{enumerate}
+%
+%\end{frame}
 
 
 
@@ -653,8 +702,8 @@ $$p(x) ={{x-1}\choose{r-1}}\binP^{r-1} (1-\binP)^{x-r} \text{ for } x = r+1, r+2
 
 \begin{frame}\frametitle{Geometric Distribution: Example}
 \vspace{-.1in}
-\qbx[4.5in]{amethyst!50}{
-\Exmpl{amethyst}{}{
+\qbx[4.5in]{amber!50}{
+\Exmpl{amber}{}{
 A machine produces 1\% defective parts. Using the statistical calculator, calculate the probability that
 \begin{enumerate}
 \item 10 parts have to be selected until to get 2 defective parts.
@@ -664,12 +713,9 @@ A machine produces 1\% defective parts. Using the statistical calculator, calcul
 }\\
 \pause
 
-\vspace{.1in}
+\vspace{1in}
 {\tiny Solution: \\
-Letting $Y$ denote the number of 
-\begin{eqnarray}
-AA
-\end{eqnarray}
+
 }
 \qBrd[4.5in]{babyblue!70}{
 \HLTW{\text{Exercise}}
@@ -695,6 +741,7 @@ Approximately 10\% of the glass bottles coming off a production line have seriou
 that have serious flaws.
 }  
 }\\
+\vspace{2.5in}
 
 \end{frame}
 
@@ -714,7 +761,7 @@ attendant makes a one-minute phone call, what is the probability that at least 1
 during the call?
 }  
 }\\
-
+\vspace{2.4in}
 \end{frame}
 
 
@@ -731,7 +778,7 @@ during the call?
 Suppose that a lot of  electrical fuses contains 5\% defectives. If a sample of 5 fuses is tested, find the probability of observing at least one defective.
 }  
 }\\
-
+\vspace{2.6in}
 \end{frame}
 
 
@@ -742,6 +789,7 @@ Suppose that a lot of  electrical fuses contains 5\% defectives. If a sample of 
 \qbx[4.5in]{amber!30}{
 \Exmpl{amber}{}{
 An oil exploration firm is formed with enough capital to finance ten explorations. The probability of a particular exploration being successful is 0.10  . Assume the explorations are independent.
+\vspace{-.1in}
 \begin{enumerate}
 \item Find the mean and variance of the number of successful explorations.
 \item Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior
@@ -760,7 +808,7 @@ exploration costs \$15,000, find the expected total cost to the firm for its ten
 \qbx[4.5in]{blue!25}{
 \Exmpl{blue!50}{}{
 A food manufacturer uses an extruder (a machine that produces bite-size cookies and snack food) that yields revenue for the firm at a rate of \$200 per hour when in operation.  However, the
-extruder breaks down an average of two times every day it operates. If Y denotes the number of breakdowns per day, the daily revenue generated by the machine is $R=1600-50Y^2$. Find the expected daily revenue for the extruder.
+extruder breaks down an average of two times every day it operates. If Y denotes the number of breakdowns per day, the daily revenue generated by the machine is $\HLTW{R=1600-50Y^2}$. Find the expected daily revenue for the extruder.
 }  
 }\\
 
@@ -783,8 +831,8 @@ extruder breaks down an average of two times every day it operates. If Y denotes
 
 \begin{frame}\frametitle{}
 \vspace{-.1in}
-\qbx[4.5in]{babyblue!30}{
-\Exmpl{babyblue!80}{}{ In a certain population,  it is known that 80\% of the individuals have the Rhesus (Rh) factor present in their blood.   
+\qbx[4.5in]{apricot!40}{
+\Exmpl{apricot!80}{}{ In a certain population,  it is known that 80\% of the individuals have the Rhesus (Rh) factor present in their blood.   
 \begin{enumerate}
 \item If 5 volunteers are randomly selected from the population, what is the probability that at least one does not have the Rh factor?
 \item If five volunteers are randomly selected, what is the probability that at most four have the Rh factor?
@@ -804,6 +852,26 @@ extruder breaks down an average of two times every day it operates. If Y denotes
 \begin{enumerate}
 \item Find the expected number of throws required to get the first 6.
 \item What is the probability that more then 8 throws are required to obtain the first 6? 
+\end{enumerate}
+}  
+}\\
+
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{asparagus!30}{
+\Exmpl{asparagus!80}{}{ \small A tollbooth operator has observed that cars arrive randomly at a rate of 360 cars per hour
+\begin{enumerate}
+\item what is the probability that exactly two cars will come during a specific one-minute period?
+\item Find the probability that 40 cars arrive between 10 am to 10:10 am 
+\item Find the expected number of cars between 10 am to 10:10 am
 \end{enumerate}
 }  
 }\\
