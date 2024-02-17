@@ -258,7 +258,7 @@
 }
 \end{itemize}	
 \vspace{.1in}
-\qBrd[4.6in]{olive!30}{ If a sequence of $n$ independent Bernoulli trials is performed under the same condition,  then the random variable that records the  {\bf total number of successes}    is called the Binomial Random variable. 
+\qBrd[4.6in]{olive!30}{ If a sequence of $n$ independent Bernoulli trials is performed under the same condition,  then the random variable that records the  {\bf total number of successes}    is called the {\bf Binomial Random variable. }
 }
 \end{frame}
 
@@ -314,16 +314,50 @@ parameters n and $\binP$; denoted by$ X\sim Binomial(n, \binP).$
 
 
 \begin{frame}{Binomial Distribution $\text{Binomial}(n,\binP)$}
+\vspace{-.1in}
 \define{Binomial Distribution}{
 Let $\binP\in (0,1)$, then the probability mass function of $\text{Binomial}(n, \binP)$ is given by
 $$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{n-x}}}, \text{ for } x \in \support[X],  \text{where } \HLTEQ[teal!30]{ \support[X]=\{ 0, 1, \ldots,  n\}}$$\\
 }
 \vspace{.1in}
 
-\qbx[4.6in]{babyblue!40}{
-$\Row{\qBrd[2in]{amethyst!50}{\text{Mean}\\
-\HLTW{E(X)= n \binP} },  \qBrd[2in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= n \binP (1-\binP)}} } $
-}
+\end{frame}
+
+
+
+
+\begin{frame}
+\qBrd[4.6in]{ceil!50}{
+\begin{center}
+Let $X\sim \text{Binomial}(n , \binP)$ 
+\end{center}
+}\\
+\vspace{.5in}
+
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
+\HLTW{E(X)= n \binP} },  \qBrd[1.5in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= n \binP (1-\binP)}}  , \qBrd[1.7in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\left( 1-\binP+pe^t\right)^n   }} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.6in]{antiquefuchsia!50}{
+\begin{center}
+\qBrd[4.2in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^{n-x}  $ & $n\binP$  & $n\binP(1-\binP)$&   $\left( 1-\binP+pe^t\right)^n$   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+
 
 \end{frame}
 
@@ -483,11 +517,45 @@ event when there is a known average rate per unit time or space $\lambda$.
 \define{Poisson Distribution: pmf, Expected Value}{
 The requirements for a Poisson distribution are that:
 \begin{enumerate}
-\item The probability mass function of $\text{Poisson}(\lambda)$ is given by $$ p(x) = \frac{e^{-\lambda}\lambda^x}{x!} \text{ for } x = 0, 1, 2, 3, \ldots $$
+\item The probability mass function of $\text{Poisson}(\lambda)$ is given by $$ \qBrd[2in]{amethyst!30}{$p(x) = \frac{e^{-\lambda}\lambda^x}{x!}$} \text{ for } x = 0, 1, 2, 3, \ldots $$
 \item If $X\sim Poisson(\lambda)$, then  $E(X)= \lambda,$ and $\text{Var}(X)= \lambda$.
 \end{enumerate}
 }
 \end{frame}
+
+
+\begin{frame}
+\qBrd[4.6in]{ceil!50}{
+\begin{center}
+Let $X\sim \text{Poisson}(\lambda)$ 
+\end{center}
+}\\
+\vspace{.5in}
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{airforceblue!50}{\text{Mean}\\
+\HLTW{E(X)= \lambda} },  \qBrd[1.5in]{airforceblue!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=  \lambda}}  , \qBrd[1.7in]{airforceblue!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=e^{ \lambda e^t-  \lambda}    }} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.6in]{airforceblue!50}{
+\begin{center}
+\qBrd[4.2in]{white!40}{
+{
+\small
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x!} $ & $ \lambda$  & $ \lambda$&   $e^{ \lambda e^t-  \lambda}  $   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
+
 
 
 \begin{frame}
@@ -512,22 +580,25 @@ M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 
 \begin{frame}\frametitle{ }
 \vspace{-.1in}
-\qbx[4.5in]{olive!50}{
-\Exmpl{olive}{} The number of customers arriving at a service counter within one-hour period.
+\begin{enumerate}
+\qBrd[4.2in]{chestnut!50}{
+\item[\sqBullet{chestnut}]  The number of customers arriving at a service counter within one-hour period.
 }\\
 \vspace{.1in}
-\qbx[4.5in]{teal!50}{
-\Exmpl{olive}{} The number of typographical errors in a book counted per page.
+\qBrd[4.2in]{carnationpink!40}{
+\item[\sqBullet{carnationpink}] The number of typographical errors in a book counted per page.
 }\\
 \vspace{.1in}
-\qbx[4.5in]{amethyst!50}{
-\Exmpl{amethyst}{} The number of email messages received at the technical support center daily.
+\qBrd[4.2in]{antiquefuchsia!40}{
+\item[\sqBullet{antiquefuchsia}] The number of email messages received at the technical support center daily.
 }\\
 \vspace{.1in}
-\qbx[4.5in]{babyblue!50}{
-\Exmpl{babyblue}{} The number of traffic accidents that occur on a specific road  during a month.
+\qBrd[4.2in]{chocolate(web)!40}{
+\item[\sqBullet{chocolate(web)}] The number of traffic accidents that occur on a specific road  during a month.
 }\\
+\end{enumerate}
 \vspace{.2in}
+
 \end{frame}
 
 
@@ -611,16 +682,48 @@ The probability mass function of $Geometric(\binP)$ is given by
 $$p(x) = (1-\binP)^{x-1}\binP \text{ for } x = 1, 2, 3, \ldots, $$
 }
 
-\qBrd[4.7in]{olive!40}{
-\sqBullet{olive} If $X\sim \text{Geometric}(\binP)$ then $E(X)= \frac{1}{\binP}$, and $\text{Var}(X)= \frac{1-\binP}{\binP^2}$
-}
+%\qBrd[4.7in]{olive!40}{
+%\sqBullet{olive} If $X\sim \text{Geometric}(\binP)$ then $E(X)= \frac{1}{\binP}$, and $\text{Var}(X)= \frac{1-\binP}{\binP^2}$
+%}
 
 
 \end{frame}
 
 
 
+\begin{frame}
 
+\qBrd[4.7in]{olive!40}{
+\begin{center}
+Let $X\sim \text{Geometric}(\binP)$ 
+\end{center}
+}\\
+
+\vspace{.5in}
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{asparagus!50}{\text{Mean}\\
+\HLTW{E(X)= \frac{1}{\binP} } },  \qBrd[1.5in]{asparagus!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=   \frac{1- \binP}{\binP}}}  , \qBrd[1.7in]{asparagus!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)= \frac{\binP e^t}{1-(1-\binP)e^{t}}    }} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.6in]{asparagus!50}{
+\begin{center}
+\qBrd[4.2in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP} $&   $ \frac{ \frac{1}{\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
 
 
 
@@ -692,12 +795,53 @@ The probability mass function of Negative Binomial RV, denoted by $\text{Negativ
 $$p(x) ={{x-1}\choose{r-1}}\binP^{r-1} (1-\binP)^{x-r} \text{ for } x = r+1, r+2,r+ 3, \ldots, $$
 }
 
-\qBrd[4.7in]{olive!40}{
-\sqBullet{olive} If $X\sim \text{Negative-Binomial}(r, \binP)$ then $E(X)= \frac{r}{\binP}$, and $\text{Var}(X)= \frac{r(1-\binP)}{\binP^2}$
-}
+%\qBrd[4.7in]{olive!40}{
+%\sqBullet{olive} If $X\sim \text{Negative-Binomial}(r, \binP)$ then $E(X)= \frac{r}{\binP}$, and $\text{Var}(X)= \frac{r(1-\binP)}{\binP^2}$
+%}
 
 
 \end{frame}
+
+
+
+
+
+
+\begin{frame}
+\qBrd[4.7in]{amber!40}{
+\begin{center}
+Let $X\sim \text{Negative-Binomial}(r, \binP)$
+\end{center}
+}\\
+
+\vspace{.5in}
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{carrotorange!50}{\text{Mean}\\
+\HLTW{E(X)= \frac{r}{\binP} } },  \qBrd[1.5in]{carrotorange!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=   \frac{r(1- \binP)}{\binP}}}  , \qBrd[1.7in]{carrotorange!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\left( \frac{\binP e^t}{1-(1-\binP)e^{t}}\right)^r    } } } $
+%}
+
+\vspace{.1in}
+\qBrd[4.75in]{carrotorange!70}{
+\begin{center}
+\qBrd[4.7in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}(1-\binP)^{x-r}\binP^{r-1}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
+
+
+
 
 
 \begin{frame}\frametitle{Geometric Distribution: Example}
