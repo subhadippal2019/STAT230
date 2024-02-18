@@ -361,7 +361,23 @@ Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^
 
 \end{frame}
 
+{
 
+\setbeamercolor{structure}{fg=brightlavender!80, bg= black!60}
+
+\begin{frame}{Reminder from Unit1: Binomial Series }
+\qBrd[4.5in]{babyblue!40}{
+Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ \HLTW{\displaystyle (1+x)^n}=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  x^{i}}$$
+$$\HLTW{\displaystyle (1+x)^n} = \HLTY{\displaystyle 1+{n\choose 1}x+{n\choose 2}x^2+  \cdots+ {n\choose {n-1}}x^{n-1}+{n\choose n}x^n}  $$ 
+}
+\vspace{.1in}
+%\pause
+\qBrd[4.5in]{babyblueeyes!50}{\tiny 
+Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ (a+b)^n=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  a^{i}b^{n-i}}$$
+$$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+  \cdots+ {n\choose {n-1}}a^{n-1}b+{n\choose n}a^n}  $$ 
+}
+\end{frame}
+}
 
 \begin{frame}{Expected Value of Binomial Distribution}
 \begin{eqnarray}
@@ -563,6 +579,25 @@ Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x
 \includegraphics[scale=.3]{figs/PoissonExample1.png}
 \end{frame}
 
+{
+\setbeamercolor{structure}{fg=brightlavender!80, bg= black!60}
+
+
+\begin{frame}\frametitle{Reminder from Unit1: Exponential Series $e^x \text{ or }( \exp(x))$}
+\vspace{-.1in}
+\define{Exponential Series}{
+For any real number $x\in \R$, the exponential series $\HLTY{e^x}$  (or sometimes denoted as $\HLTY{\exp(x)}$) is defined as, 
+$$\HLTY{\displaystyle e^{x}}=\HLTW{\displaystyle \sum_{n=0}^{\infty}\frac{x^n}{n!}} = \HLTY{\displaystyle 1+\frac{x}{1!}+\frac{x^2}{2!}+ \frac{x^3}{3!}+\cdots,}  $$
+}
+
+\vspace{2.5in}
+
+
+\end{frame}
+
+
+
+}
 
 
 \begin{frame}{Expected Value of Binomial Distribution}
@@ -717,7 +752,7 @@ $\Row{\qBrd[.9in]{asparagus!50}{\text{Mean}\\
 & $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
  \hline \hline
  & & & & & \\
-Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP} $&   $ \frac{ \frac{1}{\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
+Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
  & & & & & \\
  \hline
   \hline
@@ -726,10 +761,28 @@ Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{
 \end{frame}
 
 
+{
+\setbeamercolor{structure}{fg=brightlavender!80, bg= black!60}
+
+\begin{frame}\frametitle{Reminder from Unit1: Geometric Series}
+\qBrd[4.5in]{babyblue!50}{
+Let $p\in \R$ be such that $\abs{p}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0}^{\infty}p^{i}}= \HLTW{\displaystyle 1+p+p^2+p^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-p}}.$$ 
+}
+\begin{enumerate}
+\vspace{.1in}
+\item What is the value of $\HLTY{1+0.7+(0.7)^2 + (0.7)^3+ \cdots =}$\\
+\vspace{.1in}
+\item What is the value of $\HLTY{1-0.7+(0.7)^2 - (0.7)^3+ \cdots =}$
+\end{enumerate}
+\vspace{3in}
+\end{frame}
+
+}
 
 
 
-\begin{frame}{Expected Value of Binomial Distribution}
+
+\begin{frame}{Expected Value of Geometric Distribution}
 \begin{eqnarray}
 M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 & = &  \sum_{y=1}^{\infty } e^{ty}  (1-\binP)^{y-1}\binP \nonumber\\

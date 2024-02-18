@@ -459,6 +459,26 @@ $\pmf_{_X}(x)$ &$ \frac{1}{5}$ & $ \frac{2}{5}$  &$ \frac{1}{10}$  & \HLTY{ c} &
 \vspace{2in}
 \end{frame}
 
+{\setbeamercolor{structure}{fg=brightlavender!80, bg= black!60}
+
+\TransitionFrame[antiquefuchsia]{\Large Reminder from Unit1: Geometric Series }
+\begin{frame}\frametitle{Geometric Series}
+\qBrd[4.5in]{babyblue!50}{
+Let $p\in \R$ be such that $\abs{p}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0}^{\infty}p^{i}}= \HLTW{\displaystyle 1+p+p^2+p^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-p}}.$$ 
+}
+\begin{enumerate}
+\vspace{.1in}
+\item What is the value of $\HLTY{1+0.7+(0.7)^2 + (0.7)^3+ \cdots =}$
+\vspace{.1in}
+\item What is the value of $\HLTY{1+\frac{1}{7}+\frac{1}{7^2} + \frac{1}{7^3}+ \cdots =}$\\
+\end{enumerate}
+\vspace{3in}
+\end{frame}
+
+
+}
+
+
 
 
 
@@ -466,11 +486,11 @@ $\pmf_{_X}(x)$ &$ \frac{1}{5}$ & $ \frac{2}{5}$  &$ \frac{1}{10}$  & \HLTY{ c} &
 \qbx[4.5in]{apricot!50}{
 \Exmpl{amber}{} \small
 Suppose a random variable $X$ has the following support $\support[X]= \{0,1, 2,3, \ldots \}$. 
-The corresponding pmf is 
-$$ \pmf_{_X}(x):= \frac{\HLTY{c}}{5^x} \text{ for } x= 0, 1, 2, 3, \ldots  ,  $$
+The corresponding probability mass function  is 
+$$ \HLTW{\displaystyle \HLTEQ[babyblue!40]{\HLTW{\pmf(x)}:=\displaystyle  \frac{\HLTY{c}}{5^x}} \text{ for } x= 0, 1, 2, 3, \ldots  } $$
 where \HLTY{c} is an appropriately chosen constant. 
 \begin{enumerate}
-\item What is the value of \HLTY{ c} so that $\pmf_{_X}(x)$ become a valid probability mass function on the support $\support[X]$?
+\item What is the value of \HLTY{ c} so that $\HLTW{\pmf(x)}$ become a valid probability mass function on the support $\support[X]$?
 \item What is the probability that $X\in A$, where the event $A=\{1, 3, 5\}$.
 \item What is the probability that $X\leq 3$?
 \item What is the probability that $X>3$?
@@ -861,17 +881,43 @@ Find $E(X)$ and $Var(X)$, where $X$ is the outcome when we roll a fair die.
 \end{frame}
 
 
-\begin{frame}\frametitle{Exercises on Computing $E(X)$,  $Var(X)$, $MGF$}
-\qBrd[4.6in]{olive!30}{
- We say that $\Indicator{A}{x}$ is an indicator function for the event $A$ if 
-$$  \Indicator{A}{x}:=
+
+{
+\setbeamercolor{structure}{fg=brightlavender!80, bg= black!60}
+
+\begin{frame}{Reminder from Unit1}
+\define{Indicator Function}{
+Let $A$ be a set.  The  {\bf  indicator function for the set $A$}, denoted by $\Indicator{A}{x}$, is defined to be 
+$$ \HLTW{ \Indicator{A}{x}:=
  \begin{cases}
  1 & \text{if } x\in A\\
   0 & \text{if } x\notin A.
-\end{cases}  $$
-Obtain $E(  \Indicator{A}{X})$ and $ \text{Var}\left( \Indicator{A}{x} \right).$
+\end{cases}  }$$
 }
-\vspace{1.5in}
+
+
+\begin{itemize}
+\item $\Indicator{[0,5]}{1.33}= $ 
+\item $\Indicator{[0,5]}{-9.12}=  $
+\item $\Indicator{\{HH,TT, HT\}}{HH}=  $
+\item $\Indicator{\{HH,TT, HT\}}{HHHH}=  $
+\item $\Indicator{\mathbb{Z}}{1.87}=  $
+\item $\Indicator{\R_{+}}{-4.87}=  $
+\item $\Indicator{\R_{+}}{14}=  $
+\end{itemize}
+\end{frame}
+
+}
+
+
+\begin{frame}\frametitle{Exercises on Computing $E(X)$,  $Var(X)$, $MGF(X)$}
+
+\qBrd[4.6in]{olive!30}{
+\Qn: Let $X$ be a discrete random variable with the probability mass function $\pmf_{_X}(x)$ on the support $\support[X]$. Let $\HLTY{Y = \Indicator{A}{X}} $,  obtain $\HLTW{E(Y )}$,   $ \HLTW{\text{Var}\left( Y\right)}, $ and  $ \HLTW{\text{MGF}\left( Y\right)}.$
+}
+
+
+\vspace{2.5in}
 
 
 \end{frame}
