@@ -327,7 +327,7 @@ number of heads obtained in the 3 tosses.  The Support of the random variable is
 
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
-\qbx[4.5in]{amethyst!40}{
+\qbx[4.5in]{amethyst!40}{\small
 \Exmpl{amethyst}{}  Suppose that our experiment consists of tossing 3 fair coins. If we let $Y$ denote the number of heads that appear, then $Y$ is a random variable taking on one of the values $ 0, 1, 2,$ and $3$ with respective probabilities.
 \begin{itemize}
 \item[] $\pmf_{_Y}(0)= P(Y=0 )=$
@@ -336,7 +336,7 @@ number of heads obtained in the 3 tosses.  The Support of the random variable is
 \item[] $\pmf_{_Y}(3)= P(Y=3 )=$
 \end{itemize}
 }\\
-\pause
+%\pause
 \vspace{1.6in}
 {\tiny 
 }
@@ -509,7 +509,7 @@ $\pmf_{_X}(x)$ & 0.04 & 0.32 & 0.64 \\ \hline\hline
 
 
 
-
+\section{Cumulative Distribution Function \HLTW{\text{(CDF)}} of a discrete Random Variable}
 
 \TransitionFrame[antiquefuchsia]{\Large Cumulative Distribution Function \HLTW{\text{(CDF)}} of a discrete Random Variable }
 \begin{frame}\frametitle{ cumulative distribution function}
@@ -617,7 +617,7 @@ Find the corresponding CDF.
 
 
 
-\section{Expected Value and Variance  }
+\section{Expected Value and Variance of a Discrete Random Variable  }
 \TransitionFrame[antiquefuchsia]{\Large \HLTW{\text{Expected Value}} \& \HLTW{\text{Variance}}  of a Discrete Random Variable }
 
 \begin{frame}\frametitle{The {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable}
@@ -677,16 +677,17 @@ $\text{Var}(X)$ is often denoted by $\sigma^2$.
 \begin{frame}\frametitle{Properties of Expected Value and Variance}
  
 
-
+Let $a, b\in \R$ are two constants where as $X$ is a random variable , then 
 \begin{enumerate}
-\item $E(a+b X)= a+b E(X)$
-\item $\text{Var}(a+b X)= b^2 \text{Var}(X)$
+\item $E(a X+b)= a E(X)+ b$
+\item $\text{Var}(a X+ b)= a^2 \text{Var}(X)$
+\item $\text{SD}(a X+ b)= \abs{a} \text{SD}(X)$
 \end{enumerate}
 \vspace{2in}
 \end{frame}
 
-
-\TransitionFrame[antiquefuchsia]{\Large  Moment Generating Function \HLTW{\text{(mgf)}} }  
+\section{ Moment Generating Function \HLTW{\text{(mgf)}}  of a Discrete Random Variable }
+\TransitionFrame[antiquefuchsia]{\Large  Moment Generating Function \HLTW{\text{(mgf)}} of a Discrete Random Variable  }  
 
 
 \begin{frame}\frametitle{Moment Generating Function (mgf)}
@@ -730,6 +731,12 @@ Assuming it exists\qBrd[2.95in]{applegreen!20}{$ \HLTW{\frac{d^{k}}{dt^k}\left\{
 \end{center}
 }
 \end{frame}
+
+
+
+\section{ A Few Examples}
+\TransitionFrame[amber]{\Large  A Few Examples}  
+
 
 
 \begin{frame}\frametitle{Example}
