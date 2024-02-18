@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 FEB 2024 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 FEB 2024 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2007,16 +2007,6 @@ Overfull \hbox (4.45271pt too wide) in paragraph at lines 894--894
  []
 
 
-Overfull \hbox (4.22052pt too wide) in paragraph at lines 894--894
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
-
- []
-
-
 Overfull \hbox (3.68547pt too wide) in paragraph at lines 894--894
  [] 
  []
@@ -2281,7 +2271,7 @@ t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit5_PartB.pdf (56 pages, 805545 bytes).
+Output written on STAT320_Unit5_PartB.pdf (56 pages, 805536 bytes).
 PDF statistics:
  2798 PDF objects out of 2984 (max. 8388607)
  2254 compressed objects within 23 object streams

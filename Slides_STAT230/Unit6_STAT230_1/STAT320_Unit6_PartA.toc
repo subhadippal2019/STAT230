@@ -1,3 +1,5 @@
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Continuous Random Variables}{13}{0}{1}
-\beamer@sectionintoc {2}{Moment Generating Function}{49}{0}{2}
+\beamer@sectionintoc {1}{Characterization of any CDF function }{2}{0}{1}
+\beamer@sectionintoc {2}{Continuous Random Variables}{14}{0}{2}
+\beamer@sectionintoc {3}{Expected Value, Variance \& MGF of a Continuous Random Variable }{36}{0}{3}
+\beamer@sectionintoc {4}{A Few Examples }{42}{0}{4}

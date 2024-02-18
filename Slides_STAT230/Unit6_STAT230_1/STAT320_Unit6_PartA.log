@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  17 FEB 2024 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 FEB 2024 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1401,6 +1401,11 @@ Overfull \hbox (56.92276pt too wide) in paragraph at lines 140--140
  [][][][] []  
  []
 
+
+Overfull \hbox (263.1453pt too wide) detected at line 140
+  [] [] [] [] [] [] [] 
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
@@ -1426,6 +1431,11 @@ LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <8> not available
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 141.
 
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1433,15 +1443,9 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 215.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 215.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 215.
-
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 215--215
-[][] 
+(./STAT320_Unit6_PartA.toc)
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1452,7 +1456,20 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [2
 
 ]
-Overfull \vbox (13.4306pt too high) detected at line 223
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 217.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 217.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 217.
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 217--217
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1463,8 +1480,12 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 253--253
-[][] 
+Overfull \vbox (13.4306pt too high) detected at line 225
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1475,28 +1496,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [4
 
 ]
-<figs/CDF_three_coin_toss.png, id=209, 1445.4pt x 903.375pt>
-File: figs/CDF_three_coin_toss.png Graphic file (type png)
-<use figs/CDF_three_coin_toss.png>
-Package pdftex.def Info: figs/CDF_three_coin_toss.png  used on input line 283.
-(pdftex.def)             Requested size: 187.9086pt x 117.44287pt.
-
-Overfull \hbox (9.77556pt too wide) detected at line 283
-[]
- []
-
-
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 283--283
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 255--255
 [][] 
  []
 
 
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 283--283
-[] 
- []
-
-
-Overfull \vbox (23.11684pt too high) detected at line 283
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1506,9 +1512,34 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [5
 
- <./figs/CDF_three_coin_toss.png>]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 288--288
+]
+<figs/CDF_three_coin_toss.png, id=267, 1445.4pt x 903.375pt>
+File: figs/CDF_three_coin_toss.png Graphic file (type png)
+<use figs/CDF_three_coin_toss.png>
+Package pdftex.def Info: figs/CDF_three_coin_toss.png  used on input line 285.
+(pdftex.def)             Requested size: 187.9086pt x 117.44287pt.
+
+Overfull \hbox (9.77556pt too wide) detected at line 285
+[]
+ []
+
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 285--285
 [][] 
+ []
+
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 285--285
+[] 
+ []
+
+
+Overfull \vbox (23.11684pt too high) detected at line 285
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1518,7 +1549,17 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [6
 
-]
+ <./figs/CDF_three_coin_toss.png>]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 290--290
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1526,8 +1567,8 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 313--313
-[][] 
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1538,22 +1579,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [8
 
 ]
-File: figs/CDF_three_coin_toss.png Graphic file (type png)
-<use figs/CDF_three_coin_toss.png>
-Package pdftex.def Info: figs/CDF_three_coin_toss.png  used on input line 337.
-(pdftex.def)             Requested size: 199.16928pt x 124.4729pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
-[]$
- []
-
-
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 337--337
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 315--315
 [][] 
  []
 
 
-Overfull \vbox (16.06277pt too high) detected at line 337
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1564,14 +1596,27 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [9
 
 ]
-<figs/logistic_CDF.png, id=390, 421.575pt x 238.8925pt>
-File: figs/logistic_CDF.png Graphic file (type png)
-<use figs/logistic_CDF.png>
-Package pdftex.def Info: figs/logistic_CDF.png  used on input line 353.
-(pdftex.def)             Requested size: 179.25244pt x 101.57716pt.
+File: figs/CDF_three_coin_toss.png Graphic file (type png)
+<use figs/CDF_three_coin_toss.png>
+Package pdftex.def Info: figs/CDF_three_coin_toss.png  used on input line 339.
+(pdftex.def)             Requested size: 199.16928pt x 124.4729pt.
 
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+[]$
+ []
+
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 339--339
 [][] 
+ []
+
+
+Overfull \vbox (16.06277pt too high) detected at line 339
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1581,9 +1626,20 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [10
 
- <./figs/logistic_CDF.png>]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 367--367
+]
+<figs/logistic_CDF.png, id=459, 421.575pt x 238.8925pt>
+File: figs/logistic_CDF.png Graphic file (type png)
+<use figs/logistic_CDF.png>
+Package pdftex.def Info: figs/logistic_CDF.png  used on input line 355.
+(pdftex.def)             Requested size: 179.25244pt x 101.57716pt.
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 355--355
 [][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1593,9 +1649,14 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [11
 
-]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 386--386
+ <./figs/logistic_CDF.png>]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 370--370
 [][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1605,16 +1666,26 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [12
 
-] (./STAT320_Unit6_PartA.toc)
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 389--389
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
 [13
 
-]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 394--394
-[][] 
+] (./STAT320_Unit6_PartA.toc)
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1625,6 +1696,16 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [14
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 397--397
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1632,18 +1713,8 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 416--416
-[][]  
- []
-
-
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 416--416
-[][] 
- []
-
-
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 416--416
-[][] 
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1654,13 +1725,23 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [16
 
 ]
-File: figs/logistic_CDF.png Graphic file (type png)
-<use figs/logistic_CDF.png>
-Package pdftex.def Info: figs/logistic_CDF.png  used on input line 434.
-(pdftex.def)             Requested size: 179.25244pt x 101.57716pt.
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 419--419
+[][]  
+ []
 
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 434--434
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 419--419
 [][] 
+ []
+
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 419--419
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1671,8 +1752,18 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 451--451
+File: figs/logistic_CDF.png Graphic file (type png)
+<use figs/logistic_CDF.png>
+Package pdftex.def Info: figs/logistic_CDF.png  used on input line 437.
+(pdftex.def)             Requested size: 179.25244pt x 101.57716pt.
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 437--437
 [][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1683,8 +1774,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 468--468
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 454--454
 [][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1695,17 +1791,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 490--490
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 471--471
 [][] 
  []
 
 
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 490--490
-[] 
- []
-
-
-Overfull \vbox (22.65382pt too high) detected at line 490
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1716,8 +1808,22 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (4.45271pt too wide) in paragraph at lines 514--514
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 493--493
 [][] 
+ []
+
+
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 493--493
+[] 
+ []
+
+
+Overfull \vbox (22.65382pt too high) detected at line 493
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1728,7 +1834,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \vbox (34.42604pt too high) detected at line 540
+Overfull \hbox (4.45271pt too wide) in paragraph at lines 517--517
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1739,7 +1851,12 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \vbox (11.15709pt too high) detected at line 593
+Overfull \vbox (34.42604pt too high) detected at line 543
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1750,7 +1867,12 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [23
 
 ]
-Overfull \vbox (105.12492pt too high) detected at line 618
+Overfull \vbox (11.15709pt too high) detected at line 596
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1761,29 +1883,12 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [24
 
 ]
-<figs/pdf1.png, id=932, 622.82687pt x 373.395pt>
-File: figs/pdf1.png Graphic file (type png)
-<use figs/pdf1.png>
-Package pdftex.def Info: figs/pdf1.png  used on input line 674.
-(pdftex.def)             Requested size: 93.42pt x 56.00682pt.
-
-Overfull \hbox (1.6368pt too wide) in paragraph at lines 674--674
-[][][]
+Overfull \vbox (105.12492pt too high) detected at line 621
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-
- []
-
-
-Overfull \hbox (18.51146pt too wide) in paragraph at lines 674--674
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1793,8 +1898,35 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [25
 
- <./figs/pdf1.png>]
-Overfull \vbox (66.91478pt too high) detected at line 703
+]
+<figs/pdf1.png, id=1031, 622.82687pt x 373.395pt>
+File: figs/pdf1.png Graphic file (type png)
+<use figs/pdf1.png>
+Package pdftex.def Info: figs/pdf1.png  used on input line 677.
+(pdftex.def)             Requested size: 93.42pt x 56.00682pt.
+
+Overfull \hbox (1.6368pt too wide) in paragraph at lines 677--677
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--677
+
+ []
+
+
+Overfull \hbox (18.51146pt too wide) in paragraph at lines 677--677
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--677
+
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1804,8 +1936,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [26
 
-]
-Overfull \vbox (42.4655pt too high) detected at line 727
+ <./figs/pdf1.png>]
+Overfull \vbox (66.91478pt too high) detected at line 706
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1816,6 +1953,15 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [27
 
 ]
+Overfull \vbox (42.4655pt too high) detected at line 730
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1823,6 +1969,11 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [28
 
 ]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1830,38 +1981,8 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [29
 
 ]
-Overfull \hbox (6.60133pt too wide) in paragraph at lines 826--826
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 826--826
-
- []
-
-<figs/CDF1.png, id=1144, 825.0825pt x 518.93875pt>
-File: figs/CDF1.png Graphic file (type png)
-<use figs/CDF1.png>
-Package pdftex.def Info: figs/CDF1.png  used on input line 826.
-(pdftex.def)             Requested size: 99.00562pt x 62.26996pt.
-
-Overfull \hbox (5.85pt too wide) in paragraph at lines 826--826
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 826--826
-
- []
-
-
-Overfull \hbox (2.61195pt too wide) in paragraph at lines 826--826
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 826--826
-
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1871,8 +1992,44 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [30
 
- <./figs/CDF1.png>]
-Overfull \vbox (75.88545pt too high) detected at line 847
+]
+Overfull \hbox (6.60133pt too wide) in paragraph at lines 829--829
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+
+ []
+
+<figs/CDF1.png, id=1252, 825.0825pt x 518.93875pt>
+File: figs/CDF1.png Graphic file (type png)
+<use figs/CDF1.png>
+Package pdftex.def Info: figs/CDF1.png  used on input line 829.
+(pdftex.def)             Requested size: 99.00562pt x 62.26996pt.
+
+Overfull \hbox (5.85pt too wide) in paragraph at lines 829--829
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+
+ []
+
+
+Overfull \hbox (2.61195pt too wide) in paragraph at lines 829--829
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1882,8 +2039,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [31
 
-]
-Overfull \vbox (4.0714pt too high) detected at line 869
+ <./figs/CDF1.png>]
+Overfull \vbox (75.88545pt too high) detected at line 850
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1894,6 +2056,15 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [32
 
 ]
+Overfull \vbox (11.29773pt too high) detected at line 874
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1901,33 +2072,8 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [33
 
 ]
-Overfull \hbox (6.60133pt too wide) in paragraph at lines 951--951
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 951--951
-
- []
-
-
-Overfull \hbox (5.85pt too wide) in paragraph at lines 951--951
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 951--951
-
- []
-
-
-Overfull \hbox (2.61195pt too wide) in paragraph at lines 951--951
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 951--951
-
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -1938,13 +2084,53 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [34
 
 ]
+Overfull \hbox (6.60133pt too wide) in paragraph at lines 956--956
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--956
+
+ []
+
+
+Overfull \hbox (5.85pt too wide) in paragraph at lines 956--956
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--956
+
+ []
+
+
+Overfull \hbox (2.61195pt too wide) in paragraph at lines 956--956
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--956
+
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
 [35
 
-]
+] (./STAT320_Unit6_PartA.toc)
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1952,6 +2138,16 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [36
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 963--963
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1959,6 +2155,11 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [37
 
 ]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1966,6 +2167,11 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [38
 
 ]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1973,33 +2179,8 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [39
 
 ]
-Overfull \hbox (6.60133pt too wide) in paragraph at lines 1079--1079
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
-
- []
-
-
-Overfull \hbox (5.85pt too wide) in paragraph at lines 1079--1079
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
-
- []
-
-
-Overfull \hbox (2.61195pt too wide) in paragraph at lines 1079--1079
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
-
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -2010,40 +2191,20 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [40
 
 ]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
 [41
 
-]
-Overfull \hbox (6.60133pt too wide) in paragraph at lines 1167--1167
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
-
- []
-
-
-Overfull \hbox (5.85pt too wide) in paragraph at lines 1167--1167
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
-
- []
-
-
-Overfull \hbox (2.61195pt too wide) in paragraph at lines 1167--1167
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
-
+] (./STAT320_Unit6_PartA.toc)
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -2054,7 +2215,13 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [42
 
 ]
-Overfull \vbox (7.09836pt too high) detected at line 1188
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1012--1012
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -2065,6 +2232,11 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [43
 
 ]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -2072,6 +2244,41 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [44
 
 ]
+Overfull \hbox (6.60133pt too wide) in paragraph at lines 1096--1096
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+
+ []
+
+
+Overfull \hbox (5.85pt too wide) in paragraph at lines 1096--1096
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+
+ []
+
+
+Overfull \hbox (2.61195pt too wide) in paragraph at lines 1096--1096
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -2079,6 +2286,11 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [45
 
 ]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -2086,6 +2298,41 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [46
 
 ]
+Overfull \hbox (6.60133pt too wide) in paragraph at lines 1184--1184
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
+
+ []
+
+
+Overfull \hbox (5.85pt too wide) in paragraph at lines 1184--1184
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
+
+ []
+
+
+Overfull \hbox (2.61195pt too wide) in paragraph at lines 1184--1184
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
+
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -2093,7 +2340,12 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [47
 
 ]
-Overfull \vbox (3.30562pt too high) detected at line 1315
+Overfull \vbox (7.09836pt too high) detected at line 1205
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -2103,7 +2355,12 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 
 [48
 
-] (./STAT320_Unit6_PartA.toc)
+]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -2111,8 +2368,8 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [49
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1328--1328
-[][] 
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -2123,8 +2380,8 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 [50
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1336--1336
-[][] 
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
  []
 
 
@@ -2133,6 +2390,51 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
  []
 
 [51
+
+]
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (56.92276pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[52
+
+]
+Overfull \vbox (3.30562pt too high) detected at line 1332
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (56.92276pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[53
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1353--1353
+[][] 
+ []
+
+
+Overfull \hbox (263.1453pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (56.92276pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[54
 
 ]
 \tf@nav=\write6
@@ -2144,20 +2446,27 @@ Overfull \hbox (56.92276pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit6_PartA.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1339.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1339.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1356.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1356.
  (./STAT320_Unit6_PartA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1339.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1339.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1356.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1356.
 
-Package rerunfilecheck Info: File `STAT320_Unit6_PartA.out' has not changed.
-(rerunfilecheck)             Checksum: 018992D288FB3797D5FABE4D6101694E;123.
+
+
+Package rerunfilecheck Warning: File `STAT320_Unit6_PartA.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `STAT320_Unit6_PartA.out':
+(rerunfilecheck)             Before: 72AAFDB99C24A39B8C07F888EE03E81E;286
+(rerunfilecheck)             After:  FE7C2DB30C052832EBED30A740F7D705;285.
  ) 
 Here is how much of TeX's memory you used:
- 29054 strings out of 480608
- 563889 string characters out of 5903631
- 963621 words of memory out of 5000000
- 44104 multiletter control sequences out of 15000+600000
+ 29100 strings out of 480608
+ 564719 string characters out of 5903631
+ 965485 words of memory out of 5000000
+ 44138 multiletter control sequences out of 15000+600000
  611678 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,23n,79p,805b,1764s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2178,10 +2487,10 @@ mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020
 /texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit6_PartA.pdf (51 pages, 555215 bytes).
+Output written on STAT320_Unit6_PartA.pdf (54 pages, 571873 bytes).
 PDF statistics:
- 2043 PDF objects out of 2073 (max. 8388607)
- 1706 compressed objects within 18 object streams
- 105 named destinations out of 1000 (max. 500000)
- 1477 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2275 PDF objects out of 2487 (max. 8388607)
+ 1926 compressed objects within 20 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 1523 words of extra memory for PDF output out of 10000 (max. 10000000)
 
