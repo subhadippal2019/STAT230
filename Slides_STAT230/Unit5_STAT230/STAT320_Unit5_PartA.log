@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 FEB 2024 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 FEB 2024 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1700,8 +1700,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 464--464
-[][] 
+Overfull \vbox (133.06145pt too high) detected at line 476
  []
 
 
@@ -1717,7 +1716,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \vbox (133.06145pt too high) detected at line 476
+Overfull \vbox (116.0342pt too high) detected at line 500
  []
 
 
@@ -1733,10 +1732,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \vbox (116.0342pt too high) detected at line 500
- []
-
-
 Overfull \hbox (572.69435pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -1761,18 +1756,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (572.69435pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (209.14989pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[20
-
-]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\HLTEQ' on input line 532.
@@ -1787,7 +1770,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[21
+[20
 
 ]
 Overfull \hbox (3.45665pt too wide) in paragraph at lines 534--534
@@ -1795,6 +1778,18 @@ Overfull \hbox (3.45665pt too wide) in paragraph at lines 534--534
  []
 
 
+Overfull \hbox (572.69435pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[21
+
+]
 Overfull \hbox (572.69435pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -1819,6 +1814,16 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [23
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 588--588
+[]\T1/phv/b/n/6 Solution:
+ []
+
+<figs/BlankGraph.png, id=1237, 729.72626pt x 494.84875pt>
+File: figs/BlankGraph.png Graphic file (type png)
+<use figs/BlankGraph.png>
+Package pdftex.def Info: figs/BlankGraph.png  used on input line 588.
+(pdftex.def)             Requested size: 145.94266pt x 98.96799pt.
+
 Overfull \hbox (572.69435pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -1830,12 +1835,11 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [24
 
-]
+ <./figs/BlankGraph.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 588--588
 []\T1/phv/b/n/6 Solution:
  []
 
-<figs/BlankGraph.png, id=1281, 729.72626pt x 494.84875pt>
 File: figs/BlankGraph.png Graphic file (type png)
 <use figs/BlankGraph.png>
 Package pdftex.def Info: figs/BlankGraph.png  used on input line 588.
@@ -1852,14 +1856,14 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [25
 
- <./figs/BlankGraph.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 588--588
+]
+Underfull \hbox (badness 10000) in paragraph at lines 636--636
 []\T1/phv/b/n/6 Solution:
  []
 
 File: figs/BlankGraph.png Graphic file (type png)
 <use figs/BlankGraph.png>
-Package pdftex.def Info: figs/BlankGraph.png  used on input line 588.
+Package pdftex.def Info: figs/BlankGraph.png  used on input line 636.
 (pdftex.def)             Requested size: 145.94266pt x 98.96799pt.
 
 Overfull \hbox (572.69435pt too wide) has occurred while \output is active
@@ -1894,16 +1898,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [27
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 636--636
-[]\T1/phv/b/n/6 Solution:
- []
-
-File: figs/BlankGraph.png Graphic file (type png)
-<use figs/BlankGraph.png>
-Package pdftex.def Info: figs/BlankGraph.png  used on input line 636.
-(pdftex.def)             Requested size: 145.94266pt x 98.96799pt.
-
+] (./STAT320_Unit5_PartA.toc)
 Overfull \hbox (572.69435pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -1915,7 +1910,12 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [28
 
-] (./STAT320_Unit5_PartA.toc)
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 641--641
+[][] 
+ []
+
+
 Overfull \hbox (572.69435pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -1928,11 +1928,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [29
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 641--641
-[][] 
- []
-
-
 Overfull \hbox (572.69435pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -1993,18 +1988,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (572.69435pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (209.14989pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[35
-
-]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\HLTEQ' on input line 709.
@@ -2019,7 +2002,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[36
+[35
 
 ]
 Overfull \hbox (3.45665pt too wide) in paragraph at lines 710--710
@@ -2036,7 +2019,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[37
+[36
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 730--730
@@ -2057,7 +2040,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[38
+[37
 
 ]
 Overfull \hbox (574.36229pt too wide) has occurred while \output is active
@@ -2069,9 +2052,26 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[39
+[38
 
 ] (./STAT320_Unit5_PartA.toc)
+Overfull \hbox (574.36229pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[39
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 758--758
+[][] 
+ []
+
+
 Overfull \hbox (574.36229pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2084,8 +2084,32 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [40
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 758--758
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 808--808
+[]\T1/phv/b/n/6 Solution:
+ []
+
+
+Overfull \hbox (2.2012pt too wide) in paragraph at lines 808--808
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 808--808
+
+ []
+
+
+Overfull \hbox (3.33282pt too wide) in paragraph at lines 808--808
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 808--808
+
+ []
+
+
+Overfull \vbox (2.71704pt too high) detected at line 808
  []
 
 
@@ -2142,32 +2166,32 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [42
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 808--808
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
 []\T1/phv/b/n/6 Solution:
  []
 
 
-Overfull \hbox (2.2012pt too wide) in paragraph at lines 808--808
+Overfull \hbox (2.2012pt too wide) in paragraph at lines 862--862
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--808
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
 
  []
 
 
-Overfull \hbox (3.33282pt too wide) in paragraph at lines 808--808
+Overfull \hbox (3.33282pt too wide) in paragraph at lines 862--862
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--808
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
 
  []
 
 
-Overfull \vbox (2.71704pt too high) detected at line 808
+Overfull \vbox (37.4668pt too high) detected at line 862
  []
 
 
@@ -2224,35 +2248,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [44
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 862--862
-[]\T1/phv/b/n/6 Solution:
- []
-
-
-Overfull \hbox (2.2012pt too wide) in paragraph at lines 862--862
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 862--862
-
- []
-
-
-Overfull \hbox (3.33282pt too wide) in paragraph at lines 862--862
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 862--862
-
- []
-
-
-Overfull \vbox (37.4668pt too high) detected at line 862
- []
-
-
 Overfull \hbox (574.36229pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2263,18 +2258,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  []
 
 [45
-
-]
-Overfull \hbox (574.36229pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (209.14989pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[46
 
 ]
 Overfull \vbox (38.34045pt too high) detected at line 881
@@ -2290,7 +2273,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[47
+[46
 
 ]
 Overfull \hbox (574.36229pt too wide) has occurred while \output is active
@@ -2302,7 +2285,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[48
+[47
 
 ]
 Overfull \vbox (31.25833pt too high) detected at line 923
@@ -2318,7 +2301,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[49
+[48
 
 ]
 Overfull \hbox (3.45665pt too wide) in paragraph at lines 1349--1349
@@ -2335,7 +2318,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[50
+[49
 
 ]
 \tf@nav=\write6
@@ -2357,10 +2340,10 @@ Package rerunfilecheck Info: File `STAT320_Unit5_PartA.out' has not changed.
 (rerunfilecheck)             Checksum: C34E17C4E5BB7A0E087F033F3B5D60C0;476.
  ) 
 Here is how much of TeX's memory you used:
- 29318 strings out of 480608
- 571264 string characters out of 5903631
- 977287 words of memory out of 5000000
- 44358 multiletter control sequences out of 15000+600000
+ 29298 strings out of 480608
+ 570809 string characters out of 5903631
+ 976699 words of memory out of 5000000
+ 44340 multiletter control sequences out of 15000+600000
  612296 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,29n,79p,805b,2412s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2384,10 +2367,10 @@ ve/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit5_PartA.pdf (50 pages, 655523 bytes).
+Output written on STAT320_Unit5_PartA.pdf (49 pages, 649945 bytes).
 PDF statistics:
- 2532 PDF objects out of 2984 (max. 8388607)
- 2069 compressed objects within 21 object streams
- 107 named destinations out of 1000 (max. 500000)
- 2225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2488 PDF objects out of 2984 (max. 8388607)
+ 2032 compressed objects within 21 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 2189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
