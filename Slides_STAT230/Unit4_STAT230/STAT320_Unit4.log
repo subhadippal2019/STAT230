@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 FEB 2024 22:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 FEB 2024 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2287,10 +2287,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [53
 
 ]
-Overfull \vbox (93.99359pt too high) detected at line 1038
- []
-
-
 Overfull \hbox (336.36974pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2315,30 +2311,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [55
 
 ]
-Overfull \hbox (336.36974pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (81.85194pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[56
-
-]
-Overfull \hbox (336.36974pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (81.85194pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[57
-
-]
 Overfull \vbox (47.59369pt too high) detected at line 1150
  []
 
@@ -2352,7 +2324,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[58
+[56
 
 ]
 Overfull \vbox (56.51434pt too high) detected at line 1244
@@ -2368,7 +2340,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[59
+[57
 
 ]
 Overfull \vbox (95.00385pt too high) detected at line 1270
@@ -2384,13 +2356,33 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[60
+[58
 
 ]
-Overfull \vbox (64.2937pt too high) detected at line 1295
+Overfull \hbox (336.36974pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] [] 
  []
 
 
+Overfull \hbox (81.85194pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[59
+
+]
+Overfull \hbox (336.36974pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (81.85194pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[60
+
+]
 Overfull \hbox (336.36974pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] [] 
  []
@@ -2427,42 +2419,6 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
 [63
 
 ]
-Overfull \hbox (336.36974pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (81.85194pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[64
-
-]
-Overfull \hbox (336.36974pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (81.85194pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[65
-
-]
-Overfull \hbox (336.36974pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (81.85194pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[66
-
-]
 Overfull \vbox (68.90793pt too high) detected at line 1403
  []
 
@@ -2476,7 +2432,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[67
+[64
 
 ]
 Overfull \hbox (3.45665pt too wide) in paragraph at lines 1407--1407
@@ -2493,7 +2449,7 @@ Overfull \hbox (81.85194pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[68
+[65
 
 ]
 \tf@nav=\write6
@@ -2515,32 +2471,35 @@ Package rerunfilecheck Info: File `STAT320_Unit4.out' has not changed.
 (rerunfilecheck)             Checksum: EB4E0031A124EB3DA1B6B7F856073D57;385.
  ) 
 Here is how much of TeX's memory you used:
- 29287 strings out of 480608
- 569132 string characters out of 5903631
- 963786 words of memory out of 5000000
- 44286 multiletter control sequences out of 15000+600000
+ 29241 strings out of 480608
+ 568057 string characters out of 5903631
+ 962965 words of memory out of 5000000
+ 44245 multiletter control sequences out of 15000+600000
  604349 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,17n,79p,799b,2004s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ur
-w/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helve
-tic/uhvro8a.pfb>
-Output written on STAT320_Unit4.pdf (68 pages, 584875 bytes).
+pdfTeX warning (dest): name{Navigation66} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helveti
+c/uhvro8a.pfb>
+Output written on STAT320_Unit4.pdf (65 pages, 569389 bytes).
 PDF statistics:
- 2996 PDF objects out of 3580 (max. 8388607)
- 2559 compressed objects within 26 object streams
- 143 named destinations out of 1000 (max. 500000)
- 1926 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2870 PDF objects out of 2984 (max. 8388607)
+ 2451 compressed objects within 25 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 1842 words of extra memory for PDF output out of 10000 (max. 10000000)
 
