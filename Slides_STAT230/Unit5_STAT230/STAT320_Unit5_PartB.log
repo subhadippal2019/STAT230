@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 FEB 2024 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 FEB 2024 21:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2244,7 +2244,7 @@ Package rerunfilecheck Info: File `STAT320_Unit5_PartB.out' has not changed.
 Here is how much of TeX's memory you used:
  29418 strings out of 480608
  574908 string characters out of 5903631
- 971134 words of memory out of 5000000
+ 970134 words of memory out of 5000000
  44451 multiletter control sequences out of 15000+600000
  608412 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2271,7 +2271,7 @@ t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit5_PartB.pdf (56 pages, 805536 bytes).
+Output written on STAT320_Unit5_PartB.pdf (56 pages, 805554 bytes).
 PDF statistics:
  2798 PDF objects out of 2984 (max. 8388607)
  2254 compressed objects within 23 object streams

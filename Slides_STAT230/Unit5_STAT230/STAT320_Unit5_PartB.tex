@@ -336,7 +336,7 @@ Let $X\sim \text{Binomial}(n , \binP)$
 
 %\qBrd[4.6in]{babyblue!40}{
 $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
-\HLTW{E(X)= n \binP} },  \qBrd[1.5in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= n \binP (1-\binP)}}  , \qBrd[1.7in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\left( 1-\binP+pe^t\right)^n   }} } $
+\HLTW{E(X)= n \binP} },  \qBrd[1.5in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= n \binP (1-\binP)}}  , \qBrd[1.7in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\left( 1-\binP+\binP e^t\right)^n   }} } $
 %}
 
 \vspace{.1in}
@@ -351,7 +351,7 @@ $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
 & $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
  \hline \hline
  & & & & & \\
-Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^{n-x}  $ & $n\binP$  & $n\binP(1-\binP)$&   $\left( 1-\binP+pe^t\right)^n$   \\
+Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^{n-x}  $ & $n\binP$  & $n\binP(1-\binP)$&   $\left( 1-\binP+\binP e^t\right)^n$   \\
  & & & & & \\
  \hline
   \hline
@@ -400,7 +400,7 @@ E(X^2)& := &  \sum_{y\in \support[X]} y^2\; \pmf_{_X}(y) \nonumber\\
 & =& np+ n(n-1)\binP^2
 \end{eqnarray}
 
-$Var(X)= E(x^2)- (E(X))^2= np+n(n-1)\binP^2- n^2p^2= np-np^2= np(1-\binP). $
+$Var(X)= E(x^2)- (E(X))^2= np+n(n-1)\binP^2- n^2 \binP^2= n\binP-n \binP^2= n\binP (1-\binP). $
 
 \end{frame}
 
@@ -411,7 +411,7 @@ $Var(X)= E(x^2)- (E(X))^2= np+n(n-1)\binP^2- n^2p^2= np-np^2= np(1-\binP). $
 M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 %& = &  \sum_{y=0}^{n} e^{ty} {n\choose y}\binP^y(1-\binP)^{n-y}  \nonumber\\
 & =& (1-\binP)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
-& =& (1-\binP)^{n}  \sum_{y=0}^{n}  {n\choose y}\left( \frac{pe^{t}}{1-\binP}\right)^y   \nonumber\\
+& =& (1-\binP)^{n}  \sum_{y=0}^{n}  {n\choose y}\left( \frac{\binP e^{t}}{1-\binP}\right)^y   \nonumber\\
 & =& (1-\binP)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
 & =& (1-\binP)^{n} \left( 1+  \frac{pe^t}{1-\binP} \right)^n = \left( 1-\binP+pe^t\right)^n  \nonumber\\
 \end{eqnarray}
@@ -787,8 +787,8 @@ Let $p\in \R$ be such that $\abs{p}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0
 M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 & = &  \sum_{y=1}^{\infty } e^{ty}  (1-\binP)^{y-1}\binP \nonumber\\
 & = & \binP   \sum_{z=0}^{\infty } e^{tz+t}  (1-\binP)^{z} \nonumber\\
-& = & pe^t   \sum_{z=0}^{\infty } \left((1-\binP)e^{t}\right)^z\nonumber\\
-& = & \frac{pe^t}{1-(1-\binP)e^{t}} 
+& = &  \binP e^t   \sum_{z=0}^{\infty } \left((1-\binP)e^{t}\right)^z\nonumber\\
+& = & \frac{\binP e^t}{1-(1-\binP)e^{t}} 
 \end{eqnarray}
 
 
