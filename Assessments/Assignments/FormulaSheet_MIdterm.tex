@@ -1,0 +1,292 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+\usepackage{fdsymbol}
+\usepackage{latexcolors}
+\usepackage{mathrsfs}
+%\NewDocumentCommand{\support}{O{ }}{{\mathcal{S}}_{_{#1}}}
+%\NewDocumentCommand{\support}{O{ }}{{\mathbb{S}}_{_{#1}}}
+%\newcommand{\SampleS}{\mathcal{S}}
+\newcommand{\SampleS}{\mathscr{S}}
+\newcommand{\Not}[1]{\overline{#1}}
+
+ \begin{document}
+ 
+\title{}%replace X with the appropriate number
+\author{} %if necessary, replace with your course title
+%\date{ $ 26^{th} $ August, 2019}
+\date{}
+% \maketitle\vspace{-.in}
+ \noindent
+% \TextInBox{6 in }{Name: \vspace{.22 in}}\\
+%\; \TextInBox{6.05 in }{ Enrolled As: \MCOption[1.2in]{PHD Student} \MCOption[1in]{RA}\MCOption[1 in]{TA}}\\
+\TextInBox{6 in }{ 
+
+  }\\
+ \vspace{.4in}
+ 
+ 
+ 
+
+%
+%\DefBoxOne{}{
+%\begin{center}\color{black}
+%Part I:  Short answer type questions.
+%\end{center}
+%}
+
+
+%\DefBoxOne{Notations}{
+%$$ \Onebf_k=\left[ \begin{array}{c}1\\1\\\vdots \\1\end{array}\right]_{k\times 1} \text{ , }  J_{k}=\left[ \begin{array}{cccc}1&1 & \cdots & 1\\1& 1& \cdots&  1\\\vdots & \vdots & \ddots  &\vdots \\1& 1 &\cdots & 1\end{array}\right]_{k\times k} \text{ and } I_{k}=\left[ \begin{array}{cccc}1&0 & \cdots & 0\\0& 1& \cdots&  0\\\vdots & \vdots & \ddots  &\vdots \\0& 0 &\cdots & 1\end{array}\right]_{k\times k} \text{ for } k\in \Z_{+}.   $$
+%
+%}
+
+
+\vspace{-.2in}
+\DefBoxOne{}{
+\begin{center}\color{black}
+\Large Exam Assistance Note
+\end{center}
+}
+
+
+\vspace{.2in}
+
+
+
+
+
+
+\qBrd[6.2in]{babyblue!30}{
+Let $n$ be a {\bf non-negative integer,} then the {\bf factorial of n}, denoted as $\HLTY{n!}$ is defined to be
+\begin{enumerate}
+\qBrd[.75in]{amethyst!30}{\item[\sqBullet{amethyst}] $0!=\HLTY{1}$} \hspace{.4in}
+\qBrd[.75in]{amethyst!30}{\item[\sqBullet{amethyst}]  $1!=\HLTY{1}$}\hspace{.4in}
+\qBrd[2.3in]{amethyst!30}{\item[\sqBullet{amethyst}]  $n!= \HLTY{n\times(n-1)\times \ldots \times 1}$ for $n\geq 2$}
+\end{enumerate} 
+}\\
+
+\qBrd[6.2in]{babyblue!30}{
+Let $n, r$ be two {\bf non-negative integes,} such that $r\leq n$,  then the {\bf n choose r}, denoted by $\HLTY{{n\choose r}}$, is defined to be $${n \choose r}:= \frac{n!}{\left(r!\right) \times \left((n-r)!\right)}$$
+}\\
+
+
+
+\qBrd[6.2in]{amethyst!20}{
+For any real number $x\in \R$, the exponential series $\HLTY{e^x}$  (or sometimes denoted as $\HLTY{\exp(x)}$) is defined as, 
+$$\HLTY{\displaystyle e^{x}}=\HLTEQ[white]{\displaystyle \sum_{n=0}^{\infty}\frac{x^n}{n!}} = \HLTY{\displaystyle 1+\frac{x}{1!}+\frac{x^2}{2!}+ \frac{x^3}{3!}+\cdots}  $$
+}\\
+
+\qBrd[6.2in]{babyblue!30}{
+Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ \HLTEQ[white]{\displaystyle (1+x)^n}=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  x^{i}}$$
+$$\ \HLTEQ[white]{\displaystyle (1+x)^n} = \HLTY{\displaystyle 1+{n\choose 1}x+{n\choose 2}x^2+  \cdots+ {n\choose {n-1}}x^{n-1}+{n\choose n}x^n}  $$ 
+}\\
+
+\qBrd[6.2in]{amethyst!20}{
+Let $x\in \R$ be such that $|p|<1$,  then   $ \HLTY{\displaystyle \sum_{i=0}^{\infty}p^{i}}=  \HLTEQ[white]{\displaystyle 1+p+p^2+p^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-p}}.$
+}\\
+
+
+%\newpage
+\qBrd[6.5in]{babyblue!20}{
+{\bf Ordered, without replacement)}{ Let $r$, and $n$ be two positive integers such that $r\leq n$.  An ordered arrangement of $r$ distinct objects is called a permutation.  The number of ways of ordering $n$ distinct objects taken $r$  at a time, denoted by the symbol $^nP_r$,  is given as   $$\HLTEQ[applegreen!50]{ \HLTW{\displaystyle  ^nP_r}=  \HLTEQ[white]{ \displaystyle n(n - 1)(n- 2)(n - r + 1) }= \HLTW{ \displaystyle \frac{n!}{(n - r )!}  }   }.$$
+}}\\
+
+
+
+\qBrd[6.5in]{amethyst!20}{
+Let $n\geq r $ be two non-negative integers.  The number of different ways to select (/choose) $\HLTY{r}$ distinct objects from a list of $\HLTY{n}$ distinct (non-identical) objects  is given as( {\tiny or $^nC_r$)},
+ \vspace{-.1in} $$\HLTEQ[babyblue!70]{\HLTW{ \displaystyle {n \choose r }}= \HLTW{ \displaystyle\frac{n!}{r! (n-r)!}}} $$
+}\\
+
+
+\qBrd[6.5in]{babyblue!20}{
+The number of ways of partitioning $n$ distinct objects into $k$ distinct groups
+containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object appears exactly in  one group and $\HLTW{\sum_{i=1}^{k}n_i=n}$, is  
+ $$\HLTEQ[yellow]{\large \displaystyle { n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
+}\\
+
+
+
+
+\qBrd[6.5in]{amethyst!20}{
+Number of ways $n$ indistinguishable/identical objects can be organized into r different (ordered) groups is $$\HLTW{\displaystyle \frac{(n+r-1)!}{n! (r-1)!}={{n+r-1} \choose {n}}}.$$
+}\\
+
+
+
+%\newpage 
+\qbx[6.5in]{antiquefuchsia!60}{
+\vspace{.1in}
+Let $\HLTY{(\SampleS , P)}$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then, \\
+\begin{enumerate}
+\qBrd[3.5in]{applegreen!40}{  \item[{\sqBullet{olive}}] $\HLTW{P(\emptyset)=0}$ where $\HLTW{\emptyset}$ denotes the Null set. }\\
+\vspace{.05in}
+\qBrd[2in]{apricot!40}{ \item[{\sqBullet{apricot}}]  $\HLTW{P(A)\leq 1}$. }\\
+\vspace{.05in}
+\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{lime}}] If $\HLTW{
+A\subseteq B}$ then $\HLTW{P(A)\leq P(B)} $.}\\
+\vspace{.05in}
+\qBrd[3.8in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $\HLTW{P(\Not{A})=1-P(A)}$, where  $\HLTW{\Not{A}}$ denotes the complementary event to $A$}\\
+\vspace{.05in}
+\qBrd[4in]{cadmiumorange!40}{\item[{\sqBullet{cadmiumorange}}]  $ \HLTW{P(A\cup B)= P(A)+P(B)-P(A\cap B) }$.}
+\end{enumerate}
+}\\
+
+\qBrd[6.6in]{ceil!30}{
+Let $A_1, A_2, A_3$ are three events.  Then 
+\begin{eqnarray*}
+ P\left(A_1\cup A_2 \cup A_3\right) 
+ & =&  \left\{ \HLTEQ{P(A_1)+P(A_2)+P(A_3)}\right\}  \nonumber\\
+ & &-  \left\{\HLTEQ[lightBlueOne]{ P(A_1\cap A_2) + P(A_1\cap A_3) + P(A_2\cap A_3) }  \right\}+ \left\{ \HLTEQ{P(A_1\cap A_2 \cap A_3)}     \right\}  
+\end{eqnarray*}  
+\vspace{-.15in}
+}\\
+
+
+\qBrd[6.6in]{amethyst!20}{
+De-Arrangement probability with N distinct objects: 
+$\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots + (-1)^{N}\frac{1}{N!}}$.
+}\\
+
+
+
+\qBrd[6.6in]{applegreen!30}{
+Let $E$,  and  $F$ are two events such that $P\left(\HLTY{F} \right)>0$, then the conditional probability of {\bf $\HLTEQ[amethyst!30]{E}$ given $\HLTY{F}$} is defined to be, 
+\begin{center}
+\vspace{-.25in}
+\qBrd[2.55in]{teal!30}{ $$ \vspace{-.01in}
+\HLTW{\displaystyle P\left(\HLTEQ[amethyst!30]{E}\mid \HLTY{ F} \right):= \frac{P\left(\HLTEQ[amethyst!30]{E}\cap \HLTY{F}\right)}{P( \HLTY{F})}.} \vspace{-.01in}$$ }
+\end{center}
+\vspace{-.1in}
+}\\
+
+
+\qBrd[6.6in]{amethyst!20}{
+Let $E$ and $F$ are two events, then 
+$\HLTEQ[babyblue!70]{ \HLTY{P(E\cap F)}:=\HLTW{P(E\mid F)}\times \HLTW{P(F)}.}$
+}\\
+
+\qbx[6.5in]{teal!20}{
+Let E and F be two events, then 
+\qBrd[3in]{babyblue!30}{$ \HLTEQ[gray!20]{ P(E)} = \HLTY{\HLTEQ[applegreen!70]{P(E\mid F)P(F) } +  \HLTW{P(E\mid  \Not{F}))(\Not{F})}} $}
+\vspace{.1in}
+}\\
+
+\qbx[6.5in]{turquoisegreen!90}{
+\qBrd[2.4in]{yellow-green!50}{Law of  Total Probability (General):} Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
+\vspace{-.15in}
+\begin{center}
+%\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
+\qBrd[3in]{green!40}{$\displaystyle P(E)=\HLTW{\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  }$}
+\vspace{-.1in}
+\end{center}
+}\\
+
+\qbx[6.5in]{amethyst!40}{
+Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and exhaustive events (meaning that exactly one of these events must occur).  Suppose now that $E$ has occurred and we are interested in determining which one of the $F_j$ also occurred. Then, we have the following theorem\\
+$$\HLTW{ \displaystyle P(F_i \mid E)=\HLTY{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{K}P(E\mid F_j) P(F_j) }}}$$
+}\\
+
+
+\qBrd[6.6in]{teal!30}{
+Two events $E$ and $F$ are said to be  statistically independent if
+$\HLTW{\displaystyle P(E\cap F ) = P(E)\times P(F)    }$}\\
+
+
+\newcommand{\pmf}{p}
+\qBrd[6.6in]{amber!40}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[2.6in]{amber!70}{\Large Characterization of a pmf }\\
+\end{center}
+\vspace{-.15in}
+Let $\HLTW{\pmf(x)}$ is {\bf probability mass function } of a discrete random variable on the support $\support$,  {\bf if and only if} it satisfies the following conditions:
+\vspace{-.1in}
+\begin{enumerate}
+\qBrd[2.3in]{babyblue!40}{\item {\it Positivity: }$ \HLTW{ \displaystyle  \pmf(x)> 0}$ for all $\HLTW{ x\in \support}$}\hspace{.3in}
+\qBrd[3.2in]{applegreen!40}{\item {\it Total Probability:} $\HLTW{   \displaystyle  \sum_{\{x\in \support\}} \pmf(x)=1}$. }
+\end{enumerate}
+}\\
+
+\newcommand{\cdf}{F}
+\qbx[6.5in]{amethyst!30}{
+\begin{center}
+\qBrd[4in]{amethyst!60}{ {\bf ``CDF''}  of a Discrete Random Variable }
+\end{center}
+Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
+$$\HLTEQ[teal!50]{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support_{_X}}.}$$
+Then for any $a\in \R$, the cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
+$$\HLTW{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[teal!40]{ \{\HLTW{x}\leq \HLTY{a}: \HLTW{x}\in \support[X]\}}}\pmf_{_X}(\HLTW{x})}$$	
+}\\
+
+\qbx[6.5in]{amber!40}{
+\vspace{-.1in}
+\begin{center}
+\qBrd[4.6in]{amber!70}{ {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable }
+\end{center}
+If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ ( or $\mu_{_X}$)  is given by
+$$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
+assuming the  above summation/series exists /well-defined. 
+}\\
+
+
+\qbx[6.5in]{applegreen!40}{
+\begin{center}
+\qBrd[4.8in]{teal!40}{ {\bf ``Variance \& Standard Deviation (SD) ''} of a Discrete Random Variable }
+\end{center}
+The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
+$\HLTW{ \displaystyle \text{Var}(X):=\HLTW{ E(X^2)- \left(\HLTY{E(X)} \right)^2}}$\\
+$\HLTW{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(X)}}}$
+}\\
+
+\qbx[6.5in]{amber!40}{
+\begin{center}
+\qBrd[4.9in]{teal!40}{ {\bf ``MOment Generating Function (MGF) ''} of a Discrete Random Variable }
+\end{center}
+$$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \sum_{\left\{\HLTEQ[teal!40]{ \displaystyle \HLTW{x}\in \support_{_X}} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}}. \vspace{-.2in}$$\\
+\vspace{-.1in}
+}\\
+
+%\newpage
+\newcommand{\binP}{\pi}
+\qBrd[7.2in]{antiquefuchsia!50}{
+\vspace{.15in}
+\begin{center}
+\qBrd[6.99in]{white!40}{
+{
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support_{_X}$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^{n-x}  $ & $n\binP$  & $n\binP(1-\binP)$&   $\left( 1-\binP+\binP e^t\right)^n$   \\
+ & & & & & \\
+ \hline
+ \hline
+ & & & & & \\
+Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x!} $ & $ \lambda$  & $ \lambda$&   $e^{ \lambda e^t-  \lambda}  $   \\
+ & & & & & \\
+ \hline
+  \hline
+   & & & & & \\
+  Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
+ & & & & & \\
+ \hline
+ \hline 
+ & & & & & \\
+Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}(1-\binP)^{x-r}\binP^{r}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+
+\qbx[7.1in]{teal!40}{
+\vspace{.1in}
+\begin{center}
+\includegraphics[scale=.4]{figs/Cards.png}
+\end{center}
+}
+\end{document}

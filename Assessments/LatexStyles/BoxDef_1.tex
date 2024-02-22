@@ -1,6 +1,3 @@
-%\usepackage{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{shadows.blur}
 \usepackage{xcolor}
 \usepackage{xparse}
 \definecolor{lightGray}{gray}{0.95}
@@ -9,12 +6,12 @@
 \definecolor{lightBlueTwo}{RGB}{204, 238, 255}
 \definecolor{lightBlueThree}{RGB}{204, 204, 255}
 \definecolor{AltBlue}{RGB}{119,14,161}
-
+\definecolor{Orchid}{RGB}{186,85,211}
 
 \definecolor{BGBlue}{RGB}{220,221,252}
 \definecolor{BGBlueOne}{RGB}{204,229,255}
 
-
+\definecolor{DarkGreenOne}{RGB}{34,139,34}
 
 \definecolor{BGGreen}{RGB}{240,243,245}
 \definecolor{lightGreenOne}{RGB}{179, 255, 179}
@@ -36,58 +33,38 @@
 \definecolor{BGYellowOne}{RGB}{255,235,208}
 \definecolor{BGPink}{RGB}{255,215,240}
 
+\newcommand{\MakeVec}[1]{{\utilde{\bf #1}}}
 
+\NewDocumentCommand{\MCOption}{O{1.75in} m}{
+\TextInBoxTwo[BGPink]{ #1 } {\TextInBoxTwo[white]{.1 in }{ \quad}\HLT{#2}}
+}
+
+ \NewDocumentCommand{\ThreeChoices}{O{Do not Know}O{Not confident}O{Confident}}{
+\MCOption{#1} \MCOption{#2} \MCOption{#3}
+}
+ 
+\NewDocumentCommand{\MCQchk}{O{1.75 in}O{amethyst!50}m}{
+\qBrd[#1]{#2}{\TextInBoxTwo[white]{.1 in}{$\checkmark$}\;\;\HLTW{\text{#3}	}}
+} 
+ 
+ 
+ 
+
+\NewDocumentCommand{\MCQ}{O{1.75 in}O{amethyst!50}m}{
+\qBrd[#1]{#2}{\TextInBoxTwo[white]{.1 in}{ \color{white}\checkmark}\;\;\HLTW{\text{#3}	}}
+}  
+ 
+ 
+\NewDocumentCommand{\OneBlock}{ O{HLTGreen} m m }{\colorbox{#1}{\begin{minipage}{#2} $ #3$ \end{minipage}}}
 
 \NewDocumentCommand{\HLT}{ O{HLTGreen} m }{\colorbox{#1}{#2}}
-\NewDocumentCommand{\HLTEQ}{ O{HLTGreen} m }{\colorbox{#1}{$#2$}}
+%\NewDocumentCommand{\HLTEQ}{ O{HLTGreen} m }{\colorbox{#1}{$#2$}}
+\NewDocumentCommand{\HLTEQ}{ O{white} m }{\colorbox{#1}{$#2$}}
 
 %\newcommand{\HLT}[1]{\colorbox{HLTGreen}{#1}}
 \newcommand{\DEHLT}[1]{\colorbox{lightGrayOne}{\color{white} #1}}
 
-\newcommand{\TextInBoxOne}[2]{  {\fcolorbox{lightGrayOne}{white}{\begin{minipage}{#1}  #2 \end{minipage}}}}
-
-\newcommand{\TextInBoxOneQ}[2]{  {\fcolorbox{white}{lightGrayOne}{\begin{minipage}{#1}  #2 \end{minipage}}}}
-
-\newcommand{\TextInBoxOneEQ}[2]{  {\fcolorbox{white}{lightBlueTwo}{\begin{minipage}{#1}  #2 \end{minipage}}}}
-
-\newcommand{\QuizQuestion}[3]{  {\fcolorbox{black}{white}{\begin{minipage}{5.6 in}
-\TextInBoxOneEQ{5.5in}{ #1 }\\
-{\large \HLTEQ{\hspace{4.61in}\frac{\text{Score: \;\;\;\;}}{\text{#3}}}}\\
-\vspace{.01in}#2 \end{minipage}}}}
-
-\newcommand{\QuizQ}[3]{  {\fcolorbox{black}{lightGrayOne}{\begin{minipage}{5.6 in}
-\TextInBoxOne{5.5in}{ #1 }\\
-\vspace{.01in}#2 \end{minipage}}}}
-
-
-
-\newcommand{\ExamQuestion}[3]{  {\fcolorbox{lightBlueTwo}{lightBlueTwo}{\begin{minipage}{5.85 in}
-\TextInBoxOne{5.8in}{ #1 }\\
-{\large \HLTEQ[lightBlueTwo]{\hspace{5.01in}\frac{\text{Score: \;\;\;\;}}{\text{#3}}}}\\
-\end{minipage} }
-#2 }}
-
-
-\NewDocumentCommand{\MCOption}{O{1.75 in}m}{
-\TextInBoxTwo[BGPink]{ #1 } {\TextInBoxTwo[white]{.1 in }{ \quad}\HLT{#2}}
-}
-
-
-
-
-\NewDocumentCommand{\MCOptionSelected}{m}{
-\TextInBoxTwo[BGPink]{ 1.75 in } {\TextInBoxTwo[white]{.1 in }{{\huge $\bullet$}}\HLT{#1}}
-}
-
-
-%
-%\NewDocumentCommand{\MCOption}{m}{
-%\TextInBoxTwo[white]{.1 in }{ \quad}\HLT{#1}}
-
-
-
-
-
+\newcommand{\TextInBoxOne}[2]{  {\fcolorbox{white}{lightGrayOne}{\begin{minipage}{#1}  #2 \end{minipage}}}}
 
 
 \NewDocumentCommand{\TextInBoxTwo}{ O{lightGrayOne} m m } {{\fcolorbox{white}{#1}{\begin{minipage}{#2} { #3} \end{minipage}}}}
@@ -101,7 +78,7 @@
 \end{minipage}}%
 }
 
-
+\NewDocumentCommand{\TxtBnd}{ O{lightBrownOne} m m } {{\fcolorbox{white}{#1}{\begin{minipage}{#2} { #3} \end{minipage}}}}
 
 
 \newcommand{\BandInTopBox}[2]{
@@ -144,70 +121,42 @@
 }
 
 
-\newcommand{\CmntBox}[1]{
-\noindent
-\TextInBoxLem{5.3 in }{
-\TextInBoxLemOne{5.2 in }{
-#1
-}}
-
-}
 
 \newcommand{\DefBox}[1]{
 %\vspace{.1 in}
 \noindent
-\TextInBoxLem{6 in }{
-\BandInTopBox{5.9 in }{}
-\TextInBoxLemOne{5.9 in }{
-#1
-}}}
-
-
-\newcommand{\DefBoxL}[1]{
-%\vspace{.1 in}
-\noindent
-\TextInBoxLem{8 in }{
-\BandInTopBox{7.9 in }{}
-\TextInBoxLemOne{7.9 in }{
+\TextInBoxLem{4.5 in }{
+\BandInTopBox{4.4 in }{}
+\TextInBoxLemOne{4.4 in }{
 #1
 }}}
 
 
 
 
-%Old measurements
-%\newcommand{\DefBoxOne}[2]{
-%%\vspace{.1 in}
-%\noindent
-%\TextInBoxLem{6 in }{
-%\BandInTopBox{5.9 in }{#1}
-%\TextInBoxLemOne{5.9 in }{
-%#2
-%}}}
-%
 
 \newcommand{\DefBoxOne}[2]{
 %\vspace{.1 in}
 \noindent
-\TextInBoxLem{6.8 in }{
-\BandInTopBox{6.7 in }{#1}
-\TextInBoxLemOne{6.7 in }{
+\TextInBoxLem{4.5 in }{
+\BandInTopBox{4.4 in }{#1}
+\TextInBoxLemOne{4.4 in }{
 #2
 }}}
 
 
 \newcommand{\ThmBox}[2]{
 \noindent
-\TextInBoxThm{6.8 in }{
-\TextInBoxThmOne{6.7 in }{
+\TextInBoxThm{4.4 in }{
+\TextInBoxThmOne{4.4 in }{
 #1}
 #2}
 }
 
 \newcommand{\LemBox}[2]{
 \noindent
-\TextInBoxLem{6.8 in }{
-\TextInBoxLemOne{6.7 in }{
+\TextInBoxLem{4.5 in }{
+\TextInBoxLemOne{4.4 in }{
 #1}
 #2}
 }
@@ -215,8 +164,8 @@
 \newcommand{\PropBox}[2]{
 \vspace{.1 in}
 \noindent
-\TextInBoxLem{6.8 in }{
-\TextInBoxLemOne{6.7 in }{
+\TextInBoxLem{4.5 in }{
+\TextInBoxLemOne{4.4 in }{
 #1}
 #2}
 }
@@ -259,10 +208,68 @@
 %#2}
 }
 
+\NewDocumentCommand{\CommentBox}{ O{BGBlue}  m }{
+\TextInBoxLem{5.5in }{
+{\bf Comment:}\\
+\TextInBoxLemOne{5.4 in }{
+#2}}
+}
 
-\newcommand{\IndicatorA}[2]{\mathbb{I}_{#2}({#1 })}
 
 
+\newcommand{\HLTY}[1]{\HLTEQ[yellow]{#1}}
+\newcommand{\HLTW}[1]{\HLTEQ[white]{#1}}
+
+
+
+\newcommand{\qBox}[1]{
+  \begin{tikzpicture}
+\node[draw=none,shade,
+      top color=lightGrayOne,
+      bottom color=lightGray,
+      rounded corners=2pt,
+      blur shadow={shadow blur steps=5}
+    ] at (0,0) {    \noindent 
+\fcolorbox{white}{BGBlue}{%
+\begin{minipage}{4.55 in}
+ {\color{black} {
+ #1}}
+\end{minipage}  }%
+ };
+ 
+    \end{tikzpicture}
+}
+ 
+ 
+
+
+ 
+
+\newcommand{\qBoxCol}[2]{
+  \begin{tikzpicture}
+\node[draw=none,shade,
+      top color=lightGrayOne,
+      bottom color=lightGray,
+      rounded corners=2pt,
+      blur shadow={shadow blur steps=5}
+    ] at (0,0) {    \noindent
+\fcolorbox{white}{#1}{%
+%\begin{minipage}{4.55 in}
+\begin{minipage}{4.55 in}
+ {
+ \color{black} {
+ #2}}
+\end{minipage}  }%
+ };
+ 
+    \end{tikzpicture}
+}
+  
+  
+  
+  
+  
+  
 
 \NewDocumentCommand{\qBrd}{O{4.55 in} m m}{
   \begin{tikzpicture}
@@ -306,27 +313,42 @@
     \end{tikzpicture}
 }
   
-
-\newcommand{\qBoxCol}[2]{
+ 
+ 
+ \newcommand{\CurlyBox}[1]{
+\begin{center}
   \begin{tikzpicture}
-\node[draw=none,shade,
-      top color=lightGrayOne,
-      bottom color=lightGray,
-      rounded corners=2pt,
-      blur shadow={shadow blur steps=5}
-    ] at (0,0) {    \noindent
-\fcolorbox{white}{#1}{%
-%\begin{minipage}{4.55 in}
-\begin{minipage}{4.55 in}
- {
- \color{black} {
- #2}}
-\end{minipage}  }%
- };
- 
-    \end{tikzpicture}
+    \node[tape,draw=none,shade,
+      top color=blue!40,
+      bottom color=blue!5,
+      rounded corners=1pt,
+      blur shadow={shadow blur steps=5,shadow blur extra rounding=1.3pt}
+    ] at (2,0){\sffamily\bfseries\large #1};
+  \end{tikzpicture}
+\end{center} 
+ }
+
+
+\newcommand{\CmntBnd}{\BandInTopBox{4.5in}{Comment:}}
+\NewDocumentCommand{\TopBand}{O{Comment:} m}{ \BandInTopBox{4.5in}{#2}}
+
+\newcommand{\DBX}[1]{
+ 	\HLTEQ[AltBlue]{
+ 				\HLTEQ[BGBlue]{  #1  }
+ 	}
+ }
+
+
+
+\NewDocumentCommand{\TransitionFrame}{O{slateblue}m}{
+\begin{frame}{ }
+\qBoxCol{#1!40}{\vspace{.8in}  \begin{center}\qBrd[2in]{#1!70}{ \begin{center} \vspace{.1in}
+  #2 \\
+ \vspace{.1in}
+\end{center}}\end{center}
+\vspace{.7in}
 }
-  
- 
- \newcommand{\HLTW}[1]{\HLTEQ[white]{#1}}
- \newcommand{\sqBullet}[1]{  {\tiny \tiny \tiny \qBoxCol{#1!60}{ }} }
+
+\end{frame}
+
+}
