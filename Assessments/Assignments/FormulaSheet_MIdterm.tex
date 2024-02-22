@@ -57,7 +57,7 @@
 
 
 
-\qBrd[6.2in]{babyblue!30}{
+\qBrd[6.2in]{applegreen!30}{
 Let $n$ be a {\bf non-negative integer,} then the {\bf factorial of n}, denoted as $\HLTY{n!}$ is defined to be
 \begin{enumerate}
 \qBrd[.75in]{amethyst!30}{\item[\sqBullet{amethyst}] $0!=\HLTY{1}$} \hspace{.4in}
@@ -100,7 +100,7 @@ Let $n\geq r $ be two non-negative integers.  The number of different ways to se
 }\\
 
 
-\qBrd[6.5in]{babyblue!20}{
+\qBrd[6.5in]{babyblue!40}{
 The number of ways of partitioning $n$ distinct objects into $k$ distinct groups
 containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object appears exactly in  one group and $\HLTW{\sum_{i=1}^{k}n_i=n}$, is  
  $$\HLTEQ[yellow]{\large \displaystyle { n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
@@ -109,7 +109,7 @@ containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object 
 
 
 
-\qBrd[6.5in]{amethyst!20}{
+\qBrd[6.5in]{amethyst!40}{
 Number of ways $n$ indistinguishable/identical objects can be organized into r different (ordered) groups is $$\HLTW{\displaystyle \frac{(n+r-1)!}{n! (r-1)!}={{n+r-1} \choose {n}}}.$$
 }\\
 
@@ -144,7 +144,7 @@ Let $A_1, A_2, A_3$ are three events.  Then
 }\\
 
 
-\qBrd[6.6in]{amethyst!20}{
+\qBrd[6.6in]{antiquefuchsia!40}{
 De-Arrangement probability with N distinct objects: 
 $\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots + (-1)^{N}\frac{1}{N!}}$.
 }\\
@@ -182,18 +182,30 @@ Let E and F be two events, then
 \vspace{-.1in}
 \end{center}
 }\\
+\vspace{.25in }
 
-\qbx[6.5in]{amethyst!40}{
+\qBrd[6.5in]{amethyst!40}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[2.6in]{amber!70}{\Large Bayes' Theorem }\\
+\end{center}
+\vspace{-.15in}
 Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and exhaustive events (meaning that exactly one of these events must occur).  Suppose now that $E$ has occurred and we are interested in determining which one of the $F_j$ also occurred. Then, we have the following theorem\\
 $$\HLTW{ \displaystyle P(F_i \mid E)=\HLTY{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{K}P(E\mid F_j) P(F_j) }}}$$
 }\\
+\vspace{.1in}
 
 
 \qBrd[6.6in]{teal!30}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[2.6in]{teal!40}{\Large Statistical Independence}\\
+\end{center}
+\vspace{-.15in}
 Two events $E$ and $F$ are said to be  statistically independent if
 $\HLTW{\displaystyle P(E\cap F ) = P(E)\times P(F)    }$}\\
 
-
+\vspace{.1in}
 \newcommand{\pmf}{p}
 \qBrd[6.6in]{amber!40}{
 \begin{center}
@@ -212,7 +224,9 @@ Let $\HLTW{\pmf(x)}$ is {\bf probability mass function } of a discrete random va
 \newcommand{\cdf}{F}
 \qbx[6.5in]{amethyst!30}{
 \begin{center}
-\qBrd[4in]{amethyst!60}{ {\bf ``CDF''}  of a Discrete Random Variable }
+\vspace{-.35in}
+\qBrd[4in]{amethyst!60}{ \Large  {\bf ``CDF''}  of a Discrete Random Variable }
+\vspace{-.1in}
 \end{center}
 Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
 $$\HLTEQ[teal!50]{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support_{_X}}.}$$
@@ -220,29 +234,33 @@ Then for any $a\in \R$, the cumulative distribution function (cdf), denoted by $
 $$\HLTW{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[teal!40]{ \{\HLTW{x}\leq \HLTY{a}: \HLTW{x}\in \support[X]\}}}\pmf_{_X}(\HLTW{x})}$$	
 }\\
 
-\qbx[6.5in]{amber!40}{
-\vspace{-.1in}
+\vspace{.35in}
+\qBrd[6.6in]{amber!40}{
+\vspace{-.35in}
 \begin{center}
-\qBrd[4.6in]{amber!70}{ {\bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable }
+\qBrd[4.6in]{amber!70}{\begin{center} \Large {\Large \bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable \end{center} }
 \end{center}
 If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ ( or $\mu_{_X}$)  is given by
 $$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
 assuming the  above summation/series exists /well-defined. 
 }\\
+\vspace{.5in}
 
-
-\qbx[6.5in]{applegreen!40}{
+\qBrd[6.5in]{applegreen!35}{
+\vspace{-.35 in }
 \begin{center}
-\qBrd[4.8in]{teal!40}{ {\bf ``Variance \& Standard Deviation (SD) ''} of a Discrete Random Variable }
+\qBrd[4.8in]{applegreen!60}{\begin{center}\Large  {\Large \bf ``Variance \& Standard Deviation (SD) ''} of a Random Variable  \end{center}}
 \end{center}
 The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
 $\HLTW{ \displaystyle \text{Var}(X):=\HLTW{ E(X^2)- \left(\HLTY{E(X)} \right)^2}}$\\
 $\HLTW{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(X)}}}$
 }\\
+\vspace{.5in}
 
-\qbx[6.5in]{amber!40}{
+\qBrd[6.5in]{apricot!50}{
+\vspace{-.35in}
 \begin{center}
-\qBrd[4.9in]{teal!40}{ {\bf ``MOment Generating Function (MGF) ''} of a Discrete Random Variable }
+\qBrd[4.9in]{apricot!80}{ \begin{center}\Large {\bf \Large ``Moment Generating Function (MGF) ''} of a Discrete Random Variable \end{center} }
 \end{center}
 $$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \sum_{\left\{\HLTEQ[teal!40]{ \displaystyle \HLTW{x}\in \support_{_X}} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}}. \vspace{-.2in}$$\\
 \vspace{-.1in}
@@ -286,7 +304,7 @@ Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}
 \qbx[7.1in]{teal!40}{
 \vspace{.1in}
 \begin{center}
-\includegraphics[scale=.4]{figs/Cards.png}
+\includegraphics[scale=.5]{figs/Cards.png}
 \end{center}
 }
 \end{document}
