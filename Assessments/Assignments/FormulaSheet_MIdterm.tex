@@ -9,6 +9,8 @@
 %\newcommand{\SampleS}{\mathcal{S}}
 \newcommand{\SampleS}{\mathscr{S}}
 \newcommand{\Not}[1]{\overline{#1}}
+\newcommand{\Center}[1]{{\begin{center}#1 \vspace{-.2in}
+\end{center}}}
 
  \begin{document}
  
@@ -89,7 +91,7 @@ Let $x\in \R$ be such that $|p|<1$,  then   $ \HLTY{\displaystyle \sum_{i=0}^{\i
 
 %\newpage
 \qBrd[6.5in]{babyblue!20}{
-{\bf Ordered, without replacement)}{ Let $r$, and $n$ be two positive integers such that $r\leq n$.  An ordered arrangement of $r$ distinct objects is called a permutation.  The number of ways of ordering $n$ distinct objects taken $r$  at a time, denoted by the symbol $^nP_r$,  is given as   $$\HLTEQ[applegreen!50]{ \HLTW{\displaystyle  ^nP_r}=  \HLTEQ[white]{ \displaystyle n(n - 1)(n- 2)(n - r + 1) }= \HLTW{ \displaystyle \frac{n!}{(n - r )!}  }   }.$$
+{\bf (Ordered, without replacement)}{ Let $r$, and $n$ be two positive integers such that $r\leq n$.  An ordered arrangement of $r$ distinct objects is called a permutation.  The number of ways of ordering $n$ distinct objects taken $r$  at a time, denoted by the symbol $^nP_r$,  is given as   $$\HLTEQ[applegreen!50]{ \HLTW{\displaystyle  ^nP_r}=  \HLTEQ[white]{ \displaystyle n(n - 1)(n- 2)(n - r + 1) }= \HLTW{ \displaystyle \frac{n!}{(n - r )!}  }   }.$$
 }}\\
 
 
@@ -113,10 +115,15 @@ containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object 
 Number of ways $n$ indistinguishable/identical objects can be organized into r different (ordered) groups is $$\HLTW{\displaystyle \frac{(n+r-1)!}{n! (r-1)!}={{n+r-1} \choose {n}}}.$$
 }\\
 
-
+\qBrd[6.6in]{olive!40}{
+De-Arrangement probability with N distinct objects: 
+$\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots + (-1)^{N}\frac{1}{N!}}$.
+}\\
 
 %\newpage 
 \qbx[6.5in]{antiquefuchsia!60}{
+\Center{
+\qBrd[3.2in]{amethyst!40}{\Large \bf Properties of Probability }}
 \vspace{.1in}
 Let $\HLTY{(\SampleS , P)}$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then, \\
 \begin{enumerate}
@@ -144,12 +151,26 @@ Let $A_1, A_2, A_3$ are three events.  Then
 }\\
 
 
-\qBrd[6.6in]{antiquefuchsia!40}{
-De-Arrangement probability with N distinct objects: 
-$\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots + (-1)^{N}\frac{1}{N!}}$.
-}\\
 
 
+
+\begin{center}
+\qBrd[5in]{babyblue!30}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[3.3in]{blue!30}{\Large Structure of Two $\times $ Two Table  }\\
+\end{center}
+\begin{center}
+\begin{tabular}{|l||l|l||l|l|}
+\hline
+      & $A$ & $\Not{A}$ & Marginal of $B$   \\ \hline\hline
+$B$ &  $\HLTEQ[olive!30]{P(A\cap B)}$   &    $\HLTY{P(\Not{A}\cap B)}$ &  $\HLTW{P(B)}$    \\ \hline
+$\Not{B}$ &   $\HLTY{P(A\cap \Not{B})}$  &  $\HLTEQ[amethyst!40]{P(\Not{A}\cap \Not{B})}$   &   $\HLTW{P(\Not{B})}$    \\ \hline\hline
+Marginal of $A$ & $\HLTW{P(A)}$     & $\HLTW{P(\Not{A})}$     &$ \HLTW{\text{Total Probability}= \HLTEQ[teal!40]{1}} $   \\ \hline
+\end{tabular}
+\end{center}
+}
+\end{center}
 
 \qBrd[6.6in]{applegreen!30}{
 Let $E$,  and  $F$ are two events such that $P\left(\HLTY{F} \right)>0$, then the conditional probability of {\bf $\HLTEQ[amethyst!30]{E}$ given $\HLTY{F}$} is defined to be, 
@@ -157,24 +178,30 @@ Let $E$,  and  $F$ are two events such that $P\left(\HLTY{F} \right)>0$, then th
 \vspace{-.25in}
 \qBrd[2.55in]{teal!30}{ $$ \vspace{-.01in}
 \HLTW{\displaystyle P\left(\HLTEQ[amethyst!30]{E}\mid \HLTY{ F} \right):= \frac{P\left(\HLTEQ[amethyst!30]{E}\cap \HLTY{F}\right)}{P( \HLTY{F})}.} \vspace{-.01in}$$ }
-\end{center}
 \vspace{-.1in}
-}\\
-
-
-\qBrd[6.6in]{amethyst!20}{
+\qBrd[5.6in]{amethyst!20}{
 Let $E$ and $F$ are two events, then 
 $\HLTEQ[babyblue!70]{ \HLTY{P(E\cap F)}:=\HLTW{P(E\mid F)}\times \HLTW{P(F)}.}$
+}\end{center}
 }\\
+\vspace{-.1in}
 
-\qbx[6.5in]{teal!20}{
+\vspace{.5in}
+
+\qBrd[6.5in]{teal!40}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[3.3in]{yellow-green!50}{\Large Law of Total Probability   }\\
+\end{center}
 Let E and F be two events, then 
 \qBrd[3in]{babyblue!30}{$ \HLTEQ[gray!20]{ P(E)} = \HLTY{\HLTEQ[applegreen!70]{P(E\mid F)P(F) } +  \HLTW{P(E\mid  \Not{F}))(\Not{F})}} $}
-\vspace{.1in}
 }\\
 
-\qbx[6.5in]{turquoisegreen!90}{
-\qBrd[2.4in]{yellow-green!50}{Law of  Total Probability (General):} Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
+\qBrd[6.5in]{turquoisegreen!90}{\begin{center}
+\vspace{-.2in}
+\qBrd[3.4in]{yellow-green!50}{\Large Law of  Total Probability (General):} \\
+\end{center}
+Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
 \vspace{-.15in}
 \begin{center}
 %\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
@@ -182,19 +209,30 @@ Let E and F be two events, then
 \vspace{-.1in}
 \end{center}
 }\\
-\vspace{.25in }
+\vspace{.15in }
 
 \qBrd[6.5in]{amethyst!40}{
 \begin{center}
 \vspace{-.2in}
-\qBrd[2.6in]{amber!70}{\Large Bayes' Theorem }\\
+\qBrd[2.6in]{amber!70}{\Large Bayes' Theorem (General) }\\
 \end{center}
 \vspace{-.15in}
-Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and exhaustive events (meaning that exactly one of these events must occur).  Suppose now that $E$ has occurred and we are interested in determining which one of the $F_j$ also occurred. Then, we have the following theorem\\
+Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and exhaustive events ( partition of the sample space $\SampleS$).  Suppose now that $E$ be an event such that $P(E)>0$, then 
 $$\HLTW{ \displaystyle P(F_i \mid E)=\HLTY{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{K}P(E\mid F_j) P(F_j) }}}$$
 }\\
 \vspace{.1in}
 
+
+\qBrd[6.5in]{amethyst!40}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[2.1in]{amber!70}{\Large Bayes' Theorem }\\
+\end{center}
+\vspace{-.15in}
+Let $A, B$ are two events such that $P(A)>0$, and $P(B)>0$, then 
+$$\HLTW{ \displaystyle P(B\mid A)=\HLTY{ \frac{ \displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}}{\displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}+ \HLTEQ[orange!30]{P(A\mid \Not{B}) P(\Not{B} ) }     }}}$$
+}\\
+\vspace{.1in}
 
 \qBrd[6.6in]{teal!30}{
 \begin{center}
@@ -221,6 +259,7 @@ Let $\HLTW{\pmf(x)}$ is {\bf probability mass function } of a discrete random va
 \end{enumerate}
 }\\
 
+\vspace{.3in}
 \newcommand{\cdf}{F}
 \qbx[6.5in]{amethyst!30}{
 \begin{center}
@@ -229,7 +268,7 @@ Let $\HLTW{\pmf(x)}$ is {\bf probability mass function } of a discrete random va
 \vspace{-.1in}
 \end{center}
 Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
-$$\HLTEQ[teal!50]{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support_{_X}}.}$$
+$$\HLTEQ[teal!50]{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support[X]}.}$$
 Then for any $a\in \R$, the cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
 $$\HLTW{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[teal!40]{ \{\HLTW{x}\leq \HLTY{a}: \HLTW{x}\in \support[X]\}}}\pmf_{_X}(\HLTW{x})}$$	
 }\\
@@ -262,21 +301,23 @@ $\HLTW{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(
 \begin{center}
 \qBrd[4.9in]{apricot!80}{ \begin{center}\Large {\bf \Large ``Moment Generating Function (MGF) ''} of a Discrete Random Variable \end{center} }
 \end{center}
-$$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \sum_{\left\{\HLTEQ[teal!40]{ \displaystyle \HLTW{x}\in \support_{_X}} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}}. \vspace{-.2in}$$\\
+$$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \sum_{\left\{\HLTEQ[teal!40]{ \displaystyle \HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}}. \vspace{-.2in}$$\\
 \vspace{-.1in}
 }\\
 
 %\newpage
 \newcommand{\binP}{\pi}
-\qBrd[7.2in]{antiquefuchsia!50}{
-\vspace{.15in}
+\qBrd[7.2in]{antiquefuchsia!50}{\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{apricot!80}{ \begin{center} \bf \Large Standard Properties of  a few Discrete Distributions \end{center} }
+\end{center}
 \begin{center}
 \qBrd[6.99in]{white!40}{
 {
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
  Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
-& $\support_{_X}$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
  \hline \hline
  & & & & & \\
 Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^{n-x}  $ & $n\binP$  & $n\binP(1-\binP)$&   $\left( 1-\binP+\binP e^t\right)^n$   \\
@@ -289,12 +330,12 @@ Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x
  \hline
   \hline
    & & & & & \\
-  Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
+  Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP^2} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
  & & & & & \\
  \hline
  \hline 
  & & & & & \\
-Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}(1-\binP)^{x-r}\binP^{r}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
+Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}(1-\binP)^{x-r}\binP^{r}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP^2} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
  & & & & & \\
  \hline
   \hline
@@ -302,7 +343,7 @@ Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}
 }}\end{center}}
 
 \qbx[7.1in]{teal!40}{
-\vspace{.1in}
+\Center{\qBrd[3in]{applegreen!30}{\Center{\Large A Standard Deck of Cards\vspace{.2in}}}\vspace{.2in}}
 \begin{center}
 \includegraphics[scale=.5]{figs/Cards.png}
 \end{center}
