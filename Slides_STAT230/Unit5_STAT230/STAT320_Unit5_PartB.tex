@@ -219,7 +219,10 @@
 
 
 \section{Binomial Distribution  }
-\TransitionFrame[bittersweet]{\Large Binomial Distribution  }
+
+
+
+
 
 
 \begin{frame}
@@ -242,6 +245,12 @@
 \end{itemize}	
 \end{frame}
 
+\newcommand{\binP}{\pi}
+
+
+
+
+\TransitionFrame[bittersweet]{\Large Bernoulli Distribution  }
 
 \begin{frame}{A Bernoulli Trial/ Experiment}
 \begin{itemize}
@@ -280,7 +289,9 @@
 %\end{frame}
 %
 
-\newcommand{\binP}{\pi}
+
+
+
 
 \begin{frame}{Binomial Distribution}
 \define{Binomial Experiment}{
@@ -294,6 +305,64 @@ An experiment is called a Binomial experiment if it satisfies the following 4 co
 }
 \end{frame}
 
+
+
+
+
+\begin{frame}{Bernoulli Distribution $\text{Binomial}(n,\binP)$}
+\vspace{-.1in}
+\define{Bernoulli Distribution ($\text{Bernoulli}(\binP)$)}{
+Let $\binP\in (0,1)$. 
+A discrete random variable on the support, $\support=\{0,1\}$ is called a {\bf Bernoulli($\binP$) } distribution. The corresponding probability mass function can be represented as 
+\HLTW{$$ \pmf(x)= \begin{cases}
+\binP& \text{ if   } x= 1, \\
+(1-\binP)& \text{ if   } x= 0.
+\end{cases}
+$$}
+}
+The above pmf can also be reprrsented as the following: 
+$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{1-x}}}, \text{ for } x \in \support, \text{where } \HLTEQ[teal!30]{ \support=\{ 0, 1\}}$$\\
+\vspace{.1in}
+
+\end{frame}
+
+
+
+\begin{frame}
+\qBrd[4.6in]{ceil!50}{
+\begin{center}
+Let $X\sim \text{Bernoulli}(\binP)$ 
+\end{center}
+}\\
+\vspace{.5in}
+
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
+\HLTW{E(X)=  \binP} },  \qBrd[1.5in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=  \binP (1-\binP)}}  , \qBrd[1.7in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\left( 1-\binP+\binP e^t\right) }} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.6in]{antiquefuchsia!50}{
+\begin{center}
+\qBrd[4.2in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Bernoulli$(\binP)$ &$ \{0, 1\}$ & ${n \choose x} \binP^x (1-\binP)^{1-x}  $ & $\binP$  & $\binP(1-\binP)$&   $\left( 1-\binP+\binP e^t\right)$   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
+
+
+\TransitionFrame[bittersweet]{\Large Binomial Distribution  }
 
 \begin{frame}{Binomial Distribution $\text{Binomial}(n,\binP)$}
 \begin{enumerate}
@@ -315,9 +384,10 @@ parameters n and $\binP$; denoted by$ X\sim Binomial(n, \binP).$
 
 \begin{frame}{Binomial Distribution $\text{Binomial}(n,\binP)$}
 \vspace{-.1in}
-\define{Binomial Distribution}{
-Let $\binP\in (0,1)$, then the probability mass function of $\text{Binomial}(n, \binP)$ is given by
-$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{n-x}}}, \text{ for } x \in \support[X],  \text{where } \HLTEQ[teal!30]{ \support[X]=\{ 0, 1, \ldots,  n\}}$$\\
+\define{Binomial Distribution ($\text{Binomial}(n,\binP)$)}{
+Let $\binP\in (0,1)$,  and $n$ be a positive integer. 
+A discrete random variable on the support, $\support=\{0,1, 2, \ldots, n\}$ is called a {\bf Binomial($n,\binP$) } if the corresponding probability mass function can be represented as  $\text{Binomial}(n, \binP)$ is given by
+$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{n-x}}}, \text{ for } x \in \support, \text{where } \HLTEQ[teal!30]{ \support=\{ 0, 1, \ldots,  n\}}$$\\
 }
 \vspace{.1in}
 
@@ -378,6 +448,8 @@ $$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+
 }
 \end{frame}
 }
+
+
 
 \begin{frame}{Expected Value of Binomial Distribution}
 \begin{eqnarray}
@@ -530,12 +602,10 @@ The requirements for a Poisson distribution are that:
 The Poisson distribution models the number of occurrences of an
 event when there is a known average rate per unit time or space $\lambda$.
 
-\define{Poisson Distribution: pmf, Expected Value}{
-The requirements for a Poisson distribution are that:
-\begin{enumerate}
-\item The probability mass function of $\text{Poisson}(\lambda)$ is given by $$ \qBrd[2in]{amethyst!30}{$p(x) = \frac{e^{-\lambda}\lambda^x}{x!}$} \text{ for } x = 0, 1, 2, 3, \ldots $$
-\item If $X\sim Poisson(\lambda)$, then  $E(X)= \lambda,$ and $\text{Var}(X)= \lambda$.
-\end{enumerate}
+\define{Poisson Distribution}{
+ A discrete random variable on the support, $\support= \{0,1,2,3, \ldots\}$,  is called a {\bf  Poisson distribution with mean parameter $\lambda$} if the corresponding probability mass function is specified as \\
+ $$
+\qBrd[1.3in]{amethyst!30}{$ \displaystyle p(x) = \frac{e^{-\lambda}\lambda^x}{x!}$}  $$ { for } $x = 0, 1, 2, 3, \ldots$,  where  $\lambda>0$. 
 }
 \end{frame}
 
@@ -713,8 +783,9 @@ $0 < \binP <1$, of being a success, are performed until a success occurs.
 \end{enumerate}
 
 \define{Geometric Distribution}{
-The probability mass function of $Geometric(\binP)$ is given by
-$$p(x) = (1-\binP)^{x-1}\binP \text{ for } x = 1, 2, 3, \ldots, $$
+A discrete random variable on the support $\support=\{1,2,3, \ldots \}$ is defined to be the {\bf Geometric($\binP$)}  random variable if the corresponding probability mass function can be represented as the following 
+$$\HLTW{\displaystyle p(x) =\binP (1-\binP)^{x-1} }\text{ for } x = 1, 2, 3, \ldots, $$
+where $0<\binP<1$.
 }
 
 %\qBrd[4.7in]{olive!40}{
@@ -737,7 +808,7 @@ Let $X\sim \text{Geometric}(\binP)$
 \vspace{.5in}
 %\qBrd[4.6in]{babyblue!40}{
 $\Row{\qBrd[.9in]{asparagus!50}{\text{Mean}\\
-\HLTW{E(X)= \frac{1}{\binP} } },  \qBrd[1.5in]{asparagus!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=   \frac{1- \binP}{\binP}}}  , \qBrd[1.7in]{asparagus!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)= \frac{\binP e^t}{1-(1-\binP)e^{t}}    }} } $
+\HLTW{E(X)= \frac{1}{\binP} } },  \qBrd[1.5in]{asparagus!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=   \frac{1- \binP}{\binP^2}}}  , \qBrd[1.7in]{asparagus!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)= \frac{\binP e^t}{1-(1-\binP)e^{t}}    }} } $
 %}
 
 \vspace{.1in}
@@ -752,7 +823,7 @@ $\Row{\qBrd[.9in]{asparagus!50}{\text{Mean}\\
 & $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
  \hline \hline
  & & & & & \\
-Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
+Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $\binP (1-\binP)^{x-1}  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP^2} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
  & & & & & \\
  \hline
   \hline
@@ -844,8 +915,9 @@ performed until a the rth success occurs.
 \end{enumerate}
 
 \define{Negative Binomial Distribution}{
-The probability mass function of Negative Binomial RV, denoted by $\text{Negative-Binomial}(r, \binP)$ is given by
-$$p(x) ={{x-1}\choose{r-1}}\binP^{r} (1-\binP)^{x-r} \text{ for } x = r+1, r+2,r+ 3, \ldots, $$
+Let $\binP \in (0,1)$ and $r$ be a positive integer. 
+A discrete random variable on the support $\support=\{r+1,r+2,r+3, \ldots \}$ is defined to be the {\bf Negative-Binomial($r, \binP$)}  random variable if the corresponding probability mass function can be represented as 
+$$\HLTW{ \displaystyle p(x) ={{x-1}\choose{r-1}}\binP^{r} (1-\binP)^{x-r} }\text{ for } x = r+1, r+2,r+ 3, \ldots, $$
 }
 
 %\qBrd[4.7in]{olive!40}{
@@ -870,7 +942,7 @@ Let $X\sim \text{Negative-Binomial}(r, \binP)$
 \vspace{.5in}
 %\qBrd[4.6in]{babyblue!40}{
 $\Row{\qBrd[.9in]{carrotorange!50}{\text{Mean}\\
-\HLTW{E(X)= \frac{r}{\binP} } },  \qBrd[1.5in]{carrotorange!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=   \frac{r(1- \binP)}{\binP}}}  , \qBrd[1.7in]{carrotorange!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\left( \frac{\binP e^t}{1-(1-\binP)e^{t}}\right)^r    } } } $
+\HLTW{E(X)= \frac{r}{\binP} } },  \qBrd[1.5in]{carrotorange!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=   \frac{r(1- \binP)}{\binP^2}}}  , \qBrd[1.7in]{carrotorange!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\left( \frac{\binP e^t}{1-(1-\binP)e^{t}}\right)^r    } } } $
 %}
 
 \vspace{.1in}
@@ -885,7 +957,7 @@ $\Row{\qBrd[.9in]{carrotorange!50}{\text{Mean}\\
 & $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
  \hline \hline
  & & & & & \\
-Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}(1-\binP)^{x-r}\binP^{r}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
+Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}\binP^{r}(1-\binP)^{x-r}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP^2} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
  & & & & & \\
  \hline
   \hline
