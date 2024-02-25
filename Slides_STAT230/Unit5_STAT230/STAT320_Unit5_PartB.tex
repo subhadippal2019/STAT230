@@ -395,6 +395,16 @@ $$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^
 
 
 
+\begin{frame}
+\vspace{-.1in}
+\begin{center}
+\includegraphics[scale=.45]{figs/BinomialExpectedValue.png}
+\end{center}
+\vspace{1in}
+\end{frame}
+
+
+
 
 \begin{frame}
 \qBrd[4.6in]{ceil!50}{
@@ -437,16 +447,34 @@ Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^
 
 \begin{frame}{Reminder from Unit1: Binomial Series }
 \qBrd[4.5in]{babyblue!40}{
-Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ \HLTW{\displaystyle (1+x)^n}=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  x^{i}}$$
-$$\HLTW{\displaystyle (1+x)^n} = \HLTY{\displaystyle 1+{n\choose 1}x+{n\choose 2}x^2+  \cdots+ {n\choose {n-1}}x^{n-1}+{n\choose n}x^n}  $$ 
-}
+Let $a\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ \HLTW{\displaystyle (1+a)^n}=  \HLTY{\displaystyle\sum_{y=0}^{n}   {n \choose y  }  a^{y}}$$
+$$\HLTW{\displaystyle (1+a)^n} = \HLTY{\displaystyle 1+{n\choose 1}a+{n\choose 2}a^2+  \cdots+ {n\choose {n-1}}a^{n-1}+{n\choose n}a^n}  $$ 
+}\\
 \vspace{.1in}
 %\pause
 \qBrd[4.5in]{babyblueeyes!50}{\tiny 
-Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ (a+b)^n=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  a^{i}b^{n-i}}$$
+Let $a\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ (a+b)^n=  \HLTY{\displaystyle\sum_{y=0}^{n}   {n \choose i  }  a^{y}b^{n-y}}$$
 $$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+  \cdots+ {n\choose {n-1}}a^{n-1}b+{n\choose n}a^n}  $$ 
 }
 \end{frame}
+
+
+
+
+\begin{frame}{Reminder from Unit1: Binomial Series }
+\qBrd[4.5in]{babyblue!40}{
+Let $a\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then 
+  $$   \HLTY{\displaystyle\sum_{y=0}^{n}   \HLTW{y} {n \choose y  }   \HLTEQ[amethyst!50]{a}^{y}}= \HLTW{\displaystyle n\;\times   \HLTEQ[amethyst!50]{a}(1+ \HLTEQ[amethyst!50]{a})^{n-1}}$$
+}\\
+\vspace{.7in}
+\qBrd[4.5in]{babyblue!40}{
+Let $a\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then 
+$$   \HLTY{\displaystyle\sum_{y=0}^{n}   \HLTW{y^2 } {n \choose y }  \HLTEQ[amethyst!50]{a}^{y}} = \HLTW{\displaystyle  n\; \HLTEQ[amethyst!50]{a}(1+\HLTEQ[amethyst!50]{a})^{n-1} + n(n-1)\; \HLTEQ[amethyst!50]{a}^2(1+\HLTEQ[amethyst!50]{a})^{n-2}  }$$
+}\\
+\vspace{1in}
+
+\end{frame}
+
 }
 
 
@@ -455,27 +483,37 @@ $$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+
 \begin{eqnarray}
 E(X)& := &  \sum_{y\in \support[X]} y\; \pmf_{_X}(y) \nonumber\\
 & = &  \sum_{y=0}^{n} y {n\choose y}\binP^y(1-\binP)^{n-y}  \nonumber\\
-& =& (1-\binP)^{n}  \sum_{y=0}^{n}  y {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
-& =& (1-\binP)^{n}  \frac{np}{(1-\binP)^n} \nonumber\\
-& =& np
+& =& (1-\binP)^{n}  \sum_{y=0}^{n}  y {n\choose y}\left(  \HLTEQ[amethyst!50]{ \frac{\binP}{1-\binP}}\right)^y   \nonumber\\
+& =& (1-\binP)^{n} \left[  n \HLTEQ[amethyst!40]{ \frac{\binP}{(1-\binP)}}\times\HLTEQ[amethyst!40]{ \left( 1+ \frac{\binP}{1-\binP}\right)^{n-1}} \right] \nonumber\\
+& =& (1-\binP)^{n}  \frac{n\binP}{(1-\binP)^n} \nonumber\\
+& =& n\binP\nonumber
 \end{eqnarray}
 
 \end{frame}
 
 
 \begin{frame}{Expected Value of Binomial Distribution}
+\small
 \begin{eqnarray}
-E(X^2)& := &  \sum_{y\in \support[X]} y^2\; \pmf_{_X}(y) \nonumber\\
+& &  E(X^2) \nonumber\\
+&:= &  \sum_{y\in \support[X]} y^2\; \pmf_{_X}(y) \nonumber\\
 & = &  \sum_{y=0}^{n} y^2 {n\choose y}\binP^y(1-\binP)^{n-y}  \nonumber\\
-& =& (1-\binP)^{n}  \sum_{y=0}^{n}  y^2 {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
-& =& (1-\binP)^{n}  \frac{mp+ n(n-1)\binP^2}{(1-\binP)^n} \nonumber\\
-& =& np+ n(n-1)\binP^2
+& =& (1-\binP)^{n} \left[ \sum_{y=0}^{n}  y^2 {n\choose y}\left( \HLTEQ[amethyst!50]{\frac{\binP}{1-\binP}}\right)^y  \right] \nonumber\\
+& =&(1-\binP)^{n} \left[  \HLTW{\displaystyle  n\; \HLTEQ[amethyst!50]{\frac{\binP}{1-\binP}}(1+\HLTEQ[amethyst!50]{\frac{\binP}{1-\binP}})^{n-1} + n(n-1)\; \HLTEQ[amethyst!50]{\frac{\binP}{1-\binP}}^2(1+\HLTEQ[amethyst!50]{\frac{\binP}{1-\binP}})^{n-2}  }\right]\nonumber\\
+& =& (1-\binP)^{n}  \frac{n\binP+ n(n-1)\binP^2}{(1-\binP)^n} \nonumber\\
+& =& n\binP+ n(n-1)\binP^2\nonumber
 \end{eqnarray}
 
-$Var(X)= E(x^2)- (E(X))^2= np+n(n-1)\binP^2- n^2 \binP^2= n\binP-n \binP^2= n\binP (1-\binP). $
-
 \end{frame}
-
+\begin{frame}
+\begin{eqnarray}
+Var(X) & = &  E(X^2)- (E(X))^2 \nonumber\\
+ & =&  n\binP +n(n-1)\binP^2- n^2 \binP^2\nonumber\\
+ & = &  n\binP-n \binP^2\nonumber\\
+ & = & \HLTY{ n\binP (1-\binP)}.\nonumber
+\end{eqnarray}
+\vspace{1in}
+\end{frame}
 
 
 \begin{frame}{Expected Value of Binomial Distribution}
@@ -493,13 +531,7 @@ M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 \end{frame}
 
 
-\begin{frame}
-\vspace{-.1in}
-\begin{center}
-\includegraphics[scale=.45]{figs/BinomialExpectedValue.png}
-\end{center}
-\vspace{1in}
-\end{frame}
+
 
 
 
@@ -653,11 +685,11 @@ Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x
 \setbeamercolor{structure}{fg=brightlavender!80, bg= black!60}
 
 
-\begin{frame}\frametitle{Reminder from Unit1: Exponential Series $e^x \text{ or }( \exp(x))$}
+\begin{frame}\frametitle{Reminder from Unit1: Exponential Series $e^a \text{ or }( \exp(a))$}
 \vspace{-.1in}
 \define{Exponential Series}{
-For any real number $x\in \R$, the exponential series $\HLTY{e^x}$  (or sometimes denoted as $\HLTY{\exp(x)}$) is defined as, 
-$$\HLTY{\displaystyle e^{x}}=\HLTW{\displaystyle \sum_{n=0}^{\infty}\frac{x^n}{n!}} = \HLTY{\displaystyle 1+\frac{x}{1!}+\frac{x^2}{2!}+ \frac{x^3}{3!}+\cdots,}  $$
+For any real number $a\in \R$, the exponential series $\HLTY{e^a}$  (or sometimes denoted as $\HLTY{\exp(a)}$) is defined as, 
+$$\HLTY{\displaystyle e^{\HLTEQ[amethyst!50]{a}}}=\HLTW{\displaystyle \sum_{n=0}^{\infty}\frac{\HLTEQ[amethyst!50]{a}^n}{n!}} = \HLTY{\displaystyle 1+\frac{\HLTEQ[amethyst!50]{a}}{1!}+\frac{\HLTEQ[amethyst!50]{a}^2}{2!}+ \frac{\HLTEQ[amethyst!50]{a}^3}{3!}+\cdots,}  $$
 }
 
 \vspace{2.5in}
@@ -674,13 +706,22 @@ $$\HLTY{\displaystyle e^{x}}=\HLTW{\displaystyle \sum_{n=0}^{\infty}\frac{x^n}{n
 \begin{eqnarray}
 M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
 & = &  \sum_{y=0}^{\infty} e^{ty} \frac{e^{-\lambda} \lambda^y}{y!} \nonumber\\
-& = &  e^{-\lambda}\sum_{y=0}^{\infty}  \frac{ \left( \lambda e^t\right)^y}{y!} \nonumber\\
-& = &  e^{\lambda e^t-\lambda}
+%& = &  e^{-\lambda}\sum_{y=0}^{\infty}  \frac{ \left(\HLTEQ[amethyst!50]{ \lambda e^t}\right)^y}{y!} \nonumber\\
+& = &  e^{-\lambda} \left[ \sum_{y=0}^{\infty}  \frac{ \left(\HLTEQ[amethyst!50]{ \lambda e^t}\right)^y}{y!} \right] \nonumber\\
+& = &  e^{-\lambda }\left[ e^{\lambda e^t} \right]\nonumber\\
+& = &  \exp\left[ {\lambda e^t-\lambda}\right] \nonumber
 \end{eqnarray}
 
+\vspace{1.5in}
 
 
 \end{frame}
+
+\begin{frame}
+
+\end{frame}
+
+
 
 
 \begin{frame}\frametitle{ }
@@ -837,7 +878,7 @@ Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $\binP (1-\binP)^{x-1}  $ & $ \frac{
 
 \begin{frame}\frametitle{Reminder from Unit1: Geometric Series}
 \qBrd[4.5in]{babyblue!50}{
-Let $p\in \R$ be such that $\abs{p}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0}^{\infty}p^{i}}= \HLTW{\displaystyle 1+p+p^2+p^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-p}}.$$ 
+Let $ \HLTEQ[amethyst!40]{p} \in \R$ be such that $\abs{\HLTEQ[amethyst!40]{p}}<1$,  then   $$ \HLTY{\displaystyle \sum_{y=0}^{\infty}\HLTEQ[amethyst!40]{p}^{y}}= \HLTW{\displaystyle 1+\HLTEQ[amethyst!40]{p}+\HLTEQ[amethyst!40]{p}^2+\HLTEQ[amethyst!40]{p}^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-\HLTEQ[amethyst!40]{p}}}.$$ 
 }
 \begin{enumerate}
 \vspace{.1in}
@@ -848,6 +889,23 @@ Let $p\in \R$ be such that $\abs{p}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0
 \vspace{3in}
 \end{frame}
 
+
+
+
+
+\begin{frame}\frametitle{Reminder from Unit1: Geometric Series}
+\qBrd[4.5in]{babyblue!50}{
+Let $ \HLTEQ[amethyst!40]{p} \in \R$ be such that $\abs{\HLTEQ[amethyst!40]{p}}<1$,  then   $$  \HLTW{\HLTY{\displaystyle \sum_{y=0}^{\infty}\HLTEQ[white!40]y {\HLTEQ[amethyst!40]{p}}^{y}} =\HLTY{\displaystyle \frac{\HLTEQ[amethyst!40]{p}}{\left( 1-\HLTEQ[amethyst!40]{p}\right)^2  }}}$$ 
+}\\
+\vspace{.2in}
+\qBrd[4.5in]{ceil!50}{
+Let $ \HLTEQ[amethyst!40]{p} \in \R$ be such that $\abs{\HLTEQ[amethyst!40]{p}}<1$,  then   $$ \HLTW{ \HLTY{\displaystyle \sum_{y=0}^{\infty}\HLTEQ[white!40]y^2 {\HLTEQ[amethyst!40]{p}}^{y}} =\HLTY{\displaystyle \frac{\HLTEQ[amethyst!40]{p}}{\left( 1-\HLTEQ[amethyst!40]{p}\right)^2  }}+ \HLTY{\displaystyle \frac{\HLTEQ[amethyst!40]{2p^2}}{\left( 1-\HLTEQ[amethyst!40]{p}\right)^3 }}}$$ 
+}
+
+\vspace{3in}
+\end{frame}
+
+
 }
 
 
@@ -855,46 +913,69 @@ Let $p\in \R$ be such that $\abs{p}<1$,  then   $$ \HLTY{\displaystyle \sum_{i=0
 
 \begin{frame}{Expected Value of Geometric Distribution}
 \begin{eqnarray}
-M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
-& = &  \sum_{y=1}^{\infty } e^{ty}  (1-\binP)^{y-1}\binP \nonumber\\
-& = & \binP   \sum_{z=0}^{\infty } e^{tz+t}  (1-\binP)^{z} \nonumber\\
-& = &  \binP e^t   \sum_{z=0}^{\infty } \left((1-\binP)e^{t}\right)^z\nonumber\\
-& = & \frac{\binP e^t}{1-(1-\binP)e^{t}} 
+M_X(t)=   \sum_{x\in \support[X]} e^{tx}\; \pmf_{_X}(x)
+& = &  \sum_{x=1}^{\infty }\; e^{tx}  (1-\binP)^{x-1}\binP \nonumber\\
+& = & \binP   \sum_{y=0}^{\infty } e^{ty+t}  (1-\binP)^{y} \nonumber\\
+& = &  \binP e^t   \left[  \sum_{y=0}^{\infty } \left(  \HLTEQ[amethyst!50]{(1-\binP)e^{t}}\right)^y \right]\nonumber\\
+& = &\binP e^t \left[  \frac{1}{1-\HLTEQ[amethyst!50]{(1-\binP)e^{t}   }} \right] \nonumber\\
+& = & \HLTY{ \frac{\binP e^t }{1-\HLTEQ[amethyst!50]{(1-\binP)e^{t}   }}}  \nonumber
 \end{eqnarray}
 
 
 
 \end{frame}
+
+
+
 
 
 
 \begin{frame}\frametitle{Geometric Distribution: Example}
 \vspace{-.1in}
-\qbx[4.5in]{olive!50}{
-\Exmpl{olive}{}  Suppose that the probability of engine malfunction during any one-hour period is $\binP = 0.02$. Find the probability that a given engine will survive two hours.
-}\\
-\pause
-
-\vspace{.1in}
-{\tiny Solution: \\
-Letting $Y$ denote the number of one-hour intervals until the first
-malfunction, we have 
-\begin{eqnarray}
-& & P(\text{Survival for Next Two Hours})\nonumber\\
-& =&  P(Y\geq 3)\nonumber\\
-& =& 1- P(Y\leq 2)\nonumber\\
-& = &1-   \sum_{y=1}^{2}p(y)\nonumber\\
-& = &1-   \left\{ p(1)+p(2)\right\}\nonumber\\
-& =& 1-0.02-0.98\times 0.02\nonumber\\
-& =& 0.9604\nonumber
-\end{eqnarray}
+\qbx[4.5in]{apricot!50}{
+\Exmpl{apricot}{}  
+Of a population of consumers, 60\% are reputed to prefer a particular brand, A, of toothpaste. If a group of randomly selected consumers is interviewed, 
+\begin{enumerate}
+\item what is the probability that {\bf exactly five }  people have to be interviewed to encounter the first consumer who prefers brand A?
+\item  what is the probability that {\bf at least }  five people have to be interviewed to encounter the first consumer who prefers brand A?
+\end{enumerate}	
 }
-\qBrd[4.5in]{babyblue!70}{
-\HLTW{\text{Exercise}}
- Find the mean and standard deviation of Y.
-}
-
+\vspace{1in}
 \end{frame}
+%
+%
+%\begin{frame}\frametitle{Geometric Distribution: Example}
+%\vspace{-.1in}
+%\qbx[4.5in]{olive!50}{
+%\Exmpl{olive}{}  Suppose that the probability of engine malfunction during any one-hour period is $\binP = 0.02$. Find the probability that a given engine will survive two hours.
+%}\\
+%\pause
+%
+%\vspace{.1in}
+%{\tiny Solution: \\
+%Letting $Y$ denote the number of one-hour intervals until the first
+%malfunction, we have 
+%\begin{eqnarray}
+%& & P(\text{Survival for Next Two Hours})\nonumber\\
+%& =&  P(Y\geq 3)\nonumber\\
+%& =& 1- P(Y\leq 2)\nonumber\\
+%& = &1-   \sum_{y=1}^{2}p(y)\nonumber\\
+%& = &1-   \left\{ p(1)+p(2)\right\}\nonumber\\
+%& =& 1-0.02-0.98\times 0.02\nonumber\\
+%& =& 0.9604\nonumber
+%\end{eqnarray}
+%}
+%\qBrd[4.5in]{babyblue!70}{
+%\HLTW{\text{Exercise}}
+% Find the mean and standard deviation of Y.
+%}
+%
+%\end{frame}
+%
+
+
+
+
 
 
 
@@ -973,7 +1054,7 @@ Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}
 \vspace{-.1in}
 \qbx[4.5in]{amber!50}{
 \Exmpl{amber}{}{
-A machine produces 1\% defective parts. Using the statistical calculator, calculate the probability that
+It is known that a machine produces 1\% defective parts. What is the probability that
 \begin{enumerate}
 \item 10 parts have to be selected until to get 2 defective parts.
 \item Between 20 to 25 parts have to be selected to get 2 defective parts.
@@ -1100,6 +1181,21 @@ extruder breaks down an average of two times every day it operates. If Y denotes
 
 \begin{frame}\frametitle{}
 \vspace{-.1in}
+\qbx[4.5in]{teal!40}{
+\Exmpl{teal!30}{}{ 
+You throw darts at a board until you hit the center area. Your probability of hitting the center area is  $0.17$.  You want to find the probability that it takes eight throws until you hit the center. What values does  X take on? 
+}  
+}\\
+
+\vspace{2in}
+\end{frame}
+
+
+
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
 \qbx[4.5in]{apricot!40}{
 \Exmpl{apricot!80}{}{ In a certain population,  it is known that 80\% of the individuals have the Rhesus (Rh) factor present in their blood.   
 \begin{enumerate}
@@ -1151,6 +1247,26 @@ extruder breaks down an average of two times every day it operates. If Y denotes
 
 
 
+
+
+\begin{frame}\frametitle{}
+\vspace{-.1in}
+\qbx[4.5in]{asparagus!30}{
+\Exmpl{asparagus!80}{}{ \small A certain type of tree has seedlings randomly dispersed in a large area, with the mean
+density of seedlings being approximately five per square yard. If a forester randomly locates ten 1-square-yard sampling regions in the area.  Find the probability that none of the regions will contain seedlings.
+}  
+}\\
+
+\vspace{2in}
+\end{frame}
+
+
+\begin{frame}\qbx[4.5in]{amber!30}{
+\Exmpl{amber!80}{}
+Accident records collected by an automobile insurance company give the following information. The probability that an insured driver has an automobile accident is .15. If an accident has occurred, the damage to the vehicle amounts to 20\% of its market value with a probability of .0.80, to 60\% of its market value with a probability of .12, and to a total loss with a probability of .08. What premium should the company charge on a 120,000 AED car so that the expected gain by the company is zero?
+}
+\vspace{1in}
+\end{frame}
 
 
 \TransitionFrame[antiquefuchsia]{\Large Questions?  }

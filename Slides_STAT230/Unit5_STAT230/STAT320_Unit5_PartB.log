@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 FEB 2024 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  25 FEB 2024 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1597,6 +1597,22 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [11
 
 ]
+<figs/BinomialExpectedValue.png, id=633, 793.96625pt x 453.19313pt>
+File: figs/BinomialExpectedValue.png Graphic file (type png)
+<use figs/BinomialExpectedValue.png>
+Package pdftex.def Info: figs/BinomialExpectedValue.png  used on input line 404
+.
+(pdftex.def)             Requested size: 357.28151pt x 203.93501pt.
+
+Overfull \hbox (14.76627pt too wide) in paragraph at lines 404--404
+ [] 
+ []
+
+
+Overfull \vbox (46.98132pt too high) detected at line 404
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1608,7 +1624,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [12
 
-]
+ <./figs/BinomialExpectedValue.png>]
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1621,6 +1637,10 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [13
 
 ]
+Overfull \vbox (0.3001pt too high) detected at line 459
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1633,6 +1653,10 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [14
 
 ]
+Overfull \vbox (75.46729pt too high) detected at line 476
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1657,22 +1681,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [16
 
 ]
-<figs/BinomialExpectedValue.png, id=849, 793.96625pt x 453.19313pt>
-File: figs/BinomialExpectedValue.png Graphic file (type png)
-<use figs/BinomialExpectedValue.png>
-Package pdftex.def Info: figs/BinomialExpectedValue.png  used on input line 502
-.
-(pdftex.def)             Requested size: 357.28151pt x 203.93501pt.
-
-Overfull \hbox (14.76627pt too wide) in paragraph at lines 502--502
- [] 
- []
-
-
-Overfull \vbox (46.98132pt too high) detected at line 502
- []
-
-
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1684,7 +1692,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [17
 
- <./figs/BinomialExpectedValue.png>]
+]
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1732,7 +1740,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [21
 
-] (./STAT320_Unit5_PartB.toc)
+]
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1745,11 +1753,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 562--562
-[][] 
- []
-
-
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1761,7 +1764,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [23
 
-]
+] (./STAT320_Unit5_PartB.toc)
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1774,6 +1777,11 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [24
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 594--594
+[][] 
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1810,12 +1818,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [27
 
 ]
-<figs/PoissonExample1.png, id=1373, 734.24312pt x 391.96437pt>
-File: figs/PoissonExample1.png Graphic file (type png)
-<use figs/PoissonExample1.png>
-Package pdftex.def Info: figs/PoissonExample1.png  used on input line 650.
-(pdftex.def)             Requested size: 220.27463pt x 117.59021pt.
-
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1827,11 +1829,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [28
 
- <./figs/PoissonExample1.png>]
-Overfull \vbox (95.08392pt too high) detected at line 666
- []
-
-
+]
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1844,6 +1842,12 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [29
 
 ]
+<figs/PoissonExample1.png, id=1452, 734.24312pt x 391.96437pt>
+File: figs/PoissonExample1.png Graphic file (type png)
+<use figs/PoissonExample1.png>
+Package pdftex.def Info: figs/PoissonExample1.png  used on input line 682.
+(pdftex.def)             Requested size: 220.27463pt x 117.59021pt.
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1855,7 +1859,11 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [30
 
-]
+ <./figs/PoissonExample1.png>]
+Overfull \vbox (95.64523pt too high) detected at line 698
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1868,6 +1876,10 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [31
 
 ]
+Overfull \vbox (70.99567pt too high) detected at line 718
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1891,7 +1903,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [33
 
-] (./STAT320_Unit5_PartB.toc)
+]
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1904,11 +1916,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 772--772
-[][] 
- []
-
-
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1932,12 +1939,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [36
 
-]
-Overfull \hbox (4.45271pt too wide) in paragraph at lines 832--832
-[][]  
- []
-
-
+] (./STAT320_Unit5_PartB.toc)
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1950,7 +1952,8 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [37
 
 ]
-Overfull \vbox (130.98901pt too high) detected at line 849
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 813--813
+[][] 
  []
 
 
@@ -1978,6 +1981,11 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [39
 
 ]
+Overfull \hbox (4.45271pt too wide) in paragraph at lines 873--873
+[][]  
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1990,6 +1998,10 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [40
 
 ]
+Overfull \vbox (141.26917pt too high) detected at line 890
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2001,7 +2013,11 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [41
 
-] (./STAT320_Unit5_PartB.toc)
+]
+Overfull \vbox (219.72482pt too high) detected at line 906
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2014,8 +2030,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [42
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 903--903
-[][] 
+Overfull \vbox (0.8403pt too high) detected at line 926
  []
 
 
@@ -2031,6 +2046,10 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [43
 
 ]
+Overfull \vbox (3.64061pt too high) detected at line 944
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2042,22 +2061,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [44
 
-]
-Overfull \hbox (4.45271pt too wide) in paragraph at lines 966--966
-[][]  
- []
-
-
-Overfull \hbox (3.68547pt too wide) in paragraph at lines 966--966
- [] 
- []
-
-
-Overfull \hbox (8.06642pt too wide) in paragraph at lines 966--966
-[][] 
- []
-
-
+] (./STAT320_Unit5_PartB.toc)
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2070,6 +2074,11 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [45
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 984--984
+[][] 
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2093,20 +2102,18 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [47
 
-] (./STAT320_Unit5_PartB.toc)
-Overfull \hbox (176.65411pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (209.14989pt too wide) has occurred while \output is active
- [][][][] []  
- []
-
-[48
-
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1001--1001
+Overfull \hbox (4.45271pt too wide) in paragraph at lines 1047--1047
+[][]  
+ []
+
+
+Overfull \hbox (3.68547pt too wide) in paragraph at lines 1047--1047
+ [] 
+ []
+
+
+Overfull \hbox (8.06642pt too wide) in paragraph at lines 1047--1047
 [][] 
  []
 
@@ -2120,13 +2127,21 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[49
+[48
 
 ]
-Overfull \vbox (2.28221pt too high) detected at line 1015
+Overfull \hbox (176.65411pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] 
  []
 
 
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[49
+
+]
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2138,7 +2153,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 
 [50
 
-]
+] (./STAT320_Unit5_PartB.toc)
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2151,6 +2166,11 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [51
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1082--1082
+[][] 
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2163,7 +2183,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [52
 
 ]
-Overfull \vbox (62.29889pt too high) detected at line 1072
+Overfull \vbox (2.28221pt too high) detected at line 1096
  []
 
 
@@ -2179,10 +2199,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [53
 
 ]
-Overfull \vbox (11.50479pt too high) detected at line 1085
- []
-
-
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2207,6 +2223,10 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [55
 
 ]
+Overfull \vbox (62.29889pt too high) detected at line 1153
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2219,6 +2239,10 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [56
 
 ]
+Overfull \vbox (11.50479pt too high) detected at line 1166
+ []
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2231,10 +2255,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [57
 
 ]
-Overfull \vbox (5.3263pt too high) detected at line 1149
- []
-
-
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2247,7 +2267,83 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [58
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 1156--1156
+Overfull \hbox (176.65411pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[59
+
+]
+Overfull \hbox (176.65411pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[60
+
+]
+Overfull \hbox (176.65411pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[61
+
+]
+Overfull \vbox (5.3263pt too high) detected at line 1245
+ []
+
+
+Overfull \hbox (176.65411pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[62
+
+]
+Overfull \hbox (176.65411pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[63
+
+]
+Overfull \hbox (176.65411pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (209.14989pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[64
+
+]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 1272--1272
 [][] 
  []
 
@@ -2261,7 +2357,7 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
-[59
+[65
 
 ]
 \tf@nav=\write6
@@ -2273,52 +2369,49 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit5_PartB.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1159.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1159.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1275.
  (./STAT320_Unit5_PartB.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1275.
 
 Package rerunfilecheck Info: File `STAT320_Unit5_PartB.out' has not changed.
 (rerunfilecheck)             Checksum: 22637047D0EF0B931E41AAFC09EE5098;294.
  ) 
 Here is how much of TeX's memory you used:
- 29487 strings out of 480608
- 576475 string characters out of 5903631
- 972285 words of memory out of 5000000
- 44513 multiletter control sequences out of 15000+600000
- 608412 words of font info for 128 fonts, out of 8000000 for 9000
+ 29583 strings out of 480608
+ 578593 string characters out of 5903631
+ 974894 words of memory out of 5000000
+ 44597 multiletter control sequences out of 15000+600000
+ 609566 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,23n,79p,805b,1911s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation60} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit5_PartB.pdf (59 pages, 827636 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts
+/type1/urw/helvetic/uhvro8a.pfb>
+Output written on STAT320_Unit5_PartB.pdf (65 pages, 858546 bytes).
 PDF statistics:
- 2938 PDF objects out of 2984 (max. 8388607)
- 2368 compressed objects within 24 object streams
- 125 named destinations out of 1000 (max. 500000)
- 2781 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3182 PDF objects out of 3580 (max. 8388607)
+ 2577 compressed objects within 26 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 2943 words of extra memory for PDF output out of 10000 (max. 10000000)
 
