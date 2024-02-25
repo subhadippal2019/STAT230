@@ -466,7 +466,7 @@ $$(a+b)^n = \HLTY{\displaystyle b^n+{n\choose 1}ab^{n-1}+{n\choose 2}a^2b^{n-2}+
 Let $a\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then 
   $$   \HLTY{\displaystyle\sum_{y=0}^{n}   \HLTW{y} {n \choose y  }   \HLTEQ[amethyst!50]{a}^{y}}= \HLTW{\displaystyle n\;\times   \HLTEQ[amethyst!50]{a}(1+ \HLTEQ[amethyst!50]{a})^{n-1}}$$
 }\\
-\vspace{.7in}
+\vspace{.5in}
 \qBrd[4.5in]{babyblue!40}{
 Let $a\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then 
 $$   \HLTY{\displaystyle\sum_{y=0}^{n}   \HLTW{y^2 } {n \choose y }  \HLTEQ[amethyst!50]{a}^{y}} = \HLTW{\displaystyle  n\; \HLTEQ[amethyst!50]{a}(1+\HLTEQ[amethyst!50]{a})^{n-1} + n(n-1)\; \HLTEQ[amethyst!50]{a}^2(1+\HLTEQ[amethyst!50]{a})^{n-2}  }$$
@@ -509,6 +509,7 @@ E(X)& := &  \sum_{y\in \support[X]} y\; \pmf_{_X}(y) \nonumber\\
 \begin{eqnarray}
 Var(X) & = &  E(X^2)- (E(X))^2 \nonumber\\
  & =&  n\binP +n(n-1)\binP^2- n^2 \binP^2\nonumber\\
+  & =&  n\binP +n^2\binP^2- n\binP^2 - n^2 \binP^2\nonumber\\
  & = &  n\binP-n \binP^2\nonumber\\
  & = & \HLTY{ n\binP (1-\binP)}.\nonumber
 \end{eqnarray}
@@ -518,12 +519,14 @@ Var(X) & = &  E(X^2)- (E(X))^2 \nonumber\\
 
 \begin{frame}{Expected Value of Binomial Distribution}
 \begin{eqnarray}
-M_X(t)& := &  \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) \nonumber\\
+M_X(t) :=   \sum_{y\in \support[X]} e^{ty}\; \pmf_{_X}(y) 
 %& = &  \sum_{y=0}^{n} e^{ty} {n\choose y}\binP^y(1-\binP)^{n-y}  \nonumber\\
 & =& (1-\binP)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
-& =& (1-\binP)^{n}  \sum_{y=0}^{n}  {n\choose y}\left( \frac{\binP e^{t}}{1-\binP}\right)^y   \nonumber\\
+%& =& (1-\binP)^{n}  \sum_{y=0}^{n}  {n\choose y}\left( \frac{\binP e^{t}}{1-\binP}\right)^y   \nonumber\\
 & =& (1-\binP)^{n}  \sum_{y=0}^{n}  e^{ty} {n\choose y}\left( \frac{\binP}{1-\binP}\right)^y   \nonumber\\
-& =& (1-\binP)^{n} \left( 1+  \frac{pe^t}{1-\binP} \right)^n = \left( 1-\binP+pe^t\right)^n  \nonumber\\
+& =& (1-\binP)^{n}  \left[ \sum_{y=0}^{n}   {n\choose y}\left( \HLTEQ[amethyst!50]{ \frac{\binP e^{t}}{1-\binP}}\right)^y  \right] \nonumber\\
+& =& (1-\binP)^{n} \left[\left( 1+ \HLTEQ[amethyst!50]{  \frac{\binP e^t}{1-\binP} }\right)^n\right] \nonumber\\
+& =&  \HLTY{\left( 1-\binP+\binP e^t\right)^n }  \nonumber
 \end{eqnarray}
 
 
@@ -1061,7 +1064,7 @@ It is known that a machine produces 1\% defective parts. What is the probability
 \end{enumerate}
 }  
 }\\
-\pause
+%\pause
 
 \vspace{1in}
 {\tiny Solution: \\
@@ -1076,10 +1079,117 @@ It is known that a machine produces 1\% defective parts. What is the probability
 
 
 
+
+\begin{frame}
+\tiny
+%\hspace{-1.5in}
+%\qBrd[7.2in]{antiquefuchsia!50}{\vspace{-.35in}
+%\begin{center}
+%\qBrd[4.9in]{apricot!80}{ \begin{center} \bf \Large Standard Properties of  a few Discrete Distributions \end{center} }
+%\end{center}
+%\begin{center}
+%\qBrd[6.99in]{white!40}{
+%{
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  \hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+  & & & & & \\
+Bernoulli$(\binP)$ &$ \{0, 1\}$ & $ \binP^x (1-\binP)^{1-x}  $ & $\binP$  & $\binP(1-\binP)$&   $\left( 1-\binP+\binP e^t\right)$   \\
+ & & & & & \\
+ \hline
+ \hline
+ & & & & & \\
+Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^{n-x}  $ & $n\binP$  & $n\binP(1-\binP)$&   $\left( 1-\binP+\binP e^t\right)^n$   \\
+ & & & & & \\
+ \hline
+ \hline
+ & & & & & \\
+Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x!} $ & $ \lambda$  & $ \lambda$&   $e^{ \lambda e^t-  \lambda}  $   \\
+ & & & & & \\
+ \hline
+  \hline
+   & & & & & \\
+  Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP^2} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
+ & & & & & \\
+ \hline
+ \hline 
+ & & & & & \\
+Negative-Binomial$(r,  \binP)$ &$ \{r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}(1-\binP)^{x-r}\binP^{r}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP^2} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+%}}\end{center}}
+\end{frame}
+
+
+
 \setbeamercolor{structure}{fg=antiquefuchsia!80, bg= black!60}
 \section{Miscellaneous Problems}
 
 \TransitionFrame[antiquefuchsia]{\Large Miscellaneous Problems  }
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!30}{
+If $X\sim \text{Binomial}(n=50, \binP=0.1)$ then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2) $.
+\item What is the MGF of X?
+\end{enumerate} 
+}
+\vspace{2in}
+\end{frame}
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!30}{
+If $X\sim \text{Geometric}(\binP=0.2)$ then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2) $.
+\item What is the MGF of X?
+\end{enumerate} 
+}
+\vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}
+\qBrd[4.5in]{babyblue!30}{
+If $X\sim \text{Poisson}(\lambda=5)$,  then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2)$
+\item What is the MGF of X?
+\end{enumerate} 
+}
+\vspace{2in}
+\end{frame}
+
+
+\begin{frame}
+{Identify the distribution from the MGF  (Using the uniqueness property of MGF)}
+
+\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= (0.7 + 0.3e^t)^4$,  What is the distribution of $X$?}\\
+\vspace{.1in}
+
+\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{0.9e^t}{ 1 - 0.1 e^t}$,  What is the distribution of $X$? }\\
+\vspace{.1in}
+
+\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \exp{\left(7e^t-7\right)}$,  What is the distribution of $X$? }
+\vspace{.1in}
+
+\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{1}{8}(1 + e^t)^3$,  What is the distribution of $X$? }\\
+\vspace{.1in}
+
+\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{8e^t}{ 10 - 2 e^t}$,  What is the distribution of $X$? }\\
+\vspace{.1in}
+
+\end{frame}
 
 
 
@@ -1261,9 +1371,11 @@ density of seedlings being approximately five per square yard. If a forester ran
 \end{frame}
 
 
-\begin{frame}\qbx[4.5in]{amber!30}{
+\begin{frame}
+\vspace{-.1in}
+\qbx[4.5in]{amber!30}{
 \Exmpl{amber!80}{}
-Accident records collected by an automobile insurance company give the following information. The probability that an insured driver has an automobile accident is .15. If an accident has occurred, the damage to the vehicle amounts to 20\% of its market value with a probability of .0.80, to 60\% of its market value with a probability of .12, and to a total loss with a probability of .08. What premium should the company charge on a 120,000 AED car so that the expected gain by the company is zero?
+Accident records collected by an automobile insurance company give the following information. The probability that an insured driver has an automobile accident is .15. If an accident has occurred, the damage to the vehicle amounts to 20\% of its market value with a probability of 0.80, to 60\% of its market value with a probability of 0.12, and to a total loss with a probability of .08. What premium should the company charge on a 120,000 AED car so that the expected gain by the company is zero?
 }
 \vspace{1in}
 \end{frame}
