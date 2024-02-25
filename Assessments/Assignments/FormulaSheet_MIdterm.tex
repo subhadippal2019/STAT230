@@ -85,7 +85,7 @@ $$\ \HLTEQ[white]{\displaystyle (1+x)^n} = \HLTY{\displaystyle 1+{n\choose 1}x+{
 }\\
 
 \qBrd[6.2in]{amethyst!20}{
-Let $x\in \R$ be such that $|p|<1$,  then   $ \HLTY{\displaystyle \sum_{i=0}^{\infty}p^{i}}=  \HLTEQ[white]{\displaystyle 1+p+p^2+p^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-p}}.$
+Let $p\in \R$ be such that $|p|<1$,  then   $ \HLTY{\displaystyle \sum_{i=0}^{\infty}p^{i}}=  \HLTEQ[white]{\displaystyle 1+p+p^2+p^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-p}}.$
 }\\
 
 
@@ -105,7 +105,7 @@ Let $n\geq r $ be two non-negative integers.  The number of different ways to se
 \qBrd[6.5in]{babyblue!40}{
 The number of ways of partitioning $n$ distinct objects into $k$ distinct groups
 containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object appears exactly in  one group and $\HLTW{\sum_{i=1}^{k}n_i=n}$, is  
- $$\HLTEQ[yellow]{\large \displaystyle { n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
+ $$\HLTEQ[lime!40]{\large \displaystyle { n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
 }\\
 
 
@@ -127,20 +127,20 @@ $\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots +
 \vspace{.1in}
 Let $\HLTY{(\SampleS , P)}$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then, \\
 \begin{enumerate}
-\qBrd[3.5in]{applegreen!40}{  \item[{\sqBullet{olive}}] $\HLTW{P(\emptyset)=0}$ where $\HLTW{\emptyset}$ denotes the Null set. }\\
+\qBrd[3.8in]{applegreen!40}{  \item[{\sqBullet{olive}}] $\HLTW{P(\emptyset)=0}$ where $\HLTW{\emptyset}$ denotes the Empty set (Null set). }\\
 \vspace{.05in}
 \qBrd[2in]{apricot!40}{ \item[{\sqBullet{apricot}}]  $\HLTW{P(A)\leq 1}$. }\\
 \vspace{.05in}
-\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{lime}}] If $\HLTW{
+\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{applegreen}}] If $\HLTW{
 A\subseteq B}$ then $\HLTW{P(A)\leq P(B)} $.}\\
 \vspace{.05in}
-\qBrd[3.8in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $\HLTW{P(\Not{A})=1-P(A)}$, where  $\HLTW{\Not{A}}$ denotes the complementary event to $A$}\\
+\qBrd[4.5in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $\HLTW{P\left(\Not{A}\right)=1-P(A)}$, where  $\HLTW{\Not{A}}$ denotes the complementary event to $A$.}\\
 \vspace{.05in}
 \qBrd[4in]{cadmiumorange!40}{\item[{\sqBullet{cadmiumorange}}]  $ \HLTW{P(A\cup B)= P(A)+P(B)-P(A\cap B) }$.}
 \end{enumerate}
 }\\
 
-\qBrd[6.6in]{ceil!30}{
+\qBrd[6.6in]{ceil!50}{
 Let $A_1, A_2, A_3$ are three events.  Then 
 \begin{eqnarray*}
  P\left(A_1\cup A_2 \cup A_3\right) 
@@ -155,18 +155,22 @@ Let $A_1, A_2, A_3$ are three events.  Then
 
 
 \begin{center}
-\qBrd[5in]{babyblue!30}{
+\qBrd[5in]{babyblueeyes!50}{
 \begin{center}
 \vspace{-.2in}
 \qBrd[3.3in]{blue!30}{\Large Structure of Two $\times $ Two Table  }\\
 \end{center}
 \begin{center}
 \begin{tabular}{|l||l|l||l|l|}
-\hline
-      & $A$ & $\Not{A}$ & Marginal of $B$   \\ \hline\hline
-$B$ &  $\HLTEQ[olive!30]{P(A\cap B)}$   &    $\HLTY{P(\Not{A}\cap B)}$ &  $\HLTW{P(B)}$    \\ \hline
-$\Not{B}$ &   $\HLTY{P(A\cap \Not{B})}$  &  $\HLTEQ[amethyst!40]{P(\Not{A}\cap \Not{B})}$   &   $\HLTW{P(\Not{B})}$    \\ \hline\hline
-Marginal of $A$ & $\HLTW{P(A)}$     & $\HLTW{P(\Not{A})}$     &$ \HLTW{\text{Total Probability}= \HLTEQ[teal!40]{1}} $   \\ \hline
+\hline 
+     &  & &   \vspace{-.1in }  \\
+      & $A$ & $\Not{A}$ & Marginal of $B$   \vspace{.1in }  \\ \hline\hline
+      &  & &   \vspace{-.1in }  \\
+$B$ &  $\HLTEQ[lime!30]{P\left(A\cap B\right)}$   &    $\HLTY{P\left(\Not{A}\cap B\right)}$ &  $\HLTW{P(B)}$    \vspace{.1in }  \\ \hline \vspace{-.1in }
+      &  & &    \\
+$\Not{B}$ &   $\HLTY{P\left(A\cap \Not{B}\right)}$  &  $\HLTEQ[amethyst!40]{P\left(\Not{A}\cap \Not{B}\right)}$   &   $\HLTW{P\left(\Not{B}\right)}$    \vspace{.1in }  \\ \hline\hline \vspace{-.1in }
+      &  & &    \\
+Marginal of $A$ & $\HLTW{P(A)}$     & $\HLTW{P\left(\Not{A}\right)}$     &$ \HLTW{\text{Total Probability}= \HLTEQ[teal!40]{1}} $   \\ \hline
 \end{tabular}
 \end{center}
 }
@@ -194,7 +198,7 @@ $\HLTEQ[babyblue!70]{ \HLTY{P(E\cap F)}:=\HLTW{P(E\mid F)}\times \HLTW{P(F)}.}$
 \qBrd[3.3in]{yellow-green!50}{\Large Law of Total Probability   }\\
 \end{center}
 Let E and F be two events, then 
-\qBrd[3in]{babyblue!30}{$ \HLTEQ[gray!20]{ P(E)} = \HLTY{\HLTEQ[applegreen!70]{P(E\mid F)P(F) } +  \HLTW{P(E\mid  \Not{F}))(\Not{F})}} $}
+\qBrd[4.1in]{amethyst!60}{$\Large \HLTEQ[white!20]{ P(E)} = {\HLTEQ[white!70]{P(E\mid F)P(F) } +  \HLTW{P\left(E\mid  \Not{F}\right)P\left(\Not{F}\right)}} $}
 }\\
 
 \qBrd[6.5in]{turquoisegreen!90}{\begin{center}
@@ -205,7 +209,7 @@ Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  
 \vspace{-.15in}
 \begin{center}
 %\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
-\qBrd[3in]{green!40}{$\displaystyle P(E)=\HLTW{\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  }$}
+\qBrd[3in]{green!40}{\Large $\displaystyle \HLTW{P(E)}=\HLTW{\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  }$}
 \vspace{-.1in}
 \end{center}
 }\\
@@ -230,7 +234,7 @@ $$\HLTW{ \displaystyle P(F_i \mid E)=\HLTY{ \frac{ \displaystyle P(E\mid F_i) P(
 \end{center}
 \vspace{-.15in}
 Let $A, B$ are two events such that $P(A)>0$, and $P(B)>0$, then 
-$$\HLTW{ \displaystyle P(B\mid A)=\HLTY{ \frac{ \displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}}{\displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}+ \HLTEQ[orange!30]{P(A\mid \Not{B}) P(\Not{B} ) }     }}}$$
+$$\HLTW{ \displaystyle P(B\mid A)=\HLTY{ \frac{ \displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}}{\displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}+ \HLTEQ[orange!30]{P\left(A\mid \Not{B}\right) P\left(\Not{B} \right) }     }}}$$
 }\\
 \vspace{.1in}
 
@@ -274,14 +278,15 @@ $$\HLTW{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[tea
 }\\
 
 \vspace{.35in}
-\qBrd[6.6in]{amber!40}{
+\qBrd[6.6in]{amber!35}{
 \vspace{-.35in}
 \begin{center}
 \qBrd[4.6in]{amber!70}{\begin{center} \Large {\Large \bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable \end{center} }
 \end{center}
 If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ ( or $\mu_{_X}$)  is given by
 $$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
-assuming the  above summation/series exists /well-defined. 
+assuming the  above summation/series exists /well-defined.  Additionally,  assuming it exists,  for any* funciton $h(x)$, 
+$$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{h(X)}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
 }\\
 \vspace{.5in}
 
@@ -296,10 +301,10 @@ $\HLTW{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(
 }\\
 \vspace{.5in}
 
-\qBrd[6.5in]{apricot!50}{
+\qBrd[6.5in]{apricot!40}{
 \vspace{-.35in}
 \begin{center}
-\qBrd[4.9in]{apricot!80}{ \begin{center}\Large {\bf \Large ``Moment Generating Function (MGF) ''} of a Discrete Random Variable \end{center} }
+\qBrd[4.9in]{apricot!90}{ \begin{center}\Large {\bf \Large ``Moment Generating Function (MGF) ''} of a Discrete Random Variable \end{center} }
 \end{center}
 $$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \sum_{\left\{\HLTEQ[teal!40]{ \displaystyle \HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}}. \vspace{-.2in}$$\\
 \vspace{-.1in}
