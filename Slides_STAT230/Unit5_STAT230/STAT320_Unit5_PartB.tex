@@ -430,7 +430,7 @@ $$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^
 \end{frame}
 
 \begin{frame}
-\includegraphics[scale=.35]{figs/Binomial.png}
+\includegraphics[scale=.35]{figs/Binomial_three_all.png}
 \end{frame}
 
 
@@ -518,9 +518,9 @@ Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^
 
 
 
-\begin{frame}
-\includegraphics[scale=.35]{figs/Binomial.png}
-\end{frame}
+%\begin{frame}
+%\includegraphics[scale=.35]{figs/Binomial_three_all.png}
+%\end{frame}
 
 
 
@@ -660,15 +660,15 @@ Binomial Calculator or Statistical Tables.
 
 \end{frame}
 
-
-\begin{frame}\frametitle{Example}
-\vspace{-.1in}
-\qbx[4.5in]{olive!50}{
-\Exmpl{olive}{} The following gambling game, known as the wheel of fortune (or chuck-a-luck), is quite popular at many carnivals and gambling casinos: A player bets on one of the numbers 1 through 6. Three dice are then rolled, and if the number bet by the player appears i times, i = 1; 2; 3, then the player wins i units; if the number bet by the
-player does not appear on any of the dice, then the player loses 1 unit. Is this game fair to the player?
-}\\
-\vspace{1.5in}
-\end{frame}
+%
+%\begin{frame}\frametitle{Example}
+%\vspace{-.1in}
+%\qbx[4.5in]{olive!50}{
+%\Exmpl{olive}{} The following gambling game, known as the wheel of fortune (or chuck-a-luck), is quite popular at many carnivals and gambling casinos: A player bets on one of the numbers 1 through 6. Three dice are then rolled, and if the number bet by the player appears i times, i = 1; 2; 3, then the player wins i units; if the number bet by the
+%player does not appear on any of the dice, then the player loses 1 unit. Is this game fair to the player?
+%}\\
+%\vspace{1.5in}
+%\end{frame}
 
 
 
@@ -765,7 +765,8 @@ Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x
 
 
 \begin{frame}
-\includegraphics[scale=.3]{figs/Binomial.png}
+\includegraphics[scale=.2]{figs/Pois_2.png}
+\includegraphics[scale=.15]{figs/Pois_5.png}
 \end{frame}
 
 {
@@ -957,6 +958,13 @@ Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $\binP (1-\binP)^{x-1}  $ & $ \frac{
   \hline
 \end{tabular}
 }}\end{center}}
+\end{frame}
+
+
+
+\begin{frame}
+\includegraphics[scale=.2]{figs/Geo_.5.png}
+\includegraphics[scale=.2]{figs/Geo_.2.png}
 \end{frame}
 
 
@@ -1281,8 +1289,12 @@ If $X\sim \text{Poisson}(\lambda=5)$,  then
 \vspace{-.1in}
 \qbx[4.5in]{olive!30}{
 \Exmpl{olive}{}{
-Approximately 10\% of the glass bottles coming off a production line have serious flaws in the glass. If two bottles are randomly selected, find the mean and variance of the number of bottles
-that have serious flaws.
+Approximately 10\% of the glass bottles coming off a production line have serious flaws in the glass.   20 bottles are randomly selected from the product liine. 
+\begin{enumerate}
+\item What is the probability that none of the selected bottles are flawed?
+ \item What is the probability that exactly 10 of the selected bottles are flawed?
+\item Find the expected number (mean) of flawed bottles  and the corresponding standard deviation.
+\end{enumerate}
 }  
 }\\
 \vspace{2.5in}
@@ -1295,21 +1307,48 @@ that have serious flaws.
 
 
 
+%
+%\begin{frame}\frametitle{}
+%\vspace{-.1in}
+%\qbx[4.5in]{airforceblue!30}{
+%\Exmpl{airforceblue}{}{
+%Cars arrive at a toll both according to a Poisson process with mean 80 cars per hour.  If the attendant makes a one-minute phone call, what is the probability that at least 1 car arrives during the call?
+%}  
+%}\\
+%\vspace{2.4in}
+%\end{frame}
+
 
 \begin{frame}\frametitle{}
 \vspace{-.1in}
 \qbx[4.5in]{airforceblue!30}{
 \Exmpl{airforceblue}{}{
-Cars arrive at a toll both according to a Poisson process with mean 80 cars per hour. If the
-attendant makes a one-minute phone call, what is the probability that at least 1 car arrives
-during the call?
+A company's toll-free complaints line receives an average of about 40 calls per hour.   Use the Poisson distribution to obtain the following:
+\begin{enumerate}
+\item what is the probability that there is no calls  during a 1-minute  the period?
+\item what is the probability that at least 1 calls arrives during the 2 minute period?
+\item what is the probability two or more calls arrives in a 2- minute perior?
+\item What is the expected number of calls in a 20 minutes period.
+\end{enumerate}
 }  
 }\\
 \vspace{2.4in}
 \end{frame}
 
 
-
+\begin{frame}\frametitle{Geometric Distribution: Example}
+\vspace{-.1in}
+\qbx[4.5in]{apricot!50}{
+\Exmpl{apricot}{}  
+From a database of a tele-marketing company, It is know that only 20\% responds positively and agree to participate in their telephonic survey about a specific type of product.   A tele-marketing agent was assigned to a task where it is required for positive participation from  10 individuals.  
+\begin{enumerate}
+\item What is the probability that the agent needs to call 50 individuals to get a all these 10 positive responses?
+\item  What is the expected number of individuals the agent needs to make calls to obtain 10 positive responses? 
+\item  What would be the required expected number of individuals the agent needs to make calls to obtain 15 positive responses instead? 
+\end{enumerate}	
+}
+\vspace{1in}
+\end{frame}
 
 
 
@@ -1319,7 +1358,11 @@ during the call?
 \vspace{-.1in}
 \qbx[4.5in]{teal!30}{
 \Exmpl{teal}{}{
-Suppose that a lot of  electrical fuses contains 5\% defectives. If a sample of 5 fuses is tested, find the probability of observing at least one defective.
+Suppose that a lot of  electrical fuses contains 5\% defectives.  If a random sample of 10 fuses are tested, 
+\begin{enumerate}
+\item find the probability of observing at least one to be defective.
+\item What is the expected number of defective fuses?
+\end{enumerate}  
 }  
 }\\
 \vspace{2.6in}
@@ -1462,6 +1505,24 @@ density of seedlings being approximately five per square yard. If a forester ran
 Accident records collected by an automobile insurance company give the following information. The probability that an insured driver has an automobile accident is .15. If an accident has occurred, the damage to the vehicle amounts to 20\% of its market value with a probability of 0.80, to 60\% of its market value with a probability of 0.12, and to a total loss with a probability of .08. What premium should the company charge on a 120,000 AED car so that the expected gain by the company is zero?
 }
 \vspace{1in}
+\end{frame}
+
+
+\begin{frame}
+\qbx[4.5in]{teal!30}{
+\Exmpl{amber!80}{}
+An integrated circuit manufacturer produces wafers that
+contain 18 chips. Each chip has a probability of 0.085 of
+not being placed quite correctly on the wafer.
+\begin{enumerate}
+\item Find the probability that a wafer contains at least
+three incorrectly placed chips.
+\item  What is the probability that a wafer contains no more
+than one incorrectly placed chip?
+\item What is the expected number of incorrectly placed
+chips on a wafer?
+\end{enumerate}
+}
 \end{frame}
 
 
