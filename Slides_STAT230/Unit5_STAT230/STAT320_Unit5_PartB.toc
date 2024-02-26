@@ -1,6 +1,6 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Binomial Distribution }{2}{0}{1}
-\beamer@sectionintoc {2}{Poisson Distribution }{26}{0}{2}
-\beamer@sectionintoc {3}{Geometric Distribution }{39}{0}{3}
-\beamer@sectionintoc {4}{Negative Binomial Distribution }{47}{0}{4}
-\beamer@sectionintoc {5}{Miscellaneous Problems}{53}{0}{5}
+\beamer@sectionintoc {2}{Poisson Distribution }{28}{0}{2}
+\beamer@sectionintoc {3}{Geometric Distribution }{41}{0}{3}
+\beamer@sectionintoc {4}{Negative Binomial Distribution }{49}{0}{4}
+\beamer@sectionintoc {5}{Miscellaneous Problems}{55}{0}{5}
