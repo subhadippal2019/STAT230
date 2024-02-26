@@ -267,8 +267,8 @@
 }
 \end{itemize}	
 \vspace{.1in}
-\qBrd[4.6in]{olive!30}{ If a sequence of $n$ independent Bernoulli trials is performed under the same condition,  then the random variable that records the  {\bf total number of successes}    is called the {\bf Binomial Random variable. }
-}
+%\qBrd[4.6in]{olive!30}{ If a sequence of $n$ independent Bernoulli trials is performed under the same condition,  then the random variable that records the  {\bf total number of successes}    is called the {\bf Binomial Random variable. }
+%}
 \end{frame}
 
 %
@@ -293,20 +293,6 @@
 
 
 
-\begin{frame}{Binomial Distribution}
-\define{Binomial Experiment}{
-An experiment is called a Binomial experiment if it satisfies the following 4 conditions:
-\begin{itemize}
-\item The experiment consists of $n$ Bernoulli trials.
-\item Each trial results in a success (S) or a failure (F).
-\item The trials are independent.
-\item The probability of a success, $\binP$,  is fixed throughout $n$ trials.
-\end{itemize}
-}
-\end{frame}
-
-
-
 
 
 \begin{frame}{Bernoulli Distribution $\text{Binomial}(n,\binP)$}
@@ -321,7 +307,7 @@ A discrete random variable on the support, $\support=\{0,1\}$ is called a {\bf B
 $$}
 }
 The above pmf can also be reprrsented as the following: 
-$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{1-x}}}, \text{ for } x \in \support, \text{where } \HLTEQ[teal!30]{ \support=\{ 0, 1\}}$$\\
+$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= \binP^x (1-\binP)^{1-x}}}, \text{ for } x \in \support, \text{where } \HLTEQ[teal!30]{ \support=\{ 0, 1\}}$$\\
 \vspace{.1in}
 
 \end{frame}
@@ -364,19 +350,69 @@ Bernoulli$(\binP)$ &$ \{0, 1\}$ & ${n \choose x} \binP^x (1-\binP)^{1-x}  $ & $\
 
 \TransitionFrame[bittersweet]{\Large Binomial Distribution  }
 
-\begin{frame}{Binomial Distribution $\text{Binomial}(n,\binP)$}
-\begin{enumerate}
-\item Given a Binomial experiment consisting of n Bernoulli trials with
-success probability $\binP$, the Binomial random variable X associated
-with this experiment is defined as the number of successes among the
-n trials.
-\item The random variable X has the Binomial Distribution with
-parameters n and $\binP$; denoted by$ X\sim Binomial(n, \binP).$
 
-\item The behavior of Binomial Distribution with different $n$ and $\binP$.
+\begin{frame}{A Bernoulli Trial/ Experiment}
 
-\end{enumerate}
+{\tiny 
+\begin{itemize}
+\qBrd[4.2in]{atomictangerine!60}{
+\item[\sqBullet{atomictangerine}] The random experiment has only two outcomes.  Namely \HLTEQ[green!30]{\text{SUCCESS}}, and  \HLTEQ[white]{\text{FAILURE}}
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{bazaar!60}{
+\item[\sqBullet{bazaar}] Events corresponding to the successive trials/experiemnts are statistically independent.
+}
+\vspace{.1in}\\
+\qBrd[4.2in]{blush!60}{
+\item[\sqBullet{blush}]  All such trials/experiements  have the {\bf same chance/probability of success}.
+}
+\end{itemize}	
+}
+\vspace{.1in}
+\qBrd[4.6in]{olive!30}{ If a sequence of $\HLTW{n}$ independent Bernoulli trials are performed under the same condition,  the random variable that records the \HLTW{ \text{\bf total number of }\HLTEQ[green!30]{\text{ SUCCESS}}}    is called the {\bf Binomial Random variable. }
+}\\
 
+
+\end{frame}
+
+%
+%\begin{frame}{Binomial Distribution $\text{Binomial}(n,\binP)$}
+%\begin{enumerate}
+%\item Given a Binomial experiment consisting of n Bernoulli trials with
+%success probability $\binP$, the Binomial random variable X associated
+%with this experiment is defined as the number of successes among the
+%n trials.
+%\item The random variable X has the Binomial Distribution with
+%parameters n and $\binP$; denoted by$ X\sim Binomial(n, \binP).$
+%
+%\item The behavior of Binomial Distribution with different $n$ and $\binP$.
+%
+%\end{enumerate}
+%
+%\end{frame}
+%
+
+
+
+
+\begin{frame}{Binomial Distribution}
+\define{Binomial Experiment}{
+An experiment is called a Binomial experiment if it satisfies the following 4 conditions:
+\begin{itemize}
+\item The experiment consists of $n$ Bernoulli trials.
+\item Each trial results in a success (S) or a failure (F).
+\item The trials are independent.
+\item The probability of a success, $\binP$,  is fixed throughout $n$ trials.
+\end{itemize}
+}
+
+\vspace{.2in}
+\qBrd[4.6in]{ceil!50}{
+\Large
+\begin{center}
+Let $X\sim \text{Binomial}(n , \binP)$ 
+\end{center}
+}\\
 \end{frame}
 
 
@@ -387,11 +423,43 @@ parameters n and $\binP$; denoted by$ X\sim Binomial(n, \binP).$
 \define{Binomial Distribution ($\text{Binomial}(n,\binP)$)}{
 Let $\binP\in (0,1)$,  and $n$ be a positive integer. 
 A discrete random variable on the support, $\support=\{0,1, 2, \ldots, n\}$ is called a {\bf Binomial($n,\binP$) } if the corresponding probability mass function can be represented as  $\text{Binomial}(n, \binP)$ is given by
-$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{n-x}}}, \text{ for } x \in \support, \text{where } \HLTEQ[teal!30]{ \support=\{ 0, 1, \ldots,  n\}}$$\\
+$$\HLTEQ[amethyst!50]{ \HLTW{\displaystyle \HLTY{\pmf(x)}:= {n \choose x} \binP^x (1-\binP)^{n-x}}}, \text{ for } x \in \support, \text{where } \HLTEQ[teal!30]{ \support=\{\HLTW{ 0, 1, \ldots,  n}\}}$$\\
 }
 \vspace{.1in}
 
 \end{frame}
+
+
+\begin{frame}
+\vspace{-.11in}
+\qBrd[4.6in]{ceil!50}{
+\Large
+\begin{center}
+Let $X\sim \text{Binomial}(n=2 , \binP=0.2)$ 
+\end{center}
+}\\
+
+\vspace{2.8in}
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\vspace{-.11in}
+
+\qBrd[4.6in]{orange!50}{
+\Large
+\begin{center}
+Let $X\sim \text{Binomial}(n=100 , \binP=0.2)$ 
+\end{center}
+}\\
+\vspace{2.8in}
+\end{frame}
+
 
 
 
@@ -611,7 +679,7 @@ player does not appear on any of the dice, then the player loses 1 unit. Is this
 }
 \vspace{.1in}\\
 \qBrd[4.2in]{blush!60}{
-\item[\sqBullet{blush}]  Number of car accidents occurs during a year. 
+\item[\sqBullet{blush}]  Number of car accidents  in a segment of roads that occurs during a year. 
 }
 \end{itemize}	
 
