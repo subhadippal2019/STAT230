@@ -1,7 +1,7 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Random Variables }{2}{0}{1}
 \beamer@sectionintoc {2}{Discrete Random Variables }{9}{0}{2}
-\beamer@sectionintoc {3}{Cumulative Distribution Function \HLTEQ [white]{\text {(CDF)}} of a discrete Random Variable}{21}{0}{3}
-\beamer@sectionintoc {4}{Expected Value and Variance of a Discrete Random Variable }{29}{0}{4}
-\beamer@sectionintoc {5}{ Moment Generating Function \HLTEQ [white]{\text {(mgf)}} of a Discrete Random Variable }{36}{0}{5}
-\beamer@sectionintoc {6}{ A Few Examples}{40}{0}{6}
+\beamer@sectionintoc {3}{Cumulative Distribution Function \HLTEQ [white]{\text {(CDF)}} of a discrete Random Variable}{22}{0}{3}
+\beamer@sectionintoc {4}{Expected Value and Variance of a Discrete Random Variable }{30}{0}{4}
+\beamer@sectionintoc {5}{ Moment Generating Function \HLTEQ [white]{\text {(mgf)}} of a Discrete Random Variable }{37}{0}{5}
+\beamer@sectionintoc {6}{ A Few Examples}{41}{0}{6}
