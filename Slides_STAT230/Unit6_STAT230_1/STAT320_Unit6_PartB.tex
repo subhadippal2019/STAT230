@@ -261,6 +261,51 @@ $$  \HLTW{E(X)= \frac{a+b}{2}}, \text{ and }  \HLTW{ \text{Var}(X)= \frac{(b-a)^
 
 
 
+\begin{frame}
+\qBrd[4.6in]{ceil!50}{
+\begin{center}
+Let $X\sim \text{Uniform}(a,b)$ for $a<b$
+\end{center}
+}\\
+\vspace{.5in}
+
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
+\HLTW{E(X)=  \frac{a+b}{2}} \vspace{.2in}},  \qBrd[1.5in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= \frac{(b-a)^2}{12}   }\vspace{.2in}}  , \qBrd[1.9in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\begin{cases} 
+ \frac{e^{tb}- e^{ta}}{t(b-a)} & \text{ if } t\neq 0 \\
+ 1 & \text{ if } t\neq 0  
+ \end{cases} }} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.75in]{antiquefuchsia!50}{
+\begin{center}
+\qBrd[4.65in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pdf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $f_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Uniform$(a,b)$ &$ [a, b]$ & $ f(x)=\begin{cases} \frac{1}{b-a} & \text{ if } x\in [a,b]\\ 0 & \text{ otherwise .} \end{cases} $ & $  \frac{a+b}{2}  $  & $  \frac{(b-a)^2}{12}$&   $M_{_X}(t)
+=\begin{cases} 
+ \frac{e^{tb}- e^{ta}}{t(b-a)} & \text{ if } t\neq 0 \\
+ 1 & \text{ if } t\neq 0  
+ \end{cases}$\\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
+
+
+
+
+
+
 \begin{frame}\frametitle{Example}
 \tiny
 \vspace{-.1in}
@@ -422,6 +467,42 @@ $$F(x)=
 \end{frame}
 
 
+\begin{frame}
+\qBrd[4.6in]{ceil!50}{
+\begin{center}
+Let $X\sim \text{Exponential}(\HLTW{\text{rate}}= \lambda)$ for $\lambda>0$
+\end{center}
+}\\
+\vspace{.5in}
+
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
+\HLTW{E(X)=  \frac{1}{\lambda} } \vspace{.2in}},  \qBrd[1.5in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= \frac{1}{\lambda^2}  }\vspace{.2in}}  , \qBrd[1.8in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=
+ \frac{\lambda}{\lambda-t}  \text{ if } 0\leq  t < \lambda } \vspace{.2in}} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.75in]{antiquefuchsia!50}{
+\begin{center}
+\qBrd[4.65in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pdf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $f_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+ $\text{Exponential}(\HLTW{\text{rate}}= \lambda)$&$ (0, \infty)$ & $ f(x)=\begin{cases} \lambda e^{-\lambda x} & \text{ if } x>0\\ 0 & \text{ otherwise .} \end{cases} $ & $ \frac{1}{\lambda} $  & $ \frac{1}{\lambda^2}$&   $
+ \frac{\lambda}{\lambda-t}  \text{ if } 0\leq  t < \lambda$\\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
+
+
 
 
 \begin{frame}\frametitle{Example}
@@ -537,6 +618,47 @@ $E(X) = \frac{\alpha}{\lambda} \text{ and }, \text{Var}(X) = \frac{\alpha}{\lamb
 
 
 
+
+
+
+
+\begin{frame}
+\qBrd[4.6in]{ceil!50}{
+\begin{center}
+Let $X\sim \text{Gamma}(\HLTW{\text{shape}}= \alpha, \HLTW{\text{rate}}= \lambda)$ for $\alpha>0, \lambda>0$
+\end{center}
+}\\
+\vspace{.5in}
+
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
+\HLTW{E(X)=  \frac{\alpha}{\lambda} } \vspace{.2in}},  \qBrd[1.2in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= \frac{\alpha}{\lambda^2}  }\vspace{.2in}}  , \qBrd[2in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=
+ \frac{1}{\left( 1-\frac{t}{\lambda}\right)^{\alpha}}  \text{ if } 0\leq  t < \lambda } \vspace{.2in}} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.75in]{antiquefuchsia!50}{
+\begin{center}
+\qBrd[4.65in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pdf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $f_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+ $\text{Gamma}(\alpha, \lambda )$&$ (0, \infty)$ & $  \frac{\lambda^{\alpha}}{\Gamma(\alpha)} x^{\alpha-1}e^{-\lambda x}  $ & $ \frac{\alpha}{\lambda} $  & $ \frac{\alpha}{\lambda^2}$&   $ \frac{1}{\left( 1-\frac{t}{\lambda}\right)^{\alpha}}  \text{ if } 0\leq  t < \lambda$\\
+ $\HLTW{\text{shape}= \alpha, \text{rate}}= \lambda$ & & $\text{ if } x>0$ & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
+
+
+
+
 \begin{frame}\frametitle{Exercise}
 %\tiny
 \vspace{-.1in}
@@ -593,6 +715,52 @@ If $X\sim $ Beta($\alpha, \beta$) then
 $E(X) = \frac{\alpha}{\alpha+\beta} \text{ and }, \text{Var}(X) = \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)}$
 }
 \end{frame}
+
+
+
+
+
+
+\begin{frame}
+\qBrd[4.6in]{ceil!50}{
+\begin{center}
+Let $X\sim \text{Beta}(\alpha, \beta)$ for $\alpha>0, \beta>0$
+\end{center}
+}\\
+\vspace{.5in}
+
+%\qBrd[4.6in]{babyblue!40}{
+$\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
+\HLTW{E(X)=  \frac{\alpha}{\alpha+\beta} } \vspace{.2in}},  \qBrd[1.73in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)=  \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)}  }\vspace{.2in}}  , \qBrd[1.5in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\text{\tiny A Complicated Series } } \vspace{.2in}} } $
+%}
+
+\vspace{.1in}
+\qBrd[4.75in]{antiquefuchsia!50}{
+\begin{center}
+\qBrd[4.65in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pdf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $f_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+ $\text{Beta}(\alpha, \beta )$&$ (0, 1)$ & $   \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(
+ \beta)}x^{\alpha-1}x^{\beta-1}  $ & $\frac{\alpha}{\alpha+\beta}  $  & $ \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)} $&   $ {}\text{ \tiny  } $\\
+ $\HLTW{\text{shape1}= \alpha, \text{shape2}}= \beta$ & & $\text{ if } 0<x<1$ & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
+
+
+
+
+
+
+
 
 
 \section{Normal Distribution}

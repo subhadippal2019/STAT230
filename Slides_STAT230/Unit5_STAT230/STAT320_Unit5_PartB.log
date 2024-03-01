@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  26 FEB 2024 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 MAR 2024 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1526,12 +1526,6 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [6
 
 ]
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 348.
-
-
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -1585,6 +1579,12 @@ Overfull \hbox (209.14989pt too wide) has occurred while \output is active
 [10
 
 ]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 430.
+
+
 Overfull \hbox (176.65411pt too wide) has occurred while \output is active
   [] [] [] [] [] [] [] [] 
  []
@@ -2555,7 +2555,7 @@ t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit5_PartB.pdf (74 pages, 1063982 bytes).
+Output written on STAT320_Unit5_PartB.pdf (74 pages, 1063914 bytes).
 PDF statistics:
  3576 PDF objects out of 3580 (max. 8388607)
  2902 compressed objects within 30 object streams

@@ -1,6 +1,6 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Uniform Distribution}{2}{0}{1}
-\beamer@sectionintoc {2}{Exponential Distribution}{9}{0}{2}
-\beamer@sectionintoc {3}{Gamma Distribution}{17}{0}{3}
-\beamer@sectionintoc {4}{Beta Distribution}{22}{0}{4}
-\beamer@sectionintoc {5}{Normal Distribution}{25}{0}{5}
+\beamer@sectionintoc {2}{Exponential Distribution}{10}{0}{2}
+\beamer@sectionintoc {3}{Gamma Distribution}{19}{0}{3}
+\beamer@sectionintoc {4}{Beta Distribution}{25}{0}{4}
+\beamer@sectionintoc {5}{Normal Distribution}{29}{0}{5}

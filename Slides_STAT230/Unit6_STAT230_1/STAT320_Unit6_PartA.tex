@@ -376,8 +376,7 @@ Verify: The above function satisfies the three conditions required to be a  CDF.
 \define{Discrete Random Variable}{
 A random variable X is discrete if it's support $\support[X]$ is finite or countable infinite. 
 }
-
-
+\vspace{.2in}
 %\define{Alternative Definition: Discrete Random Variable}{
 %A random variable X is discrete if the corresponding cdf $F_X(x)$ is a step function of x.  i.e.  $F_X(x)$ increases only via jumps. 
 %}
@@ -398,21 +397,46 @@ A random variable X is discrete if the corresponding cdf $F_X(x)$ is a step func
 
 \begin{frame}{Continuous and Discrete Random variable}
 \define{Continuous Random Variable}{
-A random variable X is continuous if the corresponding cdf $F_x(x)$ is a continuous function of x. 
+A random variable X is continuous if the corresponding cumulative distribution function (cdf) $F_{_X}(x)$ is a continuous  and continuously differentiable ({\tiny at all points except for a finitely/countably many points}) function of x.
+}
+\vspace{.2in}
+\define{Probability Density Function}{
+Let $\HLTW{F_{_X}(x)}$ be a cumulative distribution function (CDF) of a continuous random variable,  then the corresponding {\bf  probability density function} or {\bf pdf}, denoted as $\HLTW{f_{_X}(x)}$  is a function that satisfies the following creteria. 
+$$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int_{-\infty}^{\HLTY{x}} f_{_X}(y) dy }$$
+}
+\vspace{.2in}
+\end{frame}
+
+
+
+
+\begin{frame}{Probability Density Function (pmf):  For  continuous  RV}
+
+
+
+\qBrd[4.5in]{babyblue!40}{{\bf Comment:}
+Using the Fundamental Theorem of Calculus, if $\HLTW{ f_X(x) }$ is continuous, we have the further relationship  
+$\HLTW{\displaystyle f_X(x)= \frac{d}{dx} F_{X}(x)}.$
+ }\\
+ \vspace{.5in}
+\qBox{
+\sqBullet{blue} If X is a continuous random variable, then probabilities can be obtained by integrating its pdf over suitable region.  Specifically,  for $\HLTW{a, b\in \R}$, $\HLTW{a<b}$, 
+$$\HLTEQ[white]{P(a< X\leq b)= F_X(b)-F_X(a)= \int_a^b f_{X}(x) dx.}$$\vspace{-.2in}
 }
 
 \end{frame}
+
 
 
 \begin{frame}
 \qBoxCol{lightBrownOne}{{\bf Question: }
 Is it ture that a random variable must be continuous if its support is an interval ?
 }\\
-
+\vspace{.2in}
 \qBoxCol{lightBrownOne}{{\bf Question: }
 Is it ture that a random variable must be continuous if its support is $\R$?
-}
-
+}\\
+\vspace{.2in}
 \qBoxCol{lightBrownOne}{{\bf Question: }
 Is it possible for a continuous random variable to have a finite support?
 }
@@ -433,7 +457,7 @@ $$ \displaystyle F_X(x):=\frac{1}{1+e^{-x}} \text{ for all } x\in \R.\vspace{-.2
 \caption{ The polt of $F_X(x)$: CDF of the random variable X \vspace{-.1in}}
 \end{figure}
 }
-Verify: The above function satisfies the three conditions required to be a  CDF.  
+{\bf Verify: } The above function satisfies the three conditions required to be a  CDF.  
 \end{frame}
  
 
@@ -448,9 +472,9 @@ $$ F_X(x):= \left\{
 	\end{array}\right.
 $$
 }
-
-
+\vspace{-.05in}
 {\bf Verify:} The above function satisfies the three conditions required to be a  CDF.
+\vspace{2in}
 \end{frame}
 
 
@@ -464,37 +488,16 @@ $$
 \item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
 \item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
 \end{enumerate}
-
-
 }
-
+\vspace{2in}
 \end{frame}
 
 
 
 
 
-\begin{frame}{Probability Density Function (pmf):  For  continuous  RV}
 
-\define{Probability Density Function}{
-The probability density function or pdf, $f_x(x)$, of a continuous random variable $X$ is the function that satisfies
-$$F_X(x)= \int_{-\infty}^{x} f_x(x) dx $$\vspace{-.2in}
-}
-
-\qBox{{\bf Comment:}
-Using the Fundamental Theorem of Calculus, if $f_X(x)$ is continuous, we have the further relationship  
-$\displaystyle f_X(x)= \frac{d}{dx}F_{X}(x).$
- }
-\qBox{
-If X is a continuous random variable, then probabilities can be obtained by integrating its pdf over suitable region. Specifically, for $a, b\in \R$, $a<b$, 
-$$\HLTEQ[white]{P(a< X\leq b)= F_X(b)-F_X(a)= \int_a^b f_{X}(x) dx.}$$\vspace{-.2in}
-}
-
-\end{frame}
-
-
-
-\begin{frame}{Probability Density Function (pdf)}
+\begin{frame}{ Characterization of  Probability Density Function (pdf)}
 
 \define{Continuous Random Variable}{
 A random variable X is said to be continuous if there is a function $f(x)$, called the probability density function (pdf), such that
@@ -504,16 +507,16 @@ A random variable X is said to be continuous if there is a function $f(x)$, call
 \item $\HLTW{\displaystyle P(a\leq X\leq b)= \int_{a}^{b}f(x)dx}$ for all $a<b$.
 \end{enumerate}
 }
-
-\qBrd[4.7in]{amethyst!40}{
+\vspace{.1in}
+\qBrd[4.65in]{amethyst!40}{
 \small
 If $X$ is a continuous random variable then, 
 \begin{itemize}
-\item $P(X=c)= 0$ for any $c\in \R$
-\item $P(a\leq X\leq  b) = P(a < X\leq b) = P(a\leq X < b) = P(a < X < b)$.
+\item $\HLTW{P(X=c)= 0}$ for any $c\in \R$
+\item $\HLTW{P(a\leq X\leq  b)} = \HLTW{P(a < X\leq b)} = \HLTW{P(a\leq X < b)} = \HLTW{P(a < X < b)}$.
 \end{itemize}
 }
-
+\vspace{.5in}
 \end{frame}
 
 
@@ -576,9 +579,9 @@ $$ f(x):= \begin{cases}
 \end{minipage} %
 \begin{minipage}{.48\textwidth} %
 {\tiny 
- \qBrd[1.8in]{babyblue!40}{
+ \qBrd[2.3in]{babyblue!40}{
  \begin{eqnarray}
- P(X>1)& = &   \int_{1}^{2} f(x)dx\nonumber\\
+ P(X>1)=   \int_{1}^{2} f(x)dx
  & =&    \int_{1}^{2} C(4x-2x^2)dx\nonumber\\
  & =&     C(2x^2-\frac{2x^3}{3} )\Bigg\vert_{1}^2 =1\nonumber\\
   & =&     C\left\{ (8-\frac{16}{3} ) - (2-\frac{2}{3} )\right\} \nonumber\\
@@ -687,15 +690,14 @@ $$ f(x):= \begin{cases}
 \Exmpl{olive}{}  The amount of time in hours that a computer functions before
 breaking down is a continuous random variable with probability
 density function given by
-$$ f(x):= \begin{cases} 
- 100 e^{-\frac{x}{100}}& \text{ if } x> 0\\
+$$\HLTW{ f(x):= \begin{cases} 
+ 100 \;   e^{-\frac{x}{100}}& \text{ if } x> 0\\
 0 & \text{ otherwise.} 
-\end{cases}$$
-What is the probability that
+\end{cases}}$$
 \vspace{-.1in}
 \begin{enumerate}[a).]
-\item a computer will function between 50 and 150 hours before breaking down?
-\item it will function for fewer than 100 hours?
+\item What is the probability that a computer will function between 50 and 150 hours before breaking down?
+\item What is the probability that it will function for fewer than 100 hours?
 \end{enumerate}
 }\\
 %\pause
@@ -714,10 +716,10 @@ What is the probability that
 \qbx[4.5in]{applegreen!40}{
 \Exmpl{applegreen}{}  The lifetime in hours of a certain kind of radio tube is a random
 variable having a probability density function given by
-$$ f(x):= \begin{cases} 
+$$\HLTW{ f(x):= \begin{cases} 
 \frac{100}{x^2}& \text{ if } x> 100\\
 0 & \text{if 	$ x\leq 100$.} 
-\end{cases}$$
+\end{cases}}$$
 What is the probability that exactly 2 of 5 such tubes in a radio set
 will have to be replaced within the  fist 150 hours of operation?
 {\tiny Assume that the events $E_i$, $i = 1,2,3,4,5, $that the ith such tube will have to be replaced within this time are independent.}
@@ -732,15 +734,15 @@ will have to be replaced within the  fist 150 hours of operation?
 
 
 \begin{frame}{Cumulative Distribution Function (cdf)}
-\define{(The Cumulative Distribution Function)}{
-The cumulative distribution function (cdf) F(x) of a continuous random variable $X$ with pdf $f()$ is defined for every number $x$ by $$ F(x)=P(X\leq x)= \int_{-\infty}^{x}f(x) dx.$$
+\define{The Cumulative Distribution Function}{
+The cumulative distribution function (cdf) F(x) of a continuous random variable $X$ with pdf $f(x)$ is defined for every number $x$ by $$ \HLTW{\displaystyle  F(x)=P(X\leq x)= \int_{-\infty}^{x}f(x) dx.} \vspace{-.1in}$$
 }
-
-\qBrd[4.5in]{amethyst!40}{
-\qBrd[1.7in]{amethyst!70}{A Few Properties of F(x)}
+\vspace{.1in}
+\qBrd[4.6in]{amethyst!30}{
+\qBrd[1.7in]{amethyst!60}{Few Properties of F(x)}
 \begin{enumerate}
-\item $P(a< X\leq  b) = F(b) - F(a).$
-\item  $P(X>  b) = 1-F(b)$
+\item $\HLTW{ P(a< X\leq  b) = F(b) - F(a)}.$
+\item  $\HLTW{P(X>  b) = 1-F(b)}$
 \item If X is a continuous random variable with cdf $F(x)$ then at every x at which $\frac{dF(x)}{dx}$ exists:
 $f(x)=\frac{dF(x)}{dx} $
 \end{enumerate}
@@ -751,20 +753,21 @@ $f(x)=\frac{dF(x)}{dx} $
 \begin{frame}\frametitle{Example}
 
 \vspace{-.1in}
-\qbx[4.5in]{apricot!50}{
+\qbx[4.6in]{apricot!50}{
 \Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
-$$ f(x):= \begin{cases} 
+\vspace{-.2in}
+$$\HLTW{ f(x):= \begin{cases} 
 {3x^2}& \text{ if }0\leq  x\leq 1\\
 0 & \text{therwise.} 
-\end{cases}$$
-\vspace{-.1in}
+\end{cases}}$$
+\vspace{-.2in}
 \begin{enumerate}[a).]
 \item Obtain, $F(x)$, the CDF of X.
 \item Use $F(x)$ to compute  $P(0.5<X\leq 0.8)$.
 \end{enumerate}
 }
 {\tiny {:}  
- 
+ \vspace{.9in}
 }
 \end{frame}
 
@@ -881,11 +884,11 @@ Special percentiles:
 \begin{frame}\frametitle{Example}
 \vspace{-.1in}
 \qbx[4.5in]{apricot!40}{
-\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
-$$ f(x):= \begin{cases} 
+\Exmpl{apricot}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by \vspace{-.1in}
+$$ \HLTW{f(x):= \begin{cases} 
  3x^2& \text{ if } 0 <x<1\\
 0 & \text{ otherwise.} 
-\end{cases}$$
+\end{cases}}$$
 \vspace{-.1in}
 \begin{enumerate}[a).]
 \item find the median, and 
@@ -893,7 +896,7 @@ $$ f(x):= \begin{cases}
 \end{enumerate}
 }\\
 %\pause
-
+ \vspace{1in}
 \end{frame}
 
 
@@ -965,11 +968,15 @@ $$ f(x):= \begin{cases}
 
 
 
-\begin{frame}{Expected Value, or   {\bf mean } of a Continuous Random Variable}
+\begin{frame}{\small Expected Value, or   {\bf mean } of a Continuous Random Variable}
 \define{Expected Value or {\bf mean } of a Continupues Random Variable}{
-If X is a continuous random variable with pdf $f(x)$, then the expected value (the mean) of X denoted by $E(X)$ or $ \mu_{_X}$ is given by
-$$\mu_{_X}:= E(X)= \int_{-\infty}^{\infty} xf(x)dx$$
+If X is a continuous random variable with pdf $f(x)$ on the support $\support[X]$, then the expected value (the mean) of X denoted by $E(X)$ is given by
+$$\HLTW{ \displaystyle E(X)   = \int\limits_{\support[X]} x\; f(x)\;dx},$$
+assuming the above integral exists. 
 }
+\vspace{.1in}
+\qBrd[4.6in]{olive!30}{ $E(X)$ is sometimes also denoted by  $ \mu_{_X}$}
+\vspace{1.5in}
 \end{frame}
 
 
@@ -977,9 +984,11 @@ $$\mu_{_X}:= E(X)= \int_{-\infty}^{\infty} xf(x)dx$$
 
 \begin{frame}{}
 \define{Expected Value of a function of a Continuous Random Variable}{
-Let h(x) be any$^{*}$ function.  If X is a continuous random variable with pdf $f(x)$, then the expected value $h(X)$ denoted by $E(h(X))$ is given by
-$$ E(h(X))= \int_{-\infty}^{\infty} h(x)f(x)dx$$
+Let $h(x)$ be any$^{*}$ function.  If X is a continuous random variable with pdf $f(x)$ on the support $\support[X]$, then  the expected value $h(X)$ denoted by $E\left(h(X)\right)$ is given by
+$$\HLTW{\displaystyle  E\left(h(X)\right)= \int\limits_{\support[X]}h(x)f(x)dx, }$$
+assuming the above integral exists. 
 }
+\vspace{1.5in}
 \end{frame}
 
 
@@ -1004,6 +1013,26 @@ Let $a$ and $b$ are constants, then
 
 \end{frame}
 
+
+
+\begin{frame}\frametitle{Moment Generating Function (mgf)}
+\vspace{-.05in}
+\define{Moment Generating Function}{ The Moment Generating Function (mgf) of $X$, denoted by $\text{M}_{_X}(t)$ is deifined as 
+$$\DBX{ \displaystyle \text{M}_{_X}(t):= E\left(\HLTW{e^{tX}} \right)},$$
+whenever it exists. 
+}
+\begin{center}
+\qBrd[4.4in]{antiquefuchsia!40}{ If a continuous random variable $X$ has the probability density funciton $\HLTY{f_{_X}(x)}$ for all $ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]}$, the support of X, then  assuming it exists\\
+\begin{center}
+\qBrd[3.4in]{applegreen!40}{$$M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \int\limits_{\left\{\HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{f_{_X}(\HLTW{x})}dx. \vspace{-.2in}$$\\
+\vspace{-.1in}
+}
+\end{center}
+\vspace{.1in}
+}
+\end{center}
+
+\end{frame}
 
 
 
@@ -1237,7 +1266,6 @@ E(e^X)
 
 
 
-
 \begin{frame}\frametitle{Exercise}
 \tiny
 \vspace{-.1in}
@@ -1321,7 +1349,7 @@ cy^2+y& \text{ for }0\leq x\leq 1\\
 \begin{enumerate}
 \item Find c that makes this function a valid probability density function.
 \item Find the F(y) 
-\item Graph f(y) and F(y).
+%\item Graph f(y) and F(y).
 \item  Find the probability that a randomly selected student will finish in less than half an hour.
 \item Find the time that 95\% of the students finish before it.
 \item Given that a particular student needs at least 15 minutes to complete the exam, find the probability that she will require at least 30 minutes to finish.

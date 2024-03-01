@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  17 FEB 2024 23:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  2 MAR 2024 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1480,28 +1480,19 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [6
 
 ]
-<figs/NormalCDFStandardization.png, id=278, 469.755pt x 120.45pt>
-File: figs/NormalCDFStandardization.png Graphic file (type png)
-<use figs/NormalCDFStandardization.png>
-Package pdftex.def Info: figs/NormalCDFStandardization.png  used on input line 
-279.
-(pdftex.def)             Requested size: 281.85518pt x 72.27054pt.
-
 Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
 [7
 
- <./figs/NormalCDFStandardization.png>]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 297--297
-[][]  
- []
-
-
-Overfull \vbox (37.41547pt too high) detected at line 297
- []
-
+]
+<figs/NormalCDFStandardization.png, id=342, 469.755pt x 120.45pt>
+File: figs/NormalCDFStandardization.png Graphic file (type png)
+<use figs/NormalCDFStandardization.png>
+Package pdftex.def Info: figs/NormalCDFStandardization.png  used on input line 
+322.
+(pdftex.def)             Requested size: 281.85518pt x 72.27054pt.
 
 Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  [][][][] []  
@@ -1509,14 +1500,13 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 
 [8
 
-]
-Overfull \hbox (25.98268pt too wide) in paragraph at lines 329--329
-[][]
+ <./figs/NormalCDFStandardization.png>]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 340--340
+[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-
+Overfull \vbox (37.41547pt too high) detected at line 340
  []
 
 
@@ -1527,12 +1517,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [9
 
 ]
-Overfull \hbox (69.34514pt too wide) in paragraph at lines 359--359
+Overfull \hbox (25.98268pt too wide) in paragraph at lines 372--372
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--359
+Underfull \hbox (badness 10000) in paragraph at lines 372--372
 
  []
 
@@ -1544,11 +1534,15 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [10
 
 ]
-<figs/Normal_Cutoff.png, id=425, 426.59375pt x 192.72pt>
-File: figs/Normal_Cutoff.png Graphic file (type png)
-<use figs/Normal_Cutoff.png>
-Package pdftex.def Info: figs/Normal_Cutoff.png  used on input line 381.
-(pdftex.def)             Requested size: 170.63446pt x 77.08662pt.
+Overfull \hbox (69.34514pt too wide) in paragraph at lines 402--402
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--402
+
+ []
+
 
 Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  [][][][] []  
@@ -1556,15 +1550,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 
 [11
 
- <./figs/Normal_Cutoff.png>]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 429--429
-[][]  
- []
-
-
-Overfull \vbox (5.64908pt too high) detected at line 429
- []
-
+]
+<figs/Normal_Cutoff.png, id=487, 426.59375pt x 192.72pt>
+File: figs/Normal_Cutoff.png Graphic file (type png)
+<use figs/Normal_Cutoff.png>
+Package pdftex.def Info: figs/Normal_Cutoff.png  used on input line 424.
+(pdftex.def)             Requested size: 170.63446pt x 77.08662pt.
 
 Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  [][][][] []  
@@ -1572,13 +1563,13 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 
 [12
 
-]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 449--449
+ <./figs/Normal_Cutoff.png>]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 472--472
 [][]  
  []
 
 
-Overfull \vbox (81.21548pt too high) detected at line 449
+Overfull \vbox (5.64908pt too high) detected at line 472
  []
 
 
@@ -1589,12 +1580,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 469--469
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 492--492
 [][]  
  []
 
 
-Overfull \vbox (78.21548pt too high) detected at line 469
+Overfull \vbox (81.21548pt too high) detected at line 492
  []
 
 
@@ -1605,12 +1596,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 486--486
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 512--512
 [][]  
  []
 
 
-Overfull \vbox (89.73502pt too high) detected at line 486
+Overfull \vbox (78.21548pt too high) detected at line 512
  []
 
 
@@ -1621,12 +1612,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 503--503
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 529--529
 [][]  
  []
 
 
-Overfull \vbox (18.63641pt too high) detected at line 503
+Overfull \vbox (89.73502pt too high) detected at line 529
  []
 
 
@@ -1636,19 +1627,23 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 
 [16
 
-] (./STAT320_Unit6_PartC.toc)
+]
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 546--546
+[][]  
+ []
+
+
+Overfull \vbox (18.63641pt too high) detected at line 546
+ []
+
+
 Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  [][][][] []  
  []
 
 [17
 
-]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 513--513
-[][] 
- []
-
-
+] (./STAT320_Unit6_PartC.toc)
 Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  [][][][] []  
  []
@@ -1656,7 +1651,7 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 521--521
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 556--556
 [][] 
  []
 
@@ -1668,6 +1663,18 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [19
 
 ]
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 564--564
+[][] 
+ []
+
+
+Overfull \hbox (39.52895pt too wide) has occurred while \output is active
+ [][][][] []  
+ []
+
+[20
+
+]
 \tf@nav=\write6
 \openout6 = `STAT320_Unit6_PartC.nav'.
 
@@ -1677,19 +1684,19 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit6_PartC.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 567.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 567.
  (./STAT320_Unit6_PartC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 524.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 567.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 567.
 Package rerunfilecheck Info: File `STAT320_Unit6_PartC.out' has not changed.
 (rerunfilecheck)             Checksum: A9A0A7C3242A1D99260AF122BB46CA16;61.
  ) 
 Here is how much of TeX's memory you used:
- 28488 strings out of 480608
- 551794 string characters out of 5903631
- 956621 words of memory out of 5000000
- 43609 multiletter control sequences out of 15000+600000
+ 28544 strings out of 480608
+ 553212 string characters out of 5903631
+ 957620 words of memory out of 5000000
+ 43663 multiletter control sequences out of 15000+600000
  604465 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,23n,79p,805b,1772s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1710,13 +1717,14 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit6_PartC.pdf (19 pages, 380160 bytes).
+f-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/urw/helvetic/uhvro8a.pfb>
+Output written on STAT320_Unit6_PartC.pdf (20 pages, 395721 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
- 670 compressed objects within 7 object streams
- 40 named destinations out of 1000 (max. 500000)
- 643 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 715 compressed objects within 8 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 739 words of extra memory for PDF output out of 10000 (max. 10000000)
 
