@@ -84,8 +84,8 @@ How many different types of car the manufacturer sells?
 
 
 
-\qbx[6.4in]{bluebell!40}{\item 
-How many different batting orders are possible for a cricket team consisting of 11 players?}\\
+%\qbx[6.4in]{bluebell!40}{\item 
+%How many different batting orders are possible for a cricket team consisting of 11 players?}\\
 
 \qbx[6.4in]{cambridgeblue!50}{\Exmpl{cambridgeblue}{}
 How many different ``words" ({\tiny sequence of three letters that may or may not be dictionary words}) can you make with the letters
@@ -155,16 +155,7 @@ the probability of a repair being late and unsatisfactory?
  \qbx[6.4in]{olive!40}{
 Let $A, B$ be two events such that  $$P(A) = \frac{2}{3} \text{ and } P(\Not{B}) = \frac{1}{4}.$$Can A and B be disjoint? Explain.}\\
  
- \qbx[6.4in]{brightube!40}{\item 
-Consider 6 tosses of a fair coin.  {\tiny For example, two typical sequences of outcomes that are considered different is  $\HLTW{`HTTTTT'}$, and $\HLTW{`THTTTT'}$.}
-\begin{enumerate}
-\item What is the probability that there are be exactly 2 Heads ?
-\item What is the probability that there are be exactly 4 Heads ?
-\item What is the probability that there are no Heads?
-\item What is the probability that there is at least one Tail?
-\end{enumerate} 
-}\\
-
+ 
 
 \qbx[6.4in]{purple!30}{\item  A fair-dice is thrown 8 times and all the the 8 numbers  that appear are recorded.  
 \begin{enumerate}
@@ -293,6 +284,15 @@ contained in 30\%of the water specimens that are sent to the lab for testing. If
 \end{enumerate}
 }\\
 
+\qbx[6.4in]{brightube!40}{\item 
+Consider 6 tosses of a fair coin.  {\tiny For example, two typical sequences of outcomes that are considered different is  $\HLTW{`HTTTTT'}$, and $\HLTW{`THTTTT'}$.}
+\begin{enumerate}
+\item What is the probability that there are be exactly 2 Heads ?
+\item What is the probability that there are be exactly 4 Heads ?
+\item What is the probability that there are no Heads?
+\item What is the probability that there is at least one Tail?
+\end{enumerate} 
+}\\
 
 \qbx[6.4in]{amethyst!40}{
 \item  If $A$ and $B$ are two  events such that $P(A)>0$ and $P(B>0)$ then, 
@@ -316,13 +316,14 @@ $\pmf_{_X}(x)$ &$ \frac{1}{5}$ & $ \frac{2}{5}$  &$ \frac{1}{10}$  & \HLTY{ c} &
 \begin{enumerate}
 \item What is the value of \HLTY{ c} so that $\pmf_{_X}(x)$ become a valid probability mass function on the support $\support[X]$?
 \item What is the probability that $X\in A$, where the event $A=\{2, 4\}$.
+\item  What is the expected value of the random variable?
 \end{enumerate}
 }\\
 
 
 \qbx[6.4in]{amethyst!50}{
 \item  If X be a discrete random variable on the support $\support[X]=\{1, 2, 3, 4\}$ with the corresponding  pmf specified as  
-$\pmf_{_X}(1)= \frac{1}{4}, \pmf_{_X}(2)= \frac{1}{2}, \pmf_{_X}(3)= \frac{1}{8}$, and $\pmf_{_X}(4)= \frac{1}{8}$. Calculate the CDF function of $X$. 
+$\pmf_{_X}(1)= \frac{1}{4}, \pmf_{_X}(2)= \frac{1}{2}, \pmf_{_X}(3)= \frac{1}{8}$, and $\pmf_{_X}(4)= \frac{1}{8}$. Calculate the Expected value  of $X$. 
 }\\
 
 \qbx[6.4in]{olive!50}{\item 
@@ -330,98 +331,46 @@ The probability distribution of $X$, the number of daily network blackouts is gi
 \begin{center}
 \begin{tabular}{|l|l|l|l|}
 \hline\hline
-x    & 0    & 1    & 2    \\ \hline
+$x\in \support[X]$    & 0    & 10    & 40    \\ \hline
 $\pmf_{_X}(x)$ & 0.7 & 0.2 & 0.1 \\ \hline\hline
 \end{tabular}
 \end{center}
 \begin{enumerate}
-\item Find the Expected value,  variance, and MGF of the random variable {\bf X}.
+\item Find the Expected value,  variance of the random variable {\bf X}.
+\item Find the MGF of the random variable {\bf X}.
 \item Find  $\HLTW{E\left( \frac{1}{2+|{X}|} \right) }$
 \item Find  $\HLTW{E\left( \sqrt{X+1} \right) }$
-\item Find the CDF of the distribution and plot it. 
+\item Find the CDF of the distribution.
 \end{enumerate}
 }\\
 
 
 \qbx[6.4in]{ceil!40}{\item 
-Derive the MGF of the Poisson$(\lambda)$ distribution where $\lambda>0$. Use it obtain Mean and Variance of the distribution. 
+Derive the MGF of the Poisson$(\lambda)$ distribution where $\lambda>0$. 
 }\\
 
 
-\qbx[6.4in]{ceil!40}{\item 
-Derive the Mean and Variance of a Binomial$(n, \binP)$ distribution where $1>\binP>0$, and $n\in \mathbb{Z}_{+}$.  
-}\\
+%\qbx[6.4in]{ceil!40}{\item 
+%Derive Mean of a  Poisson$(\lambda)$ distribution where $\lambda>0$. 
+%}\\
+
+%\qbx[6.4in]{ceil!40}{\item 
+%Derive the Mean/Expected Value   of a Binomial$(n, \binP)$ distribution where $1>\binP>0$, and $n\in \mathbb{Z}_{+}$.  
+%}\\
 
 
-\qbx[6.4in]{ceil!40}{\item 
-Derive the Mean and Variance of a Geometric$(\binP)$ distribution where $1>\binP>0$.  
-}\\
+%\qbx[6.4in]{ceil!40}{\item 
+%Derive the Mean/Expected Value   of a Geometric$(\binP)$ distribution where $1>\binP>0$.  
+%}\\
 
 \qbx[6.4in]{ceil!40}{\item 
 Derive the MGF of a Geometric$(\binP)$ distribution where $1>\binP>0$.  
 }\\
 
-
-\qbx[6.4in]{apricot!50}{
-\item 
-Of a population of consumers, 60\% are reputed to prefer a particular brand, A, of toothpaste. If a group of randomly selected consumers is interviewed, 
-\begin{enumerate}
-\item what is the probability that {\bf exactly five }  people have to be interviewed to encounter the first consumer who prefers brand A?
-\item  what is the probability that {\bf at least }  five people have to be interviewed to encounter the first consumer who prefers brand A?
-\end{enumerate}	
+\qbx[6.4in]{ceil!40}{\item 
+Derive the MGF of a Poisson$(\lambda)$ distribution where $\lambda>0$.  
 }\\
 
-
-
-\qbx[6.4in]{apricot!50}{
-\item \vspace{.1in}
-\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{0.9e^t}{ 1 - 0.1 e^t}$,  What is the distribution of $X$? }\\
-\vspace{.1in}
-\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \exp{\left(7e^t-7\right)}$,  What is the distribution of $X$? }\\
-\vspace{.1in}
-\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{1}{8}(1 + e^t)^3$,  What is the distribution of $X$? }\\
-\vspace{.1in}
-\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{1}{8}(1 + e^t)^3$,  What is the distribution of $X$? }\\
-\vspace{.1in}
-\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{8e^t}{ 10 - 2 e^t}$,  What is the distribution of $X$? }\\
-}\\
-
-\qbx[6.4in]{airforceblue!30}{
-\item 
-Cars arrive at a toll both according to a Poisson process with mean 80 cars per hour. If the
-attendant makes a one-minute phone call, what is the probability that at least 1 car arrives
-during the call?
-}\\
-
-\qbx[6.4in]{teal!30}{
-\item 
-Suppose that a lot of  electrical fuses contains 5\% defectives. If a sample of 5 fuses is tested, find the probability of observing at least one defective.
-}\\
-
-
-\qbx[6.4in]{amber!30}{
-\item 
-An oil exploration firm is formed with enough capital to finance ten explorations. The probability of a particular exploration being successful is 0.10  . Assume the explorations are independent.
-\begin{enumerate}
-\item Find the mean and variance of the number of successful explorations.
-\item Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior
-to doing its first exploration. If each successful exploration costs \$30,000 and each unsuccessful
-exploration costs \$15,000, find the expected total cost to the firm for its ten explorations.
-\end{enumerate}
-}\\
-
-\qbx[6.4in]{asparagus!30}{
-\item  A tollbooth operator has observed that cars arrive randomly at a rate of 360 cars per hour
-\begin{enumerate}
-\item what is the probability that exactly two cars will come during a specific one-minute period?
-\item Find the probability that 40 cars arrive between 10 am to 10:10 am 
-\item Find the expected number of cars between 10 am to 10:10 am
-\end{enumerate}
-}\\
-
-\qbx[6.4in]{babyblue!30}{
-\item A particular sale involves four items randomly selected from a large lot that is known to contain 10\% defectives.  Let Y denote the number of defectives among the 20 sold. The purchaser of the items will return the defectives for repair, and the repair cost is given by $\HLTW{\text{Cost} = 3Y^2 + Y + 2}$.  Find the expected repair cost.
-}\\
 
 \qBrd[4.5in]{babyblue!30}{
 \item 
@@ -437,7 +386,8 @@ If $X\sim \text{Binomial}(n=50, \binP=0.1)$ then
 If $X\sim \text{Geometric}(\binP=0.2)$ then
 \begin{enumerate}
 \item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2) $.
-\item What is $E(\frac{1}{2}X^2-2X-1)$
+\item What is $E(4X+10)$?
+\item  What is Var$(4X+10)$?
 \item What is the MGF of X?
 \end{enumerate} 
 }\\
@@ -447,10 +397,112 @@ If $X\sim \text{Geometric}(\binP=0.2)$ then
 If $X\sim \text{Poisson}(\lambda=5)$,  then
 \begin{enumerate}
 \item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2)$
-\item What is $E(3X^2-X+50)$
+\item What is $E(3X+50)$?
+\item What is Var$(3X+50)$?
 \item What is the MGF of X?
 \end{enumerate} 
-}
+}\\
+\vspace{.1in}
+
+\qbx[6.4in]{apricot!50}{
+\item 
+Of a population of consumers, 60\% are reputed to prefer a particular brand, A, of toothpaste. If a group of randomly selected consumers is interviewed, 
+\begin{enumerate}
+\item what is the probability that {\bf exactly 3 }  people have to be interviewed to encounter the first consumer who prefers brand A?
+\item  what is the probability that {\bf at least }  3 people have to be interviewed to encounter the first consumer who prefers brand A?
+\end{enumerate}	
+}\\
+
+
+%\qbx[6.4in]{apricot!50}{
+%\item \vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{0.9e^t}{ 1 - 0.1 e^t}$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \exp{\left(7e^t-7\right)}$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{1}{8}(1 + e^t)^3$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{1}{8}(1 + e^t)^3$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{8e^t}{ 10 - 2 e^t}$,  What is the distribution of $X$? }\\
+%}\\
+
+\qbx[6.4in]{airforceblue!30}{
+\item 
+Customers arrive at a checkout counter in a department store according to a Poisson distribution at an average of seven per hour. 
+\begin{enumerate}
+\item During a given hour, what are the probabilities that no more than two customers arrive?
+\item During a given hour, what are the probabilities that exactly five customers arrive?
+\item During a {\bf given two hours period}, what are the probabilities that exactly 6 customers arrive?
+\end{enumerate}
+}\\
+%
+%\qbx[6.4in]{teal!30}{
+%\item 
+%Suppose that a lot of  electrical fuses contains 5\% defectives. If a sample of 8 fuses is tested,  
+%\begin{enumerate}
+%\item find the probability of observing exactly  one defective.
+%\item  find the probability of observing at least one defective.
+%\item What is the expected number of defective fuses?
+%\end{enumerate}
+%}\\
+
+
+\qbx[6.4in]{amber!30}{
+\item 
+On a specific project, an oil exploration firm has decided to allocate the required  finance  for 10 explorations. The probability of a particular exploration being successful is 0.10  .  Assume the explorations are statisticallly independent to each other.
+\begin{enumerate}
+\item Find the mean and variance of the number of successful explorations.
+\item Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior to doing its first exploration. If each successful exploration costs \$30,000 and each unsuccessful
+exploration costs \$15,000, find the expected total cost to the firm for its ten explorations.
+\end{enumerate}
+}\\
+
+
+\qbx[6.4in]{amber!30}{
+\item 
+An oil prospector will drill a succession of holes in a given area to find a productive well. The probability that he is successful on a given trial is 0.1.
+\begin{enumerate}
+\item What is the probability that the third hole drilled is the first to yield a productive well?
+\item What is the expected number of drills that are required to get the first productive well?
+\end{enumerate}
+}\\
+
+
+\qbx[6.4in]{amber!30}{
+\item 
+An oil prospector will drill a succession of holes in a given area to find a productive well. The probability that he is successful on a given trial is 0.40.  The company wants to fund  as much drills that are required to obtain 3 productive wells. 
+\begin{enumerate}
+\item What is the probability that the company need 9 drills to obtain the 3 productive wells. 
+\item What is the expected number of drills that are required to get the first productive well?
+\item Suppose the firm require a fixed cost of \$20,000 in preparing equipment prior to doing its first exploration.  If each successful exploration costs \$0,000 and each unsuccessful
+exploration costs \$10,000.  Compute the expected budget that is required to be allocated for the project.
+\end{enumerate}
+}\\
+
+
+%\qbx[6.4in]{amber!30}{
+%\item 
+%On a specific project, an oil exploration firm has decided to allocate the required  finance  for 10 explorations. The probability of a particular exploration being successful is 0.10  .  Assume the explorations are statisticallly independent to each other.
+%\begin{enumerate}
+%\item Find the mean and variance of the number of successful explorations.
+%\item Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior to doing its first exploration. If each successful exploration costs \$30,000 and each unsuccessful
+%exploration costs \$15,000, find the expected total cost to the firm for its ten explorations.
+%\end{enumerate}
+%}\\
+
+
+\qbx[6.4in]{asparagus!30}{
+\item  An airline company have sold 50 tickets of a specific route of flight.  From the past experiences,  the company knows that the probability of a randomly selected customer would cancel ticket is    $2\%$.  Assume that the customers (if cancels ) cancels tickets independently.
+\begin{enumerate}
+\item what is the probability that exactly two customers will cancel their ticket.
+\item What is the expected number of coustomers who may cancel their tickets.  
+\end{enumerate}
+}\\
+
+\qbx[6.4in]{babyblue!30}{
+\item A particular sale involves four items randomly selected from a large lot that is known to contain 10\% defectives.  Let Y denote the number of defectives among the 20 sold. The purchaser of the items will return the defectives for repair, and the repair cost is given by $\HLTW{U = 3Y^2 + Y + 2}$.  Find the expected repair cost, $E(U)$.
+}\\
 
 \end{enumerate}
 \end{document}
