@@ -258,26 +258,29 @@ $$ F_{_X}(x)=\left\{
 
 
 
-\begin{frame}{Example of CDF}
-\vspace{-.1in}
+\begin{frame}{}
+
+\vspace{-.01in}
 \qBox{
+\begin{center}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 x & 0 & 1 & 2 & 3 \\ \hline
- $P_X(X=x)$ & $\frac{1}{8}=.125$  & $\frac{3}{8}= .375$  & $\frac{3}{8}=0.375$   & $\frac{1}{8}=.125$   \\ \hline
+ $P_X(X=x)$ & $\frac{1}{8}=0.125$  & $\frac{3}{8}= 0.375$  & $\frac{3}{8}=0.375$   & $\frac{1}{8}=0.125$   \\ \hline
 \end{tabular}
-\vspace{-.1in}
-
+\vspace{-.01in}
 \begin{figure}
 \begin{center}
-\includegraphics[scale=.13]{figs/CDF_three_coin_toss.png} 
+\includegraphics[scale=.12]{figs/CDF_three_coin_toss.png} 
 \end{center}
 \caption{ The polt of $F_X(x)$: CDF of the random variable X \vspace{-.15in}}
 \end{figure}
-\vspace{-.1in}
+\end{center}
+\vspace{-.02in}
 }
-\qBox{
-Note that $F_X(\cdot)$ is defined for all values of $x\in \R$, not just for $x\in \support{X}:=\{0,1,2,3\}$.  For example, $2.5 \notin \support{X}$,  however \vspace{-.18in}
+\vspace{-.1in}\\
+\qBrd[4.7in]{amethyst!40}{
+Note that $F_X(\cdot)$ is defined for all values of $x\in \R$, not just for $x\in \support[X]:=\{0,1,2,3\}$.  For example, $2.5 \notin \support[X]$,  however \vspace{-.1in}
 $$ \HLTEQ[white]{F_X(2.5)= P_X(x\leq 2.5)= P_X(X=0)+P_X(X=1)+P_X(X=2)= \frac{7}{8}.}$$\vspace{-.25in}
 }
 
@@ -390,7 +393,34 @@ A random variable X is discrete if the corresponding cdf $F_X(x)$ is a step func
 
 
 
+\section{A Few Common Integrals}
+\begin{frame}
+\qBrd[4.6in]{teal!50}{
+\begin{center}
+\qBrd[4in]{camel!50}{  $\displaystyle \int  x^n dx =\frac{x^{n+1}}{n+1} $ for any integer $n$,  $n\neq -1$.}
+ \qBrd[1.9in]{tearose(rose)!50}{ $\displaystyle \int  \frac{1}{x} dx =\log(x)$}\qBrd[1.9in]{carolinablue!50}{$\displaystyle \int  e^{-x} dx =-e^{-x} $.}
+\qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  e^{mx} dx =\frac{e^{mx}}{m} $ for any nonzero real number  $m \in \R$,  $m\neq 0$.}
+\end{center}
+\vspace{-.2in}
+{\tiny* Note: We have not included the constant term that appears as a constants while writing a indefinite integral. For the majority, if not all,  of the integras in this course will be a definite integrals with a lower and upper limit.   }
+}
 
+\qBrd[4.6in]{babyblueeyes!90}{\tiny 
+Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;\HLTY{g(x)}}{dx}}$ for the following formula
+\begin{itemize}
+\item[]%$ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \frac{d\;\HLTY{f(x)}}{dx}  g(x) + f(x) \frac{d\;\HLTY{g(x)}}{dx}$ 
+\qBrd[4in]{candypink!50}{ \HLTW{\text{Integral By Parts:}} \tiny $\displaystyle  \int f(x)g(x)dx= f(x)\HLTW{ \left( \int g(x)dx\right)}- \int \left\{ f'(x) \HLTW{ \left( \int g(x)dx\right)} \right\} dx   $}
+\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \displaystyle \int \left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}dx =c_1 \int  f(x) dx +c_2\int g(x)dx $ for any constant $c_1,c_2\in  \R$.}
+%\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{f(g(x))\right\}=f'(g(x))g'(x)$. } 
+\end{itemize}
+\vspace{0.05in}
+}
+\end{frame}
+
+
+\begin{frame}{Examples}
+
+\end{frame}
 
 \section{Continuous Random Variables}
 \TransitionFrame[airforceblue]{\Large Continuous Random Variables }
@@ -415,13 +445,13 @@ $$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int_{-\infty}^{\HLTY{x}} f_{_X}(y) dy 
 
 
 \qBrd[4.5in]{babyblue!40}{{\bf Comment:}
-Using the Fundamental Theorem of Calculus, if $\HLTW{ f_X(x) }$ is continuous, we have the further relationship  
-$\HLTW{\displaystyle f_X(x)= \frac{d}{dx} F_{X}(x)}.$
+Using the Fundamental Theorem of Calculus, if $\HLTW{ f_{_X}(x) }$ is continuous, we have the further relationship  
+$\HLTW{\displaystyle f_{_X}(x)= \frac{d}{dx} F_{_X}(x)}.$
  }\\
  \vspace{.5in}
 \qBox{
 \sqBullet{blue} If X is a continuous random variable, then probabilities can be obtained by integrating its pdf over suitable region.  Specifically,  for $\HLTW{a, b\in \R}$, $\HLTW{a<b}$, 
-$$\HLTEQ[white]{P(a< X\leq b)= F_X(b)-F_X(a)= \int_a^b f_{X}(x) dx.}$$\vspace{-.2in}
+$$\HLTEQ[white]{\displaystyle P\left(\HLTY{a}< X\leq \HLTEQ[amethyst!40]{b}\right)= \HLTEQ[babyblue!35]{F_{_X}\left( \HLTEQ[amethyst!40]{b}\right)-F_{_X}\left(\HLTY{a}\right)}= \int\limits_{\HLTY{a}}^{ \HLTEQ[amethyst!40]{b}} f_{X}(x) dx.}$$\vspace{-.2in}
 }
 
 \end{frame}
@@ -438,7 +468,7 @@ Is it ture that a random variable must be continuous if its support is $\R$?
 }\\
 \vspace{.2in}
 \qBoxCol{lightBrownOne}{{\bf Question: }
-Is it possible for a continuous random variable to have a finite support?
+Is it possible for a continuous random variable to have a  support that has finitely many points?
 }
 \end{frame}
 
@@ -529,12 +559,12 @@ If $X$ is a continuous random variable then,
 \qbx[4.5in]{amethyst!40}{
 \Exmpl{amethyst}{}  Suppose that $X$ is a continuous random variable whose probability density function is given by
 $$ f(x):= \begin{cases} 
- C(4x-2x^2) & \text{ if } 0 <x<2\\
+\HLTEQ[babyblue!20]{ \HLTY{C}(4x-2x^2) }& \text{ if } 0 <x<2\\
 0 & \text{ otherwise.} 
 \end{cases}$$
 \vspace{-.1in}
 \begin{enumerate}[a).]
-\item What is the value of C?
+\item What is the value of \HLTY{C}?
 \item Find $P(X>1)$.
 \end{enumerate}
 }\\
@@ -859,18 +889,23 @@ $$ f(x):= \begin{cases}
 \vspace{-.1in}
 \define{Percentiles}{
 Let $p$ be a number between 0 and 1. The $(100)^{\text{th}}$ percentile of the distribution of a continuous random variable X, we shall denote by c, is that value for which
-$$ F(c)= p$$
-i.e. $c= F^{-1}(p)$.
+$$ \HLTW{ \displaystyle F\left(\HLTY{c}\right)= \HLTEQ[amethyst!30]{p}}$$
+i.e. $\HLTW{\HLTY{c}= F^{-1}\left(\HLTEQ[amethyst!30]{p}\right)}$.
 where $F^{-1}(\cdot)$ is the inverse cumulative distribution function.
 }
+\end{frame}
 
-\qBrd{babyblue!50}{
-Special percentiles:
+
+\begin{frame}{Three Special Percentiles}
+
+\qbx{antiquefuchsia!60}{
+\vspace{.1in}
 \begin{enumerate}
-\item The median of a continuous distribution, denoted by m, is the 50th percentile. So $m$ satisfies  $m = F^{-1}(0.5)$.
-\item The first and the third quartiles can be computed as $Q_1=  F^{-1}(0.25)$
-\item The third and the third quartiles can be computed as $Q_3=  F^{-1}(0.75)$
+\qBrd[3.8in]{amber!40}{\item[\sqBullet{amber}]  \qBrd[.8in]{amber!70}{Median}The median of a continuous distribution, denoted by m, is the 50th percentile. So $m$ satisfies\vspace{-.1in}  $$\HLTW{m = F^{-1}(0.5)}\vspace{-.2in}$$}\\\vspace{.1in}
+\qBrd[3.5in]{teal!30}{\item[\sqBullet{teal}]   \qBrd[1in]{teal!50}{First Quartile} The first  quartile is defined to be \vspace{-.1in} $$\HLTW{Q_1=  F^{-1}(0.25)}\vspace{-.2in}$$}\\\vspace{.1in}
+\qBrd[3.5in]{applegreen!40}{\item[\sqBullet{applegreen}]   \qBrd[1 in]{applegreen!70}{Third Quartile}  The  third quartile is defined to be \vspace{-.1in} $$\HLTW{Q_3=  F^{-1}(0.75)}\vspace{-.2in}$$}
 \end{enumerate}
+\vspace{.1in}
 }
 
 \vspace{.2in}
@@ -1245,7 +1280,7 @@ $$ f(x):= \begin{cases}
 }\\
 %\pause
 {\tiny 
- \qBrd[4.4in]{olive!40}{
+ \qBrd[4.63in]{olive!20}{
  \begin{eqnarray*}
 E(e^X)
 & =& \int_{-\infty}^{\infty}e^x f(x) dx\\

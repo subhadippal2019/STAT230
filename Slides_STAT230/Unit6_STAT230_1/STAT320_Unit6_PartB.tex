@@ -212,7 +212,37 @@
 
 
 %\section{A Few Widely Used Continuous Probability Distributions}
-%\TransitionFrame[airforceblue]{\Large A Few Widely Used Continuous Probability Distributions  }
+\TransitionFrame[airforceblue]{\Large Reminder: Some Popular Integrals }
+
+%\section{}
+\begin{frame}
+\qBrd[4.6in]{teal!50}{
+\begin{center}
+\qBrd[4in]{camel!50}{  $\displaystyle \int  x^n dx =\frac{x^{n+1}}{n+1} $ for any integer $n$,  $n\neq -1$.}
+ \qBrd[1.9in]{tearose(rose)!50}{ $\displaystyle \int  \frac{1}{x} dx =\log(x)$}\qBrd[1.9in]{carolinablue!50}{$\displaystyle \int  e^{-x} dx =-e^{-x} $.}
+\qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  e^{mx} dx =\frac{e^{mx}}{m} $ for any nonzero real number  $m \in \R$,  $m\neq 0$.}
+\end{center}
+\vspace{-.2in}
+{\tiny* Note: We have not included the constant term that appears as a constants while writing a indefinite integral. For the majority, if not all,  of the integras in this course will be a definite integrals with a lower and upper limit.   }
+}
+
+\qBrd[4.6in]{babyblueeyes!90}{\tiny 
+Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;\HLTY{g(x)}}{dx}}$ for the following formula
+\begin{itemize}
+\item[]%$ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \frac{d\;\HLTY{f(x)}}{dx}  g(x) + f(x) \frac{d\;\HLTY{g(x)}}{dx}$ 
+\qBrd[4in]{candypink!50}{ \HLTW{\text{Integral By Parts:}} \tiny $\displaystyle  \int f(x)g(x)dx= f(x)\HLTW{ \left( \int g(x)dx\right)}- \int \left\{ f'(x) \HLTW{ \left( \int g(x)dx\right)} \right\} dx   $}
+\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \displaystyle \int \left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}dx =c_1 \int  f(x) dx +c_2\int g(x)dx $ for any constant $c_1,c_2\in  \R$.}
+%\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{f(g(x))\right\}=f'(g(x))g'(x)$. } 
+\end{itemize}
+\vspace{0.05in}
+}
+
+\end{frame}
+
+\begin{frame}{Example}
+
+\end{frame}
+
 
 \section{Uniform Distribution}
 \TransitionFrame[amber]{\Large Uniform Distribution }
@@ -273,7 +303,7 @@ Let $X\sim \text{Uniform}(a,b)$ for $a<b$
 $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
 \HLTW{E(X)=  \frac{a+b}{2}} \vspace{.2in}},  \qBrd[1.5in]{amethyst!50}{\text{Variance}\\\HLTW{\text{VAR}(X)= \frac{(b-a)^2}{12}   }\vspace{.2in}}  , \qBrd[1.9in]{amethyst!50}{\text{MGF}\\\HLTW{\text{M}_{_X}(t)=\begin{cases} 
  \frac{e^{tb}- e^{ta}}{t(b-a)} & \text{ if } t\neq 0 \\
- 1 & \text{ if } t\neq 0  
+ 1 & \text{ if } t= 0  
  \end{cases} }} } $
 %}
 
@@ -292,7 +322,7 @@ $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
 Uniform$(a,b)$ &$ [a, b]$ & $ f(x)=\begin{cases} \frac{1}{b-a} & \text{ if } x\in [a,b]\\ 0 & \text{ otherwise .} \end{cases} $ & $  \frac{a+b}{2}  $  & $  \frac{(b-a)^2}{12}$&   $M_{_X}(t)
 =\begin{cases} 
  \frac{e^{tb}- e^{ta}}{t(b-a)} & \text{ if } t\neq 0 \\
- 1 & \text{ if } t\neq 0  
+ 1 & \text{ if } t= 0  
  \end{cases}$\\
  & & & & & \\
  \hline
@@ -306,15 +336,14 @@ Uniform$(a,b)$ &$ [a, b]$ & $ f(x)=\begin{cases} \frac{1}{b-a} & \text{ if } x\i
 
 
 
-\begin{frame}\frametitle{Example}
-\tiny
-\vspace{-.1in}
+\begin{frame}
+\vspace{-.01in}
 \qbx[4.6in]{apricot!40}{
 \Exmpl{apricot}{} The time (in min) for a lab assistant to prepare the equipment for a certain experiment is believed to have a uniform distribution with a = 25 and b = 35.
 \begin{enumerate}[a).]
 \item Write the pdf of X and sketch its graph.
 \item What is the probability that preparation time exceeds 33 min?
-\item What is the probability that preparation time is within 2 min of the mean time?
+\item What is the probability that preparation time is within 2 minmutes of the {\bf mean time}?
 \end{enumerate}
 }\\
 \vspace{2.1in}
@@ -335,7 +364,7 @@ Uniform$(a,b)$ &$ [a, b]$ & $ f(x)=\begin{cases} \frac{1}{b-a} & \text{ if } x\i
 \begin{enumerate}[a).]
 \item Write the pdf of X and sketch its graph.
 \item What is the probability that preparation time exceeds 33 min?
-\item What is the probability that preparation time is within 2 min of the mean time?
+\item What is the probability that preparation time is within 2 minmutes of the {\bf mean time}?
 \end{enumerate}
 }\\
 %\pause
@@ -375,7 +404,7 @@ Uniform$(a,b)$ &$ [a, b]$ & $ f(x)=\begin{cases} \frac{1}{b-a} & \text{ if } x\i
  & = &   P(30-2<X<30+2)\nonumber\\
 & = &   P(28<X<32)\nonumber\\
 & = &  \int_{28}^{32} f(x) dx\nonumber\\
-& = &  (\frac{x}{10})\Big \vert_{28}^{32}\nonumber\\
+& = & \left(\frac{x}{10}\right)\Big \vert_{28}^{32}\nonumber\\
  & =&  \frac{32-28}{10}\nonumber\\
   & =&0.4\nonumber
  \end{eqnarray}
@@ -597,18 +626,94 @@ breakdown?
 
 
 \section{Gamma Distribution}
+
+\TransitionFrame[bittersweet]{\Large $\HLTW{\Gamma\left(\alpha \right)}$, {\tiny for $\alpha>0$}\\The Gamma Function }
+
+
+\begin{frame}\frametitle{Gamma Function, $\Gamma(\alpha), \alpha>0$}
+
+ \qBrd[4in]{camel!50}{ \sqBullet{brown}  $\HLTW{ \HLTY{\Gamma\left( \alpha\right)}:= \displaystyle \int\limits_{0}^{\infty}  x^{\alpha-1}e^{-x} dx }$ for $\alpha>0$.}
+ 
+% \begin{itemize}
+%\qBrd[2in]{babyblue!40}{ \item  $\HLTY{\Gamma(\alpha)}>0$ for all $\alpha>0$.}
+%
+%\qBrd[1.6in]{brightube!40}{ \item  $\HLTY{\Gamma(\frac{1}{2})}= \sqrt{\pi}$.}
+%
+%\qBrd[1in]{cadetgrey!40}{ \item $\HLTY{\Gamma(1)}= 1$}
+% \end{itemize}
+% \vspace{.3in}
+% 
+%\begin{itemize}
+%\qBrd[3.5in]{applegreen!40}{ \item  $\displaystyle \HLTY{ \Gamma(\alpha)}=\HLTW{ (\alpha-1) \HLTY{\Gamma(\alpha-1)}}$ for any $\HLTW{\alpha>1}$}
+%
+%\vspace{.05in}
+%\qBrd[3.5in]{olive!40}{ \item$\HLTY{\Gamma(n)}= \HLTW{(n-1)!}$ when $n$ is a positive integer.}
+%\end{itemize}
+\vspace{2in}
+\end{frame}
+
+
+\begin{frame}
+\begin{itemize}
+\qBrd[2in]{babyblue!40}{ \item[\sqBullet{babyblue}]  $\HLTY{\Gamma(\alpha)}>0$ for all $\alpha>0$.}\\
+\vspace{.2in}
+
+\qBrd[1.6in]{brightube!50}{ \item[\sqBullet{brightube}]   $\HLTY{\Gamma(\frac{1}{2})}= \sqrt{\pi}$.}
+
+\qBrd[1in]{cadetgrey!40}{ \item[\sqBullet{cadetgrey}]   $\HLTY{\Gamma(1)}= 1$}
+ \end{itemize}
+ \vspace{.3in}
+ 
+\begin{itemize}
+\qBrd[2.9in]{applegreen!40}{ \item[\sqBullet{applegreen}]  $\displaystyle \HLTY{ \Gamma(\alpha)}=\HLTW{ (\alpha-1) \HLTY{\Gamma(\alpha-1)}}$ for any $\HLTW{\alpha>1}$}
+
+\vspace{.05in}
+\qBrd[3.5in]{olive!40}{ \item[\sqBullet{olive}] $\HLTY{\Gamma(n)}= \HLTW{(n-1)!}$ when $n$ is a positive integer.}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Gamma Function: Example}
+
+ \qBrd[4.7in]{amethyst!40}{   \sqBullet{amethyst}  $\HLTW{  \displaystyle \int\limits_{0}^{\infty}  x^{7}e^{-x} dx }=$ }
+ \vspace{.8in}
+ 
+  \qBrd[4.7in]{ceil!40}{   \sqBullet{ceil} $\HLTW{  \displaystyle \int\limits_{0}^{\infty}  x^{\frac{5}{2}}e^{-3x} dx }=$ }
+
+  
+   \vspace{1in}
+\end{frame}
+
+\begin{frame}\frametitle{Gamma Function: Example}
+
+  \qBrd[4.7in]{olive!40}{   \sqBullet{olive}  $\HLTW{  \displaystyle \frac{\Gamma\left( 9.1\right)}{\Gamma\left( 7.1\right)}}=$ }
+   \vspace{1in}
+  
+   \qBrd[4.7in]{applegreen!40}{ \sqBullet{applegreen}   Let $\alpha>0$,  $\HLTW{  \displaystyle \frac{\Gamma\left( \alpha+3\right)}{\Gamma\left( \alpha\right)}}=$ }
+   \vspace{1in}
+\end{frame}
+
+
+
+
+
+
+
 \TransitionFrame[amber]{\Large Gamma Distribution }
 \begin{frame}
 \define{Gamma Distribution}{
 The gamma random variable X describes waiting times between
 events.  It can be thought of as a waiting time between Poisson
 distributed events, the pdf of a Gamma($\alpha, \lambda$) for $\alpha>0, \lambda>0$ is given as:
-$$  f(x)=\frac{1}{\Gamma(\alpha)}{\lambda^\alpha }x^{\alpha-1}e^{-\lambda x} \text{ for }  0<x<\infty.$$
+$$ \HLTW{\displaystyle  f(x)=\frac{\lambda^\alpha}{\Gamma(\alpha)}{ }x^{\alpha-1}e^{-\lambda x}} \text{ for }  0<x<\infty.$$
 The parameter $\alpha$ is known as the shape parameter,  while $\lambda$ is called  rate parameter.
 }
+\vspace{.1in}
 \qBrd{applegreen!40}{
-Note that: The quantity $\frac{1}{\lambda}$ is referred to as the  rate parameter.
-}
+Note that: The quantity $\lambda$ is referred to as the  rate parameter.
+}\\
+\vspace{.1in}
 \qBrd{teal!40}{
 If $X\sim $ Gamma($\alpha, \lambda$) then 
 $E(X) = \frac{\alpha}{\lambda} \text{ and }, \text{Var}(X) = \frac{\alpha}{\lambda^2}$
@@ -698,6 +803,47 @@ selected day.
 
 
 \section{Beta Distribution}
+
+
+\begin{frame}\frametitle{Beta Function, $\mathscr{B}(\alpha, \beta), \alpha>0, \beta>0$}
+\qBrd[4.7in]{babyblueeyes!50}{\sqBullet{babyblue} $ \HLTW{\displaystyle \int\limits_{0}^{1}  x^{3}(1-x)^{9} dx=} $}
+\vspace{.5in}
+
+ 
+\vspace{2in}
+\end{frame}
+
+\TransitionFrame[bittersweet]{\Large $\HLTW{\mathscr{B}\left(\alpha, \beta \right)} ${\tiny $\alpha>0, \beta>0$}\\The Beta Function }
+
+
+\begin{frame}\frametitle{Beta Function, $\mathscr{B}(\alpha, \beta), \alpha>0, \beta>0$}
+\begin{center}
+\qBrd[4.6in]{cadmiumorange!50}{ $\HLTW{\HLTY{\mathscr{B}\left(\alpha, \beta\right)}:= \displaystyle \int\limits_{0}^{1}  x^{\alpha-1}(1-x)^{\beta-1} dx} $ for $\alpha>0, \beta>0$.}
+ \vspace{.1in}
+ 
+ \qBrd[3.8in]{asparagus!50}{
+ $ \mathscr{B}\left(\alpha, \beta\right)$ is often calculated using the following equation: 
+ $$\HLTW{\displaystyle\HLTY{ \mathscr{B}\left(\alpha, \beta\right)}:= \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}}$$
+ where $\Gamma(\cdot)$ denotes the Gamma function. }
+\end{center}
+\vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Beta Function, $\mathscr{B}(\alpha, \beta), \alpha>0, \beta>0$}
+\qBrd[4.7in]{babyblue!50}{  \sqBullet{babyblue}$ \HLTW{\displaystyle \int\limits_{0}^{1}  x^{3}(1-x)^{9} dx=} $}
+\vspace{.5in}
+
+\qBrd[4.7in]{celadon!50}{ \sqBullet{celadon}  $ \HLTW{\displaystyle \int\limits_{0}^{1}  x^{30}(1-x)^{1.2} dx=} $}
+ 
+\vspace{2in}
+\end{frame}
+
+
+
+
 \TransitionFrame[amber]{\Large Beta Distribution }
 
 \begin{frame}\frametitle{Beta Distribution}
@@ -706,14 +852,15 @@ outcomes. For example, the beta distribution might be used to find
 how likely it is that the preferred candidate for mayor will receive 70\% of the vote.
 \define{Beta Distribution}{
 Probability Density Function of the Beta($\alpha, \beta$), $\alpha>0, \beta>0$  is given as  
-$$  f(x)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1}(1-x)^{\beta-1}\text{ for }  0\leq x\leq 1., $$
+$$  \HLTW{\displaystyle f(x)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1}(1-x)^{\beta-1}}\text{ for }  0\leq x\leq 1., $$
 where  $\Gamma(\alpha)$ is defined by $\Gamma(\alpha)= \int_{0}^{\infty} x^{\alpha-1}e^{-x} dx$.
 }
-
+\vspace{.1in}
 \qBrd{teal!40}{
 If $X\sim $ Beta($\alpha, \beta$) then 
-$E(X) = \frac{\alpha}{\alpha+\beta} \text{ and }, \text{Var}(X) = \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)}$
+$\HLTW{E(X) = \frac{\alpha}{\alpha+\beta} } \text{ and }, \HLTW{\text{Var}(X) = \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)}}$
 }
+\vspace{.5in}
 \end{frame}
 
 
@@ -724,7 +871,7 @@ $E(X) = \frac{\alpha}{\alpha+\beta} \text{ and }, \text{Var}(X) = \frac{\alpha \
 \begin{frame}
 \qBrd[4.6in]{ceil!50}{
 \begin{center}
-Let $X\sim \text{Beta}(\alpha, \beta)$ for $\alpha>0, \beta>0$
+Let $\HLTW{X\sim \text{Beta}(\alpha, \beta)}$ for $\HLTW{\alpha>0, \beta>0.}$
 \end{center}
 }\\
 \vspace{.5in}
@@ -747,7 +894,7 @@ $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
  \hline \hline
  & & & & & \\
  $\text{Beta}(\alpha, \beta )$&$ (0, 1)$ & $   \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(
- \beta)}x^{\alpha-1}x^{\beta-1}  $ & $\frac{\alpha}{\alpha+\beta}  $  & $ \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)} $&   $ {}\text{ \tiny  } $\\
+ \beta)}x^{\alpha-1}x^{\beta-1}  $ & $\frac{\alpha}{\alpha+\beta}  $  & $ \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)} $&   $ --- $\\
  $\HLTW{\text{shape1}= \alpha, \text{shape2}}= \beta$ & & $\text{ if } 0<x<1$ & & & \\
  \hline
   \hline
@@ -764,7 +911,7 @@ $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
 
 
 \section{Normal Distribution}
-\TransitionFrame[amber]{\Large Normal Distribution }
+\TransitionFrame[amber]{\Huge Normal Distribution }
 
 
 
