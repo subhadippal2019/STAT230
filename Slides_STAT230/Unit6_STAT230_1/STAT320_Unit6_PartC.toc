@@ -1,3 +1,3 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{$\Phi (\cdot ): $ Standard Normal CDF}{2}{0}{1}
-\beamer@sectionintoc {2}{Normal Distribution}{3}{0}{2}
+\beamer@sectionintoc {2}{Normal Distribution}{6}{0}{2}
