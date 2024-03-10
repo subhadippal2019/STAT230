@@ -1,0 +1,575 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+\usepackage{fdsymbol}
+\usepackage{latexcolors}
+\usepackage{mathrsfs}
+%\NewDocumentCommand{\support}{O{ }}{{\mathcal{S}}_{_{#1}}}
+%\NewDocumentCommand{\support}{O{ }}{{\mathbb{S}}_{_{#1}}}
+%\newcommand{\SampleS}{\mathcal{S}}
+\newcommand{\SampleS}{\mathscr{S}}
+\newcommand{\Not}[1]{\overline{#1}}
+\newcommand{\Center}[1]{{\begin{center}#1 \vspace{-.2in}
+\end{center}}}
+\newcommand{\Exmpl}[2]{\qBrd[0.75in]{#1}{Example #2:}}
+\newcommand{\pmf}{p}
+\newcommand{\binP}{\pi}
+
+ \begin{document}
+ 
+\title{}%replace X with the appropriate number
+\author{} %if necessary, replace with your course title
+%\date{ $ 26^{th} $ August, 2019}
+\date{}
+% \maketitle\vspace{-.in}
+ \noindent
+% \TextInBox{6 in }{Name: \vspace{.22 in}}\\
+%\; \TextInBox{6.05 in }{ Enrolled As: \MCOption[1.2in]{PHD Student} \MCOption[1in]{RA}\MCOption[1 in]{TA}}\\
+\TextInBox{6 in }{ 
+
+  }\\
+ \vspace{.4in}
+ 
+ 
+ 
+
+%
+%\DefBoxOne{}{
+%\begin{center}\color{black}
+%Part I:  Short answer type questions.
+%\end{center}
+%}
+
+
+%\DefBoxOne{Notations}{
+%$$ \Onebf_k=\left[ \begin{array}{c}1\\1\\\vdots \\1\end{array}\right]_{k\times 1} \text{ , }  J_{k}=\left[ \begin{array}{cccc}1&1 & \cdots & 1\\1& 1& \cdots&  1\\\vdots & \vdots & \ddots  &\vdots \\1& 1 &\cdots & 1\end{array}\right]_{k\times k} \text{ and } I_{k}=\left[ \begin{array}{cccc}1&0 & \cdots & 0\\0& 1& \cdots&  0\\\vdots & \vdots & \ddots  &\vdots \\0& 0 &\cdots & 1\end{array}\right]_{k\times k} \text{ for } k\in \Z_{+}.   $$
+%
+%}
+
+
+\vspace{-.2in}
+\DefBoxOne{}{
+\begin{center}\color{black}
+\Large A Few Problems Aiming the Midterm Exam
+\end{center}
+}
+
+
+\vspace{.2in}
+
+\begin{enumerate}
+\qbx[6.3in]{teal!40}{\item   An airline has four flights (4 flight numbers) from New-York to California and five flights  (5 different flight numbers ) from California to
+Hawaii per day.  If the flights are to be made on separate days, how many different flight
+arrangements can the airline offer from New-York to Hawaii?}\\
+
+\vspace{2in}
+
+
+\qbx[6.4in]{amethyst!40}{
+\item A car manufacturer provides cars with the following different variations:
+\begin{itemize}
+\item Manual or automatic transmission
+%\item  With or without air conditioning
+\item  Three different stereo systems
+\item Four possible exterior colors
+\end{itemize}
+How many different types of car the manufacturer sells?
+}\\
+\vspace{2in}
+
+
+
+
+
+
+
+\qbx[6.4in]{babyblue!60}{ \item  How many different numbers can be constructed using a 64 bits binary digits? 
+} \\
+\vspace{2in}
+
+
+
+
+
+
+
+\qbx[6.4in]{cherryblossompink!50}{
+\item A typical lisence plate number in Abu-Dhabi consists of 5 digits.  How many different lisence plate numbers (excluding `00000') are possible that esnds with 2 ? 
+}\\
+
+
+\vspace{2in}
+
+%\qbx[6.4in]{bluebell!40}{\item 
+%How many different batting orders are possible for a cricket team consisting of 11 players?}\\
+
+\qbx[6.4in]{cambridgeblue!50}{\Exmpl{cambridgeblue}{}
+How many different ``words" ({\tiny sequence of three letters that may or may not be dictionary words}) can you make with the letters
+\HLTW{\text{"MISSISSIPPI"}}?}\\
+\vspace{2in}
+
+
+
+
+\qbx[6.4in]{carnationpink!50}{\item 
+A class in probability theory consists of \HLTW{ \text{10 men}} and \HLTW{\text{ 8 women}}.  An examination is given, and the students are ranked
+according to their performance. Assume that no two students
+obtain the same score.
+\begin{enumerate}
+\item[a).] How many different rankings are possible?
+\item[b).]  Assuming equally likeli setup, what is the probability a Female student appears to be first rank.  
+\end{enumerate}}\\
+
+\vspace{2in}
+
+
+
+\qbx[6.4in]{apricot!40}{\item 
+An investor has 20 thousand dollars to invest among 4 possible investments.  Each investment must be in units of a thousand dollars. If the total 20 thousand is to be invested, 
+\begin{enumerate}
+\item how many different investment strategies are possible?
+\item  how many different investment strategies are possible  if not all the money need be invested?
+\end{enumerate}    
+}\\
+\vspace{2in}
+
+
+
+\qbx[6.4in]{teal!40}{\item 
+ 12  identical balls are distributed among 4 kids. Assuming all possible of number of distributions of the balls are equally likely, idensity the following probabilities.  What is probability that each of the  kids obtains one ball or more?
+}\\
+\vspace{2in}
+
+
+
+
+\qbx[6.4in]{bronze!40}{
+\item A smoke detector system uses two devices, A and B. If smoke is present, the probability that
+it will be detected by device \HLTY{A} is \HLTW{0.95}; by device \HLTY{B},\HLTW{0.90}; and assume that both the devices work independently. 
+\begin{enumerate}
+\item If smoke is present, find the probability that the smoke will be \HLTW{\text{detected by either device A or B, or both devices.}}
+\item Find the probability that the smoke will be undetected.
+\end{enumerate}
+ }\\
+\vspace{2in}
+
+
+
+
+
+\qbx[6.4in]{bronze!40}{
+\item A smoke detector system uses two devices, A and B. If smoke is present, the probability that
+it will be detected by device \HLTY{A} is \HLTW{0.95}; by device \HLTY{B},\HLTW{0.90}; and by both devices, \HLTW{0.88}.
+\begin{enumerate}
+\item If smoke is present, find the probability that the smoke will be \HLTW{\text{detected by either device A or B, or both devices.}}
+\item Find the probability that the smoke will be undetected.
+\end{enumerate}
+ }\\
+ \vspace{3.5in}
+ 
+ 
+ 
+ 
+ 
+ \qbx[6.4in]{babyblue!40}{
+\Exmpl{babyblue!50}{} Suppose that A and B are mutually exclusive events for which \HLTW{P(A) =0 .3} and \HLTW{P(B) = 0.5}. What is the probability that 
+\begin{enumerate}
+\item either A or B occurs?
+\item A occurs but B does not?
+\item both A and B occur?
+\end{enumerate}
+ }\\
+ \vspace{3in}
+ 
+ 
+ \qbx[6.4in]{airforceblue!40}{
+\item  A car repair can be performed either on time or late and either satisfactorily or unsatisfactorily. The probability
+of a repair being on time and satisfactory is 0.26. The
+probability of a repair being on time is 0.74. The
+probability of a repair being satisfactory is 0.41. What is
+the probability of a repair being late and unsatisfactory?
+ }\\
+ \vspace{4in}
+ 
+ 
+ 
+ \qbx[6.4in]{olive!40}{
+Let $A, B$ be two events such that  $$P(A) = \frac{2}{3} \text{ and } P(\Not{B}) = \frac{1}{4}.$$Can A and B be disjoint? Explain.}\\
+ 
+ \vspace{3in}
+ 
+ 
+
+\qbx[6.4in]{purple!30}{\item  A fair-dice is thrown 8 times and all the the 8 numbers  that appear are recorded.  
+\begin{enumerate}
+\qBrd[4in]{applegreen!40}{ \item What is the probability that there is  no $\HLTW{Six}$?}
+\qBrd[4in]{babyblue!40}{ \item What is the probability that there is at least one $\HLTW{Six}$?}
+\qBrd[4in]{amber!40}{ \item What is the probability that there will  be exactly 3 $\HLTW{Four}$'s and 2 $\HLTW{Three}$'s among the eight throws?}
+\end{enumerate}
+\vspace{.05in}
+} \\
+\vspace{4in}
+
+\qbx[6.4in]{amber(sae/ece)!40}{\item
+A typical ATM pin consists of 4 digits.  Assume that all the integers between $0$ to $9$ are equally likely for selecting each of the digits. Find the probability of the following events. 
+\begin{enumerate}
+\item What is the probability that all the four digits of a randomly selected ATM pin is different?
+\item *The bank has selected a group of 120 ATM users randomly.  What is the probability that atleast two of the users have exact same ATM pin? {\tiny Assume that all the possible four digit numbers  are equally likely to be considered as a PIN of a randomly selected user. }
+\item *What would be corresponding probability if 175 ATM users are  randomly chosen instead?
+\end{enumerate}  }\\
+\vspace{3in}
+
+
+\qbx[6.4in]{capri!40}{
+\item   A card is selected randomly from the deck of 52 cards.
+\begin{itemize}
+\item Let $A$ be the event that the card is an `Ace'.
+\item  Let $B$ be the event that the card is either  `King' or a 'Queen'.
+\item  Let $C$ be the event that the card is  `Diamonds'.
+\end{itemize}
+ \begin{enumerate}
+ \item Is the events $A$ and $B$ statistically independent? (Justify your answer)
+  \item Is the events $B$ and $c$ statistically independent? (Justify your answer)
+ \end{enumerate}
+}\\
+\vspace{3in}
+ 
+ \qbx[6.4 in]{teal!30}{\item  If two events, A and B, are such that $P( A)=0.6$, $P(B)=0.2$, and $P( A\cap B)= 0.1$, find the following
+\begin{enumerate}
+\item $P(A\mid B)$
+\item $P(B\mid A)$
+\item $P(A\mid A\cup B)$
+\end{enumerate}
+ }\\
+ \vspace{2in}
+ 
+ 
+ \qbx[6.4in]{applegreen!30}{\item  An insurance company believes that people can be divided into two classes: those who are accident prone and those who are not. 
+The companys statistics show that an accident-prone person will have an accident at some time within a fixed 1-year period with probability $0.4$, whereas this probability is $0.2$ for a person who is not accident prone.  If we assume that $30\%$
+ of the population is accident prone, what is the probability
+that a new policyholder will have an accident within a year of
+purchasing a policy?
+}\\
+ \vspace{2.5in}
+ 
+ 
+ 
+\qbx[6.4in]{amethyst!40}{
+An insurance company believes that people can be divided into two classes: those who are accident prone and those who are not. 
+The companys statistics show that an accident-prone person will have an accident at some time within a fixed 1-year period with probability $0.4$, whereas this probability is $0.2$ for a person who is not accident prone.  If we assume that $30\%$
+ of the population is accident prone. \\
+ Suppose that a new policyholder has an accident within a year of purchasing a policy. What is the probability that he or she is accident prone?
+}\\ \vspace{2.5in}
+
+\qbx[6.4in]{babyblue!40}{
+\item   Suppose that we toss 2 fair dice. Let $E_1$ denote the
+event that the sum of the dice is 6 and F denote the event that the
+first die equals 4.  Is $E_1$ statistically independent of $F$?\\
+}\\ \vspace{2.5in}
+
+\qbx[6.4in]{teal!40}{ \item  If two events $A$, and $B$ are statistically independent, then 
+\begin{enumerate}
+\item  $A$ and $\Not{B}$ are also statistically independent, 
+\item  $\Not{A}$ and ${B}$ are also statistically independent. 
+\item  $\Not{A}$ and $\Not{B}$ are also statistically independent. 
+\end{enumerate}
+}\\ \vspace{2.5in}
+
+\qbx[6.4 in]{amethyst!40}{
+\item   If A and B are independent events with \HLTW{P( A) = 0.5} and \HLTW{P( B) = 0.2}, find the following:
+\begin{enumerate}
+\qBrd[.75in]{applegreen!30}{\item $P(A\cap B)$}\hspace{.1in}
+\qBrd[.75in]{amber!30}{\item $P(A\cup B)$}\hspace{.1in}
+\qBrd[.75in]{applegreen!30}{\item $P(\Not{A}\cap \Not{B})$}\hspace{.1in}
+\qBrd[.75in]{amber!30}{\item $P(\Not{A}\cup \Not{B})$}\hspace{.1in}
+\end{enumerate}
+}\\
+
+ \vspace{2.5in}
+\qbx[6.4 in]{amber!40}{\item 
+A diagnostic test for a disease is such that it (correctly) detects the disease in 92\% of the individuals who actually have the disease. Also, if a person does not have the disease, the test will report that he or she does not have it with probability 0.9. Only 2\%  of the population has the
+disease in question. If a person is chosen at random from the population and the diagnostic test
+indicates that she has the disease, what is the conditional probability that she does, in fact, have
+the disease? Are you surprised by the answer? Would you call this diagnostic test reliable?}\\
+ \vspace{3.5in}
+ 
+ 
+ \qbx[6.4in]{airforceblue!30}{\item
+After production, an electrical circuit is given a quality
+score of A, B, C, or D. Over a certain period of time,
+$77\%$ of the circuits were given a quality score A,
+$11\%$ were given a quality score B, $7\%$ were given a
+quality score C, and $5\%$ were given a quality score D.
+Furthermore, it was found that $2\%$ of the circuits given a
+quality score A eventually failed, and the failure rate was
+$10\%$ for circuits given a quality score B, $14\%$ for circuits
+given a quality score C, and $25\%$ for circuits given a
+quality score D.
+\begin{enumerate}
+\item If a circuit did not fail, what is the probability that it
+had received a quality score A?
+\item If a circuit failed, what is the probability that it had
+received a quality score either C or D?
+\end{enumerate}
+}\\
+ \vspace{2.5in}
+
+\qbx[6.4 in]{antiquefuchsia!40}{\item    We know the following about a colormetric method used to test lake water for nitrates. If
+water specimens contain nitrates, a solution dropped into the water will cause the specimen to
+turn red 95\% of the time. When used on water specimens without nitrates, the solution causes
+the water to turn red 10\% of the time (because chemicals other than nitrates are sometimes
+present and they also react to the agent). Past experience in a lab indicates that nitrates are
+contained in 30\%of the water specimens that are sent to the lab for testing. If a water specimen is randomly selected
+\begin{enumerate}
+\item from among those sent to the lab, what is the probability that it will turn red when tested?
+\item It it turns red when tested, what is the probability that it actually contains nitrates?
+\end{enumerate}
+}\\ \vspace{3in}
+
+\qbx[6.4in]{teal!40}{
+\item  Four radar sets, operating independently, are set to detect any aircraft flying through a certain area.  Each set has a probability of $.95$ to correctly detect a plane in its area. If an aircraft enters the area, what is the probability that it
+\begin{enumerate}
+\item goes undetected?
+\item is detected by at least one  radar set?
+\item is detected by exactly 2 radars?
+\item is detected by at least  2 radars?
+\end{enumerate}
+}\\
+ \vspace{3in}
+ 
+ 
+ 
+ 
+\qbx[6.4in]{brightube!40}{\item 
+Consider 6 tosses of a fair coin.  {\tiny For example, two typical sequences of outcomes that are considered different is  $\HLTW{`HTTTTT'}$, and $\HLTW{`THTTTT'}$.}
+\begin{enumerate}
+\item What is the probability that there are be exactly 2 Heads ?
+\item What is the probability that there are be exactly 4 Heads ?
+\item What is the probability that there are no Heads?
+\item What is the probability that there is at least one Tail?
+\end{enumerate} 
+}\\
+ \vspace{4in}
+ 
+ 
+\qbx[6.4in]{amethyst!40}{
+\item  If $A$ and $B$ are two  events such that $P(A)>0$ and $P(B>0)$ then, 
+\begin{enumerate}
+\item If the events A and B are Statistically Independent then they can not be disjoint./mutually exclushive. 
+\item If the events A and B are disjoint then they can not be statistically independent. 
+\end{enumerate}
+   }  \\
+    \vspace{3in}
+   
+   \qBrd[6.4in]{airforceblue!30}{
+\item 
+Suppose a random variable $X$ has the following support $\support[X]= \{1, 2,3, 4, 5\}$. 
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline\hline
+x    & 1    & 2    & 3 & 4& 5    \\ \hline\hline
+$\pmf_{_X}(x)$ &$ \frac{1}{5}$ & $ \frac{2}{5}$  &$ \frac{1}{10}$  & \HLTY{ c} &$ \frac{1}{10}$   \\ \hline\hline
+\end{tabular}
+\end{center}
+\begin{enumerate}
+\item What is the value of \HLTY{ c} so that $\pmf_{_X}(x)$ become a valid probability mass function on the support $\support[X]$?
+\item What is the probability that $X\in A$, where the event $A=\{2, 4\}$.
+\item  What is the expected value of the random variable?
+\end{enumerate}
+}\\
+ \vspace{3in}
+
+\qbx[6.4in]{amethyst!50}{
+\item  If X be a discrete random variable on the support $\support[X]=\{1, 2, 3, 4\}$ with the corresponding  pmf specified as  
+$\pmf_{_X}(1)= \frac{1}{4}, \pmf_{_X}(2)= \frac{1}{2}, \pmf_{_X}(3)= \frac{1}{8}$, and $\pmf_{_X}(4)= \frac{1}{8}$. Calculate the Expected value  of $X$. 
+}\\
+ \vspace{2.5in}
+
+\qbx[6.4in]{olive!50}{\item 
+The probability distribution of $X$, the number of daily network blackouts is given by
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\hline
+$x\in \support[X]$    & 0    & 10    & 40    \\ \hline
+$\pmf_{_X}(x)$ & 0.7 & 0.2 & 0.1 \\ \hline\hline
+\end{tabular}
+\end{center}
+\begin{enumerate}
+\item Find the Expected value,  variance of the random variable {\bf X}.
+\item Find the MGF of the random variable {\bf X}.
+\item Find  $\HLTW{E\left( \frac{1}{2+|{X}|} \right) }$
+\item Find  $\HLTW{E\left( \sqrt{X+1} \right) }$
+\item Find the CDF of the distribution.
+\end{enumerate}
+}\\
+
+ \vspace{2.5in}
+ 
+ 
+ 
+\qbx[6.4in]{ceil!40}{\item 
+Derive the MGF of the Poisson$(\lambda)$ distribution where $\lambda>0$. 
+}\\
+ \vspace{2in}
+
+%\qbx[6.4in]{ceil!40}{\item 
+%Derive Mean of a  Poisson$(\lambda)$ distribution where $\lambda>0$. 
+%}\\
+
+%\qbx[6.4in]{ceil!40}{\item 
+%Derive the Mean/Expected Value   of a Binomial$(n, \binP)$ distribution where $1>\binP>0$, and $n\in \mathbb{Z}_{+}$.  
+%}\\
+
+
+%\qbx[6.4in]{ceil!40}{\item 
+%Derive the Mean/Expected Value   of a Geometric$(\binP)$ distribution where $1>\binP>0$.  
+%}\\
+
+\qbx[6.4in]{ceil!40}{\item 
+Derive the MGF of a Geometric$(\binP)$ distribution where $1>\binP>0$.  
+}\\
+ \vspace{2in}
+
+\qbx[6.4in]{ceil!40}{\item 
+Derive the MGF of a Poisson$(\lambda)$ distribution where $\lambda>0$.  
+}\\
+ \vspace{2in}
+
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Binomial}(n=50, \binP=0.1)$ then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2) $.
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+ \vspace{2in}
+ 
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Geometric}(\binP=0.2)$ then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2) $.
+\item What is $E(4X+10)$?
+\item  What is Var$(4X+10)$?
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+ \vspace{4in}
+
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Poisson}(\lambda=5)$,  then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2)$
+\item What is $E(3X+50)$?
+\item What is Var$(3X+50)$?
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+ \vspace{3in}
+
+\qbx[6.4in]{apricot!50}{
+\item 
+Of a population of consumers, 60\% are reputed to prefer a particular brand, A, of toothpaste. If a group of randomly selected consumers is interviewed, 
+\begin{enumerate}
+\item what is the probability that {\bf exactly 3 }  people have to be interviewed to encounter the first consumer who prefers brand A?
+\item  what is the probability that {\bf at least }  3 people have to be interviewed to encounter the first consumer who prefers brand A?
+\end{enumerate}	
+}\\
+
+ \vspace{3.5in}
+%\qbx[6.4in]{apricot!50}{
+%\item \vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{0.9e^t}{ 1 - 0.1 e^t}$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \exp{\left(7e^t-7\right)}$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{1}{8}(1 + e^t)^3$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{1}{8}(1 + e^t)^3$,  What is the distribution of $X$? }\\
+%\vspace{.1in}
+%\qBrd[4.5in]{amethyst!30}{ $M_{X}(t)= \frac{8e^t}{ 10 - 2 e^t}$,  What is the distribution of $X$? }\\
+%}\\
+
+\qbx[6.4in]{airforceblue!30}{
+\item 
+Customers arrive at a checkout counter in a department store according to a Poisson distribution at an average of seven per hour. 
+\begin{enumerate}
+\item During a given hour, what are the probabilities that no more than two customers arrive?
+\item During a given hour, what are the probabilities that exactly five customers arrive?
+\item During a {\bf given two hours period}, what are the probabilities that exactly 6 customers arrive?
+\end{enumerate}
+}\\
+ \vspace{3.5in}
+%
+%\qbx[6.4in]{teal!30}{
+%\item 
+%Suppose that a lot of  electrical fuses contains 5\% defectives. If a sample of 8 fuses is tested,  
+%\begin{enumerate}
+%\item find the probability of observing exactly  one defective.
+%\item  find the probability of observing at least one defective.
+%\item What is the expected number of defective fuses?
+%\end{enumerate}
+%}\\
+
+
+\qbx[6.4in]{amber!30}{
+\item 
+On a specific project, an oil exploration firm has decided to allocate the required  finance  for 10 explorations. The probability of a particular exploration being successful is 0.10  .  Assume the explorations are statisticallly independent to each other.
+\begin{enumerate}
+\item Find the mean and variance of the number of successful explorations.
+\item Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior to doing its first exploration. If each successful exploration costs \$30,000 and each unsuccessful
+exploration costs \$15,000, find the expected total cost to the firm for its ten explorations.
+\end{enumerate}
+}\\
+ \vspace{3.5in}
+
+\qbx[6.4in]{amber!30}{
+\item 
+An oil prospector will drill a succession of holes in a given area to find a productive well. The probability that he is successful on a given trial is 0.1.
+\begin{enumerate}
+\item What is the probability that the third hole drilled is the first to yield a productive well?
+\item What is the expected number of drills that are required to get the first productive well?
+\end{enumerate}
+}\\
+ \vspace{3in}
+
+\qbx[6.4in]{amber!30}{
+\item 
+An oil prospector will drill a succession of holes in a given area to find a productive well. The probability that he is successful on a given trial is 0.40.  The company wants to fund  as much drills that are required to obtain 3 productive wells. 
+\begin{enumerate}
+\item What is the probability that the company need 9 drills to obtain the 3 productive wells. 
+\item What is the expected number of drills that are required to get the first productive well?
+\item Suppose the firm require a fixed cost of \$20,000 in preparing equipment prior to doing its first exploration.  If each successful exploration costs \$0,000 and each unsuccessful
+exploration costs \$10,000.  Compute the expected budget that is required to be allocated for the project.
+\end{enumerate}
+}\\
+ \vspace{3in}
+
+%\qbx[6.4in]{amber!30}{
+%\item 
+%On a specific project, an oil exploration firm has decided to allocate the required  finance  for 10 explorations. The probability of a particular exploration being successful is 0.10  .  Assume the explorations are statisticallly independent to each other.
+%\begin{enumerate}
+%\item Find the mean and variance of the number of successful explorations.
+%\item Suppose the firm has a fixed cost of \$20,000 in preparing equipment prior to doing its first exploration. If each successful exploration costs \$30,000 and each unsuccessful
+%exploration costs \$15,000, find the expected total cost to the firm for its ten explorations.
+%\end{enumerate}
+%}\\
+
+
+\qbx[6.4in]{asparagus!30}{
+\item  An airline company have sold 50 tickets of a specific route of flight.  From the past experiences,  the company knows that the probability of a randomly selected customer would cancel ticket is    $2\%$.  Assume that the customers (if cancels ) cancels tickets independently.
+\begin{enumerate}
+\item what is the probability that exactly two customers will cancel their ticket.
+\item What is the expected number of coustomers who may cancel their tickets.  
+\end{enumerate}
+}\\
+ \vspace{3in}
+
+\qbx[6.4in]{babyblue!30}{
+\item A particular sale involves four items randomly selected from a large lot that is known to contain 10\% defectives.  Let Y denote the number of defectives among the 20 sold. The purchaser of the items will return the defectives for repair, and the repair cost is given by $\HLTW{U = 3Y^2 + Y + 2}$.  Find the expected repair cost, $E(U)$.
+}\\
+ \vspace{3in}
+\end{enumerate}
+\end{document}
