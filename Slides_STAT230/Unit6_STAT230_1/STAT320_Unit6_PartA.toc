@@ -2,5 +2,6 @@
 \beamer@sectionintoc {1}{Characterization of any CDF function }{2}{0}{1}
 \beamer@sectionintoc {2}{A Few Common Integrals}{14}{0}{2}
 \beamer@sectionintoc {3}{Continuous Random Variables}{17}{0}{3}
-\beamer@sectionintoc {4}{Expected Value, Variance \& MGF of a Continuous Random Variable }{40}{0}{4}
-\beamer@sectionintoc {5}{A Few Examples }{47}{0}{5}
+\beamer@sectionintoc {4}{Percentiles, Quantiles, and Median}{35}{0}{4}
+\beamer@sectionintoc {5}{Expected Value, Variance \& MGF of a Continuous Random Variable }{41}{0}{5}
+\beamer@sectionintoc {6}{A Few Examples }{48}{0}{6}

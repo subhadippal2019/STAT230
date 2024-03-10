@@ -215,6 +215,21 @@
 %\TransitionFrame[airforceblue]{\Large A Few Widely Used Continuous Probability Distributions  }
 
 
+
+
+\begin{frame}\frametitle{Some Non Trivial Integrals}
+\qBrd[4.6in]{teal!50}{
+\begin{center}
+ \qBrd[4in]{camel!50}{  $\displaystyle \int  x^{\alpha-1}e^{-x} dx $ for $\alpha>0$.}
+\qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  x^{\alpha-1}(1-x)^{\beta-1} dx$ for $\alpha>0, \beta>0$.}
+\qBrd[1.9in]{applegreen!40}{ $\Large \displaystyle \int e^{-x^2} dx$}\qBrd[1.9in]{rose!30}{$\displaystyle  \int  \frac{\sin(x)}{x}dx  $.}
+\end{center}
+\vspace{-.2in}
+{\tiny* Note: We have not included the constant term that appears as a constants while writing a indefinite integral. For the majority, if not all,  of the integras in this course will be a definite integrals with a lower and upper limit.   }
+}
+\vspace{.8in}
+\end{frame} 
+
 \section{$\Phi(\cdot):  $ Standard Normal CDF}
 
 
@@ -247,6 +262,41 @@
  %\end{center}
 \vspace{2in}
 \end{frame}
+
+
+
+%
+%\begin{frame}
+%$\Row{\Col{
+%{\qBrd[1.5in]{applegreen!50}{
+%\Large $\Phi\left(\HLTEQ[rose!30]{1.96}\right)=\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} $ 
+%}},{\qBrd[1.5in]{babyblue!50}{
+%\Large $\Phi\left(\HLTEQ[orange!30]{0.80}\right)=\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} $ 
+%}}, {\qBrd[1.5in]{blue!30}{
+%\Large $\Phi\left(\HLTEQ[lime!30]{1.23}\right)=\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} $ 
+%}}  \vspace{2.2in}},{
+%\includegraphics[scale=.25]{figs/NormalTable1.png}}
+%}$
+%
+%\end{frame}
+%
+%
+%
+%
+%\begin{frame}
+%$\Row{\Col{
+%{\qBrd[1.5in]{applegreen!50}{
+%\Large $\Phi\left(\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}}\right)=\HLTEQ[rose!30]{0.57} $ 
+%}},{\qBrd[1.5in]{babyblue!50}{
+%\Large $\Phi\left(\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} \right)=\HLTEQ[orange!30]{0.90}$ 
+%}}, {\qBrd[1.5in]{blue!30}{
+%\Large $\Phi\left(\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}}\right)=\HLTEQ[lime!30]{0.95} $ 
+%}}  \vspace{2.2in}},{
+%\includegraphics[scale=.25]{figs/NormalTable1.png}}
+%}$
+%
+%\end{frame}
+%
 
 
 
@@ -322,13 +372,33 @@ $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
 \end{frame}
 
 
-\begin{frame}{Intuitive Understanding of the Parameters of a Normal Random Varibles }
+\begin{frame}{The role of the parameters $\mu$ and $\sigma^2$}
 
 \end{frame}
 
 
 
+\begin{frame}{Intuitive Understanding of the Parameters of a Normal Random Varibles }
+\vspace{-.15in}
+\includegraphics[scale=.25]{figs/Normal_SD_interpret.png}
 
+\end{frame}
+
+
+
+\begin{frame}{Calculating Probabilities Using Normal Distribution}
+\vspace{-.1in}
+\includegraphics[scale=.35]{figs/Normal_1.png}
+\vspace{1in}
+\end{frame}
+
+\begin{frame}{Calculating Probabilities Using Normal  Distribution}
+
+\includegraphics[scale=.4]{figs/Normal_2.png}
+\vspace{1in}
+\end{frame}
+
+\TransitionFrame[amber]{\Large Standard Normal Distribution}
 
 \begin{frame}
 \qBrd{amber!20}{\vspace{-.2in}
@@ -338,20 +408,118 @@ $\Row{\qBrd[.9in]{amethyst!50}{\text{Mean}\\
 \vspace{-.1in}
  Normal($0, 1$),(i.e. Normal distribution with mean $\mu=0$ and variance $\sigma^2=1$,) is referred to as the  {\bf  Standard Normal} Distribution. 
 }\\
-\vspace{.1in}
-\qBrd{babyblue!40}{
-\qBrd[1.5in]{babyblue!70}{Z-Transformation } 
- If $X\sim \text{Normal}(\mu, \sigma^2)$ for some $\mu\in \R$ and $\sigma^2>0$ then , 
- $$\DBX{\HLTW{ \Large Z \sim \text{Normal}(0,1) }\text{where } \HLTY{\Large Z= \frac{X-\mu}{\sigma}}}$$
-}
+\includegraphics[scale=.3]{figs/StandardNormal1.png}
 
+\qBrd{babyblue!40}{ \sqBullet{babyblue}The Standard Normal pdf s denoted as:  \qBrd[.5in]{amber!50}{\Large$\phi(x)$}  }
+\vspace{.05in}
+
+\qBrd{amethyst!50}{  \sqBullet{amethyst} The Standard Normal CDF is denoted as: \qBrd[.5in]{amber!50}{\Large$\Phi(x)$}  
+}
+\end{frame}
+
+\begin{frame}
+$\Row{{\includegraphics[scale=.2]{figs/NormalTableDiagram2.png}},{\hspace{.7in}},{\includegraphics[scale=.2]{figs/NormalTableDiagram1.png}}}$
+$\Row{{
+\includegraphics[scale=.29]{figs/NormalTable2.png}},{\hspace{.1in}},{
+\includegraphics[scale=.29]{figs/NormalTable1_entire.png}}}$
+\end{frame}
+
+
+\begin{frame}
+$\Row{\Col{
+{\qBrd[1.5in]{applegreen!50}{
+\Large $\Phi\left(\HLTEQ[rose!30]{1.96}\right)=\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} $ 
+}},{\qBrd[1.5in]{babyblue!50}{
+\Large $\Phi\left(\HLTEQ[orange!30]{0.80}\right)=\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} $ 
+}}, {\qBrd[1.5in]{blue!30}{
+\Large $\Phi\left(\HLTEQ[lime!30]{1.23}\right)=\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} $ 
+}}  \vspace{2.2in}},{
+\includegraphics[scale=.25]{figs/NormalTable1.png}}
+}$
 
 \end{frame}
 
 
 
-\begin{frame}{The role of the parameters $\mu$ and $\sigma^2$}
 
+\begin{frame}
+
+\includegraphics[scale=.3]{figs/NormalTable1.png}
+$\Row{
+{\qBrd[2in]{applegreen!50}{
+\Large $\Phi\left(\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}}\right)=\HLTEQ[rose!30]{0.57} $ \hspace{-.2in}
+}},
+%{\qBrd[1.42in]{babyblue!50}{
+%\Large $\Phi\left(\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} \right)=\HLTEQ[orange!30]{0.90}$  \hspace{-.2in}
+%}},
+{\qBrd[2in]{blue!30}{
+\Large $\Phi\left(\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}}\right)=\HLTEQ[lime!30]{0.95} $ \hspace{-.2in}
+}}}$
+$\Row{
+{\qBrd[2in]{applegreen!50}{
+\Large $\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}}=\Phi^{-1}\left(\HLTEQ[rose!30]{0.57}\right) $ \hspace{-.2in}
+}},
+%{\qBrd[1.42in]{babyblue!50}{
+%\Large $\Phi\left(\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} \right)=\HLTEQ[orange!30]{0.90}$  \hspace{-.2in}
+%}},
+{\qBrd[2in]{blue!30}{
+\Large $\HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}}=\Phi^{-1}\left(\HLTEQ[lime!30]{0.95}\right) $ \hspace{-.2in}
+}}}$
+\end{frame}
+
+
+\begin{frame}
+
+\includegraphics[scale=.3]{figs/NormalTable1.png}
+
+$\Row{
+{\qBrd[2in]{applegreen!50}{
+\Large $\Phi^{-1}\left(\HLTEQ[rose!30]{0.724}\right)=   \HLTY{  \Huge\color{yellow}{?}\hspace{.1in}} $ \hspace{-.2in}
+}},
+{\qBrd[2in]{blue!30}{\Large 
+ $\Phi^{-1}\left(\HLTEQ[lime!30]{0.975}\right)= \HLTY{  \Huge  \color{yellow}{?}\hspace{.1in}} $ \hspace{-.2in}
+}}}$
+\end{frame}
+
+
+\begin{frame}
+\includegraphics[scale=.38]{figs/Phi_Function1}
+\end{frame}
+
+
+\begin{frame}
+\includegraphics[scale=.38]{figs/Phi_Function2}
+\end{frame}
+
+
+
+\begin{frame}
+\includegraphics[scale=.38]{figs/Phi_Function3}
+\end{frame}
+
+
+
+
+
+\TransitionFrame[antiquefuchsia]{\Large Connection between a {\bf Normal($\mu, \sigma^2$),} and {\bf Standard Normal} Distribution}
+
+
+\begin{frame}{How to Calculate Probabilities for a General  Normal Distribution?}
+%\vspace{-.1in}
+\includegraphics[scale=.35]{figs/Normal_1.png}
+\vspace{1in}
+\end{frame} 
+
+
+
+\begin{frame}
+\vspace{.1in}
+\qBrd{amber!40}{
+\qBrd[1.6in]{amber!70}{\Large Z-Transformation } 
+ If $\HLTW{\Large X\sim \text{Normal}(\mu, \sigma^2)}$ for some $\mu\in \R$ and $\sigma^2>0$ then , 
+ $$\DBX{\HLTW{ \Large Z \sim \text{Normal}(\Large 0,1) }\text{where } \HLTY{\displaystyle \Large Z= \frac{X-\mu}{\sigma}}}$$
+}
+\vspace{1in}
 \end{frame}
 
 
@@ -363,9 +531,77 @@ The same is true for the cdf of the standard normal distribution (commonly denot
 \includegraphics[scale=.6]{figs/NormalCDFStandardization.png}
 \end{frame}
 
+\begin{frame}
+\includegraphics[scale=.38]{figs/GenNorm_1}
+\vspace{1.5in}
+\end{frame}
+
+
+\begin{frame}
+\qBrd[4.5in]{amber!60}{
+\vspace{-.25in}
+\begin{center}
+\qBrd[3.5in]{teal!40}{  Let $ X\sim \text{Normal}(\mu, \sigma^2)$,  How to find $\HLTEQ[lime]{p}$ such that  $\HLTW{P(X\leq \HLTY{x})=\HLTEQ[lime]{p}}$ }
+\vspace{.1in}\\
+\qBrd[3.5in]{rose!40}{
+\begin{eqnarray}
+\HLTEQ[lime]{p}= \HLTW{P\left(X\leq \HLTY{x}\right)}
+& =& P\left( X-\mu \leq  \HLTY{x}- \mu \right) \nonumber\\
+& =& P\left( \frac{X-\mu}{\sigma} \leq \frac{ \HLTY{x}- \mu}{\sigma} \right) \nonumber\\
+& =& P\left(\HLTW{Z} \leq \frac{ \HLTY{x}- \mu}{\sigma} \right) \nonumber\\
+& =&\HLTW{ \Phi\left( \frac{ \HLTY{x}- \mu}{\sigma} \right)} \nonumber
+\end{eqnarray}
+}
+\end{center}
+}
+$$\DBX{ \Large \HLTEQ[lime]{p}=  \HLTW{ \Phi\left( \frac{ \HLTY{x}- \mu}{\sigma} \right)  }  }$$
+\vspace{-.1in}
+\end{frame}
 
 
 
+\begin{frame}
+\qBrd[4.5in]{antiquefuchsia!70}{
+\vspace{-.2in}
+\begin{center}
+\qBrd[3.5in]{olive!60}{   $ X\sim \text{Normal}(\mu, \sigma^2)$,  \\How to find $\HLTY{x=?}$ such that  $\HLTW{P(X\leq \HLTY{x})=\HLTEQ[lime]{p}}$ }
+\vspace{.1in}\\
+\qBrd[3.5in]{applegreen!20}{
+\begin{eqnarray}
+\HLTEQ[lime]{p}
+& =&\HLTW{ \Phi\left( \frac{ \HLTY{x}- \mu}{\sigma} \right)}\nonumber\\
+\implies \HLTW{ \Phi^{-1}\left(\HLTEQ[lime]{p} \right)} & =&   \frac{ \HLTY{x}- \mu}{\sigma}  \nonumber\\
+\implies \mu+\sigma \times \HLTW{ \Phi^{-1}\left(\HLTEQ[lime]{p} \right)} & =&  \HLTY{x}  \nonumber
+\end{eqnarray}
+}
+\end{center}
+}
+$$\DBX{ \Large   \HLTY{x}=  \mu+\sigma \times \HLTW{ \Phi^{-1}\left(\HLTEQ[lime]{p} \right)}  }$$
+\vspace{-.1in}
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\includegraphics[scale=.38]{figs/GenNorm_2}
+\vspace{1.5in}
+\end{frame}
+
+\begin{frame}
+\includegraphics[scale=.38]{figs/GenNormInv}
+\vspace{1.5in}
+\end{frame}
+
+
+
+\section{Various Examples }
+\TransitionFrame[antiquefuchsia]{\Large Various Examples}
 
 \begin{frame}\frametitle{Example}
 %\tiny

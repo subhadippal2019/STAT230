@@ -761,23 +761,23 @@ will have to be replaced within the  fist 150 hours of operation?
 }
 \end{frame}
 
-
-
-\begin{frame}{Cumulative Distribution Function (cdf)}
-\define{The Cumulative Distribution Function}{
-The cumulative distribution function (cdf) F(x) of a continuous random variable $X$ with pdf $f(x)$ is defined for every number $x$ by $$ \HLTW{\displaystyle  F(x)=P(X\leq x)= \int_{-\infty}^{x}f(x) dx.} \vspace{-.1in}$$
-}
-\vspace{.1in}
-\qBrd[4.6in]{amethyst!30}{
-\qBrd[1.7in]{amethyst!60}{Few Properties of F(x)}
-\begin{enumerate}
-\item $\HLTW{ P(a< X\leq  b) = F(b) - F(a)}.$
-\item  $\HLTW{P(X>  b) = 1-F(b)}$
-\item If X is a continuous random variable with cdf $F(x)$ then at every x at which $\frac{dF(x)}{dx}$ exists:
-$f(x)=\frac{dF(x)}{dx} $
-\end{enumerate}
-}
-\end{frame}
+%
+%
+%\begin{frame}{Cumulative Distribution Function (cdf)}
+%\define{The Cumulative Distribution Function}{
+%The cumulative distribution function (cdf) F(x) of a continuous random variable $X$ with pdf $f(x)$ is defined for every number $x$ by $$ \HLTW{\displaystyle  F(x)=P(X\leq x)= \int_{-\infty}^{x}f(x) dx.} \vspace{-.1in}$$
+%}
+%\vspace{.1in}
+%\qBrd[4.6in]{amethyst!30}{
+%\qBrd[1.7in]{amethyst!60}{Few Properties of F(x)}
+%\begin{enumerate}
+%\item $\HLTW{ P(a< X\leq  b) = F(b) - F(a)}.$
+%\item  $\HLTW{P(X>  b) = 1-F(b)}$
+%\item If X is a continuous random variable with cdf $F(x)$ then at every x at which $\frac{dF(x)}{dx}$ exists:
+%$f(x)=\frac{dF(x)}{dx} $
+%\end{enumerate}
+%}
+%\end{frame}
 
 
 \begin{frame}\frametitle{Example}
@@ -883,6 +883,9 @@ $$ f(x):= \begin{cases}
 \end{frame}
 
 
+
+\section{Percentiles, Quantiles, and Median}
+\TransitionFrame{Percentiles, Quantiles, and Median}
 
 
 \begin{frame}\frametitle{Percentiles, Quantiles, and Median}
@@ -998,7 +1001,7 @@ $$ f(x):= \begin{cases}
 
 \section{Expected Value, Variance \& MGF of a Continuous Random Variable }
 
-\TransitionFrame[airforceblue]{\Large Expected Value,  Variance , \& MGF of a Continuous Random Variable }
+\TransitionFrame[amber]{\Large Expected Value,  Variance , \& MGF of a Continuous Random Variable }
 
 
 
@@ -1041,10 +1044,12 @@ $$ \text{Var}(X)= E(X^2)- \left( E(X) \right)^2$$
 \qBrd{teal!40}{
 Let $a$ and $b$ are constants, then 
 \begin{enumerate}
-\item $E(a+bX)= a+bE(X)$
-\item $\text{Var}(a+bX)=b^2\text{Var}(X)$
+\item $E(aX+b)= aE(X)+b$
+\item $\text{Var}(aX+b)=a^2\text{Var}(X)$
+\item $\text{SD}(aX+b)=\vert a \vert \text{Var}(X)$
 \end{enumerate}
 }
+\vspace{1in}
 
 \end{frame}
 
@@ -1119,7 +1124,7 @@ $$ f(x):= \begin{cases}
  \qBrd[1.6in]{babyblue!40}{
 \begin{eqnarray*}
 E(X)
-& =& \int_{-\infty}^{\infty}x f(x) dx\\
+& =&  \int\limits_{\support[X]}x f(x) dx\\
 & =& \int_{0}^{1}x (3x^2) dx\\
 & =& \int_{0}^{1} (3x^3) dx\\
 & =& \frac{3x^4}{4} \Big\vert _{0}^{1}\\
@@ -1133,7 +1138,7 @@ E(X)
  \qBrd[1.4in]{babyblue!40}{
  \begin{eqnarray*}
 E(X^2)
-& =& \int_{-\infty}^{\infty}x^2 f(x) dx\\
+& =& \int\limits_{\support[X]}x^2 f(x) dx\\
 & =& \int_{0}^{1}x^2 (3x^2) dx\\
 & =& \int_{0}^{1} (3x^4) dx\\
 & =& \frac{3x^5}{5} \Big\vert _{0}^{1}\\
@@ -1206,7 +1211,7 @@ $$ f(x):= \begin{cases}
  \qBrd[1.6in]{babyblue!40}{
 \begin{eqnarray*}
 E(X)
-& =& \int_{-\infty}^{\infty}x f(x) dx\\
+& =& \int\limits_{\support[X]}x f(x) dx\\
 & =& \int_{0}^{1}x (2x) dx\\
 & =& \int_{0}^{1} (2x^2) dx\\
 & =& \frac{2x^3}{3} \Big\vert _{0}^{1}\\
@@ -1220,7 +1225,7 @@ E(X)
  \qBrd[1.4in]{babyblue!40}{
  \begin{eqnarray*}
 E(X^2)
-& =& \int_{-\infty}^{\infty}x^2 f(x) dx\\
+& =&  \int\limits_{\support[X]}x^2 f(x) dx\\
 & =& \int_{0}^{1}x^2 (2x) dx\\
 & =& \int_{0}^{1} (2x^3) dx\\
 & =& \frac{2x^4}{4} \Big\vert _{0}^{1}\\
@@ -1282,8 +1287,8 @@ $$ f(x):= \begin{cases}
 {\tiny 
  \qBrd[4.63in]{olive!20}{
  \begin{eqnarray*}
-E(e^X)
-& =& \int_{-\infty}^{\infty}e^x f(x) dx\\
+E\left(e^X\right)
+& =& \int\limits_{\support[X]} e^x f(x) dx\\
 & =& \int_{0}^{1}e^x (1) dx\\
 & =&e^x \Big\vert _{0}^{1}\\
 & =&e^1-e^0\\
@@ -1312,7 +1317,7 @@ $$ f(x):= \begin{cases}
 \end{cases}$$
 \begin{enumerate}
 \item Find and graph the cdf of X.
-\item  Find $P(8.6< X\leq 9:8)$.
+\item  Find $P(8.6< X\leq 9.8)$.
 \item Find the median of the resistance of such resistors.
 \item Find the mean and variance of X.
 \end{enumerate}
