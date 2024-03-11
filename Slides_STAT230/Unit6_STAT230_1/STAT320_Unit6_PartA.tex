@@ -428,13 +428,30 @@ A random variable X is continuous if the corresponding cumulative distribution f
 Let $\HLTW{F_{_X}(x)}$ be a cumulative distribution function (CDF) of a continuous random variable,  then the corresponding {\bf  probability density function} or {\bf pdf}, denoted as $\HLTW{f_{_X}(x)}$  is a function that satisfies the following creteria. 
 $$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int_{-\infty}^{\HLTY{x}} f_{_X}(y) dy }$$
 }
-\vspace{.2in}
+\vspace{.1in}
+
+\end{frame}
+
+\begin{frame}
+\define{Support of a Continuous Random Variable}{
+Let $X$ be a continuous random varibale with probability density function $f_{_X}(x)$. The support of the random variable is defined to be 
+$$\HLTW{\support[X]=\{x : f_{_X}(x)>0\}}$$
+}
+
+\qBrd[4in]{olive!30}{
+Support of a random variable refers to the all possible value or outcome of the random variable.  Technically,  if a point is a  possible outcome, the corresponding value of the pdf is positive.  
+}
+\vspace{1in}
 \end{frame}
 
 
+\begin{frame}{Relation between pdf and CDF of a continuous random variable}
+\qBrd[4.2in]{applegreen!30}{$$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int_{-\infty}^{\HLTY{x}} f_{_X}(y) dy }$$}\\
+\vspace{.1in}
+\qBrd[4.2in]{babyblue!30}{$$\HLTW{\displaystyle f_{_X}(x)= \frac{d}{dx} F_{_X}(x)}$$}
+\end{frame}
 
-
-\begin{frame}{Probability Density Function (pmf):  For  continuous  RV}
+\begin{frame}{Probability Density Function (pdf):  For  continuous  RV}
 
 
 
