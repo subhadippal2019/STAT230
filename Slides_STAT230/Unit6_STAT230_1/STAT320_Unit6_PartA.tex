@@ -396,6 +396,9 @@ Verify: The above function satisfies the three conditions required to be a  CDF.
 
 
 
+
+
+
 \begin{frame}{Reminder: Discrete Random Variable}
 \define{Discrete Random Variable}{
 A random variable X is discrete if it's support $\support[X]$ is finite or countable infinite. 
@@ -435,20 +438,26 @@ $$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int_{-\infty}^{\HLTY{x}} f_{_X}(y) dy 
 \begin{frame}
 \define{Support of a Continuous Random Variable}{
 Let $X$ be a continuous random varibale with probability density function $f_{_X}(x)$. The support of the random variable is defined to be 
-$$\HLTW{\support[X]=\{x : f_{_X}(x)>0\}}$$
+$$\HLTW{\Large \displaystyle \support[X]=\{x : f_{_X}(x)>0\}}$$
 }
-
-\qBrd[4in]{olive!30}{
-Support of a random variable refers to the all possible value or outcome of the random variable.  Technically,  if a point is a  possible outcome, the corresponding value of the pdf is positive.  
+\vspace{.1in}
+\qBrd[4.5in]{amethyst!40}{
+\sqBullet{amethyst} Support of a random variable refers to the all possible value or outcome of the random variable.  Technically,  if a point is a  possible outcome, the corresponding value of the pdf is positive.  
 }
 \vspace{1in}
 \end{frame}
 
 
 \begin{frame}{Relation between pdf and CDF of a continuous random variable}
-\qBrd[4.2in]{applegreen!30}{$$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int_{-\infty}^{\HLTY{x}} f_{_X}(y) dy }$$}\\
+\qBrd[4.2in]{babyblue!30}{
+{\bf pdf } of a continuous random variable can be obtained by differentiating the corresponding {\bf CDF} 
+$$\HLTW{\displaystyle f_{_X}(x)= \frac{d}{dx} F_{_X}(x)}$$}\\
 \vspace{.1in}
-\qBrd[4.2in]{babyblue!30}{$$\HLTW{\displaystyle f_{_X}(x)= \frac{d}{dx} F_{_X}(x)}$$}
+
+\qBrd[4.2in]{applegreen!30}{   {\bf CDF} of a continuous random variable can be obtained by integrating the corresponding {\bf pdf} 
+$$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int\limits_{-\infty}^{\HLTY{x}} f_{_X}(y) dy }$$}\\
+
+
 \end{frame}
 
 \begin{frame}{Probability Density Function (pdf):  For  continuous  RV}
@@ -457,9 +466,9 @@ Support of a random variable refers to the all possible value or outcome of the 
 
 \qBrd[4.5in]{babyblue!40}{{\bf Comment:}
 Using the Fundamental Theorem of Calculus, if $\HLTW{ f_{_X}(x) }$ is continuous, we have the further relationship  
-$\HLTW{\displaystyle f_{_X}(x)= \frac{d}{dx} F_{_X}(x)}.$
+$\HLTW{\Large \displaystyle f_{_X}(x)= \frac{d}{dx} F_{_X}(x)}.$
  }\\
- \vspace{.5in}
+ \vspace{.2in}
 \qBox{
 \sqBullet{blue} If X is a continuous random variable, then probabilities can be obtained by integrating its pdf over suitable region.  Specifically,  for $\HLTW{a, b\in \R}$, $\HLTW{a<b}$, 
 $$\HLTEQ[white]{\displaystyle P\left(\HLTY{a}< X\leq \HLTEQ[amethyst!40]{b}\right)= \HLTEQ[babyblue!35]{F_{_X}\left( \HLTEQ[amethyst!40]{b}\right)-F_{_X}\left(\HLTY{a}\right)}= \int\limits_{\HLTY{a}}^{ \HLTEQ[amethyst!40]{b}} f_{X}(x) dx.}$$\vspace{-.2in}
