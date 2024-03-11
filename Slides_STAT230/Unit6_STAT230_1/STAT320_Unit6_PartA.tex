@@ -315,6 +315,7 @@ The function $F(x)$ is a cdf { \bf   if and only if}  the following three condit
 \HLTW{\text{Comment:}} Let $X$ be a random variable with the corresponding cdf $F_X(x)$ for $x\in \R$.  Let $x_0 \in \R$ is arbitrary. Then 
 $$P(X=x_0):=P(X\in \{x_0\})=\HLTY{\displaystyle \lim_{\HLTW{x\downarrow x_0}} F_X(X)}-  \HLTY{\displaystyle\lim_{\HLTW{x\uparrow x_0}}F_X(x)}.$$
 }
+\vspace{2in}
 \end{frame}
 
 
@@ -331,16 +332,37 @@ $$P(X=x_0):=P(X\in \{x_0\})=\HLTY{\displaystyle \lim_{\HLTW{x\downarrow x_0}} F_
 \caption{ The polt of $F_X(x)$: CDF of the random variable X}
 \end{figure}
 
+%\vspace{-.1in}
+%\qBox{
+%Let $F_X(x)$ denotes the cdf function included in the above image. Therefore, \\
+%$\HLTEQ[yellow]{P(X=2)= \lim_{x\downarrow 2} F_X(X)-  \lim_{x\uparrow 2}F_X(x)= 0.5-0.125=0 .375.}$
+%$\HLTEQ[lightGreenOne]{P(X=1.5)= \lim_{x\downarrow 1.5} F_X(X)-  \lim_{x\uparrow 1.5}F_X(x)=0.5-0.5=0.}$
+%}
+
+\vspace{2in}
+\end{frame}
+
+
+
+
+\begin{frame}{Example: CDF continuous}
+\begin{figure}
+\begin{center}
+\noindent\shadowimage[width=7cm]{figs/CDF_three_coin_toss.png}\par\bigskip 
+\end{center}
+\vspace{-.25in}
+\caption{ The polt of $F_X(x)$: CDF of the random variable X}
+\end{figure}
+
 \vspace{-.1in}
 \qBox{
 Let $F_X(x)$ denotes the cdf function included in the above image. Therefore, \\
-$\HLTEQ[yellow]{P(X=2)= \lim_{x\downarrow 2} F_X(X)-  \lim_{x\uparrow 2}F_X(x)= 0.5-0.125=0 .375.}$
+$\HLTEQ[yellow]{P(X=1)= \lim_{x\downarrow 1} F_X(X)-  \lim_{x\uparrow 1}F_X(x)= 0.5-0.125=0 .375.}$
 $\HLTEQ[lightGreenOne]{P(X=1.5)= \lim_{x\downarrow 1.5} F_X(X)-  \lim_{x\uparrow 1.5}F_X(x)=0.5-0.5=0.}$
 }
 
 
 \end{frame}
-
 
 \begin{frame}{Example: CDF continuous}
 \qBox{{\bf Example:} An example of a continuous cdf is the function
@@ -362,20 +384,19 @@ Verify: The above function satisfies the three conditions required to be a  CDF.
 
 \qBox{\Qn: Prove that the following functions are valid cdfs. 
 \begin{enumerate}
+%\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
+\item $F(x)= 1- e^{	-x^2}$ for all $x\in \R$. 
 \item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
-\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
 \end{enumerate}
-
-
 }
 
-\vspace{1in}
+\vspace{2in}
 \end{frame}
 
 
 
 
-\begin{frame}
+\begin{frame}{Reminder: Discrete Random Variable}
 \define{Discrete Random Variable}{
 A random variable X is discrete if it's support $\support[X]$ is finite or countable infinite. 
 }
@@ -386,41 +407,14 @@ A random variable X is discrete if it's support $\support[X]$ is finite or count
 \qBox{{\bf \HLTW{\text{ Alternative Characterization of Discrete Distributions: } }}
 A random variable X is discrete if the corresponding cdf $F_X(x)$ is a step function of x.  i.e.  $F_X(x)$ increases only via jumps. 
 }
-
-
-\end{frame}
-
-
-
-
-\section{A Few Common Integrals}
-\begin{frame}
-\qBrd[4.6in]{teal!50}{
-\begin{center}
-\qBrd[4in]{camel!50}{  $\displaystyle \int  x^n dx =\frac{x^{n+1}}{n+1} $ for any integer $n$,  $n\neq -1$.}
- \qBrd[1.9in]{tearose(rose)!50}{ $\displaystyle \int  \frac{1}{x} dx =\log(x)$}\qBrd[1.9in]{carolinablue!50}{$\displaystyle \int  e^{-x} dx =-e^{-x} $.}
-\qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  e^{mx} dx =\frac{e^{mx}}{m} $ for any nonzero real number  $m \in \R$,  $m\neq 0$.}
-\end{center}
-\vspace{-.2in}
-{\tiny* Note: We have not included the constant term that appears as a constants while writing a indefinite integral. For the majority, if not all,  of the integras in this course will be a definite integrals with a lower and upper limit.   }
-}
-
-\qBrd[4.6in]{babyblueeyes!90}{\tiny 
-Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;\HLTY{g(x)}}{dx}}$ for the following formula
-\begin{itemize}
-\item[]%$ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \frac{d\;\HLTY{f(x)}}{dx}  g(x) + f(x) \frac{d\;\HLTY{g(x)}}{dx}$ 
-\qBrd[4in]{candypink!50}{ \HLTW{\text{Integral By Parts:}} \tiny $\displaystyle  \int f(x)g(x)dx= f(x)\HLTW{ \left( \int g(x)dx\right)}- \int \left\{ f'(x) \HLTW{ \left( \int g(x)dx\right)} \right\} dx   $}
-\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \displaystyle \int \left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}dx =c_1 \int  f(x) dx +c_2\int g(x)dx $ for any constant $c_1,c_2\in  \R$.}
-%\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{f(g(x))\right\}=f'(g(x))g'(x)$. } 
-\end{itemize}
-\vspace{0.05in}
-}
-\end{frame}
-
-
-\begin{frame}{Examples}
+\vspace{2in}
 
 \end{frame}
+
+
+
+
+
 
 \section{Continuous Random Variables}
 \TransitionFrame[airforceblue]{\Large Continuous Random Variables }
@@ -510,19 +504,19 @@ $$
 
 
 
-
-\begin{frame}{Example:}
-
-\qBox{\Qn: Prove that the following functions are valid cdfs. 
-\begin{enumerate}
-\item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
-\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
-\end{enumerate}
-}
-\vspace{2in}
-\end{frame}
-
-
+%
+%\begin{frame}{Example:}
+%
+%\qBox{\Qn: Prove that the following functions are valid cdfs. 
+%\begin{enumerate}
+%\item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
+%\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
+%\end{enumerate}
+%}
+%\vspace{2in}
+%\end{frame}
+%
+%
 
 
 
@@ -537,7 +531,17 @@ A random variable X is said to be continuous if there is a function $f(x)$, call
 \item $\HLTW{\displaystyle P(a\leq X\leq b)= \int_{a}^{b}f(x)dx}$ for all $a<b$.
 \end{enumerate}
 }
-\vspace{.1in}
+\vspace{1.1in}
+\vspace{.5in}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{ Result:}
+
 \qBrd[4.65in]{amethyst!40}{
 \small
 If $X$ is a continuous random variable then, 
@@ -546,10 +550,41 @@ If $X$ is a continuous random variable then,
 \item $\HLTW{P(a\leq X\leq  b)} = \HLTW{P(a < X\leq b)} = \HLTW{P(a\leq X < b)} = \HLTW{P(a < X < b)}$.
 \end{itemize}
 }
-\vspace{.5in}
+\vspace{2.5in}
 \end{frame}
 
 
+
+
+%\section{A Few Common Integrals}
+\TransitionFrame{A Few Common Integrals}
+\begin{frame}
+\qBrd[4.6in]{teal!50}{
+\begin{center}
+\qBrd[4in]{camel!50}{  $\displaystyle \int  x^n dx =\frac{x^{n+1}}{n+1} $ for any integer $n$,  $n\neq -1$.}
+ \qBrd[1.9in]{tearose(rose)!50}{ $\displaystyle \int  \frac{1}{x} dx =\log(x)$}\qBrd[1.9in]{carolinablue!50}{$\displaystyle \int  e^{-x} dx =-e^{-x} $.}
+\qBrd[4in]{cadmiumorange!50}{$\displaystyle \int  e^{mx} dx =\frac{e^{mx}}{m} $ for any nonzero real number  $m \in \R$,  $m\neq 0$.}
+\end{center}
+\vspace{-.2in}
+{\tiny* Note: We have not included the constant term that appears as a constants while writing a indefinite integral. For the majority, if not all,  of the integras in this course will be a definite integrals with a lower and upper limit.   }
+}
+
+\qBrd[4.6in]{babyblueeyes!90}{\tiny 
+Assume $\HLTW{f'(x):= \frac{d\;\HLTY{f(x)}}{dx}} \text{ and } \HLTW{g'(x):= \frac{d\;\HLTY{g(x)}}{dx}}$ for the following formula
+\begin{itemize}
+\item[]%$ \frac{d}{dx}\left\{ \HLTY{f(x) g(x)} \right\}= \frac{d\;\HLTY{f(x)}}{dx}  g(x) + f(x) \frac{d\;\HLTY{g(x)}}{dx}$ 
+\qBrd[4in]{candypink!50}{ \HLTW{\text{Integral By Parts:}} \tiny $\displaystyle  \int f(x)g(x)dx= f(x)\HLTW{ \left( \int g(x)dx\right)}- \int \left\{ f'(x) \HLTW{ \left( \int g(x)dx\right)} \right\} dx   $}
+\item[] \qBrd[4in]{brightlavender!50}{ \HLTW{\text{Addition Rule:}}  \tiny  $ \displaystyle \int \left\{ c_1\HLTY{f(x)} + c_2\HLTY{ g(x)} \right\}dx =c_1 \int  f(x) dx +c_2\int g(x)dx $ for any constant $c_1,c_2\in  \R$.}
+%\item[] \qBrd[4in]{brilliantrose!40}{ \tiny \HLTW{\text{Chain Rule :}} $ \frac{d}{dx}\left\{f(g(x))\right\}=f'(g(x))g'(x)$. } 
+\end{itemize}
+\vspace{0.05in}
+}
+\end{frame}
+
+
+\begin{frame}{Examples}
+
+\end{frame}
 
 
 
@@ -574,10 +609,6 @@ $$ f(x):= \begin{cases}
  
 }
 \end{frame}
-
-
-
-
 \begin{frame}\frametitle{Example}
 \tiny 
 \vspace{-.1in}
@@ -1262,7 +1293,7 @@ E(X^2)
 \vspace{-.1in}
 
 \qbx[4.5in]{applegreen!40}{
-\Exmpl{applegreen}{}  Find $E(e^X)$ when the density function of X is
+\Exmpl{applegreen}{}   Find $E(e^X)$ and the Moment Generating Function for the continuous random variable with probability density function 
 $$ f(x):= \begin{cases} 
  1& \text{ if } 0 \leq x\leq 1\\
 0 & \text{ otherwise.} 
@@ -1277,15 +1308,15 @@ $$ f(x):= \begin{cases}
 \vspace{-.1in}
 
 \qbx[4.5in]{applegreen!40}{
-\Exmpl{applegreen}{}  Find $E(e^X)$ when the density function of X is
+\Exmpl{applegreen}{}  Find $E(e^X)$ and the Moment Generating Function for the continuous random variable with probability density function 
 $$ f(x):= \begin{cases} 
  1& \text{ if } 0 \leq x\leq 1\\
 0 & \text{ otherwise.} 
 \end{cases}$$
-}\\
+}
 %\pause
 {\tiny 
- \qBrd[4.63in]{olive!20}{
+ \qBrd[2.2in]{olive!20}{
  \begin{eqnarray*}
 E\left(e^X\right)
 & =& \int\limits_{\support[X]} e^x f(x) dx\\
@@ -1293,6 +1324,16 @@ E\left(e^X\right)
 & =&e^x \Big\vert _{0}^{1}\\
 & =&e^1-e^0\\
 & =& e-1
+\end{eqnarray*}
+ }}{\tiny 
+ \qBrd[2.2in]{babyblue!20}{
+ \begin{eqnarray*}
+M_{X}(t):=E\left(e^{tX}\right)
+& =& \int\limits_{\support[X]} e^{tx} f(x) dx\\
+& =& \int_{0}^{1}e^{tx} (1) dx\\
+& =&\frac{1}{t}e^{tx} \Big\vert _{0}^{1}\\
+& =&\frac{1}{t}e^t-\frac{1}{t}e^0\\
+& =& \frac{e^t-1}{t}
 \end{eqnarray*}
  }}
 
@@ -1383,7 +1424,7 @@ $$ f(x):= \begin{cases}
 \qbx[4.5in]{asparagus!40}{
 \Exmpl{asparagus}{}  The length of time required by students to complete a one-hour exam is a random variable with a density function given by
 $$ f(x):= \begin{cases} 
-cy^2+y& \text{ for }0\leq x\leq 1\\
+cy^2+y& \text{ for }0\leq y\leq 1\\
 0 & \text{ otherwise.} 
 \end{cases}$$
 \begin{enumerate}
