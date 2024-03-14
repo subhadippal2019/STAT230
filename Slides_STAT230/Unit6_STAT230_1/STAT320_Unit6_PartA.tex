@@ -549,16 +549,19 @@ $$
 
 \begin{frame}{ Characterization of  Probability Density Function (pdf)}
 
-\define{Continuous Random Variable}{
-A random variable X is said to be continuous if there is a function $f(x)$, called the probability density function (pdf), such that
+\define{Characterization of  Probability Density Function (pdf)}{
+A function $f(x)$ is is a  probability density function (pdf) for some continuous random variable if  and only if it satisfies the following two conditions:
 \begin{enumerate}
-\item $f(x)\geq 0 $ for all $x$.
-\item $\displaystyle \int_{-\infty}^{\infty}f(x)dx= 1$
-\item $\HLTW{\displaystyle P(a\leq X\leq b)= \int_{a}^{b}f(x)dx}$ for all $a<b$.
+ \qBrd[2.5in]{applegreen!50}{\item {\bf Non-negativity:} $f(x)\geq 0 $ for all $x$.}
+\qBrd[2.8in]{babyblue!50}{\item {\bf Total Probability: } $\displaystyle \int_{-\infty}^{\infty}f(x)dx= 1$}
+%\item $\HLTW{\displaystyle P(a\leq X\leq b)= \int_{a}^{b}f(x)dx}$ for all $a<b$.
 \end{enumerate}
 }
-\vspace{1.1in}
-\vspace{.5in}
+\vspace{.1in}
+\qBrd[4.5in]{amethyst!40}{Support of a Continuous Random Variable
+Let $X$ be a continuous random varibale with probability density function $f(x)$. The support of the random variable is defined to be 
+$$\HLTW{\Large \displaystyle \support[X]=\{x : f_{_X}(x)>0\}}$$
+}
 \end{frame}
 
 
