@@ -120,6 +120,33 @@ De-Arrangement probability with N distinct objects:
 $\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots + (-1)^{N}\frac{1}{N!}}$.
 }\\
 
+
+
+
+
+
+%\newpage 
+\qbx[6.8in]{antiquefuchsia!60}{
+\Center{
+\qBrd[3.2in]{amethyst!40}{\Large \bf Properties of Probability }}
+\vspace{.1in}
+Let $\HLTY{(\SampleS , P)}$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then, \\
+\begin{enumerate}
+\qBrd[3.8in]{applegreen!40}{  \item[{\sqBullet{olive}}] $\HLTW{P(\emptyset)=0}$ where $\HLTW{\emptyset}$ denotes the Empty set (Null set). }\\
+\vspace{.05in}
+\qBrd[2in]{apricot!40}{ \item[{\sqBullet{apricot}}]  $\HLTW{P(A)\leq 1}$. }\\
+\vspace{.05in}
+\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{applegreen}}] If $\HLTW{
+A\subseteq B}$ then $\HLTW{P(A)\leq P(B)} $.}\\
+\vspace{.05in}
+\qBrd[4.6in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $\HLTW{P\left(\Not{A}\right)=1-P(A)}$, where  $\HLTW{\Not{A}}$ denotes the complementary event to $A$.}\\
+\vspace{.05in}
+\qBrd[4in]{cadmiumorange!40}{\item[{\sqBullet{cadmiumorange}}]  $ \HLTW{P(A\cup B)= P(A)+P(B)-P(A\cap B) }$.}
+\end{enumerate}
+}\\
+
+
+
 \qbx[6.5in]{antiquefuchsia!30}{
 \begin{center}
 	\qBrd[4in]{blue!40}{
@@ -147,25 +174,12 @@ $\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots +
 \end{center}
 }\\
 
-%\newpage 
-\qbx[6.8in]{antiquefuchsia!60}{
-\Center{
-\qBrd[3.2in]{amethyst!40}{\Large \bf Properties of Probability }}
-\vspace{.1in}
-Let $\HLTY{(\SampleS , P)}$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then, \\
-\begin{enumerate}
-\qBrd[3.8in]{applegreen!40}{  \item[{\sqBullet{olive}}] $\HLTW{P(\emptyset)=0}$ where $\HLTW{\emptyset}$ denotes the Empty set (Null set). }\\
-\vspace{.05in}
-\qBrd[2in]{apricot!40}{ \item[{\sqBullet{apricot}}]  $\HLTW{P(A)\leq 1}$. }\\
-\vspace{.05in}
-\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{applegreen}}] If $\HLTW{
-A\subseteq B}$ then $\HLTW{P(A)\leq P(B)} $.}\\
-\vspace{.05in}
-\qBrd[4.5in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $\HLTW{P\left(\Not{A}\right)=1-P(A)}$, where  $\HLTW{\Not{A}}$ denotes the complementary event to $A$.}\\
-\vspace{.05in}
-\qBrd[4in]{cadmiumorange!40}{\item[{\sqBullet{cadmiumorange}}]  $ \HLTW{P(A\cup B)= P(A)+P(B)-P(A\cap B) }$.}
-\end{enumerate}
-}\\
+
+
+
+
+
+
 
 \qBrd[6.6in]{ceil!50}{
 Let $A_1, A_2, A_3$ are three events.  Then 
@@ -176,6 +190,9 @@ Let $A_1, A_2, A_3$ are three events.  Then
 \end{eqnarray*}  
 \vspace{-.15in}
 }\\
+
+
+
 
 
 
@@ -323,8 +340,10 @@ $$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{h(X)}\right)= \sum_{\left\{ \H
 \qBrd[4.8in]{applegreen!60}{\begin{center}\Large  {\Large \bf ``Variance \& Standard Deviation (SD) ''} of a Random Variable  \end{center}}
 \end{center}
 The variance of $X$, denoted by $\text{Var}(X)$ is deifined as 
-$\HLTW{ \displaystyle \text{Var}(X):=\HLTW{ E(X^2)- \left(\HLTY{E(X)} \right)^2}}$\\
-$\HLTW{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(X)}}}$
+$$\HLTW{ \displaystyle \text{Var}(X):=\HLTW{ E(X^2)- \left(\HLTY{E(X)} \right)^2}}$$\\
+\vspace{-.1in}
+\qBrd[4.8in]{amber!60}{\Large $$\HLTW{ \displaystyle \text{E}(X^2):=\HLTW{ \text{Var}(X)+ \left(\HLTY{E(X)} \right)^2}}$$\vspace{-.1in}}
+$$\HLTW{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(X)}}}$$
 }\\
 \vspace{.5in}
 
