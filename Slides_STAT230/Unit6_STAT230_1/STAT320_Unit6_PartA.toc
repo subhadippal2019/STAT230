@@ -1,6 +1,6 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Characterization of any CDF function }{2}{0}{1}
-\beamer@sectionintoc {2}{Continuous Random Variables}{15}{0}{2}
-\beamer@sectionintoc {3}{Percentiles, Quantiles, and Median}{38}{0}{3}
-\beamer@sectionintoc {4}{Expected Value, Variance \& MGF of a Continuous Random Variable }{44}{0}{4}
-\beamer@sectionintoc {5}{A Few Examples }{51}{0}{5}
+\beamer@sectionintoc {2}{Continuous Random Variables}{14}{0}{2}
+\beamer@sectionintoc {3}{Percentiles, Quantiles, and Median}{36}{0}{3}
+\beamer@sectionintoc {4}{Expected Value, Variance \& MGF of a Continuous Random Variable }{42}{0}{4}
+\beamer@sectionintoc {5}{A Few Examples }{49}{0}{5}

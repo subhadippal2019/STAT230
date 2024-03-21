@@ -380,19 +380,19 @@ Verify: The above function satisfies the three conditions required to be a  CDF.
 \end{frame}
  
 
-\begin{frame}{Example:}
-
-\qBox{\Qn: Prove that the following functions are valid cdfs. 
-\begin{enumerate}
-%\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
-\item $F(x)= 1- e^{	-x^2}$ for all $x\in \R$. 
-\item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
-\end{enumerate}
-}
-
-\vspace{2in}
-\end{frame}
-
+%\begin{frame}{Example:}
+%
+%\qBox{\Qn: Prove that the following functions are valid cdfs. 
+%\begin{enumerate}
+%%\item $F(x)= \frac{1}{2}+\frac{1}{\pi}\tan^{-1}(x)$ for all $x\in \R$. 	
+%\item $F(x)= 1- e^{	-x^2}$ for all $x\in \R$. 
+%\item $F(x)= e^{	-e^{-x}}$ for all $x\in \R$. 
+%\end{enumerate}
+%}
+%
+%\vspace{2in}
+%\end{frame}
+%
 
 
 
@@ -659,7 +659,7 @@ $$ f(x):= \begin{cases}
  \qBrd[1.6in]{babyblue!40}{
  According to the property of the pdf
  \begin{eqnarray}
-& &  \int f(x)dx=1\nonumber\\
+& &  \int\limits_{\support[X]} f(x)dx=1\nonumber\\
  & \implies&    \int_{0}^{2} C(4x-2x^2)dx=1\nonumber\\
  & \implies&     C(2x^2-\frac{2x^3}{3} )\Bigg\vert_{0}^2 =1\nonumber\\
   & \implies&     C(8-\frac{16}{3} ) =1\nonumber\\
@@ -760,7 +760,7 @@ $$ f(x):= \begin{cases}
  & =&    \int_{0.2}^{0.7} 3x^2dx\nonumber\\
  & =&    ( x^3)\Bigg\vert_{0.2}^{0.7}\nonumber\\
      & =& (0.7)^3-(0.2)^3\nonumber\\
-      & =&0.337 \nonumber
+      & =&0.335 \nonumber
  \end{eqnarray}
  }}
 \end{minipage}
@@ -892,7 +892,7 @@ $$ f(x):= \begin{cases}
  \end{eqnarray}
  $$\HLTW{ F(x)= \begin{cases}
  0 & \text{ if } x<0\\
- x^2 & \text{ if } 0 \geq x<1\\
+ x^3 & \text{ if } 0 \geq x<1\\
  1 & \text{ if } x\geq 1.\\
  \end{cases}  }$$
  }}
@@ -912,7 +912,7 @@ $$ f(x):= \begin{cases}
 & &  P(0.5<X<0.8)\nonumber\\
  & = &  F(0.8)- F(0.5)\nonumber\\
  &  =& ( 0.8)^3-(0.5)^3\nonumber\\
- & =&  0.387\nonumber
+ & =&  0.387 \nonumber
  \end{eqnarray}
  }}
 \end{minipage}
@@ -924,24 +924,24 @@ $$ f(x):= \begin{cases}
 
 
 
-
-
-\begin{frame}\frametitle{Example}
-
-\vspace{-.1in}
-\qbx[4.5in]{teal!40}{
-\Exmpl{teal}{} Let X be a continuous random variable  with Cumulative Distribution Function F(x),  and density function f(x). 
-\begin{enumerate}
-\item Obtain the cumulative  distribution function of $Y = 2X$.
-\item Obtain the probability density function of $Y = 2X$.
-\end{enumerate}
-}
-{\tiny {:}  
- 
-}
-\vspace{3in}
-\end{frame}
-
+%
+%
+%\begin{frame}\frametitle{Example}
+%
+%\vspace{-.1in}
+%\qbx[4.5in]{teal!40}{
+%\Exmpl{teal}{} Let X be a continuous random variable  with Cumulative Distribution Function F(x),  and density function f(x). 
+%\begin{enumerate}
+%\item Obtain the cumulative  distribution function of $Y = 2X$.
+%\item Obtain the probability density function of $Y = 2X$.
+%\end{enumerate}
+%}
+%{\tiny {:}  
+% 
+%}
+%\vspace{3in}
+%\end{frame}
+%
 
 
 \section{Percentiles, Quantiles, and Median}
@@ -1024,7 +1024,7 @@ $$ f(x):= \begin{cases}
  We have already Shown
  $$\HLTW{ F(x)= \begin{cases}
  0 & \text{ if } x<0\\
- x^2 & \text{ if } 0 \geq x<1\\
+ x^3 & \text{ if } 0 \geq x<1\\
  1 & \text{ if } x\geq 1.\\
  \end{cases}  }$$
  Note that if $F(x)= y\implies x^3=y \implies x= y^{\frac{1}{3}} \implies F^{-1}(y)= y^{\frac{1}{3}}.$
