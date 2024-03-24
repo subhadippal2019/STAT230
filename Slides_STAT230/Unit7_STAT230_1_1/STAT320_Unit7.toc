@@ -1,8 +1,8 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Discrete Multivariate Random Variables }{2}{0}{1}
-\beamer@sectionintoc {2}{Continuous Multivariate Random Variables }{10}{0}{2}
-\beamer@sectionintoc {3}{Conditional Distributions}{21}{0}{3}
-\beamer@sectionintoc {4}{Statistically Independent Random Variables}{32}{0}{4}
-\beamer@sectionintoc {5}{Expectation for Different Functions of Multivariate Random Variables}{39}{0}{5}
-\beamer@sectionintoc {6}{Variance and Covariance of a Random Variable }{43}{0}{6}
-\beamer@sectionintoc {7}{Moment Generating Function}{57}{0}{7}
+\beamer@sectionintoc {2}{Continuous Multivariate Random Variables }{11}{0}{2}
+\beamer@sectionintoc {3}{Conditional Distributions}{22}{0}{3}
+\beamer@sectionintoc {4}{Statistically Independent Random Variables}{33}{0}{4}
+\beamer@sectionintoc {5}{Expectation for Different Functions of Multivariate Random Variables}{40}{0}{5}
+\beamer@sectionintoc {6}{Variance and Covariance of a Random Variable }{44}{0}{6}
+\beamer@sectionintoc {7}{Moment Generating Function}{58}{0}{7}

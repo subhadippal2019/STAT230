@@ -29,12 +29,12 @@
 \definecolor{bistre}{rgb}{0.24, 0.17, 0.12}
 \definecolor{brightlavender}{rgb}{0.75, 0.58, 0.89}
 \definecolor{bulgarianrose}{rgb}{0.28, 0.02, 0.03}
-\definecolor{slateblue}{rgb}{0.56, 0.74, 0.56}
+%\definecolor{slateblue}{rgb}{0.56, 0.74, 0.56}
 \definecolor{cordovan}{rgb}{0.54, 0.25, 0.27}
 \definecolor{darkbyzantium}{rgb}{0.36, 0.22, 0.33}
 
-\setbeamercolor{structure}{fg=byzantium!70, bg= black!60}
-
+%\setbeamercolor{structure}{fg=byzantium!70, bg= black!60}
+\setbeamercolor{structure}{fg=slateblue!70, bg= black!60}
 
 
 
@@ -226,6 +226,10 @@ We will just restrict the presentation to the bivariate case.
 
 
 
+\begin{frame}{Joint p.m.f/ Support/ Diagram of support }
+
+\end{frame}
+
 
 
 
@@ -256,13 +260,13 @@ $$ P\left(X\leq \HLTY{x}, Y\leq \HLTY{y} \right)= \mathop{\sum\sum}_{\left\{  \C
 \begin{frame}\frametitle{Marginal  Distributions}
 \qbx[4.2in]{babyblue!40}{
 The marginal probability mass function of $X$ is given by
-$$\pmf_{_X}(\HLTY{x})=  \sum_{\left\{\HLTW{t}: (\HLTY{x}, t)\in \support[XY]\right\}}  \pmf_{_{X,Y}}(\HLTY{x}, \HLTW{t})$$
+$$\pmf_{_X}(\HLTY{x})=  \sum_{\left\{\HLTW{t}: (\HLTY{x}, \HLTW{t})\in \support[XY]\right\}}  \pmf_{_{X,Y}}(\HLTY{x}, \HLTW{t})$$
 }
 \vspace{.1in}
 
 \qbx[4.2in]{babyblueeyes!40}{
 The marginal probability mass function of $X$ is given by
-$$\pmf_{_Y}(\HLTY{y})=  \sum_{\left\{\HLTW{s}: (s,\HLTY{y})\in \support[XY]\right\}}  \pmf_{_{X,Y}}(\HLTW{s}, \HLTY{y})$$
+$$\pmf_{_Y}(\HLTY{y})=  \sum_{\left\{\HLTW{s}: (\HLTW{s},\HLTY{y})\in \support[XY]\right\}}  \pmf_{_{X,Y}}(\HLTW{s}, \HLTY{y})$$
 }
 
 \end{frame}
@@ -407,10 +411,12 @@ $$ P\left(X\leq \HLTY{x}, Y\leq \HLTY{y} \right)= \mathop{\int\int}_{\left\{ \Co
 
 
 \begin{frame}
-$$f(x; y)  = \frac{d^2F(x,y)}{dx\;dy}
-$$
-$$F(x; y)  =  \int\limits_{\{(s\leq x, t\leq y): (\HLTY{s},\HLTW{t})\in \support[XY]\}}  f_{_{X,Y}}(\HLTY{s}, \HLTW{t})ds dt
-:$$
+\qBrd[4in]{babyblue!40}{$$f(x, y)  = \frac{d^2F(x,y)}{dx\;dy}
+$$}
+\vspace{.1in}\\
+
+\qBrd[4in]{teal!40}{
+$$F(x, y)  =  \iint\limits_{\{(s\leq x, t\leq y): (\HLTY{s},\HLTW{t})\in \support[XY]\}}  f_{_{X,Y}}(\HLTY{s}, \HLTW{t})ds \;dt$$}
 \end{frame}
 
 
@@ -629,8 +635,8 @@ $\displaystyle P(X<4) =  \iint\limits_{\{ x\in \support[X] : x<4\}} f_{_{X}}(x)d
 
 
 \begin{frame}
-\define{}{
-If $\pmf_{_{XY}}(x, y)$ denotes the joint probability function of two discrete random variables X and Y and if $\pmf_X(x)$ and $\pmf_Y (y)$ denote the marginal probability function of $X,$ ($Y $ respectively) then the conditional probability of X given $Y = y $ is given by $$\pmf_{_{X\mid Y}}(x\mid y)=  \frac{\pmf_{_{X,Y}}(x,y)}{\pmf_{_Y}(y)}$$
+\define{Conditional p.m.f}{
+If $\pmf_{_{XY}}(x, y)$ denotes the joint probability mass function (pmf) of two discrete random variables X and Y and if $\pmf_X(x)$ and $\pmf_Y (y)$ denote the marginal probability function of $X,$ ($Y $ respectively) then the conditional probability of X given $Y = y $ is given by $$\pmf_{_{X\mid Y}}(x\mid y)=  \frac{\pmf_{_{X,Y}}(x,y)}{\pmf_{_Y}(y)}$$
 The conditional probability of Y given X = x is given by
 $$\pmf_{_{ Y\mid X}}(y \mid x)=  \frac{\pmf_{_{X,Y}}(x,y)}{\pmf_{_X}(x)}.$$
 }
@@ -719,7 +725,7 @@ $P(X\leq 2\mid Y=2)= \pmf_{_{X\mid Y=2}}(1)+  \pmf_{_{X\mid Y=2}}(2)= \frac{1}{3
 
 
 \begin{frame}
-\define{}{
+\define{Conditional p.d.f. }{
 If $f_{_{XY}}(x, y)$ denotes the joint probability density function of two continuous random variables X and Y and if $f_X(x)$ and $f_Y (y)$ denote the marginal probability density function of $X,$ ($Y $ respectively) then the conditional probability density of X given $Y = y $ is given by $$f_{_{X\mid Y}}(x\mid y)=  \frac{f_{_{X,Y}}(x,y)}{f_{_Y}(y)}$$
 The conditional probability density of Y given X = x is given by
 $$f_{_{ Y\mid X}}(y \mid x)=  \frac{f_{_{X,Y}}(x,y)}{f_{_X}(x)}.$$
