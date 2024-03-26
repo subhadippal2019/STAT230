@@ -3,4 +3,4 @@
 \beamer@sectionintoc {2}{Exponential Distribution}{13}{0}{2}
 \beamer@sectionintoc {3}{Gamma Distribution}{23}{0}{3}
 \beamer@sectionintoc {4}{Beta Distribution}{34}{0}{4}
-\beamer@sectionintoc {5}{Normal Distribution}{42}{0}{5}
+\beamer@sectionintoc {5}{Normal Distribution}{43}{0}{5}
