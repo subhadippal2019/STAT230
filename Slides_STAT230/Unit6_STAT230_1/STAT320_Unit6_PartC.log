@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 MAR 2024 10:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  31 MAR 2024 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1759,26 +1759,26 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  <./figs/NormalTableDiagram2.png> <./figs/NormalTableDiagram1.png> <./figs/Norm
 alTable2.png> <./figs/NormalTable1_entire.png>]
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 440.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 441.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 440.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 441.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 440.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 441.
 
 <figs/NormalTable1.png, id=827, 860.71562pt x 596.2275pt>
 File: figs/NormalTable1.png Graphic file (type png)
 <use figs/NormalTable1.png>
-Package pdftex.def Info: figs/NormalTable1.png  used on input line 440.
+Package pdftex.def Info: figs/NormalTable1.png  used on input line 441.
 (pdftex.def)             Requested size: 215.17838pt x 149.0565pt.
 
-Overfull \hbox (3.36732pt too wide) in paragraph at lines 440--440
+Overfull \hbox (3.36732pt too wide) in paragraph at lines 441--441
 []$ [] $  
  []
 
 
-Overfull \vbox (38.16882pt too high) detected at line 440
+Overfull \vbox (92.33952pt too high) detected at line 441
  []
 
 
@@ -1796,23 +1796,23 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
  <./figs/NormalTable1.png>]
 File: figs/NormalTable1.png Graphic file (type png)
 <use figs/NormalTable1.png>
-Package pdftex.def Info: figs/NormalTable1.png  used on input line 468.
+Package pdftex.def Info: figs/NormalTable1.png  used on input line 469.
 (pdftex.def)             Requested size: 258.21667pt x 178.86963pt.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 468.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 469.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 468.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 469.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 468.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 469.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 468.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 469.
 
 
-Overfull \vbox (4.25204pt too high) detected at line 468
+Overfull \vbox (4.25204pt too high) detected at line 469
  []
 
 
@@ -1830,14 +1830,14 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 ]
 File: figs/NormalTable1.png Graphic file (type png)
 <use figs/NormalTable1.png>
-Package pdftex.def Info: figs/NormalTable1.png  used on input line 482.
+Package pdftex.def Info: figs/NormalTable1.png  used on input line 483.
 (pdftex.def)             Requested size: 258.21667pt x 178.86963pt.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 482.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 483.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 482.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 483.
 
 
 Overfull \hbox (24.4561pt too wide) has occurred while \output is active
@@ -1855,10 +1855,10 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 <figs/Phi_Function1.png, id=942, 944.02687pt x 530.48187pt>
 File: figs/Phi_Function1.png Graphic file (type png)
 <use figs/Phi_Function1.png>
-Package pdftex.def Info: figs/Phi_Function1.png  used on input line 487.
+Package pdftex.def Info: figs/Phi_Function1.png  used on input line 488.
 (pdftex.def)             Requested size: 358.73393pt x 201.58519pt.
 
-Overfull \hbox (16.21869pt too wide) in paragraph at lines 487--487
+Overfull \hbox (16.21869pt too wide) in paragraph at lines 488--488
 [][]  
  []
 
@@ -1878,10 +1878,10 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 <figs/Phi_Function2.png, id=973, 942.52126pt x 528.97626pt>
 File: figs/Phi_Function2.png Graphic file (type png)
 <use figs/Phi_Function2.png>
-Package pdftex.def Info: figs/Phi_Function2.png  used on input line 492.
+Package pdftex.def Info: figs/Phi_Function2.png  used on input line 493.
 (pdftex.def)             Requested size: 358.1618pt x 201.01306pt.
 
-Overfull \hbox (15.64656pt too wide) in paragraph at lines 492--492
+Overfull \hbox (15.64656pt too wide) in paragraph at lines 493--493
 [][]  
  []
 
@@ -1901,10 +1901,10 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 <figs/Phi_Function3.png, id=1004, 944.52875pt x 537.50812pt>
 File: figs/Phi_Function3.png Graphic file (type png)
 <use figs/Phi_Function3.png>
-Package pdftex.def Info: figs/Phi_Function3.png  used on input line 498.
+Package pdftex.def Info: figs/Phi_Function3.png  used on input line 499.
 (pdftex.def)             Requested size: 358.92465pt x 204.2552pt.
 
-Overfull \hbox (16.40941pt too wide) in paragraph at lines 498--498
+Overfull \hbox (16.40941pt too wide) in paragraph at lines 499--499
 [][]  
  []
 
@@ -1921,7 +1921,7 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [24
 
  <./figs/Phi_Function3.png>]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 504--504
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 505--505
 [][] 
  []
 
@@ -1940,10 +1940,10 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 ]
 File: figs/Normal_1.png Graphic file (type png)
 <use figs/Normal_1.png>
-Package pdftex.def Info: figs/Normal_1.png  used on input line 511.
+Package pdftex.def Info: figs/Normal_1.png  used on input line 512.
 (pdftex.def)             Requested size: 304.06552pt x 143.33765pt.
 
-Overfull \vbox (7.066pt too high) detected at line 511
+Overfull \vbox (7.066pt too high) detected at line 512
  []
 
 
@@ -1960,16 +1960,16 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 
 ]
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 523.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 524.
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 523.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 524.
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 523.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 524.
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 523.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 524.
 
 
 Overfull \hbox (24.4561pt too wide) has occurred while \output is active
@@ -1988,7 +1988,7 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 File: figs/NormalCDFStandardization.png Graphic file (type png)
 <use figs/NormalCDFStandardization.png>
 Package pdftex.def Info: figs/NormalCDFStandardization.png  used on input line 
-532.
+533.
 (pdftex.def)             Requested size: 281.85518pt x 72.27054pt.
 
 Overfull \hbox (24.4561pt too wide) has occurred while \output is active
@@ -2006,15 +2006,15 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 <figs/GenNorm_1.png, id=1176, 944.02687pt x 533.49312pt>
 File: figs/GenNorm_1.png Graphic file (type png)
 <use figs/GenNorm_1.png>
-Package pdftex.def Info: figs/GenNorm_1.png  used on input line 537.
+Package pdftex.def Info: figs/GenNorm_1.png  used on input line 538.
 (pdftex.def)             Requested size: 358.73393pt x 202.72949pt.
 
-Overfull \hbox (16.21869pt too wide) in paragraph at lines 537--537
+Overfull \hbox (16.21869pt too wide) in paragraph at lines 538--538
 [][] 
  []
 
 
-Overfull \vbox (81.13824pt too high) detected at line 537
+Overfull \vbox (81.13824pt too high) detected at line 538
  []
 
 
@@ -2031,10 +2031,10 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 
  <./figs/GenNorm_1.png>]
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 559.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 560.
 
 
-Overfull \vbox (2.1503pt too high) detected at line 559
+Overfull \vbox (2.1503pt too high) detected at line 560
  []
 
 
@@ -2051,7 +2051,7 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 
 ]
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 581.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 582.
 
 
 Overfull \hbox (24.4561pt too wide) has occurred while \output is active
@@ -2069,10 +2069,10 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 <figs/GenNorm_2.png, id=1301, 895.345pt x 414.54875pt>
 File: figs/GenNorm_2.png Graphic file (type png)
 <use figs/GenNorm_2.png>
-Package pdftex.def Info: figs/GenNorm_2.png  used on input line 594.
+Package pdftex.def Info: figs/GenNorm_2.png  used on input line 595.
 (pdftex.def)             Requested size: 340.23463pt x 157.53015pt.
 
-Overfull \vbox (35.9389pt too high) detected at line 594
+Overfull \vbox (35.9389pt too high) detected at line 595
  []
 
 
@@ -2091,15 +2091,15 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 <figs/GenNormInv.png, id=1331, 950.55125pt x 542.52687pt>
 File: figs/GenNormInv.png Graphic file (type png)
 <use figs/GenNormInv.png>
-Package pdftex.def Info: figs/GenNormInv.png  used on input line 599.
+Package pdftex.def Info: figs/GenNormInv.png  used on input line 600.
 (pdftex.def)             Requested size: 361.21323pt x 206.16234pt.
 
-Overfull \hbox (18.69798pt too wide) in paragraph at lines 599--599
+Overfull \hbox (18.69798pt too wide) in paragraph at lines 600--600
 [][] 
  []
 
 
-Overfull \vbox (84.57109pt too high) detected at line 599
+Overfull \vbox (84.57109pt too high) detected at line 600
  []
 
 
@@ -2127,7 +2127,7 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 604--604
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 605--605
 [][] 
  []
 
@@ -2144,12 +2144,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [35
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 618--618
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 619--619
 [][]  
  []
 
 
-Overfull \vbox (37.41547pt too high) detected at line 618
+Overfull \vbox (37.41547pt too high) detected at line 619
  []
 
 
@@ -2165,12 +2165,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [36
 
 ]
-Overfull \hbox (25.98268pt too wide) in paragraph at lines 650--650
+Overfull \hbox (25.98268pt too wide) in paragraph at lines 651--651
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 651--651
 
  []
 
@@ -2187,12 +2187,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [37
 
 ]
-Overfull \hbox (69.34514pt too wide) in paragraph at lines 680--680
+Overfull \hbox (69.34514pt too wide) in paragraph at lines 681--681
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 
  []
 
@@ -2212,7 +2212,7 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 <figs/Normal_Cutoff.png, id=1550, 426.59375pt x 192.72pt>
 File: figs/Normal_Cutoff.png Graphic file (type png)
 <use figs/Normal_Cutoff.png>
-Package pdftex.def Info: figs/Normal_Cutoff.png  used on input line 702.
+Package pdftex.def Info: figs/Normal_Cutoff.png  used on input line 703.
 (pdftex.def)             Requested size: 170.63446pt x 77.08662pt.
 
 Overfull \hbox (24.4561pt too wide) has occurred while \output is active
@@ -2227,12 +2227,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [39
 
  <./figs/Normal_Cutoff.png>]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 750--750
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 751--751
 [][]  
  []
 
 
-Overfull \vbox (5.64908pt too high) detected at line 750
+Overfull \vbox (5.64908pt too high) detected at line 751
  []
 
 
@@ -2248,12 +2248,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [40
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 770--770
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 771--771
 [][]  
  []
 
 
-Overfull \vbox (81.21548pt too high) detected at line 770
+Overfull \vbox (81.21548pt too high) detected at line 771
  []
 
 
@@ -2269,12 +2269,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [41
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 790--790
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 791--791
 [][]  
  []
 
 
-Overfull \vbox (78.21548pt too high) detected at line 790
+Overfull \vbox (78.21548pt too high) detected at line 791
  []
 
 
@@ -2290,12 +2290,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [42
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 807--807
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 808--808
 [][]  
  []
 
 
-Overfull \vbox (89.73502pt too high) detected at line 807
+Overfull \vbox (89.73502pt too high) detected at line 808
  []
 
 
@@ -2311,12 +2311,12 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [43
 
 ]
-Overfull \hbox (7.07036pt too wide) in paragraph at lines 824--824
+Overfull \hbox (7.07036pt too wide) in paragraph at lines 825--825
 [][]  
  []
 
 
-Overfull \vbox (18.63641pt too high) detected at line 824
+Overfull \vbox (18.63641pt too high) detected at line 825
  []
 
 
@@ -2332,7 +2332,7 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 [44
 
 ]
-Overfull \hbox (3.45665pt too wide) in paragraph at lines 842--842
+Overfull \hbox (3.45665pt too wide) in paragraph at lines 843--843
 [][] 
  []
 
@@ -2358,19 +2358,19 @@ Overfull \hbox (39.52895pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `STAT320_Unit6_PartC.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 845.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 845.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 846.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 846.
  (./STAT320_Unit6_PartC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 845.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 845.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 846.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 846.
 Package rerunfilecheck Info: File `STAT320_Unit6_PartC.out' has not changed.
 (rerunfilecheck)             Checksum: C81E617934DC7A8A45329540E7878718;170.
  ) 
 Here is how much of TeX's memory you used:
- 29046 strings out of 480608
- 564205 string characters out of 5903631
+ 29048 strings out of 480608
+ 564249 string characters out of 5903631
  958621 words of memory out of 5000000
- 44091 multiletter control sequences out of 15000+600000
+ 44093 multiletter control sequences out of 15000+600000
  611302 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,26n,79p,805b,1786s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2396,7 +2396,7 @@ t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/urw/helvetic/uhvro8a.pfb>
-Output written on STAT320_Unit6_PartC.pdf (45 pages, 2100389 bytes).
+Output written on STAT320_Unit6_PartC.pdf (45 pages, 2100408 bytes).
 PDF statistics:
  1913 PDF objects out of 2073 (max. 8388607)
  1581 compressed objects within 16 object streams
