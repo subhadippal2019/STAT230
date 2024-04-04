@@ -4,7 +4,7 @@
 \usepackage{fdsymbol}
  \begin{document}
  
-\title{Assignment 2}%replace X with the appropriate number
+\title{Assignment 3}%replace X with the appropriate number
 \author{STAT 230\\
 UAEU} %if necessary, replace with your course title
 %\date{ $ 26^{th} $ August, 2019}
@@ -36,7 +36,7 @@ UAEU} %if necessary, replace with your course title
 \vspace{-.2in}
 \DefBoxOne{}{
 \begin{center}\color{black}
-There are a total of 9 problems. You may review {\bf Unit3 slides} while answering the questions.   {\bf Show your steps to get entire credit for your solutions.   }
+There are a total of 6 problems. You may review {\bf Unit6 slides} while answering the questions.   {\bf Show your steps to get entire credit for your solutions.   }
 \end{center}
 }
 
@@ -48,12 +48,13 @@ There are a total of 9 problems. You may review {\bf Unit3 slides} while answeri
 
 \vspace{.2in}
 \item \QuizQ{ \TextInBoxOne{5.4in}{
-Let $A$, $B$, $C$ be three events.  Use the basic  properties of probabilities to show that 
+The time in days between breakdowns of a machine is
+exponentially distributed with rate parameter $\lambda= 0.2$
 \begin{enumerate}
-\item (2.5 points) $P(A\cup B  )\leq P(A)+P(B)$
-\item(2.5 points)  $P(A\cup B \cup C  )\leq P(A)+P(B)+P(C)$
-\item (2.5 points) $P(A\cap B )\geq P(A)+P(B)-1$
-\item  (2.5 points) $P(A\cap B \cap C )\geq P(A)+P(B)+P(C)-2$
+\item (5 points) Write down the probability density function of the random variable X that records time in days between breakdowns of the machine.
+\item(5 points)  What is the expected time (in days) between machine breakdowns?
+\item(8 points)  Let $a,b $ be two positive constants such that $a>b$.  Derive an expression for $$P(X>a\mid X>b) .$$
+\item (7 points) Use the part(c) to obtain the probability that the machine lasts at least two more days before breaking down {\bf given } that the machine has already performed satisfactorily for last 15 days?
 \end{enumerate}
 
 }}{
@@ -63,14 +64,14 @@ Let $A$, $B$, $C$ be three events.  Use the basic  properties of probabilities t
 
 
 \item \QuizQ{ \TextInBoxOne{5.4in}{
-A car repair can be performed either on time or late and either satisfactorily or unsatisfactorily. The probability
-of a repair being on time and satisfactory is 0.30. The
-probability of a repair being on time is 0.75.  The
-probability of a repair being satisfactory however it is performed late is 0.20. 
-
+A new battery supposedly with a charge of 1.5 volts
+actually has a voltage with a Uniform distribution between
+1.43 and 1.60 volts.
 \begin{enumerate}
-\item (8 points) What is the probability of a repair being late and unsatisfactory?
-\item (7 points) What is the probability that the car repair is unsatisfactory?
+\item (5 points) What is the expected value of the voltage?
+\item (5 points) What is the standard deviation of the voltage?
+\item (10 points) What is the probability that a battery has a voltage less than 1.48 volts?
+%\item Obtain the expected value of $Y$ where,  $Y= X^2(1-X)^{\frac{1}{3}}$
 \end{enumerate}
 
 }}{
@@ -79,28 +80,35 @@ probability of a repair being satisfactory however it is performed late is 0.20.
 
 \vspace{.2in}
 
-\item \QuizQ{ \TextInBoxOne{5.4in}{A student answers a multiple-choice examination question that offers four possible answers.
-Suppose the probability that the student knows the answer to the question is .8 and the probability
-that the student will guess is .2. Assume that if the student guesses, the probability of selecting the correct answer is .25. If the student correctly answers a question, what is the
-probability that the student really knew the correct answer?
+%\item \QuizQ{ \TextInBoxOne{5.4in}{A double exponential distribution, often called a Laplace distribution, has a probability density function
+%$$ f_{_X}(x):=  \frac{\lambda }{2}e^{-\lambda \vert{x}\vert }  \text{ for }  -\infty < x <\infty   $$
+%where $\lambda>0 $ is the rate parameter. 
+%\begin{enumerate}
+%\item Obtain the expected value of the random variable. 
+%\item Derive the probability that the random variable takes values more than 1. 
+%\end{enumerate}
+%}}{
+%
+%}\\
+%
+%\vspace{.2in}
+
+
+
+\item \QuizQ{ \TextInBoxOne{5.4in}{ (10 points) Let $X$ follows a Uniform(0,1) distribution.  Let $Y$ be a random variable such that  $$Y = X^{0.5} (1-X)^{1.5}.$$
+Derive the value of $E(Y)$ . 
 }}{
 
 }\\
 
 \vspace{.2in}
-\item \QuizQ{ \TextInBoxOne{5.4in}{
-(5 points) {\bf Two} A large group of people is to be checked for two common symptoms of a certain disease. It
-is thought that 20\% of the people possess symptom A alone, 30\% possess symptom B alone,
-10\%possess both symptoms, and the remainder have neither symptom. For one person chosen
-at random from this group, find these probabilities:
-\begin{enumerate}
-\item The person has neither symptom.
-\item The person has at least one symptom.
-\item The person has both symptoms, given that he has symptom B.
-\end{enumerate}
-}}{
+%
+%
+%\item \QuizQ{ \TextInBoxOne{5.4in}{ Let $Y$ follows a Exponential(rate= $\lambda$) distribution.   Derive an expe
+%}}{
+%
+%}\\
 
-}\\
 \vspace{.2in}
 
 
@@ -114,11 +122,13 @@ at random from this group, find these probabilities:
 %
 %\vspace{.2in}
 \item \QuizQ{ \TextInBoxOne{5.4in}{
-Medical case histories indicate that different illnesses may produce identical symptoms. Suppose that a particular set of symptoms, denoted H, occurs only when any one of three illnesses, $I_1$, $I_2$, or $I_3$, occurs.  Assume that the simultaneous occurrence ofmore that one of these illnesses is impossible and that $P(I_1) = .01, P(I_2) = .005, P(I_3) = .02.$ The probabilities of developing the set of symptoms H, given each of these illnesses, are known
-to be $P( H \mid I_1) = .90, P( H \mid I_2) = .95, P( H \mid I_3) = .75.$
+A Wall Street analyst estimates that the annual return from the stock of company A can be
+considered to be an observation from a normal distribution with mean $\mu =  8.0$ percent and standard
+deviation $\sigma=  1.5$ percent. The analyst's investment choices are based upon the considerations that
+any return greater than 5 percent is “satisfactory” and a return greater than 10 percents “excellent.” 
 \begin{enumerate}
-\item (5 points) Assuming that an ill person exhibits the symptoms, H, what is the probability that the person
-has illness I1?
+\item (5 points)  What is the probability that company A’s stock will prove to be “unsatisfactory” ?
+\item (5 points)  What is the probability that company A’s stock will prove to be ``Excellent'' ?
 \end{enumerate}
 }{
 }}
@@ -128,11 +138,15 @@ has illness I1?
 \vspace{.2in}
 
 
-\item \QuizQ{ \TextInBoxOne{5.4in}{Let A and B be any two events. Which of the following statements, in general, are false? 
+\item \QuizQ{ \TextInBoxOne{5.4in}{Suppose a certain mechanical component produced by a
+company has a width that is normally distributed with a
+mean $\mu=  2600$ and a standard deviation $ \sigma = 0.6$.
 \begin{enumerate}
-\item (3 points) $P( A\mid B) + P( A\mid B) = 1$.
-\item (4+3 points) $P( A\mid B) + P( A\mid B) = 1.?$ 
-\item $P( A\mid B) + P( A\mid B) = 1.$
+\item (8 points) What proportion of the components have a width outside the range 2599 to 2601?
+\item (7 points)  If the company needs to be able to guarantee to its
+purchaser that no more than 1 in 1000 of the
+components have a width outside the range 2599 to
+2601,  then what should be the specification of (value of) $\sigma$?
 \end{enumerate} 
 }{
 }}
@@ -141,98 +155,41 @@ has illness I1?
 \vspace{.2in}
 
 
-
-
-
-
 \item \QuizQ{ \TextInBoxOne{5.4in}{
-(5 points ) A business tax form is either filed on time or late, is
-either from a small or a large business, and is either
-accurate or inaccurate. There is an 11\% probability that
-a form is from a small business and is accurate and on
-time. There is a 13\% probability that a form is from a
-small business and is accurate but is late. There is a 15\%
-probability that a form is from a small business and is on
-time. There is a 21\% probability that a form is from a
-small business and is inaccurate and is late.
+ The velocities of gas particles, denoted here by $V$,  can be modeled by the Maxwell distribution.  For simplicity of notations, consider the random variable $X$,  that refers to the square of the velocity, i.e. ,  $X=V^2$.   It can be shown that the  probability density functionof $X$ is given as 
+$$f_{_X}(x):= \begin{cases}  4\pi \left( \frac{m}{\pi KT} \right)^{\frac{3}{2}}  \sqrt{x} \;  e^{- \left( \frac{m}{2KT} \right) x} & \text{ for } x>0, \\
+0 & \text{ otherwise}. \end{cases}$$
+where m is the mass of the particle, K is Boltzmann's constant, and T is the absolute temperature.  From the perpespective of the probability distribution, assume $m,K,T$ to ve constants. 
 \begin{enumerate}
-\item If a form is from a small business and is accurate,
-what is the probability that it was filed on time?
-\item What is the probability that a form is from a large
-business?
+\item( 5 points ) Identify the probability  distribution of the random variable $X$.
+\item ( 8 points )  The kinetic energy of a particle is given by $\frac{1}{2}mV^2$.  Find the mean (expected value of the) kinetic energy for a particle.
+\item ( 7 points ) Derive the mean velocity (Expected Value of $V$) of these particles.
 \end{enumerate}
-}}{}
-
-\vspace{.2in}
-\item \QuizQ{ \TextInBoxOne{5.4in}{
-(5 points ) 
-A warning light in the cockpit of a plane is supposed to
-indicate when a hydraulic pump is inoperative. If the
-pump is inoperative, then there is a probability of 0.992
-that the warning light will come on. However, there is a
-probability of 0.003 that the warning light will come on
-even when the pump is operating correctly. Furthermore,
-there is a probability of 0.996 that the pump is operating
-correctly. If the warning light comes on, what is the
-probability that the pump really is inoperative?
-}{
-
-}}\\
-
-%\vspace{.2in}
-%\item \QuizQ{ \TextInBoxOne{5.4in}{
-% Suppose that there is a practice session for a UAE football (soccer) team.   In that session all the 11 players randomly picked up a jersey from a basket where exactly 11 jerseys were kept.  Note that, all the jersey's have the players name written on it, therefore in the basket there were exactly one jersey that would match with a specific player.  
-% \begin{enumerate}
-% \item  (5 points )  What is the probability that {\bf  none} of the players have picked up the jersey that would match their name?
-% \item  (5 points )  What is the probability that {\bf exactly three}  of the players have picked up the jersey that would match their name?
-% \end{enumerate}
-%}}{
-%
-%}\\
-
-
-\vspace{.2in}
-\item \QuizQ{ \TextInBoxOne{5.4in}{
- The marketing division of a company profiles its
-potential customers and grades them as either likely or
-unlikely purchasers. Overall, 16\% of the potential
-customers are graded as likely purchasers. In reality,
-81\% of the potential customers graded as likely
-purchasers actually make a purchase, while only 9\% of
-the potential customers graded as unlikely purchasers
-actually make a purchase. If somebody made a purchase,
-what is the probability that they had been graded as a
-likely purchaser?
 }}{
 
 }\\
-
-
-
 \vspace{.2in}
 
 
-%
-%\vspace{.2in}
+
 %\item \QuizQ{ \TextInBoxOne{5.4in}{
-%Given 20 people, what is the probability that,
-%among the 12 months in the year, there are 4
-%months containing exactly 2 birthdays and 4 containing
-%exactly 3 birthdays?
-%}{
-%}}
-
-
-
-
-%
-%\item \QuizQ{ \TextInBoxOne{5.4in}{One of the sections in the class STAT230 has 10 students.  Assume the birthday of a student can be any one of days out of 365 days in a year.  We say that the two students share a (same) birthday if they are born on the same day and the same month {\small ( for example two students are born on $12^{\text{th}}$ January).}  Answer the following questions. 
+%(5 points ) A business tax form is either filed on time or late, is
+%either from a small or a large business, and is either
+%accurate or inaccurate. There is an 11\% probability that
+%a form is from a small business and is accurate and on
+%time. There is a 13\% probability that a form is from a
+%small business and is accurate but is late. There is a 15\%
+%probability that a form is from a small business and is on
+%time. There is a 21\% probability that a form is from a
+%small business and is inaccurate and is late.
 %\begin{enumerate}
-%\item How many different possibilities are there such that  exactly five students have the same birthday?
-%\item How many different possibilities are there so that all the birthdays are on different days of the year. 
-%\end{enumerate} 
-%}{
-%}}
+%\item If a form is from a small business and is accurate,
+%what is the probability that it was filed on time?
+%\item What is the probability that a form is from a large
+%business?
+%\end{enumerate}
+%}}{}
+
 
 
 
