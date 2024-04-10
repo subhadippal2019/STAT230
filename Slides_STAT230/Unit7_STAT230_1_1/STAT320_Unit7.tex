@@ -936,12 +936,59 @@ $$f_{_{X,Y}}(x,y)=
 
 \begin{frame}
 \define{Independent Random Variables}{
-Two continuous random variables X and Y are said to be independent if the corresponding joint probability density function  $$ \HLTW{ \displaystyle f_{_{X,Y}}(x, y) = f_{_X}(x)  f_{_Y} (y)}$$ for all x and y where $f_{_X}(x)$, and $ f_{_Y} (y)$ are the marginal density for X, and Y respectively. 
+The random variables $X$ and $Y$ are said to be {\bf statistically}  {\bf independent } random variables if, for any two events A and B,
+$$\qBrd[4in]{babyblue!60}{$$ \HLTW{ \displaystyle P(X\in A, Y\in B)= P(X\in A) \times P(Y\in B)}$$}$$
 }
-
-
-
 \end{frame}
+
+
+
+
+\begin{frame}
+%\thm{Independent Discrete Random Variables}{
+\begin{theorem}{ndependent Discrete Random Variables}
+\sqBullet{babyblue}Let $(X,Y)$ be bivariate discrete random vector with a probability density function $\pmf_{_{X,Y}}(x,y)$ on the support $(x,y)\in \support[X,Y]$. \\
+\sqBullet{babyblue} Let $\pmf_{_X}(x)$ be the marginal density of the random variable $X$ on the support $\support[X]$\\
+\sqBullet{babyblue} Let $\pmf_{_Y}(y)$ be the marginal density of the random variable $X$ on the support $\support[Y]$. \\
+The continuous random variables X and Y are {\bf statistically} {\bf  independent } if the corresponding joint probability density function  $$ \HLTW{ \displaystyle \pmf_{_{X,Y}}(x, y) = \pmf_{_X}(x) \times  \pmf_{_Y} (y)}$$ for all x and y, and $\support[X,Y]= \support[X]\times \support[Y].$
+\end{theorem}
+%}
+\end{frame}
+
+\begin{frame}
+%\define{Independent Continuous Random Variables}{
+\begin{theorem}{ndependent Discrete Random Variables}
+\sqBullet{babyblue}Let $(X,Y)$ be bivariate continuous random vector with a probability density function $f_{_{X,Y}}(x,y)$ on the support $(x,y)\in \support[X,Y]$. \\
+\sqBullet{babyblue} Let $f_{_X}(x)$ be the marginal density of the random variable $X$ on the support $\support[X]$\\
+\sqBullet{babyblue} Let $f_{_Y}(y)$ be the marginal density of the random variable $X$ on the support $\support[Y]$. \\
+The continuous random variables X and Y are {\bf statistically} {\bf  independent } if the corresponding joint probability density function  $$ \HLTW{ \displaystyle f_{_{X,Y}}(x, y) = f_{_X}(x) \times  f_{_Y} (y)}$$ for all x and y, and $\support[X,Y]= \support[X]\times \support[Y].$
+\end{theorem}
+%}
+\end{frame}
+
+\begin{frame}
+\qBrd[4.6in]{amber!40}{
+ Let $X, Y$ be any two statistically independent random variables then then the following facts are true: 
+\begin{itemize}
+\qBrd[4.1in]{babyblue!40}{
+\item[\sqBullet{babyblue}] For any two events $A,B$\\
+$\HLTW{P(X\in A, Y\in B)= P(X\in A)\times P(Y\in B)}$
+}\\\vspace{.05in}
+\qBrd[4.1in]{teal!40}{
+\item[\sqBullet{teal}] For any two functions* $h(x)$ and $g(y)$ \\\vspace{.05in}
+$\HLTW{E\left(g(X) h(Y) \right) = E\left(g(X) \right) E\left( h(Y)\right)}$
+}\\\vspace{.05in}
+\qBrd[4.1in]{amethyst!40}{
+\item[\sqBullet{amethyst}] If the X, Y has the marginal CDFs $F_{_X}(x)$ and $F_{_Y}(y)$ respectively,  then the joint CDF\\
+$\HLTW{F_{_{X,Y}}(x,y) =F_{_X}(x) \times  F_{_Y}(y)}$
+for all x, y. 
+}
+\end{itemize}
+\vspace{.2in}
+}
+\end{frame}
+
+
 
 
 \begin{frame}\frametitle{Example}

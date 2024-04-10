@@ -3,6 +3,6 @@
 \beamer@sectionintoc {2}{Continuous Multivariate Random Variables }{14}{0}{2}
 \beamer@sectionintoc {3}{Conditional Distributions}{26}{0}{3}
 \beamer@sectionintoc {4}{Statistically Independent Random Variables}{37}{0}{4}
-\beamer@sectionintoc {5}{Expectation for Different Functions of Multivariate Random Variables}{44}{0}{5}
-\beamer@sectionintoc {6}{Variance and Covariance of a Random Variable }{48}{0}{6}
-\beamer@sectionintoc {7}{Moment Generating Function}{62}{0}{7}
+\beamer@sectionintoc {5}{Expectation for Different Functions of Multivariate Random Variables}{47}{0}{5}
+\beamer@sectionintoc {6}{Variance and Covariance of a Random Variable }{51}{0}{6}
+\beamer@sectionintoc {7}{Moment Generating Function}{65}{0}{7}
