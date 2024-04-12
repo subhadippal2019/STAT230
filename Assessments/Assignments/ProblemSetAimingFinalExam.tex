@@ -1,0 +1,233 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+\usepackage{fdsymbol}
+\usepackage{latexcolors}
+\usepackage{mathrsfs}
+%\NewDocumentCommand{\support}{O{ }}{{\mathcal{S}}_{_{#1}}}
+%\NewDocumentCommand{\support}{O{ }}{{\mathbb{S}}_{_{#1}}}
+%\newcommand{\SampleS}{\mathcal{S}}
+\newcommand{\SampleS}{\mathscr{S}}
+\newcommand{\Not}[1]{\overline{#1}}
+\newcommand{\Center}[1]{{\begin{center}#1 \vspace{-.2in}
+\end{center}}}
+\newcommand{\Exmpl}[2]{\qBrd[0.75in]{#1}{Example #2:}}
+\newcommand{\pmf}{p}
+\newcommand{\binP}{\pi}
+
+ \begin{document}
+ 
+\title{}%replace X with the appropriate number
+\author{} %if necessary, replace with your course title
+%\date{ $ 26^{th} $ August, 2019}
+\date{}
+% \maketitle\vspace{-.in}
+ \noindent
+% \TextInBox{6 in }{Name: \vspace{.22 in}}\\
+%\; \TextInBox{6.05 in }{ Enrolled As: \MCOption[1.2in]{PHD Student} \MCOption[1in]{RA}\MCOption[1 in]{TA}}\\
+\TextInBox{6 in }{ 
+
+  }\\
+ \vspace{.4in}
+ 
+ 
+ 
+
+%
+%\DefBoxOne{}{
+%\begin{center}\color{black}
+%Part I:  Short answer type questions.
+%\end{center}
+%}
+
+
+%\DefBoxOne{Notations}{
+%$$ \Onebf_k=\left[ \begin{array}{c}1\\1\\\vdots \\1\end{array}\right]_{k\times 1} \text{ , }  J_{k}=\left[ \begin{array}{cccc}1&1 & \cdots & 1\\1& 1& \cdots&  1\\\vdots & \vdots & \ddots  &\vdots \\1& 1 &\cdots & 1\end{array}\right]_{k\times k} \text{ and } I_{k}=\left[ \begin{array}{cccc}1&0 & \cdots & 0\\0& 1& \cdots&  0\\\vdots & \vdots & \ddots  &\vdots \\0& 0 &\cdots & 1\end{array}\right]_{k\times k} \text{ for } k\in \Z_{+}.   $$
+%
+%}
+
+
+\vspace{-.2in}
+\DefBoxOne{}{
+\begin{center}\color{black}
+\Large A Few Problems Aiming the Final Exam
+\end{center}
+}
+
+
+\vspace{.2in}
+
+\begin{enumerate}
+
+
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Binomial}(n=50, \binP=0.1)$ then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2) $.
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Geometric}(\binP=0.2)$ then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2) $.
+\item What is $E(4X+10)$?
+\item  What is Var$(4X+10)$?
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Poisson}(\lambda=5)$,  then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2)$
+\item What is $E(3X+50)$?
+\item What is Var$(3X+50)$?
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+\vspace{.1in}
+
+  \qBrd[6.9in]{airforceblue!30}{
+\item 
+Suppose a random variable $X$ has the following support $\support[X]= \{1, 2,3, 4, 5\}$. 
+\begin{center}
+\includegraphics[scale=.25]{/Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png}
+\end{center}
+\begin{enumerate}
+\item What is the probability that $X=2$?
+\item What is the probability that $X=1.5$
+\item  Obtain $P(1<X\leq 3)$
+\item  Obtain $P(1\geq X< 3)$
+\end{enumerate}
+}\\
+
+
+
+
+  \qBrd[6.9in]{airforceblue!30}{
+\item 
+Consider the following CDF of the random variable
+$$ \displaystyle F_X(x):=\frac{1}{1+e^{-x}} \text{ for all } x\in \R.$$
+\begin{center}
+\includegraphics[scale=.5]{/Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_1/figs/logistic_CDF.png}
+\end{center}
+\
+\begin{enumerate}
+\item What is the probability that $X=0$?
+\item What is the probability that $X=2$
+\item  Obtain $P(0<X\leq 1)$
+\item  Obtain $P(0\geq X< 2)$
+\item Identify the nature of the random variable (Discrete/Continuous/ Mixture of Discrete and Continuous. )
+\end{enumerate}
+}\\
+
+
+
+   \qBrd[6.9in]{amethyst!40}{
+\item 
+\Exmpl{amethyst}{}  Suppose that $X$ is a continuous random variable whose probability density function is given by
+$$ f(x):= \begin{cases} 
+\HLTEQ[babyblue!20]{ \HLTY{C}(4x-2x^2) }& \text{ if } 0 <x<2\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}
+\item For what value of \HLTY{C} the provided function is a valid probability density function?
+\item Find $P(X>1)$.
+\item Find $P( X\leq 1)$.
+\item Obtain {\it mean}  (Expected value)  of X. 
+\end{enumerate}
+}\\
+
+
+
+  \qBrd[6.9in]{amber!40}{\item 
+\Exmpl{amber}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
+$$ f(x):= \begin{cases} 
+ 3x^2& \text{ if } 0 <x<1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\vspace{-.1in}
+\begin{enumerate}
+\item Find the probability that the technician will spend 20\% to 70\% of hisworkweek serving customers.
+\item Obtain, $F(x)$, the CDF of X.
+\item Use $F(x)$ to compute  $P(0.5<X\leq 0.8)$.
+\item Obtain {\it mean}  (Expected value)  of X. 
+\item find the {\it median}  and First Quartile ($Q_1$) of the distribution
+\end{enumerate}
+}
+
+
+
+\qbx[6.9in]{applegreen!40}{\item 
+\Exmpl{applegreen}{}  The lifetime in hours of a certain kind of radio tube is a random
+variable having a probability density function given by
+$$\HLTW{ f(x):= \begin{cases} 
+\frac{100}{x^2}& \text{ if } x> 100\\
+0 & \text{if 	$ x\leq 100$.} 
+\end{cases}}$$
+\begin{enumerate}
+\item What is the probability a randomly selected tube in a radio set will have to be replaced within the  fist 150 hours of operation?
+\item  Obtain the CDF function of the distribution
+\item Obtain {\it median } lifetime of a randomly selected radio tube.
+\item  Does the {\it  mean} / Expected value of the distribution exist?
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{applegreen!40}{\item 
+\Exmpl{applegreen}{}   Find $E(e^X)$ and the Moment Generating Function for the continuous random variable with probability density function 
+$$ f(x):= \begin{cases} 
+ 1& \text{ if } 0 \leq x\leq 1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+}\\
+
+
+
+\qbx[6.9in]{amethyst!40}{\item 
+\Exmpl{amethyst}{}  Let X denote the resistance of a randomly chosen resistor, and suppose that its pdf is given by
+$$ f(x):= \begin{cases} 
+ \frac{x}{18}& \text{ if } 8 \leq x\leq 10\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\begin{enumerate}
+\item  Find $P(8.6< X\leq 9.8)$.
+\item Find the median of the resistance of such resistors.
+\item Find the mean and variance of X.
+\end{enumerate}
+}\\
+
+
+
+\qbx[6.9in]{asparagus!40}{\item 
+\Exmpl{asparagus}{}  The length of time required by students to complete a one-hour exam is a random variable with a density function given by
+$$ f(x):= \begin{cases} 
+cy^2+y& \text{ for }0\leq y\leq 1\\
+0 & \text{ otherwise.} 
+\end{cases}$$
+\begin{enumerate}
+\item Find c that makes this function a valid probability density function.
+\item Find the F(y) 
+%\item Graph f(y) and F(y).
+\item  Find the probability that a randomly selected student will finish in less than half an hour.
+\item Find the time that 95\% of the students finish before it.
+\item Given that a particular student needs at least 15 minutes to complete the exam, find the probability that she will require at least 30 minutes to finish.
+\end{enumerate}
+}\\
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+\end{document}
