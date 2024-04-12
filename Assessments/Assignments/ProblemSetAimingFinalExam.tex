@@ -4,6 +4,11 @@
 \usepackage{fdsymbol}
 \usepackage{latexcolors}
 \usepackage{mathrsfs}
+\usepackage{diagbox}
+\usepackage{makecell}
+\usepackage{xmpmulti}
+\usepackage{multicol}
+\usepackage{colortbl}
 %\NewDocumentCommand{\support}{O{ }}{{\mathcal{S}}_{_{#1}}}
 %\NewDocumentCommand{\support}{O{ }}{{\mathbb{S}}_{_{#1}}}
 %\newcommand{\SampleS}{\mathcal{S}}
@@ -180,7 +185,7 @@ $$\HLTW{ f(x):= \begin{cases}
 }\\
 
 
-\qbx[6.9in]{applegreen!40}{\item 
+\qbx[6.9in]{airforceblue!40}{\item 
 \Exmpl{applegreen}{}   Find $E(e^X)$ and the Moment Generating Function for the continuous random variable with probability density function 
 $$ f(x):= \begin{cases} 
  1& \text{ if } 0 \leq x\leq 1\\
@@ -223,7 +228,343 @@ cy^2+y& \text{ for }0\leq y\leq 1\\
 
 
 
+\qbx[6.9in]{apricot!40}{\item 
+\Exmpl{apricot}{} The time (in min) for a lab assistant to prepare the equipment for a certain experiment is believed to have a uniform distribution with a = 25 and b = 35.
+\begin{enumerate}
+\item Write the probability density function of X.
+\item What is the probability that preparation time exceeds 33 min?
+\item What is the probability that preparation time is within 2 minmutes of the {\bf mean time}?
+\end{enumerate}
+}\\
 
+
+\qbx[6.9in]{babyblue!40}{\item 
+\Exmpl{babyblue}{} The failure rate for a type of electric light bulb is 0.002 per hour. Under the exponential model,
+\begin{enumerate}
+\item Find the probability that a randomly selected light bulb will fail in less than 1000 hours.
+\item  Find the probability that a randomly selected light bulb will last 2000
+hours before failing.
+\item Find the mean and the variance of time until failure.
+\item  Find the median time until failure.
+\item Find the time where 95\% of these bulbs are expected to fail before it.
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{slateblue!40}{ \item 
+\Exmpl{slateblue}{} A gasoline wholesale distributor has bulk storage tanks that hold fixed supplies and
+are filled every Monday. Of interest to the wholesaler is the proportion of this supply
+that is sold during the week. Over many weeks of observation, the distributor found
+that this proportion could be modeled by a beta distribution with $\alpha = 4$ and $\beta = 2$.\\
+\begin{enumerate}
+\item Find the probability that the wholesaler will sell at least 90\% of her stock in a given week.
+\item What is the expected percentage of sell in a randomly selected week. 
+\end{enumerate}
+}\\
+
+\qbx[6.9in]{olive!40}{\item
+\Exmpl{olive}{} The times of first failure of a unit of a brand of ink jet printers are approximately normally distributed with a mean of 1,500 hours and a standard deviation of 200 hours. Use the statistical calculator.
+\begin{enumerate}
+\item What fraction of these printers will fail before 1,000 hours?
+\item What is the probability that the first failure time of a selected printer will fail be between 1,300 and 1700 hours?
+\end{enumerate}
+}\\
+
+\qbx[6.9in]{amethyst!40}{\item 
+\Exmpl{olive}{} The times of first failure of a unit of a brand of ink jet printers are approximately normally distributed with a mean of 1,500 hours and a standard deviation of 200 hours. Use the statistical calculator.
+\begin{enumerate}
+\item what should be the guarantee time for these printers if the manufacturer wants only 5\% to fail within the guarantee period.
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{amethyst!40}{\item 
+\Exmpl{amethyst}{} The SAT and ACT college entrance exams are taken by thousands of students each year. The mathematics portions of each of these exams produce scores that are approximately normally distributed. In recent years, SAT mathematics exam scores have averaged 480 with standard deviation 100. The average and standard deviation for ACT mathematics scores are 18 and 6, respectively.
+\begin{enumerate}
+\item An engineering school sets 550 as the minimum SAT math score for new students. What percentage of students will score below 550 in a typical year?
+\item  What score should the engineering school set as a comparable standard on the ACT math test?
+\end{enumerate}
+}\\
+
+
+
+\qbx[6.9in]{teal!40}{ \item
+\Exmpl{teal}{} An engineer working for a manufacturer of electronic components takes a large number of measurements of a particular dimension of components from the production line.  She finds that the distribution of dimensions is normal, with a mean of 2.340 cm and a standard deviation of 0.06 cm.
+\begin{enumerate}
+\item What percentage of measurements will be less than 2.45 cm?
+\item What percentage of dimensions will be between 2.25 cm and 2.45 cm?
+\item What value of the dimension will be exceeded by 98\% of the components?
+\end{enumerate}
+}\\
+
+\qbx[6.9in]{babyblue!40}{ \item 
+\Exmpl{babyblue}{} Of the Type A electrical resistors produced by a factory, 85\% have resistance greater than 41 ohms, and 3.7\% of them have resistance greater than 45 ohms. The resistances follow a normal distribution.
+\begin{enumerate}
+\item What percentage of these resistors have resistance greater than 44 ohms?
+\end{enumerate}
+}\\
+
+
+
+
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Exponential}(\lambda=5)$,  then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2)$
+\item What is $E(3X+50)$?
+\item What is Var$(3X+50)$?
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+\vspace{.1in}
+
+
+\qBrd[4.5in]{slateblue!30}{
+\item 
+If $X\sim \text{Gamma}(\alpha= 10, \lambda=5)$,  then
+\begin{enumerate}
+\item Obtain the value of $E(X)$, $\text{Var}(X)$, and $ E(X^2)$
+\item What is $E(3X+10)$?
+\item What is Var$(3X-5)$?
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+\vspace{.1in}
+
+
+\qBrd[4.5in]{babyblue!30}{
+\item 
+If $X\sim \text{Normal}(\mu= 100, \sigma=5)$,  then
+\begin{enumerate}
+\item What is $ E(X^2)$
+\item Obtain $P(X\leq 110)$
+\item Obtain $P(95\leq X\leq 110)$
+\item What is the MGF of X?
+\end{enumerate} 
+}\\
+\vspace{.1in}
+
+
+\qbx[6.9in]{amethyst!40}{ \item 
+\Exmpl{amethyst}{}  The joint pdf of X; Y is given by 
+$$f_{_{X,Y}}(x,y)=
+ \begin{cases}
+\frac{x+y+1}{2} &  \text{ for }  0 < x <1,0 < y <1\\
+0 &  \text{otherwise}\end{cases}$$
+\begin{enumerate}
+\item Find the cumulative distribution function of $(X, Y)$ .
+\item  Find the marginal density of X.
+\item  Find the marginal density of Y .
+\item Find the conditional probability of X given Y = 0.5.
+\item  Use this to compute $P(X\leq 0.75 \mid Y=0.5)$
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{amber!40}{ \item 
+\Exmpl{amber}{}  Let X, Y have joint cdf
+$$F_{_{X,Y}}(x,y)=
+ \begin{cases}
+x^2y^3&  \text{ for }  0 < x <1,0 < y <1\\
+ &  \text{otherwise}\end{cases}$$
+ \vspace{-.2in}
+\begin{enumerate}
+\item Find the joint density function of $(X, Y)$ .
+\item  Find the marginal density of X.
+\item  Find the marginal density of Y .
+\item Find the conditional probability of X given Y = 0:5.
+\item Use this to compute $P(X\geq 0.5 \mid Y=0.5)$
+\end{enumerate}
+}\\
+
+
+
+\qbx[6.9in]{babyblue!40}{\item 
+\Exmpl{babyblue}{}  The joint density of X and Y is given by 
+$$f_{_{X,Y}}(x,y)=
+ \begin{cases}
+2e^{-x-2y}&  \text{ for }  0 < x <\infty,0 < y <\infty\\
+ &  \text{otherwise}\end{cases}$$
+\begin{enumerate}
+\item  Find the marginal density of X.
+\item  Find the marginal density of Y .
+\item Find $P(X > 1,  Y < 1) $
+\item Find $P(X <Y) $
+\item Find $P(X <4) $
+\item  Find the conditional probability of X given Y = 1.
+\item  Find the marginal density of Y .
+\item Use this to compute $P(X\leq 2 \mid Y=1)$
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{slateblue!40}{ \item 
+\Exmpl{slateblue}{}  The joint pdf of X; Y is given by 
+$$\HLTW{f_{_{X,Y}}(x,y)=
+ \begin{cases}
+\frac{x+y+1}{2} &  \text{ for }  0 < x <1,0 < y <1\\
+0 &  \text{otherwise}\end{cases}}$$
+\begin{enumerate}
+\item Are X and Y statistically independent?
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{amber!40}{\item 
+\Exmpl{amber}{}  Let X, Y have joint cdf
+$$\HLTW{ F_{_{X,Y}}(x,y)=
+ \begin{cases}
+x^2y^3&  \text{ for }  0 < x <1,0 < y <1\\
+ &  \text{otherwise}\end{cases}}$$
+\begin{enumerate}
+\item Are X and Y independent?
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{babyblue!40}{ \item
+\Exmpl{babyblue}{}  The joint density of X and Y is given by 
+$$\HLTW{f_{_{X,Y}}(x,y)=
+ \begin{cases}
+2e^{-x-2y}&  \text{ for }  0 < x <\infty,0 < y <\infty\\
+ &  \text{otherwise}\end{cases}}$$
+\begin{enumerate}
+\item Are X and Y independent?
+\end{enumerate}
+}\\
+
+
+\qbx[4.5in]{olive!40}{\item 
+\Exmpl{olive}{}  Let X, Y have joint cdf
+$$ \HLTW{ f_{_{X,Y}}(x,y)=
+ \begin{cases}
+\frac{2}{7}(x+2y)&  \text{ for }  0 < x <1,1 < y <2\\
+ &  \text{otherwise}\end{cases}}$$
+\begin{enumerate}
+\item Find the expected value of $\frac{X}{Y^3}$
+\item Find the expected value of $XY$
+\end{enumerate}
+}\\
+
+
+
+
+
+\qbx[6.9in]{airforceblue!40}{\item 
+\Exmpl{airforceblue}{}  Let X and Y have joint density
+$$\HLTW{f_{_{X,Y}}(x,y)=
+ \begin{cases}
+2&  \text{ for }  x>0, y>0, x+y<1\\
+ &  \text{otherwise}\end{cases}}$$
+\begin{enumerate}
+\item Find the covariance of X and Y .
+\item Are the random variables X,  and Y statistically independent?
+\end{enumerate}
+}\\
+
+
+
+
+\qbx[6.9in]{olive!30}{\item
+\Exmpl{olive}{}  Given here is the joint probability function associated with data obtained in a study of automobile
+accidents in which a child (under age 5 years) was in the car and at least one fatality occurred. Specifically, the study focused on whether or not the child survived and what type of seatbelt (if any) he or she used. Define
+\begin{center}
+$$Y_1= 
+ \begin{cases}
+0&  \text{ if the child survived }\\
+ 1&  \text{if not,}\end{cases} \text{ and,  }  
+ Y_2= 
+ \begin{cases}
+0&  \text{ if no belt used, }\\
+ 1&  \text{ if adult belt used}\\
+ 2&  \text{ if car-seat belt used}
+ \end{cases} $$
+ Notice that $Y_1$ is the number of fatalities per child and, since children's car seats usually utilize two belts, $Y_2$ is the number of seatbelts in use at the time of the accident	\\
+\begin{tabular}{ |c|| c| c| } 
+\toprule
+\diagbox{$y_2$}{$y_1$} & \makecell{ 0}& \makecell{1}   \\ \hline
+0 & 0.38&  0.17 \\\hline
+1 &  0.14  & 0.02 \\\hline
+2&0.24  &0.05 \\\hline
+\bottomrule
+\end{tabular}
+\begin{enumerate}
+\item What is the Marginal distribution of $Y_1$?
+\item What is the Marginal distribution of $Y_2$?
+\item Obtin Covariance between $Y_1$ and $Y_2$.
+\end{enumerate}
+\end{center}
+ % Ans: 5/128
+% \vspace{-.1in}
+}\\
+
+
+
+\qbx[6.9in]{babyblue!40}{\item
+\Exmpl{babyblue}{}  Gasoline is to be stocked in a bulk tank once at the beginning of each week and then sold to individual customers. Let $Y_1$ denote the proportion of the capacity of the bulk
+tank that is available after the tank is stocked at the beginning of the week. Because of the limited supplies, $Y_1$ varies from week to week. Let $Y_2$ denote the proportion of the capacity of the bulk tank that is sold during the week. Because $Y_1$ and $Y_2$ are both proportions, both variables take on values between 0 and 1. Further, the amount sold, $Y_2$, cannot exceed the amount available, $Y_1$.  Suppose that the joint density function for $Y_1$ and $Y_2$ is given by
+$$f_{_{Y_1,Y_2}}(y_1,y_2)=
+ \begin{cases}
+3y_1&  \text{ for }  0 < x <\infty,0 \leq  y_2\leq y_1 \leq 1\\
+ &  \text{otherwise}\end{cases}$$
+ \begin{enumerate}
+ \item  Find the probability that less than one-half of the tank will be stocked and more than one-quarter of the tank will be sold. i.e. $P(0\leq  Y_1 \leq 0.5, Y_2 > 0.25).$
+ \item What is the probability that  less than one-half of the tank will be stocked given that more than one-quarter of the tank will be sold.  
+ $P(0\leq  Y_1 \leq 0.5\mid Y_2 > 0.25).$
+ \item Find the marginal density of $Y_1$
+ \item Find the marginal density of $Y_2$
+ \item Find $E(Y_2)$
+ \item Find the conditional density of $Y_2$ given $Y_1=0.25$.
+ \end{enumerate}
+ % Ans: 5/128
+}\\
+
+
+
+
+\qbx[6.9in]{airforceblue!40}{\item
+\Exmpl{airforceblue}{}  The management at a fast-food outlet is interested in the joint behavior of the random variables $Y_1$, defined as the total time between a customer's arrival at the store and departure from the service window, and $Y_2$, the time a customer waits in line before reaching the service window.
+Because $Y_1$ includes the time a customer waits in line, we must have $Y_1 \geq  Y_2$.  The relative frequency distribution of observed values of $Y_1$ and $Y_2$ can be modeled by the probability density function
+$$f_{_{Y_1,Y_2}}(y_1,y_2)=
+ \begin{cases}
+e^{-y_1}&  \text{ for }  0 \leq  y_2\leq y_1 \leq \infty\\
+ 0&  \text{otherwise}\end{cases},$$ 
+ with time measured in minutes. Find
+ % Ans: 5/128
+% \vspace{-.1in}
+ \begin{enumerate}
+ \item Find Marginal Density of $Y_1$.
+  \item Find Marginal Density of $Y_2$.
+ \item $P(Y_1<2, Y_2>1).$
+ \item $P(Y_1 \geq  2Y_2).$
+ \item $P(Y_1-Y_2 \geq  1).$
+ \item Find $E(Y_1-Y_2)$, expected service time. 
+    \item Find Conditional  Density of $Y_2$ given $Y_1=2$.
+    \item Find $E(Y_2\mid Y_1=2)$
+ \end{enumerate}
+}\\
+
+
+
+
+\qbx[6.9in]{olive!40}{\item
+\Exmpl{olive}{}Let X and Y have joint distribution.  For X and Y defined in the previous two examples,  Let $Z_1= 2X+4Y$ and $Z_2= X-2Y$
+\begin{enumerate}
+\item Find  $E(Z_1)$, $E(Z_2)$
+\item Find Var$(Z_1)$, Var$(Z_2)$
+\item Find Cov$(Z_1,Z_2)$.
+\end{enumerate}
+}\\
+
+\qbx[6.9in]{teal!40}{\item 
+\Exmpl{teal!60}{}Let X and Y be two statistically independent random variables with means $2$,  $3$ respectively. , The variances of $X,Y$ is provided as $4$ and  $2$. Let $Z_1=X+2Y+3$ and $Z_2=3X-Y$.  Find: 
+\begin{enumerate}
+\item Find  $E(Z_1)$, $E(Z_2)$
+\item Find Var$(Z_1)$, Var$(Z_2)$
+\item Find Cov$(Z_1,Z_2)$.
+\end{enumerate}
+}\\
 
 \end{enumerate}
 

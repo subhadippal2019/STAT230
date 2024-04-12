@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 APR 2024 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 APR 2024 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,39 +973,163 @@ xcolor.com
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup12
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2019/08/20 v0.3c Improved picture commands (HjG,RN,JT)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks53
+\@arclen=\dimen311
+\@arcrad=\dimen312
+\@tempdimd=\dimen313
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen314
+\ar@mcellbox=\box67
+\extrarowheight=\dimen315
+\NC@list=\toks54
+\extratabsurround=\skip65
+\backup@length=\skip66
+\ar@cellbox=\box68
+)
+\diagbox@boxa=\box69
+\diagbox@boxb=\box70
+\diagbox@boxm=\box71
+\diagbox@wd=\dimen316
+\diagbox@ht=\dimen317
+\diagbox@insepl=\dimen318
+\diagbox@insepr=\dimen319
+\diagbox@outsepl=\dimen320
+\diagbox@outsepr=\dimen321
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen322
+\c@nlinenum=\count330
+\TeXr@lab=\toks55
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/beamer/xmpmulti.sty
+\@mpm@count=\count331
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count332
+\mult@box=\box72
+\multicol@leftmargin=\dimen323
+\c@unbalance=\count333
+\c@collectmore=\count334
+\doublecol@number=\count335
+\multicoltolerance=\count336
+\multicolpretolerance=\count337
+\full@width=\dimen324
+\page@free=\dimen325
+\premulticols=\dimen326
+\postmulticols=\dimen327
+\multicolsep=\skip67
+\multicolbaselineskip=\skip68
+\partial@page=\box73
+\last@line=\box74
+\maxbalancingoverflow=\dimen328
+\mult@rightbox=\box75
+\mult@grightbox=\box76
+\mult@gfirstbox=\box77
+\mult@firstbox=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\c@minrows=\count338
+\c@columnbadness=\count339
+\c@finalcolumnbadness=\count340
+\last@try=\dimen329
+\multicolovershoot=\dimen330
+\multicolundershoot=\dimen331
+\mult@nat@firstbox=\box116
+\colbreak@box=\box117
+\mc@col@check@num=\count341
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks56
+\minrowclearance=\skip69
+)
 (./ProblemSetAimingFinalExam.aux)
 \openout1 = `ProblemSetAimingFinalExam.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count330
-\scratchdimen=\dimen311
-\scratchbox=\box67
-\nofMPsegments=\count331
-\nofMParguments=\count332
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count333
-\MPscratchDim=\dimen312
-\MPnumerator=\count334
-\makeMPintoPDFobject=\count335
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count342
+\scratchdimen=\dimen332
+\scratchbox=\box118
+\nofMPsegments=\count343
+\nofMParguments=\count344
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count345
+\MPscratchDim=\dimen333
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
+\everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1049,8 +1173,8 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 18.
+\AtBeginShipoutBox=\box119
+Package hyperref Info: Link coloring OFF on input line 23.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1061,11 +1185,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count336
+\c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
  (./ProblemSetAimingFinalExam.out) (./ProblemSetAimingFinalExam.out)
 \@outlinefile=\write4
 \openout4 = `ProblemSetAimingFinalExam.out'.
@@ -1080,84 +1204,84 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count337
+\c@lstlisting=\count349
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 30.
+ 35.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 30.
+ 35.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 7.0pt on input line 30.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 7.0pt on input line 30.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-0.
+5.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 7.0pt on input line 30.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 7.0pt on input line 30.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 7.0pt on input line 30.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 30.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 30
+(Font)              scaled to size 7.0pt on input line 35.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 35
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 [][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
@@ -1168,10 +1292,10 @@ File: /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT23
 <use /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230
 _1/figs/CDF_three_coin_toss.png>
 Package pdftex.def Info: /Users/subhadippal/Documents/Packages/STAT230/Slides_S
-TAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png  used on input line 107.
+TAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png  used on input line 112.
 (pdftex.def)             Requested size: 361.34912pt x 225.8432pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
@@ -1182,10 +1306,10 @@ File: /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT23
 <use /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230
 _1/figs/logistic_CDF.png>
 Package pdftex.def Info: /Users/subhadippal/Documents/Packages/STAT230/Slides_S
-TAT230/Unit6_STAT230_1/figs/logistic_CDF.png  used on input line 127.
+TAT230/Unit6_STAT230_1/figs/logistic_CDF.png  used on input line 132.
 (pdftex.def)             Requested size: 210.78697pt x 119.44595pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
@@ -1194,70 +1318,280 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/
 subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_1/figs/CDF_
 three_coin_toss.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 180--181
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 185--186
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 [2 </Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_
 1/figs/logistic_CDF.png>]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 189--190
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 194--195
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 204--205
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 209--210
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 222--223
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 227--228
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 238--239
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 251--252
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 263--264
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 271--272
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 278--279
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 287--288
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+[4]
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 298--299
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 305--306
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 362--363
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+[5]
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 379--380
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 399--400
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 411--412
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 423--424
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+[6]
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 435--436
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 464--465
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 500--501
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
+
+ []
+
+[7]
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 521--522
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 546--547
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+ []
+
+[8]
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 558--559
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 567--568
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
+
+ []
+
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 574.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 574.
  (./ProblemSetAimingFinalExam.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 574.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 574.
 Package rerunfilecheck Info: File `ProblemSetAimingFinalExam.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 233.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 574.
  ) 
 Here is how much of TeX's memory you used:
- 26959 strings out of 480608
- 473517 string characters out of 5903631
- 853238 words of memory out of 5000000
- 42256 multiletter control sequences out of 15000+600000
- 570915 words of font info for 102 fonts, out of 8000000 for 9000
+ 27963 strings out of 480608
+ 489718 string characters out of 5903631
+ 880424 words of memory out of 5000000
+ 43119 multiletter control sequences out of 15000+600000
+ 573718 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,20n,94p,598b,1782s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,21n,94p,598b,1784s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb></usr
@@ -1265,12 +1599,13 @@ al/texlive/2020/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb></usr
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ProblemSetAimingFinalExam.pdf (3 pages, 198663 bytes).
+al/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ProblemSetAimingFinalExam.pdf (9 pages, 273952 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 377 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 965 words of extra memory for PDF output out of 10000 (max. 10000000)
 
