@@ -126,7 +126,7 @@ $$ \displaystyle F_X(x):=\frac{1}{1+e^{-x}} \text{ for all } x\in \R.$$
 \item What is the probability that $X=0$?
 \item What is the probability that $X=2$
 \item  Obtain $P(0<X\leq 1)$
-\item  Obtain $P(0\geq X< 2)$
+\item  Obtain $P( X< 2)$
 \item Identify the nature of the random variable (Discrete/Continuous/ Mixture of Discrete and Continuous. )
 \end{enumerate}
 }\\
@@ -136,10 +136,10 @@ $$ \displaystyle F_X(x):=\frac{1}{1+e^{-x}} \text{ for all } x\in \R.$$
    \qBrd[6.9in]{amethyst!40}{
 \item 
 \Exmpl{amethyst}{}  Suppose that $X$ is a continuous random variable whose probability density function is given by
-$$ f(x):= \begin{cases} 
+$$\HLTW{ f(x):= \begin{cases} 
 \HLTEQ[babyblue!20]{ \HLTY{C}(4x-2x^2) }& \text{ if } 0 <x<2\\
 0 & \text{ otherwise.} 
-\end{cases}$$
+\end{cases}}$$
 \vspace{-.1in}
 \begin{enumerate}
 \item For what value of \HLTY{C} the provided function is a valid probability density function?
@@ -153,10 +153,10 @@ $$ f(x):= \begin{cases}
 
   \qBrd[6.9in]{amber!40}{\item 
 \Exmpl{amber}{}  For a given IT technician in a support center, let X denote the percentage of time, out of a 40-hour work week, that he is directly serving customers. Suppose that X has a probability density function given by
-$$ f(x):= \begin{cases} 
+$$\HLTW{ f(x):= \begin{cases} 
  3x^2& \text{ if } 0 <x<1\\
 0 & \text{ otherwise.} 
-\end{cases}$$
+\end{cases}}$$
 \vspace{-.1in}
 \begin{enumerate}
 \item Find the probability that the technician will spend 20\% to 70\% of hisworkweek serving customers.
@@ -187,20 +187,21 @@ $$\HLTW{ f(x):= \begin{cases}
 
 \qbx[6.9in]{airforceblue!40}{\item 
 \Exmpl{applegreen}{}   Find $E(e^X)$ and the Moment Generating Function for the continuous random variable with probability density function 
+$\HLTW{
 $$ f(x):= \begin{cases} 
  1& \text{ if } 0 \leq x\leq 1\\
 0 & \text{ otherwise.} 
-\end{cases}$$
+\end{cases}$$}$
 }\\
 
 
 
 \qbx[6.9in]{amethyst!40}{\item 
 \Exmpl{amethyst}{}  Let X denote the resistance of a randomly chosen resistor, and suppose that its pdf is given by
-$$ f(x):= \begin{cases} 
+$$\HLTW{ f(x):= \begin{cases} 
  \frac{x}{18}& \text{ if } 8 \leq x\leq 10\\
 0 & \text{ otherwise.} 
-\end{cases}$$
+\end{cases}}$$
 \begin{enumerate}
 \item  Find $P(8.6< X\leq 9.8)$.
 \item Find the median of the resistance of such resistors.
@@ -212,10 +213,11 @@ $$ f(x):= \begin{cases}
 
 \qbx[6.9in]{asparagus!40}{\item 
 \Exmpl{asparagus}{}  The length of time required by students to complete a one-hour exam is a random variable with a density function given by
-$$ f(x):= \begin{cases} 
+$$\HLTW{
+f(x):= \begin{cases} 
 cy^2+y& \text{ for }0\leq y\leq 1\\
 0 & \text{ otherwise.} 
-\end{cases}$$
+\end{cases}}$$
 \begin{enumerate}
 \item Find c that makes this function a valid probability density function.
 \item Find the F(y) 
@@ -348,10 +350,10 @@ If $X\sim \text{Normal}(\mu= 100, \sigma=5)$,  then
 
 \qbx[6.9in]{amethyst!40}{ \item 
 \Exmpl{amethyst}{}  The joint pdf of X; Y is given by 
-$$f_{_{X,Y}}(x,y)=
+$$\HLTW{f_{_{X,Y}}(x,y)=
  \begin{cases}
 \frac{x+y+1}{2} &  \text{ for }  0 < x <1,0 < y <1\\
-0 &  \text{otherwise}\end{cases}$$
+0 &  \text{otherwise}\end{cases}}$$
 \begin{enumerate}
 \item Find the cumulative distribution function of $(X, Y)$ .
 \item  Find the marginal density of X.
@@ -364,10 +366,10 @@ $$f_{_{X,Y}}(x,y)=
 
 \qbx[6.9in]{amber!40}{ \item 
 \Exmpl{amber}{}  Let X, Y have joint cdf
-$$F_{_{X,Y}}(x,y)=
+$$\HLTW{F_{_{X,Y}}(x,y)=
  \begin{cases}
 x^2y^3&  \text{ for }  0 < x <1,0 < y <1\\
- &  \text{otherwise}\end{cases}$$
+ &  \text{otherwise}\end{cases}}$$
  \vspace{-.2in}
 \begin{enumerate}
 \item Find the joint density function of $(X, Y)$ .
@@ -382,10 +384,10 @@ x^2y^3&  \text{ for }  0 < x <1,0 < y <1\\
 
 \qbx[6.9in]{babyblue!40}{\item 
 \Exmpl{babyblue}{}  The joint density of X and Y is given by 
-$$f_{_{X,Y}}(x,y)=
+$$\HLTW{f_{_{X,Y}}(x,y)=
  \begin{cases}
 2e^{-x-2y}&  \text{ for }  0 < x <\infty,0 < y <\infty\\
- &  \text{otherwise}\end{cases}$$
+ &  \text{otherwise}\end{cases}}$$
 \begin{enumerate}
 \item  Find the marginal density of X.
 \item  Find the marginal density of Y .
@@ -401,10 +403,10 @@ $$f_{_{X,Y}}(x,y)=
 
 \qbx[6.9in]{slateblue!40}{ \item 
 \Exmpl{slateblue}{}  The joint pdf of X; Y is given by 
-$$\HLTW{f_{_{X,Y}}(x,y)=
+$$\HLTW{\HLTW{f_{_{X,Y}}(x,y)=
  \begin{cases}
 \frac{x+y+1}{2} &  \text{ for }  0 < x <1,0 < y <1\\
-0 &  \text{otherwise}\end{cases}}$$
+0 &  \text{otherwise}\end{cases}}}$$
 \begin{enumerate}
 \item Are X and Y statistically independent?
 \end{enumerate}
@@ -470,7 +472,7 @@ $$\HLTW{f_{_{X,Y}}(x,y)=
 \Exmpl{olive}{}  Given here is the joint probability function associated with data obtained in a study of automobile
 accidents in which a child (under age 5 years) was in the car and at least one fatality occurred. Specifically, the study focused on whether or not the child survived and what type of seatbelt (if any) he or she used. Define
 \begin{center}
-$$Y_1= 
+$$\HLTW{Y_1= 
  \begin{cases}
 0&  \text{ if the child survived }\\
  1&  \text{if not,}\end{cases} \text{ and,  }  
@@ -479,7 +481,7 @@ $$Y_1=
 0&  \text{ if no belt used, }\\
  1&  \text{ if adult belt used}\\
  2&  \text{ if car-seat belt used}
- \end{cases} $$
+ \end{cases} }$$
  Notice that $Y_1$ is the number of fatalities per child and, since children's car seats usually utilize two belts, $Y_2$ is the number of seatbelts in use at the time of the accident	\\
 \begin{tabular}{ |c|| c| c| } 
 \toprule
@@ -492,7 +494,7 @@ $$Y_1=
 \begin{enumerate}
 \item What is the Marginal distribution of $Y_1$?
 \item What is the Marginal distribution of $Y_2$?
-\item Obtin Covariance between $Y_1$ and $Y_2$.
+\item Obtain Covariance between $Y_1$ and $Y_2$.
 \end{enumerate}
 \end{center}
  % Ans: 5/128
@@ -504,10 +506,10 @@ $$Y_1=
 \qbx[6.9in]{babyblue!40}{\item
 \Exmpl{babyblue}{}  Gasoline is to be stocked in a bulk tank once at the beginning of each week and then sold to individual customers. Let $Y_1$ denote the proportion of the capacity of the bulk
 tank that is available after the tank is stocked at the beginning of the week. Because of the limited supplies, $Y_1$ varies from week to week. Let $Y_2$ denote the proportion of the capacity of the bulk tank that is sold during the week. Because $Y_1$ and $Y_2$ are both proportions, both variables take on values between 0 and 1. Further, the amount sold, $Y_2$, cannot exceed the amount available, $Y_1$.  Suppose that the joint density function for $Y_1$ and $Y_2$ is given by
-$$f_{_{Y_1,Y_2}}(y_1,y_2)=
+$$\HLTW{f_{_{Y_1,Y_2}}(y_1,y_2)=
  \begin{cases}
 3y_1&  \text{ for }  0 < x <\infty,0 \leq  y_2\leq y_1 \leq 1\\
- &  \text{otherwise}\end{cases}$$
+ &  \text{otherwise}\end{cases}}$$
  \begin{enumerate}
  \item  Find the probability that less than one-half of the tank will be stocked and more than one-quarter of the tank will be sold. i.e. $P(0\leq  Y_1 \leq 0.5, Y_2 > 0.25).$
  \item What is the probability that  less than one-half of the tank will be stocked given that more than one-quarter of the tank will be sold.  
@@ -526,10 +528,10 @@ $$f_{_{Y_1,Y_2}}(y_1,y_2)=
 \qbx[6.9in]{airforceblue!40}{\item
 \Exmpl{airforceblue}{}  The management at a fast-food outlet is interested in the joint behavior of the random variables $Y_1$, defined as the total time between a customer's arrival at the store and departure from the service window, and $Y_2$, the time a customer waits in line before reaching the service window.
 Because $Y_1$ includes the time a customer waits in line, we must have $Y_1 \geq  Y_2$.  The relative frequency distribution of observed values of $Y_1$ and $Y_2$ can be modeled by the probability density function
-$$f_{_{Y_1,Y_2}}(y_1,y_2)=
+$$\HLTW{f_{_{Y_1,Y_2}}(y_1,y_2)=
  \begin{cases}
 e^{-y_1}&  \text{ for }  0 \leq  y_2\leq y_1 \leq \infty\\
- 0&  \text{otherwise}\end{cases},$$ 
+ 0&  \text{otherwise}\end{cases}},$$ 
  with time measured in minutes. Find
  % Ans: 5/128
 % \vspace{-.1in}
@@ -558,11 +560,57 @@ e^{-y_1}&  \text{ for }  0 \leq  y_2\leq y_1 \leq \infty\\
 }\\
 
 \qbx[6.9in]{teal!40}{\item 
-\Exmpl{teal!60}{}Let X and Y be two statistically independent random variables with means $2$,  $3$ respectively. , The variances of $X,Y$ is provided as $4$ and  $2$. Let $Z_1=X+2Y+3$ and $Z_2=3X-Y$.  Find: 
+\Exmpl{teal!60}{} \; Let X and Y be two statistically independent random variables with means $2$,  $3$ respectively. , The variances of $X,Y$ is provided as $4$ and  $2$. Let $ \HLTW{Z_1=X + 2Y + 3}$ and $\HLTW{Z_2=3X - Y}$.  Find: 
 \begin{enumerate}
 \item Find  $E(Z_1)$, $E(Z_2)$
 \item Find Var$(Z_1)$, Var$(Z_2)$
 \item Find Cov$(Z_1,Z_2)$.
+\end{enumerate}
+}\\
+
+\qbx[6.9in]{babyblue!40}{\item 
+Identify the Distributions along with parameters for the following moment generating functions. 
+\begin{enumerate}
+\item  $M_{X}(t)= (0.7+0.3e^t)^{10}$
+\item $M_{X}(t)= \exp{\left(t^2\right)}$
+\item $M_{X}(t)=\frac{1}{\left(1-\frac{t}{5}\right)^{0.5}}$
+\item $M_{X}(t)= e^{5e^t-5}$
+\item $M_{X}(t)= \frac{0.2e^t}{1- 0.8e^t}$
+\item $M_{X}(t)=\frac{1}{\left(1-\frac{t}{10}\right)}$
+\item $M_{X}(t)= \exp{\left(-2+5t^2\right)}$
+\end{enumerate}
+}\\
+
+
+
+\qbx[6.9in]{babyblue!40}{\item 
+Provide Joint and marginals, ask about the consitional distribution
+\begin{enumerate}
+\item  
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{airforceblue!40}{\item 
+Ask about independence from support of the random variables
+\begin{enumerate}
+\item  
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{babyblue!40}{\item 
+Misc Questions 
+\begin{enumerate}
+\item  
+\end{enumerate}
+}\\
+
+
+\qbx[6.9in]{babyblue!40}{\item 
+Misc Questions cost function of gamma random variables 
+\begin{enumerate}
+\item  
 \end{enumerate}
 }\\
 
