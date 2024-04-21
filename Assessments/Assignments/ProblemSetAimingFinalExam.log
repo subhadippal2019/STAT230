@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  14 APR 2024 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  22 APR 2024 01:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1574,70 +1574,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 569--570
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 582--583
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 577--578
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 591--592
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 585--586
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 595--596
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
 
  []
 
 [9]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 599--600
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 614--615
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
-
- []
-
-
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 607--608
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
-
- []
-
-
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 615--616
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
 
  []
 
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 622.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 622.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 645.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 645.
  (./ProblemSetAimingFinalExam.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 622.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 622.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 645.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 645.
 Package rerunfilecheck Info: File `ProblemSetAimingFinalExam.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 622.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 645.
  ) 
 Here is how much of TeX's memory you used:
- 28006 strings out of 480608
- 490515 string characters out of 5903631
- 880449 words of memory out of 5000000
+ 28005 strings out of 480608
+ 490491 string characters out of 5903631
+ 880448 words of memory out of 5000000
  43145 multiletter control sequences out of 15000+600000
  573718 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1652,10 +1642,10 @@ b></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ProblemSetAimingFinalExam.pdf (10 pages, 281480 bytes).
+Output written on ProblemSetAimingFinalExam.pdf (10 pages, 281899 bytes).
 PDF statistics:
- 633 PDF objects out of 1000 (max. 8388607)
- 436 compressed objects within 5 object streams
- 181 named destinations out of 1000 (max. 500000)
- 1025 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 1013 words of extra memory for PDF output out of 10000 (max. 10000000)
 
