@@ -934,7 +934,48 @@ that this proportion could be modeled by a beta distribution with $\alpha = 4$ a
 \end{frame}
 
 
-
+\begin{frame}
+\hspace{-.4in}
+\qBrd[5.25in]{antiquefuchsia!50}{
+\begin{center}
+\qBrd[5.15in]{white!40}{
+{
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pdf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $f_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Uniform$(a,b)$ &$ [a, b]$ & $ \begin{cases} \frac{1}{b-a} & \text{ if } x\in [a,b]\\ 0 & \text{ otherwise .} \end{cases} $ & $  \frac{a+b}{2}  $  & $  \frac{(b-a)^2}{12}$&   $M_{_X}(t)
+=\begin{cases} 
+ \frac{e^{tb}- e^{ta}}{t(b-a)} & \text{ if } t\neq 0 \\
+ 1 & \text{ if } t= 0  
+ \end{cases}$\\
+ & & & & & \\
+\hline \tiny
+ & & & & & \\
+ $\text{Exponential}(\lambda)$&$ (0, \infty)$ & $ \begin{cases} \lambda e^{-\lambda x} & \text{ if } x>0\\ 0 & \text{ otherwise .} \end{cases} $ & $ \frac{1}{\lambda} $  & $ \frac{1}{\lambda^2}$&   $
+ \frac{\lambda}{\lambda-t}  \text{ if } 0\leq  t < \lambda$\\
+ & & & & & \\
+ \hline
+ & & & & & \\
+ $\text{Gamma}(\alpha, \lambda )$&$ (0, \infty)$ & $  \frac{\lambda^{\alpha}}{\Gamma(\alpha)} x^{\alpha-1}e^{-\lambda x}  $ & $ \frac{\alpha}{\lambda} $  & $ \frac{\alpha}{\lambda^2}$&   $ \frac{1}{\left( 1-\frac{t}{\lambda}\right)^{\alpha}}  \text{ if } 0\leq  t < \lambda$\\
+ $\HLTW{\text{shape}= \alpha, \text{rate}}= \lambda$ & & $\text{ if } x>0$ & & & \\
+ \hline
+ & & & & & \\
+ $\text{Beta}(\alpha, \beta )$&$ (0, 1)$ & $   \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(
+ \beta)}x^{\alpha-1}x^{\beta-1}  $ & $\frac{\alpha}{\alpha+\beta}  $  & $ \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)} $&   $ --- $\\
+  & & $\text{ if } 0<x<1$ & & & \\
+ \hline
+ & & & & & \\
+ $\text{Normal}(\mu, \sigma^2 )$&$ (-\infty , \infty )$ & $  \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}} $ & $\mu  $  & $\sigma^2 $&   $  e^{\mu t +\frac{t^2\sigma^2}{2}}$\\
+ $\HLTW{\text{mean}= \mu, \text{Var}}= \sigma^2$ & & $\text{ for  } x\in \R $ & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+\end{frame}
 
 
 
