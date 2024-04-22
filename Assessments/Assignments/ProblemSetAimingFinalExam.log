@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  22 APR 2024 01:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  22 APR 2024 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,17 +1299,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-</Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_1/f
-igs/logistic_CDF.png, id=53, 421.575pt x 238.8925pt>
 File: /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT23
-0_1/figs/logistic_CDF.png Graphic file (type png)
+0_1/figs/CDF_three_coin_toss.png Graphic file (type png)
 <use /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230
-_1/figs/logistic_CDF.png>
+_1/figs/CDF_three_coin_toss.png>
 Package pdftex.def Info: /Users/subhadippal/Documents/Packages/STAT230/Slides_S
-TAT230/Unit6_STAT230_1/figs/logistic_CDF.png  used on input line 132.
-(pdftex.def)             Requested size: 210.78697pt x 119.44595pt.
+TAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png  used on input line 121.
+(pdftex.def)             Requested size: 361.34912pt x 225.8432pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
@@ -1318,73 +1316,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--133
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/
 subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_1/figs/CDF_
 three_coin_toss.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+</Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_1/f
+igs/logistic_CDF.png, id=89, 421.575pt x 238.8925pt>
+File: /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT23
+0_1/figs/logistic_CDF.png Graphic file (type png)
+<use /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230
+_1/figs/logistic_CDF.png>
+Package pdftex.def Info: /Users/subhadippal/Documents/Packages/STAT230/Slides_S
+TAT230/Unit6_STAT230_1/figs/logistic_CDF.png  used on input line 144.
+(pdftex.def)             Requested size: 210.78697pt x 119.44595pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 185--186
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 [2 </Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_
 1/figs/logistic_CDF.png>]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 195--196
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 197--198
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 210--211
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 207--208
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 229--230
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 222--223
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 240--241
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 [3]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 253--254
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 252--253
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
@@ -1399,82 +1397,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--266
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 277--278
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 280--281
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 285--286
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 289--290
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
 [4]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 300--301
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 292--293
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 307--308
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 301--302
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 364--365
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 312--313
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 319--320
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 [5]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 381--382
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 376--377
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 401--402
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 393--394
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
@@ -1488,7 +1491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
-[6]
+
 Overfull \hbox (3.81136pt too wide) in paragraph at lines 425--426
 [][] 
  []
@@ -1498,7 +1501,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
-
+[6]
 Overfull \hbox (3.81136pt too wide) in paragraph at lines 437--438
 [][] 
  []
@@ -1509,51 +1512,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 437--438
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
-
- []
-
-
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 466--467
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 449--450
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--467
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 478--479
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 514--515
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
 [7]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 523--524
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 535--536
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 548--549
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
-
- []
-
-[8]
 Overfull \hbox (3.81136pt too wide) in paragraph at lines 560--561
 [][] 
  []
@@ -1563,72 +1566,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
 
-
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 569--570
+[8]
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 572--573
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 577--578
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 581--582
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 585--586
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 589--590
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 595--596
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 597--598
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
+
+ []
+
+
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 607--608
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
 
 [9]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 614--615
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 626--627
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
 
  []
 
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 645.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 645.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
  (./ProblemSetAimingFinalExam.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 645.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 645.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 657.
 Package rerunfilecheck Info: File `ProblemSetAimingFinalExam.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 645.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
  ) 
 Here is how much of TeX's memory you used:
- 28005 strings out of 480608
- 490491 string characters out of 5903631
- 880448 words of memory out of 5000000
- 43145 multiletter control sequences out of 15000+600000
+ 28012 strings out of 480608
+ 490651 string characters out of 5903631
+ 885495 words of memory out of 5000000
+ 43151 multiletter control sequences out of 15000+600000
  573718 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,21n,94p,598b,1784s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1642,10 +1655,10 @@ b></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ProblemSetAimingFinalExam.pdf (10 pages, 281899 bytes).
+Output written on ProblemSetAimingFinalExam.pdf (10 pages, 283674 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 180 named destinations out of 1000 (max. 500000)
- 1013 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 633 PDF objects out of 1000 (max. 8388607)
+ 436 compressed objects within 5 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 1025 words of extra memory for PDF output out of 10000 (max. 10000000)
 
