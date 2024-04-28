@@ -517,7 +517,7 @@ $$f_{_X}(\HLTY{x})=  \int\limits_{\{t: (\HLTY{x},\HLTW{t})\in \support[XY]\}}  f
 \vspace{.1in}
 
 \qbx[4.2in]{amethyst!50}{
-The marginal probability mass function of $X$ is given by
+The marginal probability mass function of $Y$ is given by
 \begin{center}
 \qBrd[3.2in]{babyblue!40}{
 $$f_{_Y}(\HLTY{y})=  \int\limits_{\{s: (\HLTY{s},\HLTW{y})\in \support[XY]\}}  f_{_{X,Y}}(\HLTW{s}, \HLTY{y})ds $$}
@@ -957,7 +957,7 @@ The continuous random variables X and Y are {\bf statistically} {\bf  independen
 
 \begin{frame}
 %\define{Independent Continuous Random Variables}{
-\begin{theorem}{ndependent Discrete Random Variables}
+\begin{theorem}{Independent Discrete Random Variables}
 \sqBullet{babyblue}Let $(X,Y)$ be bivariate continuous random vector with a probability density function $f_{_{X,Y}}(x,y)$ on the support $(x,y)\in \support[X,Y]$. \\
 \sqBullet{babyblue} Let $f_{_X}(x)$ be the marginal density of the random variable $X$ on the support $\support[X]$\\
 \sqBullet{babyblue} Let $f_{_Y}(y)$ be the marginal density of the random variable $X$ on the support $\support[Y]$. \\
@@ -1109,13 +1109,13 @@ $$\HLTW{f_{_{X,Y}}(x,y)=
 \begin{frame}
 \qbx[4.4in]{babyblue!40}{
 Let X, Y be two discrete random variables with joint probability function $\pmf_{_{X,Y}}(x, y)$. Then the expected value of $g(X, Y )$ is given by
-$$\HLTW{ \displaystyle  E\left( g(X,Y) \right)=  \sum_{(x,y)\in \support[XY]} g(x,y) \pmf_{_{X,Y}}(x,y)}$$
+$$\HLTW{ \displaystyle  E\left( g(X,Y) \right)=  \mathop{\sum\sum}_{(x,y)\in \support[XY]} g(x,y) \pmf_{_{X,Y}}(x,y)}$$
 }
 \vspace{.1in}
 
 \qbx[4.4in]{amethyst!40}{
 Let X, Y be two continuous random variables with joint probability density function $f_{_{X,Y}}(x, y)$. Then the expected value of $g(X, Y )$ is given by \vspace{-.25in}
-$$\HLTW{ \displaystyle E\left( g(X,Y) \right)=  \int\limits_{(x,y)\in \support[XY]} g(x,y) f_{_{X,Y}}(x,y) dx\; dy} $$
+$$\HLTW{ \displaystyle E\left( g(X,Y) \right)= \mathop{ \int\int}\limits_{(x,y)\in \support[XY]} g(x,y) f_{_{X,Y}}(x,y) dx\; dy} $$
 }
 \end{frame}
 

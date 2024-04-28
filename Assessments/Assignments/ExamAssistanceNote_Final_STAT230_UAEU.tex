@@ -1,0 +1,774 @@
+\documentclass[12pt]{article}
+\input{../MacroDefs/HeaderAssignment}
+\usepackage{tfrupee}
+\usepackage{fdsymbol}
+\usepackage{latexcolors}
+\usepackage{mathrsfs}
+%\NewDocumentCommand{\support}{O{ }}{{\mathcal{S}}_{_{#1}}}
+%\NewDocumentCommand{\support}{O{ }}{{\mathbb{S}}_{_{#1}}}
+%\newcommand{\SampleS}{\mathcal{S}}
+\newcommand{\SampleS}{\mathscr{S}}
+\newcommand{\Not}[1]{\overline{#1}}
+\newcommand{\Center}[1]{{\begin{center}#1 \vspace{-.2in}
+\end{center}}}
+
+ \begin{document}
+ 
+\title{}%replace X with the appropriate number
+\author{} %if necessary, replace with your course title
+%\date{ $ 26^{th} $ August, 2019}
+\date{}
+% \maketitle\vspace{-.in}
+ \noindent
+% \TextInBox{6 in }{Name: \vspace{.22 in}}\\
+%\; \TextInBox{6.05 in }{ Enrolled As: \MCOption[1.2in]{PHD Student} \MCOption[1in]{RA}\MCOption[1 in]{TA}}\\
+\TextInBox{6 in }{ 
+
+  }\\
+ \vspace{.4in}
+ 
+ 
+ 
+
+%
+%\DefBoxOne{}{
+%\begin{center}\color{black}
+%Part I:  Short answer type questions.
+%\end{center}
+%}
+
+
+%\DefBoxOne{Notations}{
+%$$ \Onebf_k=\left[ \begin{array}{c}1\\1\\\vdots \\1\end{array}\right]_{k\times 1} \text{ , }  J_{k}=\left[ \begin{array}{cccc}1&1 & \cdots & 1\\1& 1& \cdots&  1\\\vdots & \vdots & \ddots  &\vdots \\1& 1 &\cdots & 1\end{array}\right]_{k\times k} \text{ and } I_{k}=\left[ \begin{array}{cccc}1&0 & \cdots & 0\\0& 1& \cdots&  0\\\vdots & \vdots & \ddots  &\vdots \\0& 0 &\cdots & 1\end{array}\right]_{k\times k} \text{ for } k\in \Z_{+}.   $$
+%
+%}
+
+
+\vspace{-.2in}
+\DefBoxOne{}{
+\begin{center}\color{black}
+\Large Exam Assistance Note
+\end{center}
+}
+
+
+\vspace{.2in}
+
+
+
+
+
+%%
+%%\qBrd[6.2in]{applegreen!30}{
+%%Let $n$ be a {\bf non-negative integer,} then the {\bf factorial of n}, denoted as $\HLTY{n!}$ is defined to be
+%%\begin{enumerate}
+%%\qBrd[.75in]{amethyst!30}{\item[\sqBullet{amethyst}] $0!=\HLTY{1}$} \hspace{.4in}
+%%\qBrd[.75in]{amethyst!30}{\item[\sqBullet{amethyst}]  $1!=\HLTY{1}$}\hspace{.4in}
+%%\qBrd[2.3in]{amethyst!30}{\item[\sqBullet{amethyst}]  $n!= \HLTY{n\times(n-1)\times \ldots \times 1}$ for $n\geq 2$}
+%%\end{enumerate} 
+%%}\\
+%%
+%%\qBrd[6.2in]{babyblue!30}{
+%%Let $n, r$ be two {\bf non-negative integes,} such that $r\leq n$,  then the {\bf n choose r}, denoted by $\HLTY{{n\choose r}}$, is defined to be $${n \choose r}:= \frac{n!}{\left(r!\right) \times \left((n-r)!\right)}$$
+%%}\\
+%%
+%%
+%%
+%%\qBrd[6.2in]{amethyst!20}{
+%%For any real number $x\in \R$, the exponential series $\HLTY{e^x}$  (or sometimes denoted as $\HLTY{\exp(x)}$) is defined as, 
+%%$$\HLTY{\displaystyle e^{x}}=\HLTEQ[white]{\displaystyle \sum_{n=0}^{\infty}\frac{x^n}{n!}} = \HLTY{\displaystyle 1+\frac{x}{1!}+\frac{x^2}{2!}+ \frac{x^3}{3!}+\cdots}  $$
+%%}\\
+%%
+%%\qBrd[6.2in]{babyblue!30}{
+%%Let $x\in \R$ be any real number,  and $n\in\mathbb{Z}_{+}$ be any positive integer, then   $$ \HLTEQ[white]{\displaystyle (1+x)^n}=  \HLTY{\displaystyle\sum_{i=0}^{n}   {n \choose i  }  x^{i}}$$
+%%$$\ \HLTEQ[white]{\displaystyle (1+x)^n} = \HLTY{\displaystyle 1+{n\choose 1}x+{n\choose 2}x^2+  \cdots+ {n\choose {n-1}}x^{n-1}+{n\choose n}x^n}  $$ 
+%%}\\
+%%
+%%\qBrd[6.2in]{amethyst!20}{
+%%Let $p\in \R$ be such that $|p|<1$,  then   $ \HLTY{\displaystyle \sum_{i=0}^{\infty}p^{i}}=  \HLTEQ[white]{\displaystyle 1+p+p^2+p^3+  \cdots}   =\HLTY{\displaystyle \frac{1}{1-p}}.$
+%%}\\
+%%
+%%
+%%%\newpage
+%%\qBrd[6.5in]{babyblue!20}{
+%%{\bf (Ordered, without replacement)}{ Let $r$, and $n$ be two positive integers such that $r\leq n$.  An ordered arrangement of $r$ distinct objects is called a permutation.  The number of ways of ordering $n$ distinct objects taken $r$  at a time, denoted by the symbol $^nP_r$,  is given as   $$\HLTEQ[applegreen!50]{ \HLTW{\displaystyle  ^nP_r}=  \HLTEQ[white]{ \displaystyle n(n - 1)(n- 2)(n - r + 1) }= \HLTW{ \displaystyle \frac{n!}{(n - r )!}  }   }.$$
+%%}}\\
+%%
+%%
+%%
+%%\qBrd[6.5in]{amethyst!20}{
+%%Let $n\geq r $ be two non-negative integers.  The number of different ways to select (/choose) $\HLTY{r}$ distinct objects from a list of $\HLTY{n}$ distinct (non-identical) objects  is given as( {\tiny or $^nC_r$)},
+%% \vspace{-.1in} $$\HLTEQ[babyblue!70]{\HLTW{ \displaystyle {n \choose r }}= \HLTW{ \displaystyle\frac{n!}{r! (n-r)!}}} $$
+%%}\\
+%%
+%%
+%%\qBrd[6.5in]{babyblue!40}{
+%%The number of ways of partitioning $n$ distinct objects into $k$ distinct groups
+%%containing $n_1$, $n_2$, . . . , $n_k$ objects, respectively, where each object appears exactly in  one group and $\HLTW{\sum_{i=1}^{k}n_i=n}$, is  
+%% $$\HLTEQ[lime!40]{\large \displaystyle { n\choose {n_1, n_2, \ldots , n_k}}:= \frac{n!}{(n_1!)(n_2!)\ldots (n_k!)}}$$
+%%}\\
+%%
+%%
+%%
+%%
+%%\qBrd[6.5in]{amethyst!40}{
+%%Number of ways $n$ indistinguishable/identical objects can be organized into r different (ordered) groups is $$\HLTW{\displaystyle \frac{(n+r-1)!}{n! (r-1)!}={{n+r-1} \choose {n}}}.$$
+%%}\\
+%%
+%%\qBrd[6.6in]{olive!40}{
+%%De-Arrangement probability with N distinct objects: 
+%%$\HLTW{ \HLTY{1- \frac{1}{1!}}+  \frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}+\cdots + (-1)^{N}\frac{1}{N!}}$.
+%%}\\
+%%
+
+
+
+
+
+%\newpage 
+\qbx[6.8in]{antiquefuchsia!60}{
+\Center{
+\qBrd[3.2in]{amethyst!40}{\Large \bf Properties of Probability }}
+\vspace{.1in}
+Let $\HLTY{(\SampleS , P)}$ be a sample space along with the Probability measure. Let $\HLTW{A}, \HLTW{B}$ be two events.  Then, \\
+\begin{enumerate}
+\qBrd[3.8in]{applegreen!40}{  \item[{\sqBullet{olive}}] $\HLTW{P(\emptyset)=0}$ where $\HLTW{\emptyset}$ denotes the Empty set (Null set). }\\
+\vspace{.05in}
+\qBrd[2in]{apricot!40}{ \item[{\sqBullet{apricot}}]  $\HLTW{P(A)\leq 1}$. }\\
+\vspace{.05in}
+\qBrd[2.8in]{lime!40}{ \item[{\sqBullet{applegreen}}] If $\HLTW{
+A\subseteq B}$ then $\HLTW{P(A)\leq P(B)} $.}\\
+\vspace{.05in}
+\qBrd[4.6in]{brightlavender!40}{\item[{\sqBullet{amethyst}}] $\HLTW{P\left(\Not{A}\right)=1-P(A)}$, where  $\HLTW{\Not{A}}$ denotes the complementary event to $A$.}\\
+\vspace{.05in}
+\qBrd[4in]{cadmiumorange!40}{\item[{\sqBullet{cadmiumorange}}]  $ \HLTW{P(A\cup B)= P(A)+P(B)-P(A\cap B) }$.}
+\end{enumerate}
+}\\
+
+%
+%
+%\qbx[6.5in]{antiquefuchsia!30}{
+%\begin{center}
+%	\qBrd[4in]{blue!40}{
+%\begin{itemize}
+%\item[]\qBrd[3in]{babyblue!40}{ $A \cup\left( B\cup C\right)= \left(A \cup B\right)\cup C= A \cup B\cup C $}
+%\item[]  \qBrd[3in]{babyblue!70}{$A \cap\left( B\cap C\right)= \left(A \cap B\right)\cap C= A \cap B\cap C $}
+%\end{itemize}	
+%}
+%\vspace{.05in}
+%	\qBrd[3in]{amethyst!70}{
+%	\HLTY{\text{\it \small Distributive laws of Union \& Intersection}}
+%\begin{itemize}
+%\item[] \qBrd[2.5in]{blush!40}{$A \cap\left( B\cup C\right)= \left(A \cap B\right)\cup \left(  A \cap C \right)$}
+%\item[] \qBrd[2.5in]{blush!60}{ $A \cup\left( B\cap C\right)= \left(A \cup B\right)\cap \left(  A \cup C \right)$}
+%\end{itemize}	
+%}
+%\vspace{.1in}
+%	\qBrd[3in]{asparagus!80}{
+%	\HLTY{\text{\small \it DeMorgan's laws}}
+%\begin{itemize}
+%\item[] \qBrd[2.1in]{applegreen!40}{$\Not{\left( A\cap B\right)}= \left(\Not{A} \cup \Not{B}\right)$}
+%\item[] \qBrd[2.1in]{applegreen!60}{$\Not{\left( A\cup B\right)}= \left(\Not{A} \cap \Not{B}\right)$}
+%\end{itemize}	
+%}	
+%\end{center}
+%}\\
+%
+%
+
+
+
+
+
+%
+%\qBrd[6.6in]{ceil!50}{
+%Let $A_1, A_2, A_3$ are three events.  Then 
+%\begin{eqnarray*}
+% P\left(A_1\cup A_2 \cup A_3\right) 
+% & =&  \left\{ \HLTEQ{P(A_1)+P(A_2)+P(A_3)}\right\}  \nonumber\\
+% & &-  \left\{\HLTEQ[lightBlueOne]{ P(A_1\cap A_2) + P(A_1\cap A_3) + P(A_2\cap A_3) }  \right\}+ \left\{ \HLTEQ{P(A_1\cap A_2 \cap A_3)}     \right\}  
+%\end{eqnarray*}  
+%\vspace{-.15in}
+%}\\
+
+
+
+
+
+%
+%
+%
+%\begin{center}
+%\qBrd[5in]{babyblueeyes!50}{
+%\begin{center}
+%\vspace{-.2in}
+%\qBrd[3.3in]{blue!30}{\Large Structure of Two $\times $ Two Table  }\\
+%\end{center}
+%\begin{center}
+%\begin{tabular}{|l||l|l||l|l|}
+%\hline 
+%     &  & &   \vspace{-.1in }  \\
+%      & $A$ & $\Not{A}$ & Marginal of $B$   \vspace{.1in }  \\ \hline\hline
+%      &  & &   \vspace{-.1in }  \\
+%$B$ &  $\HLTEQ[lime!30]{P\left(A\cap B\right)}$   &    $\HLTY{P\left(\Not{A}\cap B\right)}$ &  $\HLTW{P(B)}$    \vspace{.1in }  \\ \hline \vspace{-.1in }
+%      &  & &    \\
+%$\Not{B}$ &   $\HLTY{P\left(A\cap \Not{B}\right)}$  &  $\HLTEQ[amethyst!40]{P\left(\Not{A}\cap \Not{B}\right)}$   &   $\HLTW{P\left(\Not{B}\right)}$    \vspace{.1in }  \\ \hline\hline \vspace{-.1in }
+%      &  & &    \\
+%Marginal of $A$ & $\HLTW{P(A)}$     & $\HLTW{P\left(\Not{A}\right)}$     &$ \HLTW{\text{Total Probability}= \HLTEQ[teal!40]{1}} $   \\ \hline
+%\end{tabular}
+%\end{center}
+%}
+%\end{center}
+
+\qBrd[6.6in]{applegreen!30}{
+Let $E$,  and  $F$ are two events such that $P\left(\HLTY{F} \right)>0$, then the conditional probability of {\bf $\HLTEQ[amethyst!30]{E}$ given $\HLTY{F}$} is defined to be, 
+\begin{center}
+\vspace{-.25in}
+\qBrd[2.55in]{teal!30}{ $$ \vspace{-.01in}
+\HLTW{\displaystyle P\left(\HLTEQ[amethyst!30]{E}\mid \HLTY{ F} \right):= \frac{P\left(\HLTEQ[amethyst!30]{E}\cap \HLTY{F}\right)}{P( \HLTY{F})}.} \vspace{-.01in}$$ }
+\vspace{-.1in}
+\qBrd[5.6in]{amethyst!20}{
+Let $E$ and $F$ are two events, then 
+$\HLTEQ[babyblue!70]{ \HLTY{P(E\cap F)}:=\HLTW{P(E\mid F)}\times \HLTW{P(F)}.}$
+}\end{center}
+}\\
+\vspace{-.1in}
+
+\vspace{.5in}
+
+%\qBrd[6.5in]{teal!40}{
+%\begin{center}
+%\vspace{-.2in}
+%\qBrd[3.3in]{yellow-green!50}{\Large Law of Total Probability   }\\
+%\end{center}
+%Let E and F be two events, then 
+%\qBrd[4.1in]{amethyst!60}{$\Large \HLTEQ[white!20]{ P(E)} = {\HLTEQ[white!70]{P(E\mid F)P(F) } +  \HLTW{P\left(E\mid  \Not{F}\right)P\left(\Not{F}\right)}} $}
+%}\\
+%
+%\qBrd[6.5in]{turquoisegreen!90}{\begin{center}
+%\vspace{-.2in}
+%\qBrd[3.4in]{yellow-green!50}{\Large Law of  Total Probability (General):} \\
+%\end{center}
+%Let E be an event.  Assuming that the collection of sets   $\{F_1, F_2,\ldots,  F_k\}$  forms a partition of $\SampleS$,  we have
+%\vspace{-.15in}
+%\begin{center}
+%%\qBrd[2in]{applegreen!40}{$ E= (E\cap F) \cup (E\cap \Not{F}) $}\\
+%\qBrd[3in]{green!40}{\Large $\displaystyle \HLTW{P(E)}=\HLTW{\sum_{j=1}^{k}  P(E\mid F_j)P(F_j)  }$}
+%\vspace{-.1in}
+%\end{center}
+%}\\
+%\vspace{.15in }
+
+%\qBrd[6.5in]{amethyst!40}{
+%\begin{center}
+%\vspace{-.2in}
+%\qBrd[2.6in]{amber!70}{\Large Bayes' Theorem (General) }\\
+%\end{center}
+%\vspace{-.15in}
+%Let $\HLTW{F_1, F_2, \ldots,  F_{_K}}$ be a set of mutually exclusive and exhaustive events ( partition of the sample space $\SampleS$).  Suppose now that $E$ be an event such that $P(E)>0$, then 
+%$$\HLTW{ \displaystyle P(F_i \mid E)=\HLTY{ \frac{ \displaystyle P(E\mid F_i) P(F_i )}{\displaystyle \sum_{j=1}^{K}P(E\mid F_j) P(F_j) }}}$$
+%}\\
+%\vspace{.1in}
+
+
+\qBrd[6.5in]{amethyst!40}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[2.1in]{amber!70}{\Large Bayes' Theorem }\\
+\end{center}
+\vspace{-.15in}
+Let $A, B$ are two events such that $P(A)>0$, and $P(B)>0$, then 
+$$\HLTW{ \displaystyle P(B\mid A)=\HLTY{ \frac{ \displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}}{\displaystyle \HLTEQ[green!30]{P(A\mid B) P(B )}+ \HLTEQ[orange!30]{P\left(A\mid \Not{B}\right) P\left(\Not{B} \right) }     }}}$$
+}\\
+\vspace{.1in}
+
+\qBrd[6.6in]{teal!30}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[2.6in]{teal!40}{\Large Statistical Independence}\\
+\end{center}
+\vspace{-.15in}
+Two events $E$ and $F$ are said to be  statistically independent if
+$\HLTW{\displaystyle P(E\cap F ) = P(E)\times P(F)    }$}\\
+
+\vspace{.1in}
+\newcommand{\pmf}{p}
+\qBrd[6.6in]{amber!40}{
+\begin{center}
+\vspace{-.2in}
+\qBrd[2.6in]{amber!70}{\Large Characterization of a pmf }\\
+\end{center}
+\vspace{-.15in}
+Let $\HLTW{\pmf(x)}$ is {\bf probability mass function } of a discrete random variable on the support $\support$,  {\bf if and only if} it satisfies the following conditions:
+\vspace{-.1in}
+\begin{enumerate}
+\qBrd[2.3in]{babyblue!40}{\item {\it Positivity: }$ \HLTW{ \displaystyle  \pmf(x)> 0}$ for all $\HLTW{ x\in \support}$}\hspace{.3in}
+\qBrd[3.2in]{applegreen!40}{\item {\it Total Probability:} $\HLTW{   \displaystyle  \sum_{\{x\in \support\}} \pmf(x)=1}$. }
+\end{enumerate}
+}\\
+
+\vspace{.3in}
+\newcommand{\cdf}{F}
+\qbx[6.5in]{amethyst!30}{
+\begin{center}
+\vspace{-.35in}
+\qBrd[4in]{amethyst!60}{ \Large  {\bf ``CDF''}  of a Discrete Random Variable }
+\vspace{-.1in}
+\end{center}
+Let $X$ be a discrete random variable on the support $\support[X]$ with the corresponding probability mass function
+$$\HLTEQ[teal!50]{\HLTW{ \displaystyle P(X=x)= \pmf_{_X}(x)} \text{ for } \HLTW{x\in \support[X]}.}$$
+Then for any $a\in \R$, the cumulative distribution function (cdf), denoted by $\cdf_{_X}(\cdot)$ is the following quantity
+$$\HLTW{ \displaystyle \cdf_{_X}(\HLTY{a})= P(X\leq \HLTY{a})= \sum_{ \HLTEQ[teal!40]{ \{\HLTW{x}\leq \HLTY{a}: \HLTW{x}\in \support[X]\}}}\pmf_{_X}(\HLTW{x})}$$	
+}\\
+
+\vspace{.35in}
+\qBrd[6.6in]{amber!35}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.6in]{amber!70}{\begin{center} \Large {\Large \bf ``Expected Value''} or {\bf ``Mean''} of a Discrete Random Variable \end{center} }
+\end{center}
+If $X$ is a random variable with pmf $\HLTY{\pmf_{_X}(x)} $ on the support $\support[X]$ , then the expected value (the mean) of $X$ denoted by $E(X)$ ( or $\mu_{_X}$)  is given by
+$$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{X}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
+assuming the  above summation/series exists /well-defined.  Additionally,  assuming it exists,  for any* funciton $h(x)$, 
+$$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{h(X)}\right)= \sum_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{h(x)}  \; \HLTY{\pmf_{_X}(\HLTW{x})},}$$
+}\\
+\vspace{.5in}
+
+\qBrd[7.3in]{applegreen!35}{
+\vspace{-.35 in }
+\begin{center}
+\qBrd[4.8in]{applegreen!60}{\begin{center}\Large  {\Large \bf ``Variance \& Standard Deviation (SD) ''} of a Random Variable  \end{center}}
+\end{center}
+\qBrd[2.2in]{amber!60}{ The variance of $X$, denoted by $\text{Var}(X)$ is deifined as\\ $\HLTW{ \displaystyle \text{Var}(X):=\HLTW{ E(X^2)- \left(\HLTY{E(X)} \right)^2}}$}
+\qBrd[2.2in]{amber!60}{ $$\HLTW{ \displaystyle \text{E}(X^2):=\HLTW{ \text{Var}(X)+ \left(\HLTY{E(X)} \right)^2}}$$\vspace{-.1in}}
+\qBrd[2in]{amber!60}{ $\HLTW{ \displaystyle \HLTW{\sigma_{_X}}=  \text{SD}(X):=\HLTW{\sqrt{\text{Var}(X)}}}$}
+}\\
+\vspace{.5in}
+
+\qBrd[7.2in]{antiquefuchsia!50}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{antiquefuchsia!90}{ \begin{center}\Large {\bf \Large ``Moment Generating Function (MGF) ''}  \end{center} }\\
+The Moment Generating Function (mgf) of $X$, denoted by $\text{M}_{_X}(t)$ is deifined as 
+$${ \HLTW{\displaystyle \text{M}_{_X}(t):= E\left(\HLTW{e^{tX}} \right)}} \text{whenever it exists. }$$
+\qBrd[3.4in]{babyblue!30}{ If X is a discrete random variable with p.m.f $ \HLTY{\pmf_{_X}(\HLTW{x})}$ then 
+$$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \sum_{\left\{\HLTEQ[teal!40]{ \displaystyle \HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{\pmf_{_X}(\HLTW{x})}}. \vspace{-.2in}$$\\
+\vspace{-.1in}}
+\qBrd[3.4in]{apricot!30}{ If X is a continuous random variable with a probability density function $ \HLTY{f_{_X}(\HLTW{x})}$ then 
+$$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \int\limits_{\left\{\HLTEQ[teal!40]{ \displaystyle \HLTW{x}\in \support[X]} \right\}} \HLTW{e^{tx}}  \; \HLTY{f_{_X}(\HLTW{x})}dx }. \vspace{-.2in}$$\\
+\vspace{-.1in}}
+\qbx[6.9in ]{amethyst!40}{
+Let X be a r.v.  with the moment generating function $M_{_X}(t)$, then, assuming existence,  the $r^{\text{th}}$ raw moments (non-centered), for the random variable can be obtained as 
+$$ \HLTW{E(X^r)= \frac{d^{{r}} M_{_X}(t) }{dt^{{r}}}\Big\vert_{t=0} } \text{ for  any positive integer} \HLTW{r}.  $$
+}
+\end{center}
+}\\
+
+
+
+
+\qbx[7.1in]{apricot!40}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{apricot!90}{ \begin{center}\Large {\bf \Large ``Probability Density Function ''}  \end{center} }
+\end{center}
+Let $\HLTW{F_{_X}(x)}$ be a cumulative distribution function (CDF) of a continuous random variable,  then the corresponding {\bf  probability density function} or {\bf pdf}, denoted as $\HLTW{f_{_X}(x)}$  is a function that satisfies the following creteria. 
+$$\HLTW{ \displaystyle F_{_X}(\HLTY{x})= \int_{-\infty}^{\HLTY{x}} f_{_X}(y) dy }$$
+}
+
+\qBrd[7.2in]{babyblue!30}{
+{\bf pdf } of a continuous random variable can be obtained by differentiating the corresponding {\bf CDF} 
+$$\HLTW{\displaystyle f_{_X}(x)= \frac{d}{dx} F_{_X}(x)}$$}\\
+\vspace{.1in}
+
+\qBrd[7.2in]{airforceblue!30}{
+\sqBullet{blue} If X is a continuous random variable, then probabilities can be obtained by integrating its pdf over suitable region.  Specifically,  for $\HLTW{a, b\in \R}$, $\HLTW{a<b}$, 
+$$\HLTEQ[white]{\displaystyle P\left(\HLTY{a}< X\leq \HLTEQ[amethyst!40]{b}\right)= \HLTEQ[babyblue!35]{F_{_X}\left( \HLTEQ[amethyst!40]{b}\right)-F_{_X}\left(\HLTY{a}\right)}= \int\limits_{\HLTY{a}}^{ \HLTEQ[amethyst!40]{b}} f_{X}(x) dx.}$$\vspace{-.2in}
+}\\
+
+\vspace{.1in}
+\qBrd[7.1in]{apricot!40}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{apricot!90}{ \begin{center}\Large {\bf \Large ``{Characterization of  Probability Density Function (pdf)}''}  \end{center} }
+\end{center}
+A function $f(x)$ is is a  probability density function (pdf) for some continuous random variable if  and only if it satisfies the following two conditions:
+\begin{enumerate}
+ \qBrd[2.5in]{applegreen!50}{\item {\bf Non-negativity:} $f(x)\geq 0 $ for all $x$.}
+\qBrd[2.8in]{babyblue!50}{\item {\bf Total Probability: } $\displaystyle \int_{-\infty}^{\infty}f(x)dx= 1$}
+%\item $\HLTW{\displaystyle P(a\leq X\leq b)= \int_{a}^{b}f(x)dx}$ for all $a<b$.
+\end{enumerate}
+}\\
+\vspace{.2in}
+
+\qbx[7.1in]{airforceblue!40}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{airforceblue!90}{ \begin{center}\Large {\bf \Large ``Quantiles, and Percentiles''}  \end{center} }
+\end{center}
+Let $p$ be a number between 0 and 1. The $(100)^{\text{th}}$ percentile of the distribution of a continuous random variable X, we shall denote by c, is that value for which
+$$ \HLTW{ \displaystyle F\left(\HLTY{c}\right)= \HLTEQ[amethyst!30]{p}}$$
+i.e. $\HLTW{\HLTY{c}= F^{-1}\left(\HLTEQ[amethyst!30]{p}\right)}$.
+where $F^{-1}(\cdot)$ is the inverse cumulative distribution function.
+}
+
+\qbx[7.2in]{antiquefuchsia!60}{
+\vspace{.1in}
+\qBrd[2.2in]{amber!40}{\sqBullet{amber}  \qBrd[.8in]{amber!70}{Median}The median of a continuous distribution, denoted by m, is the 50th percentile. So $m$ satisfies\vspace{-.1in}  $$\HLTW{m = F^{-1}(0.5)}\vspace{-.2in}$$}
+\qBrd[2.2in]{teal!30}{\sqBullet{teal}  \qBrd[1in]{teal!50}{First Quartile} The first  quartile is defined to be \vspace{-.1in} $$\HLTW{Q_1=  F^{-1}(0.25)}\vspace{-.2in}$$}
+\qBrd[2.2in]{applegreen!40}{\sqBullet{applegreen}   \qBrd[1 in]{applegreen!70}{Third Quartile}  The  third quartile is defined to be \vspace{-.1in} $$\HLTW{Q_3=  F^{-1}(0.75)}\vspace{-.2in}$$}
+\vspace{.1in}
+}
+
+
+\vspace{.35in}
+\qBrd[6.6in]{amber!35}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.6in]{amber!70}{\begin{center} \Large {\Large \bf ``Expected Value''} or {\bf ``Mean''} of a Continuous Random Variable \end{center} }
+\end{center}
+If X is a continuous random variable with pdf $f(x)$ on the support $\support[X]$, then the expected value (the mean) of X denoted by $E(X)$ is given by
+$$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{X}\right)= \int\limits_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{x}  \; \HLTY{f_{_X}(\HLTW{x})}\;dx,}$$
+assuming the  above summation/series exists /well-defined.  Additionally,  assuming it exists,  for any* funciton $h(x)$, 
+$$\HLTEQ[amethyst!30]{ \displaystyle E\left(\HLTW{h(X)}\right)= \int\limits_{\left\{ \HLTEQ[teal!40]{\HLTW{x}\in \support[X]} \right\}} \HLTW{h(x)}  \; \HLTY{f_{_X}(\HLTW{x})} dx ,}$$
+}\\
+\vspace{.2in}
+
+
+
+\qBrd[7.2in]{amber!40}{
+\qBrd[1.9in]{amber!70}{\Large Z-Transformation } 
+ If $\HLTW{\Large X\sim \text{Normal}(\mu, \sigma^2)}$ for some $\mu\in \R$ and $\sigma^2>0$ then , 
+ $$\DBX{\HLTW{ \Large Z \sim \text{Normal}(\Large 0,1) }\text{where } \HLTY{\displaystyle \Large Z= \frac{X-\mu}{\sigma}}}$$
+}
+
+
+\qBrd[7.2in]{babyblue!70}{
+\qBrd[2.35in]{babyblue!40}{Probability Mass Function (pmf)}
+For a discrete random vector  $(X,Y)$, we define the probability mass function (pmf) $\pmf_{{_X},{_Y}}(x,y)$ of $X$ by 
+$\HLTW{\HLTY{\pmf_{{_X},{_Y}}(x,y)}= P(X=x, Y=y ) }\text{ for all } \HLTW{ (x,y)\in \support[X,Y]}$
+}
+
+
+\qBrd[7.2in]{amber!50}{
+\qBrd[1in]{amber!30}{Bivariate CDF}
+Let X, Y be two discrete random variables. The joint cumulative distribution function is given by
+\qBrd[3in]{antiquefuchsia!40}{
+$\displaystyle \HLTW{ F_{_{X,Y}}(\HLTY{x},\HLTY{y})}:= P\left(X\leq \HLTY{x}, Y\leq \HLTY{y} \right) .$}
+\vspace{.1in}
+}\\
+\vspace{.2in}
+
+
+
+\qBrd[7.2in]{antiquefuchsia!50}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[5.6in]{antiquefuchsia!70}{\begin{center} \Large Marginal Distribution of a Discrete Random Variable \end{center} }
+\qbx[3.2in]{babyblue!40}{
+The marginal probability mass function of $X$ is given by
+$$\pmf_{_X}(\HLTY{x})=  \sum_{\left\{\HLTW{t}: (\HLTY{x}, \HLTW{t})\in \support[XY]\right\}}  \pmf_{_{X,Y}}(\HLTY{x}, \HLTW{t})$$
+}
+\qbx[3.2in]{babyblueeyes!40}{
+The marginal probability mass function of $X$ is given by
+$$\pmf_{_Y}(\HLTY{y})=  \sum_{\left\{\HLTW{s}: (\HLTW{s},\HLTY{y})\in \support[XY]\right\}}  \pmf_{_{X,Y}}(\HLTW{s}, \HLTY{y})$$
+}
+\end{center}
+}
+
+
+
+\qbx[7.2in]{amber!40}{
+\qBrd[1.5in]{amber!70}{ \Large Joint Density}
+We say that X and Y are jointly continuous if there exists a function \HLTW{f_{_{X,Y}}(x, y)}, defined
+for all real x and y, having the property that, for every set $C$  of pairs of real numbers (that is, C is a set in the two-dimensional plane), 
+ $$\DBX{P\left(\HLTW{(X,Y) \in C}\right)=  \iint\limits_{\{(x,y)\in C\}}  f_{_{X,Y}}(\HLTY{s}, \HLTW{t})ds \;dt}$$
+ \HLTW{f_{_{X,Y}}(x, y)} is called the joint probability density function of the random vector $(X,Y)$.
+}\\
+
+
+\qBrd[4.2in]{olive!40}{
+$$\qBrd[3.0in]{teal!40}{ \Large  Joint CDF from Joint p.d.f.   }$$
+If  the joint probability density function of X and Y is  $f_{_{X,Y}}(x, y).$ then 
+$$ \HLTW{F_{_{X,Y}}(\HLTY{x},\HLTY{y})}= \HLTEQ[teal!30]{\displaystyle \mathop{\int\int}_{\left\{ \Col{{\HLTW{s}\leq \HLTY{x}, \HLTW{t} \leq \HLTY{y} },{\text{ where } (s,t)\in \HLTW{\support[ X,Y]}}}\right\}} f_{_{X,Y}}(\HLTW{s}, \HLTW{t}) ds\; dt }$$
+}
+\qBrd[3in]{babyblue!40}{\sqBullet{babyblue} If CDF of a bivariate continuous random variable is provided, then the corresponding p.d.f is obtained by following:  $$\DBX{\displaystyle f_{_{X,Y}}(x, y)  = \frac{d^2F(x,y)}{dx\;dy}}
+$$}
+
+\vspace{.2in}
+
+\qBrd[7.5in]{amber!50}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{amber!70}{\begin{center} \Large Marginal Distribution of a Continuous Random Variable \end{center} }
+$\Row{{
+\qbx[3.2in]{babyblue!40}{
+The marginal probability mass function of $X$ is given by\\
+\qBrd[3.1in]{amethyst!40}{
+$$f_{_X}(\HLTY{x})=  \int\limits_{\{y: (\HLTY{x},\HLTW{y})\in \support[XY]\}}  f_{_{X,Y}}(\HLTY{x}, \HLTW{y})dy $$
+}
+}},
+{\qbx[3.2in]{amethyst!50}{
+The marginal probability mass function of $Y$ is given by\\
+\qBrd[3.1in]{babyblue!40}{
+$$f_{_Y}(\HLTY{y})=  \int\limits_{\{x: (\HLTY{x},\HLTW{y})\in \support[XY]\}}  f_{_{X,Y}}(\HLTW{x}, \HLTY{y})dx $$}
+}
+}}$
+\end{center}
+}
+
+\vspace{.2in}
+
+\qBrd[7.2in]{amber!40}{
+\vspace{-.35in}
+$$\qBrd[5.8in]{olive!50}{\begin{center} \Large Conditional p.m.f.  of a Discrete Random Variable \end{center} }$$
+If $\pmf_{_{XY}}(x, y)$ denotes the joint probability mass function (pmf) of two discrete random variables X and Y and if $\pmf_X(x)$ and $\pmf_Y (y)$ denote the marginal probability function of $X,$ ($Y $ respectively), then \\
+\qBrd[3.2in]{babyblue!40}{
+The conditional probability of X given $Y = y $ is given by $$\DBX{\pmf_{_{X\mid Y}}(x\mid y)=  \frac{\pmf_{_{X,Y}}(x,y)}{\pmf_{_Y}(y)}}$$
+}
+\qBrd[3.2in]{babyblue!40}{
+The conditional probability of Y given X = x is given by
+$$\DBX{\pmf_{_{ Y\mid X}}(y \mid x)=  \frac{\pmf_{_{X,Y}}(x,y)}{\pmf_{_X}(x)}.}$$
+}
+}
+
+
+
+
+\vspace{.2in}
+
+\qBrd[7.2in]{antiquefuchsia!50}{
+\vspace{-.35in}
+$$\qBrd[5.8in]{olive!50}{\begin{center} \Large Conditional p.d.f.  of a Continuous Random Variable \end{center} }$$
+If $f_{_{XY}}(x, y)$ denotes the joint probability density function of two continuous random variables X and Y and if $f_X(x)$ and $f_Y (y)$ denote the marginal probability density function of $X,$ ($Y $ respectively), then \\
+\qBrd[3.2in]{babyblue!40}{
+The conditional probability density of X given $Y = y $ is given by $$\DBX{f_{_{X\mid Y}}(x\mid y)=  \frac{f_{_{X,Y}}(x,y)}{f_{_Y}(y)}}$$
+}
+\qBrd[3.2in]{babyblue!40}{
+The conditional probability density of Y given X = x is given by
+$$\DBX{f_{_{ Y\mid X}}(y \mid x)=  \frac{f_{_{X,Y}}(x,y)}{f_{_X}(x)}.}$$
+}
+}
+\vspace{.2in}
+
+
+\qBrd[7.2in]{amber!40}{
+\vspace{-.35in}
+$$\qBrd[5.8in]{amber!50}{\begin{center} \Large Statistically Independent Random Variable \end{center} }$$
+The random variables $X$ and $Y$ are said to be {\bf statistically}  {\bf independent } random variables if, for any two events A and B,
+$$\qBrd[4in]{babyblue!60}{$$ \HLTW{ \displaystyle P(X\in A, Y\in B)= P(X\in A) \times P(Y\in B)}$$}$$
+}
+
+
+\qBrd[7.2in]{amethyst!30}{
+\vspace{-.35in}
+$$\qBrd[5.8in]{amethyst!50}{\begin{center} \Large Statistically Independent Continuous Random Variables \end{center} }$$
+\sqBullet{babyblue}Let $(X,Y)$ be bivariate continuous random vector with a probability density function $f_{_{X,Y}}(x,y)$ on the support $(x,y)\in \support[X,Y]$. \\
+\sqBullet{babyblue} Let $f_{_X}(x)$ be the marginal density of the random variable $X$ on the support $\support[X]$\\
+\sqBullet{babyblue} Let $f_{_Y}(y)$ be the marginal density of the random variable $X$ on the support $\support[Y]$. \\
+The continuous random variables X and Y are {\bf statistically} {\bf  independent } if the corresponding joint probability density function  $$ \HLTW{ \displaystyle f_{_{X,Y}}(x, y) = f_{_X}(x) \times  f_{_Y} (y)}$$ for all x and y, and $\support[X,Y]= \support[X]\times \support[Y].$
+}
+
+
+\qBrd[7.2in]{olive!30}{
+\vspace{-.35in}
+$$\qBrd[5.8in]{olive!50}{\begin{center} \Large Statistically Independent Discrete Random Variables \end{center} }$$
+\sqBullet{babyblue}Let $(X,Y)$ be bivariate continuous random vector with a probability density function $f_{_{X,Y}}(x,y)$ on the support $(x,y)\in \support[X,Y]$. \\
+\sqBullet{babyblue} Let $f_{_X}(x)$ be the marginal density of the random variable $X$ on the support $\support[X]$\\
+\sqBullet{babyblue} Let $f_{_Y}(y)$ be the marginal density of the random variable $X$ on the support $\support[Y]$. \\
+The continuous random variables X and Y are {\bf statistically} {\bf  independent } if the corresponding joint probability density function  $$ \HLTW{ \displaystyle f_{_{X,Y}}(x, y) = f_{_X}(x) \times  f_{_Y} (y)}$$ for all x and y, and $\support[X,Y]= \support[X]\times \support[Y].$
+}
+%}
+
+\qBrd[7.2in]{amber!40}{
+\vspace{-.35in}
+$$
+\qBrd[4.6in]{amber!70}{\begin{center} \Large A Few Properties of Statistically Indipendent Random Variables \end{center} }$$
+ Let $X, Y$ be any two statistically independent random variables then then the following facts are true: 
+\begin{itemize}
+\qBrd[6.1in]{babyblue!40}{
+\item[\sqBullet{babyblue}] For any two events $A,B$
+$\HLTW{P(X\in A, Y\in B)= P(X\in A)\times P(Y\in B)}$
+}\\\vspace{.05in}
+\qBrd[6.1in]{teal!40}{
+\item[\sqBullet{teal}] For any two functions* $h(x)$ and $g(y)$ \vspace{.05in}
+$\HLTW{E\left(g(X) h(Y) \right) = E\left(g(X) \right) E\left( h(Y)\right)}$
+}\\\vspace{.05in}
+\qBrd[6.1in]{amethyst!40}{
+\item[\sqBullet{amethyst}] If the X, Y has the marginal CDFs $F_{_X}(x)$ and $F_{_Y}(y)$ respectively,  then the joint CDF
+$\HLTW{F_{_{X,Y}}(x,y) =F_{_X}(x) \times  F_{_Y}(y)}$
+for all x, y. 
+}
+\end{itemize}
+\vspace{.2in}
+}
+
+
+\vspace{.35in}
+\qBrd[7.4in]{amber!35}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.6in]{amber!70}{\begin{center} \Large {\Large \bf ``Expected Value''} of a  function of a Bivariate Random Vectors \end{center} }
+$\Row{{
+\qbx[3.3in]{babyblue!40}{
+Let X, Y be two discrete random variables with joint probability function $\pmf_{_{X,Y}}(x, y)$. Then the expected value of $g(X, Y )$ is given by
+$$\HLTW{ \displaystyle  E\left( g(X,Y) \right)=  \mathop{\sum\sum}_{(x,y)\in \support[XY]} g(x,y) \pmf_{_{X,Y}}(x,y)}$$
+}},{
+\qbx[3.3in]{amethyst!40}{
+Let X, Y be two continuous random variables with joint probability density function $f_{_{X,Y}}(x, y)$. Then the expected value of $g(X, Y )$ is given by \vspace{-.1in}
+$$\HLTW{ \displaystyle E\left( g(X,Y) \right)= \mathop{ \int\int}\limits_{(x,y)\in \support[XY]} g(x,y) f_{_{X,Y}}(x,y) dx\; dy} $$
+}}}$
+\end{center}
+}
+
+
+
+\vspace{.35in}
+\qBrd[7.2in]{amber!35}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.6in]{amber!70}{\begin{center} \Large {\Large \bf ``Covariance''} Between Two Random Variables \end{center} }\\
+Let $X$, and $Y$ be two random variables with a joint distribution.  Then $$\HLTW{\text{Cov}(X,Y)=E \left( (X-\mu_{_X}) (Y-\mu_{_Y})\right),} $$
+where $\mu_{_X}$ and $\mu_{_Y}$ denotes the mean of the random variables $X$, and $Y$ respectively. \\
+\vspace{.1in}
+\qBrd[4.2in ]{amethyst!40}{
+An Alternative Formulation for the covariance is the following:\\
+$$\qBrd[2.5in ]{amethyst!60}{{ \HLTW{\text{Cov}(X,Y)}= \HLTW{E(XY)- E(X)E(Y)} }}$$
+\vspace{-.1in}
+}\\\vspace{.1in}
+\qBrd[6.8in ]{airforceblue!40}{{\bf Theorem:}
+If $X$, and $Y$ are two {\bf statistically independent} random variables, then 
+$\DBX{\HLTW{\text{Cov}(X,Y)=0 }.}$
+However, the converse of the result is not true in general. 
+}
+\end{center}
+}
+
+
+
+\vspace{.35in}
+\qBrd[7.2in]{amber!35}{
+\vspace{-.35in}
+\begin{center}
+\qBrd[4.6in]{amber!70}{\begin{center} \Large {\Large \bf Mean, Variance, and Covariance''}  of  Linear Combinations of Random Variables \end{center} }\\
+\qbx[6.4in ]{amethyst!40}{
+Let $X_1, X_2, \ldots X_n$ are random variables and $\HLTW{\displaystyle  Y =a_0+ \sum_{i=1}^{n} a_i X_i }$, where $a_i's$ are constants then 
+\begin{enumerate}
+ \qBrd[3.1in ]{amber!40}{ \item[\sqBullet{amber}] $\displaystyle E(Y)=  a_0+\sum_{i=1}^{n} a_i E\left(X_i\right) $}\\
+ \qBrd[4.1in ]{applegreen!40}{  \item[\sqBullet{olive}] $\displaystyle \text{Var}(Y)=  \sum_{i=1}^{n} a^2_i \text{Var}\left(X_i\right)+ 2 \mathop{\sum\sum}_{1\leq i <j \leq n}  a_i a_j \text{Cov}(X_i, X_j) $}
+\end{enumerate}
+}
+\qbx[6.4in ]{amethyst!40}{
+Let $X_1, X_2, \ldots X_n$ are random variables$\HLTW{\displaystyle Y_1 =a_0+ \sum_{i=1}^{n} a_i X_i },  \text{ and }  \HLTW{\displaystyle Y_2 =b_0+ \sum_{i=1}^{n} b_i X_i },$
+where $a_i's$ abd $b_i's$ are constants then \\
+\qBrd[4.2in ]{applegreen!40}{$\HLTW{\displaystyle \text{Cov}(Y_1, Y_2)=  \sum_{i=1}^{n} a_i b_i \text{Var}\left(X_i\right)+ 2\mathop{\sum\sum}_{1\leq i <j \leq n}  a_i b_j \text{Cov}(X_i, X_j)} $}
+}
+\vspace{.01in}
+ \qBrd[6.4in ]{green!40}{ \sqBullet{teal} If $X_1, X_2, \ldots X_n$are 
+ mutually pairwise {\bf statistically independent} then, 
+ $$\HLTW{\text{Var}(Y)=  \sum_{i=1}^{n} a^2_i \text{Var}\left(X_i\right)}, \HLTW{ \displaystyle \text{Cov}(Y)=  \sum_{i=1}^{n} a_i b_j \text{Var}\left(X_i\right)}$$}
+ \end{center}
+}
+
+
+\vspace{.5in}
+\newpage
+\newcommand{\binP}{\pi}
+\qBrd[7.2in]{antiquefuchsia!50}{\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{apricot!80}{ \begin{center} \bf \Large Standard Properties of  a few Discrete Distributions \end{center} }
+\end{center}
+\begin{center}
+\qBrd[6.99in]{white!40}{
+{
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pmf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $\pmf_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Binomial$(n, \binP)$ &$ \{0, 1, \ldots, n\}$ & ${n \choose x} \binP^x (1-\binP)^{n-x}  $ & $n\binP$  & $n\binP(1-\binP)$&   $\left( 1-\binP+\binP e^t\right)^n$   \\
+ & & & & & \\
+ \hline
+ \hline
+ & & & & & \\
+Poisson$( \lambda)$ &$ \{0, 1, 2, \ldots \}$ & $  \frac{e^{-\lambda}\lambda^x}{x!} $ & $ \lambda$  & $ \lambda$&   $e^{ \lambda e^t-  \lambda}  $   \\
+ & & & & & \\
+ \hline
+  \hline
+   & & & & & \\
+  Geometric$( \binP)$ &$ \{1, 2, \ldots \}$ & $ (1-\binP)^{x-1}\binP  $ & $ \frac{1}{\binP} $  & $ \frac{1-\binP}{\binP^2} $&   $ \frac{ {\binP} e^t}{1-(1-\binP) e^{t}}    $   \\
+ & & & & & \\
+ \hline
+ \hline 
+ & & & & & \\
+Negative-Binomial$(r,  \binP)$ &$ \{r, r+1, r+2, \ldots \}$ & $ {{x-1}\choose{r-1}}(1-\binP)^{x-r}\binP^{r}  $ & $ \frac{r}{\binP} $  & $ \frac{r(1-\binP)}{\binP^2} $&   $\left( \frac{  \binP e^t}{1-(1-\binP) e^{t}}  \right)^r  $   \\
+ & & & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+
+\vspace{.2in}
+
+
+\qBrd[7.2in]{antiquefuchsia!50}{\vspace{-.35in}
+\begin{center}
+\qBrd[4.9in]{slateblue!80}{ \begin{center} \bf \Large Standard Properties of  a few Continuous Distributions \end{center} }
+\end{center}
+\begin{center}
+\qBrd[6.99in]{white!40}{
+{\small
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Distribution & Support  &  pdf    & Mean   &  Variance  & mgf   \\
+& $\support[X]$  &   $f_{_X}(x)$   &  $E(X)$  &   $\text{Var}(X)$  &  $M_{_X}(t)$  \\
+ \hline \hline
+ & & & & & \\
+Uniform$(a,b)$ &$ [a, b]$ & $ \begin{cases} \frac{1}{b-a} & \text{ if } x\in [a,b]\\ 0 & \text{ otherwise .} \end{cases} $ & $  \frac{a+b}{2}  $  & $  \frac{(b-a)^2}{12}$&   $M_{_X}(t)
+=\begin{cases} 
+ \frac{e^{tb}- e^{ta}}{t(b-a)} & \text{ if } t\neq 0 \\
+ 1 & \text{ if } t= 0  
+ \end{cases}$\\
+ & & & & & \\
+\hline \tiny
+ & & & & & \\
+ $\text{Exponential}(\lambda)$&$ (0, \infty)$ & $ \begin{cases} \lambda e^{-\lambda x} & \text{ if } x>0\\ 0 & \text{ otherwise .} \end{cases} $ & $ \frac{1}{\lambda} $  & $ \frac{1}{\lambda^2}$&   $
+ \frac{\lambda}{\lambda-t}  \text{ if } 0\leq  t < \lambda$\\
+ & & & & & \\
+ \hline
+ & & & & & \\
+ $\text{Gamma}(\alpha, \lambda )$&$ (0, \infty)$ & $  \frac{\lambda^{\alpha}}{\Gamma(\alpha)} x^{\alpha-1}e^{-\lambda x}  $ & $ \frac{\alpha}{\lambda} $  & $ \frac{\alpha}{\lambda^2}$&   $ \frac{1}{\left( 1-\frac{t}{\lambda}\right)^{\alpha}}  \text{ if } 0\leq  t < \lambda$\\
+ $\HLTW{\text{shape}= \alpha, \text{rate}}= \lambda$ & & $\text{ if } x>0$ & & & \\
+ \hline
+ & & & & & \\
+ $\text{Beta}(\alpha, \beta )$&$ (0, 1)$ & $   \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(
+ \beta)}x^{\alpha-1}x^{\beta-1}  $ & $\frac{\alpha}{\alpha+\beta}  $  & $ \frac{\alpha \beta}{ (\alpha+\beta)^2(\alpha+\beta+1)} $&   $ --- $\\
+  & & $\text{ if } 0<x<1$ & & & \\
+ \hline
+ & & & & & \\
+ $\text{Normal}(\mu, \sigma^2 )$&$ (-\infty , \infty )$ & $  \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}} $ & $\mu  $  & $\sigma^2 $&   $  e^{\mu t +\frac{t^2\sigma^2}{2}}$\\
+ $\HLTW{\text{mean}= \mu, \text{Var}}= \sigma^2$ & & $\text{ for  } x\in \R $ & & & \\
+ \hline
+  \hline
+\end{tabular}
+}}\end{center}}
+
+
+
+
+%\qbx[7.1in]{teal!40}{
+%\Center{\qBrd[3in]{applegreen!30}{\Center{\Large A Standard Deck of Cards\vspace{.2in}}}\vspace{.2in}}
+%\begin{center}
+%\includegraphics[scale=.5]{figs/Cards.png}
+%\end{center}
+%}
+$\Col{{\includegraphics[scale=.5]{figs/NormalTableDiagram2.png}},{
+\includegraphics[scale=.9]{figs/NormalTable2.png}}}$\\
+$\Col{{\includegraphics[scale=.5]{figs/NormalTableDiagram1.png}},{
+\includegraphics[scale=.9]{figs/NormalTable1_entire.png}}}$
+
+
+
+
+\end{document}
