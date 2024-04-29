@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  22 APR 2024 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  29 APR 2024 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1100,22 +1100,22 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 (./ProblemSetAimingFinalExam.aux)
 \openout1 = `ProblemSetAimingFinalExam.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1174,7 +1174,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box119
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 24.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1187,9 +1187,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (./ProblemSetAimingFinalExam.out) (./ProblemSetAimingFinalExam.out)
 \@outlinefile=\write4
 \openout4 = `ProblemSetAimingFinalExam.out'.
@@ -1206,82 +1206,82 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count349
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 35.
+ 36.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 35.
+ 36.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 12.0pt on input line 35.
+(Font)              scaled to size 12.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 9.0pt on input line 35.
+(Font)              scaled to size 9.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 12.0pt on input line 35.
+(Font)              scaled to size 12.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 9.0pt on input line 35.
+(Font)              scaled to size 9.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 36.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-5.
+6.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 12.0pt on input line 35.
+(Font)              scaled to size 12.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 9.0pt on input line 35.
+(Font)              scaled to size 9.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 12.0pt on input line 35.
+(Font)              scaled to size 12.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 9.0pt on input line 35.
+(Font)              scaled to size 9.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 12.0pt on input line 35.
+(Font)              scaled to size 12.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 9.0pt on input line 35.
+(Font)              scaled to size 9.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 35.
+(Font)              scaled to size 12.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 35.
+(Font)              scaled to size 9.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 35
+(Font)              scaled to size 7.0pt on input line 36.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 36
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
 [][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
@@ -1292,10 +1292,10 @@ File: /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT23
 <use /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230
 _1/figs/CDF_three_coin_toss.png>
 Package pdftex.def Info: /Users/subhadippal/Documents/Packages/STAT230/Slides_S
-TAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png  used on input line 112.
+TAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png  used on input line 113.
 (pdftex.def)             Requested size: 361.34912pt x 225.8432pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
@@ -1304,10 +1304,10 @@ File: /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT23
 <use /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230
 _1/figs/CDF_three_coin_toss.png>
 Package pdftex.def Info: /Users/subhadippal/Documents/Packages/STAT230/Slides_S
-TAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png  used on input line 121.
+TAT230/Unit6_STAT230_1/figs/CDF_three_coin_toss.png  used on input line 122.
 (pdftex.def)             Requested size: 361.34912pt x 225.8432pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
@@ -1323,325 +1323,325 @@ File: /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT23
 <use /Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230
 _1/figs/logistic_CDF.png>
 Package pdftex.def Info: /Users/subhadippal/Documents/Packages/STAT230/Slides_S
-TAT230/Unit6_STAT230_1/figs/logistic_CDF.png  used on input line 144.
+TAT230/Unit6_STAT230_1/figs/logistic_CDF.png  used on input line 145.
 (pdftex.def)             Requested size: 210.78697pt x 119.44595pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 [2 </Users/subhadippal/Documents/Packages/STAT230/Slides_STAT230/Unit6_STAT230_
 1/figs/logistic_CDF.png>]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 197--198
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 198--199
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 207--208
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 208--209
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 222--223
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 223--224
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 241--242
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 242--243
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
 [3]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 252--253
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 253--254
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 265--266
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 266--267
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 277--278
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 278--279
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 285--286
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 286--287
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
 [4]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 292--293
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 293--294
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 301--302
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 302--303
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 312--313
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 313--314
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 319--320
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 320--321
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
 [5]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 376--377
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 377--378
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 393--394
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 394--395
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 413--414
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 414--415
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 425--426
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 426--427
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
 [6]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 437--438
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 438--439
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 449--450
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 450--451
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 478--479
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 479--480
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 514--515
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 515--516
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
 
 [7]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 535--536
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 536--537
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--536
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 560--561
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 561--562
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
 [8]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 572--573
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 573--574
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 581--582
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 582--583
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 589--590
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 590--591
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 597--598
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 598--599
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
+Underfull \hbox (badness 10000) in paragraph at lines 598--599
 
  []
 
 
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 607--608
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 608--609
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
 
  []
 
 [9]
-Overfull \hbox (3.81136pt too wide) in paragraph at lines 626--627
+Overfull \hbox (3.81136pt too wide) in paragraph at lines 627--628
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--627
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
 
  []
 
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 658.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 658.
  (./ProblemSetAimingFinalExam.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 657.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 658.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 658.
 Package rerunfilecheck Info: File `ProblemSetAimingFinalExam.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 658.
  ) 
 Here is how much of TeX's memory you used:
- 28012 strings out of 480608
- 490651 string characters out of 5903631
- 885495 words of memory out of 5000000
- 43151 multiletter control sequences out of 15000+600000
+ 28013 strings out of 480608
+ 490654 string characters out of 5903631
+ 885528 words of memory out of 5000000
+ 43152 multiletter control sequences out of 15000+600000
  573718 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,21n,94p,598b,1784s stack positions out of 5000i,500n,10000p,200000b,80000s
