@@ -360,6 +360,8 @@ $$\HLTW{M_{_X}(t):= E\left(\HLTW{e^{tX}} \right)= \displaystyle  \int\limits_{\l
 \qbx[6.9in ]{amethyst!40}{
 Let X be a r.v.  with the moment generating function $M_{_X}(t)$, then, assuming existence,  the $r^{\text{th}}$ raw moments (non-centered), for the random variable can be obtained as 
 $$ \HLTW{E(X^r)= \frac{d^{{r}} M_{_X}(t) }{dt^{{r}}}\Big\vert_{t=0} } \text{ for  any positive integer} \HLTW{r}.  $$
+Specifically, 
+$$ \HLTW{E(X)= \frac{d M_{_X}(t) }{dt}\Big\vert_{t=0} }$$
 }
 \end{center}
 }\\
@@ -577,9 +579,10 @@ $$\qBrd[5.8in]{olive!50}{\begin{center} \Large Statistically Independent Discret
 \sqBullet{babyblue} Let $f_{_X}(x)$ be the marginal density of the random variable $X$ on the support $\support[X]$\\
 \sqBullet{babyblue} Let $f_{_Y}(y)$ be the marginal density of the random variable $X$ on the support $\support[Y]$. \\
 The continuous random variables X and Y are {\bf statistically} {\bf  independent } if the corresponding joint probability density function  $$ \HLTW{ \displaystyle f_{_{X,Y}}(x, y) = f_{_X}(x) \times  f_{_Y} (y)}$$ for all x and y, and $\support[X,Y]= \support[X]\times \support[Y].$
-}
-%}
+}\\
 
+%}
+\vspace{.35in}
 \qBrd[7.2in]{amber!40}{
 \vspace{-.35in}
 $$
@@ -639,7 +642,7 @@ $$\qBrd[2.5in ]{amethyst!60}{{ \HLTW{\text{Cov}(X,Y)}= \HLTW{E(XY)- E(X)E(Y)} }}
 \qBrd[6.8in ]{airforceblue!40}{{\bf Theorem:}
 If $X$, and $Y$ are two {\bf statistically independent} random variables, then 
 $\DBX{\HLTW{\text{Cov}(X,Y)=0 }.}$
-However, the converse of the result is not true in general. 
+{ However, the converse of the result is not true in general. i.e.  $\HLTW{\text{Cov}(X,Y)=0}$ does not imply that $X$, $Y$ must be Statistically Independent. }
 }
 \end{center}
 }
